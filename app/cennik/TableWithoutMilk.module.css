@@ -1,0 +1,43 @@
+.container h4 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    color: #fa7070;
+  }
+  
+  .weekDays {
+    display: flex;
+  }
+  
+  .weekDays h5 {
+    font-size: 1.25rem;
+    margin-right: 1.5rem;
+    color: #2c7865;
+  }
+  .weekDays h5:hover {
+    cursor: pointer;
+  }
+  
+  .activeDay {
+    color: #fa7070 !important;
+  }
+  
+  .description {
+    margin-top: 1.5rem;
+  }
+  
+  .description h6 {
+    font-size: 1.2rem;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  
+  .item p {
+    text-align: left !important;
+    margin: 0 !important;
+  }
+  

@@ -1,0 +1,93 @@
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 6%;
+  margin-bottom: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.listContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.listContainer li {
+  display: inline-block;
+  margin-right: 1.5rem; /* Opcjonalne: dodaje odstęp między elementami */
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+.listContainer li:hover {
+  color: #fa7070;
+  cursor: pointer;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+}
+
+.burgerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.burgerMenu {
+  display: none;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+}
+
+.mobileMenu {
+  display: block;
+  min-height: 100vh;
+  background: white;
+  padding-top: 0rem;
+  padding: 2rem 9%;
+  padding-top: 0.5rem;
+}
+
+.listContainerMobile {
+  list-style-type: none;
+}
+.listContainerMobile li {
+  border-bottom: 1px solid black;
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+  font-weight: bold;
+}
+
+@media (max-width: 1320px) {
+  .burgerMenu {
+    display: block;
+  }
+  .listContainer {
+    display: none;
+  }
+  .buttonContainer {
+    display: none;
+  }
+  .navContainer {
+    padding: 1rem 6%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .navContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 6%;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .logoContainer img{
+    height: 80px !important;
+    width: 120px !important;
+  }
+}

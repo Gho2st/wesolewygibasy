@@ -1,0 +1,198 @@
+.container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imageContainer {
+  width: 38%;
+  margin-top: 3rem;
+  margin-right: 5rem;
+}
+
+.textContainer {
+  width: 42%;
+}
+.text {
+  margin-top: 1.1rem;
+  margin-bottom: 1rem;
+  color: #767573;
+}
+
+.itemContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  border-radius: 0.4rem;
+  padding: 0.6rem 0.4rem;
+  width: 45%;
+  margin: 1rem 1rem 1rem 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  align-items: center;
+}
+
+.contactInfoContainer {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.aga {
+  border-radius: 100%;
+}
+
+.ownerContainer {
+  display: flex;
+  margin-left: 1.5rem;
+}
+.phoneContainer {
+  margin-left: 1rem;
+}
+.phone {
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+.ownerDescription {
+  color: #08c6c3;
+  font-weight: bold;
+}
+
+.checkContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  width: 15%;
+}
+
+.icon {
+  font-size: 1.8rem;
+  color: orange;
+}
+
+@media (max-width: 1349px) {
+  .item {
+    width: 45%;
+    height: 60px;
+  }
+  .textContainer h2 {
+    width: 80%;
+  }
+  .imageContainer {
+    width: 40%;
+    margin-right: 3.5rem;
+  }
+}
+@media (max-width: 1136px) {
+  .ownerContainer {
+    margin-left: 2rem;
+  }
+  .contactInfoContainer button{
+    width: 100%;
+  }
+  .ownerDescription{
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 1060px) {
+  .checkContainer {
+    margin-right: 0.6rem;
+    width: 15%;
+  }
+  .item p {
+    font-size: 0.8rem;
+  }
+  .text {
+    font-size: 0.9rem;
+  }
+  .imageContainer {
+    width: 40%;
+    margin-top: 3rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (max-width: 843px) {
+  .checkContainer {
+    margin-right: 0.6rem;
+    width: 15%;
+  }
+  .item p {
+    font-size: 0.8rem;
+  }
+  .textContainer h2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 815px) {
+  .container {
+    flex-direction: column-reverse;
+    padding: 2rem 9%;
+    align-items: flex-start;
+    margin-top: 5rem;
+  }
+  .imageContainer {
+    width: 80%;
+    margin-top: 3rem;
+    margin-right: 5rem;
+  }
+  .textContainer {
+    width: 100%;
+  }
+  .textContainer h2 {
+    font-size: 1.3rem;
+  }
+  .item {
+    height: 50px;
+  }
+  .item p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 622px) {
+  .container {
+    margin-top: 2.3rem;
+  }
+}
+
+@media (max-width: 542px) {
+  .item p {
+    font-size: 0.9rem;
+  }
+  .contactInfoContainer{
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .ownerContainer {
+    margin-left: 0rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 464px) {
+  .item p {
+    font-size: 0.76rem;
+  }
+  .imageContainer {
+    width: 100%;
+  }
+}
+@media (max-width: 391px) {
+  .item {
+    width: 100%;
+  }
+}
+@media (max-width: 378px) {
+  .ownerDescription{
+    font-size: 0.8rem;
+  }
+}

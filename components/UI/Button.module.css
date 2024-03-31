@@ -1,0 +1,14 @@
+.buttonContainer button {
+  padding: 0.9rem 1.3rem;
+  border-radius: 0.5rem;
+  background: #FA7070;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border: 0px;
+  margin-right: 1rem;
+}
+
+.buttonContainer button:hover {
+  scale: 1.05;
+  cursor: pointer;
+}

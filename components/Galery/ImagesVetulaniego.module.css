@@ -1,0 +1,17 @@
+.slider {
+  width: 100%;
+  margin: auto;
+  height: 150px;
+}
+
+.container {
+  margin-top: 3rem;
+}
+.rotate {
+  transform: rotate(180deg);
+  margin-right: 2rem;
+}
+
+.rightArrow {
+  margin-left: 2rem;
+}

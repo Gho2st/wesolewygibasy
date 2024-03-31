@@ -1,0 +1,66 @@
+.container h4 {
+  margin-top: 1rem !important;
+}
+
+.container h2 {
+  margin-bottom: 3rem;
+}
+
+.container p {
+  margin-top: 0rem !important;
+  margin-bottom: 1rem;
+}
+
+.container h3 {
+  font-size: 1.7rem;
+  margin: 0 !important;
+}
+
+.header {
+  display: flex;
+  margin-top: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.header:hover {
+  cursor: pointer;
+  scale: 1.01;
+}
+
+.header h3 {
+  font-size: 1.3rem;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon svg {
+  font-size: 1.6rem;
+  margin-left: 0.5rem;
+}
+
+.daySchedule{
+    margin-top: 2rem;
+}
+
+.daySchedule h5{
+    font-size: 1.1rem;
+}
+
+
+.extra {
+  margin-top: 2rem;
+}
+
+.extra span{
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+
+.extra h5{
+    font-size: 1.1rem;
+}

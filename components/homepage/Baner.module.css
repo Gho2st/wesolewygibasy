@@ -1,0 +1,148 @@
+.banerContainer {
+  width: 80%;
+  height: 550px;
+  background: #fff4de;
+  margin: auto;
+  display: flex;
+  padding: 2rem 9%;
+  border-radius: 1rem;
+  margin-top: 4rem;
+}
+
+.textContainer {
+  color: black;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContainer h1 {
+  font-size: 2.5rem;
+}
+.span {
+  color: #08c6c3;
+}
+.textContainer p {
+  margin-top: 1.5rem;
+  color: #767573;
+  font-size: 1.1rem;
+  width: 85%;
+}
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer {
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.wesole {
+  color: #fa7070;
+  font-weight: bold;
+}
+
+@media (max-width: 1252px) {
+  .textContainer h1 {
+    font-size: 2rem;
+  }
+  .textContainer p {
+    font-size: 1rem;
+  }
+  .banerContainer {
+    padding: 1.5rem 7%;
+    height: 500px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .textContainer h1 {
+    font-size: 1.7rem;
+  }
+  .textContainer p {
+    font-size: 0.98rem;
+  }
+  .textContainer {
+    width: 70%;
+  }
+  .banerContainer {
+    height: 450px;
+    padding: 1rem 5%;
+  }
+}
+
+@media (max-width: 834px) {
+  .banerContainer{
+    height: 350px;
+  }
+  .buttonContainer button {
+    padding: 0.7rem 0.7rem;
+  }
+  .textContainer h1 {
+    font-size: 1.5rem;
+  }
+  .textContainer p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 725px) {
+  .buttonContainer button {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8rem !important;
+  }
+}
+@media (max-width: 670px) {
+  .banerContainer {
+    height: 760px;
+    flex-direction: column;
+    padding: 2rem 9%;
+  }
+  .textContainer{
+    width: 100%;
+  }
+  .textContainer h1 {
+    font-size: 1.9rem;
+  }
+  .textContainer p {
+    font-size: 1.1rem;
+  }
+  .buttonContainer button {
+    padding: 0.7rem 0.5rem;
+    font-size: 0.9rem !important;
+  }
+  .imageContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4rem;
+  }
+}
+@media (max-width: 620px) {
+  .banerContainer{
+    height: 670px;
+  }
+}
+
+@media (max-width: 433px) {
+  .banerContainer {
+    width: 90%;
+    height: 610px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 6%;
+  }
+  
+  .textContainer h1 {
+    font-size: 1.6rem;
+  }
+  .textContainer p {
+    font-size: 1rem;
+  }
+  .buttonContainer button {
+    padding: 0.7rem 0.9rem;
+    font-size: 0.89rem !important;
+  }
+}

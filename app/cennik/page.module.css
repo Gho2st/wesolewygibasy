@@ -1,0 +1,43 @@
+.pricingContainer {
+  padding: 2rem 12%;
+}
+
+.header {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 3rem;
+  color: #fa7070;
+}
+
+.description {
+  color: rgb(78, 77, 77);
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.pricingContainer h2 {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: #fa7070;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.pricingContainer span {
+  color: #08c6c3;
+}
+
+.pickMe{
+  display: flex;
+  justify-content: space-between;
+}
+
+.pickMe:hover {
+  background: rgb(245, 245, 245);
+  cursor: pointer;
+  scale: 1.01;
+}
