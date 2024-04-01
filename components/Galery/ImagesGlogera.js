@@ -78,89 +78,99 @@ export default function ImagesContainer() {
     <div className={classes.container}>
       <Slider {...carouselSettings} className={classes.slider}>
         <ImagesItem
-          href="/zlobki/stanczyka/spotkanie-z-mikolajem"
-          src="/galeria/stanczyka/spotkanie-z-mikolajem/mikolaj.jpeg"
-          text="Spotkanie z Mikołajem"
+          href="/zlobki/glogera/angielski"
+          src="/galeria/glogera/angielski/angielski.jpg"
+          text="Angielski"
         />
         <ImagesItem
-          href="/zlobki/stanczyka/Dzien-Guzika"
-          src="/galeria/stanczyka/Dzien-Guzika/Dzien-Guzika.jpeg"
-          text="Dzień Guzika"
+          href="/zlobki/glogera/balwanki"
+          src="/galeria/glogera/balwanki/balwanki.jpeg"
+          text="Bałwanki"
         />
         <ImagesItem
-          src="/galeria/stanczyka/radosc/radosc.jpg"
-          text="Radość"
-          href="/zlobki/stanczyka/radosc"
+          href="/zlobki/glogera/czapki-i-maski"
+          src="/galeria/glogera/czapki-i-maski/czapki-i-maski.jpeg"
+          text="Czapki i Maski"
         />
         <ImagesItem
-          src="/galeria/stanczyka/dogoterapia/dogoterapia.jpeg"
+          href="/zlobki/glogera/deszczowa-chmura"
+          src="/galeria/glogera/deszczowa-chmura/deszczowa-chmura.jpeg"
+          text="Deszczowa Chmura"
+        />
+        <ImagesItem
+          href="/zlobki/glogera/dogoterapia"
+          src="/galeria/glogera/dogoterapia/dogoterapia.jpg"
           text="Dogoterapia"
-          href="/zlobki/stanczyka/dogoterapia"
+        />
+         <ImagesItem
+          href="/zlobki/glogera/dzien-pizzy"
+          src="/galeria/glogera/dzien-pizzy/dzien-pizzy.jpg"
+          text="Dzień Pizzy"
         />
         <ImagesItem
-          src="/galeria/stanczyka/bal-andrzejkowy/bal-andrzejkowy.jpeg"
-          text="Bal Andrzejkowy"
-          href="/zlobki/stanczyka/bal-andrzejkowy"
+          href="/zlobki/glogera/dzien-przyjazni"
+          src="/galeria/glogera/dzien-przyjazni/dzien-przyjazni.jpg"
+          text="Dzień Przyjaźni"
         />
         <ImagesItem
-          src="/galeria/stanczyka/dzien-czarnego-kota/dzien-czarnego-kota.jpeg"
-          text="Dzień Czarnego Kota"
-          href="/zlobki/stanczyka/dzien-czarnego-kota"
+          href="/zlobki/glogera/kolorowe-kredki"
+          src="/galeria/glogera/kolorowe-kredki/kolorowe-kredki.jpeg"
+          text="Kolorowe Kredki"
         />
         <ImagesItem
-          src="/galeria/stanczyka/dogoterapia-z-chmurka/dogoterapia-z-chmurka.jpeg"
-          text="Dogoterapia z Chmurką"
-          href="/zlobki/stanczyka/dogoterapia-z-chmurka"
+          href="/zlobki/glogera/kuleczki-babeczki"
+          src="/galeria/glogera/kuleczki-babeczki/kuleczki-babeczki.jpg"
+          text="Kuleczki i Babeczki"
         />
         <ImagesItem
-          src="/galeria/stanczyka/dzien-kolorowej-kredki/dzien-kolorowej-kredki.jpeg"
-          text="Dzień kolorowej kredki"
-          href="/zlobki/stanczyka/dzien-kolorowej-kredki"
+          href="/zlobki/glogera/mikolaj"
+          src="/galeria/glogera/mikolaj/mikolaj.jpeg"
+          text="Mikołaj"
         />
         <ImagesItem
-          src="/galeria/stanczyka/dzien-niepodleglosci/dzien-niepodleglosci.jpg"
-          text="Dzień Niepodległości"
-          href="/zlobki/stanczyka/dzien-niepodleglosci"
+          href="/zlobki/glogera/muzyka-klasyczna"
+          src="/galeria/glogera/muzyka-klasyczna/muzyka-klasyczna.jpeg"
+          text="Muzyka Klasyczna"
         />
         <ImagesItem
-          src="/galeria/stanczyka/Dzien-puchatka/Dzien-puchatka.jpeg"
-          text="Dzień Puchatka"
-          href="/zlobki/stanczyka/Dzien-Puchatka"
+          href="/zlobki/glogera/nalesniki"
+          src="/galeria/glogera/nalesniki/nalesniki.jpg"
+          text="Naleśniki"
         />
         <ImagesItem
-          src="/galeria/stanczyka/gordonki/gordonki.jpeg"
-          text="Gordonki"
-          href="/zlobki/stanczyka/gordonki"
+          href="/zlobki/glogera/pani-choinka"
+          src="/galeria/glogera/pani-choinka/pani-choinka.jpeg"
+          text="Pani Choinka"
         />
         <ImagesItem
-          src="/galeria/stanczyka/logopedia/logopedia.jpeg"
-          text="Logopedia"
-          href="/zlobki/stanczyka/logopedia"
+          href="/zlobki/glogera/pierniczki"
+          src="/galeria/glogera/pierniczki/pierniczki.jpeg"
+          text="Pierniczki"
         />
         <ImagesItem
-          src="/galeria/stanczyka/muzyczny-swiat/muzyczny-swiat.jpeg"
-          text="Muzyczny Świat"
-          href="/zlobki/stanczyka/muzyczny-świat"
+          href="/zlobki/glogera/ptaszki-zima"
+          src="/galeria/glogera/ptaszki-zima/ptaszki-zima.jpeg"
+          text="Ptaszki Zimą"
         />
         <ImagesItem
-          src="/galeria/stanczyka/pingwinki/pingwinki.jpeg"
-          text="Pingwinki"
-          href="/zlobki/stanczyka/pingwinki"
+          href="/zlobki/glogera/rytmika"
+          src="/galeria/glogera/rytmika/rytmika.jpg"
+          text="Rytmika"
         />
         <ImagesItem
-          src="/galeria/stanczyka/rytmika-gordonki/rytmika-gordonki.jpeg"
-          text="Rytmika/Gordonki"
-          href="/zlobki/stanczyka/rytmika-gordonki"
+          href="/zlobki/glogera/ulubiona-zabawa"
+          src="/galeria/glogera/ulubiona-zabawa/ulubiona-zabawa.jpeg"
+          text="Ulubiona Zabawa"
         />
         <ImagesItem
-          src="/galeria/stanczyka/sesja-swiateczna/sesja-swiateczna.jpeg"
-          text="Sesja Świąteczna"
-          href="/zlobki/stanczyka/sesja-swiateczna"
+          href="/zlobki/glogera/zimowa-kraina"
+          src="/galeria/glogera/zimowa-kraina/zimowa-kraina.jpeg"
+          text="Zimowa Kraina"
         />
         <ImagesItem
-          src="/galeria/stanczyka/zajecia-kulinarne/zajecia-kulinarne.jpeg"
-          text="Zajęcia Kulinarne"
-          href="/zlobki/stanczyka/zajecia-kulinarne"
+          href="/zlobki/glogera/zyczenia"
+          src="/galeria/glogera/zyczenia/zyczenia.jpeg"
+          text="Życzenia"
         />
       </Slider>
     </div>

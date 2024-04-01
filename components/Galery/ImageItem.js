@@ -7,7 +7,7 @@ export default function ImagesItem(props) {
   return (
     <div className={classes.container}>
       <div className={classes.innerContainer}>
-        {/* <Link href={props.href}> */}
+        <Link href={props.href}>
           <Image
             src={props.src}
             width={100}
@@ -17,7 +17,7 @@ export default function ImagesItem(props) {
           />
 
           <h5>{props.text}</h5>
-        {/* </Link> */}
+        </Link>
       </div>
     </div>
   );
