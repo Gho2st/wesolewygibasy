@@ -146,6 +146,7 @@ export default function Form() {
             <label htmlFor="startDate">Od kiedy chcesz zapisać dziecko?</label>
             <input
               type="date"
+              className={classes.startDate}
               id="startDate"
               name="startDate"
               placeholder="Od kiedy chcesz zapisac dziecko?"

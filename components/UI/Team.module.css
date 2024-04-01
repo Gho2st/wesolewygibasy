@@ -9,17 +9,14 @@
   font-size: 1.7rem;
 }
 
-.icon{
-    display: flex;
-    justify-content: center;
-}
-
-.container svg {
-  text-align: center;
-  font-size: 4rem;
-  color: #fa7070;
-}
-
 .slider {
   width: 100%;
+}
+.rotate {
+  transform: rotate(180deg);
+  margin-right: 2rem;
+}
+
+.rightArrow {
+  margin-left: 2rem;
 }

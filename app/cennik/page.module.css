@@ -31,7 +31,7 @@
   color: #08c6c3;
 }
 
-.pickMe{
+.pickMe {
   display: flex;
   justify-content: space-between;
 }
@@ -40,4 +40,38 @@
   background: rgb(245, 245, 245);
   cursor: pointer;
   scale: 1.01;
+}
+
+@media (max-width: 878px) {
+  .description {
+    width: 80%;
+  }
+}
+
+@media (max-width: 728px) {
+  .description {
+    width: 100%;
+  }
+  .pricingContainer h2 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #fa7070;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 518px) {
+  
+  .pricingContainer h2 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 405px) {
+  
+  .pricingContainer h2 {
+    font-size: 0.85rem;
+  }
 }

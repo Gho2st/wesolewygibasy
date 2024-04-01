@@ -37,7 +37,8 @@
 }
 
 .imageContainer h2 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
   color: #fa7070;
 }
 
@@ -45,15 +46,66 @@
   font-size: 0.9rem;
 }
 
-
-.icon{
+.icon {
   margin-top: 1rem;
   display: flex;
   justify-content: center;
 }
 
 .icon svg {
-text-align: center;
-font-size: 4rem;
-color: #fa7070;
+  text-align: center;
+  font-size: 4rem;
+  color: #fa7070;
+}
+
+@media (max-width: 1380px) {
+  .imageContainer {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .imageContainer {
+    margin: auto;
+    width: 50%;
+    margin-bottom: 3rem;
+  }
+  .imageContainer h2 {
+    font-size: 1.8rem;
+  }
+  .text {
+    width: 100%;
+  }
+  .info {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 789px) {
+  .imageContainer {
+    margin: auto;
+    width: 60%;
+    margin-bottom: 2rem;
+  }
+  .imageContainer h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 545px) {
+  .imageContainer {
+    margin: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .imageContainer h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 545px) {
+  .imageContainer h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+  }
 }

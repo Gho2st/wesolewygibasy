@@ -130,13 +130,13 @@ export default function Others() {
           (słownie: pięćset pięćdziesiąt złotych)
         </p>
         <p>
-          Opłata ta obejmuje: I) koszt ubezpieczenia dziecka od następstw
-          nieszczęśliwych wypadków (NNW), II) koszt zakupu podstawowych pomocy
-          dydaktycznych, edukacyjnych i plastycznych, III) koszt zakupu
+          Opłata ta obejmuje: <br></br><br></br> I) koszt ubezpieczenia dziecka od następstw
+          nieszczęśliwych wypadków (NNW), <br></br><br></br>II) koszt zakupu podstawowych pomocy
+          dydaktycznych, edukacyjnych i plastycznych, <br></br><br></br>III) koszt zakupu
           niezbędnych przedmiotów osobistych dla Dziecka na czas pobytu w żłobku
-          (mokre chusteczki, ręcznik papierowy, nocnik itp.), IV) koszt zakupu
+          (mokre chusteczki, ręcznik papierowy, nocnik itp.), <br></br><br></br> IV) koszt zakupu
           prezentów okolicznościowych (Mikołajki, Dzień Dziecka, Urodziny
-          Dziecka). V) Zakup pościeli dla dziecka.
+          Dziecka). <br></br><br></br> V) Zakup pościeli dla dziecka.
         </p>
       </div>
     </div>

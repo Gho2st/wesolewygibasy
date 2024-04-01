@@ -31,9 +31,30 @@
   font-size: 0.9rem;
   color: grey;
 }
+.text p{
+  margin-top: 1rem;
+}
 .header {
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 1rem;
   text-align: center;
   text-decoration: underline;
+  margin-bottom: 3rem;
 }
+
+@media (max-width: 800px) {
+  .table {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .text {
+    font-size: 0.8rem;
+  }
+  .header{
+    text-align: left;
+    font-size: 1rem;
+  }
+}
+

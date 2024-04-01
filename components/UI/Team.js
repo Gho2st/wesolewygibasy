@@ -16,6 +16,37 @@ export default function TeamVetulaniego(props) {
     autoplaySpeed: 1500,
     cssEase: "linear",
     initialSlide: 0,
+    nextArrow: (
+      <div>
+        <div className={classes.rightArrow}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="black"
+            height="24"
+            viewBox="0 -960 960 960"
+            width="24"
+          >
+            <path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" />
+          </svg>
+        </div>
+      </div>
+    ),
+
+    prevArrow: (
+      <div>
+        <div className={classes.rotate}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="black"
+            height="24"
+            viewBox="0 -960 960 960"
+            width="24"
+          >
+            <path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" />
+          </svg>
+        </div>
+      </div>
+    ),
     responsive: [
       {
         breakpoint: 1224,
@@ -46,7 +77,7 @@ export default function TeamVetulaniego(props) {
   return (
     <div className={classes.container}>
       <h3>{props.place}</h3>
-      
+
       <Slider {...carouselSettings} className={classes.slider}>
         <TeamMember
           src="/team/vetulaniego/natalia.jpg"
@@ -89,6 +120,37 @@ export function TeamStanczyka(props) {
     autoplaySpeed: 1500,
     cssEase: "linear",
     initialSlide: 0,
+    nextArrow: (
+      <div>
+        <div className={classes.rightArrow}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="black"
+            height="24"
+            viewBox="0 -960 960 960"
+            width="24"
+          >
+            <path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" />
+          </svg>
+        </div>
+      </div>
+    ),
+
+    prevArrow: (
+      <div>
+        <div className={classes.rotate}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="black"
+            height="24"
+            viewBox="0 -960 960 960"
+            width="24"
+          >
+            <path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" />
+          </svg>
+        </div>
+      </div>
+    ),
     responsive: [
       {
         breakpoint: 1224,
@@ -166,6 +228,37 @@ export function TeamGlogera(props) {
     autoplaySpeed: 1500,
     cssEase: "linear",
     initialSlide: 0,
+    nextArrow: (
+      <div>
+        <div className={classes.rightArrow}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="black"
+            height="24"
+            viewBox="0 -960 960 960"
+            width="24"
+          >
+            <path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" />
+          </svg>
+        </div>
+      </div>
+    ),
+
+    prevArrow: (
+      <div>
+        <div className={classes.rotate}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="black"
+            height="24"
+            viewBox="0 -960 960 960"
+            width="24"
+          >
+            <path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" />
+          </svg>
+        </div>
+      </div>
+    ),
     responsive: [
       {
         breakpoint: 1224,

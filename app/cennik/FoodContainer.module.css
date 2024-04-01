@@ -12,7 +12,7 @@
   text-align: center;
   margin-top: 2.5rem;
   font-size: 3rem;
-  color: #FA7070;
+  color: #fa7070;
   margin-bottom: 1rem;
 }
 
@@ -32,4 +32,23 @@
 
 .option:hover {
   cursor: pointer;
+}
+
+@media (max-width: 852px) {
+  .container {
+    flex-direction: column;
+  }
+  .option {
+    margin-top: 1.5rem;
+  }
+  .foodContainer p {
+    width: 80%;
+  }
+}
+
+@media (max-width: 572px) {
+  .foodContainer p {
+    width: 100%;
+    
+  }
 }

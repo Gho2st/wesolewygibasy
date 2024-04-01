@@ -49,6 +49,10 @@
   color: #8be5e3;
 }
 
+.startDate {
+  color: rgb(74, 74, 74);
+  opacity: 0.7;
+}
 .text {
   margin: 1rem 0;
   font-weight: 200;
@@ -94,10 +98,46 @@
   justify-content: space-between;
   gap: 1rem;
 }
+
 @media (max-width: 767px) {
   .buttonContainer {
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
+  }
+  .containerLeft input::placeholder {
+    font-size: 0.8rem;
+  }
+  .startDate {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 685px) {
+  .buttonContainer {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 529px) {
+  .item {
+    flex-direction: column;
+    gap: 0;
+  }
+  .containerLeft input::placeholder {
+    font-size: 0.8rem;
+  }
+  .containerLeft textarea::placeholder {
+    font-size: 0.8rem;
+  }
+  .containerLeft input {
+    padding: 1rem;
+  }
+  .startDate {
+    font-size: 0.8rem;
+  }
+  .select {
+    font-size: 0.8rem;
+    padding: 1rem !important;
   }
 }
