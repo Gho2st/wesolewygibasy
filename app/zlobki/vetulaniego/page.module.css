@@ -2,6 +2,9 @@
   padding: 2rem 9%;
   margin-bottom: 12rem;
 }
+.outsideContainer {
+  padding: 2rem 9%;
+}
 
 .baner {
   width: 100%;
@@ -116,7 +119,10 @@
 }
 
 @media (max-width: 990px) {
-  .container h2{
+  .outsideContainer {
+    padding: 0;
+  }
+  .container h2 {
     margin-top: 6rem;
   }
   .leftContainer h1 {
@@ -128,6 +134,7 @@
   }
   .baner {
     flex-direction: column;
+    border-radius: 0;
   }
   .image {
     width: 50%;
@@ -135,12 +142,11 @@
   }
 }
 
-
 @media (max-width: 567px) {
   .leftContainer h1 {
     font-size: 2rem;
   }
-  .container{
+  .container {
     margin-bottom: 6rem;
   }
   .image {
@@ -184,9 +190,6 @@
   }
   .image {
     padding-bottom: 1rem;
-  }
-  .leftContainer {
-    padding: 0.9rem;
   }
 }
 

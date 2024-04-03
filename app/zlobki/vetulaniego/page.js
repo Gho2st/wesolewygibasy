@@ -16,8 +16,7 @@ export default function Vetulaniego() {
   return (
     <>
       <Header />
-
-      <div className={classes.container}>
+      <div className={classes.outsideContainer}>
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
@@ -43,6 +42,7 @@ export default function Vetulaniego() {
               ></iframe>
             </div>
           </div>
+
           <div className={classes.image}>
             <Image
               src={"/others/vetulaniego.png"}
@@ -53,7 +53,8 @@ export default function Vetulaniego() {
             />
           </div>
         </div>
-
+      </div>
+      <div className={classes.container}>
         <p className={classes.description}>
           Klub Malucha Wesołe Wygibasy to <span> kameralny żłobek </span>
           mieszczący się w domu jednorodzinnym z ogrodem. <br></br> <br></br>{" "}
@@ -100,7 +101,7 @@ export default function Vetulaniego() {
             wydarzenia i chwile z życia maluszków w naszej placówce.
           </p>
 
-          <ImagesVetulaniego/>
+          <ImagesVetulaniego />
         </div>
       </div>
       <Footer />

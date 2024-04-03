@@ -76,6 +76,11 @@
     margin-bottom: 2rem;
   }
 }
+@media (max-width: 990px) {
+  .navContainer {
+    margin-bottom: 0;
+  }
+}
 
 @media (max-width: 820px) {
   .navContainer {
@@ -83,10 +88,9 @@
     justify-content: space-between;
     padding: 0.7rem 6%;
     padding-top: 1rem;
-    margin-bottom: 2rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
-  .logoContainer img{
+  .logoContainer img {
     height: 80px !important;
     width: 120px !important;
   }
