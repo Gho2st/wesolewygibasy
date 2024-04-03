@@ -16,7 +16,7 @@ export default function stanczyka() {
     <>
       <Header />
 
-      <div className={classes.container}>
+      <div className={classes.outsideContainer}>
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
@@ -52,7 +52,8 @@ export default function stanczyka() {
             />
           </div>
         </div>
-
+      </div>
+      <div className={classes.container}>
         <p className={classes.description}>
           <span>Niepubliczny żłobek</span> WESOŁE WYGIBASY ul. Stańczyka 8/LU3
           jest naszą <span> trzecią placówką.</span>

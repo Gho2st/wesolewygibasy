@@ -54,7 +54,7 @@
   }
   .pricingContainer h2 {
     margin-top: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     color: #fa7070;
     padding: 1rem;
@@ -62,17 +62,22 @@
   }
 }
 
-@media (max-width: 518px) {
+@media (max-width: 608px) {
   .pricingContainer h2 {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
   .pricingContainer {
     padding: 2rem 4%;
   }
 }
 
-@media (max-width: 405px) {
+@media (max-width: 448px) {
   .pricingContainer h2 {
-    font-size: 0.85rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 423px) {
+  .pricingContainer h2 {
+    font-size: 1.15rem;
   }
 }

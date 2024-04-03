@@ -15,8 +15,7 @@ export default function sliczna() {
   return (
     <>
       <Header />
-
-      <div className={classes.container}>
+      <div className={classes.outsideContainer}>
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
@@ -51,7 +50,8 @@ export default function sliczna() {
             />
           </div>
         </div>
-
+      </div>
+      <div className={classes.container}>
         <p className={classes.description}>
           <span>Niepubliczny żłobek</span> WESOŁE WYGIBASY ul. Śliczna 36A jest
           naszą <span> czwartą placówką.</span>
