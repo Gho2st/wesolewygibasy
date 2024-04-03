@@ -16,8 +16,8 @@ export default function Baner() {
             które powstało z pasji, wielkiej troski i miłości do dzieci.
           </p>
           <div className={classes.buttonContainer}>
-            <Button text="Czytaj więcej" background="#FFC858" />
-            <Button text="Nasze placówki" background="#7C99E5" />
+            <Button text="Czytaj więcej" background="#FFC858" fontSize="1rem" />
+            <Button text="Nasze placówki" background="#7C99E5" fontSize="1rem" />
           </div>
         </div>
       </div>

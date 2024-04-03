@@ -1,7 +1,7 @@
 .table {
-  border-collapse: collapse;
   width: 100%;
   margin-top: 2rem;
+  overflow-x: auto; /* Add this line */
 }
 .table td,
 .table th {
@@ -39,7 +39,7 @@
   margin-bottom: 3rem;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .table {
     font-size: 0.5rem;
   }
@@ -49,9 +49,8 @@
   .text {
     font-size: 0.8rem;
   }
-  .header{
+  .header {
     text-align: left;
     font-size: 1rem;
   }
-}
-
+} */

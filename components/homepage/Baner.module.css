@@ -152,13 +152,13 @@
 @media (max-width: 390px) {
   .buttonContainer button {
     padding: 0.7rem 0.9rem;
-    font-size: 0.82rem !important;
+    font-size: 0.88rem !important;
   }
 }
 
 @media (max-width: 350px) {
   .buttonContainer button {
     padding: 0.7rem 0.75rem;
-    font-size: 0.78rem !important;
+    font-size: 0.85rem !important;
   }
 }
