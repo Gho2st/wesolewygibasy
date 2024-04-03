@@ -89,3 +89,23 @@
     font-size: 1.05rem;
   }
 }
+
+@media (max-width: 450px) {
+  .numbers p {
+    width: 40px;
+    height: 40px;
+    margin-top: 0.5rem;
+  }
+  .number {
+    font-weight: bold;
+    font-size: 1.3rem !important;
+  }
+  .itemContainer h5 {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  .itemContainer p {
+    margin-top: 0.4rem;
+    font-size: 1rem;
+  }
+}

@@ -129,7 +129,7 @@
 @media (max-width: 433px) {
   .banerContainer {
     width: 90%;
-    height: 610px;
+    height: 640px;
     display: flex;
     flex-direction: column;
     padding: 2rem 6%;
@@ -144,5 +144,19 @@
   .buttonContainer button {
     padding: 0.7rem 0.9rem;
     font-size: 0.89rem !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .buttonContainer button {
+    padding: 0.7rem 0.9rem;
+    font-size: 0.82rem !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .buttonContainer button {
+    padding: 0.7rem 0.75rem;
+    font-size: 0.78rem !important;
   }
 }

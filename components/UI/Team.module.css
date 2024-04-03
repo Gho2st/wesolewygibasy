@@ -20,3 +20,16 @@
 .rightArrow {
   margin-left: 2rem;
 }
+
+@media (max-width: 1215px) {
+  .container h3 {
+    font-size: 1.3rem;
+  }
+  .rotate {
+    margin-right: -1rem;
+  }
+
+  .rightArrow {
+    margin-left: -1rem;
+  }
+}

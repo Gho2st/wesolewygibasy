@@ -34,12 +34,17 @@
 
 .imageContainer img {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
   border-radius: 1rem;
 }
 
 @media (max-width: 760px) {
   .container {
     margin: 0rem;
+    padding: 0rem;
+  }
+
+  .imageContainer img {
+    width: 180px;
+    height: 180px;
   }
 }

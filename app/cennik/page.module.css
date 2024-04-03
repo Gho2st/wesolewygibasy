@@ -1,5 +1,5 @@
 .pricingContainer {
-  padding: 2rem 12%;
+  padding: 2rem 9%;
 }
 
 .header {
@@ -63,14 +63,15 @@
 }
 
 @media (max-width: 518px) {
-  
   .pricingContainer h2 {
     font-size: 0.9rem;
+  }
+  .pricingContainer {
+    padding: 2rem 4%;
   }
 }
 
 @media (max-width: 405px) {
-  
   .pricingContainer h2 {
     font-size: 0.85rem;
   }

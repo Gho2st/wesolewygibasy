@@ -92,10 +92,10 @@
   .ownerContainer {
     margin-left: 2rem;
   }
-  .contactInfoContainer button{
+  .contactInfoContainer button {
     width: 100%;
   }
-  .ownerDescription{
+  .ownerDescription {
     font-size: 0.85rem;
   }
 }
@@ -139,9 +139,7 @@
     margin-top: 5rem;
   }
   .imageContainer {
-    width: 80%;
-    margin-top: 3rem;
-    margin-right: 5rem;
+    display: none;
   }
   .textContainer {
     width: 100%;
@@ -163,11 +161,17 @@
   }
 }
 
-@media (max-width: 542px) {
+@media (max-width: 562px) {
+  .ownerContainer {
+    display: none;
+  }
+  .textContainer h2 {
+    font-size: 1.55rem;
+  }
   .item p {
     font-size: 0.9rem;
   }
-  .contactInfoContainer{
+  .contactInfoContainer {
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: flex-start;
@@ -180,19 +184,22 @@
 
 @media (max-width: 464px) {
   .item p {
-    font-size: 0.76rem;
+    font-size: 0.8rem;
   }
   .imageContainer {
     width: 100%;
   }
 }
-@media (max-width: 391px) {
+@media (max-width: 423px) {
   .item {
     width: 100%;
   }
+  .item p {
+    font-size: 0.9rem;
+  }
 }
 @media (max-width: 378px) {
-  .ownerDescription{
+  .ownerDescription {
     font-size: 0.8rem;
   }
 }

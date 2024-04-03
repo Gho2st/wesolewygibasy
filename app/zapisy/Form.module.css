@@ -135,6 +135,8 @@
   }
   .startDate {
     font-size: 0.8rem;
+    display: block;
+    width: 100%;
   }
   .select {
     font-size: 0.8rem;
