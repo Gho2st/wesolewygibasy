@@ -100,6 +100,8 @@
     height: 760px;
     flex-direction: column;
     padding: 2rem 9%;
+    width: 100%;
+    margin-top: 0;
   }
   .textContainer{
     width: 100%;
@@ -128,22 +130,22 @@
 
 @media (max-width: 433px) {
   .banerContainer {
-    width: 90%;
     height: 640px;
     display: flex;
     flex-direction: column;
-    padding: 2rem 6%;
+    padding: 2rem 9%;
+    border-radius: 0;
   }
   
   .textContainer h1 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .textContainer p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .buttonContainer button {
     padding: 0.7rem 0.9rem;
-    font-size: 0.89rem !important;
+    font-size: 0.9rem !important;
   }
 }
 
