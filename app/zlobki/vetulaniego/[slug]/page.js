@@ -7,7 +7,7 @@ import Header from "@/components/UI/Header";
 import Footer from "@/components/UI/Footer";
 
 export default function GaleryPost({ params }) {
-  const galeryPath = "/galeria/stanczyka/" + params.slug + "/";
+  const galeryPath = "/galeria/vetulaniego/" + params.slug + "/";
   const directoryPath = path.join(process.cwd(), "public", galeryPath); // Sciezka do folderu z obrazami
 
   // Funkcja do zamiany pierwszej litery na wielką i zamiany pauz na spacje
@@ -35,9 +35,9 @@ export default function GaleryPost({ params }) {
                 src={`${galeryPath}${file}`}
                 width={100}
                 height={100}
-                alt=""
                 layout="responsive"
                 className={classes.image}
+                alt=""
               />
             </div>
           );

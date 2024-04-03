@@ -49,12 +49,10 @@ export default function ImagesContainer() {
     ),
     responsive: [
       {
-        breakpoint: 1224,
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-          dots: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
         },
       },
       {
@@ -62,7 +60,6 @@ export default function ImagesContainer() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          initialSlide: 2,
         },
       },
       {
@@ -102,7 +99,7 @@ export default function ImagesContainer() {
           src="/galeria/glogera/dogoterapia/dogoterapia.jpg"
           text="Dogoterapia"
         />
-         <ImagesItem
+        <ImagesItem
           href="/zlobki/glogera/dzien-pizzy"
           src="/galeria/glogera/dzien-pizzy/dzien-pizzy.jpg"
           text="Dzień Pizzy"

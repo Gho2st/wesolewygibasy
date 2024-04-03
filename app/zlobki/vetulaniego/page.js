@@ -10,6 +10,7 @@ import Link from "next/link";
 import DaySchedule from "@/components/Info/DaySchedule";
 import { FcGoogle } from "react-icons/fc";
 import PlaceItem from "@/components/UI/PlaceItem";
+import ImagesVetulaniego from "@/components/Galery/ImagesVetulaniego";
 
 export default function Vetulaniego() {
   return (
@@ -22,7 +23,7 @@ export default function Vetulaniego() {
             <div>
               <h1>Wesołe Wygibasy Vetulaniego</h1>
               <p>
-                Żłobek, Kraków <br></br> <span> Ulica Stańczyka 8/LU3 </span>
+                Żłobek, Kraków <br></br> <span> Ulica Vetulaniego 8 </span>
               </p>
               <div className={classes.buttonContainer}>
                 <Button
@@ -47,6 +48,7 @@ export default function Vetulaniego() {
               src={"/others/vetulaniego.png"}
               height={400}
               width={900}
+              alt=""
               layout="responsive"
             />
           </div>
@@ -98,7 +100,7 @@ export default function Vetulaniego() {
             wydarzenia i chwile z życia maluszków w naszej placówce.
           </p>
 
-          <ImagesContainer />
+          <ImagesVetulaniego/>
         </div>
       </div>
       <Footer />

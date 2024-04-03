@@ -48,6 +48,7 @@ export default function stanczyka() {
               height={400}
               width={900}
               layout="responsive"
+              alt=""
             />
           </div>
         </div>

@@ -20,7 +20,7 @@ export default function Glogera() {
             <div>
               <h1>Wesołe Wygibasy Glogera</h1>
               <p>
-                Żłobek, Kraków <br></br> <span> Ulica Stańczyka 8/LU3 </span>
+                Żłobek, Kraków <br></br> <span> Ulica Glogera 53/LU2 </span>
               </p>
               <div className={classes.buttonContainer}>
                 <Button
@@ -46,6 +46,7 @@ export default function Glogera() {
               height={400}
               width={900}
               layout="responsive"
+              alt=""
             />
           </div>
         </div>

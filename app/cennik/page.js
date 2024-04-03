@@ -9,7 +9,7 @@ import FoodContainer from "./FoodContainer";
 import Footer from "@/components/UI/Footer";
 import { IoCaretDownOutline } from "react-icons/io5";
 
-export default function cennik() {
+export default function Cennik() {
   const [isStanczykaVisible, setIsStanczykaVisible] = useState(true);
   const [isOthersVisible, setIsOthersVisible] = useState(false);
 

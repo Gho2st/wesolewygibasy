@@ -15,3 +15,21 @@
 .rightArrow {
   margin-left: 2rem;
 }
+
+@media (max-width: 680px) {
+  .rotate {
+    margin-top: 3rem;
+    margin-right: 0.5rem;
+  }
+
+  .rightArrow {
+    margin-top: 3rem;
+    margin-left: 0.5rem;
+  }
+}
+
+@media (max-width: 567px) {
+  .container {
+    margin-bottom: 6rem;
+  }
+}

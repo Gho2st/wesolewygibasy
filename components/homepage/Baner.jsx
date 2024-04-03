@@ -27,6 +27,7 @@ export default function Baner() {
           width={100}
           height={100}
           layout="responsive"
+          alt="małe bawiące się dziecko"
         ></Image>
       </div>
     </div>

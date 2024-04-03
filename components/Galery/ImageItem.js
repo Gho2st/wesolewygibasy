@@ -14,6 +14,7 @@ export default function ImagesItem(props) {
             height={100}
             layout="responsive"
             className={classes.image}
+            alt=""
           />
 
           <h5>{props.text}</h5>

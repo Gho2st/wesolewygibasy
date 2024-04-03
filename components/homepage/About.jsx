@@ -12,6 +12,7 @@ export default function About() {
           width={100}
           height={100}
           layout="responsive"
+          alt="logo"
         ></Image>
       </div>
       <div className={classes.textContainer}>
@@ -55,6 +56,7 @@ export default function About() {
               src={"/others/aga.png"}
               width={55}
               height={55}
+              alt="zdjęcie profilowe Agnieszki Ciołkowskiej - właścicielki Wesołych Wygibasów"
             ></Image>
             <div className={classes.phoneContainer}>
               <p className={classes.phone}>576 985 894</p>

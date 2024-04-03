@@ -102,3 +102,105 @@
   width: 100%;
   margin-top: 1.5rem !important;
 }
+
+@media (max-width: 1270px) {
+  .image {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .leftContainer h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .leftContainer h1 {
+    font-size: 2.5rem;
+  }
+  .leftContainer {
+    width: 100%;
+    padding: 2rem;
+  }
+  .baner {
+    flex-direction: column;
+  }
+  .image {
+    width: 50%;
+    margin: auto;
+  }
+}
+@media (max-width: 990px) {
+  .image {
+    width: 65%;
+  }
+}
+
+@media (max-width: 567px) {
+  .leftContainer h1 {
+    font-size: 2rem;
+  }
+  .image {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 463px) {
+  .buttonContainer button {
+    font-size: 1rem !important;
+    margin-right: 2rem;
+  }
+  .buttonContainer svg {
+    display: none;
+  }
+  .mapContainer {
+    min-height: 150px;
+  }
+  .image {
+    padding: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 428px) {
+  .leftContainer h1 {
+    font-size: 1.8rem;
+  }
+  .mapContainer {
+    min-height: 150px;
+  }
+}
+
+@media (max-width: 408px) {
+  .leftContainer h1 {
+    font-size: 1.8rem;
+  }
+  .mapContainer {
+    min-height: 150px;
+  }
+  .image {
+    padding-bottom: 1rem;
+  }
+  .leftContainer {
+    padding: 0.9rem;
+  }
+}
+
+@media (max-width: 362px) {
+  .leftContainer h1 {
+    font-size: 1.7rem;
+  }
+  .mapContainer {
+    min-height: 140px;
+  }
+  .buttonContainer button {
+    font-size: 0.8rem !important;
+  }
+}
+@media (max-width: 338px) {
+  .leftContainer h1 {
+    font-size: 1.6rem;
+  }
+}

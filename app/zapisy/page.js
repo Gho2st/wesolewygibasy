@@ -30,6 +30,7 @@ export default function zapisy() {
             height={100}
             width={100}
             layout="responsive"
+            alt=""
           ></Image>
           <div className={classes.info}>
             <div className={classes.item}>

@@ -41,3 +41,8 @@
   margin: 0 !important;
 }
 
+@media (max-width:618px){
+  .weekDays{
+    overflow: scroll;
+  }
+}

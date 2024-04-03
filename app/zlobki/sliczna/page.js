@@ -47,6 +47,7 @@ export default function sliczna() {
               height={400}
               width={900}
               layout="responsive"
+              alt=""
             />
           </div>
         </div>

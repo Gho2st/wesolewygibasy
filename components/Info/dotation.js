@@ -22,7 +22,7 @@ export default function Dotation() {
             <h5>Dofinansowanie</h5>
           </div>
           <div>
-            <Image src={"/krakow1.jpg"} height={95} width={200}></Image>
+            <Image src={"/krakow1.jpg"} height={95} width={200} alt=""></Image>
           </div>
         </div>
 
@@ -63,9 +63,10 @@ export default function Dotation() {
             </button>
             <Image
               src={"/krakow2.png"}
-              height={300} // Ustaw wysokość i szerokość zgodnie z preferencjami
-              width={300} // Ustaw wysokość i szerokość zgodnie z preferencjami
+              height={300}
+              width={300} 
               layout="responsive"
+              alt=""
             />
           </div>
         </Modal>

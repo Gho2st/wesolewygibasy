@@ -58,6 +58,7 @@ export default function oNas() {
               width={100}
               height={100}
               layout="responsive"
+              alt=""
             ></Image>
             <h2>Agnieszka Ciołkowska</h2>
             <p>Właściciel, Pedagog, Mama 3 dzieci</p>

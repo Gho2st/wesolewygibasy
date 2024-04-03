@@ -1,7 +1,12 @@
 .image {
   max-height: 200px;
+  max-width: 300px;
   padding: 0.5rem;
   border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
 }
 
 .innerContainer h5 {
@@ -10,3 +15,11 @@
   margin-top: 0.5rem;
   text-align: center;
 }
+@media (max-width: 680px) {
+  .image {
+    max-height: 300px;
+    max-width: 400px;
+    
+  }
+}
+
