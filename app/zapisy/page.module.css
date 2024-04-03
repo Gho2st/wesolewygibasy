@@ -132,9 +132,13 @@
     width: 100% !important;
   }
   .container{
-    width: 100%;
+    width: 100% !important;
     padding: 2rem 9%;
     margin-top: 1rem;
+  }
+  .contactContainer {
+    width: 92%;
+    
   }
   .contactContainer{
     margin-top: 1.5rem;
