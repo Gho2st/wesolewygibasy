@@ -11,9 +11,17 @@
   transform: rotate(180deg);
   margin-right: 2rem;
 }
+.rotate svg {
+  color: black;
+  font-size: 2rem;
+}
 
 .rightArrow {
   margin-left: 2rem;
+}
+.rightArrow svg {
+  color: black;
+  font-size: 2rem;
 }
 
 @media (max-width: 680px) {
@@ -28,10 +36,14 @@
   }
 }
 
-
+@media (max-width: 1144px) {
+  .slider {
+    width: 90%;
+  }
+}
 
 @media (max-width: 567px) {
   .container {
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   }
 }

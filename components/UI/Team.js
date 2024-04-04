@@ -4,6 +4,7 @@ import TeamMember from "./TeamMember";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { IoIosArrowForward } from "react-icons/io";
 
 export default function TeamVetulaniego(props) {
   const carouselSettings = {
@@ -19,15 +20,7 @@ export default function TeamVetulaniego(props) {
     nextArrow: (
       <div>
         <div className={classes.rightArrow}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            stroke="black"
-            height="24"
-            viewBox="0 -960 960 960"
-            width="24"
-          >
-            <path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" />
-          </svg>
+          <IoIosArrowForward />
         </div>
       </div>
     ),
@@ -35,15 +28,7 @@ export default function TeamVetulaniego(props) {
     prevArrow: (
       <div>
         <div className={classes.rotate}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            stroke="black"
-            height="24"
-            viewBox="0 -960 960 960"
-            width="24"
-          >
-            <path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" />
-          </svg>
+          <IoIosArrowForward />
         </div>
       </div>
     ),
@@ -123,15 +108,7 @@ export function TeamStanczyka(props) {
     nextArrow: (
       <div>
         <div className={classes.rightArrow}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            stroke="black"
-            height="24"
-            viewBox="0 -960 960 960"
-            width="24"
-          >
-            <path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" />
-          </svg>
+          <IoIosArrowForward />
         </div>
       </div>
     ),
@@ -139,15 +116,7 @@ export function TeamStanczyka(props) {
     prevArrow: (
       <div>
         <div className={classes.rotate}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            stroke="black"
-            height="24"
-            viewBox="0 -960 960 960"
-            width="24"
-          >
-            <path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" />
-          </svg>
+          <IoIosArrowForward />
         </div>
       </div>
     ),
@@ -231,15 +200,7 @@ export function TeamGlogera(props) {
     nextArrow: (
       <div>
         <div className={classes.rightArrow}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            stroke="black"
-            height="24"
-            viewBox="0 -960 960 960"
-            width="24"
-          >
-            <path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" />
-          </svg>
+          <IoIosArrowForward />
         </div>
       </div>
     ),
@@ -247,15 +208,7 @@ export function TeamGlogera(props) {
     prevArrow: (
       <div>
         <div className={classes.rotate}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            stroke="black"
-            height="24"
-            viewBox="0 -960 960 960"
-            width="24"
-          >
-            <path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" />
-          </svg>
+          <IoIosArrowForward />
         </div>
       </div>
     ),

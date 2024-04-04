@@ -11,9 +11,17 @@
   transform: rotate(180deg);
   margin-right: 2rem;
 }
+.rotate svg {
+  color: black;
+  font-size: 2rem;
+}
 
 .rightArrow {
   margin-left: 2rem;
+}
+.rightArrow svg {
+  color: black;
+  font-size: 2rem;
 }
 
 @media (max-width: 680px) {

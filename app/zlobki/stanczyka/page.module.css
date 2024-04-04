@@ -198,8 +198,7 @@
 
 @media (max-width: 389px) {
   .buttonContainer button {
-    font-size: 0.8rem !important;
-    padding: 1rem 1rem !important;
+    font-size: 0.9rem !important;
   }
 }
 
