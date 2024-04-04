@@ -28,8 +28,14 @@
   }
 }
 
+@media (max-width: 1144px) {
+  .slider {
+    width: 90%;
+  }
+}
+
 @media (max-width: 567px) {
   .container {
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   }
 }

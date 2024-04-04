@@ -12,8 +12,8 @@
 }
 
 .container h3 {
-  font-size: 1.7rem;
   margin: 0 !important;
+  font-size: 1.1rem;
 }
 
 .header {
@@ -27,11 +27,6 @@
   cursor: pointer;
   scale: 1.01;
 }
-
-.header h3 {
-  font-size: 1.3rem;
-}
-
 .icon {
   display: flex;
   justify-content: center;
@@ -63,4 +58,10 @@
 
 .extra h5{
     font-size: 1.1rem;
+}
+
+@media (max-width:653px){
+  .container h3 {
+    font-size: 1rem;
+  }
 }

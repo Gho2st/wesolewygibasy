@@ -154,10 +154,9 @@
   }
 }
 
-@media (max-width: 463px) {
+@media (max-width: 467px) {
   .buttonContainer button {
-    font-size: 1rem !important;
-    margin-right: 2rem;
+    font-size: 0.9rem !important;
   }
   .buttonContainer svg {
     display: none;
@@ -173,6 +172,10 @@
 }
 
 @media (max-width: 428px) {
+  .buttonContainer button {
+    font-size: 0.85rem !important;
+    padding: 1rem 1rem !important;
+  }
   .leftContainer h1 {
     font-size: 1.8rem;
   }
@@ -193,15 +196,19 @@
   }
 }
 
+@media (max-width: 389px) {
+  .buttonContainer button {
+    font-size: 0.8rem !important;
+    padding: 1rem 1rem !important;
+  }
+}
+
 @media (max-width: 362px) {
   .leftContainer h1 {
     font-size: 1.7rem;
   }
   .mapContainer {
     min-height: 140px;
-  }
-  .buttonContainer button {
-    font-size: 0.8rem !important;
   }
 }
 @media (max-width: 338px) {
