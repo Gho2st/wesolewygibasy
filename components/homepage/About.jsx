@@ -5,7 +5,7 @@ import { FaCircleCheck } from "react-icons/fa6";
 
 export default function About() {
   return (
-    <div className={classes.container}>
+    <div className={classes.container} id="czytaj-wiecej">
       <div className={classes.imageContainer}>
         <Image
           src={"/others/about4.png"}
@@ -15,7 +15,7 @@ export default function About() {
           alt="logo"
         ></Image>
       </div>
-      <div className={classes.textContainer}>
+      <div className={classes.textContainer} >
         <h2>Poczytaj o Naszej Pracy i Zapisz Swoje Dziecko.</h2>
         <p className={classes.text}>
           Naszym założeniem pedagogicznym jest opieka nad dziećmi na najwyższym

@@ -3,7 +3,7 @@ import classes from "./Places.module.css";
 
 export default function Places() {
   return (
-    <div className={classes.container}>
+    <div className={classes.container} id="placowki">
       <div className={classes.grid}>
         <PlaceItem
           image="/others/sliczna.jpeg"

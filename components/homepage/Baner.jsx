@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../UI/Button";
 import classes from "./Baner.module.css";
 import Image from "next/image";
@@ -16,8 +17,20 @@ export default function Baner() {
             które powstało z pasji, wielkiej troski i miłości do dzieci.
           </p>
           <div className={classes.buttonContainer}>
-            <Button text="Czytaj więcej" background="#FFC858" fontSize="1rem" />
-            <Button text="Nasze placówki" background="#7C99E5" fontSize="1rem" />
+            <Link href="#czytaj-wiecej">
+              <Button
+                text="Czytaj więcej"
+                background="#FFC858"
+                fontSize="1rem"
+              />
+            </Link>
+            <Link href="#placowki">
+              <Button
+                text="Nasze placówki"
+                background="#7C99E5"
+                fontSize="1rem"
+              />
+            </Link>
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ export default function ImagesContainer() {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     cssEase: "linear",
     initialSlide: 0,
     nextArrow: (

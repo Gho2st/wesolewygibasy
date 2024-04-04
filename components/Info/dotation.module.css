@@ -11,12 +11,19 @@
 }
 
 .closeButton{
-  padding: 1rem;
+  padding: 1rem 2rem;
   background: #FA7070;
   color: white;
   font-weight: bold;
+  font-size: 1.1rem;
   border: 0;
   border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.closeButton:hover{
+  scale: 1.05;
+  cursor: pointer;
 }
 
 .innerContainer {

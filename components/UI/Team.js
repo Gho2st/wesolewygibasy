@@ -14,7 +14,7 @@ export default function TeamVetulaniego(props) {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 3000,
     cssEase: "linear",
     initialSlide: 0,
     nextArrow: (
@@ -102,7 +102,7 @@ export function TeamStanczyka(props) {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 3000,
     cssEase: "linear",
     initialSlide: 0,
     nextArrow: (
@@ -194,7 +194,7 @@ export function TeamGlogera(props) {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 3000,
     cssEase: "linear",
     initialSlide: 0,
     nextArrow: (
