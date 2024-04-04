@@ -1,6 +1,6 @@
 .container {
   text-align: center;
-  color: grey;
+  color: rgb(0, 0, 0);
   width: 60%;
   margin: auto;
   margin-top: 5rem;
@@ -124,6 +124,9 @@
   .container {
     margin-top: 5rem;
   }
+  .info p {
+    font-size: 1.25rem;
+  }
 }
 
 @media (max-width: 621px) {
@@ -149,15 +152,15 @@
 
 @media (max-width: 500px) {
   .item p{
-    font-size: 0.98rem;
+    font-size: 1.2rem;
   }
   .itemFacebook p{
-    font-size: 0.98rem;
+    font-size: 1.2rem;
   }
   .info svg {
     margin-right: 1.4rem;
     color: #fa7070;
-    font-size: 1.6rem;
+    font-size: 2.2rem;
   }
   .contactContainer{
     gap: 2.5rem;

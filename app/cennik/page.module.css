@@ -71,13 +71,31 @@
   }
 }
 
-@media (max-width: 448px) {
+@media (max-width: 493px) {
   .pricingContainer h2 {
     font-size: 1.2rem;
   }
 }
-@media (max-width: 423px) {
+@media (max-width: 453px) {
   .pricingContainer h2 {
     font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .pricingContainer h2 {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 391px) {
+  .pricingContainer h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 378px) {
+  .pricingContainer h2 {
+    font-size: 0.95rem;
   }
 }

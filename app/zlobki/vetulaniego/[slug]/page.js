@@ -50,7 +50,9 @@ export default function GaleryPost({ params }) {
   return (
     <>
       <Header />
-      <H1 text={formatSlug(params.slug)} />
+      <div className={classes.header}>
+        <H1 text={formatSlug(params.slug)} />
+      </div>
 
       <div className={classes.container}>{readImages()}</div>
       <Footer />
