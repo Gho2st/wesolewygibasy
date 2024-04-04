@@ -58,7 +58,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1070px) {
   .textContainer h1 {
     font-size: 1.7rem;
   }
@@ -71,6 +71,7 @@
   .banerContainer {
     height: 450px;
     padding: 1rem 5%;
+    width: 90%;
   }
 }
 
@@ -89,15 +90,10 @@
   }
 }
 
-@media (max-width: 725px) {
-  .buttonContainer button {
-    padding: 0.5rem 0.5rem;
-    font-size: 0.8rem !important;
-  }
-}
-@media (max-width: 670px) {
+
+@media (max-width: 684px) {
   .banerContainer {
-    height: 760px;
+    height: 860px;
     flex-direction: column;
     padding: 2rem 9%;
     width: 100%;
@@ -113,8 +109,9 @@
     font-size: 1.1rem;
   }
   .buttonContainer button {
-    padding: 0.7rem 0.5rem;
-    font-size: 0.9rem !important;
+    padding: 0.9rem 1.3rem;
+    font-size: 1rem !important;
+    margin-right: 2rem !important;
   }
   .imageContainer {
     display: flex;
@@ -124,11 +121,11 @@
 }
 @media (max-width: 620px) {
   .banerContainer{
-    height: 670px;
+    height: 720px;
   }
 }
 
-@media (max-width: 433px) {
+@media (max-width: 444px) {
   .banerContainer {
     height: 640px;
     display: flex;
@@ -144,21 +141,24 @@
     font-size: 1.1rem;
   }
   .buttonContainer button {
-    padding: 0.7rem 0.9rem;
+    font-size: 1rem !important;
+    margin-right: 1rem !important;
+  }
+}
+
+@media (max-width: 406px) {
+  .buttonContainer button {
     font-size: 0.9rem !important;
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 381px) {
   .buttonContainer button {
-    padding: 0.7rem 0.9rem;
-    font-size: 0.88rem !important;
+    padding: 0.9rem 0.9rem;
   }
 }
-
 @media (max-width: 350px) {
-  .buttonContainer button {
-    padding: 0.7rem 0.75rem;
-    font-size: 0.85rem !important;
+  .banerContainer{
+    padding: 2rem 5%;
   }
 }

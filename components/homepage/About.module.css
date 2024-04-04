@@ -185,7 +185,6 @@
 @media (max-width: 464px) {
   .item p {
     font-size: 0.8rem;
-    font-weight: bold;
   }
   .imageContainer {
     width: 100%;

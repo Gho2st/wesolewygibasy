@@ -31,7 +31,6 @@ export default function Vetulaniego() {
                   fontSize="1rem"
                 />
                 <Button background="#7C99E5" text="Zapisy" fontSize="1rem" />
-                <FcGoogle />
               </div>
             </div>
             <div className={classes.mapContainer}>

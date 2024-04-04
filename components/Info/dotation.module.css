@@ -3,6 +3,22 @@
   margin-top: 5rem;
 }
 
+.modal{
+  width: 900px;
+  height: 900px;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.closeButton{
+  padding: 1rem;
+  background: #FA7070;
+  color: white;
+  font-weight: bold;
+  border: 0;
+  border-radius: 1rem;
+}
+
 .innerContainer {
   display: flex;
   justify-content: space-between;
@@ -52,6 +68,11 @@
     width: 150px !important;
     height: 90px !important;
   }
+  .modal{
+    width: 600px;
+    height: 600px;
+    
+  }
 }
 
 @media (max-width: 768px) {
@@ -64,6 +85,17 @@
   .innerContainer img {
     width: 140px !important;
     height: 80px !important;
+  }
+}
+
+@media (max-width: 641px) {
+  .modalContent{
+    overflow: scroll;
+  }
+  .modal{
+    width: 90%;
+    height: 90%;
+    margin-top: 5rem;
   }
 }
 

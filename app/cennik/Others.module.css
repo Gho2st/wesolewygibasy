@@ -1,7 +1,10 @@
+.pricingOthers {
+  overflow-x: auto;
+}
 .table {
-  border-collapse: collapse;
   width: 100%;
   margin-top: 2rem;
+  overflow-x: auto; /* Add this line */
 }
 .table td,
 .table th {
@@ -19,8 +22,7 @@
 }
 
 .table th {
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
+  padding: 0.1rem 1rem;
   text-align: center;
   background-color: #2c7865;
   color: white;
@@ -28,11 +30,8 @@
 
 .text {
   margin-top: 1rem;
-  font-size: 0.9rem;
-  color: grey;
-}
-.text p{
-  margin-top: 1rem;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
 }
 .header {
   margin-top: 1rem;
@@ -42,19 +41,12 @@
   margin-bottom: 3rem;
 }
 
-@media (max-width: 800px) {
-  .table {
-    font-size: 0.5rem;
-  }
-}
-
 @media (max-width: 410px) {
   .text {
     font-size: 0.8rem;
   }
-  .header{
+  .header {
     text-align: left;
     font-size: 1rem;
   }
 }
-

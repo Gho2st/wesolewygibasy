@@ -56,6 +56,7 @@ export default function Dotation() {
           isOpen={showModal}
           onRequestClose={handleCloseModal}
           contentLabel="Pełna treść"
+          className={classes.modal}
         >
           <div className={classes.modalContent}>
             <button onClick={handleCloseModal} className={classes.closeButton}>
