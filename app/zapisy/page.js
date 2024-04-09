@@ -1,3 +1,4 @@
+"use client";
 import Header from "@/components/UI/Header";
 import classes from "./page.module.css";
 import Footer from "@/components/UI/Footer";
@@ -9,8 +10,15 @@ import { MdEmail } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";
 import Link from "next/link";
 import { FaCar } from "react-icons/fa";
+import { useState } from "react";
 
 export default function zapisy() {
+  const [isSent, setIsSent] = useState(false);
+
+  const handleFormSubmit = () =>{
+    setIsSent(true)
+  }
+
   return (
     <>
       <Header />
@@ -24,42 +32,39 @@ export default function zapisy() {
         </p>
       </div>
       <div className={classes.contactContainer}>
-        <div className={classes.animals}>
-          <Image
-            src={"/kontakt/animals.png"}
-            height={100}
-            width={100}
-            layout="responsive"
-            alt=""
-          ></Image>
-          <div className={classes.info}>
-            <div className={classes.item}>
-              <FaPhone />
-              <p>576 985 894</p>
-            </div>
-            <div className={classes.item}>
-              <MdEmail />
-              <p>wesolewygibasy@onet.pl</p>
-            </div>
-            <Link href="https://www.facebook.com/wesolewygibasy">
-              <div className={classes.itemFacebook}>
-                <FaFacebook className={classes.facebook} />
-                <p>Napisz na Facebooku!</p>
+        {!isSent && (
+          <div className={classes.animals}>
+            <Image
+              src={"/kontakt/animals.png"}
+              height={100}
+              width={100}
+              layout="responsive"
+              alt=""
+            ></Image>
+            <div className={classes.info}>
+              <div className={classes.item}>
+                <FaPhone />
+                <p>576 985 894</p>
               </div>
-            </Link>
-            <div className={classes.item}>
-              <FaCar />
-              <p>Przyjedź & Zapytaj</p>
+              <div className={classes.item}>
+                <MdEmail />
+                <p>wesolewygibasy@onet.pl</p>
+              </div>
+              <Link href="https://www.facebook.com/wesolewygibasy">
+                <div className={classes.itemFacebook}>
+                  <FaFacebook className={classes.facebook} />
+                  <p>Napisz na Facebooku!</p>
+                </div>
+              </Link>
+              <div className={classes.item}>
+                <FaCar />
+                <p>Przyjedź & Zapytaj</p>
+              </div>
             </div>
           </div>
-        </div>
+        )}
         <div className={classes.text}>
-          <h2>Zostaw Wiadomość</h2>
-          <p>
-            Wypełnij formularz ponizej a my wrócimy do Ciebie z odpowiedzią jak
-            najszybciej to mozliwe!
-          </p>
-          <Form />
+          <Form onFormSubmit={handleFormSubmit} />
         </div>
       </div>
 

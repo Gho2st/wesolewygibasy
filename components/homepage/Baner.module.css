@@ -1,12 +1,13 @@
 .banerContainer {
-  width: 80%;
-  height: 550px;
-  background: #fff4de;
+  width: 100%;
+  height: 100vh;
   margin: auto;
   display: flex;
   padding: 2rem 9%;
-  border-radius: 1rem;
-  margin-top: 4rem;
+  background-image: url("/baner_nowy.png");
+  background-size: 100% 890px;
+  padding-bottom: 0;
+  background-repeat: no-repeat;
 }
 
 .textContainer {
@@ -14,20 +15,21 @@
   width: 60%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 3rem;
 }
 
 .textContainer h1 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 .span {
-  color: #08c6c3;
+  color: #0263ff;
 }
 .textContainer p {
   margin-top: 1.5rem;
-  color: #767573;
+  color: #41403f;
   font-size: 1.1rem;
   width: 85%;
+  word-spacing: 0.01rem;
 }
 .imageContainer {
   display: flex;
@@ -43,6 +45,13 @@
 .wesole {
   color: #fa7070;
   font-weight: bold;
+  font-size: 1.22rem;
+}
+
+@media (max-width: 1460px) {
+  .banerContainer {
+    background-size: 100% 720px;
+  }
 }
 
 @media (max-width: 1252px) {
@@ -54,7 +63,6 @@
   }
   .banerContainer {
     padding: 1.5rem 7%;
-    height: 500px;
   }
 }
 
@@ -69,15 +77,15 @@
     width: 70%;
   }
   .banerContainer {
-    height: 450px;
     padding: 1rem 5%;
-    width: 90%;
   }
 }
 
 @media (max-width: 834px) {
-  .banerContainer{
-    height: 350px;
+  .banerContainer {
+    background-size: cover;
+    height: 600px;
+    background-repeat: no-repeat;
   }
   .buttonContainer button {
     padding: 0.7rem 0.7rem;
@@ -90,8 +98,7 @@
   }
 }
 
-
-@media (max-width: 684px) {
+@media (max-width: 712px) {
   .banerContainer {
     height: 860px;
     flex-direction: column;
@@ -99,7 +106,7 @@
     width: 100%;
     margin-top: 0;
   }
-  .textContainer{
+  .textContainer {
     width: 100%;
   }
   .textContainer h1 {
@@ -120,20 +127,23 @@
   }
 }
 @media (max-width: 620px) {
-  .banerContainer{
+  .banerContainer {
     height: 720px;
+  }
+  .textContainer {
+    margin-top: 1rem;
   }
 }
 
 @media (max-width: 444px) {
   .banerContainer {
-    height: 640px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     padding: 2rem 9%;
     border-radius: 0;
   }
-  
+
   .textContainer h1 {
     font-size: 1.8rem;
   }
@@ -158,7 +168,7 @@
   }
 }
 @media (max-width: 350px) {
-  .banerContainer{
+  .banerContainer {
     padding: 2rem 5%;
   }
 }

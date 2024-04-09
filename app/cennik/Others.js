@@ -18,99 +18,99 @@ export default function Others() {
           </tr>
           <tr>
             <td>Styczeń</td>
-            <td>1512 zł</td>
+            <td>2100 zł</td>
             <td>21</td>
-            <td>665 zł</td>
-            <td>847 zł</td>
-            <td>847 zł</td>
+            <td>735 zł</td>
+            <td>1365 zł</td>
+            <td>965 zł</td>
           </tr>
           <tr>
             <td>Luty</td>
-            <td>1512 zł</td>
+            <td>2100 zł</td>
             <td>21</td>
-            <td>665 zł</td>
-            <td>847 zł</td>
-            <td>847 zł</td>
+            <td>735 zł</td>
+            <td>1365 zł</td>
+            <td>965 zł</td>
           </tr>
           <tr>
             <td>Marzec</td>
-            <td>1512 zł</td>
+            <td>2100 zł</td>
             <td>21</td>
-            <td>665 zł</td>
-            <td>847 zł</td>
-            <td>847 zł</td>
+            <td>735 zł</td>
+            <td>1365 zł</td>
+            <td>965 zł</td>
           </tr>
           <tr>
             <td>Kwiecień</td>
-            <td>1512 zł</td>
+            <td>2100 zł</td>
             <td>21</td>
-            <td>665 zł</td>
-            <td>847 zł</td>
-            <td>847 zł</td>
+            <td>735 zł</td>
+            <td>1365 zł</td>
+            <td>965 zł</td>
           </tr>
           <tr>
             <td>Maj</td>
-            <td>1512 zł</td>
-            <td>21</td>
-            <td>665 zł</td>
-            <td>847 zł</td>
-            <td>847 zł</td>
+            <td>2100 zł</td>
+            <td>20</td>
+            <td>700 zł</td>
+            <td>1400zł</td>
+            <td>1000 zł</td>
           </tr>
           <tr>
             <td>Czerwiec</td>
             <td>1512 zł</td>
-            <td>21</td>
-            <td>665 zł</td>
-            <td>847 zł</td>
-            <td>847 zł</td>
+            <td>20</td>
+            <td>700 zł</td>
+            <td>1400 zł</td>
+            <td>1000 zł</td>
           </tr>
           <tr>
             <td>Lipiec</td>
-            <td>1512 zł</td>
-            <td>21</td>
+            <td>805 zł</td>
+            <td>23</td>
             <td>665 zł</td>
-            <td>847 zł</td>
-            <td>847 zł</td>
+            <td>1295 zł</td>
+            <td>895 zł</td>
           </tr>
           <tr>
             <td>Sierpień</td>
-            <td>1512 zł</td>
-            <td>21</td>
+            <td>2100 zł</td>
+            <td>735</td>
             <td>665 zł</td>
-            <td>847 zł</td>
-            <td>847 zł</td>
+            <td>1365 zł</td>
+            <td>965 zł</td>
           </tr>
           <tr>
             <td>Wrzesień</td>
-            <td>1512 zł</td>
+            <td>2100 zł</td>
             <td>21</td>
-            <td>665 zł</td>
-            <td>847 zł</td>
-            <td>847 zł</td>
+            <td>735 zł</td>
+            <td>1365 zł</td>
+            <td>965 zł</td>
           </tr>
           <tr>
             <td>Październik</td>
-            <td>1512 zł</td>
-            <td>21</td>
-            <td>665 zł</td>
-            <td>847 zł</td>
-            <td>847 zł</td>
+            <td>2100 zł</td>
+            <td>23</td>
+            <td>805 zł</td>
+            <td>1295 zł</td>
+            <td>895 zł</td>
           </tr>
           <tr>
             <td>Listopad</td>
-            <td>1512 zł</td>
-            <td>21</td>
+            <td>2100 zł</td>
+            <td>19</td>
             <td>665 zł</td>
-            <td>847 zł</td>
-            <td>847 zł</td>
+            <td>1435 zł</td>
+            <td>1035 zł</td>
           </tr>
           <tr>
             <td>Grudzień</td>
-            <td>1512 zł</td>
-            <td>21</td>
-            <td>665 zł</td>
-            <td>847 zł</td>
-            <td>847 zł</td>
+            <td>2100 zł</td>
+            <td>20</td>
+            <td>700 zł</td>
+            <td>1400 zł</td>
+            <td>1000 zł</td>
           </tr>
         </tbody>
       </table>

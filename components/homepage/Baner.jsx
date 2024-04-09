@@ -15,12 +15,13 @@ export default function Baner() {
           <p>
             <span className={classes.wesole}>Wesołe Wygibasy</span> to miejsce,
             które powstało z pasji, wielkiej troski i miłości do dzieci.
+            <br></br> <br></br>
+            Dzieci zasługują by myśleć, ze mogą zmienić świat
           </p>
           <div className={classes.buttonContainer}>
             <Link href="#czytaj-wiecej">
               <Button
                 text="Czytaj więcej"
-                background="#FFC858"
                 fontSize="1rem"
               />
             </Link>
@@ -34,7 +35,7 @@ export default function Baner() {
           </div>
         </div>
       </div>
-      <div className={classes.imageContainer}>
+      {/* <div className={classes.imageContainer}>
         <Image
           src={"/others/girl2.png"}
           width={100}
@@ -42,7 +43,7 @@ export default function Baner() {
           layout="responsive"
           alt="małe bawiące się dziecko"
         ></Image>
-      </div>
+      </div> */}
     </div>
   );
 }

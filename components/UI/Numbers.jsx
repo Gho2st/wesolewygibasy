@@ -75,9 +75,9 @@ export default function Numbers() {
       )}
       {isSliczna && (
         <div className={classes.itemContainer}>
-          <h5>Niepubliczny Żłobek ul. Glogera</h5>
+          <h5>Niepubliczny Żłobek ul. Śliczna</h5>
           <p>Nasz numer to:</p>
-          <p className={classes.number}>wkrótce</p>
+          <p className={classes.number}>Wkrótce</p>
         </div>
       )}
     </>

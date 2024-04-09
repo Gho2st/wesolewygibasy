@@ -1,8 +1,7 @@
 .navContainer {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 6%;
-  margin-bottom: 2rem;
+  padding: 0.6rem 4%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -10,13 +9,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 2rem;
+  margin-right: 11rem;
 }
 
 .listContainer li {
   display: inline-block;
   margin-right: 1.5rem; /* Opcjonalne: dodaje odstęp między elementami */
-  font-size: 1.05rem;
+  font-size: 1.08rem;
   font-weight: 500;
 }
 .listContainer li:hover {
@@ -61,6 +60,12 @@
   font-weight: bold;
 }
 
+@media (max-width: 1590px) {
+  .listContainer {
+    margin-right: 3.5rem;
+  }
+}
+
 @media (max-width: 1320px) {
   .burgerMenu {
     display: block;
@@ -73,7 +78,6 @@
   }
   .navContainer {
     padding: 1rem 6%;
-    margin-bottom: 2rem;
   }
 }
 @media (max-width: 990px) {

@@ -3,8 +3,7 @@ import classes from "./Form.module.css";
 import { useState } from "react";
 import Image from "next/image";
 
-
-export default function Form() {
+export default function Form({ onFormSubmit }) {
   const [childAge, setChildAge] = useState("");
   const [text, setText] = useState("");
   const [fullName, setFullName] = useState("");
@@ -65,6 +64,7 @@ export default function Form() {
         setPhoneNumber("");
         setStartDate(null);
         setSelectedLocation("");
+        onFormSubmit();
       } else {
         const errorData = await response.json();
         setFormError(`Error: ${errorData.message}`);
@@ -79,6 +79,11 @@ export default function Form() {
     <>
       {!formSubmitted ? (
         <div className={classes.containerLeft}>
+          <h2>Zostaw Wiadomość</h2>
+          <p>
+            Wypełnij formularz ponizej a my wrócimy do Ciebie z odpowiedzią jak
+            najszybciej to mozliwe!
+          </p>
           {formError && <p style={{ color: "red" }}>{formError}</p>}
           <form onSubmit={sendMail} className={classes.form}>
             <div className={classes.item}>
@@ -206,22 +211,23 @@ export default function Form() {
         </div>
       ) : (
         <div>
-          {" "}
           <h3 className={classes.header3}>
             Dziękuję za przesłanie formularza!
           </h3>
           <p className={classes.text}>
-            <span>{fullName}</span> - Oto kwiatki dla Ciebie w zamian za
-            wiadomość - wirtualnie, ale z sercem! Postaram się odpowiedzieć tak
-            szybko, jak to możliwe, aby kwiatki nie zwiędły.
+            Oto butelka mleczka dla Ciebie w zamian za wiadomość - wirtualnie,
+            ale z sercem! Postaramy się odpowiedzieć tak szybko, jak to możliwe,
+            aby nadal było smaczne.
           </p>
-          <Image
-            src={"/dziekuje.png"}
-            width={200}
-            height={200}
-            layout="responsive"
-            alt="Moj avatar trzymajacy kwiaty"
-          />
+          <div className={classes.thanks}>
+            <Image
+              src={"/others/dziekuje.png"}
+              width={200}
+              height={200}
+              layout="responsive"
+              alt="Podziekowanie za wiadomosc"
+            />
+          </div>
         </div>
       )}
     </>
