@@ -59,7 +59,9 @@ export default function Footer() {
         </div>
         <div className={classes.facebook}>
           <h5>Social media</h5>
-          <FaFacebook />
+          <Link href="https://www.facebook.com/wesolewygibasy">
+            <FaFacebook />
+          </Link>
         </div>
       </div>
       <div className={classes.footerDownContainer}>
