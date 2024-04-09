@@ -154,6 +154,26 @@ export default function ImagesContainer() {
           src="/galeria/glogera/zyczenia/zyczenia.jpeg"
           text="Życzenia"
         />
+        <ImagesItem
+          href="/zlobki/glogera/uczymy-sie-kolorow"
+          src="/galeria/glogera/uczymy-sie-kolorow.jpeg"
+          text="Uczymy się kolorów"
+        />
+        <ImagesItem
+          href="/zlobki/glogera/nasi-marcowi-jubilaci"
+          src="/galeria/glogera/nasi-marcowi-jubilaci/nasi-marcowi-jubilaci.jpeg"
+          text="Nasi marcowi Jubilaci"
+        />
+        <ImagesItem
+          href="/zlobki/glogera/pani-wiosna"
+          src="/galeria/glogera/pani-wiosna/pani-wiosna.jpeg"
+          text="Pani Wiosna"
+        />
+        <ImagesItem
+          href="/zlobki/glogera/dbamy-o-zabki"
+          src="/galeria/glogera/dbamy-o-zabki/dbamy-o-zabki.jpeg"
+          text="Dbamy o Ząbki"
+        />
       </Slider>
     </div>
   );

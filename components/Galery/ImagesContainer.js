@@ -144,6 +144,46 @@ export default function ImagesContainer() {
           text="Zajęcia Kulinarne"
           href="/zlobki/stanczyka/zajecia-kulinarne"
         />
+        <ImagesItem
+          src="/galeria/stanczyka/dzien-wiosennych-porzadkow/dzien-wiosennych-porzadkow.jpg"
+          text="Dzień Wiosennych Porządków"
+          href="/zlobki/stanczyka/zajecia-kulinarne"
+        />
+        <ImagesItem
+          src="/galeria/stanczyka/dzien-wiosennych-porzadkow/dzien-wiosennych-porzadkow.jpg"
+          text="Dzień Wiosennych Porządków"
+          href="/zlobki/stanczyka/dzien-wiosennych-porzadkow"
+        />
+        <ImagesItem
+          src="/galeria/stanczyka/maly-ogrodnik/maly-ogrodnik.jpg"
+          text="Mały Ogrodnik"
+          href="/zlobki/stanczyka/maly-ogrodnik"
+        />
+        <ImagesItem
+          src="/galeria/stanczyka/angielski/angielski.jpg"
+          text="Angielski"
+          href="/zlobki/stanczyka/angielski"
+        />
+        <ImagesItem
+          src="/galeria/stanczyka/dzien-pandy/dzien-pandy.jpg"
+          text="Dzień Pandy"
+          href="/zlobki/stanczyka/dzien-pandy"
+        />
+        <ImagesItem
+          src="/galeria/stanczyka/dbamy-o-zabki/dbamy-o-zabki.jpg"
+          text="Dbamy o ząbki"
+          href="/zlobki/stanczyka/dbamy-o-zabki"
+        />
+        <ImagesItem
+          src="/galeria/stanczyka/uczymy-sie-kolorow/uczymy-sie-kolorow.jpg"
+          text="Uczymy się kolorów"
+          href="/zlobki/stanczyka/uczymy-sie-kolorow"
+        />
+        <ImagesItem
+          src="/galeria/stanczyka/nasi-marcowi-jubilaci/nasi-marcowi-jubilaci.jpg"
+          text="Nasi Marcowi Jubilaci"
+          href="/zlobki/stanczyka/nasi-marcowi-jubilaci"
+        />
       </Slider>
     </div>
   );

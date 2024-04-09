@@ -139,6 +139,36 @@ export default function ImagesVetulaniego() {
           src="/galeria/vetulaniego/walentynki/walentynki.jpg"
           text="Walentynki"
         />
+        <ImagesItem
+          href="/zlobki/vetulaniego/motylkowo"
+          src="/galeria/vetulaniego/motylkowo/motylkowo.jpg"
+          text="Motylkowo"
+        />
+        <ImagesItem
+          href="/zlobki/vetulaniego/dbamy-o-zabki"
+          src="/galeria/vetulaniego/dbamy-o-zabki.jpg"
+          text="Dbamy o Ząbki"
+        />
+        <ImagesItem
+          href="/zlobki/vetulaniego/zegnamy-zime"
+          src="/galeria/vetulaniego/zegnamy-zime/zegnamy-zime.jpg"
+          text="Żegnamy Zimę"
+        />
+        <ImagesItem
+          href="/zlobki/vetulaniego/swieta-wielkanocne"
+          src="/galeria/vetulaniego/swieta-wielkanocne/swieta-wielkanocne.jpg"
+          text="Święta Wielkanocne"
+        />
+        <ImagesItem
+          href="/zlobki/vetulaniego/wiosna"
+          src="/galeria/vetulaniego/wiosna/wiosna.jpg"
+          text="Wiosna"
+        />
+        <ImagesItem
+          href="/zlobki/vetulaniego/maly-ogrodnik"
+          src="/galeria/vetulaniego/maly-ogrodnik/maly-ogrodnik.jpg"
+          text="Mały Ogrodnik"
+        />
       </Slider>
     </div>
   );

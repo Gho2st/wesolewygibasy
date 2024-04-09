@@ -22,7 +22,7 @@ export default function Header() {
         <div className={classes.navContainer}>
           <Link href="/">
             <div className={classes.logoContainer}>
-              <Image src={"/others/logo.png"} width={130} height={75} alt="logo"></Image>
+              <Image src={"/others/logo.png"} width={130} height={85} alt="logo"></Image>
             </div>
           </Link>
           <div className={classes.burgerContainer}>
