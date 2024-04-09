@@ -40,7 +40,7 @@ export default function Footer() {
           <h5>Kontakt z Nami i Zapisy</h5>
           <ul className={classes.contactInfo}>
             <li>
-              <FaPhone /> 576 985 894
+              <FaPhone /> 697 560 022
             </li>
             <li>
               <MdEmail /> wesole.wygibasy@onet.pl

@@ -44,7 +44,7 @@ export default function Zapisy() {
             <div className={classes.info}>
               <div className={classes.item}>
                 <FaPhone />
-                <p>576 985 894</p>
+                <p>697 560 022</p>
               </div>
               <div className={classes.item}>
                 <MdEmail />
