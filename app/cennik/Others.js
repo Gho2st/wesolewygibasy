@@ -115,7 +115,7 @@ export default function Others() {
         </tbody>
       </table>
       <h3 className={classes.header}>
-        Placówka realizuje równiez świadczenia ZUS z programu 400+{" "}
+        Placówka realizuje równiez świadczenia ZUS z programu 400+
       </h3>
       <div className={classes.text}>
         <p>
@@ -126,7 +126,7 @@ export default function Others() {
         </p>
         <p>
           W dniu zawarcia umowy Rodzic/Opiekun Prawny zobowiązany jest do
-          wniesienia opłaty wpisowej (administracyjnej) w wysokości 550,00 zł
+          wniesienia opłaty wpisowej (administracyjnej) w wysokości 600,00 zł
           (słownie: pięćset pięćdziesiąt złotych)
         </p>
         <p>
