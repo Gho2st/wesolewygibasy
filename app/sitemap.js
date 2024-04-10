@@ -19,6 +19,12 @@ export default function sitemap() {
         priority: 0.8,
       },
       {
+        url: 'https://wesolewygibasy.pl/adaptacja',
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.8,
+      },
+      {
         url: 'https://wesolewygibasy.pl/plan-dnia',
         lastModified: new Date(),
         changeFrequency: 'weekly',
