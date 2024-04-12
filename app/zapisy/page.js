@@ -15,9 +15,9 @@ import { useState } from "react";
 export default function Zapisy() {
   const [isSent, setIsSent] = useState(false);
 
-  const handleFormSubmit = () =>{
-    setIsSent(true)
-  }
+  const handleFormSubmit = () => {
+    setIsSent(true);
+  };
 
   return (
     <>
@@ -32,37 +32,35 @@ export default function Zapisy() {
         </p>
       </div>
       <div className={classes.contactContainer}>
-        {!isSent && (
-          <div className={classes.animals}>
-            <Image
-              src={"/kontakt/animals.png"}
-              height={100}
-              width={100}
-              layout="responsive"
-              alt=""
-            ></Image>
-            <div className={classes.info}>
-              <div className={classes.item}>
-                <FaPhone />
-                <p>697 560 022</p>
+        <div className={classes.animals}>
+          <Image
+            src={"/kontakt/animals.png"}
+            height={100}
+            width={100}
+            layout="responsive"
+            alt=""
+          ></Image>
+          <div className={classes.info}>
+            <div className={classes.item}>
+              <FaPhone />
+              <p>697 560 022</p>
+            </div>
+            <div className={classes.item}>
+              <MdEmail />
+              <p>wesolewygibasy@onet.pl</p>
+            </div>
+            <Link href="https://www.facebook.com/wesolewygibasy">
+              <div className={classes.itemFacebook}>
+                <FaFacebook className={classes.facebook} />
+                <p>Napisz na Facebooku!</p>
               </div>
-              <div className={classes.item}>
-                <MdEmail />
-                <p>wesolewygibasy@onet.pl</p>
-              </div>
-              <Link href="https://www.facebook.com/wesolewygibasy">
-                <div className={classes.itemFacebook}>
-                  <FaFacebook className={classes.facebook} />
-                  <p>Napisz na Facebooku!</p>
-                </div>
-              </Link>
-              <div className={classes.item}>
-                <FaCar />
-                <p>Przyjedź & Zapytaj</p>
-              </div>
+            </Link>
+            <div className={classes.item}>
+              <FaCar />
+              <p>Przyjedź & Zapytaj</p>
             </div>
           </div>
-        )}
+        </div>
         <div className={classes.text}>
           <Form onFormSubmit={handleFormSubmit} />
         </div>

@@ -188,6 +188,9 @@ export default function Form({ onFormSubmit }) {
               <option value="Żłobek, Kraków ul. Stańczyka 8/LU3">
                 Żłobek, Kraków ul. Stańczyka 8/LU3
               </option>
+              <option value="Żłobek, Kraków ul. Śliczna 36">
+                Żłobek, Kraków ul. Śliczna 36
+              </option>
             </select>
             <label htmlFor="text">Dodatkowe pytania:</label>
             <textarea

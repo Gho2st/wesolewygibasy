@@ -169,3 +169,8 @@
     margin-bottom: 0;
   }
 }
+@media (max-width:977px){
+  .animals img{
+    display: none;
+  }
+}

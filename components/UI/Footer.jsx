@@ -43,7 +43,7 @@ export default function Footer() {
               <FaPhone /> 697 560 022
             </li>
             <li>
-              <MdEmail /> wesole.wygibasy@onet.pl
+              <MdEmail /> wesolewygibasy@onet.pl
             </li>
             <li className={classes.form}>
               <Link href="/zapisy">
