@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../UI/Button";
 import classes from "./About.module.css";
 import Image from "next/image";
@@ -15,7 +16,7 @@ export default function About() {
           alt="logo"
         ></Image>
       </div>
-      <div className={classes.textContainer} >
+      <div className={classes.textContainer}>
         <h2>Poczytaj o Naszej Pracy i Zapisz Swoje Dziecko.</h2>
         <p className={classes.text}>
           Naszym założeniem pedagogicznym jest opieka nad dziećmi na najwyższym
@@ -25,31 +26,45 @@ export default function About() {
         <div className={classes.itemContainer}>
           <div className={classes.item}>
             <div className={classes.checkContainer}>
-              <FaCircleCheck className={classes.icon} style={{color:"#FDCB56"}} />
+              <FaCircleCheck
+                className={classes.icon}
+                style={{ color: "#FDCB56" }}
+              />
             </div>
             <p>Wykwalifikowana Kadra</p>
           </div>
           <div className={classes.item}>
             <div className={classes.checkContainer}>
-              <FaCircleCheck className={classes.icon} style={{color:"#7C9BE6"}} />
+              <FaCircleCheck
+                className={classes.icon}
+                style={{ color: "#7C9BE6" }}
+              />
             </div>
             <p>Czas na zabawę</p>
           </div>
           <div className={classes.item}>
             <div className={classes.checkContainer}>
-              <FaCircleCheck className={classes.icon} style={{color:"#04C9C8"}} />
+              <FaCircleCheck
+                className={classes.icon}
+                style={{ color: "#04C9C8" }}
+              />
             </div>
             <p>Bezpieczeństwo</p>
           </div>
           <div className={classes.item}>
             <div className={classes.checkContainer}>
-              <FaCircleCheck className={classes.icon} style={{color:"#FC7E05"}} />
+              <FaCircleCheck
+                className={classes.icon}
+                style={{ color: "#FC7E05" }}
+              />
             </div>
             <p>Rodzinna atmosfera</p>
           </div>
         </div>
         <div className={classes.contactInfoContainer}>
-          <Button text="O nas" fontSize="0.9rem" />
+          <Link href="/o-nas">
+            <Button text="O nas" fontSize="0.9rem" />
+          </Link>
           <div className={classes.ownerContainer}>
             <Image
               className={classes.aga}

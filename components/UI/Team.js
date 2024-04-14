@@ -259,25 +259,25 @@ export function TeamGlogera(props) {
           src="/team/glogera/klaudia.jpeg"
           name="Klaudia Bednarska"
           role="Opiekunka Dziecięca"
-          quote="Cytat."
+          quote=""
         />
         <TeamMember
           src="/team/glogera/karolina.jpeg"
           name="Karolina Bryłka"
           role="Opiekunka Dziecięca"
-          quote="cytat"
+          quote=""
         />
         <TeamMember
           src="/team/glogera/ewelina.jpeg"
           name="Ewelina Bryła"
           role="Opiekunka Dziecięca"
-          quote="cytat."
+          quote=""
         />
         <TeamMember
           src="/team/glogera/iga.jpeg"
           name="Iga prazmo"
           role="Opiekunka Dziecięca"
-          quote="cytat."
+          quote=""
         />
       </Slider>
     </div>
