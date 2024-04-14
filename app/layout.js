@@ -1,6 +1,7 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import ScrollToTopButton from "@/components/UI/ScrollToTheTop";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pl">
       <body className={montserrat.className}>
+      <ScrollToTopButton/>
         {children}
         <Analytics />
       </body>
