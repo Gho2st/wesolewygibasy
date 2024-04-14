@@ -74,7 +74,7 @@ export default function About() {
               alt="zdjęcie profilowe Agnieszki Ciołkowskiej - właścicielki Wesołych Wygibasów"
             ></Image>
             <div className={classes.phoneContainer}>
-              <p className={classes.phone}>576 985 894</p>
+              <p className={classes.phone}>697 560 022</p>
               <p className={classes.ownerDescription}>
                 Właścicielka Wesołych Wygibasów.
               </p>
