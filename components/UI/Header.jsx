@@ -5,6 +5,7 @@ import classes from "./Header.module.css";
 import Image from "next/image";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { motion } from "framer-motion";
 
 export default function Header() {
   const [isBurgerMenuVisible, setIsBurgerMenuVisible] = useState(false);
@@ -20,11 +21,18 @@ export default function Header() {
     <>
       <nav>
         <div className={classes.navContainer}>
-          <Link href="/">
-            <div className={classes.logoContainer}>
-              <Image src={"/others/logo.png"} width={130} height={85} alt="logo"></Image>
-            </div>
-          </Link>
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
+            <Link href="/">
+              <div className={classes.logoContainer}>
+                <Image
+                  src={"/others/logo.png"}
+                  width={130}
+                  height={85}
+                  alt="logo"
+                ></Image>
+              </div>
+            </Link>
+          </motion.div>
           <div className={classes.burgerContainer}>
             <RxHamburgerMenu
               onClick={clickHandler}

@@ -21,10 +21,12 @@
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
+  padding-bottom: 5rem;
 }
 
 .text {
   width: 60%;
+  margin-top: 3rem;
 }
 
 .text p {
@@ -34,6 +36,7 @@
 
 .imageContainer {
   text-align: center;
+  width: 30%;
 }
 
 .imageContainer h2 {
@@ -58,6 +61,7 @@
   color: #fa7070;
 }
 
+
 @media (max-width: 1380px) {
   .imageContainer {
     width: 35%;
@@ -78,6 +82,7 @@
   }
   .info {
     flex-direction: column-reverse;
+    padding-bottom: 0rem;
   }
 }
 
