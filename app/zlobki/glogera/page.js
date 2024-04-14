@@ -51,25 +51,17 @@ export default function Glogera() {
       </div>
       <div className={classes.container}>
         <p className={classes.description}>
-          Klub Malucha Wesołe Wygibasy to <span> kameralny żłobek </span>
-          mieszczący się w domu jednorodzinnym z ogrodem. <br></br> <br></br>{" "}
-          Największą zaletą naszego Klubu są warunki jakie zapewniamy dzieciom.
-          W Klubie przebywają dzieci w wieku 1 do 3 lat. Grupa liczy 20 dzieci
-          na
-          <span> 3-4 opiekujące się ciocie. </span> Stawiamy na dobrą opiekę,
-          dzieci są u Nas zadbane, najedzone, szczęśliwe i bardzo kochane.
-          Ponieważ opiekunek jest sporo <span> dzieci </span> są
-          <span> traktowane indywidualnie </span> i zawsze znajdują
-          <span> czas na rozmowę </span> z dzieckiem. <br></br> <br></br>
-          <span> Wesołe Wygibasy </span>to nie tylko fantastyczne zajęcia dla
-          dzieci. To <span>edukacja, integracja i zabawa. </span> Wesołe
-          Wygibasy posiadają spory ogród z placem zabaw (ogród znajduje się na
-          tyłach budynku z dala od zgiełku, w otoczeniu drzew iglastych). Dzieci
-          wychodzą również na spacery na pobliskie łąki. Dysponujemy
-          klimatyzacją z funkcją oczyszczania powietrza..!! <br></br> <br></br>{" "}
-          Zapraszamy do zajrzenia do zakładki „O nas” gdzie opowiemy dokładnie
-          jakimi wartościami kierujemy się w opiece nad dziećmi oraz przybliżymy
-          Państwu wizerunki naszych opiekunów.
+          Niepubliczny żłobek <span> WESOŁE WYGIBASY </span> 👨‍👩‍👧‍👦 ul. Glogera 53/LU2 to nasza
+          druga placówka. Wpis do rejestru żłobków i klubów malucha uzyskaliśmy
+          1 czerwca 2021 Lokal przy Glogera był dobrze znany okolicznym
+          rodzinom, ponieważ do marca 2021 znajdowała się tam znana i lubiana
+          sala zabaw Kamyczki Patyczki. 14 czerwca pierwsze dzieciaczki już
+          zostały pod troskliwą opieką cioci Ewy, Wiktorii i Agnieszki. Lokal ma
+          124 m2, sala zabaw to 94 m2 urządzone w spokojnych pastelowych,
+          kolorach przypominających pokój dziecięcy, gdzie maluchy mają się czuć
+          bezpiecznie. Do żłobka przynależy również ogródek, gdzie dzieci
+          spędzają czas bawiąc się na placu zabaw. Oprócz sali zabaw dzieci mają
+          do dyspozycji łazienkę i szatnie. Zapraszamy 👋"
         </p>
 
         <div className={classes.buttonContainer}>
