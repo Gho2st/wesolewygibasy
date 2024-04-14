@@ -57,7 +57,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 50%;
 }
+
 
 .container h1 {
   color: rgb(0, 0, 0);

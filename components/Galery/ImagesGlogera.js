@@ -156,22 +156,22 @@ export default function ImagesContainer() {
         />
         <ImagesItem
           href="/zlobki/glogera/uczymy-sie-kolorow"
-          src="/galeria/glogera/uczymy-sie-kolorow.jpeg"
+          src="/galeria/glogera/uczymy-sie-kolorow/uczymy-sie-kolorow.jpg"
           text="Uczymy się kolorów"
         />
         <ImagesItem
           href="/zlobki/glogera/nasi-marcowi-jubilaci"
-          src="/galeria/glogera/nasi-marcowi-jubilaci/nasi-marcowi-jubilaci.jpeg"
+          src="/galeria/glogera/nasi-marcowi-jubilaci/nasi-marcowi-jubilaci.jpg"
           text="Nasi marcowi Jubilaci"
         />
         <ImagesItem
           href="/zlobki/glogera/pani-wiosna"
-          src="/galeria/glogera/pani-wiosna/pani-wiosna.jpeg"
+          src="/galeria/glogera/pani-wiosna/pani-wiosna.jpg"
           text="Pani Wiosna"
         />
         <ImagesItem
           href="/zlobki/glogera/dbamy-o-zabki"
-          src="/galeria/glogera/dbamy-o-zabki/dbamy-o-zabki.jpeg"
+          src="/galeria/glogera/dbamy-o-zabki/dbamy-o-zabki.jpg"
           text="Dbamy o Ząbki"
         />
       </Slider>
