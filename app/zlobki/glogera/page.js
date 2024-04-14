@@ -51,17 +51,17 @@ export default function Glogera() {
       </div>
       <div className={classes.container}>
         <p className={classes.description}>
-          Niepubliczny żłobek <span> WESOŁE WYGIBASY </span> ul. Glogera 53/LU2 to nasza
-          druga placówka. Wpis do rejestru żłobków i klubów malucha uzyskaliśmy
-          1 czerwca 2021 Lokal przy Glogera był dobrze znany okolicznym
-          rodzinom, ponieważ do marca 2021 znajdowała się tam znana i lubiana
-          sala zabaw Kamyczki Patyczki. 14 czerwca pierwsze dzieciaczki już
-          zostały pod troskliwą opieką cioci Ewy, Wiktorii i Agnieszki. Lokal ma
-          124 m2, sala zabaw to 94 m2 urządzone w spokojnych pastelowych,
-          kolorach przypominających pokój dziecięcy, gdzie maluchy mają się czuć
-          bezpiecznie. Do żłobka przynależy również ogródek, gdzie dzieci
-          spędzają czas bawiąc się na placu zabaw. Oprócz sali zabaw dzieci mają
-          do dyspozycji łazienkę i szatnie. Zapraszamy!"
+          Niepubliczny żłobek <span> WESOŁE WYGIBASY </span> ul. Glogera 53/LU2
+          to nasza druga placówka. Wpis do rejestru żłobków i klubów malucha
+          uzyskaliśmy 1 czerwca 2021 Lokal przy Glogera był dobrze znany
+          okolicznym rodzinom, ponieważ do marca 2021 znajdowała się tam znana i
+          lubiana sala zabaw Kamyczki Patyczki. 14 czerwca pierwsze dzieciaczki
+          już zostały pod troskliwą opieką cioci Ewy, Wiktorii i Agnieszki.
+          Lokal ma 124 m2, sala zabaw to 94 m2 urządzone w spokojnych
+          pastelowych, kolorach przypominających pokój dziecięcy, gdzie maluchy
+          mają się czuć bezpiecznie. Do żłobka przynależy również ogródek, gdzie
+          dzieci spędzają czas bawiąc się na placu zabaw. Oprócz sali zabaw
+          dzieci mają do dyspozycji łazienkę i szatnie. Zapraszamy!
         </p>
 
         <div className={classes.buttonContainer}>
