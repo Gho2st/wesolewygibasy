@@ -19,14 +19,6 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
   },
-  images: [
-    {
-      url: "/opengraph.image.png",
-      width: 1400,
-      height: 1600,
-      alt: "opengraph image",
-    },
-  ],
 };
 
 export default function RootLayout({ children }) {
