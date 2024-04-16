@@ -16,9 +16,6 @@ export const metadata = {
   },
   description:
     "Żłobek Wesołe Wygibasy w Krakowie, poznaj cennik, jadłospis, kadrę. Zobacz harmonogram i godziny otwarcia. Dotacja maluch +",
-  twitter: {
-    card: "summary_large_image",
-  },
 };
 
 export default function RootLayout({ children }) {
