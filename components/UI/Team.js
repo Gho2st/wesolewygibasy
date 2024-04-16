@@ -275,7 +275,7 @@ export function TeamGlogera(props) {
         />
         <TeamMember
           src="/team/glogera/iga.jpeg"
-          name="Iga prazmo"
+          name="Iga Prażmo"
           role="Opiekunka Dziecięca"
           quote=""
         />

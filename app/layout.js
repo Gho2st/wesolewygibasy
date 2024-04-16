@@ -12,19 +12,28 @@ const montserrat = Montserrat({
 export const metadata = {
   title: {
     default: "Żłobek Wesołe Wygibasy w Krakowie",
-    template: "%s - Żłobek Wesołe Wygibasy w Krakowie"
+    template: "%s - Żłobek Wesołe Wygibasy w Krakowie",
   },
-  description: "Żłobek Wesołe Wygibasy w Krakowie, poznaj cennik, jadłospis, kadrę. Zobacz harmonogram i godziny otwarcia. Dotacja maluch +",
+  description:
+    "Żłobek Wesołe Wygibasy w Krakowie, poznaj cennik, jadłospis, kadrę. Zobacz harmonogram i godziny otwarcia. Dotacja maluch +",
   twitter: {
-    card: "summary_large_image"
-  }
+    card: "summary_large_image",
+  },
+  images: [
+    {
+      url: "/opengraph.image.png",
+      width: 1400,
+      height: 1600,
+      alt: "opengraph image",
+    },
+  ],
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="pl">
       <body className={montserrat.className}>
-      <ScrollToTopButton/>
+        <ScrollToTopButton />
         {children}
         <Analytics />
       </body>
