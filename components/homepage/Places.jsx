@@ -13,7 +13,7 @@ export default function Places() {
           street="Wkrótce otwarcie!"
           add="Projekt Maluch+ 2022-2029"
           color="#fa7070"
-          link="zlobki/sliczna"
+          link="zlobek-na-ulicy-slicznej"
         />
         <PlaceItem
           image="/others/stanczyka.jpg"
@@ -21,7 +21,7 @@ export default function Places() {
           title="Niepubliczny Żłobek"
           location="Żłobek, Kraków"
           street="ul. Stańczyka 8/LU3"
-          link="zlobki/stanczyka"
+          link="zlobek-na-ulicy-stanczyka"
           add="Projekt Maluch+ 2022-2029"
         />
         <PlaceItem
@@ -30,7 +30,7 @@ export default function Places() {
           title="Niepubliczny Żłobek"
           location="Żłobek, Kraków"
           street="ul .Glogera 53/LU2"
-          link="zlobki/glogera"
+          link="zlobek-na-ulicy-glogera"
         />
         <PlaceItem
           image="/others/vetulaniego.jpg"
@@ -38,7 +38,7 @@ export default function Places() {
           title="Klub Malucha"
           location="Żłobek, Kraków"
           street="ul. Vetulaniego 8"
-          link="zlobki/vetulaniego"
+          link="zlobek-na-ulicy-vetulaniego"
         />
       </div>
     </div>

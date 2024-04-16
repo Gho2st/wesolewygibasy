@@ -60,112 +60,112 @@ export default function ImagesVetulaniego() {
     <div className={classes.container}>
       <Slider {...carouselSettings} className={classes.slider}>
         <ImagesItem
-          href="/zlobki/vetulaniego/angielski"
+          href="/zlobek-na-ulicy-vetulaniego/angielski"
           src="/galeria/vetulaniego/angielski/angielski.jpg"
           text="Angielski"
         />
         <ImagesItem
-          href="/zlobki/vetulaniego/choinka"
+          href="/zlobek-na-ulicy-vetulaniego/choinka"
           src="/galeria/vetulaniego/choinka/choinka.jpeg"
           text="Choinka"
         />
         <ImagesItem
-          href="/zlobki/vetulaniego/dogoterapia"
+          href="/zlobek-na-ulicy-vetulaniego/dogoterapia"
           src="/galeria/vetulaniego/dogoterapia/dogoterapia.jpg"
           text="Dogoterapia"
         />
         <ImagesItem
-          href="/zlobki/vetulaniego/dzien-niepodleglosci"
+          href="/zlobek-na-ulicy-vetulaniego/dzien-niepodleglosci"
           src="/galeria/vetulaniego/dzien-niepodleglosci/dzien-niepodleglosci.jpeg"
           text="Dzień niepodległości"
         />
         <ImagesItem
-          href="/zlobki/vetulaniego/dzien-pizzy"
+          href="/zlobek-na-ulicy-vetulaniego/dzien-pizzy"
           src="/galeria/vetulaniego/dzien-pizzy/dzien-pizzy.jpg"
           text="Dzień Pizzy"
         />
         <ImagesItem
-          href="/zlobki/vetulaniego/dzien-spaghetti"
+          href="/zlobek-na-ulicy-vetulaniego/dzien-spaghetti"
           src="/galeria/vetulaniego/dzien-spaghetti/dzien-spaghetti.jpeg"
           text="Dzień Spaghetti"
         />
         <ImagesItem
-          href="/zlobki/vetulaniego/gordonki"
+          href="/zlobek-na-ulicy-vetulaniego/gordonki"
           src="/galeria/vetulaniego/gordonki/gordonki.jpg"
           text="Gordonki"
         />
         <ImagesItem
-          href="/zlobki/vetulaniego/kolory"
+          href="/zlobek-na-ulicy-vetulaniego/kolory"
           src="/galeria/vetulaniego/kolory/kolory.jpg"
           text="Kolory"
         />
         <ImagesItem
-          href="/zlobki/vetulaniego/logopedia"
+          href="/zlobek-na-ulicy-vetulaniego/logopedia"
           src="/galeria/vetulaniego/logopedia/logopedia.jpg"
           text="Logopedia"
         />
         <ImagesItem
-          href="/zlobki/vetulaniego/muzyka-klasyczna"
+          href="/zlobek-na-ulicy-vetulaniego/muzyka-klasyczna"
           src="/galeria/vetulaniego/muzyka-klasyczna/muzyka-klasyczna.jpeg"
           text="Muzyka Klasyczna"
         />
         <ImagesItem
-          href="/zlobki/vetulaniego/pierniczki"
+          href="/zlobek-na-ulicy-vetulaniego/pierniczki"
           src="/galeria/vetulaniego/pierniczki/pierniczki.jpeg"
           text="Pierniczki"
         />
         <ImagesItem
-          href="/zlobki/vetulaniego/prezenciki"
+          href="/zlobek-na-ulicy-vetulaniego/prezenciki"
           src="/galeria/vetulaniego/prezenciki/prezenciki.jpeg"
           text="Prezenciki"
         />
         <ImagesItem
-          href="/zlobki/vetulaniego/sniezne-zabawy"
+          href="/zlobek-na-ulicy-vetulaniego/sniezne-zabawy"
           src="/galeria/vetulaniego/sniezne-zabawy/sniezne-zabawy.jpeg"
           text="Śniezne Zabawy"
         />
         <ImagesItem
-          href="/zlobki/vetulaniego/spacerek"
+          href="/zlobek-na-ulicy-vetulaniego/spacerek"
           src="/galeria/vetulaniego/spacerek/spacerek.jpeg"
           text="Spacerek"
         />
         <ImagesItem
-          href="/zlobki/vetulaniego/tlusty-czwartek"
+          href="/zlobek-na-ulicy-vetulaniego/tlusty-czwartek"
           src="/galeria/vetulaniego/tlusty-czwartek/tlusty-czwartek.jpg"
           text="Tłusty Czwartek"
         />
         <ImagesItem
-          href="/zlobki/vetulaniego/walentynki"
+          href="/zlobek-na-ulicy-vetulaniego/walentynki"
           src="/galeria/vetulaniego/walentynki/walentynki.jpg"
           text="Walentynki"
         />
         <ImagesItem
-          href="/zlobki/vetulaniego/motylkowo"
+          href="/zlobek-na-ulicy-vetulaniego/motylkowo"
           src="/galeria/vetulaniego/motylkowo/motylkowo.jpg"
           text="Motylkowo"
         />
         <ImagesItem
-          href="/zlobki/vetulaniego/dbamy-o-zabki"
+          href="/zlobek-na-ulicy-vetulaniego/dbamy-o-zabki"
           src="/galeria/vetulaniego/dbamy-o-zabki.jpg"
           text="Dbamy o Ząbki"
         />
         <ImagesItem
-          href="/zlobki/vetulaniego/zegnamy-zime"
+          href="/zlobek-na-ulicy-vetulaniego/zegnamy-zime"
           src="/galeria/vetulaniego/zegnamy-zime/zegnamy-zime.jpg"
           text="Żegnamy Zimę"
         />
         <ImagesItem
-          href="/zlobki/vetulaniego/swieta-wielkanocne"
+          href="/zlobek-na-ulicy-vetulaniego/swieta-wielkanocne"
           src="/galeria/vetulaniego/swieta-wielkanocne/swieta-wielkanocne.jpg"
           text="Święta Wielkanocne"
         />
         <ImagesItem
-          href="/zlobki/vetulaniego/wiosna"
+          href="/zlobek-na-ulicy-vetulaniego/wiosna"
           src="/galeria/vetulaniego/wiosna/wiosna.jpg"
           text="Wiosna"
         />
         <ImagesItem
-          href="/zlobki/vetulaniego/maly-ogrodnik"
+          href="/zlobek-na-ulicy-vetulaniego/maly-ogrodnik"
           src="/galeria/vetulaniego/maly-ogrodnik/maly-ogrodnik.jpg"
           text="Mały Ogrodnik"
         />

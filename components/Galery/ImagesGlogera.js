@@ -60,117 +60,117 @@ export default function ImagesContainer() {
     <div className={classes.container}>
       <Slider {...carouselSettings} className={classes.slider}>
         <ImagesItem
-          href="/zlobki/glogera/angielski"
+          href="/zlobek-na-ulicy-glogera/angielski"
           src="/galeria/glogera/angielski/angielski.jpg"
           text="Angielski"
         />
         <ImagesItem
-          href="/zlobki/glogera/balwanki"
+          href="/zlobek-na-ulicy-glogera/balwanki"
           src="/galeria/glogera/balwanki/balwanki.jpeg"
           text="Bałwanki"
         />
         <ImagesItem
-          href="/zlobki/glogera/czapki-i-maski"
+          href="/zlobek-na-ulicy-glogera/czapki-i-maski"
           src="/galeria/glogera/czapki-i-maski/czapki-i-maski.jpeg"
           text="Czapki i Maski"
         />
         <ImagesItem
-          href="/zlobki/glogera/deszczowa-chmura"
+          href="/zlobek-na-ulicy-glogera/deszczowa-chmura"
           src="/galeria/glogera/deszczowa-chmura/deszczowa-chmura.jpeg"
           text="Deszczowa Chmura"
         />
         <ImagesItem
-          href="/zlobki/glogera/dogoterapia"
+          href="/zlobek-na-ulicy-glogera/dogoterapia"
           src="/galeria/glogera/dogoterapia/dogoterapia.jpg"
           text="Dogoterapia"
         />
         <ImagesItem
-          href="/zlobki/glogera/dzien-pizzy"
+          href="/zlobek-na-ulicy-glogera/dzien-pizzy"
           src="/galeria/glogera/dzien-pizzy/dzien-pizzy.jpg"
           text="Dzień Pizzy"
         />
         <ImagesItem
-          href="/zlobki/glogera/dzien-przyjazni"
+          href="/zlobek-na-ulicy-glogera/dzien-przyjazni"
           src="/galeria/glogera/dzien-przyjazni/dzien-przyjazni.jpg"
           text="Dzień Przyjaźni"
         />
         <ImagesItem
-          href="/zlobki/glogera/kolorowe-kredki"
+          href="/zlobek-na-ulicy-glogera/kolorowe-kredki"
           src="/galeria/glogera/kolorowe-kredki/kolorowe-kredki.jpeg"
           text="Kolorowe Kredki"
         />
         <ImagesItem
-          href="/zlobki/glogera/kuleczki-babeczki"
+          href="/zlobek-na-ulicy-glogera/kuleczki-babeczki"
           src="/galeria/glogera/kuleczki-babeczki/kuleczki-babeczki.jpg"
           text="Kuleczki i Babeczki"
         />
         <ImagesItem
-          href="/zlobki/glogera/mikolaj"
+          href="/zlobek-na-ulicy-glogera/mikolaj"
           src="/galeria/glogera/mikolaj/mikolaj.jpeg"
           text="Mikołaj"
         />
         <ImagesItem
-          href="/zlobki/glogera/muzyka-klasyczna"
+          href="/zlobek-na-ulicy-glogera/muzyka-klasyczna"
           src="/galeria/glogera/muzyka-klasyczna/muzyka-klasyczna.jpeg"
           text="Muzyka Klasyczna"
         />
         <ImagesItem
-          href="/zlobki/glogera/nalesniki"
+          href="/zlobek-na-ulicy-glogera/nalesniki"
           src="/galeria/glogera/nalesniki/nalesniki.jpg"
           text="Naleśniki"
         />
         <ImagesItem
-          href="/zlobki/glogera/pani-choinka"
+          href="/zlobek-na-ulicy-glogera/pani-choinka"
           src="/galeria/glogera/pani-choinka/pani-choinka.jpeg"
           text="Pani Choinka"
         />
         <ImagesItem
-          href="/zlobki/glogera/pierniczki"
+          href="/zlobek-na-ulicy-glogera/pierniczki"
           src="/galeria/glogera/pierniczki/pierniczki.jpeg"
           text="Pierniczki"
         />
         <ImagesItem
-          href="/zlobki/glogera/ptaszki-zima"
+          href="/zlobek-na-ulicy-glogera/ptaszki-zima"
           src="/galeria/glogera/ptaszki-zima/ptaszki-zima.jpeg"
           text="Ptaszki Zimą"
         />
         <ImagesItem
-          href="/zlobki/glogera/rytmika"
+          href="/zlobek-na-ulicy-glogera/rytmika"
           src="/galeria/glogera/rytmika/rytmika.jpg"
           text="Rytmika"
         />
         <ImagesItem
-          href="/zlobki/glogera/ulubiona-zabawa"
+          href="/zlobek-na-ulicy-glogera/ulubiona-zabawa"
           src="/galeria/glogera/ulubiona-zabawa/ulubiona-zabawa.jpeg"
           text="Ulubiona Zabawa"
         />
         <ImagesItem
-          href="/zlobki/glogera/zimowa-kraina"
+          href="/zlobek-na-ulicy-glogera/zimowa-kraina"
           src="/galeria/glogera/zimowa-kraina/zimowa-kraina.jpeg"
           text="Zimowa Kraina"
         />
         <ImagesItem
-          href="/zlobki/glogera/zyczenia"
+          href="/zlobek-na-ulicy-glogera/zyczenia"
           src="/galeria/glogera/zyczenia/zyczenia.jpeg"
           text="Życzenia"
         />
         <ImagesItem
-          href="/zlobki/glogera/uczymy-sie-kolorow"
+          href="/zlobek-na-ulicy-glogera/uczymy-sie-kolorow"
           src="/galeria/glogera/uczymy-sie-kolorow/uczymy-sie-kolorow.jpg"
           text="Uczymy się kolorów"
         />
         <ImagesItem
-          href="/zlobki/glogera/nasi-marcowi-jubilaci"
+          href="/zlobek-na-ulicy-glogera/nasi-marcowi-jubilaci"
           src="/galeria/glogera/nasi-marcowi-jubilaci/nasi-marcowi-jubilaci.jpg"
           text="Nasi marcowi Jubilaci"
         />
         <ImagesItem
-          href="/zlobki/glogera/pani-wiosna"
+          href="/zlobek-na-ulicy-glogera/pani-wiosna"
           src="/galeria/glogera/pani-wiosna/pani-wiosna.jpg"
           text="Pani Wiosna"
         />
         <ImagesItem
-          href="/zlobki/glogera/dbamy-o-zabki"
+          href="/zlobek-na-ulicy-glogera/dbamy-o-zabki"
           src="/galeria/glogera/dbamy-o-zabki/dbamy-o-zabki.jpg"
           text="Dbamy o Ząbki"
         />

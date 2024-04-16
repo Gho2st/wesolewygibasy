@@ -5,7 +5,11 @@ import Image from "next/image";
 import Team, { TeamGlogera, TeamStanczyka } from "@/components/UI/Team";
 import TeamVetulaniego from "@/components/UI/Team";
 import { FaPeopleGroup } from "react-icons/fa6";
+import { Metadata } from "next";
 
+export const metadata = {
+  title: "O nas",
+};
 
 export default function oNas() {
   return (

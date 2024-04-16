@@ -2,6 +2,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import ScrollToTopButton from "@/components/UI/ScrollToTheTop";
+import { Metadata } from "next";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -9,8 +10,14 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Żłobki Wesołe Wygibasy - Kraków",
-  description: "Odkryj naszą wyjątkową ofertę żłobków w Krakowie dla dzieci w wieku 1-3 lat. Profesjonalna opieka, bezpieczne środowisko i edukacyjne programy. Zapewnij swojemu dziecku najlepszy start w życie już dziś!",
+  title: {
+    default: "Żłobek Wesołe Wygibasy w Krakowie",
+    template: "%s - Żłobek Wesołe Wygibasy w Krakowie"
+  },
+  description: "Żłobek Wesołe Wygibasy w Krakowie, poznaj cennik, jadłospis, kadrę. Zobacz harmonogram i godziny otwarcia. Dotacja maluch +",
+  twitter: {
+    card: "summary_large_image"
+  }
 };
 
 export default function RootLayout({ children }) {

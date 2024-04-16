@@ -2,16 +2,19 @@ import Header from "@/components/UI/Header";
 import classes from "./page.module.css";
 import Footer from "@/components/UI/Footer";
 import H1 from "@/components/UI/H1";
-import ImagesContainer from "@/components/Galery/ImagesContainer";
 import Image from "next/image";
-import { FaSun } from "react-icons/fa";
 import Button from "@/components/UI/Button";
 import Link from "next/link";
 import DaySchedule from "@/components/Info/DaySchedule";
 import { FcGoogle } from "react-icons/fc";
-import PlaceItem from "@/components/UI/PlaceItem";
+import ImagesGlogera from "@/components/Galery/ImagesGlogera";
+import { Metadata } from "next";
 
-export default function sliczna() {
+export const metadata = {
+  title: "Żłobek na Ulicy Glogera",
+};
+
+export default function Glogera() {
   return (
     <>
       <Header />
@@ -19,9 +22,9 @@ export default function sliczna() {
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
-              <h1>Wesołe Wygibasy Śliczna</h1>
+              <h1>Wesołe Wygibasy Glogera</h1>
               <p>
-                Żłobek, Kraków <br></br> <span> Ulica Śliczna 36A </span>
+                Żłobek, Kraków <br></br> <span> Ulica Glogera 53/LU2 </span>
               </p>
               <div className={classes.buttonContainer}>
                 <Button
@@ -34,7 +37,7 @@ export default function sliczna() {
             </div>
             <div className={classes.mapContainer}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.7235912933816!2d19.971400476463828!3d50.07273797152256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b12ffd809d1%3A0xb7bd3a74fd82210c!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy!5e0!3m2!1spl!2spl!4v1711814374339!5m2!1spl!2spl"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.0746082710157!2d19.92382417646559!3d50.103610471528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b8cf00937ed%3A0x39479b7e727e42d3!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy!5e0!3m2!1spl!2spl!4v1711815664167!5m2!1spl!2spl"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
@@ -42,7 +45,7 @@ export default function sliczna() {
           </div>
           <div className={classes.image}>
             <Image
-              src={"/others/sliczna.png"}
+              src={"/others/glogera.png"}
               height={400}
               width={900}
               layout="responsive"
@@ -53,23 +56,19 @@ export default function sliczna() {
       </div>
       <div className={classes.container}>
         <p className={classes.description}>
-          <span>Niepubliczny żłobek</span> WESOŁE WYGIBASY ul. Śliczna 36A jest
-          naszą <span> czwartą placówką.</span>
-          <br></br>
-          <br></br>
-          Już od dłuższego czasu poszukiwaliśmy lokalu w naszej okolicy, aby móc
-          opiekować się jeszcze większą liczbą dzieci. <br></br> <br></br>
-          Dzieciaczki już zostaną pod troskliwą opieką. Urządzony jest w
-          spokojnych pastelowych kolorach przypominających pokój dziecięcy,
-          gdzie maluchy mają się czuć bezpiecznie. <br></br>
-          <br></br> Placówka wyposażona jest w klimatyzację oraz rekuperację co
-          gwarantuje dzieciom przebywanie w oczyszczonym powietrzu.
-          <br></br>
+          Niepubliczny żłobek <span> WESOŁE WYGIBASY </span> ul. Glogera 53/LU2
+          to nasza druga placówka. Wpis do rejestru żłobków i klubów malucha
+          uzyskaliśmy 1 czerwca 2021 Lokal przy Glogera był dobrze znany
+          okolicznym rodzinom, ponieważ do marca 2021 znajdowała się tam znana i
+          lubiana sala zabaw Kamyczki Patyczki. 14 czerwca pierwsze dzieciaczki
+          już zostały pod troskliwą opieką cioci Ewy, Wiktorii i Agnieszki.
+          Lokal ma 124 m2, sala zabaw to 94 m2 urządzone w spokojnych
+          pastelowych, kolorach przypominających pokój dziecięcy, gdzie maluchy
+          mają się czuć bezpiecznie. Do żłobka przynależy również ogródek, gdzie
+          dzieci spędzają czas bawiąc się na placu zabaw. Oprócz sali zabaw
+          dzieci mają do dyspozycji łazienkę i szatnie. Zapraszamy!
         </p>
-        <h3>
-          Czesne w całości pokrywane z projektu maluch + 2022 2029 oraz dotacji
-          urzędu miasta Kraków
-        </h3>
+
         <div className={classes.buttonContainer}>
           <Link href="/cennik">
             <Button text="Cennik & Jadłospis" fontSize="1rem" />
@@ -94,7 +93,7 @@ export default function sliczna() {
             wydarzenia i chwile z życia maluszków w naszej placówce.
           </p>
 
-          <ImagesContainer />
+          <ImagesGlogera />
         </div>
       </div>
       <Footer />

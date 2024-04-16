@@ -2,6 +2,11 @@ import Header from "@/components/UI/Header";
 import classes from "./page.module.css";
 import Footer from "@/components/UI/Footer";
 import Places from "@/components/homepage/Places";
+import { Metadata } from "next";
+
+export const metadata = {
+  title: "Galeria",
+};
 export default function galeria() {
   return (
     <>

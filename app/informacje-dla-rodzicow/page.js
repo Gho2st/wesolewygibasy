@@ -3,6 +3,11 @@ import classes from "./page.module.css";
 import Header from "@/components/UI/Header";
 import Footer from "@/components/UI/Footer";
 import Button from "@/components/UI/Button";
+import { Metadata } from "next";
+
+export const metadata = {
+  title: "Informacje dla Rodziców",
+};
 
 export default function informacje() {
   const handleDownloadInformativeClause = () => {

@@ -10,19 +10,23 @@ import Link from "next/link";
 import DaySchedule from "@/components/Info/DaySchedule";
 import { FcGoogle } from "react-icons/fc";
 import PlaceItem from "@/components/UI/PlaceItem";
-import ImagesVetulaniego from "@/components/Galery/ImagesVetulaniego";
+import { Metadata } from "next";
 
-export default function Vetulaniego() {
+export const metadata = {
+  title: "Żłobek na Ulicy Stańczyka",
+};
+export default function stanczyka() {
   return (
     <>
       <Header />
+
       <div className={classes.outsideContainer}>
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
-              <h1>Wesołe Wygibasy Vetulaniego</h1>
+              <h1>Wesołe Wygibasy Stańczyka</h1>
               <p>
-                Żłobek, Kraków <br></br> <span> Ulica Vetulaniego 8 </span>
+                Żłobek, Kraków <br></br> <span> Ulica Stańczyka 8/LU3 </span>
               </p>
               <div className={classes.buttonContainer}>
                 <Button
@@ -35,47 +39,50 @@ export default function Vetulaniego() {
             </div>
             <div className={classes.mapContainer}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.531008552978!2d19.922438176465064!3d50.09506707152642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a446e9d3211%3A0x2479f81b021d9154!2s%C5%BB%C5%82obek%20Klub%20Malucha%20-%20Weso%C5%82e%20Wygibasy!5e0!3m2!1spl!2spl!4v1711815573472!5m2!1spl!2spl"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20483.285915179342!2d19.857841410839853!3d50.07859630000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b0b843d4ce5%3A0xfe8741522eb108da!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy%203%20Bronowice!5e0!3m2!1spl!2spl!4v1711475564872!5m2!1spl!2spl"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
           </div>
-
           <div className={classes.image}>
             <Image
-              src={"/others/vetulaniego.png"}
+              src={"/others/dzieci7.png"}
               height={400}
               width={900}
-              alt=""
               layout="responsive"
+              alt=""
             />
           </div>
         </div>
       </div>
       <div className={classes.container}>
         <p className={classes.description}>
-          Klub Malucha Wesołe Wygibasy to <span> kameralny żłobek </span>
-          mieszczący się w domu jednorodzinnym z ogrodem. <br></br> <br></br>{" "}
-          Największą zaletą naszego Klubu są warunki jakie zapewniamy dzieciom.
-          W Klubie przebywają dzieci w wieku 1 do 3 lat. Grupa liczy 20 dzieci
-          na
-          <span> 3-4 opiekujące się ciocie. </span> Stawiamy na dobrą opiekę,
-          dzieci są u Nas zadbane, najedzone, szczęśliwe i bardzo kochane.
-          Ponieważ opiekunek jest sporo <span> dzieci </span> są
-          <span> traktowane indywidualnie </span> i zawsze znajdują
-          <span> czas na rozmowę </span> z dzieckiem. <br></br> <br></br>
-          <span> Wesołe Wygibasy </span>to nie tylko fantastyczne zajęcia dla
-          dzieci. To <span>edukacja, integracja i zabawa. </span> Wesołe
-          Wygibasy posiadają spory ogród z placem zabaw (ogród znajduje się na
-          tyłach budynku z dala od zgiełku, w otoczeniu drzew iglastych). Dzieci
-          wychodzą również na spacery na pobliskie łąki. Dysponujemy
-          klimatyzacją z funkcją oczyszczania powietrza..!! <br></br> <br></br>{" "}
-          Zapraszamy do zajrzenia do zakładki „O nas” gdzie opowiemy dokładnie
-          jakimi wartościami kierujemy się w opiece nad dziećmi oraz przybliżymy
-          Państwu wizerunki naszych opiekunów.
+          <span>Niepubliczny żłobek</span> WESOŁE WYGIBASY ul. Stańczyka 8/LU3
+          jest naszą <span> trzecią placówką.</span>
+          <br></br>
+          Wpis do rejestru żłobków i klubów malucha uzyskamy 1 czerwca 2023
+          (czyż nie cudowna data – w sam raz na dzień dziecka) Dokładnie 2 lata
+          po naszej 2 placówce. <br></br> <br></br> Już od dłuższego czasu
+          poszukiwaliśmy lokalu w naszej okolicy, aby móc opiekować się jeszcze
+          większą liczbą dzieci. <br></br> <br></br>
+          Dzieciaczki już zostaną pod troskliwą opieką cioci Beatki, Kasi i
+          Agnieszki. Żłobek składa się z 2 sal zabaw dla dzieci ( dwie grupy
+          wiekowe ) szatni, łazienki dla dzieci oraz kuchni. Urządzony jest w
+          spokojnych pastelowych kolorach przypominających pokój dziecięcy,
+          gdzie maluchy mają się czuć bezpiecznie. <br></br>
+          <br></br> Placówka wyposażona jest w klimatyzację oraz rekuperację co
+          gwarantuje dzieciom przebywanie w oczyszczonym powietrzu.
+          <br></br>
+          <br></br> Żłobek został odebrany przez sanepid oraz straż pożarną na
+          29 dzieci w wieku 8 miesięcy – 36 miesięcy. <br></br>
+          <br></br> Docelowo w żłobku będzie pracować 5 opiekunów. Serdecznie
+          zapraszamy.
         </p>
-
+        <h3>
+          Czesne w całości pokrywane z projektu maluch + 2022 2029 oraz dotacji
+          urzędu miasta Kraków
+        </h3>
         <div className={classes.buttonContainer}>
           <Link href="/cennik">
             <Button text="Cennik & Jadłospis" fontSize="1rem" />
@@ -100,7 +107,7 @@ export default function Vetulaniego() {
             wydarzenia i chwile z życia maluszków w naszej placówce.
           </p>
 
-          <ImagesVetulaniego />
+          <ImagesContainer />
         </div>
       </div>
       <Footer />

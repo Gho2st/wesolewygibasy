@@ -12,7 +12,7 @@ import Link from "next/link";
 import { FaCar } from "react-icons/fa";
 import { useState } from "react";
 
-export default function Zapisy() {
+export default function Contact() {
   const [isSent, setIsSent] = useState(false);
 
   const handleFormSubmit = () => {

@@ -48,26 +48,26 @@ export default function Header() {
                 <Link href="/galeria">Galeria</Link>
               </li>
               <li>
-                <Link href="/cennik">Cennik & Jadłospis</Link>
+                <Link href="/cennik-i-jadlospis-w-zlobku">Cennik & Jadłospis</Link>
               </li>
               <li>
-                <Link href="/plan-dnia">Plan Dnia</Link>
+                <Link href="/plan-dnia-w-zlobku">Plan Dnia</Link>
               </li>
               <li>
-                <Link href="/adaptacja">Adaptacja</Link>
+                <Link href="/jak-przebiega-adaptacja-w-zlobku">Adaptacja</Link>
               </li>
               <li>
                 <Link href="/o-nas">O nas</Link>
               </li>
               <li>
-                <Link href="/informacje">Informacje</Link>
+                <Link href="/informacje-dla-rodzicow">Informacje</Link>
               </li>
             </ul>
           )}
 
           {!isBurgerMenuVisible && (
             <div className={classes.buttonContainer}>
-              <Link href="/zapisy">
+              <Link href="/zapisy-i-formularz-kontaktowy">
                 <Button text="Zapisy" fontSize="1rem" />
               </Link>
             </div>
@@ -83,22 +83,22 @@ export default function Header() {
                 <Link href="/galeria">Galeria</Link>
               </li>
               <li>
-                <Link href="/cennik">Cennik & Jadłospis</Link>
+                <Link href="/cennik-i-jadlospis-w-zlobku">Cennik & Jadłospis</Link>
               </li>
               <li>
-                <Link href="/plan-dnia">Plan Dnia</Link>
+                <Link href="/plan-dnia-w-zlobku">Plan Dnia</Link>
               </li>
               <li>
-                <Link href="/adaptacja">Adaptacja</Link>
+                <Link href="/jak-przebiega-adaptacja-w-zlobku">Adaptacja</Link>
               </li>
               <li>
                 <Link href="/o-nas">O nas</Link>
               </li>
               <li>
-                <Link href="/informacje">Informacje</Link>
+                <Link href="/informacje-dla-rodzicow">Informacje</Link>
               </li>
             </ul>
-            <Link href="/zapisy" className={classes.buttonMobile}>
+            <Link href="/zapisy-i-formularz-kontaktowy" className={classes.buttonMobile}>
               <Button text="Zapisy" fontSize="1.5rem" />
             </Link>
           </div>

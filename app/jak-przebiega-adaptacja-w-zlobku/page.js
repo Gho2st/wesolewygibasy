@@ -3,20 +3,17 @@ import H1 from "@/components/UI/H1";
 import Header from "@/components/UI/Header";
 import classes from "./page.module.css";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata = {
+  title: "Adaptacja",
+};
 export default function adaptacja() {
   return (
     <>
       <Header />
       <div className={classes.container}>
         <H1 text="Adaptacja" />
-        {/* <div className={classes.imageContainer}>
-          <Image
-            src={"/others/adaptacja.png"}
-            width={100}
-            height={100}
-            layout="responsive"
-          />
-        </div> */}
         <p>
           Adaptacja jest w moim pedagogicznym podejściu do opieki nad dziećmi
           tematem bardzo istotnym. Tak naprawdę to nie wyobrażam sobie aby tej

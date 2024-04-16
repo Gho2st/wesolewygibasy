@@ -5,9 +5,13 @@ import classes from "./page.module.css";
 import H1 from "@/components/UI/H1";
 import Header from "@/components/UI/Header";
 import Footer from "@/components/UI/Footer";
+import { Metadata } from "next";
 
+export const generateMetadata = ({ params }) => ({
+  title: `Galeria z wydarzenia ${params.slug}`,
+});
 export default function GaleryPost({ params }) {
-  const galeryPath = "/galeria/stanczyka/" + params.slug + "/";
+  const galeryPath = "/galeria/glogera/" + params.slug + "/";
   const directoryPath = path.join(process.cwd(), "public", galeryPath); // Sciezka do folderu z obrazami
 
   // Funkcja do zamiany pierwszej litery na wielką i zamiany pauz na spacje
