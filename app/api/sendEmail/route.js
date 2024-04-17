@@ -3,9 +3,25 @@ import nodemailer from "nodemailer";
 
 export async function POST(request) {
   try {
-    const { childAge, text, fullName, email, phoneNumber, startDate, selectedLocation } = await request.json();
+    const {
+      childAge,
+      text,
+      fullName,
+      email,
+      phoneNumber,
+      startDate,
+      selectedLocation,
+    } = await request.json();
 
-    if (!childAge || !email || !text || !phoneNumber || !startDate || !selectedLocation || !fullName ) {
+    if (
+      !childAge ||
+      !email ||
+      !text ||
+      !phoneNumber ||
+      !startDate ||
+      !selectedLocation ||
+      !fullName
+    ) {
       return NextResponse.json(
         { message: "All fields are required" },
         { status: 400 }
@@ -25,7 +41,7 @@ export async function POST(request) {
 
     const mailOption = {
       from: "biosite.praca@gmail.com",
-      to: "wesolewygibasy@onet.pl",
+      to: "dominik.jojczyk@gmail.com",
       subject: "Email ze strony Wesołe Wygibasy od klienta",
       html: `
         <h2>Wiadomosc od klienta ze strony Wesołe Wygibasy</h2>
