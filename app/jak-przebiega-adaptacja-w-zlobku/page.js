@@ -7,6 +7,9 @@ import { Metadata } from "next";
 
 export const metadata = {
   title: "Adaptacja",
+  alternates: {
+    canonical: "/jak-przebiega-adaptacja-w-zlobku",
+  },
 };
 export default function adaptacja() {
   return (

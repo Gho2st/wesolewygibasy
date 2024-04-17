@@ -12,6 +12,9 @@ import { Metadata } from "next";
 
 export const metadata = {
   title: "Żłobek na Ulicy Glogera",
+  alternates: {
+    canonical: "/zlobek-na-ulicy-glogera",
+  },
 };
 
 export default function Glogera() {

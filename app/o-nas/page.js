@@ -9,6 +9,9 @@ import { Metadata } from "next";
 
 export const metadata = {
   title: "O nas",
+  alternates: {
+    canonical: "/o-nas",
+  },
 };
 
 export default function oNas() {

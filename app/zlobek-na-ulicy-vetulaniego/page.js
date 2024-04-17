@@ -15,6 +15,9 @@ import { Metadata } from "next";
 
 export const metadata = {
   title: "Żłobek na Ulicy Vetulaniego",
+  alternates: {
+    canonical: "/zlobek-na-ulicy-vetulaniego",
+  },
 };
 export default function Vetulaniego() {
   return (

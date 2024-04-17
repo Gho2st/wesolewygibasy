@@ -9,6 +9,9 @@ import { Metadata } from "next";
 
 export const generateMetadata = ({ params }) => ({
   title: `Galeria z wydarzenia ${params.slug}`,
+  alternates: {
+    canonical: `/zlobek-na-ulicy-glogera/${params.slug}`,
+  },
 });
 export default function GaleryPost({ params }) {
   const galeryPath = "/galeria/glogera/" + params.slug + "/";

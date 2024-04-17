@@ -6,6 +6,9 @@ import { Metadata } from "next";
 
 export const metadata = {
   title: "Plan Dnia",
+  alternates: {
+    canonical: "/plan-dnia-w-zlobku",
+  },
 };
 export default function plan() {
   return (
