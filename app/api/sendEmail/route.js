@@ -41,7 +41,7 @@ export async function POST(request) {
 
     const mailOption = {
       from: "biosite.praca@gmail.com",
-      to: "dominik.jojczyk@gmail.com",
+      to: "wesolewygibasy@onet.pl",
       subject: "Email ze strony Wesołe Wygibasy od klienta",
       html: `
         <h2>Wiadomosc od klienta ze strony Wesołe Wygibasy</h2>
