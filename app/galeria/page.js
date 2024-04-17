@@ -6,6 +6,9 @@ import { Metadata } from "next";
 
 export const metadata = {
   title: "Galeria",
+  alternates: {
+    canonical: "/galeria",
+  },
 };
 export default function galeria() {
   return (
