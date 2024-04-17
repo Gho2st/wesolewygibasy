@@ -10,12 +10,19 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://wesolewygibasy.pl"),
   title: {
-    default: "Żłobek Wesołe Wygibasy w Krakowie",
-    template: "%s - Żłobek Wesołe Wygibasy w Krakowie",
+    default: "Żłobek dla Dzieci Wesołe Wygibasy w Krakowie",
+    template: "%s - Żłobek Wesołe dla Dzieci Wygibasy w Krakowie",
   },
   description:
-    "Żłobek Wesołe Wygibasy w Krakowie, poznaj cennik, jadłospis, kadrę. Zobacz harmonogram i godziny otwarcia. Żłobek dotowany z programu maluch+.",
+    "Żłobki dla dzieci Wesołe Wygibasy w Krakowie, poznaj cennik, jadłospis, kadrę. Zobacz harmonogram i godziny otwarcia. Sprawdź jak przebiega adaptacja. Żłobek dotowany z programu maluch+.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    images: "/opengraph-image.png",
+  },
 };
 
 export default function RootLayout({ children }) {
