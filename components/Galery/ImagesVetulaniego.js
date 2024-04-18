@@ -146,7 +146,7 @@ export default function ImagesVetulaniego() {
         />
         <ImagesItem
           href="/zlobek-na-ulicy-vetulaniego/dbamy-o-zabki"
-          src="/galeria/vetulaniego/dbamy-o-zabki.jpg"
+          src="/galeria/vetulaniego/dbamy-o-zabki/dbamy-o-zabki.jpg"
           text="Dbamy o Ząbki"
         />
         <ImagesItem

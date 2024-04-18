@@ -105,7 +105,7 @@ export default function ImagesContainer() {
           href="/zlobek-na-ulicy-stanczyka/dzien-niepodleglosci"
         />
         <ImagesItem
-          src="/galeria/stanczyka/Dzien-puchatka/Dzien-puchatka.jpeg"
+          src="/galeria/stanczyka/Dzien-Puchatka/Dzien-Puchatka.jpeg"
           text="Dzień Puchatka"
           href="/zlobek-na-ulicy-stanczyka/Dzien-Puchatka"
         />
