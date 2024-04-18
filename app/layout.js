@@ -12,7 +12,7 @@ const montserrat = Montserrat({
 export const metadata = {
   metadataBase: new URL("https://wesolewygibasy.pl"),
   title: {
-    default: "Żłobek dla Dzieci w Krakowie",
+    default: "Żłobek dla Dzieci w Krakowie - Wesołe Wygibasy",
     template: "%s - Wesołe Wygibasy Kraków",
   },
   description:
