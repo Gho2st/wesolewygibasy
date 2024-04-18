@@ -32,12 +32,16 @@ export default function stanczyka() {
                 Żłobek, Kraków <br></br> <span> Ulica Stańczyka 8/LU3 </span>
               </p>
               <div className={classes.buttonContainer}>
-                <Button
-                  background="#FFC858"
-                  text="Czytaj Więcej"
-                  fontSize="1rem"
-                />
-                <Button background="#7C99E5" text="Zapisy" fontSize="1rem" />
+                <Link href="/o-nas">
+                  <Button
+                    background="#FFC858"
+                    text="Czytaj Więcej"
+                    fontSize="1rem"
+                  />
+                </Link>
+                <Link href="/zapisy-i-formularz-kontaktowy">
+                  <Button background="#7C99E5" text="Zapisy" fontSize="1rem" />
+                </Link>
               </div>
             </div>
             <div className={classes.mapContainer}>
@@ -60,7 +64,7 @@ export default function stanczyka() {
         </div>
       </div>
       <div className={classes.container}>
-        <p className={classes.description}>
+        <p className={classes.description} id="czytaj-wiecej">
           <span>Niepubliczny żłobek</span> WESOŁE WYGIBASY ul. Stańczyka 8/LU3
           jest naszą <span> trzecią placówką.</span>
           <br></br>
@@ -87,10 +91,10 @@ export default function stanczyka() {
           urzędu miasta Kraków
         </h3>
         <div className={classes.buttonContainer}>
-          <Link href="/cennik">
+          <Link href="/cennik-i-jadlospis-w-zlobku">
             <Button text="Cennik & Jadłospis" fontSize="1rem" />
           </Link>
-          <Link href="/zapisy">
+          <Link href="/zapisy-i-formularz-kontaktowy">
             <Button
               text="Zapisz Dziecko"
               fontSize="1rem"

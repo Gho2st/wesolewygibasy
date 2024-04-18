@@ -31,12 +31,16 @@ export default function sliczna() {
                 Żłobek, Kraków <br></br> <span> Ulica Śliczna 36A </span>
               </p>
               <div className={classes.buttonContainer}>
-                <Button
-                  background="#FFC858"
-                  text="Czytaj Więcej"
-                  fontSize="1rem"
-                />
-                <Button background="#7C99E5" text="Zapisy" fontSize="1rem" />
+                <Link href="/o-nas">
+                  <Button
+                    background="#FFC858"
+                    text="Czytaj Więcej"
+                    fontSize="1rem"
+                  />
+                </Link>
+                <Link href="/zapisy-i-formularz-kontaktowy">
+                  <Button background="#7C99E5" text="Zapisy" fontSize="1rem" />
+                </Link>
               </div>
             </div>
             <div className={classes.mapContainer}>
@@ -78,10 +82,10 @@ export default function sliczna() {
           urzędu miasta Kraków
         </h3>
         <div className={classes.buttonContainer}>
-          <Link href="/cennik">
+          <Link href="/cennik-i-jadlospis-w-zlobku">
             <Button text="Cennik & Jadłospis" fontSize="1rem" />
           </Link>
-          <Link href="/zapisy">
+          <Link href="/zapisy-i-formularz-kontaktowy">
             <Button
               text="Zapisz Dziecko"
               fontSize="1rem"
