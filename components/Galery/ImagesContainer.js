@@ -122,7 +122,7 @@ export default function ImagesContainer() {
         <ImagesItem
           src="/galeria/stanczyka/muzyczny-swiat/muzyczny-swiat.jpeg"
           text="Muzyczny Świat"
-          href="/zlobek-na-ulicy-stanczyka/muzyczny-świat"
+          href="/zlobek-na-ulicy-stanczyka/muzyczny-swiat"
         />
         <ImagesItem
           src="/galeria/stanczyka/pingwinki/pingwinki.jpeg"
