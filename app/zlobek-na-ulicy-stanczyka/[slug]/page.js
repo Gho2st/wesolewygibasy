@@ -8,7 +8,7 @@ import Footer from "@/components/UI/Footer";
 import { Metadata } from "next";
 
 export const generateMetadata = ({ params }) => ({
-  title: `Galeria z wydarzenia ${params.slug}`,
+  title: `${params.slug.replace(/-/g, " ")}`,
   alternates: {
     canonical: `/zlobek-na-ulicy-stanczyka/${params.slug}`,
   },
