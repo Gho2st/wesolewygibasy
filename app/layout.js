@@ -13,7 +13,7 @@ export const metadata = {
   metadataBase: new URL("https://wesolewygibasy.pl"),
   title: {
     default: "Żłobek dla Dzieci w Krakowie",
-    template: "%s - Wesołe Wygibasy",
+    template: "%s - Wesołe Wygibasy Kraków",
   },
   description:
     "Żłobki dla dzieci Wesołe Wygibasy w Krakowie, poznaj cennik, jadłospis, kadrę. Zobacz harmonogram i godziny otwarcia. Sprawdź jak przebiega adaptacja. Żłobek dotowany z programu maluch+.",
