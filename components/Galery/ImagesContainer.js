@@ -65,8 +65,8 @@ export default function ImagesContainer() {
           text="Spotkanie z Mikołajem"
         />
         <ImagesItem
-          href="/zlobek-na-ulicy-stanczyka/Dzien-Guzika"
-          src="/galeria/stanczyka/Dzien-Guzika/Dzien-Guzika.jpeg"
+          href="/zlobek-na-ulicy-stanczyka/dzien-guzika"
+          src="/galeria/stanczyka/dzien-guzika/dzien-guzika.jpeg"
           text="Dzień Guzika"
         />
         <ImagesItem
@@ -105,9 +105,9 @@ export default function ImagesContainer() {
           href="/zlobek-na-ulicy-stanczyka/dzien-niepodleglosci"
         />
         <ImagesItem
-          src="/galeria/stanczyka/Dzien-Puchatka/Dzien-Puchatka.jpeg"
+          src="/galeria/stanczyka/dzien-puchatka/dzien-puchatka.jpeg"
           text="Dzień Puchatka"
-          href="/zlobek-na-ulicy-stanczyka/Dzien-Puchatka"
+          href="/zlobek-na-ulicy-stanczyka/dzien-puchatka"
         />
         <ImagesItem
           src="/galeria/stanczyka/gordonki/gordonki.jpeg"

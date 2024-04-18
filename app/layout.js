@@ -16,7 +16,7 @@ export const metadata = {
     template: "%s - Wesołe Wygibasy Kraków",
   },
   description:
-    "Żłobki dla dzieci Wesołe Wygibasy w Krakowie, poznaj cennik, jadłospis, kadrę. Zobacz harmonogram i godziny otwarcia. Sprawdź jak przebiega adaptacja. Żłobek dotowany z programu maluch+.",
+    "Szukasz dla swojego dziecka żłobka dotowanego projektem maluch plus? Wesołe Wygibasy to miejsce dla Twojej rodziny! ",
   alternates: {
     canonical: "/",
   },
