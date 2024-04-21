@@ -29,7 +29,7 @@ export default function Places() {
           alt="srodek zlobka na ulicy Glogera"
           title="Niepubliczny Żłobek"
           location="Żłobek, Kraków"
-          street="ul .Glogera 53/LU2"
+          street="ul. Glogera 53/LU2"
           link="zlobek-na-ulicy-glogera"
         />
         <PlaceItem

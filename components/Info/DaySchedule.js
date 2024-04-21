@@ -94,7 +94,9 @@ export default function DaySchedule(props) {
           <h4>Poniedziałek</h4>
           <p>
             Zajęcia logopedyczne-prowadzonę przez
-            <Link href="https://latwomowic.pl/"></Link>
+            <Link href="https://latwomowic.pl/">
+              <span> Łatwo Mówić</span>
+            </Link>
           </p>
           <h4>Wtorek</h4>
           <p>J.Angielski-lektorzy ze szkoły Level up</p>
