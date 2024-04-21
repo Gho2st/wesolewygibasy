@@ -169,6 +169,11 @@ export default function ImagesVetulaniego() {
           src="/galeria/vetulaniego/maly-ogrodnik/maly-ogrodnik.jpg"
           text="Mały Ogrodnik"
         />
+        <ImagesItem
+          href="/zlobek-na-ulicy-vetulaniego/dzien-kosmosu"
+          src="/galeria/vetulaniego/dzien-kosmosu/dzien-kosmosu.jpg"
+          text="Dzień Kosmosu"
+        />
       </Slider>
     </div>
   );

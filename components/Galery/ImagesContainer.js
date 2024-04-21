@@ -184,6 +184,16 @@ export default function ImagesContainer() {
           text="Nasi Marcowi Jubilaci"
           href="/zlobek-na-ulicy-stanczyka/nasi-marcowi-jubilaci"
         />
+        <ImagesItem
+          src="/galeria/stanczyka/dzien-konia/dzien-konia.jpg"
+          text="Dzień Konia"
+          href="/zlobek-na-ulicy-stanczyka/dzien-konia"
+        />
+        <ImagesItem
+          src="/galeria/stanczyka/dzien-marchewki/dzien-marchewki.jpg"
+          text="Dzień Marchewki"
+          href="/zlobek-na-ulicy-stanczyka/dzien-marchewki"
+        />
       </Slider>
     </div>
   );

@@ -174,6 +174,11 @@ export default function ImagesContainer() {
           src="/galeria/glogera/dbamy-o-zabki/dbamy-o-zabki.jpg"
           text="Dbamy o Ząbki"
         />
+        <ImagesItem
+          href="/zlobek-na-ulicy-glogera/zajecia-muzyczne"
+          src="/galeria/glogera/zajecia-muzyczne/zajecia-muzyczne.jpg"
+          text="Zajęcia Muzyczne"
+        />
       </Slider>
     </div>
   );
