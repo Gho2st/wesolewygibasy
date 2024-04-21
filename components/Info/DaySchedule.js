@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import classes from "./DaySchedule.module.css";
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
@@ -92,7 +93,8 @@ export default function DaySchedule(props) {
           </p>
           <h4>Poniedziałek</h4>
           <p>
-            Zajęcia logopedyczne-prowadzonę przez http://www.latwomowic.pl/#
+            Zajęcia logopedyczne-prowadzonę przez
+            <Link href="https://latwomowic.pl/"></Link>
           </p>
           <h4>Wtorek</h4>
           <p>J.Angielski-lektorzy ze szkoły Level up</p>
