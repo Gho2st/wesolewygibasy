@@ -19,6 +19,7 @@
 }
 .textContainer h4 {
   font-size: 1.2rem;
+  font-weight: 500;
   margin-top: 1.5rem;
   color: #08c6c3;
   width: 80%;
@@ -26,7 +27,7 @@
 
 .textContainer a {
   display: block;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   color: #fa7070;
   font-weight: bold;
   font-size: 1.2rem;
@@ -75,7 +76,7 @@
 }
 @media (max-width: 600px) {
   .right {
-    width: 75%;
+    width: 85%;
   }
 
 }
