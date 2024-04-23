@@ -4,6 +4,7 @@ import Header from "@/components/UI/Header";
 import About from "@/components/homepage/About";
 import Baner from "@/components/homepage/Baner";
 import Places from "@/components/homepage/Places";
+import TextContainer from "@/components/homepage/TextContainer";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <Baner />
       <About />
+      <TextContainer />
       <Places />
       <Dotation />
       <Footer />

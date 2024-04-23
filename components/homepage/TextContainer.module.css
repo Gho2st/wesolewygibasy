@@ -1,0 +1,72 @@
+.textContainer {
+  padding: 2rem 9%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+.textContainer h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.textContainer p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #262626;
+}
+.textContainer h4 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  color: #08c6c3;
+  width: 80%;
+}
+
+.textContainer a {
+  display: block;
+  margin-top: 1rem;
+  color: #fa7070;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.textContainer a:hover {
+  color: #f3c419;
+}
+
+.left {
+  width: 69%;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+@media (max-width: 1383px) {
+  .textContainer {
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    justify-content: center;
+    width: 30%;
+    margin: auto;
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 705px) {
+  .right {
+    width: 50%;
+  }
+  .textContainer h4 {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .right {
+    width: 65%;
+  }
+}

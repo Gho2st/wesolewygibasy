@@ -16,7 +16,7 @@ export const metadata = {
     template: "%s - Wesołe Wygibasy Kraków",
   },
   description:
-    "Szukasz dla swojego dziecka żłobka dotowanego projektem maluch plus? Wesołe Wygibasy to miejsce dla Twojej rodziny! ",
+    "Szukasz dla swojego dziecka żłobka dotowanego projektem maluch plus? Wesołe Wygibasy to miejsce dla Twojej rodziny!",
   alternates: {
     canonical: "/",
   },
