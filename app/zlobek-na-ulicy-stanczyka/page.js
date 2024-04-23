@@ -31,12 +31,15 @@ export default function stanczyka() {
                 Wesołe Wygibasy <span> Stańczyka</span>
               </h1>
               <p>
-                Żłobek, Kraków <br></br> <span> Ulica Stańczyka 8/LU3 </span>
+                Szukasz miejsca, gdzie Twoje dziecko będzie mogło rozwijać się w
+                przyjaznej i bezpiecznej atmosferze? Zapraszamy do naszego
+                żłobka na <span> Stańczyka 8/LU3</span>, gdzie dbamy o komfort,
+                edukację i szczęście maluchów.
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="/o-nas">
                   <Button
-                    background="#FFC858"
+                    background="#F38181"
                     text="Czytaj Więcej"
                     fontSize="1rem"
                   />

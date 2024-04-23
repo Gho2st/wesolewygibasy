@@ -149,11 +149,7 @@ export default function ImagesContainer() {
           text="Dzień Wiosennych Porządków"
           href="/zlobek-na-ulicy-stanczyka/zajecia-kulinarne"
         />
-        <ImagesItem
-          src="/galeria/stanczyka/dzien-wiosennych-porzadkow/dzien-wiosennych-porzadkow.jpg"
-          text="Dzień Wiosennych Porządków"
-          href="/zlobek-na-ulicy-stanczyka/dzien-wiosennych-porzadkow"
-        />
+        
         <ImagesItem
           src="/galeria/stanczyka/maly-ogrodnik/maly-ogrodnik.jpg"
           text="Mały Ogrodnik"

@@ -27,9 +27,14 @@ export default function Vetulaniego() {
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
-              <h1>Wesołe Wygibasy <span>Vetulaniego</span></h1>
+              <h1>
+                Wesołe Wygibasy <span>Vetulaniego</span>
+              </h1>
               <p>
-                Żłobek, Kraków <br></br> <span> Ulica Vetulaniego 8 </span>
+                Szukasz miejsca, gdzie Twoje dziecko będzie mogło rozwijać się w
+                przyjaznej i bezpiecznej atmosferze? Zapraszamy do naszego
+                żłobka na <span> Vetulaniego 8</span>, gdzie dbamy o komfort,
+                edukację i szczęście maluchów.
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="/o-nas">

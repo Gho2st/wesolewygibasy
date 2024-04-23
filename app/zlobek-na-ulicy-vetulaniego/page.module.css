@@ -12,6 +12,7 @@
   display: flex;
   justify-content: space-between;
   background: #fff4de;
+  min-height: 89vh;
 }
 
 .leftContainer {
@@ -28,14 +29,14 @@
 .leftContainer p {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  font-size: 1.2rem !important;
+  font-size: 1.15rem !important;
 }
 
 .mapContainer {
   margin-top: 2.5rem;
   width: 100%;
   border-radius: 1rem;
-  min-height: 350px;
+  height: 500px;
   display: flex;
   justify-content: center;
 }
@@ -50,7 +51,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 38%;
+  width: 35%;
 }
 
 .container h1 {
@@ -91,7 +92,7 @@
 }
 
 .galleryContainer {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .galleryText {
@@ -100,9 +101,12 @@
   margin-top: 1.5rem !important;
 }
 
-@media (max-width: 1270px) {
+@media (max-width: 1450px) {
   .image {
     width: 40%;
+  }
+  .mapContainer {
+    height: 330px;
   }
 }
 
@@ -129,6 +133,7 @@
   .baner {
     flex-direction: column;
     border-radius: 0;
+    padding: 0rem 0%;
   }
   .image {
     width: 75%;
@@ -156,7 +161,7 @@
     display: none;
   }
   .mapContainer {
-    min-height: 150px;
+    height: 150px;
   }
   .image {
     padding: 0;
@@ -170,20 +175,11 @@
     font-size: 0.85rem !important;
     padding: 1rem 1rem !important;
   }
-  .leftContainer h1 {
-    font-size: 1.8rem;
-  }
-  .mapContainer {
-    min-height: 150px;
-  }
 }
 
 @media (max-width: 408px) {
   .leftContainer h1 {
     font-size: 1.8rem;
-  }
-  .mapContainer {
-    min-height: 200px;
   }
   .image {
     padding-bottom: 3rem;
@@ -199,9 +195,6 @@
 @media (max-width: 362px) {
   .leftContainer h1 {
     font-size: 1.7rem;
-  }
-  .mapContainer {
-    min-height: 140px;
   }
 }
 @media (max-width: 338px) {

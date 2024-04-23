@@ -30,7 +30,10 @@ export default function sliczna() {
                 Wesołe Wygibasy <span> Śliczna</span>
               </h1>
               <p>
-                Żłobek, Kraków <br></br> <span> Ulica Śliczna 36A </span>
+                Szukasz miejsca, gdzie Twoje dziecko będzie mogło rozwijać się w
+                przyjaznej i bezpiecznej atmosferze? Zapraszamy do naszego
+                żłobka na <span> Ślicznej 36A</span>, gdzie dbamy o komfort,
+                edukację i szczęście maluchów.
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="/o-nas">
@@ -66,18 +69,22 @@ export default function sliczna() {
       </div>
       <div className={classes.container}>
         <p className={classes.description}>
-          <span>Niepubliczny żłobek</span> WESOŁE WYGIBASY ul. Śliczna 36A jest
-          naszą <span> czwartą placówką.</span>
+          <span>Wesołe Wygibasy</span> - Niepubliczny Żłobek przy ulicy Ślicznej
+          36A to nasza czwarta placówka, która oferuje nie tylko opiekę, ale
+          także bogaty zestaw atrakcji dla najmłodszych. <br></br> <br></br>{" "}
+          Długo szukaliśmy idealnego miejsca w naszej okolicy, aby móc zapewnić
+          opiekę jeszcze większej liczbie dzieci. Teraz maluchy mogą być
+          spokojne, wiedząc, że są pod opieką doświadczonych i troskliwych osób.
+          Nasze wnętrza utrzymane są w delikatnych, pastelowych kolorach,
+          tworząc atmosferę przypominającą pokój dziecięcy, gdzie najmłodsi
+          czują się jak w domu.<br></br>
           <br></br>
-          <br></br>
-          Już od dłuższego czasu poszukiwaliśmy lokalu w naszej okolicy, aby móc
-          opiekować się jeszcze większą liczbą dzieci. <br></br> <br></br>
-          Dzieciaczki już zostaną pod troskliwą opieką. Urządzony jest w
-          spokojnych pastelowych kolorach przypominających pokój dziecięcy,
-          gdzie maluchy mają się czuć bezpiecznie. <br></br>
-          <br></br> Placówka wyposażona jest w klimatyzację oraz rekuperację co
-          gwarantuje dzieciom przebywanie w oczyszczonym powietrzu.
-          <br></br>
+          Dodatkowo, nasza placówka została wyposażona w klimatyzację oraz
+          system rekuperacji, zapewniając czyste i świeże powietrze dla naszych
+          podopiecznych.<br></br>
+          <br></br> Oprócz tego, oferujemy <span> nowoczesny plac zabaw, </span>
+          który zachęca do aktywności i zabawy, rozwijając jednocześnie
+          umiejętności ruchowe i społeczne dzieci.
         </p>
         <h3>
           Czesne w całości pokrywane z projektu maluch + 2022 2029 oraz dotacji

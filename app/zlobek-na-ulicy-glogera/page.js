@@ -25,9 +25,14 @@ export default function Glogera() {
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
-              <h1>Wesołe Wygibasy <span>Glogera</span></h1>
+              <h1>
+                Wesołe Wygibasy <span>Glogera</span>
+              </h1>
               <p>
-                Żłobek, Kraków <br></br> <span> Ulica Glogera 53/LU2 </span>
+                Szukasz miejsca, gdzie Twoje dziecko będzie mogło rozwijać się w
+                przyjaznej i bezpiecznej atmosferze? Zapraszamy do naszego
+                żłobka na <span> Glogera 53/LU2</span>, gdzie dbamy o komfort,
+                edukację i szczęście maluchów.
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="/o-nas">
@@ -64,14 +69,14 @@ export default function Glogera() {
       <div className={classes.container}>
         <p className={classes.description}>
           Niepubliczny żłobek <span> WESOŁE WYGIBASY </span> ul. Glogera 53/LU2
-          to nasza druga placówka. Wpis do rejestru żłobków i klubów malucha
+          to nasza druga placówka. <br></br> <br></br> Wpis do rejestru żłobków i klubów malucha
           uzyskaliśmy 1 czerwca 2021 Lokal przy Glogera był dobrze znany
           okolicznym rodzinom, ponieważ do marca 2021 znajdowała się tam znana i
-          lubiana sala zabaw Kamyczki Patyczki. 14 czerwca pierwsze dzieciaczki
+          lubiana sala zabaw Kamyczki Patyczki.<br></br><br></br> 14 czerwca pierwsze dzieciaczki
           już zostały pod troskliwą opieką cioci Ewy, Wiktorii i Agnieszki.
           Lokal ma 124 m2, sala zabaw to 94 m2 urządzone w spokojnych
           pastelowych, kolorach przypominających pokój dziecięcy, gdzie maluchy
-          mają się czuć bezpiecznie. Do żłobka przynależy również ogródek, gdzie
+          mają się czuć bezpiecznie.<br></br><br></br> Do żłobka przynależy również ogródek, gdzie
           dzieci spędzają czas bawiąc się na placu zabaw. Oprócz sali zabaw
           dzieci mają do dyspozycji łazienkę i szatnie. Zapraszamy!
         </p>
