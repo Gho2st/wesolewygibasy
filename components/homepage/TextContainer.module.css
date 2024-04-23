@@ -5,8 +5,11 @@
   margin-bottom: 5rem;
 }
 .textContainer h3 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   margin-bottom: 2rem;
+}
+.textContainer span{
+    color: #fa7070;
 }
 
 .textContainer p {
@@ -26,7 +29,7 @@
   margin-top: 1rem;
   color: #fa7070;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 .textContainer a:hover {
   color: #f3c419;
@@ -59,14 +62,20 @@
 @media (max-width: 705px) {
   .right {
     width: 50%;
+    margin-top: 4rem;
+
   }
   .textContainer h4 {
     font-size: 1.1rem;
     width: 100%;
   }
+  .textContainer a {
+    font-size: 1.3rem;
+  }
 }
 @media (max-width: 600px) {
   .right {
-    width: 65%;
+    width: 75%;
   }
+
 }

@@ -6,7 +6,9 @@ export default function TextContainer() {
     <>
       <div className={classes.textContainer}>
         <div className={classes.left}>
-          <h3>Żłobki Wesołe Wygibasy na Mapie Krakowa!</h3>
+          <h3>
+            Żłobki <span> Wesołe Wygibasy</span> na Mapie Krakowa!
+          </h3>
           <p>
             Jesteśmy miejscem, gdzie każde dziecko jest traktowane z miłością,
             szacunkiem i troską. Nasza misja to stworzenie bezpiecznego i
