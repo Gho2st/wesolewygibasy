@@ -26,7 +26,9 @@ export default function sliczna() {
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
-              <h1>Wesołe Wygibasy Śliczna</h1>
+              <h1>
+                Wesołe Wygibasy <span> Śliczna</span>
+              </h1>
               <p>
                 Żłobek, Kraków <br></br> <span> Ulica Śliczna 36A </span>
               </p>

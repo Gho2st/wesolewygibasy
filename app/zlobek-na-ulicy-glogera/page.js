@@ -25,7 +25,7 @@ export default function Glogera() {
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
-              <h1>Wesołe Wygibasy Glogera</h1>
+              <h1>Wesołe Wygibasy <span>Glogera</span></h1>
               <p>
                 Żłobek, Kraków <br></br> <span> Ulica Glogera 53/LU2 </span>
               </p>

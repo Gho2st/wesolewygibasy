@@ -27,7 +27,7 @@ export default function Vetulaniego() {
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
-              <h1>Wesołe Wygibasy Vetulaniego</h1>
+              <h1>Wesołe Wygibasy <span>Vetulaniego</span></h1>
               <p>
                 Żłobek, Kraków <br></br> <span> Ulica Vetulaniego 8 </span>
               </p>

@@ -27,7 +27,9 @@ export default function stanczyka() {
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
-              <h1>Wesołe Wygibasy Stańczyka</h1>
+              <h1>
+                Wesołe Wygibasy <span> Stańczyka</span>
+              </h1>
               <p>
                 Żłobek, Kraków <br></br> <span> Ulica Stańczyka 8/LU3 </span>
               </p>
