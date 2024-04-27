@@ -11,10 +11,7 @@ export default function Others() {
             <th>liczba dni roboczych</th>
             <th>wysokość miesięcznej dotacji</th>
             <th>wpłata na konto (kwota pomniejszona o dofinansowanie z UM)</th>
-            <th>
-              kwota zwracana na konto rodzica (dotacja z programu Maluch +
-              2022-2029)
-            </th>
+            <th>końcowy koszt rodzica pobierającego 400 plus</th>
           </tr>
           <tr>
             <td>Styczeń</td>

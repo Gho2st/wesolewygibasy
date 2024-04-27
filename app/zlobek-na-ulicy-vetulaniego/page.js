@@ -39,7 +39,7 @@ export default function Vetulaniego() {
               <div className={classes.buttonContainer}>
                 <Link href="/o-nas">
                   <Button
-                    background="#FFC858"
+                    background="#F38181"
                     text="Czytaj Więcej"
                     fontSize="1rem"
                   />

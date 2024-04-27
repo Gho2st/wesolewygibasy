@@ -65,7 +65,7 @@ export default function Dotation() {
             <Image
               src={"/krakow2.png"}
               height={300}
-              width={300} 
+              width={300}
               layout="responsive"
               alt=""
             />
