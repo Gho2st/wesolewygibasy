@@ -55,7 +55,7 @@ export default function Others() {
           </tr>
           <tr>
             <td>Czerwiec</td>
-            <td>1512 zł</td>
+            <td>2100 zł</td>
             <td>20</td>
             <td>700 zł</td>
             <td>1400 zł</td>
@@ -63,7 +63,7 @@ export default function Others() {
           </tr>
           <tr>
             <td>Lipiec</td>
-            <td>805 zł</td>
+            <td>2100 zł</td>
             <td>23</td>
             <td>665 zł</td>
             <td>1295 zł</td>
