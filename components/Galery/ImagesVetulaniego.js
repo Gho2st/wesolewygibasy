@@ -174,6 +174,21 @@ export default function ImagesVetulaniego() {
           src="/galeria/vetulaniego/dzien-kosmosu/dzien-kosmosu.jpg"
           text="Dzień Kosmosu"
         />
+        <ImagesItem
+          href="/zlobek-na-ulicy-vetulaniego/dzien-ziemii"
+          src="/galeria/vetulaniego/dzien-ziemii/dzien-ziemii.jpeg"
+          text="Dzień Ziemii"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-vetulaniego/wlasny-ogrod"
+          src="/galeria/vetulaniego/wlasny-ogrod/wlasny-ogrod.jpg"
+          text="Własny Ogród"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-vetulaniego/dzien-strazaka"
+          src="/galeria/vetulaniego/dzien-strazaka/dzien-strazaka.jpg"
+          text="Dzień Strazaka"
+        />
       </Slider>
     </div>
   );

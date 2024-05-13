@@ -149,7 +149,7 @@ export default function ImagesContainer() {
           text="Dzień Wiosennych Porządków"
           href="/zlobek-na-ulicy-stanczyka/zajecia-kulinarne"
         />
-        
+
         <ImagesItem
           src="/galeria/stanczyka/maly-ogrodnik/maly-ogrodnik.jpg"
           text="Mały Ogrodnik"
@@ -189,6 +189,26 @@ export default function ImagesContainer() {
           src="/galeria/stanczyka/dzien-marchewki/dzien-marchewki.jpg"
           text="Dzień Marchewki"
           href="/zlobek-na-ulicy-stanczyka/dzien-marchewki"
+        />
+        <ImagesItem
+          src="/galeria/stanczyka/dzien-strazaka/dzien-strazaka.jpg"
+          text="Dzień Strazaka"
+          href="/zlobek-na-ulicy-stanczyka/dzien-strazaka"
+        />
+        <ImagesItem
+          src="/galeria/stanczyka/symbole-narodowe/symbole-narodowe.jpg"
+          text="Symbole Narodowe"
+          href="/zlobek-na-ulicy-stanczyka/symbole-narodowe"
+        />
+        <ImagesItem
+          src="/galeria/stanczyka/recykling/recykling.jpg"
+          text="Recykling"
+          href="/zlobek-na-ulicy-stanczyka/recykling"
+        />
+        <ImagesItem
+          src="/galeria/stanczyka/spacerek/spacerek.jpg"
+          text="Spacerek"
+          href="/zlobek-na-ulicy-stanczyka/spacerek"
         />
       </Slider>
     </div>

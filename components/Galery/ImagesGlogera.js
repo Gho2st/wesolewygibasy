@@ -179,6 +179,31 @@ export default function ImagesContainer() {
           src="/galeria/glogera/zajecia-muzyczne/zajecia-muzyczne.jpg"
           text="Zajęcia Muzyczne"
         />
+        <ImagesItem
+          href="/zlobek-na-ulicy-glogera/dzien-strazaka"
+          src="/galeria/glogera/dzien-strazaka/dzien-strazaka.jpg"
+          text="Dzień Strazaka"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-glogera/zajecia-kulinarne"
+          src="/galeria/glogera/zajecia-kulinarne/zajecia-kulinarne.jpg"
+          text="Zajęcia Kulinarne"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-glogera/bieganie"
+          src="/galeria/glogera/bieganie/bieganie.jpg"
+          text="Bieganie"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-glogera/teatrzyk"
+          src="/galeria/glogera/teatrzyk/teatrzyk.jpg"
+          text="Teatrzyk"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-glogera/dyplom-samodzielnosci"
+          src="/galeria/glogera/dyplom-samodzielnosci/dyplom-samodzielnosci.jpg"
+          text="Dyplom Samodzielności"
+        />
       </Slider>
     </div>
   );
