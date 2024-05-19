@@ -189,6 +189,11 @@ export default function ImagesVetulaniego() {
           src="/galeria/vetulaniego/dzien-strazaka/dzien-strazaka.jpg"
           text="Dzień Strazaka"
         />
+        <ImagesItem
+          href="/zlobek-na-ulicy-vetulaniego/dzien-pszczoly"
+          src="/galeria/vetulaniego/dzien-pszczoly/dzien-pszczoly.jpg"
+          text="Dzień Pszczoły"
+        />
       </Slider>
     </div>
   );
