@@ -68,7 +68,7 @@ export default function Footer() {
         <p className={classes.description}>
           Wesołe Wygibasy 2024 &
           <span className={classes.span}>
-            <Link href={"https://www.djj-software.pl/"}> DJJ Software </Link>
+            <Link href={"https://www.domiweb.pl/"}> Domiweb </Link>
           </span>
         </p>
       </div>

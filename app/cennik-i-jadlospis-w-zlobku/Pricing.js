@@ -31,9 +31,7 @@ export default function Pricing() {
           }}
         >
           Żłobek ul. Stańczyka
-          <span>
-            CZESNE 0 ZŁ <IoCaretDownOutline />
-          </span>
+          <span>CZESNE 0 ZŁ</span>
         </h2>
         {isStanczykaVisible && <Stanczyka />}
         <h2
