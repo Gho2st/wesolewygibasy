@@ -14,9 +14,3 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 1350px) {
-  html,
-  body {
-    font-size: 16px;
-  }
-}

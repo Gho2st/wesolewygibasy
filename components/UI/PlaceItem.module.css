@@ -48,9 +48,13 @@
   padding-bottom: 1rem;
 }
 @media (max-width: 1369px) {
-  .text{
+  .text {
     height: 120px;
   }
-  
 }
 
+@media (max-width: 500px) {
+  .text {
+    height: 140px;
+  }
+}

@@ -40,7 +40,7 @@ export default function TextContainer() {
             dla nas największą nagrodą i motywacją do ciągłego doskonalenia
             naszych usług.
             <Link href={"https://g.page/r/CVSRHQIb-HkkEBM/review"}>
-              Zostaw nam Twoją opinię :)
+              Zostaw nam Twoją opinię
             </Link>
           </p>
           <h4>
