@@ -18,12 +18,17 @@
 
 .header {
   display: flex;
+  width: 260px;
   margin-top: 1.5rem;
 }
+
+.header h3{
+  font-size: 1.3rem;
+}
+
 .header:hover {
   cursor: pointer;
   color: rgb(255, 153, 0);
-  scale: 1.01;
 }
 .icon {
   display: flex;

@@ -19,6 +19,7 @@ export default function PlaceItem(props) {
         <h3 style={{ color: props.color }}>{props.title} </h3>
         <p>{props.location}</p>
         <p>{props.street}</p>
+        <h4>{props.moreInfo}</h4>
       </div>
       <div className={classes.innerContainer}>
         <div className={classes.buttonContainer}>

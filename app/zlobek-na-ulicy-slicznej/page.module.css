@@ -57,10 +57,22 @@
 .container h1 {
   color: rgb(0, 0, 0);
 }
-.container p {
-  font-size: 1rem;
+
+.container span {
+  color: #08c6c3;
+  font-weight: bold;
+}
+.images {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
 }
 
+.images img {
+  border-radius: 0.5rem;
+  max-width: 30%;
+}
 .description {
   margin-top: 1.5rem;
 }
@@ -77,11 +89,6 @@
 
 .buttonContainer svg {
   font-size: 3rem;
-}
-
-.container span {
-  color: #08c6c3;
-  font-weight: bold;
 }
 
 .container h2 {

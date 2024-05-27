@@ -8,12 +8,13 @@ export default function Places() {
         <PlaceItem
           image="/others/sliczna.jpeg"
           alt="budynek zlobka na ulicy slicznej"
-          title="! Nowy Żłobek !"
+          title="Wolne miejsca w Nowym Żłobku"
           location="Ulica Śliczna 36A, Kraków"
-          street="Wkrótce otwarcie!"
+          street="Otwarcie 1 lipca 2024"
           add="Projekt Maluch+ 2022-2029"
           color="#fa7070"
           link="zlobek-na-ulicy-slicznej"
+          moreInfo="Adaptacja od 20 czerwca 2024!"
         />
         <PlaceItem
           image="/others/stanczyka.jpg"

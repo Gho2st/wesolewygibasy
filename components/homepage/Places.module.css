@@ -10,7 +10,7 @@
 }
 
 /* Media queries */
-@media (max-width: 1254px) {
+@media (max-width: 1354px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3.5rem;
@@ -22,7 +22,7 @@
     }
   }
 
-@media (max-width: 678px) {
+@media (max-width: 889px) {
   .grid {
     grid-template-columns: repeat(1, 1fr);
     margin: auto;

@@ -3,7 +3,6 @@
   border-radius: 1rem;
   width: 100%;
   overflow: hidden;
-  height: 500px;
 }
 
 .imageContainer {
@@ -22,12 +21,14 @@
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   color: grey;
+  height: 120px;
 }
 .text h3 {
   color: black;
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
 }
+
 .buttonContainer {
   display: flex;
   justify-content: center;
@@ -44,21 +45,12 @@
   text-align: center;
   font-weight: bold;
   font-size: 1.1rem;
+  padding-bottom: 1rem;
 }
-
-@media (max-width: 769px) {
-  .itemContainer {
-    width: 100%;
-    overflow: hidden;
-    height: 500px;
-  }
-}
-
-@media (max-width: 569px) {
-  .itemContainer {
-    width: 100%;
-    overflow: hidden;
-    height: 520px;
+@media (max-width: 1369px) {
+  .text{
+    height: 120px;
   }
   
 }
+

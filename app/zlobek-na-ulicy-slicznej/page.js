@@ -1,7 +1,6 @@
 import Header from "@/components/UI/Header";
 import classes from "./page.module.css";
 import Footer from "@/components/UI/Footer";
-import H1 from "@/components/UI/H1";
 import ImagesContainer from "@/components/Galery/ImagesContainer";
 import Image from "next/image";
 import { FaSun } from "react-icons/fa";
@@ -71,7 +70,13 @@ export default function sliczna() {
         <p className={classes.description}>
           <span>Wesołe Wygibasy</span> - Niepubliczny Żłobek przy ulicy Ślicznej
           36A to nasza czwarta placówka, która oferuje nie tylko opiekę, ale
-          także bogaty zestaw atrakcji dla najmłodszych. <br></br> <br></br>{" "}
+          także bogaty zestaw atrakcji dla najmłodszych. <br></br> <br></br>
+          Otwarcie 1 lipca 2024.
+          <br></br>
+          <br></br>
+          Adaptacja z rodzicem od 20 czerwca 2024.
+          <br></br>
+          <br></br>
           Długo szukaliśmy idealnego miejsca w naszej okolicy, aby móc zapewnić
           opiekę jeszcze większej liczbie dzieci. Teraz maluchy mogą być
           spokojne, wiedząc, że są pod opieką doświadczonych i troskliwych osób.
@@ -86,6 +91,29 @@ export default function sliczna() {
           który zachęca do aktywności i zabawy, rozwijając jednocześnie
           umiejętności ruchowe i społeczne dzieci.
         </p>
+        <div className={classes.images}>
+          <Image
+            src={"/sl1.jpg"}
+            height={550}
+            width={450}
+            layout="responsive"
+            alt="zdjecie ze srodka zlobka na ulicy slicznej w krakowie"
+          />
+          <Image
+            src={"/sl2.jpg"}
+            height={550}
+            width={450}
+            layout="responsive"
+            alt="zdjecie ze srodka zlobka na ulicy slicznej w krakowie"
+          />
+          <Image
+            src={"/sl3.jpg"}
+            height={550}
+            width={450}
+            layout="responsive"
+            alt="zdjecie ze srodka zlobka na ulicy slicznej w krakowie"
+          />
+        </div>
         <h3>
           Czesne w całości pokrywane z projektu maluch + 2022 2029 oraz dotacji
           urzędu miasta Kraków

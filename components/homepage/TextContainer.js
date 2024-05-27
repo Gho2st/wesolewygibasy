@@ -16,8 +16,8 @@ export default function TextContainer() {
             umiejętności, kreatywność i osobowość.
           </p>
           <p>
-            Nasz żłobki położone są na północnym centrum Krakowa, co sprawia, że
-            jesteśmy łatwo dostępni dla rodziców z różnych części miasta. Nasza
+            Nasz żłobki położone są w centrum Krakowa, co sprawia, że jesteśmy
+            łatwo dostępni dla rodziców z różnych części miasta. Nasza
             lokalizacja oferuje także liczne atrakcje i udogodnienia dla naszych
             małych podopiecznych.
           </p>
