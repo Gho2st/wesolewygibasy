@@ -15,7 +15,7 @@
 .listContainer li {
   display: inline-block;
   margin-right: 1.5rem; /* Opcjonalne: dodaje odstęp między elementami */
-  font-size: 1.08rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 .listContainer li:hover {
