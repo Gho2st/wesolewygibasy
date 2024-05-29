@@ -43,7 +43,7 @@ export default function informacje() {
         <div className={classes.buttons}>
           <div className={classes.button}>
             <a href="/RODO-klauzula-informacyjna-copy.jpg" download>
-              Pobierz klauzulę informacyjną
+              Pobierz klauzulę
             </a>
           </div>
           <h2>Statut Żłobka</h2>
