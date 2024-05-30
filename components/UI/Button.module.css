@@ -1,7 +1,7 @@
 .buttonContainer button {
   padding: 0.9rem 1.3rem;
   border-radius: 0.5rem;
-  background: #FA7070;
+  background: #fa7070;
   color: rgb(255, 255, 255);
   font-weight: bold;
   border: 0px;
@@ -10,4 +10,5 @@
 
 .buttonContainer button:hover {
   cursor: pointer;
+  transform: translateY(-1.5px);
 }

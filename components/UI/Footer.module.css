@@ -52,13 +52,13 @@
 .footerDownContainer span {
   font-size: 1.5rem;
 }
-.span {
+.FooterSpan {
   color: rgb(0, 188, 188);
   font-size: 1.2rem !important;
   font-weight: bold;
 }
-.span:hover {
-  color: red;
+.FooterSpan:hover {
+  color: rgb(28, 197, 141);
 }
 
 .description {
@@ -128,7 +128,7 @@
   .footerInfoContainer h5 {
     font-size: 1rem;
   }
-  .footerInfoContainer li{
+  .footerInfoContainer li {
     font-size: 0.95rem;
   }
 }
@@ -190,17 +190,17 @@
   .numbersContainer {
     width: 100%;
   }
-  .footerInfoContainer{
+  .footerInfoContainer {
     flex-direction: column;
     padding-top: 0;
   }
-  .footerInfoContainer h5{
+  .footerInfoContainer h5 {
     font-size: 1.3rem;
   }
-  .footerInfoContainer li{
+  .footerInfoContainer li {
     font-size: 1.05rem;
   }
-  .footerInfoContainer ul{
+  .footerInfoContainer ul {
     margin-bottom: 2rem;
   }
 }
@@ -214,7 +214,6 @@
   }
 }
 @media (max-width: 480px) {
-  
   .footerTopContainer p {
     font-size: 1rem;
   }

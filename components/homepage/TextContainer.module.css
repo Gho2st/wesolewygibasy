@@ -8,8 +8,8 @@
   font-size: 1.7rem;
   margin-bottom: 2rem;
 }
-.textContainer span{
-    color: #fa7070;
+.textContainer span {
+  color: #fa7070;
 }
 
 .textContainer p {
@@ -45,6 +45,10 @@
   align-items: center;
   width: 25%;
 }
+.right img:hover {
+  transform: translateY(-3px);
+  scale: 1.02;
+}
 
 @media (max-width: 1383px) {
   .textContainer {
@@ -65,7 +69,6 @@
   .right {
     width: 50%;
     margin-top: 4rem;
-
   }
   .textContainer h4 {
     font-size: 1.1rem;
@@ -79,5 +82,4 @@
   .right {
     width: 85%;
   }
-
 }

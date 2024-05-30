@@ -1,5 +1,6 @@
 .image {
-  max-height: 200px;
+  min-height: 250px;
+  max-height: 250px;
   max-width: 300px;
   padding: 0.5rem;
   border-radius: 1rem;
@@ -15,6 +16,11 @@
   margin-top: 0.5rem;
   text-align: center;
 }
+
+.innerContainer:hover {
+  transform: translateY(-3px);
+}
+
 @media (max-width: 680px) {
   .image {
     max-height: 300px;

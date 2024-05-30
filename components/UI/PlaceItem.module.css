@@ -3,6 +3,13 @@
   border-radius: 1rem;
   width: 100%;
   padding-bottom: 3rem;
+  transition: ease-in;
+}
+
+.itemContainer:hover{
+  transform: translateY(-6px);
+  background: #f8f7f7;
+
 }
 
 .imageContainer {
