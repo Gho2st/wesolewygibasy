@@ -20,6 +20,7 @@
 
 .textContainer h1 {
   font-size: 2.3rem;
+  transition: ease-in 0.2s;
 }
 .textContainer h1:hover {
   transform: skewY(1deg) skewX(3deg);
