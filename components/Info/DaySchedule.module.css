@@ -17,13 +17,13 @@
 }
 
 .header {
-  display: flex;
-  width: 260px;
   margin-top: 1.5rem;
+  display: flex;
 }
 
-.header h3{
+.header {
   font-size: 1.3rem;
+  transition: 0.3s;
 }
 
 .header:hover {

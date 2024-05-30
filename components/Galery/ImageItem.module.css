@@ -17,8 +17,12 @@
   text-align: center;
 }
 
+.innerContainer{
+  transition: ease-in 0.15s;
+}
+
 .innerContainer:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
 }
 
 @media (max-width: 680px) {

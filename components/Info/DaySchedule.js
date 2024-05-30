@@ -24,7 +24,7 @@ export default function DaySchedule(props) {
         }}
         className={classes.header}
       >
-        <div>
+        <div className={classes.header2}>
           <h3>Plan Dnia</h3>
         </div>
         <div className={classes.icon}>
@@ -78,7 +78,7 @@ export default function DaySchedule(props) {
         }}
         className={classes.header}
       >
-        <div>
+        <div className={classes.header-2}>
           <h3>Zajęcia Dodatkowe</h3>
         </div>
         <div className={classes.icon}>
