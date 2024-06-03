@@ -41,17 +41,23 @@
 
 .mobileMenu {
   display: block;
-  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1500;
   background: white;
-  padding-top: 0rem;
   padding: 2rem 9%;
   padding-top: 0.5rem;
 }
 
 .listContainerMobile {
   list-style-type: none;
+  margin-top: 10rem;
 }
 .listContainerMobile li {
+  width: 100%;
   border-bottom: 1px solid black;
   font-size: 1.3rem;
   padding-bottom: 1rem;
@@ -69,6 +75,9 @@
 @media (max-width: 1320px) {
   .burgerMenu {
     display: block;
+    position: fixed;
+    right: 1.5rem;
+    z-index: 2000;
   }
   .listContainer {
     display: none;
