@@ -121,9 +121,7 @@
   .text {
     width: 100%;
   }
-  .container {
-    margin-top: 5rem;
-  }
+  
   .info p {
     font-size: 1.25rem;
   }
@@ -137,7 +135,6 @@
   .container {
     width: 100% !important;
     padding: 2rem 9%;
-    margin-top: 1rem;
   }
   .contactContainer {
     width: 92%;
