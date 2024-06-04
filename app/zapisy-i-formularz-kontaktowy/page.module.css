@@ -3,7 +3,7 @@
   color: rgb(0, 0, 0);
   width: 60%;
   margin: auto;
-  margin-top: 5rem;
+  padding-top: 3rem;
 }
 
 .contactContainer {
@@ -134,16 +134,15 @@
     font-size: 2.4rem !important;
     width: 100% !important;
   }
-  .container{
+  .container {
     width: 100% !important;
     padding: 2rem 9%;
     margin-top: 1rem;
   }
   .contactContainer {
     width: 92%;
-    
   }
-  .contactContainer{
+  .contactContainer {
     margin-top: 1.5rem;
     padding: 2rem;
     margin-bottom: 0rem;
@@ -151,10 +150,10 @@
 }
 
 @media (max-width: 500px) {
-  .item p{
+  .item p {
     font-size: 1.2rem;
   }
-  .itemFacebook p{
+  .itemFacebook p {
     font-size: 1.2rem;
   }
   .info svg {
@@ -162,15 +161,15 @@
     color: #fa7070;
     font-size: 2.2rem;
   }
-  .contactContainer{
+  .contactContainer {
     gap: 2.5rem;
   }
-  .animals{
+  .animals {
     margin-bottom: 0;
   }
 }
-@media (max-width:977px){
-  .animals img{
+@media (max-width: 977px) {
+  .animals img {
     display: none;
   }
 }

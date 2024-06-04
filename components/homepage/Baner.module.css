@@ -11,7 +11,7 @@
   width: 60%;
   display: flex;
   justify-content: center;
-  margin-top: 4rem;
+  margin-top: 6.3rem;
 }
 
 .textContainer h1 {
@@ -125,7 +125,7 @@
 }
 @media (max-width: 620px) {
   .textContainer {
-    margin-top: 3.5rem;
+    margin-top: 6.5rem;
   }
 }
 

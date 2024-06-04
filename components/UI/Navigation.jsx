@@ -1,11 +1,22 @@
 "use client";
 import Link from "next/link";
 import classes from "./Navigation.module.css";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 
 export default function Navigation() {
   const checkboxRef = useRef(null);
+  const [color, setColor] = useState(false);
+
+  const changeColor = () => {
+    if (window.scrollY >= 20) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeColor);
 
   useEffect(() => {
     const handleLinkClick = () => {
@@ -28,7 +39,18 @@ export default function Navigation() {
   }, []);
   return (
     <>
-      <div className={classes.navigation}>
+      <div className={color ? classes.navigation__bg : classes.navigation}>
+        <div className={classes.logo}>
+          <Link href="/" className={classes.logo__link}>
+            <Image
+              src={"/others/logo.png"}
+              width={130}
+              height={85}
+              alt="logo firmy Wesołe Wygibasy"
+              className={classes.logoImage}
+            ></Image>
+          </Link>
+        </div>
         <input
           ref={checkboxRef}
           type="checkbox"

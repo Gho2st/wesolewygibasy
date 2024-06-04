@@ -6,9 +6,9 @@
 }
 .header {
   margin: auto;
-  margin-top: 3rem;
   max-width: 80%;
   text-align: center;
+  padding-top: 1.5rem;
 }
 
 .imageContainer {
