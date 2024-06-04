@@ -8,15 +8,23 @@ export default function Navigation() {
   const checkboxRef = useRef(null);
   const [color, setColor] = useState(false);
 
-  const changeColor = () => {
-    if (window.scrollY >= 20) {
-      setColor(true);
-    } else {
-      setColor(false);
-    }
-  };
+  useEffect(() => {
+    const changeColor = () => {
+      if (typeof window !== "undefined") {
+        if (window.scrollY >= 20) {
+          setColor(true);
+        } else {
+          setColor(false);
+        }
+      }
+    };
 
-  window.addEventListener("scroll", changeColor);
+    window.addEventListener("scroll", changeColor);
+
+    return () => {
+      window.removeEventListener("scroll", changeColor);
+    };
+  }, []);
 
   useEffect(() => {
     const handleLinkClick = () => {
