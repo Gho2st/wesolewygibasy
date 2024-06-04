@@ -13,7 +13,6 @@ export const metadata = {
 export default function galeria() {
   return (
     <>
-      <Header />
       <div className={classes.container}>
         <h1>Galeria</h1>
         <p>

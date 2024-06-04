@@ -26,7 +26,6 @@ export default function informacje() {
   };
   return (
     <>
-      <Header />
       <div className={classes.container}>
         <H1 text="Informacje" />
         <h2> Drodzy Rodzice, Opiekunowie</h2>

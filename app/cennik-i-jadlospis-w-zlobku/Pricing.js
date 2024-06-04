@@ -1,5 +1,4 @@
 "use client";
-import Header from "@/components/UI/Header";
 import Image from "next/image";
 import classes from "./page.module.css";
 import Stanczyka from "./Stanczyka";
@@ -15,7 +14,6 @@ export default function Pricing() {
 
   return (
     <>
-      <Header />
       <div className={classes.pricingContainer}>
         <h1 className={classes.header}>Cennik</h1>
         <p className={classes.description}>

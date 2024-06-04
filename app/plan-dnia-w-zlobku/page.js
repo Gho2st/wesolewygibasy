@@ -13,7 +13,6 @@ export const metadata = {
 export default function plan() {
   return (
     <>
-      <Header />
       <div className={classes.container}>
         <h1>Plan Dnia</h1>
         <p>

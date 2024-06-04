@@ -21,7 +21,6 @@ export default function Contact() {
 
   return (
     <>
-      <Header />
       <div className={classes.container}>
         <H1 text="Zapisz Swoje Dziecko!"></H1>
         <p>

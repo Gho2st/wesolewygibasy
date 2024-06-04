@@ -14,7 +14,6 @@ export const metadata = {
 export default function adaptacja() {
   return (
     <>
-      <Header />
       <div className={classes.container}>
         <H1 text="Adaptacja" />
         <p>

@@ -17,7 +17,6 @@ export const metadata = {
 export default function oNas() {
   return (
     <>
-      <Header />
       <div className={classes.container}>
         <h1>O Nas</h1>
         <div className={classes.info}>

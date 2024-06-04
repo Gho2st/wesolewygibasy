@@ -48,7 +48,9 @@ export default function Header() {
                 <Link href="/galeria">Galeria</Link>
               </li>
               <li>
-                <Link href="/cennik-i-jadlospis-w-zlobku">Cennik & Jadłospis</Link>
+                <Link href="/cennik-i-jadlospis-w-zlobku">
+                  Cennik & Jadłospis
+                </Link>
               </li>
               <li>
                 <Link href="/plan-dnia-w-zlobku">Plan Dnia</Link>
@@ -83,7 +85,9 @@ export default function Header() {
                 <Link href="/galeria">Galeria</Link>
               </li>
               <li>
-                <Link href="/cennik-i-jadlospis-w-zlobku">Cennik & Jadłospis</Link>
+                <Link href="/cennik-i-jadlospis-w-zlobku">
+                  Cennik & Jadłospis
+                </Link>
               </li>
               <li>
                 <Link href="/plan-dnia-w-zlobku">Plan Dnia</Link>
@@ -98,8 +102,11 @@ export default function Header() {
                 <Link href="/informacje-dla-rodzicow">Informacje</Link>
               </li>
             </ul>
-            <Link href="/zapisy-i-formularz-kontaktowy" className={classes.buttonMobile}>
-              <Button text="Zapisy" fontSize="1.5rem" />
+            <Link
+              href="/zapisy-i-formularz-kontaktowy"
+              className={classes.buttonMobile}
+            >
+              <Button text="Zapisy" fontSize="1rem" />
             </Link>
           </div>
         )}

@@ -56,7 +56,6 @@ export default function GaleryPost({ params }) {
 
   return (
     <>
-      <Header />
       <div className={classes.header}>
         <H1 text={formatSlug(params.slug)} />
       </div>

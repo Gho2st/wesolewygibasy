@@ -21,7 +21,6 @@ export const metadata = {
 export default function stanczyka() {
   return (
     <>
-      <Header />
 
       <div className={classes.outsideContainer}>
         <div className={classes.baner}>

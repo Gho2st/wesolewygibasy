@@ -1,6 +1,7 @@
 import Dotation from "@/components/Info/dotation";
 import Footer from "@/components/UI/Footer";
 import Header from "@/components/UI/Header";
+import Navigation from "@/components/UI/Navigation";
 import About from "@/components/homepage/About";
 import Baner from "@/components/homepage/Baner";
 import Places from "@/components/homepage/Places";
@@ -9,7 +10,7 @@ import TextContainer from "@/components/homepage/TextContainer";
 export default function Home() {
   return (
     <>
-      <Header />
+      <Navigation />
       <Baner />
       <About />
       <TextContainer />

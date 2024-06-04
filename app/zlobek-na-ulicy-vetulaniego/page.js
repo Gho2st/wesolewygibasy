@@ -22,7 +22,6 @@ export const metadata = {
 export default function Vetulaniego() {
   return (
     <>
-      <Header />
       <div className={classes.outsideContainer}>
         <div className={classes.baner}>
           <div className={classes.leftContainer}>

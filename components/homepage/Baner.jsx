@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Link from "next/link";
 import Button from "../UI/Button";
 import classes from "./Baner.module.css";
