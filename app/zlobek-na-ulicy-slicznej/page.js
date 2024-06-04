@@ -29,14 +29,14 @@ export default function sliczna() {
               </h1>
               <p>
                 Szukasz miejsca, gdzie Twoje dziecko będzie mogło rozwijać się w
-                przyjaznej i bezpiecznej atmosferze? Zapraszamy do naszego
-                żłobka na <span> Ślicznej 36A</span>, gdzie dbamy o komfort,
-                edukację i szczęście maluchów.
+                przyjaznej i bezpiecznej atmosferze? <br></br> <br></br>
+                Zapraszamy do naszego żłobka na
+                <span className={classes.place}> Śliczna 36A.</span>
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="/o-nas">
                   <Button
-                    background="#F38181"
+                    background="#fa7070"
                     text="Czytaj Więcej"
                     fontSize="1rem"
                   />

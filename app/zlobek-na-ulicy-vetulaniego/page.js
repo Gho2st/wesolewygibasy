@@ -27,18 +27,18 @@ export default function Vetulaniego() {
           <div className={classes.leftContainer}>
             <div>
               <h1>
-                Wesołe Wygibasy <span>Vetulaniego</span>
+                Wesołe Wygibasy <span> Vetulaniego.</span>
               </h1>
               <p>
                 Szukasz miejsca, gdzie Twoje dziecko będzie mogło rozwijać się w
-                przyjaznej i bezpiecznej atmosferze? Zapraszamy do naszego
-                żłobka na <span> Vetulaniego 8</span>, gdzie dbamy o komfort,
-                edukację i szczęście maluchów.
+                przyjaznej i bezpiecznej atmosferze? <br></br> <br></br>
+                Zapraszamy do naszego żłobka na
+                <span className={classes.place}> Vetulaniego 8.</span>
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="/o-nas">
                   <Button
-                    background="#F38181"
+                    background="#fa7070"
                     text="Czytaj Więcej"
                     fontSize="1rem"
                   />
