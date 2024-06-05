@@ -123,7 +123,7 @@ export default function sliczna() {
           </Link>
           <Link href="/zapisy-i-formularz-kontaktowy">
             <Button
-              text="Zapisz Dziecko"
+              text="Zapisy"
               fontSize="1rem"
               background="#7C99E5"
             />

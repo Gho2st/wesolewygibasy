@@ -86,11 +86,7 @@ export default function Glogera() {
             <Button text="Cennik & Jadłospis" fontSize="1rem" />
           </Link>
           <Link href="/zapisy-i-formularz-kontaktowy">
-            <Button
-              text="Zapisz Dziecko"
-              fontSize="1rem"
-              background="#7C99E5"
-            />
+            <Button text="Zapisy" fontSize="1rem" background="#7C99E5" />
           </Link>
         </div>
         <DaySchedule header="Plan Dnia" />

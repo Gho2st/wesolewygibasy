@@ -31,11 +31,7 @@ export default function Baner() {
                 <Button text="Czytaj więcej" fontSize="1rem" />
               </Link>
               <Link href="#placowki">
-                <Button
-                  text="Nasze placówki"
-                  background="#7C99E5"
-                  fontSize="1rem"
-                />
+                <Button text="Placówki" background="#7C99E5" fontSize="1rem" />
               </Link>
             </div>
           </div>
