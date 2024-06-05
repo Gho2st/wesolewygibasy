@@ -51,7 +51,9 @@ export default function Dotation() {
           <br></br>
           <br></br> e-mail: sz.umk@um.krakow.pl.
         </p>
-        <button onClick={handleOpenModal}>Zapoznaj się z całą treścią.</button>
+        <button onClick={handleOpenModal} className={classes.openModal__button}>
+          Zapoznaj się z całą treścią.
+        </button>
         <Modal
           isOpen={showModal}
           onRequestClose={handleCloseModal}
@@ -60,7 +62,7 @@ export default function Dotation() {
         >
           <div className={classes.modalContent}>
             <button onClick={handleCloseModal} className={classes.closeButton}>
-              Zamknij
+              &times;
             </button>
             <Image
               src={"/krakow2.png"}
