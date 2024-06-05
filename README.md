@@ -1,11 +1,11 @@
 # Website for Wesołe Wygibasy.
 
-![Project](./desktop.png)
-![Project](./mobile.png)
+![Project](/public/desktop.png)
 
 ## Overview
 
 This is a site for a nursery in Cracow. I made it and administrate every day.
+www.wesołewygibasy.pl
 
 ## Features
 
