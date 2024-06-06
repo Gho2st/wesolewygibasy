@@ -1,7 +1,7 @@
 .banerContainer {
   height: 100vh;
   padding: 2rem 9%;
-  background: #C7EEFF;
+  background: #c7eeff;
   background-image: url("/baner_nowy.png");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -50,12 +50,6 @@
   font-size: 1.22rem;
 }
 
-@media (max-width: 1460px) {
-  .banerContainer {
-    background-size: 100% 720px;
-  }
-}
-
 @media (max-width: 1252px) {
   .textContainer h1 {
     font-size: 2rem;
@@ -84,9 +78,6 @@
 }
 
 @media (max-width: 834px) {
-  .banerContainer {
-    background-size: cover;
-  }
   .buttonContainer button {
     padding: 0.7rem 0.7rem;
   }
