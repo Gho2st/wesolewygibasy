@@ -5,7 +5,7 @@
 ## Overview
 
 This is a site for a nursery in Cracow. I made it and administrate every day.
-www.wesołewygibasy.pl
+www.wesolewygibasy.pl
 
 ## Features
 
