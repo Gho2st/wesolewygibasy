@@ -1,9 +1,11 @@
 .banerContainer {
   height: 100vh;
   padding: 2rem 9%;
-  background: #BDDF8C;
+  background: #C7EEFF;
   background-image: url("/baner_nowy.png");
+  background-size: 100%;
   background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .textContainer {

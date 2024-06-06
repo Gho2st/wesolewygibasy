@@ -47,14 +47,14 @@ export default function Navigation() {
   }, []);
   return (
     <>
-      <div className={color ? classes.navigation__bg : ''}></div>
+      <div className={color ? classes.navigation__bg : ""}></div>
       <div className={classes.navigation}>
         <div className={classes.logo}>
           <Link href="/" className={classes.logo__link}>
             <Image
               src={"/others/logo.png"}
-              width={130}
-              height={85}
+              width={110}
+              height={65}
               alt="logo firmy Wesołe Wygibasy"
               className={classes.logoImage}
             ></Image>

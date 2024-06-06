@@ -57,7 +57,7 @@ export default function Vetulaniego() {
             </div>
           </div>
 
-          <div className={classes.image}>
+          {/* <div className={classes.image}>
             <Image
               src={"/others/vetulaniego.png"}
               height={400}
@@ -65,7 +65,7 @@ export default function Vetulaniego() {
               alt=""
               layout="responsive"
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={classes.container}>

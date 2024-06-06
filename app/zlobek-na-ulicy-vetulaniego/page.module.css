@@ -17,8 +17,11 @@
   padding: 0rem 4%;
   display: flex;
   justify-content: space-between;
-  background: #bddf8c;
+  background: #c7eeff;
   background-image: url("/baner_nowy.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .leftContainer {

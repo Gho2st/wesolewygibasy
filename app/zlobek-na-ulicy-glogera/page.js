@@ -54,7 +54,7 @@ export default function Glogera() {
               ></iframe>
             </div>
           </div>
-          <div className={classes.image}>
+          {/* <div className={classes.image}>
             <Image
               src={"/others/glogera.png"}
               height={400}
@@ -62,7 +62,7 @@ export default function Glogera() {
               layout="responsive"
               alt=""
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={classes.container}>

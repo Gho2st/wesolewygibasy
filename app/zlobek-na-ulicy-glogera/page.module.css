@@ -17,8 +17,11 @@
   padding: 0rem 4%;
   display: flex;
   justify-content: space-between;
-  background: #bddf8c;
+  background: #c7eeff;
   background-image: url("/baner_nowy.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .leftContainer {
@@ -51,6 +54,7 @@
   width: 100%;
   border-radius: 1rem;
   border: 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .image {

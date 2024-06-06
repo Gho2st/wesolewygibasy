@@ -54,7 +54,7 @@ export default function sliczna() {
               ></iframe>
             </div>
           </div>
-          <div className={classes.image}>
+          {/* <div className={classes.image}>
             <Image
               src={"/others/sliczna.png"}
               height={400}
@@ -62,7 +62,7 @@ export default function sliczna() {
               layout="responsive"
               alt=""
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={classes.container}>
