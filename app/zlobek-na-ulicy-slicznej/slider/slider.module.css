@@ -36,13 +36,18 @@
     margin-left: -1rem;
   }
 }
-
+@media (max-width: 680px) {
+  .slider img {
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+  }
+}
 @media (max-width: 465px) {
   .rotate {
     margin-right: 1rem;
   }
   .slider {
-    width: 80%;
+    width: 84%;
   }
   .rightArrow {
     margin-left: 1rem;
