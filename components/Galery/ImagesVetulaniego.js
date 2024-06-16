@@ -194,6 +194,16 @@ export default function ImagesVetulaniego() {
           src="/galeria/vetulaniego/dzien-pszczoly/dzien-pszczoly.jpg"
           text="Dzień Pszczoły"
         />
+        <ImagesItem
+          href="/zlobek-na-ulicy-vetulaniego/dzien-dziecka"
+          src="/galeria/vetulaniego/dzien-dziecka/dzien-dziecka.jpg"
+          text="Dzień Dziecka"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-vetulaniego/doswiadczenia"
+          src="/galeria/vetulaniego/doswiadczenia/doswiadczenia.jpg"
+          text="Doświadczenia"
+        />
       </Slider>
     </div>
   );

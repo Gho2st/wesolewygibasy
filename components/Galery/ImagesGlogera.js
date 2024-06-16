@@ -204,6 +204,21 @@ export default function ImagesContainer() {
           src="/galeria/glogera/dyplom-samodzielnosci/dyplom-samodzielnosci.jpg"
           text="Dyplom Samodzielności"
         />
+        <ImagesItem
+          href="/zlobek-na-ulicy-glogera/dzien-dziecka"
+          src="/galeria/glogera/dzien-dziecka/dzien-dziecka.jpg"
+          text="Dzień Dziecka"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-glogera/spacer"
+          src="/galeria/glogera/spacer/spacer.jpg"
+          text="Spacer"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-glogera/cuda-natury"
+          src="/galeria/glogera/cuda-natury/cuda-natury.jpg"
+          text="Cuda Natury"
+        />
       </Slider>
     </div>
   );

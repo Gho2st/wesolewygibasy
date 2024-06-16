@@ -220,6 +220,16 @@ export default function ImagesContainer() {
           text="Dzień pielęgniarki"
           href="/zlobek-na-ulicy-stanczyka/dzien-pielegniarki"
         />
+        <ImagesItem
+          src="/galeria/stanczyka/dzien-dziecka/dzien-dziecka.jpg"
+          text="Dzień dziecka"
+          href="/zlobek-na-ulicy-stanczyka/dzien-dziecka"
+        />
+        <ImagesItem
+          src="/galeria/stanczyka/doswiadczenia/doswiadczenia.jpg"
+          text="Doświadczenia"
+          href="/zlobek-na-ulicy-stanczyka/doswiadczenia"
+        />
       </Slider>
     </div>
   );
