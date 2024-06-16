@@ -6,7 +6,7 @@ export default function Places() {
     <div className={classes.container} id="placowki">
       <div className={classes.grid}>
         <PlaceItem
-          image="/sl1.jpg"
+          image="/sliczna-slider/sl1.jpg"
           alt="budynek zlobka na ulicy slicznej"
           title="Wolne miejsca w Nowym Żłobku"
           location="Ulica Śliczna 36A, Kraków"
