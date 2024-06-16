@@ -1,15 +1,13 @@
-import Header from "@/components/UI/Header";
 import classes from "./page.module.css";
 import Footer from "@/components/UI/Footer";
 import ImagesContainer from "@/components/Galery/ImagesContainer";
 import Image from "next/image";
-import { FaSun } from "react-icons/fa";
 import Button from "@/components/UI/Button";
 import Link from "next/link";
 import DaySchedule from "@/components/Info/DaySchedule";
-import { FcGoogle } from "react-icons/fc";
 import PlaceItem from "@/components/UI/PlaceItem";
 import { Metadata } from "next";
+import SliderSliczna from "./slider/slider";
 
 export const metadata = {
   title: "Żłobek na Ulicy Ślicznej",
@@ -54,15 +52,6 @@ export default function sliczna() {
               ></iframe>
             </div>
           </div>
-          {/* <div className={classes.image}>
-            <Image
-              src={"/others/sliczna.png"}
-              height={400}
-              width={900}
-              layout="responsive"
-              alt=""
-            />
-          </div> */}
         </div>
       </div>
       <div className={classes.container}>
@@ -90,29 +79,8 @@ export default function sliczna() {
           który zachęca do aktywności i zabawy, rozwijając jednocześnie
           umiejętności ruchowe i społeczne dzieci.
         </p>
-        <div className={classes.images}>
-          <Image
-            src={"/sl1.jpg"}
-            height={550}
-            width={450}
-            layout="responsive"
-            alt="zdjecie ze srodka zlobka na ulicy slicznej w krakowie"
-          />
-          <Image
-            src={"/sl2.jpg"}
-            height={550}
-            width={450}
-            layout="responsive"
-            alt="zdjecie ze srodka zlobka na ulicy slicznej w krakowie"
-          />
-          <Image
-            src={"/sl3.jpg"}
-            height={550}
-            width={450}
-            layout="responsive"
-            alt="zdjecie ze srodka zlobka na ulicy slicznej w krakowie"
-          />
-        </div>
+        <SliderSliczna />
+
         <h3>
           Czesne w całości pokrywane z projektu maluch + 2022 2029 oraz dotacji
           urzędu miasta Kraków
@@ -122,11 +90,7 @@ export default function sliczna() {
             <Button text="Cennik & Jadłospis" fontSize="1rem" />
           </Link>
           <Link href="/zapisy-i-formularz-kontaktowy">
-            <Button
-              text="Zapisy"
-              fontSize="1rem"
-              background="#7C99E5"
-            />
+            <Button text="Zapisy" fontSize="1rem" background="#7C99E5" />
           </Link>
         </div>
         <DaySchedule header="Plan Dnia" />

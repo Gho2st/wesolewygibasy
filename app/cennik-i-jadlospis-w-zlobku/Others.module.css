@@ -41,12 +41,18 @@
   margin-bottom: 3rem;
 }
 
+@media (max-width: 600px) {
+  .header {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
 @media (max-width: 410px) {
   .text {
     font-size: 0.8rem;
   }
   .header {
-    text-align: left;
     font-size: 1rem;
   }
 }

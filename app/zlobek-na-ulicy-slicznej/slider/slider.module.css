@@ -1,0 +1,50 @@
+.slider {
+  width: 100%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.slider img {
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.rotate {
+  transform: rotate(180deg);
+  margin-right: 2rem;
+}
+.rotate svg {
+  color: black;
+  font-size: 2rem;
+}
+
+.rightArrow {
+  margin-left: 2rem;
+}
+.rightArrow svg {
+  color: black;
+  font-size: 2rem;
+}
+
+@media (max-width: 1215px) {
+  .rotate {
+    margin-right: -1rem;
+  }
+  .slider {
+    width: 90%;
+  }
+  .rightArrow {
+    margin-left: -1rem;
+  }
+}
+
+@media (max-width: 465px) {
+  .rotate {
+    margin-right: 1rem;
+  }
+  .slider {
+    width: 80%;
+  }
+  .rightArrow {
+    margin-left: 1rem;
+  }
+}
