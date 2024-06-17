@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowForward } from "react-icons/io";
 import Image from "next/image";
 
-export default function SliderSliczna() {
+export default function SliderComponent({ images }) {
   const carouselSettings = {
     dots: true,
     infinite: true,
@@ -62,35 +62,16 @@ export default function SliderSliczna() {
   return (
     <div className={classes.container}>
       <Slider {...carouselSettings} className={classes.slider}>
-        <Image
-          src={"/sliczna-slider/sl1.jpg"}
-          height={550}
-          width={450}
-          layout="responsive"
-          alt="zdjecie ze srodka zlobka na ulicy slicznej w krakowie"
-        />
-        <Image
-          src={"/sliczna-slider/sl2.jpg"}
-          height={550}
-          width={450}
-          layout="responsive"
-          alt="zdjecie ze srodka zlobka na ulicy slicznej w krakowie"
-        />
-        <Image
-          src={"/sliczna-slider/sl3.jpg"}
-          height={550}
-          width={450}
-          layout="responsive"
-          alt="zdjecie ze srodka zlobka na ulicy slicznej w krakowie"
-        />
-
-        <Image
-          src={"/sliczna-slider/sl5.jpg"}
-          height={550}
-          width={450}
-          layout="responsive"
-          alt="zdjecie ze srodka zlobka na ulicy slicznej w krakowie"
-        />
+        {images.map((image, index) => (
+          <Image
+            key={index}
+            src={image.src}
+            height={image.height || 550}
+            width={image.width || 450}
+            layout="responsive"
+            alt={image.alt || "Slider Image"}
+          />
+        ))}
       </Slider>
     </div>
   );

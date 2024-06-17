@@ -11,6 +11,7 @@ import DaySchedule from "@/components/Info/DaySchedule";
 import { FcGoogle } from "react-icons/fc";
 import PlaceItem from "@/components/UI/PlaceItem";
 import { Metadata } from "next";
+import SliderComponent from "@/components/UI/slider/slider";
 
 export const metadata = {
   title: "Żłobek na Ulicy Stańczyka",
@@ -18,6 +19,33 @@ export const metadata = {
     canonical: "/zlobek-na-ulicy-stanczyka",
   },
 };
+
+const images = [
+  {
+    src: "/stanczyka-slider/st1.jpg",
+    alt: "zdjecie ze srodka zlobka na ulicy stanczyka w krakowie",
+  },
+  {
+    src: "/stanczyka-slider/st2.jpg",
+    alt: "zdjecie ze srodka zlobka na ulicy stanczyka w krakowie",
+  },
+  {
+    src: "/stanczyka-slider/st3.jpg",
+    alt: "zdjecie ze srodka zlobka na ulicy stanczyka w krakowie",
+  },
+  {
+    src: "/stanczyka-slider/st4.jpg",
+    alt: "zdjecie ze srodka zlobka na ulicy stanczyka w krakowie",
+  },
+  {
+    src: "/stanczyka-slider/st5.jpg",
+    alt: "zdjecie ze srodka zlobka na ulicy stanczyka w krakowie",
+  },
+  {
+    src: "/stanczyka-slider/st6.jpg",
+    alt: "zdjecie ze srodka zlobka na ulicy stanczyka w krakowie",
+  },
+];
 export default function stanczyka() {
   return (
     <>
@@ -55,15 +83,6 @@ export default function stanczyka() {
               ></iframe>
             </div>
           </div>
-          {/* <div className={classes.image}>
-            <Image
-              src={"/others/dzieci7.png"}
-              height={400}
-              width={900}
-              layout="responsive"
-              alt=""
-            />
-          </div> */}
         </div>
       </div>
       <div className={classes.container}>
@@ -93,16 +112,13 @@ export default function stanczyka() {
           Czesne w całości pokrywane z projektu maluch + 2022 2029 oraz dotacji
           urzędu miasta Kraków
         </h3>
+        <SliderComponent images={images} />
         <div className={classes.buttonContainer}>
           <Link href="/cennik-i-jadlospis-w-zlobku">
             <Button text="Cennik & Jadłospis" fontSize="1rem" />
           </Link>
           <Link href="/zapisy-i-formularz-kontaktowy">
-            <Button
-              text="Zapisy"
-              fontSize="1rem"
-              background="#7C99E5"
-            />
+            <Button text="Zapisy" fontSize="1rem" background="#7C99E5" />
           </Link>
         </div>
         <DaySchedule header="Plan Dnia" />

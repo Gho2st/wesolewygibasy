@@ -12,6 +12,7 @@ import { FcGoogle } from "react-icons/fc";
 import PlaceItem from "@/components/UI/PlaceItem";
 import ImagesVetulaniego from "@/components/Galery/ImagesVetulaniego";
 import { Metadata } from "next";
+import SliderComponent from "@/components/UI/slider/slider";
 
 export const metadata = {
   title: "Żłobek na Ulicy Vetulaniego",
@@ -19,6 +20,20 @@ export const metadata = {
     canonical: "/zlobek-na-ulicy-vetulaniego",
   },
 };
+const images = [
+  {
+    src: "/klub-malucha-slider/k1.jpg",
+    alt: "zdjecie ze srodka zlobka klubu malucha w krakowie",
+  },
+  {
+    src: "/klub-malucha-slider/k2.jpg",
+    alt: "zdjecie ze srodka zlobka klubu malucha w krakowie",
+  },
+  {
+    src: "/klub-malucha-slider/k3.jpg",
+    alt: "zdjecie ze srodka zlobka klubu malucha w krakowie",
+  },
+];
 export default function Vetulaniego() {
   return (
     <>
@@ -56,16 +71,6 @@ export default function Vetulaniego() {
               ></iframe>
             </div>
           </div>
-
-          {/* <div className={classes.image}>
-            <Image
-              src={"/others/vetulaniego.png"}
-              height={400}
-              width={900}
-              alt=""
-              layout="responsive"
-            />
-          </div> */}
         </div>
       </div>
       <div className={classes.container}>
@@ -90,17 +95,13 @@ export default function Vetulaniego() {
           jakimi wartościami kierujemy się w opiece nad dziećmi oraz przybliżymy
           Państwu wizerunki naszych opiekunów.
         </p>
-
+        <SliderComponent images={images} />
         <div className={classes.buttonContainer}>
           <Link href="/cennik-i-jadlospis-w-zlobku">
             <Button text="Cennik & Jadłospis" fontSize="1rem" />
           </Link>
           <Link href="/zapisy-i-formularz-kontaktowy">
-            <Button
-              text="Zapisy"
-              fontSize="1rem"
-              background="#7C99E5"
-            />
+            <Button text="Zapisy" fontSize="1rem" background="#7C99E5" />
           </Link>
         </div>
         <DaySchedule header="Plan Dnia" />

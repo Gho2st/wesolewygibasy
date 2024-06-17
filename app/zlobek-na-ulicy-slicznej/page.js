@@ -7,7 +7,7 @@ import Link from "next/link";
 import DaySchedule from "@/components/Info/DaySchedule";
 import PlaceItem from "@/components/UI/PlaceItem";
 import { Metadata } from "next";
-import SliderSliczna from "./slider/slider";
+import SliderComponent from "../../components/UI/slider/slider";
 
 export const metadata = {
   title: "Żłobek na Ulicy Ślicznej",
@@ -15,6 +15,26 @@ export const metadata = {
     canonical: "/zlobek-na-ulicy-slicznej",
   },
 };
+
+const images = [
+  {
+    src: "/sliczna-slider/sl1.jpg",
+    alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
+  },
+  {
+    src: "/sliczna-slider/sl2.jpg",
+    alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
+  },
+  {
+    src: "/sliczna-slider/sl3.jpg",
+    alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
+  },
+  {
+    src: "/sliczna-slider/sl5.jpg",
+    alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
+  },
+];
+
 export default function sliczna() {
   return (
     <>
@@ -79,7 +99,7 @@ export default function sliczna() {
           który zachęca do aktywności i zabawy, rozwijając jednocześnie
           umiejętności ruchowe i społeczne dzieci.
         </p>
-        <SliderSliczna />
+        <SliderComponent images={images} />
 
         <h3>
           Czesne w całości pokrywane z projektu maluch + 2022 2029 oraz dotacji

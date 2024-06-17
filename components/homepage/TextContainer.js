@@ -17,10 +17,11 @@ export default function TextContainer() {
           </p>
           <p>
             Nasze żłobki zlokalizowane są na północy Krakowa, co sprawia, że
-            jesteśmy łatwo dostępni dla rodziców z różnych części miasta oraz
-            okolic, takich jak Zielonki. Nasza dogodna lokalizacja oferuje
-            liczne atrakcje i udogodnienia dla naszych małych podopiecznych,
-            zapewniając im idealne warunki do rozwoju i zabawy.
+            jesteśmy łatwo dostępni dla rodziców z różnych części miasta
+            (Prądnik Biały, Bronowice, Krowodrza) oraz okolic, takich jak
+            Zielonki. Nasza dogodna lokalizacja oferuje liczne atrakcje i
+            udogodnienia dla naszych małych podopiecznych, zapewniając im
+            idealne warunki do rozwoju i zabawy.
           </p>
           <p>
             W Naszym Żłobku oferujemy opiekę dla dzieci w wieku do 3 lat. Nasz
