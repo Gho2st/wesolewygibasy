@@ -10,6 +10,10 @@
   margin-right: 5rem;
 }
 
+.imageContainer img{
+  transition: all ease 0.1s;
+}
+
 .imageContainer img:hover {
   transform: translateY(-3px);
   scale: 1.02;

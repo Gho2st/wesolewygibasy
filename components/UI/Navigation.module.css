@@ -11,7 +11,7 @@
   padding: 2rem 9%;
   position: fixed;
   width: 100%;
-  height: 5rem;
+  height: 4.3rem;
   z-index: 3000;
   transition: 0.3s ease-in;
   background-color: white;
@@ -42,25 +42,21 @@
 }
 
 .navigation__background {
-  height: 3rem;
-  width: 3rem;
+  height: 2.5rem;
+  width: 2.5rem;
   border-radius: 50%;
   position: fixed;
   top: 15px;
   right: 20px;
-  background-image: radial-gradient(
-    circle 321px at 8.3% 75.7%,
-    rgba(209, 247, 241, 1) 0%,
-    rgba(249, 213, 213, 1) 81%
-  );
+  background-color: #ffe9d0;
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 .navigation__button {
   background-color: rgb(255, 255, 255);
-  height: 3rem;
-  width: 3rem;
+  height: 2.5rem;
+  width: 2.5rem;
   position: fixed;
   top: 15px;
   right: 20px;
@@ -101,7 +97,7 @@
   display: inline-block;
   font-size: 1.5rem;
   padding: 1rem 2rem;
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
   background-image: linear-gradient(
@@ -129,7 +125,7 @@
 /* FUNCTIONALITY*/
 
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(80);
+  transform: scale(150);
 }
 
 .navigation__checkbox:checked ~ .navigation__nav {
@@ -140,18 +136,18 @@
 
 /* Icon */
 .navigation__icon {
-  width: 1.4rem;
+  width: 1.3rem;
   height: 2px;
   background-color: black;
   display: inline-block;
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
   position: relative;
 }
 
 .navigation__icon::before,
 .navigation__icon::after {
   content: "";
-  width: 1.4rem;
+  width: 1.3rem;
   height: 2px;
   background-color: black;
   position: absolute;
@@ -168,32 +164,32 @@
 }
 
 .navigation__button:hover .navigation__icon:before {
-  top: -0.65rem;
+  top: -0.55rem;
 }
 
 .navigation__button:hover .navigation__icon::after {
-  top: 0.65rem;
+  top: 0.6rem;
 }
 
 @media (max-width: 800px) {
   .navigation__background {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2rem;
+    width: 1rem;
     right: 15px;
   }
 
   .navigation__button {
-    height: 2.9rem;
-    width: 2.9rem;
+    height: 2rem;
+    width: 2rem;
     right: 10px;
   }
 
   .navigation__icon::before {
-    top: -0.5rem;
+    top: -0.4rem;
   }
 
   .navigation__icon::after {
-    top: 0.5rem;
+    top: 0.4rem;
   }
 
   .navigation__button:hover .navigation__icon:before {
@@ -205,9 +201,13 @@
   }
 
   .navigation__icon {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
+    width: 1.05rem;
   }
-
+  .navigation__icon::before,
+  .navigation__icon::after {
+    width: 1.05rem;
+  }
   .navigation__link {
     font-size: 1.2rem;
     padding: 0.3rem 1.2rem;

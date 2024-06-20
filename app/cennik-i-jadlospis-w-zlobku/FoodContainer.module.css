@@ -49,6 +49,8 @@
 @media (max-width: 572px) {
   .foodContainer p {
     width: 100%;
-    
+  }
+  .header {
+    margin-top: 0rem;
   }
 }

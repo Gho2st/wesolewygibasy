@@ -45,6 +45,11 @@
   align-items: center;
   width: 25%;
 }
+
+.right img{
+  transition: all ease 0.2s;
+}
+
 .right img:hover {
   transform: translateY(-3px);
   scale: 1.02;

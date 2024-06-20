@@ -75,7 +75,7 @@ export default function oNas() {
           </div>
           <TeamVetulaniego place="Żłobek, Ulica Vetulaniego 8, Kraków 31-226" />
           <TeamGlogera place="Żłobek, Ulica Glogera 53/LU2" />
-          <TeamStanczyka place="Żłobek, Ulica Stanczyka/LU3 8, Kraków 31-126" />
+          <TeamStanczyka place="Żłobek, Ulica Stańczyka/LU3 8, Kraków 31-126" />
         </div>
       </div>
     </>

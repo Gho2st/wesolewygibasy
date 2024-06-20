@@ -53,8 +53,8 @@ export default function Navigation() {
           <Link href="/" className={classes.logo__link}>
             <Image
               src={"/others/logo.png"}
-              width={110}
-              height={65}
+              width={100}
+              height={55}
               alt="logo firmy Wesołe Wygibasy"
               className={classes.logoImage}
             ></Image>
