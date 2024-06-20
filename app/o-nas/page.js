@@ -1,6 +1,4 @@
-import Header from "@/components/UI/Header";
 import classes from "./page.module.css";
-import Footer from "@/components/UI/Footer";
 import Image from "next/image";
 import Team, { TeamGlogera, TeamStanczyka } from "@/components/UI/Team";
 import TeamVetulaniego from "@/components/UI/Team";
@@ -80,7 +78,6 @@ export default function oNas() {
           <TeamStanczyka place="Żłobek, Ulica Stanczyka/LU3 8, Kraków 31-126" />
         </div>
       </div>
-      <Footer />
     </>
   );
 }

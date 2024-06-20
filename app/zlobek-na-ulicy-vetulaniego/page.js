@@ -1,8 +1,6 @@
-import Header from "@/components/UI/Header";
 import classes from "./page.module.css";
-import Footer from "@/components/UI/Footer";
 import H1 from "@/components/UI/H1";
-import ImagesContainer from "@/components/Galery/ImagesContainer";
+import ImagesContainer from "@/components/Gallery/ImagesContainer";
 import Image from "next/image";
 import { FaSun } from "react-icons/fa";
 import Button from "@/components/UI/Button";
@@ -10,7 +8,7 @@ import Link from "next/link";
 import DaySchedule from "@/components/Info/DaySchedule";
 import { FcGoogle } from "react-icons/fc";
 import PlaceItem from "@/components/UI/PlaceItem";
-import ImagesVetulaniego from "@/components/Galery/ImagesVetulaniego";
+import ImagesVetulaniego from "@/components/Gallery/ImagesVetulaniego";
 import { Metadata } from "next";
 import SliderComponent from "@/components/UI/slider/slider";
 
@@ -119,7 +117,6 @@ export default function Vetulaniego() {
           <ImagesVetulaniego />
         </div>
       </div>
-      <Footer />
     </>
   );
 }

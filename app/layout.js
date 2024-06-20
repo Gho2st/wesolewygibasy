@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import ScrollToTopButton from "@/components/UI/ScrollToTheTop";
 import { Metadata } from "next";
 import Navigation from "@/components/UI/Navigation";
+import Footer from "@/components/UI/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
         <ScrollToTopButton />
         {children}
         <Analytics />
+        <Footer />
       </body>
     </html>
   );

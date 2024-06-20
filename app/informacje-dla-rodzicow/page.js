@@ -1,7 +1,5 @@
 import H1 from "@/components/UI/H1";
 import classes from "./page.module.css";
-import Header from "@/components/UI/Header";
-import Footer from "@/components/UI/Footer";
 import Button from "@/components/UI/Button";
 import { Metadata } from "next";
 
@@ -60,7 +58,6 @@ export default function informacje() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

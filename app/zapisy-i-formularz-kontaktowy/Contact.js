@@ -1,6 +1,5 @@
 "use client";
 import classes from "./page.module.css";
-import Footer from "@/components/UI/Footer";
 import Image from "next/image";
 import Form from "./Form";
 import H1 from "@/components/UI/H1";
@@ -64,7 +63,6 @@ export default function Contact() {
         </div>
       </div>
 
-      <Footer />
     </>
   );
 }

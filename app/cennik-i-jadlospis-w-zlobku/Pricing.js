@@ -5,7 +5,6 @@ import Stanczyka from "./Stanczyka";
 import { useState } from "react";
 import Others from "./Others";
 import FoodContainer from "./FoodContainer";
-import Footer from "@/components/UI/Footer";
 import { IoCaretDownOutline } from "react-icons/io5";
 
 export default function Pricing() {
@@ -43,7 +42,6 @@ export default function Pricing() {
         {isOthersVisible && <Others />}
       </div>
       <FoodContainer />
-      <Footer />
     </>
   );
 }

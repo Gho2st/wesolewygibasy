@@ -3,8 +3,6 @@ import fs from "fs";
 import path from "path";
 import classes from "./page.module.css";
 import H1 from "@/components/UI/H1";
-import Header from "@/components/UI/Header";
-import Footer from "@/components/UI/Footer";
 import { Metadata } from "next";
 
 export const generateMetadata = ({ params }) => ({
@@ -61,7 +59,6 @@ export default function GaleryPost({ params }) {
       </div>
 
       <div className={classes.container}>{readImages()}</div>
-      <Footer />
     </>
   );
 }

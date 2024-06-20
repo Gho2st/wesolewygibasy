@@ -1,6 +1,4 @@
-import Footer from "@/components/UI/Footer";
 import H1 from "@/components/UI/H1";
-import Header from "@/components/UI/Header";
 import classes from "./page.module.css";
 import Image from "next/image";
 import { Metadata } from "next";
@@ -97,7 +95,6 @@ export default function adaptacja() {
           przedłużając pobyt o 2 godz.
         </p>
       </div>
-      <Footer />
     </>
   );
 }

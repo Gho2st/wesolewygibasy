@@ -1,13 +1,11 @@
-import Header from "@/components/UI/Header";
 import classes from "./page.module.css";
-import Footer from "@/components/UI/Footer";
 import H1 from "@/components/UI/H1";
 import Image from "next/image";
 import Button from "@/components/UI/Button";
 import Link from "next/link";
 import DaySchedule from "@/components/Info/DaySchedule";
 import { FcGoogle } from "react-icons/fc";
-import ImagesGlogera from "@/components/Galery/ImagesGlogera";
+import ImagesGlogera from "@/components/Gallery/ImagesGlogera";
 import { Metadata } from "next";
 import SliderComponent from "@/components/UI/slider/slider";
 
@@ -123,7 +121,6 @@ export default function Glogera() {
           <ImagesGlogera />
         </div>
       </div>
-      <Footer />
     </>
   );
 }
