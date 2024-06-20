@@ -78,7 +78,7 @@ export default function DaySchedule(props) {
         }}
         className={classes.header}
       >
-        <div className={classes.header-2}>
+        <div className={classes.header - 2}>
           <h3>Zajęcia Dodatkowe</h3>
         </div>
         <div className={classes.icon}>
@@ -105,13 +105,13 @@ export default function DaySchedule(props) {
           <h4>Czwartek</h4>
           <p>
             Temat tygodnia- w tym dniu dzieci rozmawiają oraz tworzą pracę
-            plastyczną na temat wybrany przez opiekunów np.dzień kota,dzień
+            plastyczną na temat wybrany przez opiekunów np. dzień kota, dzień
             pizzy czy powitanie wiosny.
           </p>
           <h4>Piątek</h4>
           <p>
             1,3 piątek miesiąca dogoterapia prowadzona przez Panią Marzenę
-            Hrykałło-Horowska zoofizjoterapeuta i dogoterapeuta <br></br> 2,4
+            Hrykałło-Horowska zoofizjoterapeuta i dogoterapeuta <br></br> <br></br> 2,4
             piątek zajęcia umuzykalniające prowadzone według teorii Edwina
             Eliasa Gordona prowadzonę przez Melobobas
           </p>

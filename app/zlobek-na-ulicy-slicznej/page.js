@@ -1,5 +1,4 @@
 import classes from "./page.module.css";
-import Footer from "@/components/UI/Footer";
 import ImagesContainer from "@/components/Gallery/ImagesContainer";
 import Image from "next/image";
 import Button from "@/components/UI/Button";
@@ -128,7 +127,6 @@ export default function sliczna() {
           <ImagesContainer />
         </div>
       </div>
-      <Footer />
     </>
   );
 }
