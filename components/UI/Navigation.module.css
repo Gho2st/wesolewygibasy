@@ -106,7 +106,6 @@
     transparent 50%,
     white 50%
   );
-  color: #501d23;
   background-size: 230%;
   transition: all 0.4s;
 }
@@ -156,19 +155,19 @@
 }
 
 .navigation__icon::before {
-  top: -0.5rem;
+  top: -0.4rem;
 }
 
 .navigation__icon::after {
-  top: 0.5rem;
+  top: 0.4rem;
 }
 
 .navigation__button:hover .navigation__icon:before {
-  top: -0.55rem;
+  top: -0.5rem;
 }
 
 .navigation__button:hover .navigation__icon::after {
-  top: 0.6rem;
+  top: 0.5rem;
 }
 
 @media (max-width: 800px) {
@@ -186,10 +185,12 @@
 
   .navigation__icon::before {
     top: -0.4rem;
+    width: 1.05rem;
   }
 
   .navigation__icon::after {
     top: 0.4rem;
+    width: 1.05rem;
   }
 
   .navigation__button:hover .navigation__icon:before {
@@ -204,10 +205,7 @@
     margin-top: 1rem;
     width: 1.05rem;
   }
-  .navigation__icon::before,
-  .navigation__icon::after {
-    width: 1.05rem;
-  }
+
   .navigation__link {
     font-size: 1.2rem;
     padding: 0.3rem 1.2rem;
