@@ -26,6 +26,7 @@
   padding: 1rem;
   color: rgb(74, 74, 74);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 1rem;
 }
 .containerLeft textarea::placeholder {
   color: rgb(0, 0, 0);
@@ -55,8 +56,7 @@
   color: rgb(0, 0, 0) !important;
 }
 
-
-.thanks{
+.thanks {
   width: 70%;
   margin: auto;
   margin-top: 2rem;

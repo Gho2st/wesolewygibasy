@@ -84,7 +84,7 @@ export default function Glogera() {
         <p className={classes.description}>
           Niepubliczny żłobek <span> WESOŁE WYGIBASY </span> ul. Glogera 53/LU2
           to nasza druga placówka. <br></br> <br></br> Wpis do rejestru żłobków
-          i klubów malucha uzyskaliśmy 1 czerwca 2021 Lokal przy Glogera był
+          i klubów malucha uzyskaliśmy 1 czerwca 2021, lokal przy Glogera był
           dobrze znany okolicznym rodzinom, ponieważ do marca 2021 znajdowała
           się tam znana i lubiana sala zabaw Kamyczki Patyczki.<br></br>
           <br></br> 14 czerwca pierwsze dzieciaczki już zostały pod troskliwą

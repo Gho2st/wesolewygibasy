@@ -11,7 +11,7 @@
 }
 
 .imageContainer img{
-  transition: all ease 0.1s;
+  transition: all ease 0.3s;
 }
 
 .imageContainer img:hover {
@@ -44,6 +44,7 @@
   margin: 1rem 1rem 1rem 0;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   align-items: center;
+  transition: all ease 0.2s;
 }
 
 .item:hover {

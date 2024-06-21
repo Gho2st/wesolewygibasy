@@ -78,7 +78,7 @@ export default function sliczna() {
           <span>Wesołe Wygibasy</span> - Niepubliczny Żłobek przy ulicy Ślicznej
           36A to nasza czwarta placówka, która oferuje nie tylko opiekę, ale
           także bogaty zestaw atrakcji dla najmłodszych. <br></br> <br></br>
-          Otwarcie 1 lipca 2024.
+          <b>Otwarcie 1 lipca 2024.</b>
           <br></br>
           <br></br>
           Adaptacja z rodzicem od 20 czerwca 2024.

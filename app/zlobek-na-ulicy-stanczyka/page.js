@@ -57,7 +57,7 @@ export default function stanczyka() {
               <p>
                 Szukasz miejsca, gdzie Twoje dziecko będzie mogło rozwijać się w
                 przyjaznej i bezpiecznej atmosferze? <br></br> <br></br>
-                Zapraszamy do naszego żłobka na{" "}
+                Zapraszamy do naszego żłobka na
                 <span className={classes.place}> Stańczyka 8/LU3.</span>
               </p>
               <div className={classes.buttonContainer}>
@@ -88,7 +88,7 @@ export default function stanczyka() {
           <span>Niepubliczny żłobek</span> WESOŁE WYGIBASY ul. Stańczyka 8/LU3
           jest naszą <span> trzecią placówką.</span>
           <br></br>
-          Wpis do rejestru żłobków i klubów malucha uzyskamy 1 czerwca 2023
+          Wpis do rejestru żłobków i klubów malucha uzyskaliśmy 1 czerwca 2023
           (czyż nie cudowna data – w sam raz na dzień dziecka) Dokładnie 2 lata
           po naszej 2 placówce. <br></br> <br></br> Już od dłuższego czasu
           poszukiwaliśmy lokalu w naszej okolicy, aby móc opiekować się jeszcze
