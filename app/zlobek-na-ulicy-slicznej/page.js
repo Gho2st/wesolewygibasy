@@ -32,6 +32,10 @@ const images = [
     src: "/sliczna-slider/sl5.jpg",
     alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
   },
+  {
+    src: "/sliczna-slider/sl6.jpg",
+    alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
+  },
 ];
 
 export default function sliczna() {
