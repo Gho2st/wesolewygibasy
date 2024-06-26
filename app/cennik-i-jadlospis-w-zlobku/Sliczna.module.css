@@ -1,5 +1,6 @@
 .slicznaContainer {
   overflow-x: auto;
+  padding: 1rem 2%;
 }
 
 .slicznaContainer h3 {
