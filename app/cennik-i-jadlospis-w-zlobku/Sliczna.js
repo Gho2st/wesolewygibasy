@@ -5,7 +5,7 @@ export default function Sliczna() {
     <div className={classes.slicznaContainer}>
       <h3>
         Cennik dla rodzica pierwszego dziecka w rodzinie uczęszczającego do
-        Niepubicznego Żłobka Wesołe Wygibasy, Kraków ul. Śliczna 36A/LU1
+        Niepublicznego Żłobka Wesołe Wygibasy, Kraków ul. Śliczna 36A/LU1
       </h3>
       <table className={classes.table}>
         <tbody>
@@ -62,7 +62,7 @@ export default function Sliczna() {
       </h3>
       <h3>
         Opłaty dla rodziców pobierających RKO (świadczenie ZUS na 2 dziecko w
-        rodzinie uczęszczające do Niepubicznego Żłobka Wesołe Wygibasy, Kraków
+        rodzinie uczęszczające do Niepublicznego Żłobka Wesołe Wygibasy, Kraków
         ul. Śliczna 36A/LU1)
       </h3>
       <table className={classes.table}>

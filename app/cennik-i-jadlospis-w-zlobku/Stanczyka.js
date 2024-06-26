@@ -5,7 +5,7 @@ export default function Stanczyka() {
     <div className={classes.stanczykaContainer}>
       <h3>
         Cennik dla rodzica pierwszego dziecka w rodzinie uczęszczającego do
-        Niepubicznego Żłobka Wesołe Wygibasy, Kraków ul. Stańczyka 8/LU3
+        Niepublicznego Żłobka Wesołe Wygibasy, Kraków ul. Stańczyka 8/LU3
       </h3>
       <table className={classes.table}>
         <tbody>
@@ -60,7 +60,7 @@ export default function Stanczyka() {
       </h3>
       <h3>
         Opłaty dla rodziców pobierających RKO (świadczenie ZUS na 2 dziecko w
-        rodzinie uczęszczające do Niepubicznego Żłobka Wesołe Wygibasy, Kraków
+        rodzinie uczęszczające do Niepublicznego Żłobka Wesołe Wygibasy, Kraków
         ul. Stańczyka 8/LU3)
       </h3>
       <table className={classes.table}>
