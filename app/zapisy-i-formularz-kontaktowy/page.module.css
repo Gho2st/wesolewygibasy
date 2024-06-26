@@ -163,18 +163,18 @@
 
 @media (max-width: 500px) {
   .item p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .item a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .itemFacebook p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .info svg {
-    margin-right: 1.4rem;
+    margin-right: 1rem;
     color: #fa7070;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
   .contactContainer {
     gap: 2.5rem;
