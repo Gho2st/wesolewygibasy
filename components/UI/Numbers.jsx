@@ -77,7 +77,7 @@ export default function Numbers() {
         <div className={classes.itemContainer}>
           <h5>Niepubliczny Żłobek ul. Śliczna</h5>
           <p>Nasz numer to:</p>
-          <p className={classes.number}>Wkrótce</p>
+          <p className={classes.number}>7330.1.15.2024</p>
         </div>
       )}
     </>

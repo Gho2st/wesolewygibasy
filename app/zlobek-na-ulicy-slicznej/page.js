@@ -80,27 +80,23 @@ export default function sliczna() {
       <div className={classes.container}>
         <p className={classes.description}>
           <span>Wesołe Wygibasy</span> - Niepubliczny Żłobek przy ulicy Ślicznej
-          36A to nasza czwarta placówka, która oferuje nie tylko opiekę, ale
-          także bogaty zestaw atrakcji dla najmłodszych. <br></br> <br></br>
-          <b>Otwarcie 1 lipca 2024.</b>
-          <br></br>
-          <br></br>
-          Adaptacja z rodzicem od 20 czerwca 2024.
-          <br></br>
-          <br></br>
-          Długo szukaliśmy idealnego miejsca w naszej okolicy, aby móc zapewnić
-          opiekę jeszcze większej liczbie dzieci. Teraz maluchy mogą być
-          spokojne, wiedząc, że są pod opieką doświadczonych i troskliwych osób.
-          Nasze wnętrza utrzymane są w delikatnych, pastelowych kolorach,
-          tworząc atmosferę przypominającą pokój dziecięcy, gdzie najmłodsi
-          czują się jak w domu.<br></br>
-          <br></br>
-          Dodatkowo, nasza placówka została wyposażona w klimatyzację oraz
-          system rekuperacji, zapewniając czyste i świeże powietrze dla naszych
-          podopiecznych.<br></br>
-          <br></br> Oprócz tego, oferujemy <span> nowoczesny plac zabaw, </span>
-          który zachęca do aktywności i zabawy, rozwijając jednocześnie
-          umiejętności ruchowe i społeczne dzieci.
+          36A 31-444 to nasza <span> czwarta </span> placówka.<br></br> Jak
+          pozostałe trzy placówki powstała z miłości i potrzeby serca. <br></br>
+          Żłobek ma możliwość przyjęcia <span> 39 dzieci.</span> <br></br>
+          Posiadamy <span> 2 duże sale </span> (54m2 i 57m2) dla potrzeb dzieci.{" "}
+          <br></br> <br></br> Placówka powstała od podstaw w okresie III - V
+          2024 r. Jest nowoczesna i przestronna, posiadamy rekuperację co
+          zapewnia nam dostęp do oczyszczonego powietrza. <br></br> Dzieci będą
+          podzielone na dwie grupy wiekowe:
+          <br></br> <br></br> <span> Grupa młodsza </span> - Tuptusie (dzieci do
+          ok 22 miesiąca)<br></br> <span> Grupa Starszaków </span> - Wygibaski
+          (dzieci do 3 lat)
+          <br></br> Dziećmi będzie się opiekować
+          <span> wykwalifikowanych 6 opiekunów.</span>
+          <br></br> Do dyspozycji dzieci jest nowoczesny, ogrodzony{" "}
+          <span> plac zabaw </span>
+          oraz teren zielony. <br></br> Dzieci będą również korzystać z wózków
+          6-osobowych.
         </p>
         <SliderComponent images={images} />
 

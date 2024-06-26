@@ -33,43 +33,32 @@ export default function DaySchedule(props) {
       </div>
       {isDayScheduleOpen && (
         <div className={classes.daySchedule}>
-          <h4>7:00 - 8:30</h4>
-          <p>Schodzenie się dzieci do klubu, swobodne zabawy</p>
-          <h4>8:15 - 8:30</h4>
-          <p>Przygotowanie do śniadania, zabiegi pielęgnacyjno-higieniczne</p>
+          <h4>7:00</h4>
+          <p>Otwarcie placówki</p>
           <h4>8:30 - 9:00</h4>
           <p>Śniadanie</p>
           <h4>9:00 - 9:15</h4>
-          <p>
-            Początek dnia w żłobku, witamy się instrumentami i śpiewamy piosenkę
-            powitalną
-          </p>
-          <h4>9:15 - 10:00</h4>
-          <p>
-            Zajęcia rozwojowe (rytmika, język angielski, sensoplastyka,
-            logopedia lub zajęcia plastyczne, zajęcia edukacyjne)
-          </p>
-          <h4>10:00 - 10:15</h4>
+          <p>Przywitanie</p>
+          <h4>9:15 - 9:45</h4>
+          <p>Zajęcia rozwojowo - edukacyjne</p>
+          <h4>9:45 - 10:00</h4>
           <p>Drugie Śniadanie</p>
-          <h4>10:15 - 11:00</h4>
-          <p>
-            Spacer, zabawy swobodne w ogrodzie, zabawy ruchowe w sali(w razie
-            niepogody)
-          </p>
-          <h4>11:10 - 11:30</h4>
+          <h4>10:00</h4>
+          <p>Wyjście na spacer</p>
+          <h4>11:00 - 11:30</h4>
           <p>Obiad</p>
-          <h4>11:30 - 12:00</h4>
-          <p>Przygotowanie do leżakowania, zabiegi pielęgnacyjno-higieniczne</p>
-          <h4>12:00 - 14:00</h4>
-          <p>Lezakowanie</p>
-          <h4>14:00 - 14:30</h4>
-          <p>Zabiegi higieniczno-pielęgnacyjne oraz podwieczorek</p>
+          <h4>11:30 - 13:30</h4>
+          <p>Drzemka</p>
+          <h4>13:30 - 14:00</h4>
+          <p>Podwieczorek</p>
           <h4>14:30 - 17:00</h4>
           <p>
-            Ćwiczenia indywidualne z dziećmi dostosowane do ich potrzeb,
-            słuchanie opowiadań, zabawy swobodne,
+            Swobodne zabawy w żłobku i na zewnątrz, czas oczekiwania na
+            przyjście rodziców.
           </p>
           <h5>Rozchodzenie się do domów</h5>
+          <h4>17:30</h4>
+          <p>Zamknięcie placówki</p>
         </div>
       )}
       <div
@@ -91,34 +80,29 @@ export default function DaySchedule(props) {
             Dziecko otrzymuje w naszym żłobku <span> moc atrakcji. </span>
             Każdego dnia odbywają się inne <span> zajęcia dodatkowe.</span>
           </p>
-          <h4>Poniedziałek</h4>
+          {/* <h4>Poniedziałek</h4> */}
+          <p>Zajęcia logopedyczne</p>
+          {/* <h4>Wtorek</h4> */}
+          <p>Język Angielski</p>
+          {/* <h4>Środa</h4> */}
+          <p>Rytmika - prowadzona przez znakomitego muzyka Pana Patryka</p>
+          {/* <h4>Czwartek</h4> */}
           <p>
-            Zajęcia logopedyczne-prowadzonę przez
-            <Link href="https://latwomowic.pl/">
-              <span> Łatwo Mówić</span>
-            </Link>
-          </p>
-          <h4>Wtorek</h4>
-          <p>J.Angielski-lektorzy ze szkoły Level up</p>
-          <h4>Środa</h4>
-          <p>Rytmika-prowadzona przez znakomitego muzyka Pana Patryka</p>
-          <h4>Czwartek</h4>
-          <p>
-            Temat tygodnia- w tym dniu dzieci rozmawiają oraz tworzą pracę
+            Temat tygodnia - w tym dniu dzieci rozmawiają oraz tworzą pracę
             plastyczną na temat wybrany przez opiekunów np. dzień kota, dzień
             pizzy czy powitanie wiosny.
           </p>
-          <h4>Piątek</h4>
+          {/* <h4>Piątek</h4> */}
           <p>
-            1,3 piątek miesiąca dogoterapia prowadzona przez Panią Marzenę
-            Hrykałło-Horowska zoofizjoterapeuta i dogoterapeuta <br></br> <br></br> 2,4
-            piątek zajęcia umuzykalniające prowadzone według teorii Edwina
-            Eliasa Gordona prowadzonę przez Melobobas
+            Dogoterapia prowadzona przez Panią Marzenę Hrykałło-Horowska
+            zoofizjoterapeuta i dogoterapeuta <br></br> <br></br> Zajęcia
+            umuzykalniające prowadzone według teorii Edwina Eliasa Gordona
+            prowadzonę przez Melobobas
           </p>
           <h4>Dodatkowo</h4>
           <p>
-            Bajkoterapia,Zajęcia kulinarne,zajęcia teatralne,sensoplastyka oraz
-            comiesięczne koncerty muzyki klasycznej
+            Bajkoterapia, zajęcia kulinarne, zajęcia teatralne, sensoplastyka
+            oraz comiesięczne koncerty muzyki klasycznej
           </p>
           <h5>Wszystkie zajęcia odbywają się w godzinach 09:00 – 10:00</h5>
         </div>

@@ -1,11 +1,11 @@
-import classes from "./Stanczyka.module.css";
+import classes from "./Sliczna.module.css";
 
-export default function Stanczyka() {
+export default function Sliczna() {
   return (
-    <div className={classes.stanczykaContainer}>
+    <div className={classes.slicznaContainer}>
       <h3>
         Cennik dla rodzica pierwszego dziecka w rodzinie uczęszczającego do
-        Niepubicznego Żłobka Wesołe Wygibasy, Kraków ul. Stańczyka 8/LU3
+        Niepubicznego Żłobka Wesołe Wygibasy, Kraków ul. Śliczna 36A/LU1
       </h3>
       <table className={classes.table}>
         <tbody>
@@ -13,8 +13,8 @@ export default function Stanczyka() {
             <th>Miesiąc</th>
             <th>Czesne</th>
             <th>Dotacja U.M</th>
-            <th>Dotacja Maluch</th>
-            <th>Dotacja ZUS*</th>
+            <th>Dotacja Maluch*</th>
+            <th>Dotacja ZUS**</th>
             <th>Wpłata na konto</th>
             <th>Ostateczne opłaty</th>
           </tr>
@@ -24,7 +24,7 @@ export default function Stanczyka() {
             <td>805 zł</td>
             <td>837 zł</td>
             <td>368 zł</td>
-            <td>368 zł</td>
+            <td>1205 zł</td>
             <td>0 zł</td>
           </tr>
           <tr>
@@ -33,7 +33,7 @@ export default function Stanczyka() {
             <td>735 zł</td>
             <td>837 zł</td>
             <td>400 zł</td>
-            <td>438 zł</td>
+            <td>1275 zł</td>
             <td>38 zł</td>
           </tr>
           <tr>
@@ -42,7 +42,7 @@ export default function Stanczyka() {
             <td>735 zł</td>
             <td>837 zł</td>
             <td>400 zł</td>
-            <td>438 zł</td>
+            <td>1275 zł</td>
             <td>38 zł</td>
           </tr>
         </tbody>
@@ -50,10 +50,12 @@ export default function Stanczyka() {
 
       {/* <p className={classes.text}>Zajęcia dodatkowe płatne 280 zł / miesiąc</p> */}
       <p className={classes.text}>
-        * Kwota zwracana ok. 20 dnia następnego miesiąca (np. za lipiec zwrot
+        * Kwota zwracana rodzicom po otrzymaniu przelewu z MRiPS)
+      </p>
+      <p className={classes.text}>
+        ** Kwota zwracana ok. 20 dnia następnego miesiąca (np. za lipiec zwrot
         ok. 20 sierpnia)
       </p>
-
       <h3 className={classes.header}>
         Czesne w całości pokrywane z projektu maluch + 2022 2029 oraz dotacji
         urzędu miasta Kraków
@@ -61,7 +63,7 @@ export default function Stanczyka() {
       <h3>
         Opłaty dla rodziców pobierających RKO (świadczenie ZUS na 2 dziecko w
         rodzinie uczęszczające do Niepubicznego Żłobka Wesołe Wygibasy, Kraków
-        ul. Stańczyka 8/LU3)
+        ul. Śliczna 36A/LU1)
       </h3>
       <table className={classes.table}>
         <tbody>
@@ -69,7 +71,7 @@ export default function Stanczyka() {
             <th>Miesiąc</th>
             <th>Czesne</th>
             <th>Dotacja U.M</th>
-            <th>Dotacja Maluch</th>
+            <th>Dotacja Maluch*</th>
             <th>Wpłata na konto</th>
             <th>Ostateczne opłaty</th>
           </tr>
@@ -78,7 +80,7 @@ export default function Stanczyka() {
             <td>2010 zł</td>
             <td>805 zł</td>
             <td>837 zł</td>
-            <td>368 zł</td>
+            <td>1205 zł</td>
             <td>368 zł</td>
           </tr>
           <tr>
@@ -86,7 +88,7 @@ export default function Stanczyka() {
             <td>2010 zł</td>
             <td>735 zł</td>
             <td>837 zł</td>
-            <td>438 zł</td>
+            <td>1275 zł</td>
             <td>438 zł</td>
           </tr>
           <tr>
@@ -94,11 +96,14 @@ export default function Stanczyka() {
             <td>2010 zł</td>
             <td>735 zł</td>
             <td>837 zł</td>
-            <td>438 zł</td>
+            <td>1275 zł</td>
             <td>438 zł</td>
           </tr>
         </tbody>
       </table>
+      <p className={classes.text}>
+        * Kwota zwracana rodzicom po otrzymaniu przelewu z MRiPS)
+      </p>
     </div>
   );
 }
