@@ -40,7 +40,10 @@ export default function Footer() {
           <h5>Kontakt z Nami i Zapisy</h5>
           <ul className={classes.contactInfo}>
             <li>
-              <FaPhone /> 697 560 022
+              <Link href={"tel:+48697560022"}>
+                <FaPhone />
+                697 560 022
+              </Link>
             </li>
             <li>
               <MdEmail /> wesolewygibasy@onet.pl

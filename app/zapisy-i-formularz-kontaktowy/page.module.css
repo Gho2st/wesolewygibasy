@@ -72,6 +72,12 @@
   color: black;
   font-size: 1.2rem;
 }
+.info a {
+  font-size: 1.2rem;
+}
+.info a:hover {
+  color: #fa7070;
+}
 .facebook {
   color: blue !important;
 }
@@ -98,6 +104,9 @@
   .info p {
     font-size: 1.05rem;
   }
+  .info a {
+    font-size: 1.05rem;
+  }
 }
 
 @media (max-width: 1070px) {
@@ -106,6 +115,9 @@
   }
 
   .info p {
+    font-size: 1.15rem;
+  }
+  .info a {
     font-size: 1.15rem;
   }
 }
@@ -121,8 +133,11 @@
   .text {
     width: 100%;
   }
-  
+
   .info p {
+    font-size: 1.25rem;
+  }
+  .info a {
     font-size: 1.25rem;
   }
 }
@@ -148,6 +163,9 @@
 
 @media (max-width: 500px) {
   .item p {
+    font-size: 1.2rem;
+  }
+  .item a {
     font-size: 1.2rem;
   }
   .itemFacebook p {

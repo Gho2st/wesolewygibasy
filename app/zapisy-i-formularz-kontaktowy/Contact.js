@@ -39,8 +39,10 @@ export default function Contact() {
           ></Image>
           <div className={classes.info}>
             <div className={classes.item}>
-              <FaPhone />
-              <p>697 560 022</p>
+              <Link href={"tel:+48697560022"}>
+                <FaPhone />
+                697 560 022
+              </Link>
             </div>
             <div className={classes.item}>
               <MdEmail />
@@ -62,7 +64,6 @@ export default function Contact() {
           <Form onFormSubmit={handleFormSubmit} />
         </div>
       </div>
-
     </>
   );
 }
