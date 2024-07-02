@@ -112,7 +112,7 @@ export default function Others() {
         </tbody>
       </table>
       <h3 className={classes.header}>
-        Placówka realizuje równiez świadczenia ZUS z programu 400+
+        Placówka realizuje również świadczenia ZUS z programu 400+
       </h3>
       <div className={classes.text}>
         <p>
