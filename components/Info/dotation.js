@@ -49,10 +49,10 @@ export default function Dotation() {
           Miasta Krakowa, <br></br>
           <br></br> ul. Dekerta 24, 30-703 Kraków tel. 12 616 97 97, pokój nr 34{" "}
           <br></br>
-          <br></br> e-mail: sz.umk@um.krakow.pl.
+          <br></br> e-mail: sz.umk@um.krakow.pl
         </p>
         <button onClick={handleOpenModal} className={classes.openModal__button}>
-          Zapoznaj się z całą treścią.
+          Zapoznaj się z całą treścią
         </button>
         <Modal
           isOpen={showModal}

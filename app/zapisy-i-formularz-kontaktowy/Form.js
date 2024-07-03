@@ -196,7 +196,7 @@ export default function Form({ onFormSubmit }) {
             <textarea
               id="text"
               name="text"
-              placeholder="Napisz swoja wiadomosc"
+              placeholder="Napisz swoją wiadomość"
               value={text}
               onChange={(e) => {
                 setText(e.target.value);

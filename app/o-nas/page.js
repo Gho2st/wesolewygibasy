@@ -74,7 +74,7 @@ export default function oNas() {
             <FaPeopleGroup />
           </div>
           <TeamVetulaniego place="Żłobek, Ulica Vetulaniego 8, Kraków 31-226" />
-          <TeamGlogera place="Żłobek, Ulica Glogera 53/LU2" />
+          <TeamGlogera place="Żłobek, Ulica Glogera 53/LU2, Kraków 31-222" />
           <TeamStanczyka place="Żłobek, Ulica Stańczyka/LU3 8, Kraków 31-126" />
         </div>
       </div>

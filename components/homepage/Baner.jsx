@@ -24,7 +24,7 @@ export default function Baner() {
               miejsce, które powstało z pasji, wielkiej troski i miłości do
               dzieci.
               <br></br> <br></br>
-              Dzieci zasługują by myśleć, ze mogą zmienić świat
+              Dzieci zasługują by myśleć, ze mogą zmienić świat!
             </p>
             <div className={classes.buttonContainer}>
               <Link href="#czytaj-wiecej">

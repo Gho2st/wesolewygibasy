@@ -76,7 +76,7 @@ export default function About() {
             <div className={classes.phoneContainer}>
               <p className={classes.phone}>697 560 022</p>
               <p className={classes.ownerDescription}>
-                Właścicielka Wesołych Wygibasów.
+                Właścicielka Wesołych Wygibasów
               </p>
             </div>
           </div>

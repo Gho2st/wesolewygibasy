@@ -80,7 +80,7 @@ export default function adaptacja() {
           żłobka ale jest pod telefonem i może zostać wezwany przez opiekunkę
           gdy jest taka potrzeba.
         </p>
-        <h2>2-4 Spotkanie</h2>
+        <h2>7-8 Spotkanie</h2>
         <p>
           Dziecko zostaje w żłobku samo i rodzic odbiera je po 1,5 godziny{" "}
           <br></br> <br></br>Jest to proces adaptacji sprawdzony, pozwalający
