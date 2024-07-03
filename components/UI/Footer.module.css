@@ -96,6 +96,11 @@
   color: blue;
   margin-top: 1rem;
   font-size: 2.5rem;
+  transition: all ease 0.3s;
+}
+
+.facebook svg:hover{
+  scale: 1.1;
 }
 
 .form:hover {
