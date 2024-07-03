@@ -1,25 +1,17 @@
-"use client";
-import { useEffect } from "react";
+import Button from "@/components/UI/Button";
+import classes from "./not-found.module.css";
+import { MdErrorOutline } from "react-icons/md";
 
-function NotFoundPage() {
-  // Przekierowanie użytkownika na stronę główną
-  const redirectToHome = () => {
-    window.location.href = "/"; // Przekierowanie na stronę główną
-  };
-
-  // Po zamontowaniu komponentu, automatycznie przekieruj na stronę główną
-  useEffect(() => {
-    redirectToHome();
-  }, []);
-
+export default function NotFoundPage() {
   return (
-    <>
-      <div>
-        <h1>404 - Strona nie znaleziona</h1>
-        <button onClick={redirectToHome}>Przejdź do strony głównej</button>
-      </div>
-    </>
+    <div className={classes.container}>
+      <MdErrorOutline />
+      <h1>404 - Strona nie znaleziona</h1>
+      <p>
+        PS: Często dzieje się tak przy literówce w adresie URL lub w przypadku
+        gdy strona zmieniła adres na troszkę inny...
+      </p>
+      <Link className={classes.button} href="/">Przejdź do strony głównej</Link>
+    </div>
   );
 }
-
-export default NotFoundPage;
