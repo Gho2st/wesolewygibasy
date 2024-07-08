@@ -70,6 +70,11 @@ export default function ImagesSliczna() {
           src="/galeria/sliczna/dzien-morza/dzien-morza.jpg"
           text="Dzień Morza"
         />
+        <ImagesItem
+          href="/zlobek-na-ulicy-slicznej/plac-zabaw"
+          src="/galeria/sliczna/plac-zabaw/plac-zabaw.jpg"
+          text="Plac Zabaw"
+        />
       </Slider>
     </div>
   );
