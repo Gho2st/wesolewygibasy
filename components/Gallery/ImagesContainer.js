@@ -230,6 +230,31 @@ export default function ImagesContainer() {
           text="Doświadczenia"
           href="/zlobek-na-ulicy-stanczyka/doswiadczenia"
         />
+        <ImagesItem
+          src="/galeria/stanczyka/spacer/spacer.jpg"
+          text="Spacer"
+          href="/zlobek-na-ulicy-stanczyka/spacer"
+        />
+        <ImagesItem
+          src="/galeria/stanczyka/dzien-taty/dzien-taty.jpg"
+          text="Dzień Taty"
+          href="/zlobek-na-ulicy-stanczyka/dzien-taty"
+        />
+        <ImagesItem
+          src="/galeria/stanczyka/kwiatowy-ogrod/kwiatowy-ogrod.jpg"
+          text="Kwiatowy Ogród"
+          href="/zlobek-na-ulicy-stanczyka/kwiatowy-ogrod"
+        />
+        <ImagesItem
+          src="/galeria/stanczyka/meduza-klementyna/meduza-klementyna.jpg"
+          text="Meduza Klementyna"
+          href="/zlobek-na-ulicy-stanczyka/meduza-klementyna"
+        />
+        <ImagesItem
+          src="/galeria/stanczyka/dzien-psa/dzien-psa.jpg"
+          text="Dzień Psa"
+          href="/zlobek-na-ulicy-stanczyka/dzien-psa"
+        />
       </Slider>
     </div>
   );

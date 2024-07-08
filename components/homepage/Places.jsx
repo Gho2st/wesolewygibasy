@@ -14,7 +14,6 @@ export default function Places() {
           add="Projekt Maluch+ 2022-2029"
           color="#fa7070"
           link="zlobek-na-ulicy-slicznej"
-          moreInfo="Adaptacja od 20 czerwca 2024!"
         />
         <PlaceItem
           image="/others/stanczyka.jpg"

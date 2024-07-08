@@ -1,5 +1,4 @@
 import classes from "./page.module.css";
-import ImagesContainer from "@/components/Gallery/ImagesContainer";
 import Image from "next/image";
 import Button from "@/components/UI/Button";
 import Link from "next/link";
@@ -7,6 +6,7 @@ import DaySchedule from "@/components/Info/DaySchedule";
 import PlaceItem from "@/components/UI/PlaceItem";
 import { Metadata } from "next";
 import SliderComponent from "../../components/UI/slider/slider";
+import ImagesSliczna from "@/components/Gallery/ImagesSliczna";
 
 export const metadata = {
   title: "Żłobek na Ulicy Ślicznej",
@@ -124,7 +124,7 @@ export default function sliczna() {
             wydarzenia i chwile z życia maluszków w naszej placówce.
           </p>
 
-          <ImagesContainer />
+          <ImagesSliczna />
         </div>
       </div>
     </>

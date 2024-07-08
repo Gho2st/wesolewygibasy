@@ -204,6 +204,21 @@ export default function ImagesVetulaniego() {
           src="/galeria/vetulaniego/doswiadczenia/doswiadczenia.jpg"
           text="Doświadczenia"
         />
+        <ImagesItem
+          href="/zlobek-na-ulicy-vetulaniego/dzien-taty"
+          src="/galeria/vetulaniego/dzien-taty/dzien-taty.jpg"
+          text="Dzień Taty"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-vetulaniego/sensoplastyka"
+          src="/galeria/vetulaniego/sensoplastyka/sensoplastyka.jpg"
+          text="Sensoplastyka"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-vetulaniego/dzien-wiatru"
+          src="/galeria/vetulaniego/dzien-wiatru/dzien-wiatru.jpg"
+          text="Dzień Wiatru"
+        />
       </Slider>
     </div>
   );
