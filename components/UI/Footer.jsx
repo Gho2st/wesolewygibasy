@@ -69,7 +69,7 @@ export default function Footer() {
       </div>
       <div className={classes.footerDownContainer}>
         <p className={classes.description}>
-          Wesołe Wygibasy 2024 &
+          &copy; Wesołe Wygibasy 2024 &
           <span className={classes.FooterSpan}>
             <Link href={"https://www.domiweb.pl/"}> Domiweb </Link>
           </span>
