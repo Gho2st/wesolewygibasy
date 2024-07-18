@@ -13,6 +13,10 @@
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+  transition: 0.3s ease;
+}
+.scrollToTopButton:hover {
+  background-color: #fa7070;
 }
 
 @media (max-width: 600px) {

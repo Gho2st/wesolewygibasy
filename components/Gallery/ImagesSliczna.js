@@ -65,6 +65,7 @@ export default function ImagesSliczna() {
           src="/galeria/sliczna/adaptacja/adaptacja.jpg"
           text="Adaptacja"
         />
+
         <ImagesItem
           href="/zlobek-na-ulicy-slicznej/dzien-morza"
           src="/galeria/sliczna/dzien-morza/dzien-morza.jpg"

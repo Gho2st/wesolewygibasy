@@ -256,28 +256,90 @@ export function TeamGlogera(props) {
           quote="Praca z dziećmi daje mi energię i radość z życia."
         />
         <TeamMember
-          src="/team/glogera/klaudia.jpeg"
-          name="Klaudia Bednarska"
-          role="Opiekunka Dziecięca"
-          quote=""
-        />
-        <TeamMember
-          src="/team/glogera/karolina.jpeg"
-          name="Karolina Bryłka"
-          role="Opiekunka Dziecięca"
-          quote=""
-        />
-        <TeamMember
           src="/team/glogera/ewelina.jpeg"
           name="Ewelina Bryła"
           role="Opiekunka Dziecięca"
           quote=""
         />
         <TeamMember
-          src="/team/glogera/iga.jpeg"
-          name="Iga Prażmo"
+          src="/team/glogera/avatar.jpeg"
+          name="Wiktoria Klik"
           role="Opiekunka Dziecięca"
           quote=""
+        />
+        <TeamMember
+          src="/team/glogera/ania.jpeg"
+          name="Anna Gamrat"
+          role="Opiekunka Dziecięca"
+          quote="Jestem mamą 2 dzieci ,uwielbiam wędrówki po górach .Wielką radość sprawia mi pokazywanie dzieciom świata ,a bezpieczeństwo i prawidłowy rozwój  mi powierzonych mi dzieci jest dla mnie priorytetem."
+        />
+      </Slider>
+    </div>
+  );
+}
+
+export function TeamSliczna(props) {
+  const carouselSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
+    initialSlide: 0,
+    nextArrow: (
+      <div>
+        <div className={classes.rightArrow}>
+          <IoIosArrowForward />
+        </div>
+      </div>
+    ),
+
+    prevArrow: (
+      <div>
+        <div className={classes.rotate}>
+          <IoIosArrowForward />
+        </div>
+      </div>
+    ),
+    responsive: [
+      {
+        breakpoint: 1224,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 680,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+  return (
+    <div className={classes.container}>
+      <h3>{props.place}</h3>
+      <Slider {...carouselSettings} className={classes.slider}>
+        <TeamMember
+          src="/team/sliczna/ewa.jpeg"
+          name="Ewa Meddour"
+          role="Kierownik, Opiekunka, Mama 2 dzieci, Technolog Żywności"
+          quote=" W pracy z dziećmi odnajduje wiele satysfakcji oraz radości. Każdego dnia mam możliwość uczestniczenia w bardzo ważnym okresie kształtowania się i rozwoju małego człowieka."
         />
       </Slider>
     </div>

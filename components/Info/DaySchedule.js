@@ -12,11 +12,11 @@ export default function DaySchedule(props) {
     <div className={classes.container}>
       <h2>{props.header}</h2>
       <p>
-        Żłobek jest czynny jest czynny w godzinach <span> 7:00 do 17:00</span>
+        Żłobek jest czynny jest czynny w godzinach <span> 7:00 do {props.time}</span>
         <br></br> Bardzo proszę aby przyprowadzać dziecko do godziny
         <span> 08:30</span>
         <br></br>Jeśli dziecko nie zostaje na leżakowanie (wychodzi po obiedzie)
-        to proszę odebrać dziecko do godziny <span>12:00</span>
+        to proszę odebrać dziecko do godziny <span>11:30</span>
       </p>
       <div
         onClick={() => {
@@ -49,6 +49,7 @@ export default function DaySchedule(props) {
           <p>Obiad</p>
           <h4>11:30 - 13:30</h4>
           <p>Drzemka</p>
+          <h5>W przypadku gdy dziecko nie zostaje na drzemke - proszę odebrać do 11:30.</h5>
           <h4>13:30 - 14:00</h4>
           <p>Podwieczorek</p>
           <h4>14:30 - 17:00</h4>
@@ -56,7 +57,7 @@ export default function DaySchedule(props) {
             Swobodne zabawy w żłobku i na zewnątrz, czas oczekiwania na
             przyjście rodziców.
           </p>
-          <h5>Rozchodzenie się do domów</h5>
+          <h5>Rozchodzenie się do domów.</h5>
           <h4>17:30</h4>
           <p>Zamknięcie placówki</p>
         </div>

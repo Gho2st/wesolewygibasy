@@ -36,6 +36,22 @@ const images = [
     src: "/sliczna-slider/sl6.jpg",
     alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
   },
+  {
+    src: "/sliczna-slider/sl7.jpg",
+    alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
+  },
+  {
+    src: "/sliczna-slider/sl8.jpg",
+    alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
+  },
+  {
+    src: "/sliczna-slider/sl9.jpg",
+    alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
+  },
+  {
+    src: "/sliczna-slider/sl10.jpg",
+    alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
+  },
 ];
 
 export default function sliczna() {
@@ -112,7 +128,7 @@ export default function sliczna() {
             <Button text="Zapisy" fontSize="1rem" background="#7C99E5" />
           </Link>
         </div>
-        <DaySchedule header="Plan Dnia" />
+        <DaySchedule header="Plan Dnia" time="17:30" />
         <div className={classes.galleryContainer}>
           <h2>Galeria</h2>
           <p className={classes.galleryText}>

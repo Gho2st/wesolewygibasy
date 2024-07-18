@@ -50,10 +50,10 @@ export default function oNas() {
               <br></br>
               <br></br>
               Przez lata wypracowałam metody pracy z dzieckiem i przekazuje je
-              swojej kadrze. 14 czerwca 2021 powstał żłobek Wesołe wygibasy ,
+              swojej kadrze. 14 czerwca 2021 powstał żłobek Wesołe Wygibasy,
               stworzony w odległości 900 m od klubu malucha. Przyczyna była
               prosta. Nie mogliśmy przyjąć wszystkich chętnych dzieciaczków z
-              powodu braku miejsc.
+              powodu braku miejsc. Następnie powstały kolejne placówki - na Stańczyka i Ślicznej.
             </p>
           </div>
           <div className={classes.imageContainer}>

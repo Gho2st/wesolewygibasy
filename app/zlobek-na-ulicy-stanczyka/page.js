@@ -119,7 +119,7 @@ export default function stanczyka() {
             <Button text="Zapisy" fontSize="1rem" background="#7C99E5" />
           </Link>
         </div>
-        <DaySchedule header="Plan Dnia" />
+        <DaySchedule header="Plan Dnia" time="17:30" />
         <div className={classes.galleryContainer}>
           <h2>Galeria</h2>
           <p className={classes.galleryText}>

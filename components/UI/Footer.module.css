@@ -54,15 +54,16 @@
 }
 .FooterSpan {
   color: rgb(5, 215, 215);
-  font-size: 1.2rem !important;
+  font-size: 1rem !important;
   font-weight: bold;
 }
 .FooterSpan:hover {
-  color: rgb(28, 197, 141);
+  color: #fa7070;
 }
 
 .description {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 
 .footerInfoContainer {
@@ -99,7 +100,7 @@
   transition: all ease 0.3s;
 }
 
-.facebook svg:hover{
+.facebook svg:hover {
   scale: 1.1;
 }
 
@@ -114,7 +115,7 @@
   transition: all 0.1s;
 }
 
-.contactInfo li:hover{
+.contactInfo li:hover {
   scale: 1.02;
 }
 
