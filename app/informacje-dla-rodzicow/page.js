@@ -56,6 +56,12 @@ export default function informacje() {
               Pobierz
             </a>
           </div>
+          <h2>Standardy Ochrony Małoletnich</h2>
+          <div className={classes.button}>
+            <a href="/standardy-ochrony-maloletnich.zip" download>
+              Pobierz
+            </a>
+          </div>
         </div>
       </div>
     </>
