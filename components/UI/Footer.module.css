@@ -53,12 +53,12 @@
   font-size: 1.5rem;
 }
 .FooterSpan {
-  color: rgb(5, 215, 215);
+  color: #fa7070;
   font-size: 1rem !important;
   font-weight: bold;
 }
 .FooterSpan:hover {
-  color: #fa7070;
+  color: orangered;
 }
 
 .description {
@@ -125,6 +125,10 @@
 .icon {
   display: flex;
   align-items: center;
+}
+.copy {
+  font-size: 1.5rem;
+  vertical-align: middle;
 }
 
 @media (max-width: 1000px) {

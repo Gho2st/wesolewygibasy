@@ -5,8 +5,6 @@ import { MdEmail } from "react-icons/md";
 import { FaMessage } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import Numbers from "./Numbers";
-import Button from "./Button";
-import PlaceItem from "./PlaceItem";
 
 export default function Footer() {
   return (
@@ -69,7 +67,7 @@ export default function Footer() {
       </div>
       <div className={classes.footerDownContainer}>
         <p className={classes.description}>
-          &copy; Wesołe Wygibasy 2024 &
+          <span className={classes.copy}>&copy;</span> Wesołe Wygibasy 2024 &
           <span className={classes.FooterSpan}>
             <Link href={"https://www.domiweb.pl/"}> Domiweb </Link>
           </span>
