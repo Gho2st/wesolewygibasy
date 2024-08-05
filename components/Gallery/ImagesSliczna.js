@@ -76,6 +76,51 @@ export default function ImagesSliczna() {
           src="/galeria/sliczna/plac-zabaw/plac-zabaw.jpg"
           text="Plac Zabaw"
         />
+        <ImagesItem
+          href="/zlobek-na-ulicy-slicznej/dogoterapia"
+          src="/galeria/sliczna/dogoterapia/dogoterapia.jpg"
+          text="Dogoterapia"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-slicznej/dzien-policjanta"
+          src="/galeria/sliczna/dzien-policjanta/dzien-policjanta.jpg"
+          text="Dzień Policjanta"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-slicznej/gordonki"
+          src="/galeria/sliczna/gordonki/gordonki.jpg"
+          text="Gordonki"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-slicznej/lodziarnia"
+          src="/galeria/sliczna/lodziarnia/lodziarnia.jpg"
+          text="Lodziarnia"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-slicznej/logorytmika"
+          src="/galeria/sliczna/logorytmika/logorytmika.jpg"
+          text="Logorytmika"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-slicznej/muzyka-klasyczna"
+          src="/galeria/sliczna/muzyka-klasyczna/muzyka-klasyczna.jpg"
+          text="Muzyka Klasyczna"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-slicznej/rytmika-instrumenty"
+          src="/galeria/sliczna/rytmika-instrumenty/rytmika-instrumenty.jpg"
+          text="Rytmika i Instrumenty"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-slicznej/spacerujemy"
+          src="/galeria/sliczna/spacerujemy/spacerujemy.jpg"
+          text="Spacerujemy"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-slicznej/teatrzyk"
+          src="/galeria/sliczna/teatrzyk/teatrzyk.jpg"
+          text="Teatrzyk"
+        />
       </Slider>
     </div>
   );

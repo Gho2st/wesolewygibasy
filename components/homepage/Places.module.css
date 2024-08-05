@@ -17,10 +17,10 @@
   }
 }
 @media (max-width: 950px) {
-    .grid {
-      grid-gap: 2rem;
-    }
+  .grid {
+    grid-gap: 2rem;
   }
+}
 
 @media (max-width: 889px) {
   .grid {
@@ -31,5 +31,4 @@
     justify-content: center;
     align-items: center;
   }
-  
 }

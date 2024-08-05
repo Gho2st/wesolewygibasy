@@ -9,10 +9,11 @@ export default function About() {
     <div className={classes.container} id="czytaj-wiecej">
       <div className={classes.imageContainer}>
         <Image
-          src={"/others/about4.png"}
+          src={"/monkeys/4.gif"}
           width={100}
           height={100}
           layout="responsive"
+          className={classes.image}
           alt="logo"
         ></Image>
       </div>

@@ -30,13 +30,15 @@ export default function Contact() {
       </div>
       <div className={classes.contactContainer}>
         <div className={classes.animals}>
-          <Image
-            src={"/kontakt/animals.png"}
-            height={100}
-            width={100}
-            layout="responsive"
-            alt=""
-          ></Image>
+          <div className={classes.animalsImgContainer}>
+            <Image
+              src={"/monkeys/1.gif"}
+              height={100}
+              width={100}
+              layout="responsive"
+              alt=""
+            ></Image>
+          </div>
           <div className={classes.info}>
             <div className={classes.item}>
               <Link href={"tel:+48697560022"}>

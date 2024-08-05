@@ -7,23 +7,30 @@
 }
 
 .contactContainer {
-  padding: 2rem 9%;
+  padding: 3rem 7%;
   display: flex;
   margin: auto;
-  width: 80%;
+  width: 90%;
   margin-top: 4rem;
   border-radius: 1rem;
   justify-content: space-between;
-  gap: 4rem;
+  gap: 6rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .animals {
-  width: 60%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 4rem;
+}
+.animalsImgContainer {
+  width: 90%;
+}
+.animals img {
+  transform: translateX(-1.7rem);
+  margin-bottom: 1rem;
 }
 .text {
   width: 60%;
@@ -84,7 +91,10 @@
 
 @media (max-width: 1263px) {
   .animals {
-    width: 40%;
+    width: 35%;
+  }
+  .animals img {
+    transform: translateX(-0rem);
   }
   .contactContainer h2 {
     font-size: 1.6rem;
@@ -94,38 +104,14 @@
   }
 }
 
-@media (max-width: 1133px) {
-  .contactContainer {
-    padding: 4rem 2rem;
-  }
-  .contactContainer h2 {
-    font-size: 1.6rem;
-  }
-  .info p {
-    font-size: 1.05rem;
-  }
-  .info a {
-    font-size: 1.05rem;
-  }
-}
-
-@media (max-width: 1070px) {
-  .animals {
-    width: 45%;
-  }
-
-  .info p {
-    font-size: 1.15rem;
-  }
-  .info a {
-    font-size: 1.15rem;
-  }
-}
-
-@media (max-width: 977px) {
+@media (max-width: 1000px) {
   .contactContainer {
     padding: 2rem 9%;
     flex-direction: column-reverse;
+    gap: 3rem;
+  }
+  .animalsImgContainer {
+    width: 50%;
   }
   .animals {
     width: 100%;
@@ -143,6 +129,12 @@
 }
 
 @media (max-width: 621px) {
+  .animals img {
+    margin-bottom: 0rem;
+  }
+  .animalsImgContainer {
+    width: 55%;
+  }
   .container h1 {
     font-size: 2.4rem !important;
     width: 100% !important;
@@ -162,6 +154,9 @@
 }
 
 @media (max-width: 500px) {
+  .animalsImgContainer {
+    width: 85%;
+  }
   .item p {
     font-size: 1.1rem;
   }
@@ -181,10 +176,5 @@
   }
   .animals {
     margin-bottom: 0;
-  }
-}
-@media (max-width: 977px) {
-  .animals img {
-    display: none;
   }
 }

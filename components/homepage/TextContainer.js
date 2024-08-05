@@ -51,7 +51,7 @@ export default function TextContainer() {
         </div>
         <div className={classes.right}>
           <Image
-            src={"/others/logo2.png"}
+            src={"/monkeys/3.gif"}
             width={100}
             height={100}
             layout="responsive"

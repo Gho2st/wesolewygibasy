@@ -37,16 +37,16 @@
 }
 
 .left {
-  width: 69%;
+  width: 65%;
 }
 .right {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25%;
+  width: 31%;
 }
 
-.right img{
+.right img {
   transition: all ease 0.2s;
 }
 
@@ -65,15 +65,14 @@
   }
   .right {
     justify-content: center;
-    width: 30%;
+    width: 38%;
     margin: auto;
-    margin-top: 5rem;
   }
 }
-@media (max-width: 705px) {
+
+@media (max-width: 800px) {
   .right {
-    width: 50%;
-    margin-top: 4rem;
+    width: 48%;
   }
   .textContainer h4 {
     font-size: 1.1rem;
@@ -81,6 +80,9 @@
   }
   .textContainer a {
     font-size: 1.3rem;
+  }
+  .textContainer{
+    margin-bottom: 0rem;
   }
 }
 @media (max-width: 600px) {

@@ -219,6 +219,31 @@ export default function ImagesVetulaniego() {
           src="/galeria/vetulaniego/dzien-wiatru/dzien-wiatru.jpg"
           text="Dzień Wiatru"
         />
+        <ImagesItem
+          href="/zlobek-na-ulicy-vetulaniego/urodzinki"
+          src="/galeria/vetulaniego/urodzinki/urodzinki.jpg"
+          text="Urodzinki"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-vetulaniego/uroki-ogrodu"
+          src="/galeria/vetulaniego/uroki-ogrodu/uroki-ogrodu.jpg"
+          text="Uroki Ogrodu"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-vetulaniego/czas-wakacji"
+          src="/galeria/vetulaniego/czas-wakacji/czas-wakacji.jpg"
+          text="Czas wakacji"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-vetulaniego/odkrywamy"
+          src="/galeria/vetulaniego/odkrywamy/odkrywamy.jpg"
+          text="Odkrywamy"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-vetulaniego/lemoniada"
+          src="/galeria/vetulaniego/lemoniada/lemoniada.jpg"
+          text="Lemoniada"
+        />
       </Slider>
     </div>
   );

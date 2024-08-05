@@ -255,6 +255,16 @@ export default function ImagesContainer() {
           text="Dzień Psa"
           href="/zlobek-na-ulicy-stanczyka/dzien-psa"
         />
+        <ImagesItem
+          src="/galeria/stanczyka/sensoplastyka/sensoplastyka.jpg"
+          text="Lawendowa Sensoplastyka"
+          href="/zlobek-na-ulicy-stanczyka/sensoplastyka"
+        />
+        <ImagesItem
+          src="/galeria/stanczyka/dzien-policjanta/dzien-policjanta.jpg"
+          text="Dzień Policjanta"
+          href="/zlobek-na-ulicy-stanczyka/dzien-policjanta"
+        />
       </Slider>
     </div>
   );
