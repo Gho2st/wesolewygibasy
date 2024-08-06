@@ -16,7 +16,11 @@
 }
 
 .button {
-  margin-top: 3rem;
+  margin-top: 2.3rem;
+}
+
+.button p {
+  margin-bottom: 1.2rem;
 }
 
 .container a {
@@ -27,10 +31,6 @@
   font-weight: bold;
   border: 0px;
   margin-right: 1rem;
-}
-
-.marginTop {
-  margin-top: 3rem;
 }
 
 .mt {
