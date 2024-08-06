@@ -135,12 +135,13 @@
 @media (max-width: 800px) {
   .container {
     margin-top: 1rem;
+    padding-bottom: 0;
   }
   .textContainer {
     margin-top: 0rem;
   }
   .imageContainer {
-    margin-top: 0;
+    margin-top: 1rem;
     width: 50%;
   }
   .checkContainer {
@@ -156,13 +157,13 @@
 }
 
 @media (max-width: 600px) {
-  .container{
+  .container {
     margin-bottom: 0;
   }
   .textContainer h2 {
     font-size: 1.55rem;
   }
-  .imageContainer{
+  .imageContainer {
     width: 85%;
   }
   .item p {

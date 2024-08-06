@@ -23,26 +23,26 @@ export default function informacje() {
           informacje na temat naszych zasad i procedur.
         </p>
         <div className={classes.buttons}>
-          <h2>Statut Żłobka</h2>
           <div className={classes.button}>
+            <h2>Statut Żłobka</h2>
             <a href="/STATUT-ZLOBEK.odt" download>
               Pobierz
             </a>
           </div>
 
-          <h2>Regulamin Żłobka</h2>
           <div className={classes.button}>
+            <h2>Regulamin Żłobka</h2>
             <a href="regulamin.odt" download>
               Pobierz
             </a>
           </div>
-          <h2>Standardy Ochrony Małoletnich</h2>
           <div className={classes.button}>
+            <h2>Standardy Ochrony Małoletnich</h2>
             <a href="/standardy-ochrony-maloletnich.zip" download>
               Pobierz
             </a>
           </div>
-          <h2> Klauzula prywatności</h2>
+          <h2 className={classes.marginTop}> Klauzula prywatności</h2>
           <p>
             Od dnia 25 maja 2018 roku obowiązują nowe zasady ochrony danych
             osobowych, które wynikają z postanowień RODO. RODO to Rozporządzenie
