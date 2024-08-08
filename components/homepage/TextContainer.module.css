@@ -83,10 +83,12 @@
   }
   .textContainer{
     margin-bottom: 0rem;
+    padding-bottom: 0rem;
   }
 }
 @media (max-width: 600px) {
   .right {
-    width: 85%;
+    width: 100%;
+    margin-top: 1rem;
   }
 }

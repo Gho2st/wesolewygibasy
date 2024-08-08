@@ -67,7 +67,7 @@ export default function TextContainer() {
         </motion.div>
         <div className={classes.right}>
           <Image
-            src={"/monkeys/3.gif"}
+            src={"/monkeys/2.gif"}
             width={100}
             height={100}
             layout="responsive"

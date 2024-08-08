@@ -2,17 +2,17 @@
   padding: 2rem 9%;
 }
 
-.container h1{
-    margin-bottom: 3.5rem ;
+.container h1 {
+  margin-bottom: 3.5rem;
 }
 
-.imageContainer{
-    display: flex;
-    justify-content: center;
+.imageContainer {
+  display: flex;
+  justify-content: center;
 }
 
-.container img{
-    width: 15% !important;
+.container img {
+  width: 15% !important;
 }
 
 .container p {
@@ -24,8 +24,8 @@
   margin-left: 3rem;
 }
 
-.container ul li{
-    margin-top: 1.5rem;
+.container ul li {
+  margin-top: 1.5rem;
 }
 
 .container h2 {
