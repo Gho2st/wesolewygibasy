@@ -130,9 +130,16 @@
   }
 
   .navigation__button {
-    height: 2rem;
-    width: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
     right: 10px;
+  }
+  .navigation nav{
+    top: -80px;
+  }
+
+  .navigation__button svg {
+    font-size: 1.35rem;
   }
 
   .navigation__link {
