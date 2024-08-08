@@ -219,6 +219,26 @@ export default function ImagesContainer() {
           src="/galeria/glogera/cuda-natury/cuda-natury.jpg"
           text="Cuda Natury"
         />
+        <ImagesItem
+          href="/zlobek-na-ulicy-glogera/robaczki"
+          src="/galeria/glogera/robaczki/robaczki.jpg"
+          text="Robaczki"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-glogera/motoryka"
+          src="/galeria/glogera/motoryka/motoryka.jpg"
+          text="Motoryka"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-glogera/swiatla-drogowe"
+          src="/galeria/glogera/swiatla-drogowe/swiatla-drogowe.jpg"
+          text="Światła Drogowe"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-glogera/dzien-transportu"
+          src="/galeria/glogera/dzien-transportu/dzien-transportu.jpg"
+          text="Dzień Transportu"
+        />
       </Slider>
     </div>
   );

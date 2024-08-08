@@ -1,3 +1,4 @@
+"use client";
 import Dotation from "@/components/Info/dotation";
 import Navigation from "@/components/UI/Navigation";
 import About from "@/components/homepage/About";

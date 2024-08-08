@@ -244,6 +244,16 @@ export default function ImagesVetulaniego() {
           src="/galeria/vetulaniego/lemoniada/lemoniada.jpg"
           text="Lemoniada"
         />
+        <ImagesItem
+          href="/zlobek-na-ulicy-vetulaniego/piknik-w-parku"
+          src="/galeria/vetulaniego/piknik-w-parku/piknik-w-parku.jpg"
+          text="Piknik w parku"
+        />
+        <ImagesItem
+          href="/zlobek-na-ulicy-vetulaniego/urodzinki-helenki"
+          src="/galeria/vetulaniego/urodzinki-helenki/urodzinki-helenki.jpg"
+          text="Urodzinki Helenki"
+        />
       </Slider>
     </div>
   );

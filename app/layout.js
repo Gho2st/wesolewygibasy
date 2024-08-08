@@ -5,6 +5,7 @@ import ScrollToTopButton from "@/components/UI/ScrollToTheTop";
 import { Metadata } from "next";
 import Navigation from "@/components/UI/Navigation";
 import Footer from "@/components/UI/Footer";
+import TransitionProvider from "@/components/animation/TransitionProvider";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -31,11 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pl">
       <body className={montserrat.className}>
-        <Navigation />
-        <ScrollToTopButton />
-        {children}
-        <Analytics />
-        <Footer />
+        <TransitionProvider>{children}</TransitionProvider>
       </body>
     </html>
   );

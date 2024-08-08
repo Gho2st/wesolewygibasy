@@ -120,6 +120,11 @@ export default function ImagesSliczna() {
           src="/galeria/sliczna/teatrzyk/teatrzyk.jpg"
           text="Teatrzyk"
         />
+        <ImagesItem
+          href="/zlobek-na-ulicy-slicznej/mala-spizarnia"
+          src="/galeria/sliczna/mala-spizarnia/mala-spizarnia.jpg"
+          text="Mała Spiżarnia"
+        />
       </Slider>
     </div>
   );

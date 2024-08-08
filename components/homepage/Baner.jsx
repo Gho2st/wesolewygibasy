@@ -2,18 +2,25 @@
 import Link from "next/link";
 import Button from "../UI/Button";
 import classes from "./Baner.module.css";
-import Image from "next/image";
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { useInView, motion, delay } from "framer-motion";
 
 export default function Baner() {
+  const skillRef = useRef();
+  const isSkillRefinView = useInView(skillRef);
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-    >
-      <div className={classes.banerContainer}>
-        <div className={classes.textContainer}>
+    <div className={classes.banerContainer}>
+      <div className={classes.textContainer} ref={skillRef}>
+        <motion.div
+          initial={{ x: "-900px", opacity: 0, rotate: -10 }}
+          animate={
+            isSkillRefinView
+              ? { x: 0, opacity: 1, rotate: 0 }
+              : { x: "-900px", opacity: 0, rotate: -10 }
+          }
+          transition={{ delay: 0.11, duration: 0.7, ease: "easeOut" }}
+          className={classes.left}
+        >
           <div>
             <h1>
               Najlepszy <span className={classes.span}>Żłobek</span> dla Twoich
@@ -35,8 +42,8 @@ export default function Baner() {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 }

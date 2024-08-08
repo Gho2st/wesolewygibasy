@@ -265,6 +265,11 @@ export default function ImagesContainer() {
           text="Dzień Policjanta"
           href="/zlobek-na-ulicy-stanczyka/dzien-policjanta"
         />
+        <ImagesItem
+          src="/galeria/stanczyka/zaczytani/zaczytani.jpg"
+          text="Zaczytani"
+          href="/zlobek-na-ulicy-stanczyka/zaczytani"
+        />
       </Slider>
     </div>
   );
