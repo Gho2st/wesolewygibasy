@@ -8,18 +8,7 @@
   background-position: bottom;
   position: relative;
 }
-.logo__link {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  display: flex;
-  align-items: center;
-  z-index: 20000;
-}
 
-.logoImage {
-  vertical-align: middle;
-}
 .textContainer {
   color: black;
   width: 60%;

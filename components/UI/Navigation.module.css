@@ -1,5 +1,4 @@
 .navigation {
-  padding: 2rem 9%;
   position: fixed;
   width: 100%;
   height: 5rem;
@@ -7,8 +6,8 @@
   background-color: transparent;
   transition: 0.3s ease-in;
 }
+
 .navigation__bg {
-  padding: 2rem 9%;
   position: fixed;
   width: 100%;
   height: 4.3rem;
@@ -103,7 +102,7 @@
   margin-right: 1.3rem;
 }
 
-/* FUNCTIONALITY*/
+/* FUNCTIONALITY */
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(150);
@@ -123,6 +122,7 @@
   display: inline-block;
   margin-top: 1.2rem;
   position: relative;
+  transition: all 0.3s;
 }
 
 .navigation__icon::before,
@@ -133,7 +133,7 @@
   background-color: black;
   position: absolute;
   left: 0;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 
 .navigation__icon::before {
@@ -144,12 +144,28 @@
   top: 0.4rem;
 }
 
+/* Efekt hover */
 .navigation__button:hover .navigation__icon:before {
   top: -0.5rem;
 }
 
 .navigation__button:hover .navigation__icon::after {
   top: 0.5rem;
+}
+
+/* Efekt zamiany kreski na X */
+.navigation__checkbox:checked ~ .navigation__button .navigation__icon {
+  background-color: transparent;
+}
+
+.navigation__checkbox:checked ~ .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.navigation__checkbox:checked ~ .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-45deg);
 }
 
 @media (max-width: 800px) {

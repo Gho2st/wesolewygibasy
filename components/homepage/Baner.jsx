@@ -11,15 +11,6 @@ export default function Baner() {
   const isSkillRefinView = useInView(skillRef);
   return (
     <div className={classes.banerContainer}>
-      <Link href="/" className={classes.logo__link}>
-        <Image
-          src={"/others/logo.png"}
-          width={100}
-          height={55}
-          alt="logo firmy Wesołe Wygibasy"
-          className={classes.logoImage}
-        ></Image>
-      </Link>
       <div className={classes.textContainer} ref={skillRef}>
         <motion.div
           initial={{ x: "-900px", opacity: 0, rotate: -10 }}
