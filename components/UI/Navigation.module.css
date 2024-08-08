@@ -19,24 +19,6 @@
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.logo {
-  position: fixed;
-  top: 15px;
-  left: 23px;
-  display: flex;
-  align-items: center;
-}
-
-.logoImage {
-  vertical-align: middle;
-}
-
-.logoText {
-  font-size: 1.3rem;
-  color: white;
-  vertical-align: middle;
-}
-
 .navigation__checkbox {
   display: none;
 }

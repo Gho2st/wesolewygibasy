@@ -6,25 +6,6 @@ import Image from "next/image";
 
 export default function Navigation() {
   const checkboxRef = useRef(null);
-  const [color, setColor] = useState(false);
-
-  useEffect(() => {
-    const changeColor = () => {
-      if (typeof window !== "undefined") {
-        if (window.scrollY >= 20) {
-          setColor(true);
-        } else {
-          setColor(false);
-        }
-      }
-    };
-
-    window.addEventListener("scroll", changeColor);
-
-    return () => {
-      window.removeEventListener("scroll", changeColor);
-    };
-  }, []);
 
   useEffect(() => {
     const handleLinkClick = () => {
@@ -47,19 +28,7 @@ export default function Navigation() {
   }, []);
   return (
     <>
-      <div className={color ? classes.navigation__bg : ""}></div>
       <div className={classes.navigation}>
-        <div className={classes.logo}>
-          <Link href="/" className={classes.logo__link}>
-            <Image
-              src={"/others/logo.png"}
-              width={100}
-              height={55}
-              alt="logo firmy Wesołe Wygibasy"
-              className={classes.logoImage}
-            ></Image>
-          </Link>
-        </div>
         <input
           ref={checkboxRef}
           type="checkbox"

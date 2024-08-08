@@ -1,8 +1,7 @@
-'use client'
+"use client";
 import { useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
-import classes from './StyleToTopButton.module.css';
-import { useEffect } from "react";
+import classes from "./StyleToTopButton.module.css";
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,26 +10,9 @@ const ScrollToTopButton = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
-
-  // Show the button when scrolling down
-  const toggleVisibility = () => {
-    if (window.pageYOffset > 300) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
-
-  // Add scroll event listener when component mounts
-  useEffect(() => {
-    window.addEventListener("scroll", toggleVisibility);
-    return () => {
-      window.removeEventListener("scroll", toggleVisibility);
-    };
-  }, []);
 
   return (
     <div>

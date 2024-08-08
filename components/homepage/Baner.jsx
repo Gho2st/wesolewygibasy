@@ -4,12 +4,22 @@ import Button from "../UI/Button";
 import classes from "./Baner.module.css";
 import { useRef } from "react";
 import { useInView, motion, delay } from "framer-motion";
+import Image from "next/image";
 
 export default function Baner() {
   const skillRef = useRef();
   const isSkillRefinView = useInView(skillRef);
   return (
     <div className={classes.banerContainer}>
+      <Link href="/" className={classes.logo__link}>
+        <Image
+          src={"/others/logo.png"}
+          width={100}
+          height={55}
+          alt="logo firmy Wesołe Wygibasy"
+          className={classes.logoImage}
+        ></Image>
+      </Link>
       <div className={classes.textContainer} ref={skillRef}>
         <motion.div
           initial={{ x: "-900px", opacity: 0, rotate: -10 }}

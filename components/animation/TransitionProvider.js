@@ -4,7 +4,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Navigation from "@/components/UI/Navigation";
 import { Analytics } from "@vercel/analytics/react";
-import ScrollToTopButton from "@/components/UI/ScrollToTheTop";
 import Footer from "@/components/UI/Footer";
 
 export default function TransitionProvider({ children }) {
@@ -20,7 +19,6 @@ export default function TransitionProvider({ children }) {
         transition={{ duration: 0.3, ease: "easeInOut" }}
       >
         <Navigation />
-        <ScrollToTopButton />
         {children}
         <Analytics />
         <Footer />
