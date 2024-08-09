@@ -254,6 +254,11 @@ export default function ImagesVetulaniego() {
           src="/galeria/vetulaniego/urodzinki-helenki/urodzinki-helenki.jpg"
           text="Urodzinki Helenki"
         />
+        <ImagesItem
+          href="/zlobek-na-ulicy-vetulaniego/motoryka"
+          src="/galeria/vetulaniego/motoryka/motoryka.jpg"
+          text="Motoryka"
+        />
       </Slider>
     </div>
   );

@@ -1,3 +1,15 @@
+.logoContainer {
+  position: relative;
+}
+.logo {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  z-index: 3002;
+  margin: 0;
+  padding: 0;
+}
+
 .navigation {
   position: fixed;
   width: 100%;

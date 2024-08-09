@@ -65,7 +65,16 @@ export default function TextContainer() {
             </h4>
           </div>
         </motion.div>
-        <div className={classes.right}>
+        <motion.div
+          className={classes.right}
+          initial={{ x: "-900px", opacity: 0, rotate: -10 }}
+          animate={
+            isSkillRefinView
+              ? { x: 0, opacity: 1, rotate: 0 }
+              : { x: "-900px", opacity: 0, rotate: -10 }
+          }
+          transition={{ delay: 0.1, duration: 0.7, ease: "easeOut" }}
+        >
           <Image
             src={"/monkeys/2.gif"}
             width={100}
@@ -73,7 +82,7 @@ export default function TextContainer() {
             layout="responsive"
             alt="logo"
           ></Image>
-        </div>
+        </motion.div>
       </div>
     </>
   );

@@ -13,7 +13,16 @@ export default function About() {
 
   return (
     <div className={classes.container} id="czytaj-wiecej" ref={skillRef}>
-      <div className={classes.imageContainer}>
+      <motion.div
+        className={classes.imageContainer}
+        initial={{ x: "900px", opacity: 0, rotate: 10 }}
+        animate={
+          isSkillRefinView
+            ? { x: 0, opacity: 1, rotate: 0 }
+            : { x: "900px", opacity: 0, rotate: 10 }
+        }
+        transition={{ delay: 0.1, duration: 0.7, ease: "easeOut" }}
+      >
         <Image
           src={"/monkeys/4.gif"}
           width={100}
@@ -22,8 +31,7 @@ export default function About() {
           className={classes.image}
           alt="logo"
         ></Image>
-      </div>
-
+      </motion.div>
       <motion.div
         initial={{ x: "900px", opacity: 0, rotate: 10 }}
         animate={

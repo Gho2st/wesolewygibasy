@@ -53,7 +53,7 @@ export default function Places() {
             key={item.link}
             initial={{ opacity: 0, y: 50 }}
             animate={isSkillRefinView ? { y: 0, opacity: 1 } : {}}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
+            transition={{ duration: 0.5, delay: index * 0.5 }}
           >
             <PlaceItem
               image={item.image}
