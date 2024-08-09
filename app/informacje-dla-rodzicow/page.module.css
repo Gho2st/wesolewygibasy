@@ -1,6 +1,10 @@
 .container {
   padding: 2rem 9%;
 }
+
+.container h1 {
+  margin-top: 5rem;
+}
 .container p {
   line-height: 1.5rem;
 }
