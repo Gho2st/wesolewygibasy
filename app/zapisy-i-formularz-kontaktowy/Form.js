@@ -179,11 +179,11 @@ export default function Form({ onFormSubmit }) {
               }}
             >
               <option value="">Wybierz placówkę</option>
-              <option value="Klub Malucha, Kraków 31-226, ul. Vetulaniego 8">
-                Klub Malucha, Kraków 31-226, ul. Vetulaniego 8
+              <option value="Klub Malucha, Kraków ul. Vetulaniego 8">
+                Klub Malucha, Kraków ul. Vetulaniego 8
               </option>
-              <option value="Niepubliczny żłobek, Kraków 31-222, ul. Glogera 53/LU2">
-                Żłobek, Kraków 31-222, ul. Glogera 53/LU2
+              <option value="Niepubliczny żłobek, Kraków ul. Glogera 53/LU2">
+                Żłobek, Kraków ul. Glogera 53/LU2
               </option>
               <option value="Żłobek, Kraków ul. Stańczyka 8/LU3">
                 Żłobek, Kraków ul. Stańczyka 8/LU3
