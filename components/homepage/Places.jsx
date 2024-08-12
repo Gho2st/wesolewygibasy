@@ -1,8 +1,8 @@
-'use client'
+"use client";
 import PlaceItem from "../UI/PlaceItem";
 import classes from "./Places.module.css";
 import { useRef } from "react";
-import { useInView, motion, delay } from "framer-motion";
+import { useInView, motion, delay, color } from "framer-motion";
 
 export default function Places() {
   const skillRef = useRef();
@@ -10,14 +10,14 @@ export default function Places() {
 
   const items = [
     {
-      image: "/sliczna-slider/sl1.jpg",
-      alt: "budynek zlobka na ulicy slicznej",
-      title: "Wolne miejsca w Nowym Żłobku",
-      location: "Ulica Śliczna 36A, Kraków",
-      street: "Otwarcie 1 lipca 2024",
-      add: "Projekt Maluch+ 2022-2029",
-      color: "#fa7070",
+      image: "/sliczna-slider/sl4.jpg",
+      alt: "plac zabaw na ulicy Ślicznej",
+      title: "Miejsca w Nowym Żłobku",
+      location: "Żłobek, Kraków",
+      street: "ul. Śliczna 36/A",
       link: "zlobek-na-ulicy-slicznej",
+      add: "Program Aktywny Maluch",
+      color: "#fa7070",
     },
     {
       image: "/others/stanczyka.jpg",
@@ -26,7 +26,7 @@ export default function Places() {
       location: "Żłobek, Kraków",
       street: "ul. Stańczyka 8/LU3",
       link: "zlobek-na-ulicy-stanczyka",
-      add: "Projekt Maluch+ 2022-2029",
+      add: "Program Aktywny Maluch",
     },
     {
       image: "/others/glogera.jpg",
@@ -35,6 +35,7 @@ export default function Places() {
       location: "Żłobek, Kraków",
       street: "ul. Glogera 53/LU2",
       link: "zlobek-na-ulicy-glogera",
+      add: "",
     },
     {
       image: "/others/vetulaniego.jpg",
@@ -43,6 +44,7 @@ export default function Places() {
       location: "Żłobek, Kraków",
       street: "ul. Vetulaniego 8",
       link: "zlobek-na-ulicy-vetulaniego",
+      add: "",
     },
   ];
   return (

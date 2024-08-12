@@ -29,7 +29,7 @@
   margin-bottom: 4rem;
 }
 .animalsImgContainer {
-  width: 90%;
+  width: 80%;
 }
 .animals img {
   transform: translateX(-1.7rem);
@@ -75,13 +75,20 @@
 .info svg {
   margin-right: 1.4rem;
   color: #fa7070;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  vertical-align: middle;
 }
 
 .info p {
   color: black;
   font-size: 1.2rem;
+  vertical-align: middle;
 }
+
+.phone {
+  transform: translateY(-4px);
+}
+
 .info a {
   font-size: 1.2rem;
 }
@@ -110,7 +117,7 @@
 @media (max-width: 1000px) {
   .contactContainer {
     padding: 2rem 9%;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 3rem;
   }
   .animalsImgContainer {

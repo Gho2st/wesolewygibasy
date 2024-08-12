@@ -29,6 +29,9 @@ export default function Contact() {
         </p>
       </div>
       <div className={classes.contactContainer}>
+        <div className={classes.text}>
+          <Form onFormSubmit={handleFormSubmit} />
+        </div>
         <div className={classes.animals}>
           <div className={classes.animalsImgContainer}>
             <Image
@@ -42,7 +45,7 @@ export default function Contact() {
           <div className={classes.info}>
             <div className={classes.item}>
               <Link href={"tel:+48697560022"}>
-                <FaPhone />
+                <FaPhone className={classes.phone} />
                 697 560 022
               </Link>
             </div>
@@ -61,9 +64,6 @@ export default function Contact() {
               <p>Przyjedź & Zapytaj</p>
             </div>
           </div>
-        </div>
-        <div className={classes.text}>
-          <Form onFormSubmit={handleFormSubmit} />
         </div>
       </div>
     </>

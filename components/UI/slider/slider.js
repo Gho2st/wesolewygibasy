@@ -8,7 +8,6 @@ import Image from "next/image";
 
 export default function SliderComponent({ images }) {
   const carouselSettings = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -39,7 +38,6 @@ export default function SliderComponent({ images }) {
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
-          dots: true,
         },
       },
       {

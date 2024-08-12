@@ -2,7 +2,7 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 1rem;
   width: 100%;
-  padding-bottom: 3rem;
+  padding-bottom: 1.5rem;
   transition: ease-in 0.2s;
 }
 
@@ -28,7 +28,6 @@
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   color: grey;
-  min-height: 150px;
 }
 .text h3 {
   color: black;
@@ -48,19 +47,7 @@
 }
 
 .dotationText {
-  color: #08c6c3;
   text-align: center;
   font-weight: bold;
   font-size: 1.1rem;
-}
-@media (max-width: 1369px) {
-  .text {
-    height: 120px;
-  }
-}
-
-@media (max-width: 500px) {
-  .text {
-    height: 140px;
-  }
 }

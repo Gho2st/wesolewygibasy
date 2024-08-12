@@ -28,11 +28,12 @@ export default function PlaceItem(props) {
               <Button text="Sprawdź" fontSize="1rem" />
             </Link>
           </div>
-          {props.add !== "" && (
-            <div className={classes.dotationText}>
-              <p>{props.add}</p>
-            </div>
-          )}
+          <div
+            className={classes.dotationText}
+            style={{ color: props.add !== "" ? "#08c6c3" : "transparent" }}
+          >
+            <p>{props.add || "Placeholder text"}</p>
+          </div>
         </div>
       </div>
     </div>
