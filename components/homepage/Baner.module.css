@@ -14,7 +14,7 @@
   width: 60%;
   display: flex;
   justify-content: center;
-  margin-top: 6rem;
+  margin-top: 7rem;
 }
 
 .textContainer h1 {
@@ -45,42 +45,19 @@
   font-size: 1.22rem;
 }
 
-@media (max-width: 1252px) {
-  .textContainer h1 {
-    font-size: 2rem;
-  }
-  .textContainer p {
-    font-size: 1rem;
-  }
-  .banerContainer {
-    padding: 1.5rem 7%;
-  }
-}
-
 @media (max-width: 1070px) {
-  .textContainer h1 {
-    font-size: 1.7rem;
-  }
-  .textContainer p {
-    font-size: 0.98rem;
-  }
   .textContainer {
     width: 70%;
   }
-  .banerContainer {
-    padding: 1rem 5%;
+  .textContainer {
+    margin-top: 9rem;
   }
 }
 
-@media (max-width: 834px) {
-  .buttonContainer button {
-    padding: 0.7rem 0.7rem;
-  }
-  .textContainer h1 {
-    font-size: 1.5rem;
-  }
-  .textContainer p {
-    font-size: 0.95rem;
+@media (max-width: 820px) {
+  .textContainer {
+    margin-top: 12rem;
+    width: 95%;
   }
 }
 
@@ -122,6 +99,9 @@
     flex-direction: column;
     padding: 2rem 9%;
     border-radius: 0;
+    background-size: 250%;
+    background-repeat: no-repeat;
+    background-position: 60% bottom;
   }
 
   .textContainer h1 {
@@ -145,6 +125,9 @@
 @media (max-width: 381px) {
   .buttonContainer button {
     padding: 0.9rem 0.9rem;
+  }
+  .banerContainer {
+    background-size: 150%;
   }
 }
 @media (max-width: 350px) {
