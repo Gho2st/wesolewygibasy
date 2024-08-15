@@ -130,6 +130,11 @@ export default function ImagesSliczna() {
           src="/galeria/sliczna/logopedia/logopedia.jpg"
           text="Logopedia"
         />
+        <ImagesItem
+          href="/zlobek-na-ulicy-slicznej/dzien-fotografii"
+          src="/galeria/sliczna/dzien-fotografii/dzien-fotografii.jpg"
+          text="Dzień Fotografii"
+        />
       </Slider>
     </div>
   );

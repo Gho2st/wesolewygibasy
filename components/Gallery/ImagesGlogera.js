@@ -239,6 +239,11 @@ export default function ImagesContainer() {
           src="/galeria/glogera/dzien-transportu/dzien-transportu.jpg"
           text="Dzień Transportu"
         />
+        <ImagesItem
+          href="/zlobek-na-ulicy-glogera/sesja-fotograficzna"
+          src="/galeria/glogera/sesja-fotograficzna/sesja-fotograficzna.jpg"
+          text="Sesja Fotograficzna"
+        />
       </Slider>
     </div>
   );

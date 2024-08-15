@@ -270,6 +270,21 @@ export default function ImagesContainer() {
           text="Zaczytani"
           href="/zlobek-na-ulicy-stanczyka/zaczytani"
         />
+        <ImagesItem
+          src="/galeria/stanczyka/morskie-bingo/morskie-bingo.jpg"
+          text="Morskie Bingo"
+          href="/zlobek-na-ulicy-stanczyka/morskie-bingo"
+        />
+        <ImagesItem
+          src="/galeria/stanczyka/telefony/telefony.jpg"
+          text="Telefony"
+          href="/zlobek-na-ulicy-stanczyka/telefony"
+        />
+        <ImagesItem
+          src="/galeria/stanczyka/konstrukcje/konstrukcje.jpg"
+          text="Konstrukcje"
+          href="/zlobek-na-ulicy-stanczyka/konstrukcje"
+        />
       </Slider>
     </div>
   );
