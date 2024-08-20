@@ -83,7 +83,7 @@ export default function Others() {
             <td>21</td>
             <td>735 zł</td>
             <td>1465 zł</td>
-            <td>965 zł</td>
+            <td>1065 zł</td>
           </tr>
           {/* <tr>
             <td>Październik</td>
