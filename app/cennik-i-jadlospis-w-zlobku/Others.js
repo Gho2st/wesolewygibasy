@@ -79,13 +79,13 @@ export default function Others() {
           </tr>
           <tr>
             <td>Wrzesień</td>
-            <td>2100 zł</td>
+            <td>2200 zł</td>
             <td>21</td>
             <td>735 zł</td>
-            <td>1365 zł</td>
+            <td>1465 zł</td>
             <td>965 zł</td>
           </tr>
-          <tr>
+          {/* <tr>
             <td>Październik</td>
             <td>2100 zł</td>
             <td>23</td>
@@ -108,7 +108,7 @@ export default function Others() {
             <td>700 zł</td>
             <td>1400 zł</td>
             <td>1000 zł</td>
-          </tr>
+          </tr> */}
         </tbody>
       </table>
       <h3 className={classes.header}>

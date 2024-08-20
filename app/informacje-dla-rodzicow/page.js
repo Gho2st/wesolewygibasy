@@ -36,10 +36,17 @@ export default function informacje() {
               Pobierz
             </a>
           </div>
+
           <div className={classes.button}>
             <h2>Standardy Ochrony Małoletnich</h2>
-            <a href="/standardy-ochrony-maloletnich.zip" download>
-              Pobierz
+            <a href="/Standardy ochrony małoletnich przed krzywdzeniem w przedszkolu.pdf">
+              Otwórz
+            </a>
+          </div>
+          <div className={classes.button}>
+            <h2>Standardy Ochrony Małoletnich (reguły)</h2>
+            <a href="/Standardy (reguły) ochrony małoletnich przed krzywdzeniem w przedszkolu.pdf">
+              Otwórz
             </a>
           </div>
 
