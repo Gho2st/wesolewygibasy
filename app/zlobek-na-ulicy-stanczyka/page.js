@@ -56,7 +56,7 @@ export default function stanczyka() {
                 Szukasz bezpiecznego i inspirującego żłobka w Krakowie? Wesołe
                 Wygibasy na Stańczyka 8/LU3 oferują profesjonalną opiekę i
                 rozwój w przyjaznej atmosferze. Dowiedz się więcej i zapisz
-                swoje dziecko już dziś!"
+                swoje dziecko już dziś!
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="/o-nas">

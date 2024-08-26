@@ -66,7 +66,7 @@ export default function sliczna() {
                 Szukasz bezpiecznego i inspirującego żłobka w Krakowie? Wesołe
                 Wygibasy na Ślicznej 36A oferują profesjonalną opiekę i rozwój w
                 przyjaznej atmosferze. Dowiedz się więcej i zapisz swoje dziecko
-                już dziś!"
+                już dziś!
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="/o-nas">

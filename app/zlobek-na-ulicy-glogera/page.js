@@ -53,7 +53,7 @@ export default function Glogera() {
                 Szukasz bezpiecznego i inspirującego żłobka w Krakowie? Wesołe
                 Wygibasy na Glogera 53/LU2 oferują profesjonalną opiekę i rozwój
                 w przyjaznej atmosferze. Dowiedz się więcej i zapisz swoje
-                dziecko już dziś!"
+                dziecko już dziś!
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="/o-nas">

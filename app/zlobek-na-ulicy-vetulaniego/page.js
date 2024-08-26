@@ -44,7 +44,7 @@ export default function Vetulaniego() {
                 Szukasz bezpiecznego i inspirującego żłobka w Krakowie? Wesołe
                 Wygibasy na Vetulaniego 8 oferują profesjonalną opiekę i rozwój
                 w przyjaznej atmosferze. Dowiedz się więcej i zapisz swoje
-                dziecko już dziś!"
+                dziecko już dziś!
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="/o-nas">
