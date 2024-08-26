@@ -42,7 +42,7 @@ export default function GaleryPost({ params }) {
                 height={100}
                 layout="responsive"
                 className={classes.image}
-                alt=""
+                alt="zdjęcie z wydarzenia tematycznego - Żłobek w Krakowie Wesołe Wygibasy"
               />
             </div>
           );

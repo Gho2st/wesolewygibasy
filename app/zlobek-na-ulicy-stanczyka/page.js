@@ -51,14 +51,12 @@ export default function stanczyka() {
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
-              <h1>
-                Wesołe Wygibasy <span> Stańczyka.</span>
-              </h1>
+              <h1>Najlepszy Żłobek na Stańczyka 8/LU3 w Krakowie</h1>
               <p>
-                Szukasz miejsca, gdzie Twoje dziecko będzie mogło rozwijać się w
-                przyjaznej i bezpiecznej atmosferze? <br></br> <br></br>
-                Zapraszamy do naszego żłobka na
-                <span className={classes.place}> Stańczyka 8/LU3.</span>
+                Szukasz bezpiecznego i inspirującego żłobka w Krakowie? Wesołe
+                Wygibasy na Stańczyka 8/LU3 oferują profesjonalną opiekę i
+                rozwój w przyjaznej atmosferze. Dowiedz się więcej i zapisz
+                swoje dziecko już dziś!"
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="/o-nas">

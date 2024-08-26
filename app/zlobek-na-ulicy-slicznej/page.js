@@ -61,14 +61,12 @@ export default function sliczna() {
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
-              <h1>
-                Wesołe Wygibasy <span> Śliczna</span>
-              </h1>
+              <h1>Najlepszy Żłobek na Ślicznej 36A w Krakowie</h1>
               <p>
-                Szukasz miejsca, gdzie Twoje dziecko będzie mogło rozwijać się w
-                przyjaznej i bezpiecznej atmosferze? <br></br> <br></br>
-                Zapraszamy do naszego żłobka na
-                <span className={classes.place}> Śliczna 36A.</span>
+                Szukasz bezpiecznego i inspirującego żłobka w Krakowie? Wesołe
+                Wygibasy na Ślicznej 36A oferują profesjonalną opiekę i rozwój w
+                przyjaznej atmosferze. Dowiedz się więcej i zapisz swoje dziecko
+                już dziś!"
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="/o-nas">
