@@ -29,8 +29,6 @@ export default function Baner() {
               w Krakowie, który powstał z pasji, troski i miłości do dzieci.
               Nasze placówki oferują bezpieczne i inspirujące środowisko dla
               Twojego malucha.
-              <br></br> <br></br>Dzieci Zasługują na to, by Myśleć, że Mogą
-              Zmienić Świat!
             </p>
             <div className={classes.buttonContainer}>
               <Link href="#czytaj-wiecej">
