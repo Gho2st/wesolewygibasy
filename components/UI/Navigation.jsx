@@ -22,7 +22,12 @@ export default function Navigation() {
     <>
       <div className={classes.logoContainer}>
         <Link className={classes.logo} href={"/"}>
-          <Image src={"/others/logo.png"} width={130} height={65}></Image>
+          <Image
+            src={"/others/logo.png"}
+            width={130}
+            height={65}
+            alt="Logo Wesołych Wygibasów"
+          ></Image>
         </Link>
       </div>
       <div className={classes.navigation}>
