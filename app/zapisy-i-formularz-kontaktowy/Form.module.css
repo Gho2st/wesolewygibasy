@@ -7,6 +7,7 @@
   width: 100%;
   border-radius: 1rem;
   padding: 1rem;
+  font-size: 16px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .containerLeft select {
@@ -24,6 +25,7 @@
   width: 100%;
   height: 125px;
   padding: 1rem;
+  font-size: 16px;
   color: rgb(74, 74, 74);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin-top: 1rem;
