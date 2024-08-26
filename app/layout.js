@@ -16,7 +16,7 @@ export const metadata = {
   metadataBase: new URL("https://wesolewygibasy.pl"),
   title: {
     default: "Żłobek Kraków - Wesołe Wygibasy | Bezpieczna Opieka dla Dzieci",
-    template: "%s - Wesołe Wygibasy Kraków",
+    template: "%s - Żłobek Kraków - Wesołe Wygibasy",
   },
   description:
     "Szukasz dotowanego żłobka w Krakowie? Wesołe Wygibasy to miejsce, które wspiera rozwój Twojego dziecka!",
