@@ -2,24 +2,23 @@
   padding: 2rem 9%;
 }
 .foodContainer p {
-  text-align: center;
-  width: 60%;
-  margin: auto;
+  width: 100%;
+  text-align: left;
   color: rgb(78, 77, 77);
 }
 
 .header {
   text-align: center;
   margin-top: 2.5rem;
-  font-size: 3rem;
+  font-size: 2.33rem;
   color: #fa7070;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .container {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .option {
@@ -52,5 +51,6 @@
   }
   .header {
     margin-top: 0rem;
+    font-size: 1.8rem;
   }
 }

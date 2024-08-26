@@ -12,21 +12,40 @@ export default function plan() {
   return (
     <>
       <div className={classes.container}>
-        <h1>Plan Dnia</h1>
+        <h1>Plan Dnia w Żłobku Wesołe Wygibasy w Krakowie</h1>
         <p>
-          Dla każdej z naszych placówek przygotowaliśmy szczegółowy plan dnia,
-          który uwzględnia potrzeby i wiek dzieci. Nasz plan zapewnia
-          zrównoważone połączenie czasu na zabawę, naukę, posiłki, odpoczynek i
-          inne ważne czynności. Dzięki temu stwarzamy maluchom sprzyjające
-          środowisko do rozwoju ich umiejętności i zainteresowań. <br></br> <br></br> Nasze zajęcia
-          są zorganizowane w harmonogramie, który obejmuje różnorodne
-          aktywności, takie jak zajęcia edukacyjne, artystyczne, ruchowe i
-          muzyczne. Dbamy o to, aby zapewnić dzieciom różnorodne doświadczenia i
-          możliwości rozwijania ich zainteresowań w przyjaznej i bezpiecznej
-          atmosferze. <br></br> <br></br> Dodatkowo, oferujemy także zajęcia dodatkowe, które
-          pozwalają dzieciom na poszerzanie swoich umiejętności i zainteresowań
-          w specyficznych obszarach, takich jak języki obce, taniec, sport czy
+          W żłobku Wesołe Wygibasy w Krakowie każda z naszych placówek oferuje
+          szczegółowy plan dnia, dostosowany do potrzeb i wieku dzieci. Nasz
+          harmonogram dnia zapewnia zrównoważone połączenie czasu na zabawę,
+          naukę, posiłki, odpoczynek oraz inne ważne czynności, tworząc
+          sprzyjające środowisko do rozwoju umiejętności i zainteresowań
+          maluchów.
+        </p>
+        <h2>Nasz Plan Dnia obejmuje</h2>
+        <ul>
+          <li>
+            Zajęcia edukacyjne: Stymulujące rozwój poznawczy poprzez zabawę i
+            naukę.
+          </li>
+          <li>
+            Zajęcia artystyczne: Rozwijające kreatywność i umiejętności
+            manualne.
+          </li>
+          <li>Zajęcia ruchowe: Wspierające rozwój fizyczny i koordynację.</li>
+          <li>
+            Zajęcia muzyczne: Wzbogacające zmysł rytmu i muzykalność dzieci.
+          </li>
+        </ul>
+
+        <p>
+          Dodatkowo, w żłobku Wesołe Wygibasy oferujemy także zajęcia dodatkowe,
+          które umożliwiają dzieciom poszerzanie umiejętności i zainteresowań w
+          specyficznych obszarach, takich jak języki obce, taniec, sport czy
           nauka przez zabawę.
+          <br></br>
+          <br></br>
+          Dbamy o to, aby każda chwila spędzona w naszym żłobku w Krakowie była
+          wartościowa i rozwijająca, w przyjaznej i bezpiecznej atmosferze.
         </p>
       </div>
       <Places />

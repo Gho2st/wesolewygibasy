@@ -30,16 +30,31 @@ export default function FoodContainer() {
 
   return (
     <div className={classes.foodContainer}>
-      <h2 className={classes.header}>Jadłospis</h2>
+      <h2 className={classes.header}>
+        Jadłospis - Zdrowe Odżywianie w Żłobku Wesołe Wygibasy w Krakowie
+      </h2>
       <p>
-        Dbamy o zdrowe odżywianie dzieci i oferujemy starannie zaprojektowany
-        jadłospis, który uwzględnia potrzeby żywieniowe najmłodszych. Naszym
-        celem jest budowanie dobrych nawyków żywieniowych od najmłodszych lat.
+        W żłobku Wesołe Wygibasy w Krakowie szczególną uwagę przykładamy do
+        zdrowego odżywiania dzieci. Oferujemy starannie zaprojektowany
+        jadłospis, który uwzględnia potrzeby żywieniowe najmłodszych,
+        zapewniając im odpowiednią ilość składników odżywczych na każdy dzień.
+        Naszym celem jest budowanie dobrych nawyków żywieniowych już od
+        najmłodszych lat. <br></br>
+        <br></br> Każdy posiłek w naszym żłobku w Krakowie jest przygotowywany z
+        myślą o zdrowiu i rozwoju dzieci, z uwzględnieniem różnorodności i
+        smaku. Wierzymy, że właściwe odżywianie to klucz do zdrowego wzrostu i
+        energii na cały dzień pełen zabawy i nauki.
       </p>
       <div className={classes.container}>
-        <div className={classes.option} onClick={showStandardMenu}>MENU STANDARDOWE</div>
-        <div className={classes.option} onClick={showWegeMenu}>MENU WEGE</div>
-        <div className={classes.option} onClick={showMenuWithoutMilk}>MENU BEZ NABIAŁU</div>
+        <div className={classes.option} onClick={showStandardMenu}>
+          MENU STANDARDOWE
+        </div>
+        <div className={classes.option} onClick={showWegeMenu}>
+          MENU WEGE
+        </div>
+        <div className={classes.option} onClick={showMenuWithoutMilk}>
+          MENU BEZ NABIAŁU
+        </div>
       </div>
       {isMenuVisible && <FoodItemTable />}
       {isWegeVisible && <WegeTable />}

@@ -20,12 +20,13 @@ export default function Contact() {
   return (
     <>
       <div className={classes.container}>
-        <H1 text="Zapisz Swoje Dziecko!"></H1>
+        <H1 text="Zapisz Swoje Dziecko w Najlepszym Żłobku w Krakowie!"></H1>
         <p>
-          Czy szukasz bezpiecznego i kochającego środowiska, w którym Twoje
-          dziecko może się rozwijać każdego dnia? Wesołe Wygibasy to nie tylko
-          miejsce opieki, ale takze miejsce w którym maluchy odkrywają świat w
-          sposób pełen ciekawości i radości.
+          Czy szukasz bezpiecznego i przyjaznego środowiska, w którym Twoje
+          dziecko może rozwijać się każdego dnia? Wesołe Wygibasy w Krakowie to
+          idealne miejsce, gdzie maluchy odkrywają świat z radością i
+          ciekawością. Oferujemy wysokiej jakości opiekę i wsparcie w rozwijaniu
+          umiejętności dzieci w wieku przedszkolnym.
         </p>
       </div>
       <div className={classes.contactContainer}>

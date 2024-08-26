@@ -23,16 +23,14 @@ export default function Baner() {
           className={classes.left}
         >
           <div>
-            <h1>
-              Najlepszy <span className={classes.span}>Żłobek</span> dla Twoich
-              dzieci.
-            </h1>
+            <h1>Najlepszy Żłobek w Krakowie - Wesołe Wygibasy</h1>
             <p>
-              <span className={classes.wesole}>Wesołe Wygibasy</span> to
-              miejsce, które powstało z pasji, wielkiej troski i miłości do
-              dzieci.
-              <br></br> <br></br>
-              Dzieci zasługują by myśleć, że mogą zmienić świat!
+              <span className={classes.wesole}>Wesołe Wygibasy</span> to żłobek
+              w Krakowie, który powstał z pasji, troski i miłości do dzieci.
+              Nasze placówki oferują bezpieczne i inspirujące środowisko dla
+              Twojego malucha.
+              <br></br> <br></br>Dzieci Zasługują na to, by Myśleć, że Mogą
+              Zmienić Świat!
             </p>
             <div className={classes.buttonContainer}>
               <Link href="#czytaj-wiecej">

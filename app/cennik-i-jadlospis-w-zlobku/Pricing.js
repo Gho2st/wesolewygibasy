@@ -16,12 +16,19 @@ export default function Pricing() {
   return (
     <>
       <div className={classes.pricingContainer}>
-        <h1 className={classes.header}>Cennik</h1>
+        <h1 className={classes.header}>
+          Cennik - Żłobek Wesołe Wygibasy w Krakowie
+        </h1>
         <p className={classes.description}>
-          Zapraszamy do zapoznania się z naszym cennikiem, gdzie znajdą Państwo
-          szczegółowe informacje na temat pełnej kwoty abonamentu, liczby dni
-          roboczych, dotacji miesięcznej i jadłospisu. Jesteśmy tu, aby zapewnić
-          Państwa dzieciom bezpieczne i kreatywne miejsce do nauki i zabawy.
+          Zapraszamy do zapoznania się z naszym cennikiem dla żłobka Wesołe
+          Wygibasy w Krakowie. Znajdą Państwo tutaj szczegółowe informacje na
+          temat pełnej kwoty abonamentu, liczby dni roboczych, miesięcznej
+          dotacji oraz jadłospisu. Nasz żłobek w Krakowie oferuje konkurencyjne
+          ceny, które obejmują wszystko, czego potrzebują Państwa dzieci do
+          bezpiecznej i kreatywnej nauki oraz zabawy. <br></br> <br></br>{" "}
+          Jesteśmy dumni, że możemy zapewnić Państwa maluchom opiekę na
+          najwyższym poziomie w przystępnych cenach. Dbamy o to, aby każdy dzień
+          w naszym żłobku był pełen radości, nauki i zdrowego rozwoju.
         </p>
         <h2
           className={classes.pickMe}

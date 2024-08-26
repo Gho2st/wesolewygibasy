@@ -15,11 +15,11 @@ const montserrat = Montserrat({
 export const metadata = {
   metadataBase: new URL("https://wesolewygibasy.pl"),
   title: {
-    default: "Żłobek dla Dzieci w Krakowie - Wesołe Wygibasy",
+    default: "Żłobek Kraków - Wesołe Wygibasy | Bezpieczna Opieka dla Dzieci",
     template: "%s - Wesołe Wygibasy Kraków",
   },
   description:
-    "Szukasz dla swojego dziecka żłobka dotowanego projektem maluch plus? Wesołe Wygibasy to miejsce dla Twojej rodziny!",
+    "Szukasz dotowanego żłobka w Krakowie? Wesołe Wygibasy to miejsce, które wspiera rozwój Twojego dziecka!",
   alternates: {
     canonical: "/",
   },

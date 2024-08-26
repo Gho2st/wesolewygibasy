@@ -16,44 +16,56 @@ export default function oNas() {
   return (
     <>
       <div className={classes.container}>
-        <h1>O Nas</h1>
+        <h1>O Nas - Żłobek Wesołe Wygibasy w Krakowie</h1>
         <div className={classes.info}>
           <div className={classes.text}>
             <p>
-              Nazywam się Agnieszka Ciołkowska, jestem pedagogiem,
-              resocjalizatorem oraz twórcą i właścicielem Wesołych Wygibasów.
-              <br></br> <br></br>
-              Wesołe Wygibasy powstały z pasji, wielkiej troski i miłości do
-              dzieci.<br></br>
-              <br></br> Marzenia o tym aby być Panią nauczycielką towarzyszyły
-              mi od najmłodszych lat. Zawsze odkąd pamiętam opiekowałam się
-              dziećmi, najpierw rodzeństwem, potem dziećmi sąsiadów aż wreszcie
-              3 własnych. Ukończenie studiów pedagogicznych było zawsze moim
-              celem, osiągnęłam go, lecz troszkę później! <br></br> <br></br> W
-              moim przypadku najpierw było dorosłe życie, rodzina i dzieci. Lecz
-              wciąż pamiętałam o swoim marzeniu. I tak gdy pojawiło się na
-              świecie 3 dziecko, pojawiły się też wyczekiwane studia i to od
-              razu na 2 kierunkach: pedagogika przedszkolna i wczesnoszkolna
-              oraz resocjalizacja. Cóż nie do końca byłam pewna czy chce
-              rozwijać czy ratować młodych ludzi. W mojej głowie było wiele
-              pomysłów jak fajnie prowadzić dzieci, jak w sposób ciekawy je
-              rozwijać i poprzez zabawę edukować. <br></br> <br></br> Jako
-              rodzina postawiliśmy wszystko na jedną kartę.<br></br> <br></br> –
-              W 2015 kupiliśmy dom gdzie mieliśmy mieszkać i prowadzić Wesołe
-              Wygibasy centrum zajęć rozwojowo-rozrywkowe dla dzieci. Tak się
-              też stało. <br></br> – W 2017 roku przekształciliśmy się w Klub
-              Malucha czyli miejsce opieki nad dziećmi w wieku 1-3 lata.{" "}
-              <br></br> <br></br>
-              Moim założeniem pedagogicznym jest opieka nad dziećmi na
-              najwyższym poziomie. Jako mama wiedziałam ,że rodzice powierzają
-              nam swój największy skarb i musimy dać im poczucie bezpieczeństwa.
-              <br></br>
-              <br></br>
-              Przez lata wypracowałam metody pracy z dzieckiem i przekazuje je
-              swojej kadrze. 14 czerwca 2021 powstał żłobek Wesołe Wygibasy,
-              stworzony w odległości 900 m od klubu malucha. Przyczyna była
-              prosta. Nie mogliśmy przyjąć wszystkich chętnych dzieciaczków z
-              powodu braku miejsc. Następnie powstały kolejne placówki - na Stańczyka i Ślicznej.
+              Nazywam się Agnieszka Ciołkowska i jestem pedagogiem,
+              resocjalizatorem oraz właścicielką Wesołych Wygibasów — żłobka w
+              Krakowie, który powstał z pasji i miłości do dzieci.
+            </p>
+            <h2>Moja Droga do Wesołych Wygibasów</h2>
+            <p>
+              Marzenia o pracy z dziećmi towarzyszyły mi od najmłodszych lat.
+              Już jako dziecko opiekowałam się rodzeństwem, a później dziećmi
+              sąsiadów. Posiadanie własnych dzieci tylko wzmocniło moją pasję.
+              Po ukończeniu studiów pedagogicznych, które były moim celem od
+              zawsze, zdecydowałam się na dalszy rozwój.
+            </p>
+            <p>
+              Mimo że życie rodzinne i praca były priorytetem przez wiele lat,
+              nigdy nie zapomniałam o marzeniu o pracy z dziećmi. Gdy na świecie
+              pojawiło się moje trzecie dziecko, postanowiłam zrealizować swoje
+              ambicje edukacyjne, kończąc studia z zakresu pedagogiki
+              przedszkolnej i wczesnoszkolnej oraz resocjalizacji.
+            </p>
+            <h2>Historia Wesołych Wygibasów</h2>
+            <p>
+              W 2015 roku, wspólnie z rodziną, zdecydowaliśmy się na
+              przeprowadzkę i założenie Wesołych Wygibasów — centrum zajęć
+              rozwojowo-rozrywkowych dla dzieci. Nasza wizja zrealizowała się i
+              w 2017 roku przekształciliśmy naszą placówkę w Klub Malucha,
+              oferujący opiekę nad dziećmi w wieku 1-3 lata.
+            </p>
+            <p>
+              W 2021 roku, z powodu rosnącego zainteresowania i braku miejsc,
+              otworzyliśmy nową placówkę — żłobek Wesołe Wygibasy, zlokalizowany
+              900 metrów od Klubu Malucha. Z czasem powstały kolejne placówki —
+              na ulicach Stańczyka i Ślicznej.
+            </p>
+            <h2>Nasze Założenia Pedagogiczne</h2>
+            <p>
+              Moim celem jest zapewnienie dzieciom najwyższej jakości opieki.
+              Rozumiem, jak ważne jest zaufanie rodziców, którzy powierzają nam
+              swoje największe skarby. Dlatego kładę duży nacisk na
+              bezpieczeństwo i komfort maluchów, a także na rozwój ich
+              umiejętności w przyjaznym i wspierającym środowisku.
+            </p>
+            <p>
+              Przez lata opracowałam metody pracy z dziećmi, które przekazuję
+              mojej kadrze. Każda nasza placówka jest miejscem, w którym dzieci
+              mogą rozwijać swoje umiejętności w kreatywny sposób, a rodzice
+              mogą być pewni, że ich pociechy są w dobrych rękach.
             </p>
           </div>
           <div className={classes.imageContainer}>
@@ -62,7 +74,7 @@ export default function oNas() {
               width={100}
               height={100}
               layout="responsive"
-              alt=""
+              alt="Agnieszka Ciołkowska - Właścicielka Żłobek Wesołe Wygibasy w Krakowie"
             ></Image>
             <h2>Agnieszka Ciołkowska</h2>
             <p>Właściciel, Pedagog, Mama 3 dzieci</p>

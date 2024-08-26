@@ -22,37 +22,38 @@ export default function TextContainer() {
         >
           <div>
             <h3>
-              Żłobki <span> Wesołe Wygibasy</span> na Mapie Krakowa!
+              Żłobek <span> Wesołe Wygibasy</span> w Krakowie - Najlepszy Wybór
+              dla Twojego Dziecka!
             </h3>
             <p>
-              Jesteśmy miejscem, gdzie każde dziecko jest traktowane z miłością,
-              szacunkiem i troską. Nasza misja to stworzenie bezpiecznego i
-              inspirującego środowiska, w którym maluchy mogą rozwijać swoje
-              umiejętności, kreatywność i osobowość.
+              Żłobki Wesołe Wygibasy w Krakowie to miejsca, gdzie każde dziecko
+              jest otoczone miłością, szacunkiem i troską. Nasza misja to
+              stworzenie bezpiecznego i inspirującego środowiska, w którym
+              maluchy mogą rozwijać swoje umiejętności, kreatywność i osobowość.
             </p>
             <p>
               Nasze żłobki zlokalizowane są na północy Krakowa, co sprawia, że
-              jesteśmy łatwo dostępni dla rodziców z różnych części miasta
-              (Prądnik Biały, Bronowice, Krowodrza) oraz okolic, takich jak
-              Zielonki. Nasza dogodna lokalizacja oferuje liczne atrakcje i
-              udogodnienia dla naszych małych podopiecznych, zapewniając im
-              idealne warunki do rozwoju i zabawy.
+              jesteśmy łatwo dostępni dla rodziców z różnych części miasta,
+              takich jak Prądnik Biały, Bronowice, Krowodrza oraz okolicznych
+              miejscowości, jak Zielonki. Dogodna lokalizacja w Krakowie oferuje
+              liczne atrakcje i udogodnienia, zapewniając dzieciom idealne
+              warunki do rozwoju i zabawy.
             </p>
             <p>
-              W Naszym Żłobku oferujemy opiekę dla dzieci w wieku do 3 lat. Nasz
-              zespół wykwalifikowanych i doświadczonych opiekunów dba o to, aby
-              każde dziecko otrzymało indywidualną uwagę i wsparcie w swoim
-              rozwoju.
+              W naszym żłobku w Krakowie oferujemy opiekę dla dzieci w wieku do
+              3 lat. Nasz zespół wykwalifikowanych i doświadczonych opiekunów
+              dba o to, aby każde dziecko otrzymało indywidualną uwagę i
+              wsparcie w swoim rozwoju.
             </p>
             <p>
-              Nasz program nauczania opiera się na holistycznym podejściu,
-              uwzględniającym potrzeby rozwojowe każdego dziecka. Stawiamy na
-              kreatywność, aktywność fizyczną oraz rozwijanie umiejętności
-              społecznych i emocjonalnych.
+              Program nauczania w naszym żłobku w Krakowie opiera się na
+              holistycznym podejściu, które uwzględnia potrzeby rozwojowe
+              każdego dziecka. Kładziemy nacisk na kreatywność, aktywność
+              fizyczną oraz rozwijanie umiejętności społecznych i emocjonalnych.
             </p>
             <p>
-              Jesteśmy dumni z pozytywnych opinii, jakie otrzymujemy od
-              rodziców, którzy powierzają nam opiekę nad swoimi dziećmi. Ich
+              Jesteśmy dumni z pozytywnych opinii, jakie otrzymujemy od rodziców
+              z Krakowa, którzy powierzają nam opiekę nad swoimi dziećmi. Ich
               zaufanie jest dla nas największą nagrodą i motywacją do ciągłego
               doskonalenia naszych usług.
               <Link href={"https://g.page/r/CVSRHQIb-HkkEBM/review"}>
@@ -60,8 +61,8 @@ export default function TextContainer() {
               </Link>
             </p>
             <h4>
-              Dołącz do naszej żłobkowej rodziny i daj swojemu dziecku najlepszy
-              start w życiu!
+              Dołącz do naszej krakowskiej rodziny żłobkowej i daj swojemu
+              dziecku najlepszy start w życiu!
             </h4>
           </div>
         </motion.div>

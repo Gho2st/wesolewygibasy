@@ -23,10 +23,10 @@ export default function Navigation() {
       <div className={classes.logoContainer}>
         <Link className={classes.logo} href={"/"}>
           <Image
-            src={"/others/logo.png"}
+            src={"/others/zlobek-wesole-wygibasy-krakow-logo.png"}
             width={130}
             height={65}
-            alt="Logo Wesołych Wygibasów"
+            alt="Logo Żłobek Wesołe Wygibasy Kraków"
           ></Image>
         </Link>
       </div>
