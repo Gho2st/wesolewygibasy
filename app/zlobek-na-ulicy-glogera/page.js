@@ -5,9 +5,9 @@ import Button from "@/components/UI/Button";
 import Link from "next/link";
 import DaySchedule from "@/components/Info/DaySchedule";
 import { FcGoogle } from "react-icons/fc";
-import ImagesGlogera from "@/components/Gallery/ImagesGlogera";
 import { Metadata } from "next";
 import SliderComponent from "@/components/UI/slider/slider";
+import ImagesContainer from "@/components/Gallery/ImagesContainer";
 
 export const metadata = {
   title: "Żłobek na Ulicy Glogera",
@@ -17,27 +17,27 @@ export const metadata = {
 };
 const images = [
   {
-    src: "/glogera-slider/g1.jpg",
+    src: "sliders/glogera-slider/g1.jpg",
     alt: "zdjecie ze srodka zlobka na ulicy glogera w krakowie",
   },
   {
-    src: "/glogera-slider/g2.jpg",
+    src: "sliders/glogera-slider/g2.jpg",
     alt: "zdjecie ze srodka zlobka na ulicy glogera w krakowie",
   },
   {
-    src: "/glogera-slider/g3.jpg",
+    src: "sliders/glogera-slider/g3.jpg",
     alt: "zdjecie ze srodka zlobka na ulicy glogera w krakowie",
   },
   {
-    src: "/glogera-slider/g4.jpg",
+    src: "sliders/glogera-slider/g4.jpg",
     alt: "zdjecie ze srodka zlobka na ulicy glogera w krakowie",
   },
   {
-    src: "/glogera-slider/g6.jpg",
+    src: "sliders/glogera-slider/g6.jpg",
     alt: "zdjecie ze srodka zlobka na ulicy glogera w krakowie",
   },
   {
-    src: "/glogera-slider/g7.jpg",
+    src: "sliders/glogera-slider/g7.jpg",
     alt: "zdjecie ze srodka zlobka na ulicy glogera w krakowie",
   },
 ];
@@ -116,7 +116,7 @@ export default function Glogera() {
             wydarzenia i chwile z życia maluszków w naszej placówce.
           </p>
 
-          <ImagesGlogera />
+          <ImagesContainer folder="galeria/glogera/" />
         </div>
       </div>
     </>

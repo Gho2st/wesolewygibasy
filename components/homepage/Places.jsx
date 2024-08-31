@@ -10,7 +10,7 @@ export default function Places() {
 
   const items = [
     {
-      image: "/sliczna-slider/sl4.jpg",
+      image: "sliders/sliczna-slider/sl4.jpg",
       alt: "plac zabaw na ulicy Ślicznej",
       title: "Miejsca w Nowym Żłobku",
       location: "Żłobek, Kraków",

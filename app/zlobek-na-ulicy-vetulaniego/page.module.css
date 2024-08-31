@@ -104,7 +104,9 @@
 .galleryContainer {
   margin-top: 4rem;
 }
-
+.galleryContainer h2 {
+  font-size: 2.3rem;
+}
 .galleryText {
   text-align: left;
   width: 100%;
@@ -143,6 +145,12 @@
   }
   .image {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .galleryContainer h2 {
+    font-size: 1.8rem;
   }
 }
 

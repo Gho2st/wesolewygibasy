@@ -1,10 +1,7 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
-import ScrollToTopButton from "@/components/UI/ScrollToTheTop";
 import { Metadata } from "next";
-import Navigation from "@/components/UI/Navigation";
-import Footer from "@/components/UI/Footer";
 import TransitionProvider from "@/components/animation/TransitionProvider";
 
 const montserrat = Montserrat({

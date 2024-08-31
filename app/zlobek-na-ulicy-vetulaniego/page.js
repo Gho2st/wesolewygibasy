@@ -8,7 +8,6 @@ import Link from "next/link";
 import DaySchedule from "@/components/Info/DaySchedule";
 import { FcGoogle } from "react-icons/fc";
 import PlaceItem from "@/components/UI/PlaceItem";
-import ImagesVetulaniego from "@/components/Gallery/ImagesVetulaniego";
 import { Metadata } from "next";
 import SliderComponent from "@/components/UI/slider/slider";
 
@@ -20,15 +19,15 @@ export const metadata = {
 };
 const images = [
   {
-    src: "/klub-malucha-slider/k1.jpg",
+    src: "sliders/klub-malucha-slider/k1.jpg",
     alt: "zdjecie ze srodka zlobka klubu malucha w krakowie",
   },
   {
-    src: "/klub-malucha-slider/k2.jpg",
+    src: "sliders/klub-malucha-slider/k2.jpg",
     alt: "zdjecie ze srodka zlobka klubu malucha w krakowie",
   },
   {
-    src: "/klub-malucha-slider/k3.jpg",
+    src: "sliders/klub-malucha-slider/k3.jpg",
     alt: "zdjecie ze srodka zlobka klubu malucha w krakowie",
   },
 ];
@@ -112,7 +111,7 @@ export default function Vetulaniego() {
             wydarzenia i chwile z życia maluszków w naszej placówce.
           </p>
 
-          <ImagesVetulaniego />
+          <ImagesContainer folder="galeria/vetulaniego/" />
         </div>
       </div>
     </>

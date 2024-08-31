@@ -6,7 +6,7 @@ import DaySchedule from "@/components/Info/DaySchedule";
 import PlaceItem from "@/components/UI/PlaceItem";
 import { Metadata } from "next";
 import SliderComponent from "../../components/UI/slider/slider";
-import ImagesSliczna from "@/components/Gallery/ImagesSliczna";
+import ImagesContainer from "@/components/Gallery/ImagesContainer";
 
 export const metadata = {
   title: "Żłobek na Ulicy Ślicznej",
@@ -17,39 +17,39 @@ export const metadata = {
 
 const images = [
   {
-    src: "/sliczna-slider/sl1.jpg",
+    src: "/sliders/sliczna-slider/sl1.jpg",
     alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
   },
   {
-    src: "/sliczna-slider/sl2.jpg",
+    src: "/sliders/sliczna-slider/sl2.jpg",
     alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
   },
   {
-    src: "/sliczna-slider/sl3.jpg",
+    src: "/sliders/sliczna-slider/sl3.jpg",
     alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
   },
   {
-    src: "/sliczna-slider/sl5.jpg",
+    src: "/sliders/sliczna-slider/sl5.jpg",
     alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
   },
   {
-    src: "/sliczna-slider/sl6.jpg",
+    src: "/sliders/sliczna-slider/sl6.jpg",
     alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
   },
   {
-    src: "/sliczna-slider/sl7.jpg",
+    src: "/sliders/sliczna-slider/sl7.jpg",
     alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
   },
   {
-    src: "/sliczna-slider/sl8.jpg",
+    src: "/sliders/sliczna-slider/sl8.jpg",
     alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
   },
   {
-    src: "/sliczna-slider/sl9.jpg",
+    src: "/sliders/sliczna-slider/sl9.jpg",
     alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
   },
   {
-    src: "/sliczna-slider/sl10.jpg",
+    src: "/sliders/sliczna-slider/sl10.jpg",
     alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
   },
 ];
@@ -138,7 +138,7 @@ export default function sliczna() {
             wydarzenia i chwile z życia maluszków w naszej placówce.
           </p>
 
-          <ImagesSliczna />
+          <ImagesContainer folder="/galeria/sliczna/" />
         </div>
       </div>
     </>
