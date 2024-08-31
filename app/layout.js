@@ -16,7 +16,7 @@ export const metadata = {
     template: "%s - Żłobek Kraków - Wesołe Wygibasy",
   },
   description:
-    "Szukasz dotowanego żłobka w Krakowie? Wesołe Wygibasy to miejsce, które wspiera rozwój Twojego dziecka!",
+    "Szukasz dotowanego żłobka w Krakowie? Wesołe Wygibasy to miejsce, które wspiera rozwój Twojego dziecka, oferując profesjonalną opiekę i przyjazną atmosferę, gdzie każde dziecko czuje się jak w domu!",
   alternates: {
     canonical: "/",
   },
