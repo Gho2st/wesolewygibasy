@@ -1,6 +1,7 @@
 .containerLeft {
   display: flex;
   flex-direction: column;
+  padding-top: 1rem;
 }
 .containerLeft input {
   margin: 0.7rem 0;

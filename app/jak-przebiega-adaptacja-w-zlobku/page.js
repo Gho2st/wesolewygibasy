@@ -1,4 +1,4 @@
-import H1 from "@/components/UI/H1";
+import Header from "@/components/UI/Header";
 import classes from "./page.module.css";
 import Image from "next/image";
 import { Metadata } from "next";
@@ -13,7 +13,7 @@ export default function adaptacja() {
   return (
     <>
       <div className={classes.container}>
-        <H1 text="Proces Adaptacji w Żłobku Wesołe Wygibasy w Krakowie" />
+        <Header text="Proces Adaptacji w Żłobku Wesołe Wygibasy w Krakowie" />
         <p>
           Adaptacja w żłobku to kluczowy element naszego pedagogicznego
           podejścia do opieki nad dziećmi w żłobku Wesołe Wygibasy w Krakowie.

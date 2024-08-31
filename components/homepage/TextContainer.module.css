@@ -43,11 +43,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 31%;
+  width: 25%;
 }
 
 .right img {
   transition: all ease 0.2s;
+  transform: scaleX(-1); /* Odbicie lustrzane */
 }
 
 .right img:hover {
@@ -65,14 +66,14 @@
   }
   .right {
     justify-content: center;
-    width: 38%;
+    width: 33%;
     margin: auto;
   }
 }
 
 @media (max-width: 800px) {
   .right {
-    width: 48%;
+    width: 42%;
   }
   .textContainer h4 {
     font-size: 1.1rem;
@@ -81,14 +82,14 @@
   .textContainer a {
     font-size: 1.3rem;
   }
-  .textContainer{
+  .textContainer {
     margin-bottom: 0rem;
     padding-bottom: 0rem;
   }
 }
 @media (max-width: 600px) {
   .right {
-    width: 100%;
+    width: 70%;
     margin-top: 1rem;
   }
 }

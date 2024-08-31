@@ -2,12 +2,6 @@
   padding: 2rem 9%;
 }
 
-.container h1 {
-  margin-bottom: 3.5rem;
-  margin-top: 5rem;
-  font-size: 2.3rem !important;
-}
-
 .imageContainer {
   display: flex;
   justify-content: center;
@@ -41,10 +35,4 @@
   font-weight: bold;
   padding-left: 0.2rem;
   padding-right: 0.2rem;
-}
-
-@media (max-width: 600px) {
-  .container h1 {
-    font-size: 1.8rem !important;
-  }
 }

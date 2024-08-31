@@ -1,6 +1,7 @@
 import classes from "./page.module.css";
 import Places from "@/components/homepage/Places";
 import { Metadata } from "next";
+import Header from "@/components/UI/Header";
 
 export const metadata = {
   title: "Plan Dnia",
@@ -12,7 +13,7 @@ export default function plan() {
   return (
     <>
       <div className={classes.container}>
-        <h1>Plan Dnia w Żłobku Wesołe Wygibasy w Krakowie</h1>
+        <Header text="Plan Dnia w Żłobku Wesołe Wygibasy w Krakowie" />
         <p>
           W żłobku Wesołe Wygibasy w Krakowie każda z naszych placówek oferuje
           szczegółowy plan dnia, dostosowany do potrzeb i wieku dzieci. Nasz

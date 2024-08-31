@@ -1,5 +1,6 @@
 import classes from "./page.module.css";
 import Places from "@/components/homepage/Places";
+import Header from "@/components/UI/Header";
 import { Metadata } from "next";
 
 export const metadata = {
@@ -12,8 +13,7 @@ export default function galeria() {
   return (
     <>
       <div className={classes.container}>
-        <h1>Galeria - Żłobek Wesołe Wygibasy w Krakowie</h1>
-
+        <Header text="Galeria - Żłobek Wesołe Wygibasy w Krakowie" />
         <h2>
           Zapraszamy do zapoznania się z naszą galerią zdjęć, która przeniesie
           Państwa w świat naszego żłobka dla dzieci w Krakowie.

@@ -2,7 +2,7 @@
 import classes from "./page.module.css";
 import Image from "next/image";
 import Form from "./Form";
-import H1 from "@/components/UI/H1";
+import Header from "@/components/UI/Header";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";
@@ -20,7 +20,7 @@ export default function Contact() {
   return (
     <>
       <div className={classes.container}>
-        <H1 text="Zapisz Swoje Dziecko w Najlepszym Żłobku w Krakowie!"></H1>
+        <Header text="Zapisz Swoje Dziecko w Najlepszym Żłobku w Krakowie!" />
         <p>
           Czy szukasz bezpiecznego i przyjaznego środowiska, w którym Twoje
           dziecko może rozwijać się każdego dnia? Wesołe Wygibasy w Krakowie to

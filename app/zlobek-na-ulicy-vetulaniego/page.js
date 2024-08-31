@@ -1,5 +1,5 @@
 import classes from "./page.module.css";
-import H1 from "@/components/UI/H1";
+import H1 from "@/components/UI/Header";
 import ImagesContainer from "@/components/Gallery/ImagesContainer";
 import Image from "next/image";
 import { FaSun } from "react-icons/fa";

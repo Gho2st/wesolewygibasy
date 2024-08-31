@@ -1,5 +1,5 @@
 import classes from "./page.module.css";
-import H1 from "@/components/UI/H1";
+import H1 from "@/components/UI/Header";
 import Image from "next/image";
 import Button from "@/components/UI/Button";
 import Link from "next/link";

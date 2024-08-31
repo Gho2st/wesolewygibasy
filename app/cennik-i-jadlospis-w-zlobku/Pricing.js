@@ -7,6 +7,7 @@ import { useState } from "react";
 import Others from "./Others";
 import FoodContainer from "./FoodContainer";
 import { IoCaretDownOutline } from "react-icons/io5";
+import Header from "@/components/UI/Header";
 
 export default function Pricing() {
   const [isStanczykaVisible, setIsStanczykaVisible] = useState(false);
@@ -16,9 +17,7 @@ export default function Pricing() {
   return (
     <>
       <div className={classes.pricingContainer}>
-        <h1 className={classes.header}>
-          Cennik - Żłobek Wesołe Wygibasy w Krakowie
-        </h1>
+        <Header text="Cennik - Żłobek Wesołe Wygibasy w Krakowie" />
         <p className={classes.description}>
           Zapraszamy do zapoznania się z naszym cennikiem dla żłobka Wesołe
           Wygibasy w Krakowie. Znajdą Państwo tutaj szczegółowe informacje na

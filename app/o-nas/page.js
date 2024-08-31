@@ -4,6 +4,7 @@ import Team, { TeamGlogera, TeamStanczyka } from "@/components/UI/Team";
 import TeamVetulaniego from "@/components/UI/Team";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { Metadata } from "next";
+import Header from "@/components/UI/Header";
 
 export const metadata = {
   title: "O nas",
@@ -16,7 +17,7 @@ export default function oNas() {
   return (
     <>
       <div className={classes.container}>
-        <h1>O Nas - Żłobek Wesołe Wygibasy w Krakowie</h1>
+        <Header text="O Nas - Żłobek Wesołe Wygibasy w Krakowie" />
         <div className={classes.info}>
           <div className={classes.text}>
             <p>

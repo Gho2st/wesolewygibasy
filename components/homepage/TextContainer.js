@@ -80,7 +80,7 @@ export default function TextContainer() {
             transition={{ delay: 0.1, duration: 0.7, ease: "easeOut" }}
           >
             <Image
-              src={"/monkeys/2.gif"}
+              src={"/monkeys/5.gif"}
               width={100}
               height={100}
               layout="responsive"

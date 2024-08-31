@@ -1,4 +1,4 @@
-import H1 from "@/components/UI/H1";
+import Header from "@/components/UI/Header";
 import classes from "./page.module.css";
 import Button from "@/components/UI/Button";
 import { Metadata } from "next";
@@ -14,10 +14,7 @@ export default function informacje() {
   return (
     <>
       <div className={classes.container}>
-        <H1
-          text="Informacje dla Rodziców i Opiekunów
-"
-        />
+        <Header text="Informacje dla Rodziców i Opiekunów" />
         <h2 className={classes.mt}> Drodzy Rodzice, Opiekunowie!</h2>
         <p>
           Na tej stronie znajdą Państwo ważne dokumenty związane z ochroną

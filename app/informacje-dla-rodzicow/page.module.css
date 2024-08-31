@@ -2,10 +2,6 @@
   padding: 2rem 9%;
 }
 
-.container h1 {
-  margin-top: 5rem;
-  font-size: 2.3rem !important;
-}
 .container p {
   line-height: 1.5rem;
 }
@@ -48,11 +44,5 @@
   }
   .container h2 {
     font-size: 1.35rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .container h1 {
-    font-size: 1.8rem !important;
   }
 }
