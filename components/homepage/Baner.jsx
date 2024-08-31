@@ -10,37 +10,34 @@ export default function Baner() {
   const skillRef = useRef();
   const isSkillRefinView = useInView(skillRef);
   return (
-    <div className={classes.banerContainer}>
-      <div className={classes.textContainer} ref={skillRef}>
-        <motion.div
-          initial={{ x: "-900px", opacity: 0, rotate: -10 }}
-          animate={
-            isSkillRefinView
-              ? { x: 0, opacity: 1, rotate: 0 }
-              : { x: "-900px", opacity: 0, rotate: -10 }
-          }
-          transition={{ delay: 0.11, duration: 0.7, ease: "easeOut" }}
-          className={classes.left}
-        >
-          <div>
-            <h1>Najlepszy Żłobek w Krakowie - Wesołe Wygibasy</h1>
-            <p>
-              <span className={classes.wesole}>Wesołe Wygibasy</span> to żłobek
-              w Krakowie, który powstał z pasji, troski i miłości do dzieci.
-              Nasze placówki oferują bezpieczne i inspirujące środowisko dla
-              Twojego malucha.
-            </p>
-            <div className={classes.buttonContainer}>
-              <Link href="#czytaj-wiecej">
-                <Button text="Czytaj więcej" fontSize="1rem" />
-              </Link>
-              <Link href="#placowki">
-                <Button text="Placówki" background="#7C99E5" fontSize="1rem" />
-              </Link>
+    <article>
+      <div className={classes.banerContainer}>
+        <div className={classes.textContainer} ref={skillRef}>
+          <motion.div className={classes.left}>
+            <div>
+              <h1>Najlepszy Żłobek w Krakowie - Wesołe Wygibasy</h1>
+              <p>
+                <span className={classes.wesole}>Wesołe Wygibasy</span> to
+                żłobek w Krakowie, który powstał z pasji, troski i miłości do
+                dzieci. Nasze placówki oferują bezpieczne i inspirujące
+                środowisko dla Twojego malucha.
+              </p>
+              <div className={classes.buttonContainer}>
+                <Link href="#czytaj-wiecej">
+                  <Button text="Czytaj więcej" fontSize="1rem" />
+                </Link>
+                <Link href="#placowki">
+                  <Button
+                    text="Placówki"
+                    background="#7C99E5"
+                    fontSize="1rem"
+                  />
+                </Link>
+              </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
-    </div>
+    </article>
   );
 }

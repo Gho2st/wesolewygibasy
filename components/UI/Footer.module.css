@@ -104,7 +104,8 @@
   scale: 1.1;
 }
 
-.form:hover {
+.form:hover,
+.phone:hover {
   color: #fa7070;
   cursor: pointer;
 }

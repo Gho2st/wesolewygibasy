@@ -37,7 +37,7 @@ export default function Footer() {
         <div>
           <h5>Kontakt z Nami i Zapisy</h5>
           <ul className={classes.contactInfo}>
-            <li>
+            <li className={classes.phone}>
               <Link href={"tel:+48697560022"}>
                 <FaPhone />
                 697 560 022

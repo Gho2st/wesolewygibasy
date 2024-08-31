@@ -26,12 +26,11 @@
 .closeButton {
   position: absolute;
   top: 0.5rem;
-  right: 0.5rem;
-  padding: 1rem 1.6rem;
-  background: #fa7070;
-  color: white;
+  right: 1rem;
+  background: white;
+  color: black;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   border: 0;
   border-radius: 50%;
   transform: scale(0.6);
@@ -40,7 +39,6 @@
 .closeButton:hover {
   scale: 1.05;
   cursor: pointer;
-  background: green;
 }
 
 .innerContainer {
@@ -96,11 +94,6 @@
     height: 350px !important;
     width: 650px !important;
   }
-  .closeButton {
-    top: 0.1rem;
-    right: 0.1rem;
-    padding: 0.5rem 1rem;
-  }
 }
 
 @media (max-width: 768px) {
@@ -140,9 +133,8 @@
     width: 350px !important;
   }
   .closeButton {
-    top: 0.01rem;
-    right: 0.01rem;
-    padding: 0.1rem 0.6rem;
-    font-size: 2rem;
+    top: 0rem;
+    font-size: 2.5rem;
+    right: 0.5rem;
   }
 }

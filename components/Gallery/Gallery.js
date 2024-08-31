@@ -39,7 +39,7 @@ function Gallery({ folder }) {
             />
           ))
         ) : (
-          <p>Loading images...</p>
+          <p className={classes.loading}>Ładowanie zdjęć...</p>
         )}
       </div>
     </div>

@@ -5,17 +5,25 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 4rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
 }
 
 /* Media queries */
-@media (max-width: 1354px) {
+@media (max-width: 1600px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.5rem;
   }
 }
+
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2.5rem;
+  }
+}
+
 @media (max-width: 950px) {
   .grid {
     grid-gap: 2rem;

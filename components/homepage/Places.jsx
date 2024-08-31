@@ -22,7 +22,7 @@ export default function Places() {
     {
       image: "/others/stanczyka.jpg",
       alt: "budynek zlobka na ulicy Stańczyka",
-      title: "Niepubliczny Żłobek",
+      title: "Żłobek na Stańczyka",
       location: "Żłobek, Kraków",
       street: "ul. Stańczyka 8/LU3",
       link: "zlobek-na-ulicy-stanczyka",
@@ -31,7 +31,7 @@ export default function Places() {
     {
       image: "/others/glogera.jpg",
       alt: "srodek zlobka na ulicy Glogera",
-      title: "Niepubliczny Żłobek",
+      title: "Żłobek na Glogera",
       location: "Żłobek, Kraków",
       street: "ul. Glogera 53/LU2",
       link: "zlobek-na-ulicy-glogera",
@@ -48,28 +48,32 @@ export default function Places() {
     },
   ];
   return (
-    <div className={classes.container} id="placowki" ref={skillRef}>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.85 }}
+      animate={
+        isSkillRefinView
+          ? { opacity: 1, scale: 1 }
+          : { opacity: 0, scale: 0.85 }
+      }
+      transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
+      className={classes.container}
+      id="placowki"
+      ref={skillRef}
+    >
       <div className={classes.grid}>
         {items.map((item, index) => (
-          <motion.div
-            key={item.link}
-            initial={{ opacity: 0, y: 50 }}
-            animate={isSkillRefinView ? { y: 0, opacity: 1 } : {}}
-            transition={{ duration: 0.5, delay: index * 0.5 }}
-          >
-            <PlaceItem
-              image={item.image}
-              alt={item.alt}
-              title={item.title}
-              location={item.location}
-              street={item.street}
-              add={item.add}
-              color={item.color}
-              link={item.link}
-            />
-          </motion.div>
+          <PlaceItem
+            image={item.image}
+            alt={item.alt}
+            title={item.title}
+            location={item.location}
+            street={item.street}
+            add={item.add}
+            color={item.color}
+            link={item.link}
+          />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
