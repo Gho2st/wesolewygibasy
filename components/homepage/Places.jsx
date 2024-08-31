@@ -63,6 +63,7 @@ export default function Places() {
       <div className={classes.grid}>
         {items.map((item, index) => (
           <PlaceItem
+            key={index}
             image={item.image}
             alt={item.alt}
             title={item.title}
