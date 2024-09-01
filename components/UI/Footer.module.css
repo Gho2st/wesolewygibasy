@@ -189,7 +189,7 @@
     flex-direction: column;
   }
   .footerTopContainer h4 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     width: 100%;
   }
   .footerTopContainer p {
@@ -211,7 +211,7 @@
     padding-top: 0;
   }
   .footerInfoContainer h5 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .footerInfoContainer li {
     font-size: 1.05rem;
@@ -223,7 +223,7 @@
 
 @media (max-width: 540px) {
   .footerTopContainer h4 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .footerTopContainer p {
     font-size: 1rem;
