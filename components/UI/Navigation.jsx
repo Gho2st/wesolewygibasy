@@ -14,10 +14,6 @@ export default function Navigation() {
     setMenuOpen(!menuOpen);
   };
 
-  const handleLinkClick = () => {
-    setMenuOpen(false);
-  };
-
   return (
     <>
       <div className={classes.back}>

@@ -62,8 +62,8 @@ export default function Reviews() {
   return (
     <div className={classes.container}>
       <h3>
-        <span>Wesołe Wygibasy</span> - ponad 91 zadowolonych klientów i ocena
-        4.9!
+        <span>Wesołe Wygibasy</span> - ponad 91 zadowolonych klientów! Ocena
+        4.9/5!
       </h3>
       <p className={classes.description}>
         Dołącz do grona naszych zadowolonych klientów. Sprawdź, co mówią o nas

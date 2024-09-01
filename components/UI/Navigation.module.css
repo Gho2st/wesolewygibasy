@@ -48,7 +48,7 @@
   right: 20px;
   border-radius: 50%;
   z-index: 2000;
-  box-shadow: 0rem 0.2rem 1rem rgb(150, 150, 150);
+  box-shadow: 0rem 0.2rem 0.5rem rgb(207, 207, 207);
   text-align: center;
   cursor: pointer;
   display: flex;

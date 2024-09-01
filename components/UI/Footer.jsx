@@ -67,7 +67,8 @@ export default function Footer() {
       </div>
       <div className={classes.footerDownContainer}>
         <p className={classes.description}>
-          <span className={classes.copy}>&copy;</span> Wesołe Wygibasy 2024 &
+          <span className={classes.copy}>&copy;</span> 2024 Wesołe Wygibasy |
+          Projekt i realizacja:
           <span className={classes.FooterSpan}>
             <Link href={"https://www.domiweb.pl/"}> Domiweb </Link>
           </span>
