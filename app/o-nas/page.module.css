@@ -7,6 +7,12 @@
   color: #08c6c3;
 }
 
+.header {
+  text-align: center;
+  color: #fa7070;
+  font-size: 2.3rem;
+}
+
 .info {
   display: flex;
   justify-content: space-between;
@@ -58,6 +64,9 @@
 }
 
 @media (max-width: 1000px) {
+  .header {
+    margin-top: 4rem;
+  }
   .imageContainer {
     margin: auto;
     width: 50%;
@@ -84,6 +93,11 @@
   }
   .imageContainer h2 {
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    font-size: 1.8rem;
   }
 }
 
