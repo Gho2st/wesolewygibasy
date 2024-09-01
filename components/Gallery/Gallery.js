@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Modal from "react-modal";
 import classes from "./Gallery.module.css";
+import Image from "next/image";
 
 function Gallery({ folder }) {
   const [images, setImages] = useState([]);
@@ -30,9 +30,11 @@ function Gallery({ folder }) {
       <div className={classes.imageGrid}>
         {images.length > 0 ? (
           images.map((src, index) => (
-            <img
+            <Image
               key={index}
               src={src}
+              width={100}
+              height={100}
               alt={`Gallery Image ${index}`}
               className={classes.image}
             />
