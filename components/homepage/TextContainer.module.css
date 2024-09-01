@@ -51,11 +51,6 @@
   transform: scaleX(-1); /* Odbicie lustrzane */
 }
 
-.right img:hover {
-  transform: translateY(-3px);
-  scale: 1.02;
-}
-
 @media (max-width: 1383px) {
   .textContainer {
     flex-direction: column;
@@ -66,8 +61,11 @@
   }
   .right {
     justify-content: center;
-    width: 33%;
+    width: 28%;
     margin: auto;
+  }
+  .textContainer h4 {
+    margin-bottom: 2rem;
   }
 }
 
@@ -89,7 +87,7 @@
 }
 @media (max-width: 600px) {
   .right {
-    width: 70%;
+    width: 60%;
     margin-top: 1rem;
   }
 }

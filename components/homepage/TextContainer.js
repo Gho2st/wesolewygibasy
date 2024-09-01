@@ -4,6 +4,7 @@ import classes from "./TextContainer.module.css";
 import Image from "next/image";
 import { useRef } from "react";
 import { useInView, motion, delay } from "framer-motion";
+import Reviews from "./Reviews";
 export default function TextContainer() {
   const skillRef = useRef();
   const isSkillRefinView = useInView(skillRef);
@@ -60,9 +61,10 @@ export default function TextContainer() {
                 dziećmi. Ich zaufanie jest dla nas największą nagrodą i
                 motywacją do ciągłego doskonalenia naszych usług.
                 <Link href={"https://g.page/r/CVSRHQIb-HkkEBM/review"}>
-                  Zostaw nam Twoją opinię
+                  Kliknij i zostaw nam swoją opinię!
                 </Link>
               </p>
+
               <h4>
                 Dołącz do naszej krakowskiej rodziny żłobkowej i daj swojemu
                 dziecku najlepszy start w życiu!
@@ -88,6 +90,7 @@ export default function TextContainer() {
             ></Image>
           </motion.div>
         </div>
+        <Reviews />
       </article>
     </>
   );
