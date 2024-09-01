@@ -3,6 +3,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
 import TransitionProvider from "@/components/animation/TransitionProvider";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
       <body className={montserrat.className}>
         <TransitionProvider>{children}</TransitionProvider>
       </body>
+      <GoogleAnalytics gaId="G-0JPENQFJQX" />
     </html>
   );
 }
