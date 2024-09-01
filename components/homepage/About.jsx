@@ -9,7 +9,7 @@ import { useInView, motion, delay } from "framer-motion";
 
 export default function About() {
   const skillRef = useRef();
-  const isSkillRefinView = useInView(skillRef);
+  const isSkillRefinView = useInView(skillRef, { once: true });
 
   return (
     <article>

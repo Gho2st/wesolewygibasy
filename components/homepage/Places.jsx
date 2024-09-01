@@ -6,7 +6,7 @@ import { useInView, motion, delay, color } from "framer-motion";
 
 export default function Places() {
   const skillRef = useRef();
-  const isSkillRefinView = useInView(skillRef);
+  const isSkillRefinView = useInView(skillRef, { once: true });
 
   const items = [
     {

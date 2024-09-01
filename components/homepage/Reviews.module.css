@@ -113,6 +113,7 @@
 @media (max-width: 600px) {
   .container {
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   .rotate {
     display: none;

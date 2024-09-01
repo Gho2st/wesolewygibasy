@@ -7,7 +7,7 @@ import { useInView, motion, delay } from "framer-motion";
 import Reviews from "./Reviews";
 export default function TextContainer() {
   const skillRef = useRef();
-  const isSkillRefinView = useInView(skillRef);
+  const isSkillRefinView = useInView(skillRef, { once: true });
   return (
     <>
       <article>

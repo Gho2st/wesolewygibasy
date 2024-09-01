@@ -8,7 +8,7 @@ import { useInView, motion, delay } from "framer-motion";
 export default function Dotation() {
   const [showModal, setShowModal] = useState(false);
   const skillRef = useRef();
-  const isSkillRefinView = useInView(skillRef);
+  const isSkillRefinView = useInView(skillRef, { once: true });
   const handleOpenModal = () => {
     setShowModal(true);
   };
