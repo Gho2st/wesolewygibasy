@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
-import "react-image-gallery/styles/css/image-gallery.css"; // Import default styles
 import classes from "./Gallery.module.css";
 
 function Gallery({ folder }) {
