@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       <body className={montserrat.className}>
         <TransitionProvider>{children}</TransitionProvider>
       </body>
-      <GoogleAnalytics gaId="G-0JPENQFJQX" />
+      <GoogleAnalytics gaId="G-7ZYQBFJXN7" />
     </html>
   );
 }
