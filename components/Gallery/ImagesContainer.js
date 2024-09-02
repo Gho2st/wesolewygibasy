@@ -104,8 +104,8 @@ export default function ImagesContainer(props) {
 
   return (
     <div className={classes.container}>
-      {loading && <p>Loading...</p>}
-      {error && <p>Error loading folders.</p>}
+      {loading && <p>Wczytywanie galerii zdjęć...</p>}
+      {error && <p>Wystąpił błąd przy wczytywaniu galerii.</p>}
       {!loading && !error && (
         <Slider {...carouselSettings} className={classes.slider}>
           {folders.map((folder) => (
