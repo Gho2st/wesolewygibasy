@@ -15,6 +15,8 @@ export default function ImagesContainer(props) {
   const [showModal, setShowModal] = useState(false);
   const [selectedFolder, setSelectedFolder] = useState("");
   const [folders, setFolders] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   console.log(props.folder);
 
@@ -23,7 +25,7 @@ export default function ImagesContainer(props) {
 
     async function fetchFolders() {
       try {
-        const response = await fetch(`/api/get_folders/${props.folder}`);
+        const response = await fetch(`/api/get_folders_aws/${props.folder}`);
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
@@ -32,6 +34,9 @@ export default function ImagesContainer(props) {
         setFolders(data);
       } catch (error) {
         console.error("Error fetching folders:", error);
+        setError(error);
+      } finally {
+        setLoading(false);
       }
     }
 
@@ -55,7 +60,6 @@ export default function ImagesContainer(props) {
         </div>
       </div>
     ),
-
     prevArrow: (
       <div>
         <div className={classes.rotate}>
@@ -100,16 +104,20 @@ export default function ImagesContainer(props) {
 
   return (
     <div className={classes.container}>
-      <Slider {...carouselSettings} className={classes.slider}>
-        {folders.map((folder) => (
-          <ImagesItem
-            key={folder}
-            onClick={() => handleImageClick(folder)} // to jest poprawne
-            src={`${props.folder}${folder}/${folder}.jpg`} // assuming each folder has a representative image with the same name as the folder
-            text={folder.replace(/-/g, " ")} // converts hyphens to spaces for display
-          />
-        ))}
-      </Slider>
+      {loading && <p>Loading...</p>}
+      {error && <p>Error loading folders.</p>}
+      {!loading && !error && (
+        <Slider {...carouselSettings} className={classes.slider}>
+          {folders.map((folder) => (
+            <ImagesItem
+              key={folder.folderName}
+              onClick={() => handleImageClick(folder.folderName)}
+              src={folder.imageUrl}
+              text={folder.folderName}
+            />
+          ))}
+        </Slider>
+      )}
 
       {/* Modal to display the gallery */}
       <Modal
@@ -123,9 +131,9 @@ export default function ImagesContainer(props) {
           <button onClick={closeModal} className={classes.closeButton}>
             <IoMdClose />
           </button>
-          <h3>{selectedFolder}</h3>
+          {/* <h3>{selectedFolder}</h3> */}
           {selectedFolder && (
-            <Gallery folder={`${props.folder}${selectedFolder}`} />
+            <Gallery folder={`${props.folder}/${selectedFolder}`} />
           )}
         </div>
       </Modal>

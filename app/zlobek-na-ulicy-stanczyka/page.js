@@ -129,7 +129,8 @@ export default function stanczyka() {
             wydarzenia i chwile z życia maluszków w naszej placówce.
           </p>
 
-          <ImagesContainer folder="galeria/stanczyka/" />
+          {/* <ImagesContainer folder="galeria/stanczyka/" /> */}
+          <ImagesContainer folder="stanczyka" />
         </div>
       </div>
     </>

@@ -30,6 +30,10 @@ const images = [
     src: "sliders/klub-malucha-slider/k3.jpg",
     alt: "zdjecie ze srodka zlobka klubu malucha w krakowie",
   },
+  {
+    src: "sliders/klub-malucha-slider/k4.jpg",
+    alt: "zdjecie ze srodka zlobka klubu malucha w krakowie",
+  },
 ];
 export default function Vetulaniego() {
   return (
@@ -111,7 +115,7 @@ export default function Vetulaniego() {
             wydarzenia i chwile z życia maluszków w naszej placówce.
           </p>
 
-          <ImagesContainer folder="galeria/vetulaniego/" />
+          <ImagesContainer folder="vetulaniego" />
         </div>
       </div>
     </>

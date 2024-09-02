@@ -138,7 +138,7 @@ export default function sliczna() {
             wydarzenia i chwile z życia maluszków w naszej placówce.
           </p>
 
-          <ImagesContainer folder="/galeria/sliczna/" />
+          <ImagesContainer folder="sliczna" />
         </div>
       </div>
     </>

@@ -83,10 +83,12 @@
   border: 0;
   border-radius: 50%;
   padding: 0.2rem;
+  box-shadow: 0rem 0.2rem 0.5rem rgb(183, 183, 183);
 }
 
 .closeButton svg {
   font-size: 1.8rem;
+  color: red;
 }
 
 .closeButton:hover {

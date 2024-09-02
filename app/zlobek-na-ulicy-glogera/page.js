@@ -116,7 +116,7 @@ export default function Glogera() {
             wydarzenia i chwile z życia maluszków w naszej placówce.
           </p>
 
-          <ImagesContainer folder="galeria/glogera/" />
+          <ImagesContainer folder="glogera" />
         </div>
       </div>
     </>
