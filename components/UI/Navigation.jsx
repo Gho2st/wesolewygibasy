@@ -75,7 +75,7 @@ export default function Navigation() {
               <li className={classes.navigation__item}>
                 <Link
                   className={classes.navigation__link}
-                  href={"/jak-przebiega-adaptacja-w-zlobku"}
+                  href={"/adaptacja-w-zlobku"}
                 >
                   <span>05</span>
                   Adaptacja

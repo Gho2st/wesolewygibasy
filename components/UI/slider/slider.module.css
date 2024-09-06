@@ -41,15 +41,13 @@
     padding-right: 0.3rem;
     padding-left: 0.3rem;
   }
-}
-@media (max-width: 465px) {
   .rotate {
-    margin-right: 1rem;
+    display: none;
   }
   .slider {
-    width: 84%;
+    width: 100%;
   }
   .rightArrow {
-    margin-left: 1rem;
+    display: none;
   }
 }
