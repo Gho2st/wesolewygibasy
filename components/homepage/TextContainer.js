@@ -23,10 +23,10 @@ export default function TextContainer() {
             className={classes.left}
           >
             <div>
-              <h3>
+              <h2>
                 Żłobek <span> Wesołe Wygibasy</span> w Krakowie - Najlepszy
                 Wybór dla Twojego Dziecka!
-              </h3>
+              </h2>
               <p>
                 Żłobki Wesołe Wygibasy w Krakowie to miejsca, gdzie każde
                 dziecko jest otoczone miłością, szacunkiem i troską. Nasza misja

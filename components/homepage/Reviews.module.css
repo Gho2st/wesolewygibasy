@@ -3,7 +3,7 @@
   padding: 2rem 9%;
 }
 
-.container h3 {
+.container h2 {
   text-align: center;
   font-size: 1.7rem;
 }
@@ -21,7 +21,7 @@
   width: 100%;
 }
 
-.header h3 {
+.header h2 {
   word-spacing: 0.3rem;
   font-size: 2.3rem;
   text-align: center;
@@ -92,7 +92,7 @@
 }
 
 @media (max-width: 1200px) {
-  .container h3 {
+  .container h2 {
     font-size: 1.5rem;
   }
 

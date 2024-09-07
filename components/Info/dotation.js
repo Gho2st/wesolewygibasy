@@ -31,8 +31,8 @@ export default function Dotation() {
           >
             <div className={classes.innerContainer}>
               <div>
-                <h4>Kraków, Żłobek w Naszym Mieście</h4>
-                <h5>Dofinansowanie</h5>
+                <h2>Kraków, Żłobek w Naszym Mieście</h2>
+                <h3>Dofinansowanie</h3>
               </div>
               <div>
                 <Image

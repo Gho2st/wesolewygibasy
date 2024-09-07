@@ -46,12 +46,12 @@
   justify-content: space-between;
 }
 
-.container h4 {
+.container h2 {
   font-size: 2.3rem;
   color: #fa7070;
 }
 
-.container h5 {
+.container h3 {
   font-size: 1.6rem;
   margin-top: 0.6rem;
   margin-bottom: 1.5rem;
@@ -97,10 +97,10 @@
 }
 
 @media (max-width: 768px) {
-  .innerContainer h4 {
+  .innerContainer h2 {
     font-size: 1.8rem;
   }
-  .innerContainer h5 {
+  .innerContainer h3 {
     font-size: 1.5rem;
   }
   .innerContainer img {
@@ -120,10 +120,10 @@
   .container {
     margin-top: 1rem;
   }
-  .innerContainer h4 {
+  .innerContainer h2 {
     font-size: 1.7rem;
   }
-  .innerContainer h5 {
+  .innerContainer h3 {
     font-size: 1.25rem;
   }
 }
