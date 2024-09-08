@@ -3,7 +3,6 @@ import Image from "next/image";
 import Button from "@/components/UI/Button";
 import Link from "next/link";
 import DaySchedule from "@/components/Info/DaySchedule";
-import PlaceItem from "@/components/UI/PlaceItem";
 import { Metadata } from "next";
 import SliderComponent from "../../components/UI/slider/slider";
 import ImagesContainer from "@/components/Gallery/ImagesContainer";
@@ -63,10 +62,10 @@ export default function sliczna() {
             <div>
               <h1>Żłobek na Ślicznej 36A w Krakowie</h1>
               <p>
-                Szukasz bezpiecznego i inspirującego żłobka w Krakowie? Wesołe
-                Wygibasy na Ślicznej 36A oferują profesjonalną opiekę i rozwój w
-                przyjaznej atmosferze. Dowiedz się więcej i zapisz swoje dziecko
-                już dziś!
+                Szukasz nowoczesnego i bezpiecznego żłobka w Krakowie? Wesołe
+                Wygibasy na ul. Ślicznej 36A oferują profesjonalną opiekę,
+                troskliwy zespół oraz inspirujące warunki do rozwoju Twojego
+                dziecka. Skontaktuj się z nami i zapisz malucha już dziś!
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="/o-nas">
@@ -92,26 +91,60 @@ export default function sliczna() {
         </div>
       </div>
       <div className={classes.container}>
-        <p className={classes.description}>
-          <span>Wesołe Wygibasy</span> - Niepubliczny Żłobek przy ulicy Ślicznej
-          36A 31-444 to nasza <span> czwarta </span> placówka.<br></br> Jak
-          pozostałe trzy placówki powstała z miłości i potrzeby serca. <br></br>
-          Żłobek ma możliwość przyjęcia <span> 39 dzieci.</span> <br></br>
-          Posiadamy <span> 2 duże sale </span> (54m2 i 57m2) dla potrzeb dzieci.{" "}
-          <br></br> <br></br> Placówka powstała od podstaw w okresie III - V
-          2024 r. Jest nowoczesna i przestronna, posiadamy rekuperację co
-          zapewnia nam dostęp do oczyszczonego powietrza. <br></br> Dzieci będą
-          podzielone na dwie grupy wiekowe:
-          <br></br> <br></br> <span> Grupa młodsza </span> - Tuptusie (dzieci do
-          ok 22 miesiąca)<br></br> <span> Grupa Starszaków </span> - Wygibaski
-          (dzieci do 3 lat)
-          <br></br> Dziećmi będzie się opiekować
-          <span> wykwalifikowanych 6 opiekunów.</span>
-          <br></br> Do dyspozycji dzieci jest nowoczesny, ogrodzony{" "}
-          <span> plac zabaw </span>
-          oraz teren zielony. <br></br> Dzieci będą również korzystać z wózków
-          6-osobowych.
-        </p>
+        <div className={classes.description}>
+          <h2>
+            Wesołe Wygibasy - Niepubliczny Żłobek w Krakowie, ul. Śliczna 36A,
+            31-444
+          </h2>
+          <p>
+            <span>Wesołe Wygibasy</span> to nasza czwarta placówka
+            niepublicznych żłobków w Krakowie, zlokalizowana przy{" "}
+            <span> ul. Ślicznej 36A, 31-444 Kraków</span>. Tworzymy przyjazne i
+            bezpieczne miejsca dla dzieci, kierując się pasją oraz
+            zaangażowaniem, aby zapewnić Twojemu maluchowi jak najlepszą opiekę.
+            Nasz nowoczesny żłobek oferuje 39 miejsc w przestronnych,
+            komfortowych i bezpiecznych warunkach.
+          </p>
+          <h2>Nowoczesność i Komfort w Żłobku Wesołe Wygibasy</h2>
+          <p>
+            Otwartą w 2024 roku placówkę zaprojektowaliśmy z myślą o
+            bezpieczeństwie i wygodzie najmłodszych. Nasz żłobek przy ul.
+            Ślicznej dysponuje dwiema dużymi salami o powierzchni
+            <span> 54 m² i 57 m²</span>, które są wyposażone w nowoczesne
+            systemy, takie jak <span> rekuperacja </span> zapewniająca dzieciom
+            dostęp do świeżego i czystego powietrza przez cały dzień.
+          </p>
+          <h3>Grupy wiekowe w naszym Żłobku</h3>
+          <ul>
+            <li>
+              <span>Tuptusie</span> - młodsza grupa dla dzieci do ok. 22
+              miesiąca życia.
+            </li>
+            <li>
+              <span>Wygibaski</span> - starsza grupa dla dzieci do 3 lat.
+            </li>
+            <p>
+              Nad bezpieczeństwem i rozwojem maluchów czuwa zespół{" "}
+              <span> 6 wykwalifikowanych opiekunów</span>, którzy zapewniają
+              troskliwą opiekę i dbają o wszechstronny rozwój każdego dziecka.
+            </p>
+          </ul>
+          <h2>Atrakcje i udogodnienia</h2>
+          <ul>
+            <li>
+              Nowoczesny, ogrodzony <span> plac zabaw</span>, który zapewnia
+              bezpieczną zabawę na świeżym powietrzu.
+            </li>
+            <li>
+              Zielony <span>teren rekreacyjny</span>, idealny na spacery i
+              zabawy na świeżym powietrzu.
+            </li>
+            <li>
+              Bezpieczne, <span>6-osobowe wózki spacerowe</span>, dzięki którym
+              codzienne spacery z dziećmi są komfortowe i bezpieczne.
+            </li>
+          </ul>
+        </div>
         <SliderComponent images={images} />
 
         <h3>

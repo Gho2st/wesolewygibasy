@@ -25,17 +25,6 @@
   width: 80%;
 }
 
-.textContainer a {
-  display: block;
-  margin-top: 1.5rem;
-  color: #fa7070;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-.textContainer a:hover {
-  color: #f3c419;
-}
-
 .left {
   width: 65%;
 }

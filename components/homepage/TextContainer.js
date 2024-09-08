@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useRef } from "react";
 import { useInView, motion, delay } from "framer-motion";
 import Reviews from "./Reviews";
+import Button from "../UI/Button";
 export default function TextContainer() {
   const skillRef = useRef();
   const isSkillRefinView = useInView(skillRef, { once: true });
@@ -60,11 +61,11 @@ export default function TextContainer() {
                 rodziców z Krakowa, którzy powierzają nam opiekę nad swoimi
                 dziećmi. Ich zaufanie jest dla nas największą nagrodą i
                 motywacją do ciągłego doskonalenia naszych usług.
-                <Link href={"https://g.page/r/CVSRHQIb-HkkEBM/review"}>
-                  Kliknij i zostaw nam swoją opinię!
-                </Link>
               </p>
             </div>
+            <Link href={"https://g.page/r/CVSRHQIb-HkkEBM/review"}>
+              <Button text="Zostaw opinię!" fontSize="1.1rem" />
+            </Link>
           </motion.div>
           <motion.div
             className={classes.right}

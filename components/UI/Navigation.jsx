@@ -21,7 +21,7 @@ export default function Navigation() {
           <Link className={classes.logo} href={"/"}>
             <Image
               src={"/others/zlobek-wesole-wygibasy-krakow-logo.png"}
-              width={130}
+              width={100}
               height={65}
               alt="Logo Żłobek Wesołe Wygibasy Kraków"
             ></Image>
