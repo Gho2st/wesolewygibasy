@@ -17,8 +17,10 @@
   margin-top: 7rem;
 }
 
-.textContainer h1 {
+.textContainer h1 span {
   font-size: 2.3rem;
+  display: inline;
+  color: black;
 }
 
 .textContainer p {
@@ -70,7 +72,7 @@
   .textContainer {
     width: 100%;
   }
-  .textContainer h1 {
+  .textContainer h1 span {
     font-size: 1.9rem;
   }
   .textContainer p {
@@ -104,7 +106,7 @@
     background-position: 60% bottom;
   }
 
-  .textContainer h1 {
+  .textContainer h1 span {
     font-size: 1.8rem;
   }
   .textContainer p {

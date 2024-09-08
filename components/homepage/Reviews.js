@@ -4,8 +4,33 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Stars from "../../components/UI/Stars";
 import { IoIosArrowForward } from "react-icons/io";
+import {
+  motion,
+  useMotionValue,
+  useTransform,
+  animate,
+  useInView,
+} from "framer-motion";
+import { useEffect, useRef } from "react";
 
 export default function Reviews() {
+  const count = useMotionValue(0);
+  const rounded = useTransform(count, Math.round);
+
+  // ref for the counter div
+  const counterRef = useRef(null);
+
+  // detect when the counter comes into view
+  const isInView = useInView(counterRef, { once: true });
+
+  useEffect(() => {
+    if (isInView) {
+      const animation = animate(count, 91, {
+        duration: 4,
+      });
+    }
+  }, [isInView]);
+
   const settings = {
     dots: false,
     infinite: true,
@@ -63,8 +88,11 @@ export default function Reviews() {
     <article className={classes.wrapper}>
       <div className={classes.container}>
         <h2>
-          <span>Wesołe Wygibasy</span> - ponad 91 zadowolonych klientów! Ocena
-          4.9/5!
+          <span>Wesołe Wygibasy</span> - ponad
+          <motion.div ref={counterRef} className={classes.counter}>
+            {rounded}
+          </motion.div>
+          zadowolonych klientów! Ocena 4.9/5!
         </h2>
         <p className={classes.description}>
           Dołącz do grona naszych zadowolonych klientów. Sprawdź, co mówią o nas

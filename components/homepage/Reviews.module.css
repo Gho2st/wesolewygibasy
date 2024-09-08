@@ -1,6 +1,13 @@
 .wrapper {
   padding: 4rem 0;
 }
+.counter {
+  display: inline;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1.8rem;
+  color: green;
+}
 
 .container {
   padding: 2rem 9%;

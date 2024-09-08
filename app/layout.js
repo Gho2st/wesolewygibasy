@@ -4,6 +4,8 @@ import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
 import TransitionProvider from "@/components/animation/TransitionProvider";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Navigation from "@/components/UI/Navigation";
+import Footer from "@/components/UI/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -39,7 +41,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pl">
       <body className={montserrat.className}>
-        <TransitionProvider>{children}</TransitionProvider>
+        {/* <TransitionProvider>{children}</TransitionProvider> */}
+        <Navigation />
+        {children}
+        <Footer />
       </body>
       <GoogleAnalytics gaId="G-7ZYQBFJXN7" />
     </html>
