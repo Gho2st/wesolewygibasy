@@ -61,7 +61,7 @@ export default function sliczna() {
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
-              <h1>Najlepszy Żłobek na Ślicznej 36A w Krakowie</h1>
+              <h1>Żłobek na Ślicznej 36A w Krakowie</h1>
               <p>
                 Szukasz bezpiecznego i inspirującego żłobka w Krakowie? Wesołe
                 Wygibasy na Ślicznej 36A oferują profesjonalną opiekę i rozwój w

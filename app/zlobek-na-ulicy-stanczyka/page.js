@@ -1,12 +1,9 @@
 import classes from "./page.module.css";
-import H1 from "@/components/UI/Header";
 import ImagesContainer from "@/components/Gallery/ImagesContainer";
 import Image from "next/image";
-import { FaSun } from "react-icons/fa";
 import Button from "@/components/UI/Button";
 import Link from "next/link";
 import DaySchedule from "@/components/Info/DaySchedule";
-import { FcGoogle } from "react-icons/fc";
 import PlaceItem from "@/components/UI/PlaceItem";
 import { Metadata } from "next";
 import SliderComponent from "@/components/UI/slider/slider";
@@ -51,7 +48,7 @@ export default function stanczyka() {
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
-              <h1>Najlepszy Żłobek na Stańczyka 8/LU3 w Krakowie</h1>
+              <h1>Żłobek na Stańczyka 8/LU3 w Krakowie</h1>
               <p>
                 Szukasz bezpiecznego i inspirującego żłobka w Krakowie? Wesołe
                 Wygibasy na Stańczyka 8/LU3 oferują profesjonalną opiekę i

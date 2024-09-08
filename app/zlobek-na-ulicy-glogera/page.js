@@ -48,7 +48,7 @@ export default function Glogera() {
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
-              <h1>Najlepszy Żłobek na Glogera 53/LU2 w Krakowie</h1>
+              <h1>Żłobek na Glogera 53/LU2 w Krakowie</h1>
               <p>
                 Szukasz bezpiecznego i inspirującego żłobka w Krakowie? Wesołe
                 Wygibasy na Glogera 53/LU2 oferują profesjonalną opiekę i rozwój

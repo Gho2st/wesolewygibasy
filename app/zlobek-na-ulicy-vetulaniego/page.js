@@ -42,7 +42,7 @@ export default function Vetulaniego() {
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
-              <h1>Najlepszy Żłobek na Vetulaniego 8 w Krakowie</h1>
+              <h1>Żłobek na Vetulaniego 8 w Krakowie</h1>
               <p>
                 Szukasz bezpiecznego i inspirującego żłobka w Krakowie? Wesołe
                 Wygibasy na Vetulaniego 8 oferują profesjonalną opiekę i rozwój
