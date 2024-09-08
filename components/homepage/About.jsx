@@ -12,17 +12,17 @@ export default function About() {
   const isSkillRefinView = useInView(skillRef, { once: true });
 
   return (
-    <article>
-      <div className={classes.container} id="czytaj-wiecej" ref={skillRef}>
+    <article className={classes.wrapper} ref={skillRef}>
+      <div className={classes.container} id="czytaj-wiecej">
         <motion.div
           className={classes.imageContainer}
-          initial={{ x: "900px", opacity: 0, rotate: 10 }}
+          initial={{ x: "-350px", opacity: 0 }}
           animate={
             isSkillRefinView
-              ? { x: 0, opacity: 1, rotate: 0 }
-              : { x: "900px", opacity: 0, rotate: 10 }
+              ? { x: 0, opacity: 1 }
+              : { x: "-350px", opacity: 0 }
           }
-          transition={{ delay: 0.1, duration: 0.7, ease: "easeOut" }}
+          transition={{ delay: 1, duration: 1, ease: "easeOut" }}
         >
           <Image
             src={"/monkeys/4.gif"}
@@ -34,13 +34,11 @@ export default function About() {
           ></Image>
         </motion.div>
         <motion.div
-          initial={{ x: "900px", opacity: 0, rotate: 10 }}
+          initial={{ x: "350px", opacity: 0 }}
           animate={
-            isSkillRefinView
-              ? { x: 0, opacity: 1, rotate: 0 }
-              : { x: "900px", opacity: 0, rotate: 10 }
+            isSkillRefinView ? { x: 0, opacity: 1 } : { x: "350px", opacity: 0 }
           }
-          transition={{ delay: 0.1, duration: 0.7, ease: "easeOut" }}
+          transition={{ delay: 1, duration: 1, ease: "easeOut" }}
           className={classes.textContainer}
         >
           <div>

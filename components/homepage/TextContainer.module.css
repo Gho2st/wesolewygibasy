@@ -1,8 +1,14 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fffbf2;
+}
 .textContainer {
   padding: 2rem 9%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5rem;
 }
 .textContainer h2 {
   font-size: 1.7rem;
@@ -71,12 +77,11 @@
   }
   .textContainer {
     margin-bottom: 0rem;
-    padding-bottom: 0rem;
   }
 }
 @media (max-width: 600px) {
   .right {
-    width: 60%;
-    margin-top: 1rem;
+    width: 70%;
+    margin-top: 3.5rem;
   }
 }

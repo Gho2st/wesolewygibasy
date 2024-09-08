@@ -34,7 +34,7 @@ export default function galeria() {
           atmosferę panującą w naszej placówce.
         </p>
       </div>
-      <Places />
+      <Places background="true" />
     </>
   );
 }

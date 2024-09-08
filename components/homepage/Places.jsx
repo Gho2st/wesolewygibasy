@@ -2,9 +2,9 @@
 import PlaceItem from "../UI/PlaceItem";
 import classes from "./Places.module.css";
 import { useRef } from "react";
-import { useInView, motion, delay, color } from "framer-motion";
+import { useInView, motion, delay } from "framer-motion";
 
-export default function Places() {
+export default function Places(props) {
   const skillRef = useRef();
   const isSkillRefinView = useInView(skillRef, { once: true });
 
@@ -48,33 +48,47 @@ export default function Places() {
     },
   ];
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.85 }}
-      animate={
-        isSkillRefinView
-          ? { opacity: 1, scale: 1 }
-          : { opacity: 0, scale: 0.85 }
-      }
-      transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
-      className={classes.container}
+    <article
+      className={classes.wrapper}
       id="placowki"
-      ref={skillRef}
+      style={{ background: props.background ? "white" : "#fffbf2" }}
     >
-      <div className={classes.grid}>
-        {items.map((item, index) => (
-          <PlaceItem
-            key={index}
-            image={item.image}
-            alt={item.alt}
-            title={item.title}
-            location={item.location}
-            street={item.street}
-            add={item.add}
-            color={item.color}
-            link={item.link}
-          />
-        ))}
-      </div>
-    </motion.div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.85 }}
+        animate={
+          isSkillRefinView
+            ? { opacity: 1, scale: 1 }
+            : { opacity: 0, scale: 0.85 }
+        }
+        transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
+        className={classes.container}
+        ref={skillRef}
+      >
+        <div className={classes.description}>
+          <h2>Nasze Placówki</h2>
+          <p>
+            Wybierz jedną z naszych placówek w Krakowie, by dowiedzieć się
+            więcej o ofercie poszczególnych punktów. Dwie z naszych placówek
+            realizują Program Aktywny Maluch, który wspiera wszechstronny rozwój
+            najmłodszych.
+          </p>
+        </div>
+        <div className={classes.grid}>
+          {items.map((item, index) => (
+            <PlaceItem
+              key={index}
+              image={item.image}
+              alt={item.alt}
+              title={item.title}
+              location={item.location}
+              street={item.street}
+              add={item.add}
+              color={item.color}
+              link={item.link}
+            />
+          ))}
+        </div>
+      </motion.div>
+    </article>
   );
 }

@@ -11,6 +11,10 @@
   color: #08c6c3;
 }
 
+.container p {
+  margin-top: 2.5rem;
+}
+
 .container ul {
   margin-left: 2rem;
   margin-bottom: 1.5rem;

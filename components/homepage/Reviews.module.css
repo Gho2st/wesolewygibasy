@@ -1,5 +1,8 @@
+.wrapper {
+  padding: 4rem 0;
+}
+
 .container {
-  margin-bottom: 7rem;
   padding: 2rem 9%;
 }
 
@@ -85,12 +88,6 @@
   font-size: 2rem;
 }
 
-@media (max-width: 1400px) {
-  .container {
-    margin-top: 4rem;
-  }
-}
-
 @media (max-width: 1200px) {
   .container h2 {
     font-size: 1.5rem;
@@ -111,9 +108,12 @@
 }
 
 @media (max-width: 600px) {
+  .wrapper {
+    padding: 0;
+  }
   .container {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
   }
   .rotate {
     display: none;
@@ -123,8 +123,5 @@
   }
   .header p {
     width: 75%;
-  }
-  .reviewContainer {
-    margin-top: 2rem;
   }
 }

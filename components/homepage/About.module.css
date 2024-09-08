@@ -1,15 +1,17 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container {
-  min-height: 70vh;
   display: flex;
   padding: 2rem 9%;
   justify-content: space-between;
-  margin-top: 5rem;
-  margin-bottom: 7rem;
 }
 .imageContainer {
-  margin-top: 2.5rem;
   width: 35%;
-  transform: translateX(-3rem);
+  transform: translateX(-0rem);
 }
 
 .textContainer {
@@ -77,6 +79,7 @@
 .ownerDescription {
   color: #08c6c3;
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .checkContainer {
@@ -113,12 +116,10 @@
     width: 100%;
   }
   .ownerDescription {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
   .container {
     flex-direction: column-reverse;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
   }
   .textContainer {
     width: 100%;
@@ -128,15 +129,11 @@
     margin-top: 2rem;
     width: 40%;
     margin: auto;
-    transform: translateX(0);
+    transform: translateX(-3rem);
   }
 }
 
 @media (max-width: 800px) {
-  .container {
-    margin-top: 1rem;
-    padding-bottom: 0;
-  }
   .textContainer {
     margin-top: 0rem;
   }
@@ -158,7 +155,8 @@
 
 @media (max-width: 600px) {
   .container {
-    margin-bottom: 0;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
   }
   .textContainer h2 {
     font-size: 1.55rem;
@@ -178,6 +176,9 @@
     margin-left: 0rem;
     margin-bottom: 1rem;
   }
+  .ownerDescription {
+    font-size: 0.95rem;
+  }
   .item {
     width: 100%;
   }
@@ -185,12 +186,6 @@
     font-size: 0.9rem;
   }
   .phone {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 378px) {
-  .ownerDescription {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 }

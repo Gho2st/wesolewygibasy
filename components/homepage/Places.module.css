@@ -1,6 +1,25 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fffbf2;
+}
+
 .container {
   padding: 2rem 9%;
-  margin: auto;
+}
+
+.description h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #fa7070;
+}
+
+.description p {
+  text-align: center;
+  margin-bottom: 3.5rem;
 }
 
 .grid {

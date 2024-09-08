@@ -11,16 +11,16 @@ export default function TextContainer() {
   const isSkillRefinView = useInView(skillRef, { once: true });
   return (
     <>
-      <article>
-        <div className={classes.textContainer} ref={skillRef}>
+      <article className={classes.wrapper} ref={skillRef}>
+        <div className={classes.textContainer}>
           <motion.div
-            initial={{ x: "-900px", opacity: 0, rotate: -10 }}
+            initial={{ x: "-300px", opacity: 0 }}
             animate={
               isSkillRefinView
-                ? { x: 0, opacity: 1, rotate: 0 }
-                : { x: "-900px", opacity: 0, rotate: -10 }
+                ? { x: 0, opacity: 1 }
+                : { x: "-300px", opacity: 0 }
             }
-            transition={{ delay: 0.1, duration: 0.7, ease: "easeOut" }}
+            transition={{ delay: 1, duration: 1, ease: "easeOut" }}
             className={classes.left}
           >
             <div>
@@ -64,18 +64,18 @@ export default function TextContainer() {
               </p>
             </div>
             <Link href={"https://g.page/r/CVSRHQIb-HkkEBM/review"}>
-              <Button text="Zostaw opinię!" fontSize="1.1rem" />
+              <Button text="Zostaw opinię!" fontSize="1rem" />
             </Link>
           </motion.div>
           <motion.div
             className={classes.right}
-            initial={{ x: "-900px", opacity: 0, rotate: -10 }}
+            initial={{ x: "300px", opacity: 0, rotate: -10 }}
             animate={
               isSkillRefinView
                 ? { x: 0, opacity: 1, rotate: 0 }
-                : { x: "-900px", opacity: 0, rotate: -10 }
+                : { x: "300px", opacity: 0, rotate: -10 }
             }
-            transition={{ delay: 0.1, duration: 0.7, ease: "easeOut" }}
+            transition={{ delay: 1, duration: 1, ease: "easeOut" }}
           >
             <Image
               src={"/monkeys/5.gif"}
@@ -86,7 +86,6 @@ export default function TextContainer() {
             ></Image>
           </motion.div>
         </div>
-        <Reviews />
       </article>
     </>
   );

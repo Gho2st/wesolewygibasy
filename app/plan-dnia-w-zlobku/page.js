@@ -49,7 +49,7 @@ export default function plan() {
           wartościowa i rozwijająca, w przyjaznej i bezpiecznej atmosferze.
         </p>
       </div>
-      <Places />
+      <Places background="true" />
     </>
   );
 }

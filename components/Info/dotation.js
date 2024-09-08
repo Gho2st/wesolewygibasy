@@ -18,7 +18,7 @@ export default function Dotation() {
   };
   return (
     <>
-      <article>
+      <article className={classes.wrapper}>
         <div className={classes.container} ref={skillRef}>
           <motion.div
             initial={{ opacity: 0, scale: 0.85 }}
