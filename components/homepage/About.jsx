@@ -99,7 +99,7 @@ export default function About() {
               <div className={classes.ownerContainer}>
                 <Image
                   className={classes.aga}
-                  src={"/others/aga.png"}
+                  src={"/others/aga3.png"}
                   width={55}
                   height={55}
                   alt="Agnieszka Ciołkowska - Właścicielka Wesołych Wygibasów"

@@ -64,11 +64,6 @@ export default function TextContainer() {
                   Kliknij i zostaw nam swoją opinię!
                 </Link>
               </p>
-
-              <h4>
-                Dołącz do naszej krakowskiej rodziny żłobkowej i daj swojemu
-                dziecku najlepszy start w życiu!
-              </h4>
             </div>
           </motion.div>
           <motion.div

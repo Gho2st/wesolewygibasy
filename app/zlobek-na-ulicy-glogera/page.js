@@ -63,7 +63,7 @@ export default function Glogera() {
                     fontSize="1rem"
                   />
                 </Link>
-                <Link href="/zapisy-i-formularz-kontaktowy">
+                <Link href="/zapisy">
                   <Button background="#7C99E5" text="Zapisy" fontSize="1rem" />
                 </Link>
               </div>
@@ -100,7 +100,7 @@ export default function Glogera() {
           <Link href="/cennik-i-jadlospis-w-zlobku">
             <Button text="Cennik & Jadłospis" fontSize="1rem" />
           </Link>
-          <Link href="/zapisy-i-formularz-kontaktowy">
+          <Link href="/zapisy">
             <Button text="Zapisy" fontSize="1rem" background="#7C99E5" />
           </Link>
         </div>

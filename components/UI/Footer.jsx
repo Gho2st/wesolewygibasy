@@ -47,7 +47,7 @@ export default function Footer() {
               <MdEmail /> wesolewygibasy@onet.pl
             </li>
             <li className={classes.form}>
-              <Link href="/zapisy-i-formularz-kontaktowy">
+              <Link href="/zapisy">
                 <div className={classes.formContainer}>
                   <div className={classes.icon}>
                     <FaMessage />

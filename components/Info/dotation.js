@@ -39,7 +39,7 @@ export default function Dotation() {
                   src={"/krakow1.jpg"}
                   height={95}
                   width={200}
-                  alt=""
+                  alt="Logo miasta Kraków"
                 ></Image>
               </div>
             </div>

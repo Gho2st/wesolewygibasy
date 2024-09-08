@@ -96,10 +96,7 @@ export default function Navigation() {
                 </Link>
               </li>
               <li className={classes.navigation__item}>
-                <Link
-                  className={classes.navigation__link}
-                  href={"/zapisy-i-formularz-kontaktowy"}
-                >
+                <Link className={classes.navigation__link} href={"/zapisy"}>
                   <span>08</span>
                   Zapisy
                 </Link>

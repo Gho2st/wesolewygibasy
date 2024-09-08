@@ -2,9 +2,9 @@ import Contact from "./Contact";
 import { Metadata } from "next";
 
 export const metadata = {
-  title: "Zapisy i Formularz Kontaktowy",
+  title: "Zapisy",
   alternates: {
-    canonical: "/zapisy-i-formularz-kontaktowy",
+    canonical: "/zapisy",
   },
 };
 export default function Zapisy() {

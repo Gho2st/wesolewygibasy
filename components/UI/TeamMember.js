@@ -6,7 +6,7 @@ export default function TeamMember(props) {
     <div className={classes.outside}>
       <div className={classes.container}>
         <div className={classes.imageContainer}>
-          <Image src={props.src} width={230} height={230} alt="" />
+          <Image src={props.src} width={230} height={230} alt="zdjęcie profilowe osoby z zespołu Wesołych Wygibasów" />
         </div>
         <h4>{props.name}</h4>
         <h5>{props.role}</h5>
