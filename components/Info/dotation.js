@@ -6,16 +6,9 @@ import { useState } from "react";
 import { useRef } from "react";
 import { useInView, motion, delay } from "framer-motion";
 export default function Dotation() {
-  const [showModal, setShowModal] = useState(false);
   const skillRef = useRef();
   const isSkillRefinView = useInView(skillRef, { once: true });
-  const handleOpenModal = () => {
-    setShowModal(true);
-  };
 
-  const handleCloseModal = () => {
-    setShowModal(false);
-  };
   return (
     <>
       <article className={classes.wrapper}>
@@ -72,34 +65,12 @@ export default function Dotation() {
               nr 34 <br></br>
               <br></br> e-mail: sz.umk@um.krakow.pl
             </p>
-            <button
-              onClick={handleOpenModal}
-              className={classes.openModal__button}
-            >
-              Zapoznaj się z całą treścią
-            </button>
-            <Modal
-              isOpen={showModal}
-              onRequestClose={handleCloseModal}
-              contentLabel="Pełna treść"
-              className={classes.modal}
-            >
-              <div className={classes.modalContent}>
-                <button
-                  onClick={handleCloseModal}
-                  className={classes.closeButton}
-                >
-                  &times;
-                </button>
-                <Image
-                  src={"/krakow2.png"}
-                  height={300}
-                  width={300}
-                  layout="responsive"
-                  alt=""
-                />
-              </div>
-            </Modal>
+
+            <div className={classes.button}>
+              <a href="/krakow2.png" download>
+                Pobierz
+              </a>
+            </div>
           </motion.div>
         </div>
       </article>
