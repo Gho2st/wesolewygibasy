@@ -29,7 +29,7 @@ export default function TextContainer() {
                 Wybór dla Twojego Dziecka!
               </h2>
               <p>
-                Żłobki Wesołe Wygibasy w Krakowie to miejsca, gdzie każde
+                Żłobek Wesołe Wygibasy w Krakowie to miejsca, gdzie każde
                 dziecko jest otoczone miłością, szacunkiem i troską. Nasza misja
                 to stworzenie bezpiecznego i inspirującego środowiska, w którym
                 maluchy mogą rozwijać swoje umiejętności, kreatywność i
@@ -44,7 +44,7 @@ export default function TextContainer() {
                 idealne warunki do rozwoju i zabawy.
               </p>
               <p>
-                W naszym żłobku w Krakowie oferujemy opiekę dla dzieci w wieku
+                Nasz żłobek w Krakowie oferujemy opiekę dla dzieci w wieku
                 do 3 lat. Nasz zespół wykwalifikowanych i doświadczonych
                 opiekunów dba o to, aby każde dziecko otrzymało indywidualną
                 uwagę i wsparcie w swoim rozwoju.

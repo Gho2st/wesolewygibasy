@@ -47,7 +47,7 @@ export default function About() {
               Wygibasy w Krakowie
             </h2>
             <p className={classes.text}>
-              W żłobku Wesołe Wygibasy w Krakowie naszym priorytetem jest
+              Żłobek Wesołe Wygibasy w Krakowie naszym priorytetem jest
               zapewnienie opieki nad dziećmi na najwyższym poziomie. Wiemy, że
               rodzice powierzają nam swój największy skarb, dlatego dokładamy
               wszelkich starań, aby dać im pełne poczucie bezpieczeństwa.

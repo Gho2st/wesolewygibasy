@@ -31,11 +31,16 @@ export const metadata = {
     template: "%s - Żłobek Kraków - Wesołe Wygibasy",
   },
   description:
-    "Szukasz dotowanego żłobka w Krakowie? Wesołe Wygibasy to miejsce, które wspiera rozwój Twojego dziecka, oferując profesjonalną opiekę i przyjazną atmosferę, gdzie każde dziecko czuje się jak w domu!",
+    "Szukasz dofinansowanego żłobka w Krakowie z czesnym 0 zł? Żłobek Wesołe Wygibasy oferuje zajęcia dodatkowe i pyszne zdrowe jedzenie dla Twojego dziecka!",
   alternates: {
     canonical: "/",
   },
   openGraph: {
+    type: "website",
+    url: "https://wesolewygibasy.pl/",
+    title: "Wesołe Wygibasy - Żłobek w Krakowie",
+    description:
+      "Szukasz dotowanego żłobka w Krakowie? Wesołe Wygibasy to miejsce, które wspiera rozwój Twojego dziecka, oferując profesjonalną opiekę i przyjazną atmosferę.",
     images: "/opengraph-image.png",
   },
 };

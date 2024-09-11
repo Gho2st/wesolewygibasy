@@ -88,9 +88,9 @@ export default function Reviews() {
     <article className={classes.wrapper}>
       <div className={classes.container}>
         <h2>
-          <span>Wesołe Wygibasy</span> - ponad
+          <span>Żłobek Wesołe Wygibasy</span> - ponad
           <motion.div ref={counterRef} className={classes.counter}>
-            {rounded}
+            {rounded === 0 ? 91 : rounded}
           </motion.div>
           zadowolonych klientów! Ocena 4.9/5!
         </h2>
