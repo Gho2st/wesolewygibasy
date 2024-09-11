@@ -22,6 +22,10 @@ export const metadata = {
     "prywatny żłobek Kraków",
     "najlepszy żłobek w Krakowie",
   ],
+  robots: {
+    index: true,
+    follow: true,
+  },
   title: {
     default: "Żłobek Kraków - Wesołe Wygibasy | Dotowana Placówka",
     template: "%s - Żłobek Kraków - Wesołe Wygibasy",
