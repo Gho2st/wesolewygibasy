@@ -26,7 +26,7 @@ export default function Contact() {
           dziecko może rozwijać się każdego dnia? Wesołe Wygibasy w Krakowie to
           idealne miejsce, gdzie maluchy odkrywają świat z radością i
           ciekawością. Oferujemy wysokiej jakości opiekę i wsparcie w rozwijaniu
-          umiejętności dzieci w wieku przedszkolnym.
+          umiejętności dzieci w wieku do 3 lat.
         </p>
       </div>
       <div className={classes.contactContainer}>

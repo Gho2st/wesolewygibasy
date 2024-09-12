@@ -49,7 +49,6 @@ export default function Places(props) {
   ];
   return (
     <article
-      className={classes.wrapper}
       id="placowki"
       style={{ background: props.background ? "white" : "#fffbf2" }}
     >

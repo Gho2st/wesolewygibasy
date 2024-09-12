@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import Link from "next/link";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -12,6 +12,11 @@ export default function Navigation() {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  // Nowa funkcja do zamykania menu
+  const closeMenu = () => {
+    setMenuOpen(false);
   };
 
   return (
@@ -43,13 +48,21 @@ export default function Navigation() {
           >
             <ul className={classes.navigation__list}>
               <li className={classes.navigation__item}>
-                <Link className={classes.navigation__link} href={"/"}>
+                <Link
+                  className={classes.navigation__link}
+                  href={"/"}
+                  onClick={closeMenu} // Dodano zamykanie menu
+                >
                   <span>01</span>
                   Strona Główna
                 </Link>
               </li>
               <li className={classes.navigation__item}>
-                <Link className={classes.navigation__link} href={"/galeria"}>
+                <Link
+                  className={classes.navigation__link}
+                  href={"/galeria"}
+                  onClick={closeMenu} // Dodano zamykanie menu
+                >
                   <span>02</span>
                   Galeria
                 </Link>
@@ -58,6 +71,7 @@ export default function Navigation() {
                 <Link
                   className={classes.navigation__link}
                   href={"/cennik-i-jadlospis-w-zlobku"}
+                  onClick={closeMenu} // Dodano zamykanie menu
                 >
                   <span>03</span>
                   Cennik & Jadłospis
@@ -67,6 +81,7 @@ export default function Navigation() {
                 <Link
                   className={classes.navigation__link}
                   href={"/plan-dnia-w-zlobku"}
+                  onClick={closeMenu} // Dodano zamykanie menu
                 >
                   <span>04</span>
                   Plan dnia
@@ -76,13 +91,18 @@ export default function Navigation() {
                 <Link
                   className={classes.navigation__link}
                   href={"/adaptacja-w-zlobku"}
+                  onClick={closeMenu} // Dodano zamykanie menu
                 >
                   <span>05</span>
                   Adaptacja
                 </Link>
               </li>
               <li className={classes.navigation__item}>
-                <Link className={classes.navigation__link} href={"/o-nas"}>
+                <Link
+                  className={classes.navigation__link}
+                  href={"/o-nas"}
+                  onClick={closeMenu} // Dodano zamykanie menu
+                >
                   <span>06</span>O nas
                 </Link>
               </li>
@@ -90,13 +110,18 @@ export default function Navigation() {
                 <Link
                   className={classes.navigation__link}
                   href={"/informacje-dla-rodzicow"}
+                  onClick={closeMenu} // Dodano zamykanie menu
                 >
                   <span>07</span>
                   Informacje
                 </Link>
               </li>
               <li className={classes.navigation__item}>
-                <Link className={classes.navigation__link} href={"/zapisy"}>
+                <Link
+                  className={classes.navigation__link}
+                  href={"/zapisy"}
+                  onClick={closeMenu} // Dodano zamykanie menu
+                >
                   <span>08</span>
                   Zapisy
                 </Link>
