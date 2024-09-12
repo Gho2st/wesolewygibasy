@@ -46,9 +46,9 @@ export default function galeria() {
           <h3>Wyjątkowe wydarzenia w żłobku Wesołe Wygibasy</h3>
           <p>
             W naszej galerii można zobaczyć ujęcia z uroczystości, takich jak
-            urodziny, bale przebierańców oraz przedstawienia. Dzieci w naszym{" "}
-            <strong>żłobku w Krakowie</strong> uwielbiają uczestniczyć w tych
-            wydarzeniach, co widać na zdjęciach pełnych radości i uśmiechów.
+            urodziny, bale przebierańców oraz przedstawienia. Dzieci w naszym
+            żłobku w Krakowieuwielbiają uczestniczyć w tych wydarzeniach, co
+            widać na zdjęciach pełnych radości i uśmiechów.
           </p>
         </div>
         <h2>Galeria zdjęć z życia żłobka w Krakowie</h2>

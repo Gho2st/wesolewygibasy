@@ -31,11 +31,12 @@
 @media (max-width: 600px) {
   .container h1 {
     font-size: 1.8rem;
+    margin-bottom: 0rem;
   }
   .container h2 {
     font-size: 1.2rem;
   }
-  .container h3{
+  .container h3 {
     font-size: 1.1rem;
   }
 }
