@@ -32,12 +32,11 @@ export default function Baner() {
                 ))}
               </h1>
               <p>
-                <span className={classes.wesole}>Wesołe Wygibasy</span> to
-                żłobek w Krakowie, który powstał z pasji, troski i miłości do
-                dzieci. Znajdujemy się w dogodnych lokalizacjach, takich jak
-                Prądnik Biały, Olsza, Krowodrza oraz Bronowice – idealne dla
-                rodziców z różnych dzielnic Krakowa oraz okolicznych
-                miejscowości.
+                Wesołe Wygibasy to żłobek w Krakowie, który powstał z pasji,
+                troski i miłości do dzieci. Znajdujemy się w dogodnych
+                lokalizacjach, takich jak Prądnik Biały, Olsza, Krowodrza oraz
+                Bronowice – idealne dla rodziców z różnych dzielnic Krakowa oraz
+                okolicznych miejscowości.
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="#czytaj-wiecej">

@@ -19,39 +19,39 @@ export const metadata = {
 const images = [
   {
     src: "/sliders/sliczna-slider/sl1.jpg",
-    alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
+    alt: "Zdjęcie ze środka Żłobka Wesołych Wygibasów na ulicy Ślicznej w Krakowie",
   },
   {
     src: "/sliders/sliczna-slider/sl2.jpg",
-    alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
+    alt: "Zdjęcie ze środka Żłobka Wesołych Wygibasów na ulicy Ślicznej w Krakowie",
   },
   {
     src: "/sliders/sliczna-slider/sl3.jpg",
-    alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
+    alt: "Zdjęcie ze środka Żłobka Wesołych Wygibasów na ulicy Ślicznej w Krakowie",
   },
   {
     src: "/sliders/sliczna-slider/sl5.jpg",
-    alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
+    alt: "Zdjęcie Placu zabaw Żłobka Wesołych Wygibasów na ulicy Ślicznej w Krakowie",
   },
   {
     src: "/sliders/sliczna-slider/sl6.jpg",
-    alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
+    alt: "Zdjęcie ze środka Żłobka Wesołych Wygibasów na ulicy Ślicznej w Krakowie",
   },
   {
     src: "/sliders/sliczna-slider/sl7.jpg",
-    alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
+    alt: "Zdjęcie Placu zabaw Żłobka Wesołych Wygibasów na ulicy Ślicznej w Krakowie",
   },
   {
     src: "/sliders/sliczna-slider/sl8.jpg",
-    alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
+    alt: "Zdjęcie Placu zabaw Żłobka Wesołych Wygibasów na ulicy Ślicznej w Krakowie",
   },
   {
     src: "/sliders/sliczna-slider/sl9.jpg",
-    alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
+    alt: "Zdjęcie Placu zabaw Żłobka Wesołych Wygibasów na ulicy Ślicznej w Krakowie",
   },
   {
     src: "/sliders/sliczna-slider/sl10.jpg",
-    alt: "zdjecie ze srodka zlobka na ulicy slicznej w krakowie",
+    alt: "Zdjęcie ze środka Żłobka Wesołych Wygibasów na ulicy Ślicznej w Krakowie",
   },
 ];
 
@@ -94,10 +94,7 @@ export default function sliczna() {
       </div>
       <div className={classes.container}>
         <div className={classes.description}>
-          <h2>
-            Wesołe Wygibasy - Niepubliczny Żłobek w Krakowie, ul. Śliczna 36A,
-            31-444
-          </h2>
+          <h2>Żłobek Wesołe Wygibasy - ul. Śliczna 36A, Kraków</h2>
           <p>
             <span>Wesołe Wygibasy</span> to nasza czwarta placówka
             niepublicznych żłobków w Krakowie, zlokalizowana przy{" "}
@@ -107,7 +104,7 @@ export default function sliczna() {
             Nasz nowoczesny żłobek oferuje 39 miejsc w przestronnych,
             komfortowych i bezpiecznych warunkach.
           </p>
-          <h2>Nowoczesność i Komfort w Żłobku Wesołe Wygibasy</h2>
+          <h2>Komfort i nowoczesność w Żłobku Wesołe Wygibasy</h2>
           <p>
             Otwartą w 2024 roku placówkę zaprojektowaliśmy z myślą o
             bezpieczeństwie i wygodzie najmłodszych. Nasz żłobek przy ul.
