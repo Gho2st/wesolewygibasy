@@ -3,12 +3,13 @@ import Link from "next/link";
 import classes from "./TextContainer.module.css";
 import Image from "next/image";
 import { useRef } from "react";
-import { useInView, motion, delay } from "framer-motion";
-import Reviews from "./Reviews";
+import { useInView, motion } from "framer-motion";
 import Button from "../UI/Button";
+
 export default function TextContainer() {
   const skillRef = useRef();
   const isSkillRefinView = useInView(skillRef, { once: true });
+
   return (
     <>
       <article className={classes.wrapper} ref={skillRef}>
@@ -25,45 +26,39 @@ export default function TextContainer() {
           >
             <div>
               <h2>
-                Żłobek <span> Wesołe Wygibasy</span> w Krakowie - Najlepszy
-                Wybór dla Twojego Dziecka!
+                Żłobek <span>Wesołe Wygibasy</span> w Krakowie - Najlepszy Wybór
+                dla Twojego Dziecka!
               </h2>
               <p>
-                Żłobek Wesołe Wygibasy w Krakowie to miejsca, gdzie każde
-                dziecko jest otoczone miłością, szacunkiem i troską. Nasza misja
-                to stworzenie bezpiecznego i inspirującego środowiska, w którym
-                maluchy mogą rozwijać swoje umiejętności, kreatywność i
-                osobowość.
+                Żłobek Wesołe Wygibasy w Krakowie to miejsce, gdzie każde
+                dziecko otoczone jest miłością, szacunkiem i troską. Nasza misja
+                to stworzenie bezpiecznego i inspirującego środowiska, które
+                wspiera rozwój umiejętności, kreatywności i osobowości maluchów.
               </p>
               <p>
-                Nasze żłobki zlokalizowane są na północy Krakowa, co sprawia, że
-                jesteśmy łatwo dostępni dla rodziców z różnych części miasta,
-                takich jak Prądnik Biały, Bronowice, Krowodrza oraz okolicznych
-                miejscowości, jak Zielonki. Dogodna lokalizacja w Krakowie
-                oferuje liczne atrakcje i udogodnienia, zapewniając dzieciom
-                idealne warunki do rozwoju i zabawy.
+                Nasza lokalizacja na północy Krakowa zapewnia dogodny dostęp dla
+                rodziców z takich dzielnic jak Prądnik Biały, Bronowice i
+                Krowodrza oraz z pobliskich miejscowości jak Zielonki. Oferujemy
+                liczne udogodnienia i atrakcje dla dzieci.
               </p>
               <p>
-                Nasz żłobek w Krakowie oferujemy opiekę dla dzieci w wieku
-                do 3 lat. Nasz zespół wykwalifikowanych i doświadczonych
-                opiekunów dba o to, aby każde dziecko otrzymało indywidualną
-                uwagę i wsparcie w swoim rozwoju.
+                Oferujemy opiekę dla dzieci do 3. roku życia. Nasz zespół
+                wykwalifikowanych opiekunów zapewnia indywidualne wsparcie
+                każdemu dziecku.
               </p>
               <p>
-                Program nauczania w naszym żłobku w Krakowie opiera się na
-                holistycznym podejściu, które uwzględnia potrzeby rozwojowe
-                każdego dziecka. Kładziemy nacisk na kreatywność, aktywność
-                fizyczną oraz rozwijanie umiejętności społecznych i
-                emocjonalnych.
+                Program nauczania bazuje na holistycznym podejściu, które
+                uwzględnia potrzeby rozwojowe dzieci. Skupiamy się na
+                kreatywności, aktywności fizycznej oraz rozwijaniu umiejętności
+                społecznych i emocjonalnych.
               </p>
               <p>
-                Jesteśmy dumni z pozytywnych opinii, jakie otrzymujemy od
-                rodziców z Krakowa, którzy powierzają nam opiekę nad swoimi
-                dziećmi. Ich zaufanie jest dla nas największą nagrodą i
-                motywacją do ciągłego doskonalenia naszych usług.
+                Otrzymujemy pozytywne opinie od rodziców z Krakowa, którzy
+                zaufali nam w opiece nad swoimi dziećmi. To dla nas największa
+                nagroda i motywacja do ciągłego doskonalenia.
               </p>
             </div>
-            <Link href={"https://g.page/r/CVSRHQIb-HkkEBM/review"}>
+            <Link href="https://g.page/r/CVSRHQIb-HkkEBM/review">
               <Button text="Zostaw opinię!" fontSize="1rem" />
             </Link>
           </motion.div>
@@ -82,7 +77,7 @@ export default function TextContainer() {
               width={100}
               height={100}
               layout="responsive"
-              alt="logo"
+              alt="Logo Wesołe Wygibasy"
             ></Image>
           </motion.div>
         </div>

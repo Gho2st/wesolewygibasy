@@ -52,7 +52,7 @@ export default function oNas() {
             </p>
             <p>
               W 2021 roku, z powodu rosnącego zainteresowania i braku miejsc,
-              otworzyliśmy nową placówkę — żłobek Wesołe Wygibasy, zlokalizowany
+              otworzyliśmy nową placówkę — żłobek Wesołe Wygibasy na ulicy Glogera, zlokalizowany
               900 metrów od Klubu Malucha. Z czasem powstały kolejne żłobki w
               Krakowie — na ulicach Stańczyka i Ślicznej.
             </p>
