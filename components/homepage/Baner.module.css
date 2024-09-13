@@ -25,10 +25,11 @@
 
 .textContainer p {
   margin-top: 1.5rem;
-  color: #41403f;
+  color: #282828;
   font-size: 1.1rem;
   width: 85%;
   word-spacing: 0.01rem;
+  font-weight: 500;
 }
 .imageContainer {
   display: flex;
@@ -138,5 +139,27 @@
 @media (max-width: 350px) {
   .banerContainer {
     padding: 2rem 5%;
+  }
+}
+
+@media (max-height: 440px) {
+  .textContainer {
+    margin-top: 4rem;
+  }
+  .textContainer h1 span {
+    font-size: 1.5rem;
+  }
+
+  .textContainer p {
+    margin-top: 1.5rem;
+    color: #1f1f1f;
+    font-size: 0.9rem;
+    width: 85%;
+    word-spacing: 0.01rem;
+  }
+  .banerContainer {
+    background-size: 125%;
+    background-repeat: no-repeat;
+    background-position: top;
   }
 }
