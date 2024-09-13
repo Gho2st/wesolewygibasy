@@ -23,10 +23,10 @@ export default function Contact() {
         <Header text="Zapisz Swoje Dziecko w Najlepszym Żłobku w Krakowie!" />
         <p>
           Czy szukasz bezpiecznego i przyjaznego środowiska, w którym Twoje
-          dziecko może rozwijać się każdego dnia? Wesołe Wygibasy w Krakowie to
-          idealne miejsce, gdzie maluchy odkrywają świat z radością i
-          ciekawością. Oferujemy wysokiej jakości opiekę i wsparcie w rozwijaniu
-          umiejętności dzieci w wieku do 3 lat.
+          dziecko może rozwijać się każdego dnia? Krakowski żłobek Wesołe
+          Wygibasy to idealne miejsce, gdzie maluchy odkrywają świat z radością
+          i ciekawością. Oferujemy wysokiej jakości opiekę i wsparcie w
+          rozwijaniu umiejętności dzieci w wieku do 3 lat.
         </p>
       </div>
       <div className={classes.contactContainer}>
@@ -47,7 +47,7 @@ export default function Contact() {
             <div className={classes.item}>
               <Link href={"tel:+48697560022"}>
                 <FaPhone className={classes.phone} />
-                697 560 022
+                +48 697 560 022
               </Link>
             </div>
             <div className={classes.item}>

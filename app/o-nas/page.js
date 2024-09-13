@@ -27,7 +27,7 @@ export default function oNas() {
               resocjalizatorem oraz właścicielką Wesołych Wygibasów — żłobka w
               Krakowie, który powstał z pasji i miłości do dzieci.
             </p>
-            <h2>Moja Droga do Wesołych Wygibasów</h2>
+            <h2>Moja Droga do Żłobka w Krakowie</h2>
             <p>
               Marzenia o pracy z dziećmi towarzyszyły mi od najmłodszych lat.
               Już jako dziecko opiekowałam się rodzeństwem, a później dziećmi
@@ -45,16 +45,16 @@ export default function oNas() {
             <h2>Historia Wesołych Wygibasów</h2>
             <p>
               W 2015 roku, wspólnie z rodziną, zdecydowaliśmy się na
-              przeprowadzkę i założenie Wesołych Wygibasów — centrum zajęć
-              rozwojowo-rozrywkowych dla dzieci. Nasza wizja zrealizowała się i
-              w 2017 roku przekształciliśmy naszą placówkę w Klub Malucha,
+              przeprowadzkę i założenie w Krakowie Wesołych Wygibasów — centrum
+              zajęć rozwojowo-rozrywkowych dla dzieci. Nasza wizja zrealizowała
+              się i w 2017 roku przekształciliśmy naszą placówkę w Klub Malucha,
               oferujący opiekę nad dziećmi w wieku 1-3 lata.
             </p>
             <p>
               W 2021 roku, z powodu rosnącego zainteresowania i braku miejsc,
               otworzyliśmy nową placówkę — żłobek Wesołe Wygibasy, zlokalizowany
-              900 metrów od Klubu Malucha. Z czasem powstały kolejne placówki —
-              na ulicach Stańczyka i Ślicznej.
+              900 metrów od Klubu Malucha. Z czasem powstały kolejne żłobki w
+              Krakowie — na ulicach Stańczyka i Ślicznej.
             </p>
             <h2>Nasze Założenia Pedagogiczne</h2>
             <p>
