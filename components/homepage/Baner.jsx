@@ -34,8 +34,10 @@ export default function Baner() {
               <p>
                 <span className={classes.wesole}>Wesołe Wygibasy</span> to
                 żłobek w Krakowie, który powstał z pasji, troski i miłości do
-                dzieci. Nasze placówki oferują bezpieczne i inspirujące
-                środowisko dla Twojego malucha.
+                dzieci. Znajdujemy się w dogodnych lokalizacjach, takich jak
+                Prądnik Biały, Olsza, Krowodrza oraz Bronowice – idealne dla
+                rodziców z różnych dzielnic Krakowa oraz okolicznych
+                miejscowości.
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="#czytaj-wiecej">

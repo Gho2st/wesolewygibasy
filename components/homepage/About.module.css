@@ -67,10 +67,12 @@
 
 .ownerContainer {
   display: flex;
-  margin-left: 1.5rem;
 }
 .phoneContainer {
   margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .phone {
   font-weight: bold;
@@ -95,6 +97,10 @@
   color: orange;
 }
 
+.container a {
+  margin-right: 0rem;
+}
+
 @media (max-width: 1349px) {
   .item {
     width: 45%;
@@ -108,7 +114,10 @@
     margin-right: 3.5rem;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
+  .container a {
+    margin-right: 1rem;
+  }
   .ownerContainer {
     margin-left: 2rem;
   }
@@ -137,35 +146,24 @@
   .textContainer {
     margin-top: 0rem;
   }
-  .imageContainer {
-    margin-top: 1rem;
-    width: 50%;
-  }
   .checkContainer {
     margin-right: 0.6rem;
     width: 15%;
   }
-  .item p {
-    font-size: 0.8rem;
-  }
-  .textContainer h2 {
-    width: 100%;
-  }
-}
-
-@media (max-width: 600px) {
   .container {
     margin-top: 1rem;
     margin-bottom: 0rem;
   }
   .textContainer h2 {
     font-size: 1.55rem;
+    width: 100%;
   }
   .imageContainer {
     width: 100%;
+    margin-top: 1rem;
   }
   .item p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
   .contactInfoContainer {
     flex-direction: column-reverse;
@@ -179,13 +177,14 @@
   .ownerDescription {
     font-size: 0.95rem;
   }
-  .item {
-    width: 100%;
-  }
-  .item p {
-    font-size: 0.9rem;
-  }
+
   .phone {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .item {
+    width: 100%;
   }
 }

@@ -35,7 +35,7 @@ export default function Pricing() {
             setIsSlicznaVisible(!isSlicznaVisible);
           }}
         >
-          Żłobek ul. Śliczna <IoCaretDownOutline />
+          Żłobek ul. Śliczna - Czesne 0zł <IoCaretDownOutline />
         </h2>
         {isSlicznaVisible && <Sliczna />}
 
@@ -45,7 +45,7 @@ export default function Pricing() {
             setIsStanczykaVisible(!isStanczykaVisible);
           }}
         >
-          Żłobek ul. Stańczyka <IoCaretDownOutline />
+          Żłobek ul. Stańczyka - Czesne 0zł <IoCaretDownOutline />
         </h2>
         {isStanczykaVisible && <Stanczyka />}
         <h2

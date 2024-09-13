@@ -28,6 +28,10 @@
   padding: 0rem 1.5rem;
 }
 
+.buttonContainer {
+  margin-top: 1rem;
+}
+
 @media (max-width: 600px) {
   .container h1 {
     font-size: 1.8rem;

@@ -3,6 +3,8 @@ import Places from "@/components/homepage/Places";
 import Header from "@/components/UI/Header";
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
+import Button from "@/components/UI/Button";
 
 export const metadata = {
   title: "Galeria - Żłobek Wesołe Wygibasy w Krakowie",
@@ -17,7 +19,7 @@ export default function Galeria() {
   return (
     <>
       <div className={classes.container}>
-        <Header text="Galeria - Żłobek Wesołe Wygibasy w Krakowie" />
+        <Header text="Galeria - Żłobek Wesołe Wygibasy Kraków" />
 
         <p>
           Witamy w galerii zdjęć żłobka Wesołe Wygibasy w Krakowie. Zapraszamy
@@ -32,6 +34,7 @@ export default function Galeria() {
           urodziny, teatrzyki, przedstawienia oraz bale przebierańców. Sprawdź
           różnorodność wydarzeń, które organizujemy dla maluszków.
         </p>
+
         <div className={classes.inner}>
           <h3>Codzienne życie w żłobku Wesołe Wygibasy</h3>
           <p>
@@ -49,12 +52,21 @@ export default function Galeria() {
             zdjęciach pełnych radości i uśmiechów.
           </p>
         </div>
+
         <h2>Galeria zdjęć z życia żłobka Wesołe Wygibasy</h2>
         <p>
           Obejrzysz tu zdjęcia ukazujące miłość, radość i rozwój dzieci w żłobku
           Wesołe Wygibasy w Krakowie. Serdecznie zapraszamy do zobaczenia, jak
           maluszki twórczo i radośnie spędzają czas w naszej placówce.
         </p>
+        <div className={classes.buttonContainer}>
+          <Link href="/zapisy">
+            <Button text="Zapisy" fontSize="1rem" />
+          </Link>
+          <Link href="/cennik-i-jadlospis-w-zlobku">
+            <Button text="Jadłospis" background="#7C99E5" fontSize="1rem" />
+          </Link>
+        </div>
       </div>
       <Places background="true" />
     </>

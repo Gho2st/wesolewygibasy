@@ -93,6 +93,9 @@
   .textContainer {
     margin-top: 6rem;
   }
+  .textContainer p {
+    width: 100%;
+  }
 }
 
 @media (max-width: 444px) {

@@ -26,8 +26,8 @@ export default function TextContainer() {
           >
             <div>
               <h2>
-                Żłobek <span>Wesołe Wygibasy</span> w Krakowie - Najlepszy Wybór
-                dla Twojego Dziecka!
+                Najlepszy Żłobek w Krakowie – Dlaczego Warto Wybrać
+                <span> Wesołe Wygibasy?</span>
               </h2>
               <p>
                 Żłobek Wesołe Wygibasy w Krakowie to miejsce, gdzie każde
@@ -36,10 +36,14 @@ export default function TextContainer() {
                 wspiera rozwój umiejętności, kreatywności i osobowości maluchów.
               </p>
               <p>
-                Nasza lokalizacja na północy Krakowa zapewnia dogodny dostęp dla
-                rodziców z takich dzielnic jak Prądnik Biały, Bronowice i
-                Krowodrza oraz z pobliskich miejscowości jak Zielonki. Oferujemy
-                liczne udogodnienia i atrakcje dla dzieci.
+                Nasza lokalizacja na północy Krakowa zapewnia dogodny dojazd dla
+                rodziców z dzielnic takich jak Prądnik Biały, Bronowice,
+                Krowodrza oraz z pobliskich miejscowości, w tym Zielonek. Żłobek
+                na ulicy Ślicznej mieści się w dzielnicy Olsza, a jego położenie
+                sprzyja również mieszkańcom osiedla Oficerskiego, Grzegórzek
+                oraz osiedla Avia. Oferujemy liczne udogodnienia i atrakcje dla
+                dzieci, aby zapewnić im wszechstronny rozwój w bezpiecznym i
+                przyjaznym otoczeniu.
               </p>
               <p>
                 Oferujemy opiekę dla dzieci do 3. roku życia. Nasz zespół
@@ -53,9 +57,11 @@ export default function TextContainer() {
                 społecznych i emocjonalnych.
               </p>
               <p>
-                Otrzymujemy pozytywne opinie od rodziców z Krakowa, którzy
-                zaufali nam w opiece nad swoimi dziećmi. To dla nas największa
-                nagroda i motywacja do ciągłego doskonalenia.
+                Rodzice z Krakowa cenią sobie nasz żłobek za zaangażowanie i
+                troskę, jaką okazujemy dzieciom. Otrzymaliśmy wiele pozytywnych
+                opinii, które są dla nas najlepszą rekomendacją. Zaufanie, jakim
+                obdarzają nas rodzice, motywuje nas do nieustannego doskonalenia
+                naszych usług.
               </p>
             </div>
             <Link href="https://g.page/r/CVSRHQIb-HkkEBM/review">

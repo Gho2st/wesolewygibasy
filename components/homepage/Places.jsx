@@ -11,7 +11,7 @@ export default function Places(props) {
   const items = [
     {
       image: "sliders/sliczna-slider/sl4.jpg",
-      alt: "plac zabaw na ulicy Ślicznej",
+      alt: "Własny plac zabaw Żłobka Wesołe Wygibasy na ulicy Ślicznej",
       title: "Miejsca w Nowym Żłobku",
       location: "Żłobek, Kraków",
       street: "ul. Śliczna 36/A",
@@ -21,7 +21,7 @@ export default function Places(props) {
     },
     {
       image: "/others/stanczyka.jpg",
-      alt: "budynek zlobka na ulicy Stańczyka",
+      alt: "Zdjęcie z zewnątrz budynku Żłobka Wesołe Wygibasy na ulicy Stańczyka",
       title: "Żłobek na Stańczyka",
       location: "Żłobek, Kraków",
       street: "ul. Stańczyka 8/LU3",
@@ -30,7 +30,7 @@ export default function Places(props) {
     },
     {
       image: "/others/glogera.jpg",
-      alt: "srodek zlobka na ulicy Glogera",
+      alt: "Zdjęcie z wewnątrz Żłobka Wesołe Wygibasy na ulicy Glogera",
       title: "Żłobek na Glogera",
       location: "Żłobek, Kraków",
       street: "ul. Glogera 53/LU2",
@@ -39,7 +39,7 @@ export default function Places(props) {
     },
     {
       image: "/others/vetulaniego.jpg",
-      alt: "srodek zlobka na ulicy Vetulaniego",
+      alt: "Zdjęcie przedstawiające wnętrze Żłobka Klubu Malucha na ulicy Vetulaniego",
       title: "Klub Malucha",
       location: "Żłobek, Kraków",
       street: "ul. Vetulaniego 8",
@@ -64,12 +64,14 @@ export default function Places(props) {
         ref={skillRef}
       >
         <div className={classes.description}>
-          <h2>Nasze Żłobki w Krakowie</h2>
+          <h2>Lokalizacje Żłobka Wesołe Wygibasy w Krakowie</h2>
           <p>
-            Wybierz jeden z naszych żłobków w Krakowie, by dowiedzieć się więcej
-            o ofercie poszczególnych punktów. Dwie z naszych placówek realizują
-            Program Aktywny Maluch, który wspiera wszechstronny rozwój
-            najmłodszych.
+            Wybierz jedną z naszych placówek żłobka Wesołe Wygibasy w Krakowie,
+            aby dowiedzieć się więcej o ofercie, planie dnia i zobaczyć galerie
+            z codziennego życia dzieci. Dwie nasze placówki realizują Program
+            Aktywny Maluch, który wspiera wszechstronny rozwój najmłodszych i
+            pomaga maluchom rozwijać się fizycznie, emocjonalnie oraz
+            społecznie.
           </p>
         </div>
         <div className={classes.grid}>

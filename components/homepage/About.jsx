@@ -30,7 +30,7 @@ export default function About() {
             height={100}
             layout="responsive"
             className={classes.image}
-            alt="logo"
+            alt="Skacząca maskotka małpka Żłobka Wesołe Wygibasy w Krakowie"
           ></Image>
         </motion.div>
         <motion.div
@@ -47,10 +47,10 @@ export default function About() {
               Wygibasy w Krakowie
             </h2>
             <p className={classes.text}>
-              W Żłobku Wesołe Wygibasy w Krakowie naszym priorytetem jest
-              zapewnienie opieki nad dziećmi na najwyższym poziomie. Wiemy, że
-              rodzice powierzają nam swój największy skarb, dlatego dokładamy
-              wszelkich starań, aby dać im pełne poczucie bezpieczeństwa.
+              Nasz priorytet to profesjonalna i pełna troski opieka nad dziećmi.
+              Wesołe Wygibasy to żłobek, gdzie Twoje dziecko znajdzie nie tylko
+              bezpieczeństwo, ale również wsparcie w rozwoju umiejętności
+              społecznych, emocjonalnych i fizycznych.
             </p>
             <div className={classes.itemContainer}>
               <div className={classes.item}>
@@ -91,16 +91,25 @@ export default function About() {
               </div>
             </div>
             <div className={classes.contactInfoContainer}>
-              <Link href="/o-nas">
-                <Button text="O nas" fontSize="0.9rem" />
-              </Link>
+              <div>
+                <Link href="/o-nas">
+                  <Button text="O nas" fontSize="0.9rem" />
+                </Link>
+                <Link href="/o-nas">
+                  <Button
+                    text="Zapisy"
+                    fontSize="0.9rem"
+                    background="#7C99E5"
+                  />
+                </Link>
+              </div>
               <div className={classes.ownerContainer}>
                 <Image
                   className={classes.aga}
                   src={"/others/aga3.png"}
-                  width={55}
-                  height={55}
-                  alt="Agnieszka Ciołkowska - Właścicielka Wesołych Wygibasów"
+                  width={75}
+                  height={75}
+                  alt="Agnieszka Ciołkowska - Właścicielka Żłobka Wesołe Wygibasy"
                 ></Image>
                 <div className={classes.phoneContainer}>
                   <p className={classes.phone}>+48 697 560 022</p>
