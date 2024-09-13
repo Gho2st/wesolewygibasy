@@ -64,11 +64,11 @@ export default function Places(props) {
         ref={skillRef}
       >
         <div className={classes.description}>
-          <h2>Nasze Placówki</h2>
+          <h2>Nasze Żłobki w Krakowie</h2>
           <p>
-            Wybierz jedną z naszych placówek w Krakowie, by dowiedzieć się
-            więcej o ofercie poszczególnych punktów. Dwie z naszych placówek
-            realizują Program Aktywny Maluch, który wspiera wszechstronny rozwój
+            Wybierz jeden z naszych żłobków w Krakowie, by dowiedzieć się więcej
+            o ofercie poszczególnych punktów. Dwie z naszych placówek realizują
+            Program Aktywny Maluch, który wspiera wszechstronny rozwój
             najmłodszych.
           </p>
         </div>

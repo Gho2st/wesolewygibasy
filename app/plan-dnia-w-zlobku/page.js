@@ -41,7 +41,7 @@ export default function plan() {
         </ul>
 
         <p>
-          Dodatkowo, w żłobku Wesołe Wygibasy oferujemy także zajęcia dodatkowe,
+          Dodatkowo, w krakowskim żłobku Wesołe Wygibasy oferujemy także zajęcia dodatkowe,
           które umożliwiają dzieciom poszerzanie umiejętności i zainteresowań w
           specyficznych obszarach, takich jak języki obce, taniec, sport czy
           nauka przez zabawę.

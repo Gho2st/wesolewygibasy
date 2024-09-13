@@ -40,9 +40,6 @@
   .option {
     margin-top: 1.5rem;
   }
-  .foodContainer p {
-    width: 80%;
-  }
 }
 
 @media (max-width: 572px) {

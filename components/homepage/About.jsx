@@ -47,7 +47,7 @@ export default function About() {
               Wygibasy w Krakowie
             </h2>
             <p className={classes.text}>
-              Żłobek Wesołe Wygibasy w Krakowie naszym priorytetem jest
+              W Żłobku Wesołe Wygibasy w Krakowie naszym priorytetem jest
               zapewnienie opieki nad dziećmi na najwyższym poziomie. Wiemy, że
               rodzice powierzają nam swój największy skarb, dlatego dokładamy
               wszelkich starań, aby dać im pełne poczucie bezpieczeństwa.
@@ -103,7 +103,7 @@ export default function About() {
                   alt="Agnieszka Ciołkowska - Właścicielka Wesołych Wygibasów"
                 ></Image>
                 <div className={classes.phoneContainer}>
-                  <p className={classes.phone}>697 560 022</p>
+                  <p className={classes.phone}>+48 697 560 022</p>
                   <p className={classes.ownerDescription}>
                     Właścicielka Wesołych Wygibasów
                   </p>

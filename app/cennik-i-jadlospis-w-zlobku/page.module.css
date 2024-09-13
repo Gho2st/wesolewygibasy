@@ -41,12 +41,6 @@
   scale: 1.01;
 }
 
-@media (max-width: 878px) {
-  .description {
-    width: 80%;
-  }
-}
-
 @media (max-width: 728px) {
   .description {
     width: 100%;
@@ -70,5 +64,8 @@
   }
   .header {
     font-size: 1.8rem;
+  }
+  .description {
+    margin-top: 0rem;
   }
 }
