@@ -8,6 +8,8 @@ export const metadata = {
   alternates: {
     canonical: "/plan-dnia-w-zlobku",
   },
+  description:
+    "Poznaj plan dnia w żłobku Wesołe Wygibasy w Krakowie. Różnorodne zajęcia, czas na zabawę, naukę i odpoczynek w przyjaznym otoczeniu.",
 };
 export default function plan() {
   return (

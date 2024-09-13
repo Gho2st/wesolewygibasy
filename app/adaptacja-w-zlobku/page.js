@@ -8,6 +8,8 @@ export const metadata = {
   alternates: {
     canonical: "/adaptacja-w-zlobku",
   },
+  description:
+    "Dowiedz się, jak przebiega adaptacja w żłobku Wesołe Wygibasy w Krakowie. Wspieramy dzieci i rodziców w procesie łagodnego wejścia do nowego środowiska.",
 };
 export default function adaptacja() {
   return (

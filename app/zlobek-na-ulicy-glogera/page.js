@@ -14,6 +14,8 @@ export const metadata = {
   alternates: {
     canonical: "/zlobek-na-ulicy-glogera",
   },
+  description:
+    "Zapraszamy do żłobka Wesołe Wygibasy na ul. Glogera w Krakowie. Nowoczesne pomieszczenia, pełna troski opieka i bogata oferta zajęć dla maluchów.",
 };
 const images = [
   {

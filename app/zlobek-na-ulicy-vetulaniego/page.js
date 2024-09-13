@@ -16,6 +16,8 @@ export const metadata = {
   alternates: {
     canonical: "/zlobek-na-ulicy-vetulaniego",
   },
+  description:
+    "Sprawdź żłobek Wesołe Wygibasy na ul. Vetulaniego w Krakowie. Nowoczesne wnętrza, troskliwa opieka i rozwijające zajęcia dla maluchów.",
 };
 const images = [
   {

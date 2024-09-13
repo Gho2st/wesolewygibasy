@@ -12,6 +12,8 @@ export const metadata = {
   alternates: {
     canonical: "/zlobek-na-ulicy-slicznej",
   },
+  description:
+    "Poznaj żłobek Wesołe Wygibasy na ul. Ślicznej w Krakowie. Komfortowa lokalizacja, własny plac zabaw i różnorodne zajęcia dla najmłodszych.",
 };
 
 const images = [

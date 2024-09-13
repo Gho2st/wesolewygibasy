@@ -11,6 +11,8 @@ export const metadata = {
   alternates: {
     canonical: "/o-nas",
   },
+  description:
+    "Poznaj żłobek Wesołe Wygibasy w Krakowie. Oferujemy opiekę nad dziećmi w przyjaznej atmosferze, kreatywne zajęcia i profesjonalną kadrę pedagogiczną.",
 };
 
 export default function oNas() {

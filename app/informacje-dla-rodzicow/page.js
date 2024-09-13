@@ -8,6 +8,8 @@ export const metadata = {
   alternates: {
     canonical: "/informacje-dla-rodzicow",
   },
+  description:
+    "Praktyczne informacje dla rodziców żłobka Wesołe Wygibasy w Krakowie. Sprawdź zasady, dokumenty i wskazówki dotyczące opieki nad dziećmi.",
 };
 
 export default function informacje() {

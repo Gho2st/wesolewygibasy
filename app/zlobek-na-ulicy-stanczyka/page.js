@@ -13,6 +13,8 @@ export const metadata = {
   alternates: {
     canonical: "/zlobek-na-ulicy-stanczyka",
   },
+  description:
+    "Zobacz żłobek Wesołe Wygibasy na ul. Stańczyka w Krakowie. Przyjazne otoczenie, profesjonalna opieka i kreatywne zajęcia dla dzieci.",
 };
 
 const images = [

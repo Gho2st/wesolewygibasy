@@ -7,10 +7,10 @@ export default function sitemap() {
       priority: 1,
     },
     {
-      url: "https://wesolewygibasy.pl/zapisy-i-formularz-kontaktowy",
+      url: "https://wesolewygibasy.pl/zapisy",
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.8,
+      priority: 0.9,
     },
     {
       url: "https://wesolewygibasy.pl/cennik-i-jadlospis-w-zlobku",

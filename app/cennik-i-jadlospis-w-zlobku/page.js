@@ -4,6 +4,8 @@ import Pricing from "./Pricing";
 
 export const metadata = {
   title: "Cennik i Jadłospis",
+  description:
+    "Sprawdź cennik i jadłospis żłobka Wesołe Wygibasy w Krakowie. Oferujemy zdrowe posiłki i atrakcyjne ceny opieki dla najmłodszych.",
   alternates: {
     canonical: "/cennik-i-jadlospis-w-zlobku",
   },

@@ -136,6 +136,9 @@
 }
 
 @media (max-width: 621px) {
+  .container h1 {
+    margin-bottom: 0rem;
+  }
   .animals img {
     margin-bottom: 0rem;
   }
