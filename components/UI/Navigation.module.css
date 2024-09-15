@@ -9,6 +9,10 @@
   margin: 0;
 }
 
+.logo {
+  cursor: pointer;
+}
+
 .navigation {
   position: fixed;
   width: 100%;
