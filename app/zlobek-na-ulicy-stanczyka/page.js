@@ -56,8 +56,7 @@ export default function stanczyka() {
                 wsparcie w rozwoju. Nasz żłobek oferuje bezpieczne, przyjazne
                 środowisko oraz profesjonalną opiekę nad maluchami. Zapisz swoje
                 dziecko do żłobka na Stańczyka 8/LU3 w Krakowie i zadbaj o jego
-                przyszłość już dziś! Sprawdź dostępność miejsc i szczegóły
-                oferty na naszej stronie.
+                przyszłość już dziś!
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="/o-nas">
