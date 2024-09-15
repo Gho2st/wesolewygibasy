@@ -12,8 +12,10 @@ export const metadata = {
   alternates: {
     canonical: "/zlobek-na-ulicy-vetulaniego",
   },
+  keywords:
+    "Żłobek na Vetulaniego, klub malucha,  bronowice, zielonki, dotacja, aktywny maluch, kameralny, własny ogród",
   description:
-    "Szukasz żłobka w Krakowie? Żłobek Wesołe Wygibasy na ul. Vetulaniego oferuje nowoczesne wnętrza, troskliwą opiekę, rozwijające zajęcia oraz ogród z placem zabaw. Zapisz swoje dziecko już dziś!",
+    "Szukasz żłobka w Krakowie? Żłobek Wesołe Wygibasy na ul. Vetulaniego oferuje troskliwą opiekę, rozwijające zajęcia oraz ogród z placem zabaw. Zapisz swoje dziecko już dziś!",
 };
 const images = [
   {

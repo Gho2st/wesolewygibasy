@@ -9,6 +9,8 @@ export const metadata = {
   alternates: {
     canonical: "/cennik-i-jadlospis-w-zlobku",
   },
+  keywords:
+    "cennik, jadłospis, czesne w Żłobku, czesne 0zł, darmowe czesne, dotacja, dofinansowanie",
 };
 
 export default function Cennik() {

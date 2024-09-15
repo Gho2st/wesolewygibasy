@@ -12,6 +12,8 @@ export const metadata = {
   alternates: {
     canonical: "/zlobek-na-ulicy-stanczyka",
   },
+  keywords:
+    "Żłobek na Stańczyka, bronowice, zielonki, nowy Żłobek, dotacja, aktywny maluch",
   description:
     "Zobacz żłobek Wesołe Wygibasy na ul. Stańczyka w Krakowie. Przyjazne otoczenie, profesjonalna opieka i kreatywne zajęcia dla dzieci.",
 };

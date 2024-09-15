@@ -4,12 +4,12 @@ import Button from "@/components/UI/Button";
 import { Metadata } from "next";
 
 export const metadata = {
-  title: "Informacje dla Rodziców - Żłobek Wesołe Wygibasy w Krakowie",
+  title: "Informacje - Żłobek Wesołe Wygibasy w Krakowie",
   alternates: {
     canonical: "/informacje-dla-rodzicow",
   },
-  description:
-    "Praktyczne informacje dla rodziców dzieci uczęszczających do żłobka Wesołe Wygibasy w Krakowie. Sprawdź zasady, dokumenty, wskazówki dotyczące opieki nad dziećmi oraz obowiązujące procedury ochrony danych osobowych zgodne z RODO.",
+  keywords:
+    "informacje, rodo, ochrona małoletnich, zasady w Żłobku, polityka prywatności",
 };
 
 export default function informacje() {

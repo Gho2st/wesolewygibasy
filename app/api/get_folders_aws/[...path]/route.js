@@ -26,7 +26,9 @@ async function getImagesInFolder(folderPrefix, bucketName) {
     );
 
     if (images.length > 0) {
-      return images[0].Key;
+      // Use Buffer to decode file name as UTF-8
+      const fileNameBuffer = Buffer.from(images[0].Key, "utf-8");
+      return fileNameBuffer.toString("utf-8");
     }
 
     return null;
@@ -54,15 +56,16 @@ export async function GET(request, { params }) {
     const command = new ListObjectsV2Command(commandParams);
     const response = await s3Client.send(command);
 
-    // console.log("S3 Response:", response);
-
     // Extract folders within the specified prefix
     const folders = (response.CommonPrefixes || []).map(
       async (commonPrefix) => {
-        const folderName = commonPrefix.Prefix.replace(prefix, "").replace(
-          /\/$/,
-          ""
+        // Use Buffer to decode folder name as UTF-8
+        const folderNameBuffer = Buffer.from(
+          commonPrefix.Prefix.replace(prefix, "").replace(/\/$/, ""),
+          "utf-8"
         );
+        const folderName = folderNameBuffer.toString("utf-8");
+
         const folderPrefix = `${prefix}${folderName}/`;
         const firstImageKey = await getImagesInFolder(folderPrefix, bucketName);
 
@@ -76,8 +79,7 @@ export async function GET(request, { params }) {
     // Wait for all folder promises to resolve
     const resolvedFolders = await Promise.all(folders);
 
-    // console.log("Folders with First Image URLs:", resolvedFolders);
-
+    // Return JSON with resolved folders and their image URLs
     return NextResponse.json(resolvedFolders);
   } catch (err) {
     console.error("Error fetching objects from S3:", err);

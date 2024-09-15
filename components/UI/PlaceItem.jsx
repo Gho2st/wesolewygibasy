@@ -9,7 +9,7 @@ export default function PlaceItem(props) {
       <div className={classes.imageContainer}>
         <Image
           src={props.image}
-          alt=""
+          alt={props.alt}
           width={100}
           height={100}
           layout="responsive"

@@ -40,7 +40,7 @@ export default function Contact() {
               height={100}
               width={100}
               layout="responsive"
-              alt=""
+              alt="Małpka wskazująca na formularz zapisów do Żłobka Wesołe Wygibasy"
             ></Image>
           </div>
           <div className={classes.info}>

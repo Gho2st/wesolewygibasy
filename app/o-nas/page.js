@@ -11,6 +11,9 @@ export const metadata = {
   alternates: {
     canonical: "/o-nas",
   },
+  keywords:
+    "kadra, o nas, Agnieszka Ciołkowska, historia powstania Wesołych Wygibasów",
+
   description:
     "Poznaj żłobek Wesołe Wygibasy w Krakowie. Oferujemy opiekę nad dziećmi w przyjaznej atmosferze, kreatywne zajęcia i profesjonalną kadrę pedagogiczną.",
 };
@@ -52,9 +55,10 @@ export default function oNas() {
             </p>
             <p>
               W 2021 roku, z powodu rosnącego zainteresowania i braku miejsc,
-              otworzyliśmy nową placówkę — żłobek Wesołe Wygibasy na ulicy Glogera, zlokalizowany
-              900 metrów od Klubu Malucha. Z czasem powstały kolejne żłobki w
-              Krakowie — na ulicach Stańczyka i Ślicznej.
+              otworzyliśmy nową placówkę — żłobek Wesołe Wygibasy na ulicy
+              Glogera, zlokalizowany 900 metrów od Klubu Malucha. Z czasem
+              powstały kolejne żłobki w Krakowie — na ulicach Stańczyka i
+              Ślicznej.
             </p>
             <h2>Nasze Założenia Pedagogiczne</h2>
             <p>

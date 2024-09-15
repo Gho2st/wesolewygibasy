@@ -14,9 +14,12 @@ export const metadata = {
   alternates: {
     canonical: "/zlobek-na-ulicy-glogera",
   },
+  keywords:
+    "Żłobek na ulicy glogera, glogera, wesołe wygibasy, kraków, miejsca",
   description:
     "Zapraszamy do żłobka Wesołe Wygibasy na ul. Glogera 53/LU2 w Krakowie. Nowoczesne pomieszczenia, pełna troski opieka i bogata oferta zajęć dla maluchów.",
 };
+
 const images = [
   {
     src: "sliders/glogera-slider/g1.jpg",
