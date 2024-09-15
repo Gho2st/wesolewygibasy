@@ -51,3 +51,9 @@
     align-items: center;
   }
 }
+
+@media (max-width: 600px) {
+  .description h2 {
+    font-size: 1.6rem;
+  }
+}

@@ -1,23 +1,19 @@
 import classes from "./page.module.css";
-import H1 from "@/components/UI/Header";
 import ImagesContainer from "@/components/Gallery/ImagesContainer";
 import Image from "next/image";
-import { FaSun } from "react-icons/fa";
-import Button from "@/components/UI/Button";
 import Link from "next/link";
 import DaySchedule from "@/components/Info/DaySchedule";
-import { FcGoogle } from "react-icons/fc";
-import PlaceItem from "@/components/UI/PlaceItem";
 import { Metadata } from "next";
 import SliderComponent from "@/components/UI/slider/slider";
+import Button from "@/components/UI/Button";
 
 export const metadata = {
-  title: "Żłobek na Vetulaniego",
+  title: "Żłobek na ulicy Vetulaniego w Krakowie - Wesołe Wygibasy",
   alternates: {
     canonical: "/zlobek-na-ulicy-vetulaniego",
   },
   description:
-    "Sprawdź żłobek Wesołe Wygibasy na ul. Vetulaniego w Krakowie. Nowoczesne wnętrza, troskliwa opieka i rozwijające zajęcia dla maluchów.",
+    "Szukasz żłobka w Krakowie? Żłobek Wesołe Wygibasy na ul. Vetulaniego oferuje nowoczesne wnętrza, troskliwą opiekę, rozwijające zajęcia oraz ogród z placem zabaw. Zapisz swoje dziecko już dziś!",
 };
 const images = [
   {
@@ -44,7 +40,7 @@ export default function Vetulaniego() {
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
-              <h1>Żłobek na Vetulaniego 8 w Krakowie</h1>
+              <h1>Żłobek Wesołe Wygibasy – ul. Vetulaniego 8 w Krakowie</h1>
               <p>
                 Szukasz bezpiecznego i inspirującego żłobka w Krakowie? Wesołe
                 Wygibasy na Vetulaniego 8 oferują profesjonalną opiekę i rozwój
@@ -75,27 +71,66 @@ export default function Vetulaniego() {
         </div>
       </div>
       <div className={classes.container}>
-        <p className={classes.description}>
-          Klub Malucha Wesołe Wygibasy to <span> kameralny żłobek </span>
-          mieszczący się w domu jednorodzinnym z ogrodem. <br></br> <br></br>{" "}
-          Największą zaletą naszego Klubu są warunki jakie zapewniamy dzieciom.
-          W Klubie przebywają dzieci w wieku 1 do 3 lat. Grupa liczy 20 dzieci
-          na
-          <span> 3-4 opiekujące się ciocie. </span> Stawiamy na dobrą opiekę,
-          dzieci są u Nas zadbane, najedzone, szczęśliwe i bardzo kochane.
-          Ponieważ opiekunek jest sporo <span> dzieci </span> są
-          <span> traktowane indywidualnie </span> i zawsze znajdują
-          <span> czas na rozmowę </span> z dzieckiem. <br></br> <br></br>
-          <span> Wesołe Wygibasy </span>to nie tylko fantastyczne zajęcia dla
-          dzieci. To <span>edukacja, integracja i zabawa. </span> Wesołe
-          Wygibasy posiadają spory ogród z placem zabaw (ogród znajduje się na
-          tyłach budynku z dala od zgiełku, w otoczeniu drzew iglastych). Dzieci
-          wychodzą również na spacery na pobliskie łąki. Dysponujemy
-          klimatyzacją z funkcją oczyszczania powietrza..!! <br></br> <br></br>{" "}
-          Zapraszamy do zajrzenia do zakładki „O nas” gdzie opowiemy dokładnie
-          jakimi wartościami kierujemy się w opiece nad dziećmi oraz przybliżymy
-          Państwu wizerunki naszych opiekunów.
-        </p>
+        <h2 className={classes.header}>
+          Klub Malucha Wesołe Wygibasy – Kameralny żłobek z ogrodem w Krakowie
+        </h2>
+        <div className={classes.description}>
+          <p>
+            <strong>Klub Malucha Wesołe Wygibasy</strong> to kameralny żłobek,
+            który mieści się w domu jednorodzinnym z pięknym ogrodem, oferującym
+            dzieciom bezpieczne i przyjazne warunki do rozwoju. Zlokalizowany z
+            dala od miejskiego zgiełku, nasz żłobek zapewnia maluchom spokojną
+            atmosferę oraz dostęp do natury.
+          </p>
+
+          <h3>Opieka nad dziećmi w wieku od 1 do 3 lat</h3>
+          <p>
+            Nasza placówka przyjmuje dzieci w wieku od 1 do 3 lat. Grupa liczy
+            maksymalnie 20 dzieci, którymi opiekuje się 3 do 4 doświadczonych
+            opiekunek. Dzięki temu każde dziecko otrzymuje indywidualną uwagę i
+            troskę, a nasi podopieczni są zadbani, najedzeni i szczęśliwi. Dbamy
+            o to, by każde dziecko czuło się kochane i bezpieczne w naszej
+            opiece.
+          </p>
+
+          <h3>Edukacja, integracja i zabawa</h3>
+          <p>
+            <strong>Wesołe Wygibasy</strong> to nie tylko opieka nad dziećmi,
+            ale także bogaty program edukacyjny i integracyjny. Organizujemy
+            różnorodne zajęcia, które wspierają rozwój intelektualny i społeczny
+            maluchów. Zabawa w naszym żłobku to również okazja do nauki przez
+            doświadczenie, co pozwala dzieciom rozwijać swoje umiejętności w
+            sposób naturalny i przyjemny.
+          </p>
+
+          <h3>Ogród i spacery na świeżym powietrzu</h3>
+          <p>
+            Jednym z największych atutów naszego Klubu Malucha jest duży ogród z
+            placem zabaw, który znajduje się na tyłach budynku, z dala od hałasu
+            ulicznego. Ogród otoczony drzewami iglastymi stanowi idealne miejsce
+            do zabawy na świeżym powietrzu. Dzieci regularnie wychodzą również
+            na spacery na pobliskie łąki, co umożliwia im kontakt z naturą i
+            daje możliwość odkrywania otaczającego świata.
+          </p>
+
+          <h3>Klimatyzacja i czyste powietrze</h3>
+          <p>
+            Nasza placówka jest wyposażona w klimatyzację z funkcją oczyszczania
+            powietrza, co zapewnia komfort i zdrowe warunki do zabawy i nauki
+            przez cały rok. Dbamy o to, aby powietrze, którym oddychają dzieci,
+            było zawsze świeże i czyste, co jest szczególnie ważne dla zdrowia
+            najmłodszych.
+          </p>
+
+          <h3>Poznaj nas bliżej</h3>
+          <p>
+            Zapraszamy do zajrzenia do zakładki „
+            <Link href="/o-nas">O nas</Link>”, gdzie szczegółowo opowiadamy o
+            naszych wartościach oraz filozofii opieki nad dziećmi. Możesz tam
+            również poznać naszych wykwalifikowanych opiekunów, którzy z pasją i
+            zaangażowaniem troszczą się o każdego malucha.
+          </p>
+        </div>
         <SliderComponent images={images} />
         <div className={classes.buttonContainer}>
           <Link href="/cennik-i-jadlospis-w-zlobku">

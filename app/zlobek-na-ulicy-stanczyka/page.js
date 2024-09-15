@@ -4,12 +4,11 @@ import Image from "next/image";
 import Button from "@/components/UI/Button";
 import Link from "next/link";
 import DaySchedule from "@/components/Info/DaySchedule";
-import PlaceItem from "@/components/UI/PlaceItem";
 import { Metadata } from "next";
 import SliderComponent from "@/components/UI/slider/slider";
 
 export const metadata = {
-  title: "Żłobek na Ulicy Stańczyka",
+  title: "Żłobek na Ulicy Stańczyka w Krakowie - Wesołe Wygibasy",
   alternates: {
     canonical: "/zlobek-na-ulicy-stanczyka",
   },
@@ -50,20 +49,19 @@ export default function stanczyka() {
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
-              <h1>Żłobek na Stańczyka 8/LU3 w Krakowie</h1>
+              <h1>Żłobek Kraków - Wesołe Wygibasy na Stańczyka 8/LU3</h1>
               <p>
-                Szukasz bezpiecznego i inspirującego żłobka w Krakowie? Wesołe
-                Wygibasy na Stańczyka 8/LU3 oferują profesjonalną opiekę i
-                rozwój w przyjaznej atmosferze. Dowiedz się więcej i zapisz
-                swoje dziecko już dziś!
+                Szukasz sprawdzonego żłobka w Krakowie? Wesołe Wygibasy przy ul.
+                Stańczyka 8/LU3 to miejsce, gdzie Twoje dziecko otrzyma opiekę i
+                wsparcie w rozwoju. Nasz żłobek oferuje bezpieczne, przyjazne
+                środowisko oraz profesjonalną opiekę nad maluchami. Zapisz swoje
+                dziecko do żłobka na Stańczyka 8/LU3 w Krakowie i zadbaj o jego
+                przyszłość już dziś! Sprawdź dostępność miejsc i szczegóły
+                oferty na naszej stronie.
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="/o-nas">
-                  <Button
-                    background="#fa7070"
-                    text="Czytaj Więcej"
-                    fontSize="1rem"
-                  />
+                  <Button background="#fa7070" text="O nas" fontSize="1rem" />
                 </Link>
                 <Link href="/zapisy">
                   <Button background="#7C99E5" text="Zapisy" fontSize="1rem" />
@@ -81,33 +79,53 @@ export default function stanczyka() {
         </div>
       </div>
       <div className={classes.container}>
-        <p className={classes.description} id="czytaj-wiecej">
-          <span>Niepubliczny żłobek</span> WESOŁE WYGIBASY ul. Stańczyka 8/LU3
-          jest naszą <span> trzecią placówką.</span>
-          <br></br>
-          Wpis do rejestru żłobków i klubów malucha uzyskaliśmy 1 czerwca 2023
-          (czyż nie cudowna data – w sam raz na dzień dziecka) Dokładnie 2 lata
-          po naszej 2 placówce. <br></br> <br></br> Już od dłuższego czasu
-          poszukiwaliśmy lokalu w naszej okolicy, aby móc opiekować się jeszcze
-          większą liczbą dzieci. <br></br> <br></br>
-          Dzieciaczki już zostaną pod troskliwą opieką cioci Beatki, Kasi i
-          Agnieszki. Żłobek składa się z 2 sal zabaw dla dzieci ( dwie grupy
-          wiekowe ) szatni, łazienki dla dzieci oraz kuchni. Urządzony jest w
-          spokojnych pastelowych kolorach przypominających pokój dziecięcy,
-          gdzie maluchy mają się czuć bezpiecznie. <br></br>
-          <br></br> Placówka wyposażona jest w klimatyzację oraz rekuperację co
-          gwarantuje dzieciom przebywanie w oczyszczonym powietrzu.
-          <br></br>
-          <br></br> Żłobek został odebrany przez sanepid oraz straż pożarną na
-          29 dzieci w wieku 8 miesięcy – 36 miesięcy. <br></br>
-          <br></br> Docelowo w żłobku będzie pracować 5 opiekunów. Serdecznie
-          zapraszamy.
+        <h2 className={classes.header}>
+          Niepubliczny Żłobek Wesołe Wygibasy - ul. Stańczyka 8/LU3, Kraków
+        </h2>
+        <h3>Placówka z wpisem do rejestru żłobków</h3>
+        <p>
+          Niepubliczny żłobek Wesołe Wygibasy przy ul. Stańczyka 8/LU3 w
+          Krakowie to nasza trzecia placówka, która uzyskała wpis do rejestru
+          żłobków i klubów malucha 1 czerwca 2023 roku – w sam raz na Dzień
+          Dziecka! Otworzyliśmy ją dokładnie 2 lata po naszej drugiej placówce.
         </p>
-        <h3>
+        <h3>Rozwój i nowe możliwości w okolicy</h3>
+        <p>
+          Od dłuższego czasu poszukiwaliśmy lokalu w tej okolicy, aby móc
+          opiekować się jeszcze większą liczbą dzieci i oferować profesjonalną
+          opiekę. Teraz dzieci będą pod troskliwą opieką doświadczonych cioć:
+          Beatki, Kasi i Agnieszki.
+        </p>
+        <h3>Bezpieczne i komfortowe warunki dla maluchów</h3>
+        <p>
+          Żłobek przy Stańczyka 8/LU3 składa się z dwóch sal zabaw dla dzieci
+          (dla różnych grup wiekowych), szatni, łazienki oraz kuchni. Wnętrza są
+          urządzone w pastelowych kolorach, co tworzy przytulną atmosferę
+          przypominającą dziecięcy pokój.
+        </p>
+        <h3>Nowoczesne wyposażenie: klimatyzacja i rekuperacja</h3>
+        <p>
+          Placówka jest wyposażona w klimatyzację oraz system rekuperacji, co
+          zapewnia dzieciom przebywanie w oczyszczonym powietrzu, a także
+          komfort podczas zabawy i odpoczynku.
+        </p>
+        <h3>Bezpieczeństwo zatwierdzone przez sanepid i straż pożarną</h3>
+        <p>
+          Żłobek został odebrany przez sanepid oraz straż pożarną i
+          przystosowany do opieki nad 29 dziećmi w wieku od 8 miesięcy do 36
+          miesięcy.
+        </p>
+        <h3>Wykwalifikowany zespół opiekunów</h3>
+        <p>
+          Docelowo w naszej placówce będzie pracować 5 opiekunów, którzy zadbają
+          o rozwój i bezpieczeństwo maluchów. Serdecznie zapraszamy do zapisów!
+        </p>
+        <h2 className={classes.dotation}>
           Czesne w całości pokrywane z projektu maluch + 2022 2029 oraz dotacji
           urzędu miasta Kraków
-        </h3>
+        </h2>
         <SliderComponent images={images} />
+
         <div className={classes.buttonContainer}>
           <Link href="/cennik-i-jadlospis-w-zlobku">
             <Button text="Cennik & Jadłospis" fontSize="1rem" />
@@ -128,7 +146,6 @@ export default function stanczyka() {
             wydarzenia i chwile z życia maluszków w naszej placówce.
           </p>
 
-          {/* <ImagesContainer folder="galeria/stanczyka/" /> */}
           <ImagesContainer folder="stanczyka" />
         </div>
       </div>

@@ -7,7 +7,7 @@ import { Metadata } from "next";
 import Header from "@/components/UI/Header";
 
 export const metadata = {
-  title: "O nas",
+  title: "O nas - Żłobek Wesołe Wygibasy w Krakowie",
   alternates: {
     canonical: "/o-nas",
   },

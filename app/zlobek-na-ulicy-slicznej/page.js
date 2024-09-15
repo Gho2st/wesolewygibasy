@@ -8,7 +8,7 @@ import SliderComponent from "../../components/UI/slider/slider";
 import ImagesContainer from "@/components/Gallery/ImagesContainer";
 
 export const metadata = {
-  title: "Żłobek na Ulicy Ślicznej",
+  title: "Żłobek na Ulicy Ślicznej w Krakowie - Wesołe Wygibasy",
   alternates: {
     canonical: "/zlobek-na-ulicy-slicznej",
   },
@@ -62,18 +62,18 @@ export default function sliczna() {
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
-              <h1>Żłobek na Ślicznej 36A w Krakowie</h1>
+              <h1>Żłobek Wesołe Wygibasy na Ślicznej 36A w Krakowie</h1>
               <p>
                 Szukasz nowoczesnego i bezpiecznego żłobka w Krakowie? Wesołe
                 Wygibasy na ul. Ślicznej 36A oferują profesjonalną opiekę,
-                troskliwy zespół oraz inspirujące warunki do rozwoju Twojego
+                troskliwy zespół oraz własny plac zabaw do rozwoju Twojego
                 dziecka. Skontaktuj się z nami i zapisz malucha już dziś!
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="/o-nas">
                   <Button
                     background="#fa7070"
-                    text="Czytaj Więcej"
+                    text="O nas"
                     fontSize="1rem"
                   />
                 </Link>

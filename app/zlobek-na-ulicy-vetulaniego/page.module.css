@@ -96,10 +96,26 @@
 .container h2 {
   text-align: center;
   margin-top: 3rem;
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: #fa7070;
 }
-
+.header {
+  margin-top: 2rem !important;
+  position: relative;
+  margin-bottom: 3rem !important;
+}
+.header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  margin: auto;
+  height: 2px;
+  background-color: #ddd;
+  margin-top: 1rem;
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+}
 .galleryContainer {
   margin-top: 4rem;
 }
@@ -150,6 +166,10 @@
 @media (max-width: 600px) {
   .galleryContainer h2 {
     font-size: 1.8rem;
+  }
+  .header {
+    margin-top: 1rem !important;
+    font-size: 1.4rem !important;
   }
 }
 

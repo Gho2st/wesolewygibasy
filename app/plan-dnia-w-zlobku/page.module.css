@@ -1,6 +1,6 @@
 .container {
   padding: 2rem 9%;
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
   padding-top: 2rem;
 }
 
@@ -12,10 +12,14 @@
 }
 
 .container p {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
 }
 
 .container ul {
   margin-left: 2rem;
   margin-bottom: 1.5rem;
+}
+
+.buttonContainer {
+  margin-top: 2rem;
 }

@@ -28,7 +28,6 @@ export const metadata = {
   },
   title: {
     default: "Żłobek Kraków - Wesołe Wygibasy | Dotowana Placówka",
-    template: "%s - Żłobek Kraków - Wesołe Wygibasy",
   },
   description:
     "Szukasz dofinansowanego żłobka w Krakowie z czesnym 0 zł? Żłobek Wesołe Wygibasy oferuje zajęcia dodatkowe i pyszne zdrowe jedzenie dla Twojego dziecka!",

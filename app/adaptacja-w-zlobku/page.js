@@ -2,9 +2,11 @@ import Header from "@/components/UI/Header";
 import classes from "./page.module.css";
 import Image from "next/image";
 import { Metadata } from "next";
+import Button from "@/components/UI/Button";
+import Link from "next/link";
 
 export const metadata = {
-  title: "Adaptacja",
+  title: "Adaptacja w Żłobku - Wesołe Wygibasy",
   alternates: {
     canonical: "/adaptacja-w-zlobku",
   },
@@ -84,6 +86,14 @@ export default function adaptacja() {
           nowego środowiska, co pozwoli dziecku na naturalny rozwój w
           bezpiecznym i wspierającym miejscu.
         </p>
+        <div className={classes.buttonContainer}>
+          <Link href="/zapisy">
+            <Button text="Zapisy" fontSize="1rem" />
+          </Link>
+          <Link href="/galeria">
+            <Button text="Galeria" background="#7C99E5" fontSize="1rem" />
+          </Link>
+        </div>
       </div>
     </>
   );

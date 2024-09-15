@@ -76,7 +76,7 @@ export default function informacje() {
           Pobierz Klauzulę Prywatności
         </a>
 
-        <h3>Dlaczego warto wybrać Żłobek Wesołe Wygibasy?</h3>
+        <h3>Dlaczego rodzice wybierają Żłobek Wesołe Wygibasy w Krakowie?</h3>
         <p>
           Nasz żłobek w Krakowie zapewnia nie tylko profesjonalną opiekę nad
           dziećmi, ale również wszechstronny rozwój maluchów w bezpiecznym i

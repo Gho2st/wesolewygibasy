@@ -12,8 +12,8 @@ export default function About() {
   const isSkillRefinView = useInView(skillRef, { once: true });
 
   return (
-    <article className={classes.wrapper} ref={skillRef}>
-      <div className={classes.container} id="czytaj-wiecej">
+    <article className={classes.wrapper} ref={skillRef} id="czytaj-wiecej">
+      <div className={classes.container}>
         <motion.div
           className={classes.imageContainer}
           initial={{ x: "-350px", opacity: 0 }}
