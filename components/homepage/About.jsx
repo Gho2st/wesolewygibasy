@@ -112,7 +112,10 @@ export default function About() {
                   alt="Agnieszka Ciołkowska - Właścicielka Żłobka Wesołe Wygibasy"
                 ></Image>
                 <div className={classes.phoneContainer}>
-                  <p className={classes.phone}>+48 697 560 022</p>
+                  <Link href={"tel:+48697560022"} className={classes.phone}>
+                    <p>+48 697 560 022</p>
+                  </Link>
+
                   <p className={classes.ownerDescription}>
                     Właścicielka Wesołych Wygibasów
                   </p>

@@ -77,7 +77,12 @@
 .phone {
   font-weight: bold;
   font-size: 1.15rem;
+  transition: all 0.3s ease;
 }
+.phone:hover {
+  color: #fa7070;
+}
+
 .ownerDescription {
   color: #08c6c3;
   font-weight: bold;
