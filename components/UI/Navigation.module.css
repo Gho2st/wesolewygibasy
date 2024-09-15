@@ -170,3 +170,10 @@
     margin-right: 0.6rem;
   }
 }
+
+@media (max-width: 600px) {
+  .logo img {
+    width: 120px !important;
+    height: 70px !important;
+  }
+}
