@@ -5,7 +5,7 @@
 
 .baner {
   width: 100%;
-  padding: 0rem 4%;
+  padding: 2rem 9%;
   display: flex;
   justify-content: space-between;
   background: #c7eeff;
@@ -13,30 +13,31 @@
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
+  min-height: 100vh;
 }
-
 .leftContainer {
-  margin-top: 3.5rem;
-  padding: 4rem;
+  margin-top: 7rem;
   width: 60%;
-  border-radius: 1rem;
 }
 
 .leftContainer h1 {
-  font-size: 2.1rem;
+  font-size: 2.3rem;
 }
 
 .leftContainer p {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  font-size: 1.05rem !important;
+  font-size: 1.05rem;
+  color: #616161;
+  word-spacing: 0.01rem;
+  font-weight: 500;
 }
 
 .mapContainer {
   margin-top: 2.5rem;
   width: 100%;
   border-radius: 1rem;
-  height: 500px;
+  height: 450px;
   display: flex;
   justify-content: center;
 }
@@ -44,7 +45,6 @@
   width: 100%;
   border-radius: 1rem;
   border: 0;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .image {
@@ -58,6 +58,19 @@
 .container h1 {
   color: rgb(0, 0, 0);
 }
+
+.container h2 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #fa7070;
+}
+
+.container h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
 .container p {
   font-size: 1rem;
 }
@@ -66,31 +79,6 @@
   margin-top: 1.5rem;
 }
 
-.container h3 {
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.buttonContainer {
-  display: flex;
-  margin-top: 1.5rem;
-}
-
-.buttonContainer svg {
-  font-size: 3rem;
-}
-
-.container span {
-  color: #08c6c3;
-  font-weight: bold;
-}
-
-.container h2 {
-  text-align: center;
-  margin-top: 3rem;
-  font-size: 1.5rem;
-  color: #fa7070;
-}
 .header {
   margin-top: 2rem !important;
   position: relative;
@@ -108,53 +96,56 @@
   bottom: -16px;
   left: 0;
 }
+
+.dotation {
+  color: #08c6c3 !important;
+  font-size: 1.2rem !important;
+}
+
+.buttonContainer {
+  display: flex;
+  margin-top: 2.5rem;
+}
+
+.buttonContainer svg {
+  font-size: 3rem;
+}
+
+.container span {
+  color: #08c6c3;
+  font-weight: bold;
+}
+
 .galleryContainer {
   margin-top: 4rem;
 }
 .galleryContainer h2 {
   font-size: 2.3rem;
 }
+
 .galleryText {
   text-align: left;
   width: 100%;
   margin-top: 1.5rem !important;
 }
 
-@media (max-width: 1450px) {
-  .image {
-    width: 40%;
+@media (max-width: 800px) {
+  .leftContainer {
+    margin-top: 9rem;
+    width: 95%;
   }
   .mapContainer {
-    height: 330px;
-  }
-}
-
-@media (max-width: 1050px) {
-  .leftContainer h1 {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 990px) {
-  .leftContainer h1 {
-    font-size: 2.5rem;
-  }
-  .leftContainer {
-    width: 100%;
-    padding: 2rem;
-    padding-top: 4rem;
-  }
-  .baner {
-    flex-direction: column;
-    border-radius: 0;
-    padding: 0rem 0%;
-    height: 100vh;
-  }
-  .image {
-    display: none;
+    height: 250px;
   }
 }
 @media (max-width: 600px) {
+  .leftContainer {
+    margin-top: 6rem;
+    width: 95%;
+  }
+  .leftContainer h1 {
+    font-size: 1.8rem !important;
+  }
   .galleryContainer h2 {
     font-size: 1.8rem;
   }
@@ -162,58 +153,24 @@
     margin-top: 1rem !important;
     font-size: 1.4rem !important;
   }
-}
-@media (max-width: 567px) {
-  .leftContainer h1 {
-    font-size: 2rem;
+  .leftContainer p {
+    font-size: 1rem;
   }
   .container {
     margin-bottom: 6rem;
   }
 }
 
-@media (max-width: 467px) {
-  .buttonContainer button {
-    font-size: 0.9rem !important;
-  }
-  .buttonContainer svg {
-    display: none;
-  }
-  .mapContainer {
-    height: 180px;
+@media (max-width: 444px) {
+  .baner {
+    background-size: 250%;
+    background-repeat: no-repeat;
+    background-position: 60% bottom;
   }
 }
 
-@media (max-width: 428px) {
-  .buttonContainer button {
-    font-size: 0.85rem !important;
-    padding: 1rem 1rem !important;
-  }
-}
-
-@media (max-width: 408px) {
-  .leftContainer h1 {
-    font-size: 1.8rem;
-  }
-}
-
-@media (max-width: 389px) {
-  .buttonContainer button {
-    font-size: 0.9rem !important;
-  }
-}
-@media (max-width: 375px) {
-  .mapContainer {
-    height: 120px;
-  }
-}
-@media (max-width: 362px) {
-  .leftContainer h1 {
-    font-size: 1.7rem;
-  }
-}
-@media (max-width: 338px) {
-  .leftContainer h1 {
-    font-size: 1.6rem;
+@media (max-width: 376px) {
+  .baner {
+    background-size: 100%;
   }
 }

@@ -40,7 +40,7 @@ export default function Vetulaniego() {
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
-              <h1>Żłobek Wesołe Wygibasy – ul. Vetulaniego 8 w Krakowie</h1>
+              <h1>Żłobek Kraków - Wesołe Wygibasy na Vetulaniego 8</h1>
               <p>
                 Jeśli szukasz bezpiecznego, kameralnego i inspirującego żłobka w
                 Krakowie, zapraszamy do Klubu Malucha Wesołe Wygibasy na ulicy
@@ -60,13 +60,6 @@ export default function Vetulaniego() {
                   <Button background="#7C99E5" text="Zapisy" fontSize="1rem" />
                 </Link>
               </div>
-            </div>
-            <div className={classes.mapContainer}>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.531008552978!2d19.922438176465064!3d50.09506707152642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a446e9d3211%3A0x2479f81b021d9154!2s%C5%BB%C5%82obek%20Klub%20Malucha%20-%20Weso%C5%82e%20Wygibasy!5e0!3m2!1spl!2spl!4v1711815573472!5m2!1spl!2spl"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
             </div>
           </div>
         </div>
@@ -132,6 +125,13 @@ export default function Vetulaniego() {
           </p>
         </div>
         <SliderComponent images={images} />
+        <div className={classes.mapContainer}>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.531008552978!2d19.922438176465064!3d50.09506707152642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a446e9d3211%3A0x2479f81b021d9154!2s%C5%BB%C5%82obek%20Klub%20Malucha%20-%20Weso%C5%82e%20Wygibasy!5e0!3m2!1spl!2spl!4v1711815573472!5m2!1spl!2spl"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
         <div className={classes.buttonContainer}>
           <Link href="/cennik-i-jadlospis-w-zlobku">
             <Button text="Cennik & Jadłospis" fontSize="1rem" />

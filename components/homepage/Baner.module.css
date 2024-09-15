@@ -122,26 +122,9 @@
   }
 }
 
-@media (max-width: 381px) {
-  .buttonContainer button {
-    padding: 0.9rem 0.9rem;
-  }
-  .banerContainer {
-    background-size: 150%;
-  }
-}
-@media (max-width: 350px) {
-  .banerContainer {
-    padding: 2rem 5%;
-  }
-}
-
 @media (max-height: 440px) {
   .textContainer {
     margin-top: 4rem;
-  }
-  .textContainer h1 span {
-    font-size: 1.5rem;
   }
 
   .textContainer p {
@@ -155,5 +138,13 @@
     background-size: 125%;
     background-repeat: no-repeat;
     background-position: top;
+  }
+}
+@media (max-width: 381px) {
+  .buttonContainer button {
+    padding: 0.9rem 0.9rem;
+  }
+  .banerContainer {
+    background-size: 150%;
   }
 }

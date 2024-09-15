@@ -71,30 +71,19 @@ export default function sliczna() {
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="/o-nas">
-                  <Button
-                    background="#fa7070"
-                    text="O nas"
-                    fontSize="1rem"
-                  />
+                  <Button background="#fa7070" text="O nas" fontSize="1rem" />
                 </Link>
                 <Link href="/zapisy">
                   <Button background="#7C99E5" text="Zapisy" fontSize="1rem" />
                 </Link>
               </div>
             </div>
-            <div className={classes.mapContainer}>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.7235912933816!2d19.971400476463828!3d50.07273797152256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b12ffd809d1%3A0xb7bd3a74fd82210c!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy!5e0!3m2!1spl!2spl!4v1711814374339!5m2!1spl!2spl"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
           </div>
         </div>
       </div>
       <div className={classes.container}>
         <div className={classes.description}>
-          <h2>Żłobek Wesołe Wygibasy - ul. Śliczna 36A, Kraków</h2>
+          <h2>Żłobek Kraków - Wesołe Wygibasy na Śliczna 36A</h2>
           <p>
             <span>Wesołe Wygibasy</span> to nasza czwarta placówka
             niepublicznych żłobków w Krakowie, zlokalizowana przy{" "}
@@ -143,13 +132,20 @@ export default function sliczna() {
               codzienne spacery z dziećmi są komfortowe i bezpieczne.
             </li>
           </ul>
+          <h3>
+            Czesne w całości pokrywane z projektu maluch + 2022 2029 oraz
+            dotacji urzędu miasta Kraków
+          </h3>
         </div>
         <SliderComponent images={images} />
+        <div className={classes.mapContainer}>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.7235912933816!2d19.971400476463828!3d50.07273797152256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b12ffd809d1%3A0xb7bd3a74fd82210c!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy!5e0!3m2!1spl!2spl!4v1711814374339!5m2!1spl!2spl"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
 
-        <h3>
-          Czesne w całości pokrywane z projektu maluch + 2022 2029 oraz dotacji
-          urzędu miasta Kraków
-        </h3>
         <div className={classes.buttonContainer}>
           <Link href="/cennik-i-jadlospis-w-zlobku">
             <Button text="Cennik & Jadłospis" fontSize="1rem" />

@@ -5,33 +5,34 @@
 
 .baner {
   width: 100%;
-  padding: 0rem 4%;
   display: flex;
+  padding: 2rem 9%;
   justify-content: space-between;
   background: #c7eeff;
   background-image: url("/baner_nowy.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
+  min-height: 100vh;
 }
 
 .leftContainer {
-  margin-top: 3.5rem;
-  padding: 4rem;
+  margin-top: 7rem;
   width: 60%;
   border-radius: 1rem;
 }
 
 .leftContainer h1 {
-  font-size: 2.1rem;
+  font-size: 2.3rem;
 }
 
 .leftContainer p {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  font-size: 1.05rem !important;
-  font-weight: 500;
+  font-size: 1.05rem;
   color: #616161;
+  word-spacing: 0.01rem;
+  font-weight: 500;
 }
 
 .mapContainer {
@@ -92,42 +93,21 @@
   margin-top: 3rem !important;
 }
 
-@media (max-width: 1450px) {
-  .image {
-    width: 40%;
+@media (max-width: 800px) {
+  .leftContainer {
+    margin-top: 9rem;
+    width: 95%;
   }
   .mapContainer {
-    height: 330px;
-  }
-}
-
-@media (max-width: 1050px) {
-  .leftContainer h1 {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 990px) {
-  .leftContainer h1 {
-    font-size: 2.5rem;
-  }
-  .leftContainer {
-    width: 100%;
-    padding: 2rem;
-    padding-top: 4rem;
-  }
-  .baner {
-    flex-direction: column;
-    border-radius: 0;
-    padding: 0rem 0%;
-    height: 100vh;
-  }
-  .image {
-    display: none;
+    height: 250px;
   }
 }
 
 @media (max-width: 600px) {
+  .leftContainer {
+    margin-top: 6rem;
+    width: 95%;
+  }
   .leftContainer h1 {
     font-size: 1.8rem;
   }
@@ -144,5 +124,19 @@
   }
   .description ul {
     padding-left: 1.5rem;
+  }
+}
+
+@media (max-width: 444px) {
+  .baner {
+    background-size: 250%;
+    background-repeat: no-repeat;
+    background-position: 60% bottom;
+  }
+}
+
+@media (max-width: 376px) {
+  .baner {
+    background-size: 100%;
   }
 }

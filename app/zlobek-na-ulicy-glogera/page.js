@@ -50,7 +50,7 @@ export default function Glogera() {
         <div className={classes.baner}>
           <div className={classes.leftContainer}>
             <div>
-              <h1>Żłobek Wesołe Wygibasy na Glogera 53/LU2 w Krakowie</h1>
+              <h1>Żłobek Kraków - Wesołe Wygibasy na Glogera 53/LU2</h1>
               <p>
                 Szukasz bezpiecznego, nowoczesnego żłobka w Krakowie? Wesołe
                 Wygibasy przy ul. Glogera 53/LU2 oferuje profesjonalną opiekę,
@@ -69,14 +69,6 @@ export default function Glogera() {
                   <Button background="#7C99E5" text="Zapisy" fontSize="1rem" />
                 </Link>
               </div>
-            </div>
-            <div className={classes.mapContainer}>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.0746082710157!2d19.92382417646559!3d50.103610471528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b8cf00937ed%3A0x39479b7e727e42d3!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy!5e0!3m2!1spl!2spl!4v1711815664167!5m2!1spl!2spl"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Mapa dojazdu do żłobka Wesołe Wygibasy na Glogera"
-              ></iframe>
             </div>
           </div>
         </div>
@@ -136,6 +128,14 @@ export default function Glogera() {
         </div>
 
         <SliderComponent images={images} />
+        <div className={classes.mapContainer}>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.0746082710157!2d19.92382417646559!3d50.103610471528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b8cf00937ed%3A0x39479b7e727e42d3!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy!5e0!3m2!1spl!2spl!4v1711815664167!5m2!1spl!2spl"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Mapa dojazdu do żłobka Wesołe Wygibasy na Glogera"
+          ></iframe>
+        </div>
 
         <div className={classes.buttonContainer}>
           <Link href="/cennik-i-jadlospis-w-zlobku">
