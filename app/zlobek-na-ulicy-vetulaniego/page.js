@@ -125,8 +125,7 @@ export default function Vetulaniego() {
 
           <h3>Poznaj nas bliżej</h3>
           <p>
-            Zapraszamy do zajrzenia do zakładki „
-            <Link href="/o-nas">O nas</Link>”, gdzie szczegółowo opowiadamy o
+            Zapraszamy do zajrzenia do zakładki, gdzie szczegółowo opowiadamy o
             naszych wartościach oraz filozofii opieki nad dziećmi. Możesz tam
             również poznać naszych wykwalifikowanych opiekunów, którzy z pasją i
             zaangażowaniem troszczą się o każdego malucha.
