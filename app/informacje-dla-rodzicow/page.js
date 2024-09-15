@@ -61,7 +61,7 @@ export default function informacje() {
           pracy z dziećmi.
         </p>
         <a href="/Standardy ochrony małoletnich przed krzywdzeniem w przedszkolu.pdf">
-          Otwórz Standardy Ochrony Małoletnich
+          Otwórz
         </a>
 
         <h3>Polityka Prywatności i Ochrona Danych Osobowych</h3>
