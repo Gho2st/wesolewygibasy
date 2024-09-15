@@ -9,11 +9,11 @@ import Image from "next/image";
 export default function SliderComponent({ images }) {
   const carouselSettings = {
     infinite: true,
-    speed: 500,
+    speed: 700,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 3500,
     cssEase: "linear",
     initialSlide: 0,
     nextArrow: (
