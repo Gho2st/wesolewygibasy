@@ -1,4 +1,4 @@
-import { Nunito } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
@@ -6,7 +6,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import Navigation from "@/components/UI/Navigation";
 import Footer from "@/components/UI/Footer";
 
-const font = Nunito({
+const font = Montserrat({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
