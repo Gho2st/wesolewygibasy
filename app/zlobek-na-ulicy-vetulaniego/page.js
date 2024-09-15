@@ -42,10 +42,11 @@ export default function Vetulaniego() {
             <div>
               <h1>Żłobek Wesołe Wygibasy – ul. Vetulaniego 8 w Krakowie</h1>
               <p>
-                Szukasz bezpiecznego i inspirującego żłobka w Krakowie? Wesołe
-                Wygibasy na Vetulaniego 8 oferują profesjonalną opiekę i rozwój
-                w przyjaznej atmosferze. Dowiedz się więcej i zapisz swoje
-                dziecko już dziś!
+                Jeśli szukasz bezpiecznego, kameralnego i inspirującego żłobka w
+                Krakowie, zapraszamy do Klubu Malucha Wesołe Wygibasy na ulicy
+                Vetulaniego 8. Nasza placówka oferuje profesjonalną opiekę nad
+                dziećmi w wieku od 1 do 3 lat, zapewniając im rozwój w ciepłej i
+                przyjaznej atmosferze, z dala od miejskiego zgiełku.
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="/o-nas">
