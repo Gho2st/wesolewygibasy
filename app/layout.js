@@ -1,4 +1,4 @@
-import { Montserrat } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
@@ -6,9 +6,9 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import Navigation from "@/components/UI/Navigation";
 import Footer from "@/components/UI/Footer";
 
-const montserrat = Montserrat({
+const font = Nunito({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata = {
@@ -47,7 +47,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pl">
-      <body className={montserrat.className}>
+      <body className={font.className}>
         <Navigation />
         {children}
         <Footer />

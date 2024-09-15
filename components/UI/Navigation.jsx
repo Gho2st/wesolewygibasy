@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Link from "next/link";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -26,9 +26,9 @@ export default function Navigation() {
           <Link className={classes.logo} href={"/"}>
             <Image
               src={"/others/zlobek-wesole-wygibasy-krakow-logo.png"}
-              width={100}
-              height={65}
-              alt="Logo Żłobek Wesołe Wygibasy Kraków"
+              width={140}
+              height={85}
+              alt="Loga z małpkami Żłobka Wesołe Wygibasy w Krakowie"
             ></Image>
           </Link>
         </div>
