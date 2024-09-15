@@ -95,7 +95,7 @@ export default function About() {
                 <Link href="/o-nas">
                   <Button text="O nas" fontSize="0.9rem" />
                 </Link>
-                <Link href="/o-nas">
+                <Link href="/zapisy">
                   <Button
                     text="Zapisy"
                     fontSize="0.9rem"
