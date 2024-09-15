@@ -212,7 +212,11 @@
     font-size: 0.9rem !important;
   }
 }
-
+@media (max-width: 375px) {
+  .mapContainer {
+    height: 120px;
+  }
+}
 @media (max-width: 362px) {
   .leftContainer h1 {
     font-size: 1.7rem;
