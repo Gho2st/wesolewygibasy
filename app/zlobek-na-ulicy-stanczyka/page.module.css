@@ -174,3 +174,31 @@
     background-size: 100%;
   }
 }
+
+/* urzadzenie na boku */
+
+@media (max-height: 440px) {
+  .leftContainer {
+    margin-top: 5.4rem;
+  }
+  .leftContainer h1 {
+    font-size: 1.3rem;
+  }
+
+  .leftContainer p {
+    margin-top: 1rem;
+    color: #1f1f1f;
+    font-size: 0.9rem;
+    width: 85%;
+    word-spacing: 0.01rem;
+    margin-bottom: 0rem !important;
+  }
+  .buttonContainer {
+    margin-top: 1rem;
+  }
+  .baner {
+    background-size: 125%;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+}

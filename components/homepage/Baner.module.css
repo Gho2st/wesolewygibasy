@@ -124,15 +124,23 @@
 
 @media (max-height: 440px) {
   .textContainer {
-    margin-top: 4rem;
+    margin-top: 5.4rem;
+  }
+  .textContainer h1 {
+    font-size: 1.3rem;
   }
 
   .textContainer p {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     color: #1f1f1f;
     font-size: 0.9rem;
     width: 85%;
     word-spacing: 0.01rem;
+    margin-bottom: 0rem !important;
+  }
+
+  .buttonContainer {
+    margin-top: 1rem;
   }
   .banerContainer {
     background-size: 125%;
