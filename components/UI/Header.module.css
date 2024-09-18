@@ -2,10 +2,14 @@
   text-align: center;
   padding-top: 2rem;
   font-size: 2.3rem;
-  color: #fa7070;
-  margin-top: 4rem;
-  padding-bottom: 2rem;
-
+  margin-top: 4.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  background: -webkit-linear-gradient(#f74242, #d68282);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 2px solid rgb(225, 225, 225);
 }
 
 @media (max-width: 600px) {

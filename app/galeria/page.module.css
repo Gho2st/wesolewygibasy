@@ -3,44 +3,156 @@
 }
 
 .container h1 {
-  text-align: center;
-  margin-top: 5rem;
-  font-size: 2.3rem;
-  color: #fa7070;
+  font-size: 2rem !important;
 }
 
-.container h2 {
-  font-size: 1.4rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  font-weight: bold;
+.banerContainer {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+.imageContainer{
+  width: 32%;
+}
+
+.banerContainer img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.textContainer {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textContainer p:nth-child(1) {
   color: #08c6c3;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
-.container h3 {
-  font-size: 1.25rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-weight: 500;
-}
-
-.inner {
-  padding: 0rem 1.5rem;
-}
-
-.buttonContainer {
+.textContainer h2 {
   margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
 }
 
-@media (max-width: 600px) {
+.text {
+  color: grey;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+.buttonContainer {
+  margin-top: 2rem;
+}
+
+/* cloud container */
+
+.cloudContainer {
+  min-height: 100vh;
+  background: #ffe3e1;
+  --mask: radial-gradient(76.2px at 50% 107.5px, #000 99%, #0000 101%)
+      calc(50% - 100px) 0/200px 51% repeat-x,
+    radial-gradient(76.2px at 50% -57.5px, #0000 99%, #000 101%) 50% 50px/200px
+      calc(51% - 50px) repeat-x,
+    radial-gradient(76.2px at 50% calc(100% - 107.5px), #000 99%, #0000 101%)
+      calc(50% - 100px) 100%/200px 51% repeat-x,
+    radial-gradient(76.2px at 50% calc(100% + 57.5px), #0000 99%, #000 101%) 50%
+      calc(100% - 50px) / 200px calc(51% - 50px) repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  padding: 6rem 9%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.head {
+  padding-top: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.head h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+
+.card {
+  padding: 2rem;
+  border: 2px solid #fa7070;
+  border-radius: 2rem;
+  background: #fff9ee;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card h3 {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1300px) {
+  .banerContainer {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5rem;
+  }
+  .textContainer {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 2rem;
+  }
+
+  .imageContainer {
+    width: 40%;
+    height: 40%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 900px) {
   .container h1 {
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
+  }
+  .imageContainer {
+    width: 50%;
+    height: 50%;
+  }
+  .cardContainer {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .imageContainer {
+    width: 60%;
+    height: 60%;
+  }
+  .cardContainer {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding-bottom: 2rem;
+  }
+  .banerContainer {
+    margin-top: 1rem;
     margin-bottom: 0rem;
+    gap: 4rem;
   }
-  .container h2 {
-    font-size: 1.2rem;
-  }
-  .container h3 {
-    font-size: 1.1rem;
+  .head h2 {
+    font-size: 1.8rem;
   }
 }

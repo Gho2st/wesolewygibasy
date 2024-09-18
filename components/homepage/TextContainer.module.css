@@ -11,34 +11,65 @@
   justify-content: space-between;
 }
 .textContainer h2 {
-  font-size: 1.7rem;
-  margin-bottom: 2rem;
-}
-.textContainer span {
-  color: #fa7070;
+  font-size: 2rem;
+  padding-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 .textContainer p {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: #262626;
+  font-size: 0.9rem;
+  color: grey;
 }
-.textContainer h4 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-top: 1.5rem;
-  color: #08c6c3;
-  width: 80%;
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.card {
+  background: orange;
+  border-radius: 2rem;
+  padding: 1.3rem 1.3rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card svg {
+  font-size: 2.8rem;
+}
+
+.card h3 {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.card1 {
+  background: #ffe6e1;
+  color: #ff583d;
+}
+.card2 {
+  background: #ebe6fd;
+  color: #6d5ebc;
+}
+.card3 {
+  background: #fff3d4;
+  color: #f8b03f;
+}
+.card4 {
+  background: #d6fcf9;
+  color: #35d4ae;
 }
 
 .left {
-  width: 65%;
+  width: 70%;
 }
 .right {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25%;
+  width: 27%;
 }
 
 .right img {
@@ -46,42 +77,52 @@
   transform: scaleX(-1); /* Odbicie lustrzane */
 }
 
-@media (max-width: 1383px) {
+@media (max-width: 1200px) {
   .textContainer {
     flex-direction: column;
     margin-bottom: 2rem;
+    gap: 4rem;
+  }
+  .cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
   }
   .left {
     width: 100%;
   }
   .right {
-    justify-content: center;
-    width: 28%;
+    width: 35%;
     margin: auto;
-  }
-  .textContainer h4 {
-    margin-bottom: 2rem;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
+  .textContainer h2 {
+    font-size: 1.8rem;
+  }
+  .cardContainer {
+    gap: 1rem;
+  }
   .right {
-    width: 42%;
-  }
-  .textContainer h4 {
-    font-size: 1.1rem;
-    width: 100%;
-  }
-  .textContainer a {
-    font-size: 1.3rem;
-  }
-  .textContainer {
-    margin-bottom: 0rem;
+    width: 45%;
   }
 }
 @media (max-width: 600px) {
+  .textContainer h2 {
+    font-size: 1.6rem;
+  }
+  .cardContainer {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .textContainer {
+    gap: 3rem;
+  }
+  .card {
+    padding: 1.5rem;
+  }
   .right {
-    width: 70%;
-    margin-top: 3.5rem;
+    width: 65%;
   }
 }

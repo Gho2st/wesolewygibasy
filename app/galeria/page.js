@@ -14,62 +14,102 @@ export const metadata = {
     canonical: "/galeria",
   },
   keywords:
-    "żłobek, Wesołe Wygibasy, Kraków, galeria zdjęć, codzienne życie żłobka, wydarzenia dziecięce",
+    "żłobek, Wesołe Wygibasy, Kraków, galeria zdjęć, codzienne życie żłobka, wydarzenia dziecięce, opieka nad dziećmi, rozwój dziecka przez zabawę",
 };
 
 export default function Galeria() {
   return (
     <>
       <div className={classes.container}>
-        <Header text="Galeria - Żłobek Wesołe Wygibasy Kraków" />
-
-        <p>
-          Witamy w galerii żłobka Wesołe Wygibasy w Krakowie. Zapraszamy do
-          zapoznania się z codziennym życiem naszej placówki, gdzie dzieci
-          rozwijają swoje umiejętności w przyjaznej i inspirującej atmosferze.
-        </p>
-
-        <h2>Dlaczego warto wybrać Wesołe Wygibasy?</h2>
-        <p>
-          Nasza galeria przedstawia fotografie z różnorodnych wydarzeń
-          organizowanych w żłobku. Oferujemy bogaty program atrakcji, takich jak
-          urodziny, teatrzyki, przedstawienia i bale przebierańców. Zachęcamy do
-          sprawdzenia, jak wiele radości przynoszą te momenty najmłodszym.
-        </p>
-
-        <div className={classes.inner}>
-          <h3>Codzienne życie w żłobku</h3>
-          <p>
-            Zdjęcia dokumentują codzienne aktywności dzieci, które biorą udział
-            w zajęciach rozwijających ich zdolności twórcze i społeczne. Zobacz,
-            jak uczymy przez zabawę i dbamy o szczęście oraz rozwój
-            najmłodszych.
-          </p>
-
-          <h3>Wyjątkowe wydarzenia</h3>
-          <p>
-            W galerii znajdziesz fotografie z uroczystości, takich jak urodziny,
-            bale przebierańców i przedstawienia. Dzieci chętnie uczestniczą w
-            tych radosnych momentach, co widać na pełnych uśmiechów zdjęciach.
-          </p>
-        </div>
-
-        <h2>Galeria pełna radości i rozwoju</h2>
-        <p>
-          Zapraszamy do obejrzenia zdjęć, które ukazują codzienność maluszków w
-          naszej placówce. Odkryj, jak twórczo i radośnie spędzają czas w
-          Wesołych Wygibasach!
-        </p>
-        <div className={classes.buttonContainer}>
-          <Link href="/zapisy">
-            <Button text="Zapisy" fontSize="1rem" />
-          </Link>
-          <Link href="/cennik-i-jadlospis-w-zlobku">
-            <Button text="Jadłospis" background="#7C99E5" fontSize="1rem" />
-          </Link>
+        <Header text="Galeria zdjęć z życia codziennego i wydarzeń w Żłobku Wesołe Wygibasy Kraków" />
+        <div className={classes.banerContainer}>
+          <div className={classes.imageContainer}>
+            <Image
+              src={"/others/galeria.png"}
+              width={100}
+              height={100}
+              alt="Żłobek Wesołe Wygibasy - galeria zdjęć z codziennego życia dzieci w Krakowie"
+              layout="responsive"
+            />
+          </div>
+          <div className={classes.textContainer}>
+            <div>
+              <p>Zobacz. Oceń. Zapisz.</p>
+              <h2>Zobacz jak spędzamy czas!</h2>
+              <p className={classes.text}>
+                Nasza galeria zdjęć pozwala uchwycić najpiękniejsze momenty z
+                życia dzieci w żłobku <span>Wesołe Wygibasy</span> w Krakowie.
+                Dzięki niej, każdy rodzic może zobaczyć, jak wygląda nasza
+                codzienna praca: od zabaw i nauki po wyjątkowe wydarzenia i
+                uroczystości. Oferujemy szeroki wachlarz zajęć wspierających
+                rozwój emocjonalny, społeczny i intelektualny dzieci. Regularnie
+                organizujemy atrakcje, takie jak teatrzyki, bale przebierańców
+                czy urodziny, które na długo pozostają w pamięci najmłodszych.
+              </p>
+              <p className={classes.text}>
+                Zapraszamy do obejrzenia zdjęć, które ukazują codzienność
+                maluszków w naszej placówce. Odkryj, jak twórczo i radośnie
+                spędzają czas w <span>Wesołych Wygibasach!</span>
+              </p>
+              <div className={classes.buttonContainer}>
+                <Link href="/zapisy" className={classes.link}>
+                  <Button text="Zapisy" fontSize="1rem" />
+                </Link>
+                <Link href="#placowki">
+                  <Button
+                    text="Galeria"
+                    background="#7C99E5"
+                    fontSize="1rem"
+                  />
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <Places background="true" />
+      <div className={classes.cloudContainer}>
+        <div className={classes.head}>
+          <h2>
+            Odkryj, co czyni Żłobek <span>Wesołe Wygibasy</span> wyjątkowym!
+          </h2>
+          <p>
+            W żłobku Wesołe Wygibasy w Krakowie dbamy o wszechstronny rozwój
+            każdego dziecka, oferując bogaty program zajęć i wydarzeń. Nasza
+            galeria zdjęć przedstawia codzienne aktywności maluszków oraz
+            wyjątkowe momenty, takie jak urodziny, teatrzyki, przedstawienia i
+            bale przebierańców. Zobacz, jak wiele radości przynoszą te chwile
+            najmłodszym w naszym żłobku.
+          </p>
+        </div>
+
+        <div className={classes.cardContainer}>
+          <div className={classes.card}>
+            <h3>Codzienne życie w żłobku Wesołe Wygibasy</h3>
+            <p>
+              Nasze zdjęcia dokumentują codzienne aktywności dzieci, które biorą
+              udział w różnorodnych zajęciach, rozwijających ich zdolności
+              twórcze, intelektualne i społeczne. Żłobek Wesołe Wygibasy to
+              miejsce, gdzie dzieci uczą się poprzez zabawę, a każde zajęcia są
+              dostosowane do ich potrzeb rozwojowych. Zobacz, jak dbamy o
+              szczęście i harmonijny rozwój najmłodszych w Krakowie.
+            </p>
+          </div>
+          <div className={classes.card}>
+            <h3>Wyjątkowe wydarzenia i uroczystości w naszym żłobku</h3>
+            <p>
+              Nasz żłobek regularnie organizuje specjalne wydarzenia, takie jak
+              urodziny, bale przebierańców, teatrzyki i przedstawienia, które
+              dostarczają dzieciom wielu pozytywnych emocji. Galeria zdjęć
+              ukazuje te magiczne chwile pełne uśmiechu i radości, w których
+              każde dziecko ma okazję do integracji i wspólnej zabawy z
+              rówieśnikami.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className={classes.places}>
+        <Places background="true" />
+      </div>
     </>
   );
 }

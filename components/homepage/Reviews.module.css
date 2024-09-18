@@ -3,8 +3,6 @@
 }
 .counter {
   display: inline;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
   font-size: 1.8rem;
   color: green;
 }
@@ -15,11 +13,21 @@
 
 .container h2 {
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 .description {
   margin-top: 1rem;
+  color: grey;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.buttonContainer a button {
+  margin-right: 0 !important;
 }
 
 .container p {
@@ -66,10 +74,13 @@
   align-items: center;
 }
 
-.review h6 {
+.review h3 {
   padding-top: 1rem;
   font-size: 1.1rem;
   color: rgb(9, 77, 87);
+}
+.review p {
+  font-size: 0.95rem;
 }
 .line {
   width: 100%;
@@ -130,5 +141,8 @@
   }
   .header p {
     width: 75%;
+  }
+  .container h2 {
+    font-size: 1.6rem;
   }
 }

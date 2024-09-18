@@ -5,6 +5,10 @@ import Image from "next/image";
 import { useRef } from "react";
 import { useInView, motion } from "framer-motion";
 import Button from "../UI/Button";
+import { FaHeart } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { GiTeacher } from "react-icons/gi";
+import { FaBook } from "react-icons/fa";
 
 export default function TextContainer() {
   const skillRef = useRef();
@@ -26,47 +30,57 @@ export default function TextContainer() {
           >
             <div>
               <h2>
-                Najlepszy Żłobek w Krakowie – Dlaczego Warto Wybrać
-                <span> Wesołe Wygibasy?</span>
+                Nasze podejście do opieki nad dziećmi w{" "}
+                <span>Wesołych Wygibasach</span>
               </h2>
-              <p>
-                Żłobek Wesołe Wygibasy w Krakowie to miejsce, gdzie każde
-                dziecko otoczone jest miłością, szacunkiem i troską. Nasza misja
-                to stworzenie bezpiecznego i inspirującego środowiska, które
-                wspiera rozwój umiejętności, kreatywności i osobowości maluchów.
-              </p>
-              <p>
-                Nasza lokalizacja na północy Krakowa zapewnia dogodny dojazd dla
-                rodziców z dzielnic takich jak Prądnik Biały, Bronowice,
-                Krowodrza oraz z pobliskich miejscowości, w tym Zielonek. Żłobek
-                na ulicy Ślicznej mieści się w dzielnicy Olsza, a jego położenie
-                sprzyja również mieszkańcom osiedla Oficerskiego, Grzegórzek
-                oraz osiedla Avia. Oferujemy liczne udogodnienia i atrakcje dla
-                dzieci, aby zapewnić im wszechstronny rozwój w bezpiecznym i
-                przyjaznym otoczeniu.
-              </p>
-              <p>
-                Oferujemy opiekę dla dzieci do 3. roku życia. Nasz zespół
-                wykwalifikowanych opiekunów zapewnia indywidualne wsparcie
-                każdemu dziecku.
-              </p>
-              <p>
-                Program nauczania bazuje na holistycznym podejściu, które
-                uwzględnia potrzeby rozwojowe dzieci. Skupiamy się na
-                kreatywności, aktywności fizycznej oraz rozwijaniu umiejętności
-                społecznych i emocjonalnych.
-              </p>
-              <p>
-                Rodzice z Krakowa cenią sobie nasz żłobek za zaangażowanie i
-                troskę, jaką okazujemy dzieciom. Otrzymaliśmy wiele pozytywnych
-                opinii, które są dla nas najlepszą rekomendacją. Zaufanie, jakim
-                obdarzają nas rodzice, motywuje nas do nieustannego doskonalenia
-                naszych usług.
-              </p>
+
+              <div className={classes.cardContainer}>
+                <div className={`${classes.card} ${classes.card1}`}>
+                  <FaHeart />
+                  <h3>Miłość i troska</h3>
+                  <p>
+                    Żłobek Wesołe Wygibasy w Krakowie to miejsce, gdzie każde
+                    dziecko otoczone jest miłością, szacunkiem i troską. Nasza
+                    misja to stworzenie bezpiecznego i inspirującego środowiska,
+                    które wspiera rozwój umiejętności, kreatywności i osobowości
+                    maluchów.
+                  </p>
+                </div>
+                <div className={`${classes.card} ${classes.card2}`}>
+                  <FaLocationDot />
+                  <h3>Dogodna lokalizacja w Krakowie</h3>
+                  <p>
+                    Nasza lokalizacja na północy Krakowa zapewnia dogodny dojazd
+                    dla rodziców z dzielnic takich jak Prądnik Biały, Bronowice,
+                    Krowodrza oraz z pobliskich miejscowości, w tym Zielonek.
+                    Żłobek na ulicy Ślicznej mieści się w dzielnicy Olsza, a
+                    jego położenie sprzyja również mieszkańcom osiedla
+                    Oficerskiego, Grzegórzek oraz osiedla Avia.
+                  </p>
+                </div>
+                <div className={`${classes.card} ${classes.card3}`}>
+                  <GiTeacher />
+                  <h3>Profesjonalna kadra opiekunów</h3>
+
+                  <p>
+                    Oferujemy opiekę dla dzieci do 3. roku życia. Nasz zespół
+                    wykwalifikowanych opiekunów zapewnia indywidualne wsparcie
+                    każdemu dziecku.
+                  </p>
+                </div>
+                <div className={`${classes.card} ${classes.card4}`}>
+                  <FaBook />
+                  <h3>Holistyczne podejście</h3>
+
+                  <p>
+                    Program nauczania bazuje na holistycznym podejściu, które
+                    uwzględnia potrzeby rozwojowe dzieci. Skupiamy się na
+                    kreatywności, aktywności fizycznej oraz rozwijaniu
+                    umiejętności społecznych i emocjonalnych.
+                  </p>
+                </div>
+              </div>
             </div>
-            <Link href="https://g.page/r/CVSRHQIb-HkkEBM/review">
-              <Button text="Zostaw opinię!" fontSize="1rem" />
-            </Link>
           </motion.div>
           <motion.div
             className={classes.right}

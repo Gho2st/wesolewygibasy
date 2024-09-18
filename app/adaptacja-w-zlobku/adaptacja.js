@@ -12,6 +12,7 @@ export default function Adaptacja() {
               src={"/others/adaptacja.png"}
               width={200}
               height={100}
+              alt="Krąg dzieci podczas Adaptacji w Żłobku Wesołe Wygibasy w Krakowie"
               layout="responsive"
             ></Image>
           </div>
@@ -27,9 +28,14 @@ export default function Adaptacja() {
                 zarówno dziecku, jak i rodzicom ten ważny krok. Wesołe Wygibasy
                 czekają na Was.
               </p>
-              <Link href="/zapisy" className={classes.link}>
-                <Button text="Zapisy" fontSize="1rem" />
-              </Link>
+              <div className={classes.buttonContainer}>
+                <Link href="/zapisy" className={classes.link}>
+                  <Button text="Zapisy" fontSize="1rem" />
+                </Link>
+                <Link href="/cennik" className={classes.link}>
+                  <Button text="Cennik" fontSize="1rem" background="#7C99E5" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

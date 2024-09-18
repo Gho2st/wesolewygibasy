@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Stars from "../../components/UI/Stars";
+import Link from "next/link";
+import Button from "../UI/Button";
 import { IoIosArrowForward } from "react-icons/io";
 import {
   motion,
@@ -88,16 +90,29 @@ export default function Reviews() {
     <article className={classes.wrapper}>
       <div className={classes.container}>
         <h2>
-          Żłobek<span> Wesołe Wygibasy</span> w Krakowie - ponad
-          <motion.div ref={counterRef} className={classes.counter}>
+          Ponad{" "}
+          <motion.div
+            ref={counterRef}
+            className={classes.counter}
+            style={{ display: "inline-block" }}
+          >
             {rounded === 0 ? 91 : rounded}
-          </motion.div>
+          </motion.div>{" "}
           zadowolonych klientów! Ocena 4.9/5!
         </h2>
         <p className={classes.description}>
+          Rodzice z Krakowa cenią sobie nasz żłobek za zaangażowanie i troskę,
+          jaką okazujemy dzieciom. Otrzymaliśmy wiele pozytywnych opinii, które
+          są dla nas najlepszą rekomendacją. Zaufanie, jakim obdarzają nas
+          rodzice, motywuje nas do nieustannego doskonalenia naszych usług.
           Dołącz do grona naszych zadowolonych klientów. Sprawdź, co mówią o nas
           inni!
         </p>
+        <div className={classes.buttonContainer}>
+          <Link href="https://g.page/r/CVSRHQIb-HkkEBM/review">
+            <Button text="Zostaw opinię!" fontSize="1rem" />
+          </Link>
+        </div>
         <div className={classes.reviewContainer}>
           <Slider {...settings} className={classes.slider}>
             <div className={classes.reviewItem}>
@@ -115,7 +130,7 @@ export default function Reviews() {
                   serdecznie pozdrawiam ❣️). Polecam!
                 </p>
                 <div className={classes.line}></div>
-                <h6>Marta Bubak</h6>
+                <h3>Marta Bubak</h3>
               </div>
             </div>
             <div className={classes.reviewItem}>
@@ -131,7 +146,7 @@ export default function Reviews() {
                   Najlepsze miejsce dla maluszków !
                 </p>
                 <div className={classes.line}></div>
-                <h6>Aleksandra Gaweł</h6>
+                <h3>Aleksandra Gaweł</h3>
               </div>
             </div>
             <div className={classes.reviewItem}>
@@ -149,7 +164,7 @@ export default function Reviews() {
                   aktywność, pyszne posiłki. Bardzo polecam! 🤗
                 </p>
                 <div className={classes.line}></div>
-                <h6>Anita</h6>
+                <h3>Anita</h3>
               </div>
             </div>
             <div className={classes.reviewItem}>
@@ -165,7 +180,7 @@ export default function Reviews() {
                   do dzieci! Gorąco polecam! ❤
                 </p>
                 <div className={classes.line}></div>
-                <h6>Diana Urszula</h6>
+                <h3>Diana Urszula</h3>
               </div>
             </div>
             <div className={classes.reviewItem}>
@@ -183,7 +198,7 @@ export default function Reviews() {
                   więcej🙂🙂🙂🙂
                 </p>
                 <div className={classes.line}></div>
-                <h6>Anna Błaszkiewicz</h6>
+                <h3>Anna Błaszkiewicz</h3>
               </div>
             </div>
             <div className={classes.reviewItem}>
@@ -199,7 +214,7 @@ export default function Reviews() {
                   drzemką, podwieczorek).
                 </p>
                 <div className={classes.line}></div>
-                <h6>Joanna Godlewska</h6>
+                <h3>Joanna Godlewska</h3>
               </div>
             </div>
           </Slider>
