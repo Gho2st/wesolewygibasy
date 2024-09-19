@@ -74,8 +74,9 @@
   align-items: center;
 }
 
-.review h3 {
+.name {
   padding-top: 1rem;
+  font-weight: bold;
   font-size: 1.1rem;
   color: rgb(9, 77, 87);
 }

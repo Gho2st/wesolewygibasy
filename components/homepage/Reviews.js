@@ -130,7 +130,7 @@ export default function Reviews() {
                   serdecznie pozdrawiam ❣️). Polecam!
                 </p>
                 <div className={classes.line}></div>
-                <h3>Marta Bubak</h3>
+                <p className={classes.name}>Marta Bubak</p>
               </div>
             </div>
             <div className={classes.reviewItem}>
@@ -146,7 +146,7 @@ export default function Reviews() {
                   Najlepsze miejsce dla maluszków !
                 </p>
                 <div className={classes.line}></div>
-                <h3>Aleksandra Gaweł</h3>
+                <p className={classes.name}>Aleksandra Gaweł</p>
               </div>
             </div>
             <div className={classes.reviewItem}>
@@ -164,7 +164,7 @@ export default function Reviews() {
                   aktywność, pyszne posiłki. Bardzo polecam! 🤗
                 </p>
                 <div className={classes.line}></div>
-                <h3>Anita</h3>
+                <p className={classes.name}>Anita</p>
               </div>
             </div>
             <div className={classes.reviewItem}>
@@ -180,7 +180,7 @@ export default function Reviews() {
                   do dzieci! Gorąco polecam! ❤
                 </p>
                 <div className={classes.line}></div>
-                <h3>Diana Urszula</h3>
+                <p className={classes.name}>Diana Urszula</p>
               </div>
             </div>
             <div className={classes.reviewItem}>
@@ -198,7 +198,7 @@ export default function Reviews() {
                   więcej🙂🙂🙂🙂
                 </p>
                 <div className={classes.line}></div>
-                <h3>Anna Błaszkiewicz</h3>
+                <p className={classes.name}>Anna Błaszkiewicz</p>
               </div>
             </div>
             <div className={classes.reviewItem}>
@@ -214,7 +214,7 @@ export default function Reviews() {
                   drzemką, podwieczorek).
                 </p>
                 <div className={classes.line}></div>
-                <h3>Joanna Godlewska</h3>
+                <p className={classes.name}>Joanna Godlewska</p>
               </div>
             </div>
           </Slider>
