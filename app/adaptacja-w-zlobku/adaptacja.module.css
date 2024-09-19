@@ -69,6 +69,7 @@
     grid-template-columns: 1fr;
     margin-top: 2rem;
     gap: 4rem;
+    padding-bottom: 0rem;
   }
   .imageContainer {
     width: 60%;
