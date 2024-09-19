@@ -15,7 +15,7 @@ export const metadata = {
   keywords:
     "Żłobek na ulicy ślicznej, własny plac zabaw, nowy Żłobek, dotacja, aktywny maluch",
   description:
-    "Poznaj żłobek Wesołe Wygibasy na ul. Ślicznej w Krakowie. Komfortowa lokalizacja, własny plac zabaw i różnorodne zajęcia dla najmłodszych.",
+    "Żłobek Wesołe Wygibasy na ul. Ślicznej w Krakowie. Darmowe czesne, komfortowa lokalizacja, własny plac zabaw i różnorodne zajęcia dla najmłodszych.",
 };
 
 const images = [
@@ -85,7 +85,7 @@ export default function sliczna() {
       </div>
       <div className={classes.container}>
         <div className={classes.description}>
-          <h2>Żłobek Kraków - Wesołe Wygibasy na Śliczna 36A</h2>
+          <h2>Nasza placówka - Żłobek Wesołe Wygibasy</h2>
           <p>
             <span>Wesołe Wygibasy</span> to nasza czwarta placówka
             niepublicznych żłobków w Krakowie, zlokalizowana przy{" "}
@@ -95,7 +95,7 @@ export default function sliczna() {
             Nasz nowoczesny żłobek oferuje 39 miejsc w przestronnych,
             komfortowych i bezpiecznych warunkach.
           </p>
-          <h2>Komfort i nowoczesność w Żłobku Wesołe Wygibasy</h2>
+          <h2>Nowoczesność i bezpieczeństwo</h2>
           <p>
             Otwartą w 2024 roku placówkę zaprojektowaliśmy z myślą o
             bezpieczeństwie i wygodzie najmłodszych. Nasz żłobek przy ul.
@@ -104,7 +104,7 @@ export default function sliczna() {
             systemy, takie jak <span> rekuperacja </span> zapewniająca dzieciom
             dostęp do świeżego i czystego powietrza przez cały dzień.
           </p>
-          <h3>Grupy wiekowe w naszym Żłobku</h3>
+          <h3>Grupy wiekowe i opieka</h3>
           <ul>
             <li>
               <span>Tuptusie</span> - młodsza grupa dla dzieci do ok. 22
@@ -119,7 +119,7 @@ export default function sliczna() {
               troskliwą opiekę i dbają o wszechstronny rozwój każdego dziecka.
             </p>
           </ul>
-          <h2>Atrakcje i udogodnienia</h2>
+          <h2>Udogodnienia i dodatkowe atrakcje</h2>
           <ul>
             <li>
               Nowoczesny, ogrodzony <span> plac zabaw</span>, który zapewnia
