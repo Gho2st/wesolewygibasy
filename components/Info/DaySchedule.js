@@ -26,7 +26,7 @@ export default function DaySchedule(props) {
         className={classes.header}
       >
         <div className={classes.header2}>
-          <h3>Plan Dnia</h3>
+          <h3>Codzienny plan zajęć dla dzieci</h3>
         </div>
         <div className={classes.icon}>
           <IoIosArrowDown />
@@ -34,36 +34,24 @@ export default function DaySchedule(props) {
       </div>
       {isDayScheduleOpen && (
         <div className={classes.daySchedule}>
-          <h4>7:00</h4>
-          <p>Otwarcie placówki</p>
-          <h4>8:30 - 9:00</h4>
-          <p>Śniadanie</p>
-          <h4>9:00 - 9:15</h4>
-          <p>Przywitanie</p>
-          <h4>9:15 - 9:45</h4>
-          <p>Zajęcia rozwojowo - edukacyjne</p>
-          <h4>9:45 - 10:00</h4>
-          <p>Drugie Śniadanie</p>
-          <h4>10:00</h4>
-          <p>Wyjście na spacer</p>
-          <h4>11:00 - 11:30</h4>
-          <p>Obiad</p>
-          <h4>11:30 - 13:30</h4>
-          <p>Drzemka</p>
+          <h4> 7:00 - Powitanie dzieci </h4>
+          <h4> 8:30 - 9:00 - Śniadanie </h4>
+          <h4> 9:00 - 9:15 - Czas wolny, zabawy dowolne </h4>
+          <h4> 9:15 - 9:45 - Zajęcia dydaktyczne i edukacyjne </h4>
+          <h4> 9:45 - 10:00 - Przerwa na przekąskę </h4>
+          <h4>10:00 - Zabawy na świeżym powietrzu (w zależności od pogody)</h4>
+          <h4> 11:00 - 11:30 - Obiad </h4>
+          <h4> 11:30 - 13:30 - Drzemka </h4>
           <h5>
-            W przypadku gdy dziecko nie zostaje na drzemke - proszę odebrać do
+            W przypadku gdy dziecko nie zostaje na drzemkę - prosimy o odbiór do
             11:30.
           </h5>
-          <h4>13:30 - 14:00</h4>
-          <p>Podwieczorek</p>
-          <h4>14:30 - 17:00</h4>
-          <p>
-            Swobodne zabawy w żłobku i na zewnątrz, czas oczekiwania na
-            przyjście rodziców.
-          </p>
-          <h5>Rozchodzenie się do domów.</h5>
-          <h4>17:30</h4>
-          <p>Zamknięcie placówki</p>
+          <h4>
+            13:30 - 14:00 - Zajęcia popołudniowe (zabawy kreatywne, plastyczne)
+          </h4>
+          <h4> 14:30 - 17:00 - Podwieczorek i czas wolny </h4>
+          <h5> Rozchodzenie się dzieci do domów. </h5>
+          <h4> 17:30 - Zakończenie dnia </h4>
         </div>
       )}
       <div

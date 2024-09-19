@@ -54,28 +54,28 @@ export default function Numbers() {
       </div>
       {isKlubMalucha && (
         <div className={classes.itemContainer}>
-          <h5>Klub Malucha</h5>
+          <h3>Klub Malucha</h3>
           <p>Nasz numer to:</p>
           <p className={classes.number}>7330.2.16.2017</p>
         </div>
       )}
       {isGlogera && (
         <div className={classes.itemContainer}>
-          <h5>Niepubliczny Żłobek ul. Glogera</h5>
+          <h3>Niepubliczny Żłobek ul. Glogera</h3>
           <p>Nasz numer to:</p>
           <p className={classes.number}>7330.2.16.2017</p>
         </div>
       )}
       {isStanczyka && (
         <div className={classes.itemContainer}>
-          <h5>Niepubliczny Żłobek ul. Stańczyka</h5>
+          <h3>Niepubliczny Żłobek ul. Stańczyka</h3>
           <p>Nasz numer to:</p>
           <p className={classes.number}>7330.2.7.2023</p>
         </div>
       )}
       {isSliczna && (
         <div className={classes.itemContainer}>
-          <h5>Niepubliczny Żłobek ul. Śliczna</h5>
+          <h3>Niepubliczny Żłobek ul. Śliczna</h3>
           <p>Nasz numer to:</p>
           <p className={classes.number}>7330.1.15.2024</p>
         </div>

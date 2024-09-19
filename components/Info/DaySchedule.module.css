@@ -45,9 +45,15 @@
   margin-top: 2rem;
 }
 
+.daySchedule h4 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
 .daySchedule h5 {
   font-size: 0.9rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .extra {

@@ -11,10 +11,10 @@ export default function Footer() {
     <div className={classes.container}>
       <div className={classes.footerTopContainer}>
         <div className={classes.text}>
-          <h4>
+          <h2>
             <span>Wesołe Wygibasy</span> są wpisane do rejestru krakowskich
             złobków i klubów dziecięcych.
-          </h4>
+          </h2>
           <p>
             Oznacza to, ze jesteśmy miejscem bezpiecznym, przyjaznym dzieciom i
             rodzicom!
@@ -27,7 +27,7 @@ export default function Footer() {
       </div>
       <div className={classes.footerInfoContainer}>
         <div>
-          <h5>Godziny otwarcia</h5>
+          <h3>Godziny otwarcia</h3>
           <ul>
             <li>Pon - Pt: 6:30 - 17:30</li>
             <li>Sob: nieczynne</li>
@@ -35,7 +35,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h5>Kontakt z Nami i Zapisy</h5>
+          <h3>Kontakt z Nami i Zapisy</h3>
           <ul className={classes.contactInfo}>
             <li className={classes.phone}>
               <Link href={"tel:+48697560022"}>
@@ -59,7 +59,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className={classes.facebook}>
-          <h5>Social media</h5>
+          <h3>Social media</h3>
           <Link href="https://www.facebook.com/wesolewygibasy">
             <FaFacebook />
           </Link>
