@@ -8,12 +8,12 @@ import { Metadata } from "next";
 import SliderComponent from "@/components/UI/slider/slider";
 
 export const metadata = {
-  title: "Żłobek na Ulicy Stańczyka w Krakowie - Wesołe Wygibasy",
+  title: "Żłobek Kraków - Wesołe Wygibasy na ul. Stańczyka, Bronowice",
   alternates: {
     canonical: "/zlobek-na-ulicy-stanczyka",
   },
   keywords:
-    "Żłobek na Stańczyka, bronowice, zielonki, nowy Żłobek, dotacja, aktywny maluch",
+    "Żłobek na Bronowicach, nowoczesny, dotowany, Żłobek na Stańczyka, bronowice, zielonki, nowy Żłobek, dotacja, aktywny maluch",
   description:
     "Zobacz żłobek Wesołe Wygibasy na ul. Stańczyka w Krakowie. Przyjazne otoczenie, profesjonalna opieka i kreatywne zajęcia dla dzieci.",
 };
@@ -21,27 +21,27 @@ export const metadata = {
 const images = [
   {
     src: "sliders/stanczyka-slider/st1.jpg",
-    alt: "zdjecie ze srodka zlobka na ulicy stanczyka w krakowie",
+    alt: "Widok wnętrza żłobka Wesołe Wygibasy na Stańczyka w Krakowie",
   },
   {
     src: "sliders/stanczyka-slider/st2.jpg",
-    alt: "zdjecie ze srodka zlobka na ulicy stanczyka w krakowie",
+    alt: "Sala zabaw w żłobku na ul. Stańczyka w Krakowie, Wesołe Wygibasy",
   },
   {
     src: "sliders/stanczyka-slider/st3.jpg",
-    alt: "zdjecie ze srodka zlobka na ulicy stanczyka w krakowie",
+    alt: "Przytulne wnętrze żłobka w Bronowicach, Kraków",
   },
   {
     src: "sliders/stanczyka-slider/st4.jpg",
-    alt: "zdjecie ze srodka zlobka na ulicy stanczyka w krakowie",
+    alt: "Zdjęcie budynku Żłobka na Stańczyka",
   },
   {
     src: "sliders/stanczyka-slider/st5.jpg",
-    alt: "zdjecie ze srodka zlobka na ulicy stanczyka w krakowie",
+    alt: "Zdjęcie przedstawiające wejście do Żłobka",
   },
   {
     src: "sliders/stanczyka-slider/st6.jpg",
-    alt: "zdjecie ze srodka zlobka na ulicy stanczyka w krakowie",
+    alt: "Zdjęcie sali zabaw dla dzieci w Wesołych Wygibasach",
   },
 ];
 export default function stanczyka() {
@@ -74,7 +74,8 @@ export default function stanczyka() {
       </div>
       <div className={classes.container}>
         <h2 className={classes.header}>
-          Niepubliczny Żłobek Wesołe Wygibasy - ul. Stańczyka 8/LU3, Kraków
+          Nowoczesny żłobek z pełną opieką i wsparciem dla dzieci na Stańczyka
+          8/LU3 w Krakowie
         </h2>
         <h3>Placówka z wpisem do rejestru żłobków</h3>
         <p>
