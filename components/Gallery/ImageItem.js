@@ -21,7 +21,7 @@ export default function ImagesItem(props) {
         className={classes.image}
         alt=""
       />
-      <h3>{normalizedText}</h3>
+      <p>{normalizedText}</p>
     </div>
   );
 }
