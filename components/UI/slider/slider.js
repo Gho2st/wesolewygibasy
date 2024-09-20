@@ -35,7 +35,7 @@ export default function SliderComponent({ images }) {
       {
         breakpoint: 1224,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 2,
           infinite: true,
         },
@@ -59,6 +59,16 @@ export default function SliderComponent({ images }) {
   };
   return (
     <div className={classes.container}>
+      <h2>Obejrzyj Nasz Żłobek</h2>
+      <p>
+        Zapraszamy do obejrzenia naszej placówki <span>Wesołe Wygibasy</span> w
+        Krakowie! Nasz żłobek oferuje przyjazne i bezpieczne środowisko, w
+        którym dzieci mogą swobodnie się rozwijać, bawić i uczyć. Dbamy o to,
+        aby każde dziecko czuło się u nas jak w domu – otoczone opieką, ciepłem
+        i troską wykwalifikowanego personelu. Poniżej możesz zobaczyć zdjęcia
+        naszego żłobka, która pozwoli Ci zapoznać się z wnętrzami, salami zabaw
+        oraz przestrzenią, w której codziennie odbywają się ciekawe zajęcia.
+      </p>
       <Slider {...carouselSettings} className={classes.slider}>
         {images.map((image, index) => (
           <Image

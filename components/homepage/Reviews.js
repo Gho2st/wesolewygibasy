@@ -87,7 +87,7 @@ export default function Reviews() {
   };
 
   return (
-    <article className={classes.wrapper}>
+    <section className={classes.wrapper}>
       <div className={classes.container}>
         <h2>
           Ponad{" "}
@@ -220,6 +220,6 @@ export default function Reviews() {
           </Slider>
         </div>
       </div>
-    </article>
+    </section>
   );
 }

@@ -179,10 +179,10 @@
     font-size: 1.8rem;
   }
   .card {
-    width: 90%;
+    width: 100%;
   }
   .cardText {
-    padding: 1rem;
+    padding: 1.5rem;
     padding-bottom: 2rem;
   }
   .card img {

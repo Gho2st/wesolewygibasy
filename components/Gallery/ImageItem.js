@@ -19,7 +19,7 @@ export default function ImagesItem(props) {
         height={100}
         layout="responsive"
         className={classes.image}
-        alt=""
+        alt={props.alt}
       />
       <p>{normalizedText}</p>
     </div>

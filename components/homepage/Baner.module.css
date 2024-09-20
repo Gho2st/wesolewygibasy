@@ -25,11 +25,10 @@
 
 .textContainer p {
   margin-top: 1.5rem;
-  color: #616161;
   font-size: 1.1rem;
   width: 85%;
   word-spacing: 0.01rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 .imageContainer {
   display: flex;

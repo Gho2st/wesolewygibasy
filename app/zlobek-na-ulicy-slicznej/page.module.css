@@ -1,12 +1,15 @@
+.wrapper {
+  background: #fffbf2;
+}
+
 .container {
   padding: 2rem 9%;
-  margin-bottom: 12rem;
 }
 
 .baner {
   width: 100%;
-  display: flex;
   padding: 2rem 9%;
+  display: flex;
   justify-content: space-between;
   background: #c7eeff;
   background-image: url("/baner_nowy.png");
@@ -15,11 +18,9 @@
   background-position: bottom;
   min-height: 100vh;
 }
-
 .leftContainer {
   margin-top: 7rem;
-  width: 60%;
-  border-radius: 1rem;
+  width: 55%;
 }
 
 .leftContainer h1 {
@@ -30,67 +31,101 @@
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   font-size: 1.05rem;
-  color: #616161;
   word-spacing: 0.01rem;
+  font-weight: 400;
+}
+
+.header {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.header h2 {
+  font-size: 2.3rem;
   font-weight: 500;
 }
 
-.mapContainer {
-  margin-top: 2.5rem;
-  width: 100%;
-  border-radius: 1rem;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-}
-.mapContainer iframe {
-  width: 100%;
-  border-radius: 1rem;
-  border: 0;
-}
-
-.container p {
-  font-size: 1rem;
-  margin-top: 1rem;
-}
-
-.description ul {
-  padding-left: 3rem;
-}
-
-.container h3 {
-  margin-top: 1.5rem;
+.header p {
   margin-bottom: 1rem;
-}
-
-.buttonContainer {
-  display: flex;
-  margin-top: 1.5rem;
-}
-
-.container span {
+  font-weight: 500;
   color: #08c6c3;
-  font-weight: bold;
+  text-transform: uppercase;
 }
 
-.container h2 {
-  text-align: center;
-  margin-top: 3rem;
-  font-size: 1.5rem;
-  color: #fa7070;
+.cardWrapper {
+  min-height: 100vh;
 }
 
-.container h2:nth-child(1) {
-  margin-top: 1.3rem;
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 }
-.description h2 {
-  text-align: left;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card h3 {
+  font-size: 1.25rem;
   margin-bottom: 1rem;
 }
 
-.galleryContainer h2 {
-  font-size: 2.3rem;
-  margin-top: 3rem !important;
+.card p {
+  color: black;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.card a {
+  display: inline;
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.card a:hover {
+  color: var(--color-primary);
+}
+
+.card1 {
+  background: #ffe6e1;
+  color: #ff583d;
+}
+.card2 {
+  background: #ebe6fd;
+  color: #6d5ebc;
+}
+.card3 {
+  background: #fff3d4;
+  color: #f8b03f;
+}
+.card4 {
+  background: #d6fcf9;
+  color: #35d4ae;
+}
+
+.card5 {
+  background: #d7f4ff;
+  color: rgb(99, 169, 189);
+}
+
+.card6 {
+  background: #f9e5ff;
+  color: #d16eef;
+}
+
+@media (max-width: 1200px) {
+  .cardContainer {
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 2rem;
+  }
 }
 
 @media (max-width: 800px) {
@@ -98,32 +133,30 @@
     margin-top: 9rem;
     width: 95%;
   }
-  .mapContainer {
-    height: 250px;
+  .header h2 {
+    font-size: 1.8rem;
   }
 }
 
+@media (max-width: 700px) {
+  .cardContainer {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 600px) {
   .leftContainer {
     margin-top: 6rem;
     width: 95%;
   }
   .leftContainer h1 {
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
   }
-  .container {
-    margin-bottom: 6rem;
+
+  .leftContainer p {
+    font-size: 1rem;
   }
-  .container h2 {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    color: #fa7070;
-  }
-  .galleryContainer h2 {
-    font-size: 1.8rem;
-  }
-  .description ul {
-    padding-left: 1.5rem;
+  .header {
+    margin-bottom: 2.5rem;
   }
 }
 

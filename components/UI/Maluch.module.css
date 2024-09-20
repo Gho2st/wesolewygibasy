@@ -1,0 +1,70 @@
+.dotation {
+  padding: 2rem 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  min-height: 100vh;
+}
+.dotation img {
+  width: 40% !important;
+  height: 40% !important;
+  border-radius: 2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.dotation__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.dotation__text h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.dotation__text p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.dotation__buttons {
+  margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .dotation {
+    flex-direction: column-reverse;
+    gap: 5rem;
+    min-height: 100vh;
+    justify-content: center;
+  }
+  .dotation img {
+    width: 60% !important;
+    height: 60% !important;
+  }
+  .dotation__text {
+    width: 100%;
+  }
+  .dotation__text h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .dotation {
+    gap: 3rem;
+    padding-bottom: 4rem;
+  }
+  .dotation img {
+    margin-top: 2rem;
+    width: 80% !important;
+    height: 80% !important;
+  }
+  .dotation__text h2 {
+    font-size: 1.4rem;
+  }
+}

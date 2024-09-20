@@ -104,6 +104,17 @@ export default function ImagesContainer(props) {
 
   return (
     <div className={classes.container}>
+      <div className={classes.text}>
+        <h2>Galeria z wydarzeń</h2>
+        <p className={classes.galleryText}>
+          Przekonajcie się sami, jak radośnie i twórczo spędzają czas Wasze
+          maluszki w naszym żłobku <span>Wesołe Wygibasy</span> w Krakowie.
+          <br></br>
+          Zapraszamy do obejrzenia tych pięknych chwil, które pokazują miłość,
+          radość i rozwój naszych dzieci. <br></br> Zdjęcia ukazują różnorodne
+          wydarzenia i chwile z życia maluszków w naszej placówce.
+        </p>
+      </div>
       {loading && <p>Wczytywanie galerii zdjęć...</p>}
       {error && <p>Wystąpił błąd przy wczytywaniu galerii.</p>}
       {!loading && !error && (
@@ -114,6 +125,7 @@ export default function ImagesContainer(props) {
               onClick={() => handleImageClick(folder.folderName)}
               src={folder.imageUrl}
               text={folder.folderName}
+              alt={folder.folderName}
             />
           ))}
         </Slider>

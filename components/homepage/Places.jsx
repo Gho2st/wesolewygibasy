@@ -48,7 +48,7 @@ export default function Places(props) {
     },
   ];
   return (
-    <article
+    <section
       id="placowki"
       style={{ background: props.background ? "white" : "#fffbf2" }}
     >
@@ -92,6 +92,6 @@ export default function Places(props) {
           ))}
         </div>
       </motion.div>
-    </article>
+    </section>
   );
 }

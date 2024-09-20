@@ -16,7 +16,7 @@ export default function TextContainer() {
 
   return (
     <>
-      <article className={classes.wrapper} ref={skillRef}>
+      <section className={classes.wrapper} ref={skillRef}>
         <div className={classes.textContainer}>
           <motion.div
             initial={{ x: "-300px", opacity: 0 }}
@@ -101,7 +101,7 @@ export default function TextContainer() {
             ></Image>
           </motion.div>
         </div>
-      </article>
+      </section>
     </>
   );
 }

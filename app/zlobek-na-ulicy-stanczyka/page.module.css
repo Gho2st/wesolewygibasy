@@ -1,6 +1,9 @@
+.wrapper {
+  background: #fffbf2;
+}
+
 .container {
   padding: 2rem 9%;
-  margin-bottom: 12rem;
 }
 
 .baner {
@@ -17,7 +20,7 @@
 }
 .leftContainer {
   margin-top: 7rem;
-  width: 60%;
+  width: 55%;
 }
 
 .leftContainer h1 {
@@ -28,105 +31,101 @@
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   font-size: 1.05rem;
-  color: #616161;
   word-spacing: 0.01rem;
-  font-weight: 500;
-}
-
-.mapContainer {
-  margin-top: 2.5rem;
-  width: 100%;
-  border-radius: 1rem;
-  height: 450px;
-  display: flex;
-  justify-content: center;
-}
-.mapContainer iframe {
-  width: 100%;
-  border-radius: 1rem;
-  border: 0;
-}
-
-.image {
-  padding: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 35%;
-}
-
-.container h1 {
-  color: rgb(0, 0, 0);
-}
-
-.container h2 {
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  color: #fa7070;
-}
-
-.container h3 {
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-}
-.container p {
-  font-size: 1rem;
-}
-
-.description {
-  margin-top: 1.5rem;
+  font-weight: 400;
 }
 
 .header {
-  margin-top: 2rem !important;
-  position: relative;
-  margin-bottom: 3rem !important;
-}
-.header::after {
-  content: "";
-  display: block;
-  width: 100%;
-  margin: auto;
-  height: 2px;
-  background-color: #ddd;
-  margin-top: 1rem;
-  position: absolute;
-  bottom: -16px;
-  left: 0;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
 }
 
-.dotation {
-  color: #08c6c3 !important;
-  font-size: 1.2rem !important;
-}
-
-.buttonContainer {
-  display: flex;
-  margin-top: 2.5rem;
-}
-
-.buttonContainer svg {
-  font-size: 3rem;
-}
-
-.container span {
-  color: #08c6c3;
-  font-weight: bold;
-}
-
-.galleryContainer {
-  margin-top: 4rem;
-}
-.galleryContainer h2 {
+.header h2 {
   font-size: 2.3rem;
+  font-weight: 500;
 }
 
-.galleryText {
-  text-align: left;
-  width: 100%;
-  margin-top: 1.5rem !important;
+.header p {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #08c6c3;
+  text-transform: uppercase;
+}
+
+.cardWrapper {
+  min-height: 100vh;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: black;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.card a {
+  display: inline;
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.card a:hover {
+  color: var(--color-primary);
+}
+
+.card1 {
+  background: #ffe6e1;
+  color: #ff583d;
+}
+.card2 {
+  background: #ebe6fd;
+  color: #6d5ebc;
+}
+.card3 {
+  background: #fff3d4;
+  color: #f8b03f;
+}
+.card4 {
+  background: #d6fcf9;
+  color: #35d4ae;
+}
+
+.card5 {
+  background: #d7f4ff;
+  color: rgb(99, 169, 189);
+}
+
+.card6 {
+  background: #f9e5ff;
+  color: #d16eef;
+}
+
+@media (max-width: 1200px) {
+  .cardContainer {
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 2rem;
+  }
 }
 
 @media (max-width: 800px) {
@@ -134,8 +133,14 @@
     margin-top: 9rem;
     width: 95%;
   }
-  .mapContainer {
-    height: 250px;
+  .header h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .cardContainer {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 600px) {
@@ -146,18 +151,12 @@
   .leftContainer h1 {
     font-size: 1.8rem !important;
   }
-  .galleryContainer h2 {
-    font-size: 1.8rem;
-  }
-  .header {
-    margin-top: 1rem !important;
-    font-size: 1.4rem !important;
-  }
+
   .leftContainer p {
     font-size: 1rem;
   }
-  .container {
-    margin-bottom: 6rem;
+  .header{
+    margin-bottom: 2.5rem;
   }
 }
 

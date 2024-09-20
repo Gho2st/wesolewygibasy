@@ -1,44 +1,37 @@
-.container {
-  margin-top: 3rem;
-}
-.container h2 {
-  margin-bottom: 2rem;
-  font-size: 2.3rem;
-}
-
-.container p {
-  margin-top: 1rem !important;
-  margin-bottom: 1rem;
-}
-
-.container h3 {
-  margin: 0 !important;
-  font-size: 1.25rem;
-}
-
-.header {
-  margin-top: 1.5rem;
-  display: flex;
-}
-
-.header {
-  font-size: 1.3rem;
-  transition: 0.3s;
-}
-
-.header:hover {
-  cursor: pointer;
-  color: rgb(255, 153, 0);
-}
-.icon {
+.wrapper {
+  min-height: 100vh;
+  padding: 2rem 9%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.icon svg {
-  font-size: 1.6rem;
-  margin-left: 0.5rem;
+.container {
+  width: 100%;
+}
+
+.head h2 {
+  margin-bottom: 1rem;
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 2rem;
+}
+.header2 {
+  margin-top: 1.5rem;
+  display: flex;
+  font-size: 0.95rem;
+  border: 2px solid var(--color-primary);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.header:hover {
+  cursor: pointer;
+  color: var(--color-primary);
 }
 
 .daySchedule {
@@ -60,16 +53,31 @@
   margin-top: 2rem;
 }
 
-.extra span {
-  margin-left: 0.1rem;
-  margin-right: 0.1rem;
+.extra p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .extra h5 {
   font-size: 1.1rem;
 }
 
+@media (max-width: 800px) {
+  .buttonContainer {
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  .header2 {
+    margin-top: 0rem;
+  }
+}
+
 @media (max-width: 600px) {
+  .container {
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+  }
   .container h2 {
     font-size: 1.8rem !important;
   }
