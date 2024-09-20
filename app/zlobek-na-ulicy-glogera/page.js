@@ -95,7 +95,9 @@ export default function glogera() {
                   </p>
                 </div>
                 <div>
-                  <Link href="/informacje-dla-rodzicow">Informacje</Link>
+                  <Link href="/informacje-dla-rodzicow">
+                    Informacje dla rodziców
+                  </Link>
                 </div>
               </div>
               <div className={`${classes.card} ${classes.card2}`}>
@@ -133,7 +135,7 @@ export default function glogera() {
                   </p>
                 </div>
                 <div>
-                  <Link href="/galeria">Galeria</Link>
+                  <Link href="/adaptacja-w-zlobku">Adaptacja w Żłobku</Link>
                 </div>
               </div>
               <div className={`${classes.card} ${classes.card4}`}>

@@ -109,7 +109,7 @@ export default function sliczna() {
                   </p>
                 </div>
                 <div>
-                  <Link href="/informacje-dla-rodzicow">Informacje</Link>
+                  <Link href="/informacje-dla-rodzicow">Informacje dla rodziców</Link>
                 </div>
               </div>
 
@@ -139,7 +139,7 @@ export default function sliczna() {
                   </p>
                 </div>
                 <div>
-                  <Link href="/galeria">Galeria</Link>
+                  <Link href="/adaptacja-w-zlobku">Adaptacja w Żłobku</Link>
                 </div>
               </div>
 
