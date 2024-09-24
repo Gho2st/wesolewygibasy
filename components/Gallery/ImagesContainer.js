@@ -11,6 +11,11 @@ import Modal from "react-modal";
 import Gallery from "./Gallery";
 import { IoMdClose } from "react-icons/io";
 
+// Function to normalize text
+function normalizeText(text) {
+  return text.normalize("NFC");
+}
+
 export default function ImagesContainer(props) {
   const [showModal, setShowModal] = useState(false);
   const [selectedFolder, setSelectedFolder] = useState("");
@@ -21,8 +26,6 @@ export default function ImagesContainer(props) {
   console.log(props.folder);
 
   useEffect(() => {
-    console.log("Fetching folders for:", props.folder);
-
     async function fetchFolders() {
       try {
         const response = await fetch(`/api/get_folders_aws/${props.folder}`);
@@ -30,7 +33,6 @@ export default function ImagesContainer(props) {
           throw new Error("Network response was not ok");
         }
         const data = await response.json();
-        console.log(data);
         setFolders(data);
       } catch (error) {
         console.error("Error fetching folders:", error);
@@ -124,7 +126,7 @@ export default function ImagesContainer(props) {
               key={folder.folderName}
               onClick={() => handleImageClick(folder.folderName)}
               src={folder.imageUrl}
-              text={folder.folderName}
+              text={normalizeText(folder.folderName)}
               alt={folder.folderName}
             />
           ))}
@@ -143,7 +145,7 @@ export default function ImagesContainer(props) {
           <button onClick={closeModal} className={classes.closeButton}>
             <IoMdClose />
           </button>
-          {/* <h3>{selectedFolder}</h3> */}
+          <h3>{normalizeText(selectedFolder)}</h3>
           {selectedFolder && (
             <Gallery folder={`${props.folder}/${selectedFolder}`} />
           )}

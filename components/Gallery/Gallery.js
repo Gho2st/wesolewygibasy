@@ -14,7 +14,6 @@ function Gallery({ folder }) {
           throw new Error("Folder not found");
         }
         const data = await response.json();
-        console.log(data);
         setImages(data);
       } catch (error) {
         console.error("Error fetching images:", error);
@@ -36,7 +35,7 @@ function Gallery({ folder }) {
             images.map((image, index) => (
               <Image
                 key={index}
-                src={image.imageUrl} // Use imageUrl from the fetched data
+                src={image.imageUrl}
                 width={100}
                 height={100}
                 alt={`Gallery Image ${index}`}
