@@ -31,17 +31,21 @@
 .card {
   background: orange;
   border-radius: 2rem;
-  padding: 1.3rem 1.3rem;
+  padding: 1.2rem 1.2rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .card svg {
-  font-size: 2.8rem;
+  font-size: 2.3rem;
 }
 
 .card h3 {
   margin-top: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 0.95rem;
 }
 
 .card1 {
