@@ -27,8 +27,6 @@ export async function GET(request, { params }) {
     const command = new ListObjectsV2Command(commandParams);
     const response = await s3Client.send(command);
 
-    console.log("S3 Response:", response);
-
     // Extract image URLs
     const images = (response.Contents || [])
       .filter((object) => /\.(jpg|jpeg|png|gif)$/i.test(object.Key)) // Filter only image files
