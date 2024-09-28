@@ -13,6 +13,7 @@ body {
   max-height: 100vh;
   font-size: 18px;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 span {
