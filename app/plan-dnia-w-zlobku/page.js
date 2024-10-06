@@ -7,8 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-  title:
-    "Plan Dnia w Żłobku Wesołe Wygibasy - Kraków | Harmonogram, Zajęcia, Edukacja",
+  title: "Plan Dnia - Żłobek Wesołe Wygibasy Kraków | Zajęcia i Edukacja",
   alternates: {
     canonical: "/plan-dnia-w-zlobku",
   },

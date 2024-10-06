@@ -42,7 +42,8 @@
 }
 
 .card p {
-  color: grey;
+  font-weight: 400;
+  color: black;
 }
 
 .text {
@@ -94,7 +95,7 @@
   background: #d86161;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
   .banerContainer {
     margin-top: 3rem;
     display: flex;

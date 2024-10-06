@@ -6,6 +6,8 @@ import Image from "next/image";
 
 export const metadata = {
   title: "Informacje - Żłobek Wesołe Wygibasy w Krakowie",
+  description:
+    "Znajdź ważne informacje dla rodziców i opiekunów dzieci w Żłobku Wesołe Wygibasy w Krakowie. Dowiedz się więcej o statucie, regulaminie, ochronie małoletnich oraz polityce prywatności.",
   alternates: {
     canonical: "/informacje-dla-rodzicow",
   },

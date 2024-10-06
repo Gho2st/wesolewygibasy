@@ -20,7 +20,7 @@ export default function Contact() {
   return (
     <>
       <div className={classes.container}>
-        <Header text="Zapisz Swoje Dziecko w Najlepszym Żłobku w Krakowie!" />
+        <Header text="Rodzinny Żłobek w Krakowie - Zapisz Swoje Dziecko Już Dziś!" />
         <p>
           Czy szukasz bezpiecznego i przyjaznego środowiska, w którym Twoje
           dziecko może rozwijać się każdego dnia? Krakowski żłobek Wesołe
