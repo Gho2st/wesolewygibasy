@@ -1,6 +1,7 @@
 import classes from "./Maluch.module.css";
 import Link from "next/link";
 import Button from "./Button";
+import Button2 from "./Button2";
 import Image from "next/image";
 export default function Maluch() {
   return (
@@ -34,10 +35,10 @@ export default function Maluch() {
           </p>
           <div className={classes.dotation__buttons}>
             <Link href="/cennik-i-jadlospis-w-zlobku">
-              <Button text="Cennik" fontSize="1rem" />
+              <Button text="Cennik" />
             </Link>
             <Link href="/zapisy">
-              <Button text="Zapisy" fontSize="1rem" background="#7C99E5" />
+              <Button2 text="Zapisy" />
             </Link>
           </div>
         </div>
