@@ -9,14 +9,16 @@
   border-radius: 1rem;
   padding: 1rem;
   font-size: 16px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .containerLeft select {
   margin: 0.7rem 0;
   width: 100%;
   border-radius: 1rem;
   padding: 1rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   color: rgb(0, 0, 0);
   opacity: 0.7;
   font-size: 1rem;
@@ -29,7 +31,8 @@
   padding: 1rem;
   font-size: 16px;
   color: rgb(74, 74, 74);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   margin-top: 1rem;
 }
 .containerLeft textarea::placeholder {
@@ -77,7 +80,9 @@
   border: 0;
   margin-top: 1rem;
   padding: 0.9rem 2rem;
-  background: #B30505;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background: #38a942;
   color: rgb(255, 255, 255);
   font-weight: 600;
   font-size: 1rem;
