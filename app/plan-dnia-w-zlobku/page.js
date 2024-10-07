@@ -42,7 +42,7 @@ export default function PlanDnia() {
               <Link href="#placowki">
                 <Button
                   text="Sprawdź plan"
-                  background="#7C99E5"
+                  background="#2348A9"
                   fontSize="1rem"
                 />
               </Link>

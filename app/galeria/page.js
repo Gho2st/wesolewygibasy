@@ -53,7 +53,7 @@ export default function Galeria() {
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="/zapisy" className={classes.link}>
-                  <Button text="Zapisy" fontSize="1rem" background="#B30505" />
+                  <Button text="Zapisy" fontSize="1rem" />
                 </Link>
                 <Link href="#placowki">
                   <Button text="Galeria" fontSize="1rem" background="#2348A9" />

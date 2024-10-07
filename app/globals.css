@@ -17,12 +17,14 @@ body {
   line-height: 2rem;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
   line-height: 2.5rem;
 }
 
 span {
-  color: #B30505;
+  color: #ff6666;
   font-weight: bold;
 }
 

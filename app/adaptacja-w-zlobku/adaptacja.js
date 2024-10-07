@@ -32,8 +32,11 @@ export default function Adaptacja() {
                 <Link href="/zapisy" className={classes.link}>
                   <Button text="Zapisy" fontSize="1rem" />
                 </Link>
-                <Link href="/cennik-i-jadlospis-w-zlobku" className={classes.link}>
-                  <Button text="Cennik" fontSize="1rem" background="#7C99E5" />
+                <Link
+                  href="/cennik-i-jadlospis-w-zlobku"
+                  className={classes.link}
+                >
+                  <Button text="Cennik" fontSize="1rem" background="#2348A9" />
                 </Link>
               </div>
             </div>
