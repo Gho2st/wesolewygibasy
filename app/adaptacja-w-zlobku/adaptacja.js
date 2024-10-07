@@ -1,6 +1,7 @@
 import classes from "./adaptacja.module.css";
 import Image from "next/image";
 import Button from "@/components/UI/Button";
+import Button2 from "@/components/UI/Button2";
 import Link from "next/link";
 export default function Adaptacja() {
   return (
@@ -30,13 +31,13 @@ export default function Adaptacja() {
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="/zapisy" className={classes.link}>
-                  <Button text="Zapisy" fontSize="1rem" />
+                  <Button text="Zapisy" />
                 </Link>
                 <Link
                   href="/cennik-i-jadlospis-w-zlobku"
                   className={classes.link}
                 >
-                  <Button text="Cennik" fontSize="1rem" background="#2348A9" />
+                  <Button2 text="Cennik" />
                 </Link>
               </div>
             </div>

@@ -3,6 +3,7 @@ import classes from "./page.module.css";
 import Image from "next/image";
 import { Metadata } from "next";
 import Button from "@/components/UI/Button";
+import Button2 from "@/components/UI/Button2";
 import Link from "next/link";
 import Adaptacja from "./adaptacja";
 import { FaLongArrowAltRight } from "react-icons/fa";

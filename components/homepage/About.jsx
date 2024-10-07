@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import Button from "../UI/Button";
+import Button2 from "../UI/Button2";
 import classes from "./About.module.css";
 import Image from "next/image";
 import { FaCircleCheck } from "react-icons/fa6";
@@ -93,14 +94,10 @@ export default function About() {
             <div className={classes.contactInfoContainer}>
               <div>
                 <Link href="/o-nas">
-                  <Button text="O nas" fontSize="0.9rem" />
+                  <Button text="O nas" />
                 </Link>
                 <Link href="/zapisy">
-                  <Button
-                    text="Zapisy"
-                    fontSize="0.9rem"
-                    background="#2348A9"
-                  />
+                  <Button2 text="Zapisy" />
                 </Link>
               </div>
               <div className={classes.ownerContainer}>

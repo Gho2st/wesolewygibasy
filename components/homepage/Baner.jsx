@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import Button from "../UI/Button";
+import Button2 from "../UI/Button2";
 import classes from "./Baner.module.css";
 
 export default function Baner() {
@@ -20,14 +21,10 @@ export default function Baner() {
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="#czytaj-wiecej">
-                  <Button text="Czytaj więcej" fontSize="1rem" />
+                  <Button text="Czytaj więcej" />
                 </Link>
                 <Link href="#placowki">
-                  <Button
-                    text="Placówki"
-                    background="#2348A9"
-                    fontSize="1rem"
-                  />
+                  <Button2 text="Placówki" />
                 </Link>
               </div>
             </div>

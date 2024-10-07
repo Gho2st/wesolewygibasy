@@ -5,6 +5,8 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/UI/Button";
+import Button2 from "@/components/UI/Button2";
+
 
 export const metadata = {
   title: "Galeria - Żłobek Wesołe Wygibasy w Krakowie",
@@ -53,10 +55,10 @@ export default function Galeria() {
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="/zapisy" className={classes.link}>
-                  <Button text="Zapisy" fontSize="1rem" />
+                  <Button text="Zapisy" />
                 </Link>
                 <Link href="#placowki">
-                  <Button text="Galeria" fontSize="1rem" background="#2348A9" />
+                  <Button2 text="Galeria" />
                 </Link>
               </div>
             </div>

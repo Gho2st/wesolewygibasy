@@ -67,11 +67,7 @@
   .textContainer p {
     font-size: 1.1rem;
   }
-  .buttonContainer button {
-    padding: 0.9rem 1.3rem;
-    font-size: 1rem !important;
-    margin-right: 2rem !important;
-  }
+
   .imageContainer {
     display: flex;
     justify-content: flex-end;
@@ -101,22 +97,9 @@
   .textContainer p {
     font-size: 1.1rem;
   }
-  .buttonContainer button {
-    font-size: 1rem !important;
-    margin-right: 1rem !important;
-  }
-}
-
-@media (max-width: 406px) {
-  .buttonContainer button {
-    font-size: 0.9rem !important;
-  }
 }
 
 @media (max-width: 381px) {
-  .buttonContainer button {
-    padding: 0.9rem 0.9rem;
-  }
   .banerContainer {
     background-size: 150%;
   }

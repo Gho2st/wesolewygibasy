@@ -5,8 +5,9 @@
 .buttonContainer button {
   padding: 0.9rem 1.3rem;
   border-radius: 0.5rem;
-  background: #256527;
-  color: rgb(255, 255, 255);
+  background: #ff5353;
+  color: #ffffff;
+  font-size: 1.1rem;
   font-weight: bold;
   border: 0px;
   margin-right: 1rem;

@@ -3,6 +3,7 @@ import Places from "@/components/homepage/Places";
 import { Metadata } from "next";
 import Header from "@/components/UI/Header";
 import Button from "@/components/UI/Button";
+import Button2 from "@/components/UI/Button2";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -37,14 +38,10 @@ export default function PlanDnia() {
             </p>
             <div className={classes.buttonContainer}>
               <Link href="/zapisy">
-                <Button text="Zapisy" fontSize="1rem" />
+                <Button text="Zapisy" />
               </Link>
               <Link href="#placowki">
-                <Button
-                  text="Sprawdź plan"
-                  background="#2348A9"
-                  fontSize="1rem"
-                />
+                <Button2 text="Sprawdź plan" />
               </Link>
             </div>
           </div>

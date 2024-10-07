@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Stars from "../../components/UI/Stars";
 import Link from "next/link";
 import Button from "../UI/Button";
+import Button2 from "../UI/Button2";
 import { IoIosArrowForward } from "react-icons/io";
 import {
   motion,
@@ -112,8 +113,6 @@ export default function Reviews() {
           <Link href="https://g.page/r/CVSRHQIb-HkkEBM/review">
             <Button
               text="Zostaw opinię!"
-              fontSize="1rem"
-              background="#38a942"
             />
           </Link>
         </div>
