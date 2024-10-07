@@ -2,8 +2,8 @@ import classes from "./Header.module.css";
 
 export default function Header(props) {
   return (
-    <header>
+    <div>
       <h1 className={classes.header}>{props.text}</h1>
-    </header>
+    </div>
   );
 }

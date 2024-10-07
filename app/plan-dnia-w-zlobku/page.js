@@ -21,7 +21,7 @@ export default function PlanDnia() {
   return (
     <>
       <div className={classes.container}>
-        <Header text="Plan Dnia w Żłobku Wesołe Wygibasy w Krakowie - Zajęcia i Harmonogram dla Dzieci" />
+        <Header text="Plan dnia w Żłobku Wesołe Wygibasy Kraków" />
         <div className={classes.banerContainer}>
           <div className={classes.text}>
             <p>Zobacz. I zapisz dziecko.</p>
@@ -48,13 +48,15 @@ export default function PlanDnia() {
               </Link>
             </div>
           </div>
-          <Image
-            src={"/others/plan.png"}
-            width={100}
-            height={100}
-            layout={"responsive"}
-            alt="grafika przedstawiająca plan zajęć w Żłobku Wesołe Wygibasy w Krakowie"
-          ></Image>
+          <div className={classes.imageContainer}>
+            <Image
+              src={"/others/plan.png"}
+              width={100}
+              height={100}
+              layout={"responsive"}
+              alt="Plan dnia w Żłobku Wesołe Wygibasy Kraków - zajęcia dla dzieci"
+            ></Image>
+          </div>
         </div>
       </div>
 

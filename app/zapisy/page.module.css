@@ -6,7 +6,7 @@
   padding-top: 2rem;
 }
 
-.container p{
+.container p {
   margin-top: 1rem;
 }
 
@@ -20,6 +20,7 @@
   justify-content: space-between;
   gap: 6rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 4rem;
 }
 .animals {
   width: 30%;
@@ -160,7 +161,6 @@
   .contactContainer {
     margin-top: 1.5rem;
     padding: 2rem;
-    margin-bottom: 0rem;
   }
 }
 

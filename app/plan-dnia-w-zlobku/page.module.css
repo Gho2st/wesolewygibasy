@@ -31,8 +31,11 @@
   margin-top: 2rem;
 }
 
-.banerContainer img {
-  width: 30% !important;
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
 }
 
 /* cloud container */
@@ -108,7 +111,7 @@
   color: #35d4ae;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
   .cardContainer {
     grid-template-columns: 1fr 1fr;
     margin-top: 1rem;
@@ -125,8 +128,8 @@
     width: 55%;
   }
 
-  .banerContainer img {
-    width: 35% !important;
+  .imageContainer {
+    width: 35%;
   }
 }
 
@@ -144,8 +147,8 @@
     margin-bottom: 0;
   }
 
-  .banerContainer img {
-    width: 50% !important;
+  .imageContainer {
+    width: 50%;
     margin: auto;
   }
 }
@@ -162,21 +165,21 @@
     margin-bottom: 1rem;
   }
 
-  .text h2{
+  .text h2 {
     font-size: 1.6rem;
     margin-bottom: 1rem;
   }
 
-  .banerContainer img {
-    width: 80% !important;
+  .imageContainer {
+    width: 80%;
   }
-  .head{
+  .head {
     margin-top: 2rem;
   }
-  .head h2{
+  .head h2 {
     font-size: 1.6rem;
   }
-  .card h3{
+  .card h3 {
     font-size: 1.3rem;
   }
 }

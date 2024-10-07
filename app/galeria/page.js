@@ -21,7 +21,7 @@ export default function Galeria() {
   return (
     <>
       <div className={classes.container}>
-        <Header text="Galeria zdjęć z życia codziennego i wydarzeń w Żłobku Wesołe Wygibasy Kraków" />
+        <Header text="Galeria z życia codziennego i wydarzeń w Żłobku Wesołe Wygibasy Kraków" />
         <div className={classes.banerContainer}>
           <div className={classes.imageContainer}>
             <Image
@@ -56,11 +56,7 @@ export default function Galeria() {
                   <Button text="Zapisy" fontSize="1rem" />
                 </Link>
                 <Link href="#placowki">
-                  <Button
-                    text="Galeria"
-                    background="#7C99E5"
-                    fontSize="1rem"
-                  />
+                  <Button text="Galeria" background="#7C99E5" fontSize="1rem" />
                 </Link>
               </div>
             </div>
