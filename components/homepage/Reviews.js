@@ -114,6 +114,7 @@ export default function Reviews() {
             <Button
               href="https://g.page/r/CVSRHQIb-HkkEBM/review"
               text="Zostaw opinię!"
+              background="green"
             />
           </div>
         </div>
