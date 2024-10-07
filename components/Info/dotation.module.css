@@ -11,7 +11,7 @@
   display: inline-block;
   padding: 0.9rem 1.3rem;
   border-radius: 0.5rem;
-  background: #B30505;
+  background: #38a942;
   color: rgb(255, 255, 255);
   font-weight: bold;
   border: 0px;
@@ -30,20 +30,20 @@
 
 .container h2 {
   font-size: 2.3rem;
-  color: #B30505;
 }
 
 .container h3 {
   font-size: 1.6rem;
   margin-top: 0.6rem;
   margin-bottom: 1.5rem;
+  font-weight: 500;
 }
 
 .container button {
   margin-top: 1.5rem;
   padding: 0.8rem 1rem;
   border-radius: 0.5rem;
-  background: #B30505;
+  background: #b30505;
   color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 1rem;

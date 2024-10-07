@@ -93,7 +93,7 @@ export default function About() {
             <div className={classes.contactInfoContainer}>
               <div>
                 <Link href="/o-nas">
-                  <Button text="O nas" fontSize="0.9rem" />
+                  <Button text="O nas" fontSize="0.9rem" background="#B30505" />
                 </Link>
                 <Link href="/zapisy">
                   <Button
