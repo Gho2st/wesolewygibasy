@@ -20,12 +20,16 @@ export default function Baner() {
               </p>
               <div className={classes.buttonContainer}>
                 <Link href="#czytaj-wiecej">
-                  <Button text="Czytaj więcej" fontSize="1rem" />
+                  <Button
+                    text="Czytaj więcej"
+                    fontSize="1rem"
+                    background="#B30505"
+                  />
                 </Link>
                 <Link href="#placowki">
                   <Button
                     text="Placówki"
-                    background="#7C99E5"
+                    background="#2348A9"
                     fontSize="1rem"
                   />
                 </Link>
