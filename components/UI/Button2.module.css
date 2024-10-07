@@ -1,20 +1,24 @@
 .buttonContainer {
-    display: inline-block;
-  }
-  
+  display: inline-block;
+}
+
+.buttonContainer button {
+  padding: 0.9rem 1.3rem;
+  border-radius: 0.5rem;
+  background: #4a71ff;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: 0px;
+  margin-right: 1rem;
+}
+
+.buttonContainer button:hover {
+  cursor: pointer;
+  transform: translateY(-1.5px);
+}
+@media (max-width: 600px) {
   .buttonContainer button {
-    padding: 0.9rem 1.3rem;
-    border-radius: 0.5rem;
-    background: #4a71ff;
-    color: #ffffff;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border: 0px;
-    margin-right: 1rem;
+    font-size: 1rem;
   }
-  
-  .buttonContainer button:hover {
-    cursor: pointer;
-    transform: translateY(-1.5px);
-  }
-  
+}

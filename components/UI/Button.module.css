@@ -17,3 +17,9 @@
   cursor: pointer;
   transform: translateY(-1.5px);
 }
+
+@media (max-width: 600px) {
+  .buttonContainer button {
+    font-size: 1rem;
+  }
+}
