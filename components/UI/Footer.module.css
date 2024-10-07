@@ -1,6 +1,7 @@
 .container {
   background: #fffbf2;
   padding-top: 3rem;
+  margin-top: 3rem;
 }
 
 .footerTopContainer {
@@ -11,7 +12,7 @@
   padding: 1rem;
 }
 .text p {
-  color: #666665;
+  font-weight: 400;
   font-weight: italic;
 }
 
