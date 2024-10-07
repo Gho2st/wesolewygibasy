@@ -90,31 +90,31 @@ export default function Reviews() {
   return (
     <section className={classes.wrapper}>
       <div className={classes.container}>
-        <h2>
-          Ponad{" "}
-          <motion.div
-            ref={counterRef}
-            className={classes.counter}
-            style={{ display: "inline-block" }}
-          >
-            {rounded === 0 ? 91 : rounded}
-          </motion.div>{" "}
-          zadowolonych klientów! Ocena 4.9/5!
-        </h2>
-        <p className={classes.description}>
-          Rodzice z Krakowa cenią sobie nasz żłobek za zaangażowanie i troskę,
-          jaką okazujemy dzieciom. Otrzymaliśmy wiele pozytywnych opinii, które
-          są dla nas najlepszą rekomendacją. Zaufanie, jakim obdarzają nas
-          rodzice, motywuje nas do nieustannego doskonalenia naszych usług.
-          Dołącz do grona naszych zadowolonych klientów. Sprawdź, co mówią o nas
-          inni!
-        </p>
-        <div className={classes.buttonContainer}>
-          <Link href="https://g.page/r/CVSRHQIb-HkkEBM/review">
-            <Button
-              text="Zostaw opinię!"
-            />
-          </Link>
+        <div className={classes.textContainer}>
+          <h2>
+            Ponad{" "}
+            <motion.div
+              ref={counterRef}
+              className={classes.counter}
+              style={{ display: "inline-block" }}
+            >
+              {rounded === 0 ? 91 : rounded}
+            </motion.div>{" "}
+            zadowolonych klientów! Ocena 4.9/5!
+          </h2>
+          <p className={classes.description}>
+            Rodzice z Krakowa cenią sobie nasz żłobek za zaangażowanie i troskę,
+            jaką okazujemy dzieciom. Otrzymaliśmy wiele pozytywnych opinii,
+            które są dla nas najlepszą rekomendacją. Zaufanie, jakim obdarzają
+            nas rodzice, motywuje nas do nieustannego doskonalenia naszych
+            usług. Dołącz do grona naszych zadowolonych klientów. Sprawdź, co
+            mówią o nas inni!
+          </p>
+          <div className={classes.buttonContainer}>
+            <Link href="https://g.page/r/CVSRHQIb-HkkEBM/review">
+              <Button text="Zostaw opinię!" />
+            </Link>
+          </div>
         </div>
         <div className={classes.reviewContainer}>
           <Slider {...settings} className={classes.slider}>

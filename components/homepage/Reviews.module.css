@@ -7,7 +7,7 @@
   color: green;
 }
 
-.container {
+.textContainer {
   padding: 2rem 9%;
 }
 
@@ -57,6 +57,7 @@
 
 .reviewContainer {
   margin-top: 3rem;
+  padding: 0rem 9%;
 }
 .reviewItem {
   width: 50%;
@@ -130,6 +131,10 @@
 @media (max-width: 600px) {
   .wrapper {
     padding: 0;
+  }
+  .reviewContainer {
+    padding: 0rem 0%;
+    margin-top: 1rem;
   }
   .container {
     margin-top: 0rem;

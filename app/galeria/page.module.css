@@ -40,7 +40,7 @@
 }
 
 .text {
-  color: grey;
+  font-weight: 400;
   margin-bottom: 1rem;
   font-size: 1.05rem;
 }
