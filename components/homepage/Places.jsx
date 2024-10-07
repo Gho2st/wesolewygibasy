@@ -17,7 +17,7 @@ export default function Places(props) {
       street: "ul. Śliczna 36/A",
       link: "zlobek-na-ulicy-slicznej",
       add: "Program Aktywny Maluch",
-      color: "#fa7070",
+      color: "#B30505",
     },
     {
       image: "/others/stanczyka.jpg",

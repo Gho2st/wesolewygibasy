@@ -13,7 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fa7070;
+  background: #B30505;
   width: 50px;
   height: 50px;
   border-radius: 100%;
@@ -32,7 +32,7 @@
 }
 .number {
   font-weight: bold;
-  color: rgb(255, 109, 109);
+  color: #B30505;
   font-size: 1.3rem;
 }
 
