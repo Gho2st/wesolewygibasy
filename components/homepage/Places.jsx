@@ -12,7 +12,7 @@ export default function Places(props) {
     {
       image: "sliders/sliczna-slider/sl4.jpg",
       alt: "Własny plac zabaw Żłobka Wesołe Wygibasy na ulicy Ślicznej",
-      title: "Miejsca w Nowym Żłobku",
+      title: "Żłobek na Ślicznej",
       location: "Żłobek, Kraków",
       street: "ul. Śliczna 36/A",
       link: "zlobek-na-ulicy-slicznej",

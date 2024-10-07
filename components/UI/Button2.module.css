@@ -2,23 +2,23 @@
   display: inline-block;
 }
 
-.buttonContainer button {
+.buttonContainer a {
   padding: 0.9rem 1.3rem;
   border-radius: 0.5rem;
   background: #4a71ff;
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
   border: 0px;
   margin-right: 1rem;
 }
 
-.buttonContainer button:hover {
+.buttonContainer a:hover {
   cursor: pointer;
   transform: translateY(-1.5px);
 }
 @media (max-width: 600px) {
-  .buttonContainer button {
+  .buttonContainer a {
     font-size: 1rem;
   }
 }

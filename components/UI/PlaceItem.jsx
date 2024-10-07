@@ -24,9 +24,7 @@ export default function PlaceItem(props) {
           </div>
           <div className={classes.innerContainer}>
             <div className={classes.buttonContainer}>
-              <Link href={"/" + props.link}>
-                <Button text="Sprawdź" fontSize="1rem" />
-              </Link>
+              <Button text="Sprawdź" fontSize="1rem" href={"/" + props.link} />
             </div>
             <div
               className={classes.dotationText}

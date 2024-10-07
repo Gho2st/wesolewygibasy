@@ -19,27 +19,24 @@ export default function Adaptacja() {
           </div>
           <div className={classes.textContainer}>
             <div>
-              <p>Poznaj. Odkryj. Proces.</p>
-              <h2>Adaptacja to kluczowy moment dla dziecka w Żłobku.</h2>
-              <p className={classes.text}>
-                Adaptacja dziecka w żłobku to kluczowy moment w jego rozwoju.
-                Rozumiemy, jak ważne są komfort i poczucie bezpieczeństwa w
-                nowym otoczeniu, dlatego oferujemy
-                <span> 8 bezpłatnych spotkań</span> adaptacyjnych, które ułatwią
-                zarówno dziecku, jak i rodzicom ten ważny krok. Wesołe Wygibasy
-                czekają na Was.
-              </p>
-              <div className={classes.buttonContainer}>
-                <Link href="/zapisy" className={classes.link}>
-                  <Button text="Zapisy" />
-                </Link>
-                <Link
-                  href="/cennik-i-jadlospis-w-zlobku"
-                  className={classes.link}
-                >
-                  <Button2 text="Cennik" />
-                </Link>
-              </div>
+              <article>
+                <p>Poznaj. Odkryj. Proces.</p>
+                <h2>Adaptacja to kluczowy moment dla dziecka w Żłobku.</h2>
+
+                <p className={classes.text}>
+                  Adaptacja dziecka w żłobku to kluczowy moment w jego rozwoju.
+                  Rozumiemy, jak ważne są komfort i poczucie bezpieczeństwa w
+                  nowym otoczeniu, dlatego oferujemy
+                  <span> 8 bezpłatnych spotkań</span> adaptacyjnych, które
+                  ułatwią zarówno dziecku, jak i rodzicom ten ważny krok. Wesołe
+                  Wygibasy czekają na Was.
+                </p>
+
+                <div className={classes.buttonContainer}>
+                  <Button text="Plan dnia" href="/plan-dnia-w-zlobku" />
+                  <Button2 text="Cennik" href="/cennik-i-jadlospis-w-zlobku" />
+                </div>
+              </article>
             </div>
           </div>
         </div>

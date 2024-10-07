@@ -13,13 +13,17 @@
 .cloudContainer {
   min-height: 100vh;
   background: #ffe3e1;
-  --mask: radial-gradient(78.1px at 50% 110px, #000 99%, #0000 101%)
-      calc(50% - 100px) 0/200px 100%,
-    radial-gradient(78.1px at 50% -60px, #0000 99%, #000 101%) 50% 50px/200px
-      100% repeat-x;
+  --mask: radial-gradient(76.2px at 50% 107.5px, #000 99%, #0000 101%)
+      calc(50% - 100px) 0/200px 51% repeat-x,
+    radial-gradient(76.2px at 50% -57.5px, #0000 99%, #000 101%) 50% 50px/200px
+      calc(51% - 50px) repeat-x,
+    radial-gradient(76.2px at 50% calc(100% - 107.5px), #000 99%, #0000 101%)
+      calc(50% - 100px) 100%/200px 51% repeat-x,
+    radial-gradient(76.2px at 50% calc(100% + 57.5px), #0000 99%, #000 101%) 50%
+      calc(100% - 50px) / 200px calc(51% - 50px) repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
-  padding: 6rem 9%;
+  padding: 8rem 9%;
 }
 
 .head {
@@ -133,6 +137,32 @@
   transform: translateY(-50%);
   font-size: 2rem;
   color: #08c6c3;
+}
+
+/* TEXT CONTAINER */
+
+.textContainer {
+  padding: 4rem 9%;
+  padding-top: 0;
+}
+
+.textContainer h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+.textContainer p{
+  margin-bottom: 0.5rem;
+}
+
+.textContainer a {
+  color: #fa7070;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.textContainer a:hover {
+  color: #ff2c2c;
 }
 
 @media (max-width: 1400px) {

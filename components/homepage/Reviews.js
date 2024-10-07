@@ -111,9 +111,10 @@ export default function Reviews() {
             mówią o nas inni!
           </p>
           <div className={classes.buttonContainer}>
-            <Link href="https://g.page/r/CVSRHQIb-HkkEBM/review">
-              <Button text="Zostaw opinię!" />
-            </Link>
+            <Button
+              href="https://g.page/r/CVSRHQIb-HkkEBM/review"
+              text="Zostaw opinię!"
+            />
           </div>
         </div>
         <div className={classes.reviewContainer}>

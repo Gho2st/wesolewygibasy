@@ -9,6 +9,7 @@ import SliderComponent from "@/components/UI/slider/slider";
 import Maluch from "@/components/UI/Maluch";
 import Map from "@/components/UI/Map";
 import { FaCircleArrowRight } from "react-icons/fa6";
+import Button2 from "@/components/UI/Button2";
 export const metadata = {
   title: "Żłobek na Ulicy Glogera w Krakowie - Wesołe Wygibasy",
   alternates: {
@@ -62,12 +63,8 @@ export default function glogera() {
                   Sprawdź szczegóły i zapisz swoje dziecko już dziś!
                 </p>
                 <div className={classes.buttonContainer}>
-                  <Link href="/o-nas">
-                    <Button background="#B30000" text="O nas" />
-                  </Link>
-                  <Link href="/zapisy">
-                    <Button background="#0037FF" text="Zapisy" />
-                  </Link>
+                  <Button text="O nas" background="#B30000" href="/o-nas" />
+                  <Button2 text="Zapisy" background="#0037FF" href="/zapisy" />
                 </div>
               </div>
             </div>

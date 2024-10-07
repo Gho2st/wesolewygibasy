@@ -56,12 +56,8 @@ export default function vetulaniego() {
                   zgiełku.
                 </p>
                 <div className={classes.buttonContainer}>
-                  <Link href="/o-nas">
-                    <Button background="#B30000" text="O nas" />
-                  </Link>
-                  <Link href="/zapisy">
-                    <Button background="#0037FF" text="Zapisy" />
-                  </Link>
+                  <Button background="#B30000" text="O nas" href="/o-nas" />
+                  <Button background="#0037FF" text="Zapisy" href="/zapisy" />
                 </div>
               </div>
             </div>

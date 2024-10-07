@@ -73,7 +73,7 @@
 
 .cardContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
   margin-bottom: 3rem;
   margin-top: 3rem;
@@ -87,7 +87,7 @@
 
 .card p {
   color: black;
-  font-weight: 400;
+  font-weight: 500;
 }
 .card h3 {
   margin-bottom: 1.5rem;
@@ -96,7 +96,7 @@
 
 .card1 {
   background: #daffc6;
-  color: #6cd813;
+  color: #4fa608;
 }
 .card2 {
   background: #ebe6fd;
@@ -104,11 +104,19 @@
 }
 .card3 {
   background: #fff3d4;
-  color: #f8b03f;
+  color: #c5851e;
 }
 .card4 {
   background: #d6fcf9;
-  color: #35d4ae;
+  color: #24b190;
+}
+.card5 {
+  background: #dbe7ff;
+  color: #2c51a1;
+}
+.card6 {
+  background: #ffefef;
+  color: #c77373;
 }
 
 @media (max-width: 1500px) {

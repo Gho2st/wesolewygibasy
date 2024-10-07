@@ -34,12 +34,8 @@ export default function Maluch() {
             pewność, że znajduje się pod opieką profesjonalistów.
           </p>
           <div className={classes.dotation__buttons}>
-            <Link href="/cennik-i-jadlospis-w-zlobku">
-              <Button text="Cennik" />
-            </Link>
-            <Link href="/zapisy">
-              <Button2 text="Zapisy" />
-            </Link>
+            <Button text="Cennik" href="/cennik-i-jadlospis-w-zlobku" />
+            <Button2 text="Zapisy" href="/zapisy" />
           </div>
         </div>
         <Image

@@ -64,6 +64,7 @@
   -webkit-mask: var(--mask);
   mask: var(--mask);
   padding: 6rem 9%;
+  padding-bottom: 8rem;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -84,8 +85,8 @@
 
 .cardContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 }
 
 .card {

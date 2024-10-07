@@ -102,9 +102,6 @@
   color: orange;
 }
 
-.container a {
-  margin-right: 0rem;
-}
 
 @media (max-width: 1349px) {
   .item {

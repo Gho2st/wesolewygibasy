@@ -9,6 +9,7 @@ import SliderComponent from "@/components/UI/slider/slider";
 import Maluch from "@/components/UI/Maluch";
 import Map from "@/components/UI/Map";
 import { FaCircleArrowRight } from "react-icons/fa6";
+import Button2 from "@/components/UI/Button2";
 
 export const metadata = {
   title: "Żłobek Kraków - Wesołe Wygibasy na ul. Stańczyka, Bronowice",
@@ -64,12 +65,8 @@ export default function stanczyka() {
                   doskonałą opiekę i bezpieczeństwo zatwierdzone przez sanepid.
                 </p>
                 <div className={classes.buttonContainer}>
-                  <Link href="/o-nas">
-                    <Button background="#B30000" text="O nas" />
-                  </Link>
-                  <Link href="/zapisy">
-                    <Button background="#0037FF" text="Zapisy" />
-                  </Link>
+                  <Button background="#B30000" text="O nas" href="/o-nas" />
+                  <Button2 background="#0037FF" text="Zapisy" href="/zapisy" />
                 </div>
               </div>
             </div>

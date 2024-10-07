@@ -6,7 +6,7 @@ import classes from "./Baner.module.css";
 
 export default function Baner() {
   return (
-    <article>
+    <section>
       <div className={classes.banerContainer}>
         <div className={classes.textContainer}>
           <div className={classes.left}>
@@ -20,17 +20,21 @@ export default function Baner() {
                 okolicznych miejscowości.
               </p>
               <div className={classes.buttonContainer}>
-                <Link href="#czytaj-wiecej">
-                  <Button text="Czytaj więcej" background="#B30000" />
-                </Link>
-                <Link href="#placowki">
-                  <Button2 text="Placówki" background="#0037FF" />
-                </Link>
+                <Button
+                  text="Czytaj więcej"
+                  background="#B30000"
+                  href="#czytaj-wiecej"
+                />
+                <Button2
+                  text="Placówki"
+                  background="#0037FF"
+                  href="#placowki"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </article>
+    </section>
   );
 }
