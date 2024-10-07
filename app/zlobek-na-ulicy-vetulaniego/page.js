@@ -57,14 +57,10 @@ export default function vetulaniego() {
                 </p>
                 <div className={classes.buttonContainer}>
                   <Link href="/o-nas">
-                    <Button background="#fa7070" text="O nas" fontSize="1rem" />
+                    <Button background="#B30000" text="O nas" />
                   </Link>
                   <Link href="/zapisy">
-                    <Button
-                      background="#7C99E5"
-                      text="Zapisy"
-                      fontSize="1rem"
-                    />
+                    <Button background="#0037FF" text="Zapisy" />
                   </Link>
                 </div>
               </div>
