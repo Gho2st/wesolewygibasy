@@ -61,7 +61,10 @@ export default function Footer() {
           </div>
           <div className={classes.facebook}>
             <h3>Social media</h3>
-            <Link href="https://www.facebook.com/wesolewygibasy">
+            <Link
+              href="https://www.facebook.com/wesolewygibasy"
+              aria-label="Poczytaj więcej na naszym facebooku Wesołe Wygibasy"
+            >
               <FaFacebook />
             </Link>
           </div>
