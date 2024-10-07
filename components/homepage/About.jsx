@@ -99,7 +99,7 @@ export default function About() {
                   <Button
                     text="Zapisy"
                     fontSize="0.9rem"
-                    background="#7C99E5"
+                    background="#2348A9"
                   />
                 </Link>
               </div>
