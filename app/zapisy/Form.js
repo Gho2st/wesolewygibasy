@@ -9,11 +9,21 @@ export default function Form({ onFormSubmit }) {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  const [startDate, setStartDate] = useState("");
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formError, setFormError] = useState(null);
   const [errorFields, setErrorFields] = useState([]);
   const [selectedLocation, setSelectedLocation] = useState("");
+
+  // Funkcja do pobrania bieżącej daty w formacie YYYY-MM-DD
+  const getTodayDate = () => {
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2, "0"); // Dodanie zera wiodącego dla miesięcy 1-9
+    const day = String(today.getDate()).padStart(2, "0"); // Dodanie zera wiodącego dla dni 1-9
+    return `${year}-${month}-${day}`;
+  };
+
+  const [startDate, setStartDate] = useState(getTodayDate()); // Ustawienie domyślnej daty na dzisiejszy dzień
 
   const sendMail = async (e) => {
     e.preventDefault();

@@ -2,7 +2,7 @@ import Contact from "./Contact";
 import { Metadata } from "next";
 
 export const metadata = {
-  title: "Zapisy w Żłobku Wesołe Wygibasy w Krakowie",
+  title: "Żłobek Wesołe Wygibasy Kraków - Zapisy Otworzone!",
   alternates: {
     canonical: "/zapisy",
   },
