@@ -67,7 +67,7 @@ export default function TeamVetulaniego(props) {
         <TeamMember
           src="/team/vetulaniego/anna.jpg"
           name="Anna Jargosz"
-          role="Opiekunka Dziecięca"
+          role="Kierownik, Opiekunka Dziecięca"
           quote="Praca z dziećmi daje mi dużo radości, a ich szczery uśmiech sprawia że nie wyobrażam sobie innej pracy."
         />
         <TeamMember
@@ -348,10 +348,10 @@ export function TeamSliczna(props) {
     <div className={classes.container}>
       <h3>{props.place}</h3>
       <Slider {...carouselSettings} className={classes.slider}>
-      <TeamMember
+        <TeamMember
           src="/team/sliczna/natalia.jpeg"
           name="Natalia Swatek"
-          role="Kierownik"
+          role="Kierownik, Opiekunka Dziecięca"
           quote="Uśmiech dzieci potrafi przynieść ulgę w nawet najtrudniejszych momentach."
         />
         <TeamMember
