@@ -65,18 +65,6 @@ export default function TeamVetulaniego(props) {
 
       <Slider {...carouselSettings} className={classes.slider}>
         <TeamMember
-          src="/team/vetulaniego/natalia.jpg"
-          name="Natalia Swatek"
-          role="Kierownik, Opiekunka Dziecięca"
-          quote="Uśmiech dzieci potrafi przynieś ulgę nawet w najtrudniejszych momentach."
-        />
-        <TeamMember
-          src="/team/vetulaniego/agnieszka.jpg"
-          name="Agnieszka Kluzek"
-          role="Opiekunka Dziecięca"
-          quote="Uwielbiam obserwować rozwój dziecka i zdobywanie przez nich nowych umiejętności."
-        />
-        <TeamMember
           src="/team/vetulaniego/anna.jpg"
           name="Anna Jargosz"
           role="Opiekunka Dziecięca"
@@ -87,7 +75,19 @@ export default function TeamVetulaniego(props) {
           name="Elzbieta Kotaś"
           role="Opiekunka Dziecięca"
           quote="Praca z dziećmi od zawsze była moim marzeniem.
-Spędzanie czasu z dziećmi oraz uczestnictwo w ich rozwoju przynosi mi wiele radości"
+                  Spędzanie czasu z dziećmi oraz uczestnictwo w ich rozwoju przynosi mi wiele radości"
+        />
+        <TeamMember
+          src="/team/vetulaniego/gabriela.jpeg"
+          name="Gabriela Chamioło"
+          role="Opiekunka Dziecięca"
+          quote="Lubię pracę z dziećmi ,daje mi dużo satysfakcji i moc energi. Te małe istotki mają w sobie tyle radości ,że a miło z nimi pracować ."
+        />
+        <TeamMember
+          src="/team/vetulaniego/hajduga.jpeg"
+          name="Elżbieta Hajduga"
+          role="Opiekunka Dziecięca"
+          quote="Praca z dziećmi od zawsze była dla mnie inspiracją i ciekawościa... Dzieci daja mi  energię siłę do działania."
         />
       </Slider>
     </div>
@@ -163,12 +163,7 @@ export function TeamStanczyka(props) {
           role="Opiekunka Dziecięca"
           quote="Praca z dziećmi jest treścią mojego życia, zachwyca mnie ich ciekawość i rozwój."
         />
-        <TeamMember
-          src="/team/stanczyka/katarzyna.jpg"
-          name="Katarzyna Szczodrak"
-          role="Opiekunka Dziecięca"
-          quote="Możliwość pracy z Maluszkami sprawia mi wiele radości satysfakcji."
-        />
+
         <TeamMember
           src="/team/stanczyka/tetiana.jpg"
           name="Tetiana Shkrab"
@@ -180,6 +175,12 @@ export function TeamStanczyka(props) {
           name="Noemi Filus"
           role="Opiekunka Dziecięca"
           quote="Od dzieci codziennie zarażam się radością i energią."
+        />
+        <TeamMember
+          src="/team/stanczyka/teresa.jpeg"
+          name="Teresa Ibek"
+          role="Opiekunka Dziecięca"
+          quote="Praca z dziećmi z parawami wiele radości i daje ogromną satysfakcję"
         />
       </Slider>
     </div>
@@ -273,6 +274,18 @@ export function TeamGlogera(props) {
           role="Opiekunka Dziecięca"
           quote="Jestem mamą 2 dzieci ,uwielbiam wędrówki po górach .Wielką radość sprawia mi pokazywanie dzieciom świata ,a bezpieczeństwo i prawidłowy rozwój  mi powierzonych mi dzieci jest dla mnie priorytetem."
         />
+        <TeamMember
+          src="/team/glogera/marzena.jpeg"
+          name="Marzena Kruczek"
+          role="Opiekunka Dziecięca"
+          quote=""
+        />
+        <TeamMember
+          src="/team/glogera/wiktoria.jpeg"
+          name="Wiktoria Kik"
+          role="Opiekunka Dziecięca"
+          quote=""
+        />
       </Slider>
     </div>
   );
@@ -335,11 +348,35 @@ export function TeamSliczna(props) {
     <div className={classes.container}>
       <h3>{props.place}</h3>
       <Slider {...carouselSettings} className={classes.slider}>
+      <TeamMember
+          src="/team/sliczna/natalia.jpeg"
+          name="Natalia Swatek"
+          role="Kierownik"
+          quote="Uśmiech dzieci potrafi przynieść ulgę w nawet najtrudniejszych momentach."
+        />
         <TeamMember
-          src="/team/sliczna/ewa.jpeg"
-          name="Ewa Meddour"
-          role="Kierownik, Opiekunka, Mama 2 dzieci, Technolog Żywności"
-          quote=" W pracy z dziećmi odnajduje wiele satysfakcji oraz radości. Każdego dnia mam możliwość uczestniczenia w bardzo ważnym okresie kształtowania się i rozwoju małego człowieka."
+          src="/team/sliczna/alicja.jpeg"
+          name="Alicja Pacułt"
+          role="Opiekunka Dziecięca"
+          quote="Praca z dziećmi jest dla mnie pasjonującym wyzwaniem, które każdego dnia przynosi nowe doświadczenia i radość. Obserwowanie, jak dzieci rozwijają swoje umiejętności i zyskują pewność siebie, daje mi ogromną satysfakcję i motywację do dalszej pracy. Staram się tworzyć środowisko, w którym każde dziecko czuje się bezpieczne, kochane i zainspirowane do odkrywania świata."
+        />
+        <TeamMember
+          src="/team/sliczna/monika.jpeg"
+          name="Monika Gruszecka"
+          role="Opiekunka Dziecięca"
+          quote="Praca z dziećmi daje mi dużo radości a ich uśmiech jest dla mnie codzienną dawka energii."
+        />
+        <TeamMember
+          src="/team/sliczna/zuzanna.jpeg"
+          name="Zuzanna Białek"
+          role="Opiekunka Dziecięca"
+          quote="Jestem pełna entuzjazmu opiekunką, która uwielbia spędzać czas z dziećmi i wspierać ich rozwój. Każdego dnia uczę się czegoś nowego od naszych maluchów i staram się wprowadzać do ich życia radość i uśmiech. Moim celem jest tworzenie ciepłego i bezpiecznego środowiska, w którym dzieci mogą się rozwijać i być szczęśliwe."
+        />
+        <TeamMember
+          src="/team/sliczna/joanna.jpeg"
+          name="Joanna Dyląg"
+          role="Opiekunka Dziecięca"
+          quote="Uwielbiam prace z dziećmi. Radość dziecka jest dla mnie wielka nagrodą. W dzieciach zachwyca mnie ich szczerosc i ciekawosc swiata."
         />
       </Slider>
     </div>
