@@ -263,7 +263,7 @@ export function TeamGlogera(props) {
           quote=""
         />
         <TeamMember
-          src="/team/glogera/avatar.jpeg"
+          src="/team/glogera/wiktoria.jpeg"
           name="Wiktoria Klik"
           role="Opiekunka Dziecięca"
           quote=""
