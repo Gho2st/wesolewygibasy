@@ -10,11 +10,11 @@ export default function TeamVetulaniego(props) {
   const carouselSettings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 800,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
     cssEase: "linear",
     initialSlide: 0,
     nextArrow: (
@@ -98,11 +98,11 @@ export function TeamStanczyka(props) {
   const carouselSettings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 800,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
     cssEase: "linear",
     initialSlide: 0,
     nextArrow: (
@@ -191,11 +191,11 @@ export function TeamGlogera(props) {
   const carouselSettings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 800,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
     cssEase: "linear",
     initialSlide: 0,
     nextArrow: (
@@ -295,11 +295,11 @@ export function TeamSliczna(props) {
   const carouselSettings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 800,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
     cssEase: "linear",
     initialSlide: 0,
     nextArrow: (
