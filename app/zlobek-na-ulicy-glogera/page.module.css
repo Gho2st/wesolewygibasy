@@ -169,14 +169,14 @@
 }
 @media (max-width: 600px) {
   .textContainer h1 {
-    font-size: 1.8rem !important;
+    font-size: 1.6rem !important;
   }
   .textContainer {
     padding: 2rem 1rem;
-    width: 95%;
+    width: 90%;
   }
   .buttonContainer {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
   .baner {
     background-repeat: no-repeat;
