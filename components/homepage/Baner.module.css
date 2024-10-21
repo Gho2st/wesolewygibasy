@@ -3,7 +3,7 @@
   padding: 2rem 9%;
   background: #c7eeff;
   background-image: url("/others/baner.png");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
   position: relative;

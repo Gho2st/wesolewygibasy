@@ -8,7 +8,7 @@
 .baner {
   width: 100%;
   background-image: url("/sliders/glogera-slider/g3.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
   min-height: 100vh;
@@ -178,23 +178,13 @@
   .buttonContainer {
     margin-top: 2rem;
   }
+  .baner {
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
 
   .header {
     margin-bottom: 2.5rem;
-  }
-}
-
-@media (max-width: 444px) {
-  .baner {
-    background-size: 250%;
-    background-repeat: no-repeat;
-    background-position: 60% bottom;
-  }
-}
-
-@media (max-width: 376px) {
-  .baner {
-    background-size: 100%;
   }
 }
 
