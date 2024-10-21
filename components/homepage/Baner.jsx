@@ -11,7 +11,9 @@ export default function Baner() {
         <div className={classes.textContainer}>
           <div className={classes.left}>
             <div>
-              <h1>Najlepszy Żłobek w Krakowie - Wesołe Wygibasy</h1>
+              <h1>
+                Najlepszy Żłobek w Krakowie - <span> Wesołe Wygibasy </span>
+              </h1>
               <p>
                 Wesołe Wygibasy to żłobek w Krakowie, który powstał z pasji,
                 troski i miłości do dzieci. Znajdujemy się w dogodnych
@@ -22,12 +24,10 @@ export default function Baner() {
               <div className={classes.buttonContainer}>
                 <Button
                   text="Czytaj więcej"
-                  background="#B30000"
                   href="#czytaj-wiecej"
                 />
                 <Button2
                   text="Placówki"
-                  background="#0037FF"
                   href="#placowki"
                 />
               </div>

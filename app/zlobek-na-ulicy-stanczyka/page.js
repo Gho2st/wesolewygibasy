@@ -54,18 +54,15 @@ export default function stanczyka() {
       <main>
         <div className={classes.outsideContainer}>
           <div className={classes.baner}>
-            <div className={classes.leftContainer}>
+            <div className={classes.textContainer}>
               <div>
-                <h1>Żłobek Kraków - Wesołe Wygibasy na Stańczyka 8/LU3</h1>
-                <p>
-                  Nasz żłobek w Krakowie, Wesołe Wygibasy, to miejsce pełne
-                  radości i troskliwej opieki. Znajdujemy się w nowoczesnej
-                  placówce na ul. Stańczyka 8/LU3, w sercu Bronowic. Zapisz
-                  swoje dziecko do żłobka, który oferuje kreatywne zajęcia,
-                  doskonałą opiekę i bezpieczeństwo zatwierdzone przez sanepid.
-                </p>
+                <h1>
+                  Żłobek Kraków - <span> Wesołe Wygibasy </span> na Stańczyka
+                  8/LU3
+                </h1>
+
                 <div className={classes.buttonContainer}>
-                  <Button background="#B30000" text="O nas" href="/o-nas" />
+                  <Button text="O nas" href="/o-nas" />
                   <Button2 background="#0037FF" text="Zapisy" href="/zapisy" />
                 </div>
               </div>
@@ -75,8 +72,15 @@ export default function stanczyka() {
         <div className={classes.container}>
           <div className={classes.cardWrapper}>
             <div className={classes.header}>
-              <p>Co oferujemy?</p>
+              <p className={classes.upText}>Co oferujemy?</p>
               <h2>Odkryj nasz program</h2>
+              <p className={classes.description}>
+                Nasz żłobek w Krakowie, Wesołe Wygibasy, to miejsce pełne
+                radości i troskliwej opieki. Znajdujemy się w nowoczesnej
+                placówce na ul. Stańczyka 8/LU3, w sercu Bronowic. Zapisz swoje
+                dziecko do żłobka, który oferuje kreatywne zajęcia, doskonałą
+                opiekę i bezpieczeństwo zatwierdzone przez sanepid.
+              </p>
             </div>
             <div className={classes.cardContainer}>
               <div className={`${classes.card} ${classes.card1}`}>

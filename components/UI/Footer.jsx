@@ -1,3 +1,4 @@
+"use client";
 import classes from "./Footer.module.css";
 import Link from "next/link";
 import { FaPhone } from "react-icons/fa6";
@@ -5,8 +6,19 @@ import { MdEmail } from "react-icons/md";
 import { FaMessage } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import Numbers from "./Numbers";
+import { FaArrowUp } from "react-icons/fa";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  const scrollToTop = () => {
+    console.log("Kliknięto strzałkę, przewijam w górę");
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer>
       <div className={classes.container}>
@@ -71,12 +83,15 @@ export default function Footer() {
         </div>
         <div className={classes.footerDownContainer}>
           <p className={classes.description}>
-            <span className={classes.copy}>&copy;</span> 2024 Wesołe Wygibasy |
-            Projekt i realizacja:
+            <span className={classes.copy}>&copy;</span> {currentYear} Wesołe
+            Wygibasy | Projekt i realizacja:
             <span className={classes.FooterSpan}>
               <Link href={"https://www.domiweb.pl/"}> Domiweb </Link>
             </span>
           </p>
+          <span onClick={scrollToTop} className={classes.arrow}>
+            <FaArrowUp />
+          </span>
         </div>
       </div>
     </footer>

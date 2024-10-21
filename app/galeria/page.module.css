@@ -45,6 +45,7 @@
   font-size: 1.05rem;
 }
 .buttonContainer {
+  display: flex;
   margin-top: 2rem;
 }
 

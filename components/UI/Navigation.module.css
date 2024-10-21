@@ -1,7 +1,8 @@
 .nav__container {
   height: 120px;
   width: 100%;
-  background: rgb(255, 255, 255);
+  background: transparent;
+  overflow-x: hidden;
 }
 
 .logoContainer {
@@ -131,6 +132,12 @@
 
 .navigation__link span {
   margin-right: 1.3rem;
+}
+
+@media (max-width: 1500px) {
+  .nav__container {
+    height: 88px;
+  }
 }
 
 @media (max-width: 800px) {

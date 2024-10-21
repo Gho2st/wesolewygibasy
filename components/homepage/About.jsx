@@ -92,7 +92,7 @@ export default function About() {
               </div>
             </div>
             <div className={classes.contactInfoContainer}>
-              <div>
+              <div className={classes.buttonContainer}>
                 <Button text="O nas" href="/o-nas" />
                 <Button2 text="Zapisy" href="/zapisy" />
               </div>

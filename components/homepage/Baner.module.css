@@ -2,11 +2,12 @@
   height: 100vh;
   padding: 2rem 9%;
   background: #c7eeff;
-  background-image: url("/baner_nowy.png");
-  background-size: 130%;
+  background-image: url("/others/baner.png");
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
   position: relative;
+  overflow-x: hidden;
 }
 
 .textContainer {
@@ -86,7 +87,7 @@
     flex-direction: column;
     padding: 2rem 9%;
     border-radius: 0;
-    background-size: 250%;
+    background-size: 150%;
     background-repeat: no-repeat;
     background-position: 25% bottom;
   }
@@ -101,6 +102,6 @@
 
 @media (max-width: 381px) {
   .banerContainer {
-    background-size: 150%;
+    background-size: 120%;
   }
 }

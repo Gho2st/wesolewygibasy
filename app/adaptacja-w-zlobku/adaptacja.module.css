@@ -38,6 +38,9 @@
   margin-bottom: 1rem;
   font-size: 1.05rem;
 }
+.buttonContainer{
+  display: flex;
+}
 
 @media (max-width: 1200px) {
   .adaptacjaContainer {

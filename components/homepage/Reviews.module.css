@@ -1,5 +1,6 @@
 .wrapper {
   padding: 4rem 0;
+  overflow-x: hidden;
 }
 .counter {
   display: inline;

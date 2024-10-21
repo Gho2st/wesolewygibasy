@@ -32,6 +32,7 @@
 }
 
 .dotation__buttons {
+  display: flex;
   margin-top: 1rem;
 }
 

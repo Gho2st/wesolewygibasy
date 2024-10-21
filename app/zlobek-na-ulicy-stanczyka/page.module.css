@@ -5,28 +5,42 @@
 .container {
   padding: 2rem 9%;
 }
-
 .baner {
   width: 100%;
-  padding: 2rem 9%;
-  display: flex;
-  justify-content: space-between;
-  background: #c7eeff;
-  background-image: url("/baner_nowy.png");
-  background-size: 130%;
+  background-image: url("/sliders/stanczyka-slider/st3.jpg");
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: right;
   min-height: 100vh;
-}
-.leftContainer {
-  width: 55%;
+  position: relative;
 }
 
-.leftContainer h1 {
+.textContainer {
+  padding: 3.5rem 2rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.85); /* Subtelna przezroczystość */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px; /* Cień dla lepszej widoczności */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  font-size: 1.5rem; /* Zwiększenie rozmiaru czcionki */
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.textContainer h1 {
   font-size: 2.3rem;
+  color: rgb(0, 0, 0);
 }
 
-.leftContainer p {
+.textContainer p {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   font-size: 1.05rem;
@@ -45,11 +59,16 @@
   font-weight: 500;
 }
 
-.header p {
-  margin-bottom: 1rem;
-  font-weight: 500;
+.upText {
   color: #08c6c3;
   text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.description {
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .cardWrapper {
@@ -125,8 +144,15 @@
     grid-template-columns: 1fr 1fr;
     padding-bottom: 2rem;
   }
-  .leftContainer {
-    width: 80%;
+}
+
+@media (max-width: 900px) {
+  .textContainer {
+    padding: 2rem 1rem;
+    width: 70%;
+  }
+  .textContainer h1 {
+    font-size: 2rem;
   }
 }
 
@@ -142,16 +168,17 @@
   }
 }
 @media (max-width: 600px) {
-  .leftContainer {
-    width: 95%;
-  }
-  .leftContainer h1 {
+  .textContainer h1 {
     font-size: 1.8rem !important;
   }
-
-  .leftContainer p {
-    font-size: 1rem;
+  .textContainer {
+    padding: 2rem 1rem;
+    width: 95%;
   }
+  .buttonContainer {
+    margin-top: 2rem;
+  }
+
   .header {
     margin-bottom: 2.5rem;
   }
@@ -174,18 +201,10 @@
 /* urzadzenie na boku */
 
 @media (max-height: 440px) {
-  .leftContainer h1 {
+  .textContainer h1 {
     font-size: 1.3rem;
   }
 
-  .leftContainer p {
-    margin-top: 1rem;
-    color: #1f1f1f;
-    font-size: 0.9rem;
-    width: 85%;
-    word-spacing: 0.01rem;
-    margin-bottom: 0rem !important;
-  }
   .buttonContainer {
     margin-top: 1rem;
   }

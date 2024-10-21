@@ -9,13 +9,9 @@ export default function Button2(props) {
       className={classes.buttonContainer}
       whileHover={{ scale: 1.08 }}
       whileTap={{ scale: 0.9 }}
+      style={{ background: props.background, color: props.color }}
     >
-      <Link
-        href={props.href}
-        style={{ fontSize: props.fontSize, background: props.background }}
-      >
-        {props.text}
-      </Link>
+      <Link href={props.href}>{props.text}</Link>
     </motion.div>
   );
 }

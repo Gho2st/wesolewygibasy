@@ -1,6 +1,7 @@
 .container {
   background: #fffbf2;
   padding-top: 3rem;
+  overflow-x: hidden;
 }
 
 .footerTopContainer {
@@ -47,6 +48,7 @@
   padding: 1rem 9%;
   font-size: 1rem;
   background: #ffffff;
+  position: relative;
 }
 .footerDownContainer span {
   font-size: 1.5rem;
@@ -128,6 +130,18 @@
 .copy {
   font-size: 1.5rem;
   vertical-align: middle;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  opacity: 1;
+}
+
+.arrow:hover {
+  cursor: pointer;
+  color: #34433c;
 }
 
 @media (max-width: 1000px) {

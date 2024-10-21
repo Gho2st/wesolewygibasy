@@ -21,13 +21,7 @@ export default function Navigation(props) {
   };
 
   // Sprawdzamy, czy to strona główna
-  const isHomePage =
-    pathname === "/" ||
-    pathname === "/zlobek-na-ulicy-slicznej" ||
-    pathname === "/zlobek-na-ulicy-glogera" ||
-    pathname === "/zlobek-na-ulicy-stanczyka" ||
-    pathname === "/zlobek-na-ulicy-vetulaniego";
-
+  const isHomePage = pathname === "/";
   return (
     <header>
       <div
@@ -38,8 +32,8 @@ export default function Navigation(props) {
           <Link href={"/"}>
             <Image
               src={"/others/zlobek-wesole-wygibasy-krakow-logo.png"}
-              width={140}
-              height={85}
+              width={110}
+              height={65}
               alt="Logo of Wesołe Wygibasy"
               className={classes.logo}
             />

@@ -28,6 +28,7 @@
 }
 
 .buttonContainer {
+  display: flex;
   margin-top: 2rem;
 }
 

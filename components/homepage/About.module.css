@@ -3,11 +3,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 .container {
   display: flex;
   padding: 2rem 9%;
   justify-content: space-between;
+  gap: 3rem;
 }
 .imageContainer {
   width: 35%;
@@ -102,6 +104,16 @@
   color: orange;
 }
 
+.buttonContainer {
+  display: flex;
+  margin-right: 1rem;
+}
+
+@media (max-width: 1500px) {
+  .imageContainer {
+    width: 38%;
+  }
+}
 
 @media (max-width: 1349px) {
   .item {
@@ -117,9 +129,6 @@
   }
 }
 @media (max-width: 1300px) {
-  .container a {
-    margin-right: 1rem;
-  }
   .ownerContainer {
     margin-left: 2rem;
   }

@@ -2,7 +2,7 @@
 import PlaceItem from "../UI/PlaceItem";
 import classes from "./Places.module.css";
 import { useRef } from "react";
-import { useInView, motion, delay } from "framer-motion";
+import { useInView } from "framer-motion";
 
 export default function Places(props) {
   const skillRef = useRef();
@@ -46,22 +46,13 @@ export default function Places(props) {
       add: "",
     },
   ];
+
   return (
     <section
       id="placowki"
       style={{ background: props.background ? "white" : "#fffbf2" }}
     >
-      <motion.div
-        initial={{ opacity: 0, scale: 0.85 }}
-        animate={
-          isSkillRefinView
-            ? { opacity: 1, scale: 1 }
-            : { opacity: 0, scale: 0.85 }
-        }
-        transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
-        className={classes.container}
-        ref={skillRef}
-      >
+      <div className={classes.container} ref={skillRef}>
         <div className={classes.description}>
           <h2>
             Lokalizacje Żłobka <span> Wesołe Wygibasy</span> w Krakowie
@@ -90,7 +81,7 @@ export default function Places(props) {
             />
           ))}
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

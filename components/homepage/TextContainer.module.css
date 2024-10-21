@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   background: #fffbf2;
+  overflow-x: hidden;
 }
 .textContainer {
   padding: 2rem 9%;

@@ -53,17 +53,15 @@ export default function glogera() {
       <main>
         <div className={classes.outsideContainer}>
           <div className={classes.baner}>
-            <div className={classes.leftContainer}>
+            <div className={classes.textContainer}>
               <div>
-                <h1>Żłobek Kraków - Wesołe Wygibasy na Glogera 53/LU2</h1>
-                <p>
-                  Szukasz bezpiecznego, nowoczesnego żłobka w Krakowie? Wesołe
-                  Wygibasy przy ul. Glogera 53/LU2 oferuje profesjonalną opiekę,
-                  rozwój oraz bogaty program zajęć w przyjaznej atmosferze.
-                  Sprawdź szczegóły i zapisz swoje dziecko już dziś!
-                </p>
+                <h1>
+                  Żłobek Kraków - <span> Wesołe Wygibasy </span> na Glogera
+                  53/LU2
+                </h1>
+
                 <div className={classes.buttonContainer}>
-                  <Button text="O nas" background="#B30000" href="/o-nas" />
+                  <Button text="O nas" href="/o-nas" />
                   <Button2 text="Zapisy" background="#0037FF" href="/zapisy" />
                 </div>
               </div>
@@ -73,8 +71,14 @@ export default function glogera() {
         <div className={classes.container}>
           <div className={classes.cardWrapper}>
             <div className={classes.header}>
-              <p>Co oferujemy?</p>
+              <p className={classes.upText}>Co oferujemy?</p>
               <h2>Odkryj nasz program</h2>
+              <p className={classes.description}>
+                Szukasz bezpiecznego, nowoczesnego żłobka w Krakowie? Wesołe
+                Wygibasy przy ul. Glogera 53/LU2 oferuje profesjonalną opiekę,
+                rozwój oraz bogaty program zajęć w przyjaznej atmosferze.
+                Sprawdź szczegóły i zapisz swoje dziecko już dziś!
+              </p>
             </div>
             <div className={classes.cardContainer}>
               <div className={`${classes.card} ${classes.card1}`}>

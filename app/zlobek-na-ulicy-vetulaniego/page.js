@@ -9,6 +9,7 @@ import SliderComponent from "@/components/UI/slider/slider";
 import Maluch from "@/components/UI/Maluch";
 import Map from "@/components/UI/Map";
 import { FaCircleArrowRight } from "react-icons/fa6";
+import Button2 from "@/components/UI/Button2";
 
 export const metadata = {
   title: "Żłobek na ulicy Vetulaniego w Krakowie - Wesołe Wygibasy",
@@ -44,20 +45,16 @@ export default function vetulaniego() {
       <main>
         <div className={classes.outsideContainer}>
           <div className={classes.baner}>
-            <div className={classes.leftContainer}>
+            <div className={classes.textContainer}>
               <div>
-                <h1>Żłobek Kraków - Wesołe Wygibasy na Vetulaniego 8</h1>
-                <p>
-                  Jeśli szukasz bezpiecznego, kameralnego i inspirującego żłobka
-                  w Krakowie, zapraszamy do Klubu Malucha Wesołe Wygibasy na
-                  ulicy Vetulaniego 8. Nasza placówka oferuje profesjonalną
-                  opiekę nad dziećmi w wieku od 1 do 3 lat, zapewniając im
-                  rozwój w ciepłej i przyjaznej atmosferze, z dala od miejskiego
-                  zgiełku.
-                </p>
+                <h1>
+                  Żłobek Kraków - <span> Wesołe Wygibasy </span> na Vetulaniego
+                  8
+                </h1>
+
                 <div className={classes.buttonContainer}>
-                  <Button background="#B30000" text="O nas" href="/o-nas" />
-                  <Button background="#0037FF" text="Zapisy" href="/zapisy" />
+                  <Button text="O nas" href="/o-nas" />
+                  <Button2 text="Zapisy" href="/zapisy" />
                 </div>
               </div>
             </div>
@@ -66,8 +63,15 @@ export default function vetulaniego() {
         <div className={classes.container}>
           <div className={classes.cardWrapper}>
             <div className={classes.header}>
-              <p>Co oferujemy?</p>
+              <p className={classes.upText}>Co oferujemy?</p>
               <h2>Odkryj nasz program</h2>
+              <p className={classes.description}>
+                Jeśli szukasz bezpiecznego, kameralnego i inspirującego żłobka w
+                Krakowie, zapraszamy do Klubu Malucha Wesołe Wygibasy na ulicy
+                Vetulaniego 8. Nasza placówka oferuje profesjonalną opiekę nad
+                dziećmi w wieku od 1 do 3 lat, zapewniając im rozwój w ciepłej i
+                przyjaznej atmosferze, z dala od miejskiego zgiełku.
+              </p>
             </div>
             <div className={classes.cardContainer}>
               <div className={`${classes.card} ${classes.card1}`}>
