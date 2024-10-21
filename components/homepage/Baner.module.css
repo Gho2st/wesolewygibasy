@@ -41,15 +41,21 @@
   display: flex;
 }
 
-@media (max-width: 1070px) {
+@media (max-width: 1350px) {
   .textContainer {
-    width: 70%;
+    width: 85%;
+  }
+  .banerContainer {
+    background-size: 110%;
   }
 }
 
 @media (max-width: 820px) {
   .textContainer {
     width: 95%;
+  }
+  .banerContainer {
+    background-size: 100%;
   }
 }
 
@@ -79,19 +85,15 @@
   .textContainer p {
     width: 100%;
   }
-}
-
-@media (max-width: 444px) {
   .banerContainer {
-    display: flex;
-    flex-direction: column;
     padding: 2rem 9%;
     border-radius: 0;
     background-size: 150%;
-    background-repeat: no-repeat;
     background-position: 25% bottom;
   }
+}
 
+@media (max-width: 444px) {
   .textContainer h1 {
     font-size: 1.8rem;
   }
