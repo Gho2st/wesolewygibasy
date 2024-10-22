@@ -278,7 +278,7 @@ export function TeamGlogera(props) {
           src="/team/glogera/marzena.jpeg"
           name="Marzena Kruczek"
           role="Opiekunka Dziecięca"
-          quote=""
+          quote="Praca z dziećmi daje mi wiele satysfakcji przede wszystkim wtedy, gdy dzieci odwdzieczają się radością i zaufaniem."
         />
         <TeamMember
           src="/team/glogera/wiktoria.jpeg"
