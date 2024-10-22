@@ -252,7 +252,7 @@ export function TeamGlogera(props) {
         />
         <TeamMember
           src="/team/glogera/justyna.jpg"
-          name="Justyna Panuś-Szymańska"
+          name="Justyna Gąsiorek"
           role="Opiekunka Dziecięca"
           quote="Praca z dziećmi daje mi energię i radość z życia."
         />
@@ -260,11 +260,11 @@ export function TeamGlogera(props) {
           src="/team/glogera/ewelina.jpeg"
           name="Ewelina Bryła"
           role="Opiekunka Dziecięca"
-          quote=""
+          quote="Praca z dziećmi jest moją pasją. Dużo satysfakcji przynosi mi obserwowanie jak każdy z tych małych ludzi na moich oczach rozwija się, poznaje nowe pojęcia, nawyki. Im więcej z siebie daję, tym więcej otrzymuję. W dzieciach zachwyca mnie ich szczerość i ciekawość świata."
         />
         <TeamMember
           src="/team/glogera/wiktoria.jpeg"
-          name="Wiktoria Klik"
+          name="Wiktoria Kik"
           role="Opiekunka Dziecięca"
           quote=""
         />
