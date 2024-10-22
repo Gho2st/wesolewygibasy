@@ -41,22 +41,6 @@ const images = [
     src: "/sliders/sliczna-slider/sl6.jpg",
     alt: "Pokój dziecięcy w Żłobku Wesołe Wygibasy na Ślicznej w Krakowie",
   },
-  {
-    src: "/sliders/sliczna-slider/sl7.jpg",
-    alt: "Zielony teren i plac zabaw Żłobka Wesołe Wygibasy na Ślicznej",
-  },
-  {
-    src: "/sliders/sliczna-slider/sl8.jpg",
-    alt: "Bezpieczny plac zabaw Żłobka Wesołe Wygibasy w Krakowie",
-  },
-  {
-    src: "/sliders/sliczna-slider/sl9.jpg",
-    alt: "Dzieci bawiące się na placu zabaw Żłobka Wesołe Wygibasy",
-  },
-  {
-    src: "/sliders/sliczna-slider/sl10.jpg",
-    alt: "Wesołe Wygibasy - wnętrze żłobka na Ślicznej w Krakowie",
-  },
 ];
 export default function sliczna() {
   return (
