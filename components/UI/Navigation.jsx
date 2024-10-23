@@ -77,11 +77,21 @@ export default function Navigation(props) {
               </li>
               <li className={classes.navigation__item}>
                 <Link
-                  href={"/cennik-i-jadlospis-w-zlobku"}
+                  href={"/#placówki"}
                   className={classes.navigation__link}
                   onClick={closeMenu}
                 >
                   <span>03</span>
+                  Placówki
+                </Link>
+              </li>
+              <li className={classes.navigation__item}>
+                <Link
+                  href={"/cennik-i-jadlospis-w-zlobku"}
+                  className={classes.navigation__link}
+                  onClick={closeMenu}
+                >
+                  <span>04</span>
                   Cennik & Jadłospis
                 </Link>
               </li>
@@ -91,7 +101,7 @@ export default function Navigation(props) {
                   className={classes.navigation__link}
                   onClick={closeMenu}
                 >
-                  <span>04</span>
+                  <span>05</span>
                   Plan dnia
                 </Link>
               </li>
@@ -101,7 +111,7 @@ export default function Navigation(props) {
                   className={classes.navigation__link}
                   onClick={closeMenu}
                 >
-                  <span>05</span>
+                  <span>06</span>
                   Adaptacja
                 </Link>
               </li>
@@ -111,7 +121,7 @@ export default function Navigation(props) {
                   className={classes.navigation__link}
                   onClick={closeMenu}
                 >
-                  <span>06</span>O nas
+                  <span>07</span>O nas
                 </Link>
               </li>
               <li className={classes.navigation__item}>
@@ -120,7 +130,7 @@ export default function Navigation(props) {
                   className={classes.navigation__link}
                   onClick={closeMenu}
                 >
-                  <span>07</span>
+                  <span>08</span>
                   Informacje
                 </Link>
               </li>
@@ -130,7 +140,7 @@ export default function Navigation(props) {
                   className={classes.navigation__link}
                   onClick={closeMenu}
                 >
-                  <span>08</span>
+                  <span>09</span>
                   Zapisy
                 </Link>
               </li>

@@ -49,7 +49,7 @@ export default function Places(props) {
 
   return (
     <section
-      id="placowki"
+      id="placówki"
       style={{ background: props.background ? "white" : "#fffbf2" }}
     >
       <div className={classes.container} ref={skillRef}>

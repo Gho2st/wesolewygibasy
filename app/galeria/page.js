@@ -57,7 +57,7 @@ export default function Galeria() {
                   </p>
                   <div className={classes.buttonContainer}>
                     <Button text="Zapisy" href="/zapisy" />
-                    <Button2 text="Galeria" href="#placowki" />
+                    <Button2 text="Galeria" href="#placówki" />
                   </div>
                 </div>
               </div>
