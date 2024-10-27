@@ -28,7 +28,7 @@ export default function Baner() {
                 />
                 <Button2
                   text="Placówki"
-                  href="#placowki"
+                  href="#placówki"
                 />
               </div>
             </div>
