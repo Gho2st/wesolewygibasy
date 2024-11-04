@@ -4,84 +4,87 @@ import { useState } from "react";
 import Image from "next/image";
 
 export default function Form({ onFormSubmit }) {
-  const [childAge, setChildAge] = useState("");
-  const [text, setText] = useState("");
-  const [fullName, setFullName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
+  const [formData, setFormData] = useState({
+    childAge: "",
+    text: "",
+    fullName: "",
+    email: "",
+    phoneNumber: "",
+    startDate: getTodayDate(),
+    selectedLocation: "",
+  });
+  const [isSending, setIsSending] = useState(false); // Flaga blokady
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formError, setFormError] = useState(null);
   const [errorFields, setErrorFields] = useState([]);
-  const [selectedLocation, setSelectedLocation] = useState("");
 
-  // Funkcja do pobrania bieżącej daty w formacie YYYY-MM-DD
-  const getTodayDate = () => {
+  // Funkcja pobierająca dzisiejszą datę w formacie YYYY-MM-DD
+  function getTodayDate() {
     const today = new Date();
-    const year = today.getFullYear();
-    const month = String(today.getMonth() + 1).padStart(2, "0"); // Dodanie zera wiodącego dla miesięcy 1-9
-    const day = String(today.getDate()).padStart(2, "0"); // Dodanie zera wiodącego dla dni 1-9
-    return `${year}-${month}-${day}`;
-  };
+    return today.toISOString().split("T")[0];
+  }
 
-  const [startDate, setStartDate] = useState(getTodayDate()); // Ustawienie domyślnej daty na dzisiejszy dzień
+  // Funkcja walidacji pól formularza
+  function validateForm(data) {
+    const errors = [];
+    if (!data.fullName.trim()) errors.push("fullName");
+    if (!data.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email))
+      errors.push("email");
+    if (!data.phoneNumber.trim() || !/^\d{9,15}$/.test(data.phoneNumber))
+      errors.push("phoneNumber");
+    if (!data.childAge.trim()) errors.push("childAge");
+    if (!data.text.trim()) errors.push("text");
+    if (!data.startDate.trim()) errors.push("startDate");
+    if (!data.selectedLocation.trim()) errors.push("selectedLocation");
+
+    setErrorFields(errors);
+    return errors.length === 0;
+  }
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
 
   const sendMail = async (e) => {
     e.preventDefault();
-    const fieldsToCheck = {
-      fullName,
-      email,
-      phoneNumber,
-      childAge,
-      text,
-      startDate,
-      selectedLocation,
-    };
-    const emptyFields = Object.entries(fieldsToCheck)
-      .filter(([key, value]) => !value)
-      .map(([key]) => key);
-    setErrorFields(emptyFields);
+    if (isSending) return;
 
-    if (emptyFields.length > 0) {
+    if (!validateForm(formData)) {
       setFormError("Proszę uzupełnij wszystkie wymagane pola.");
       return;
     }
 
+    setIsSending(true);
+    setFormError(null);
+
     try {
       const response = await fetch("/api/sendEmail", {
         method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify({
-          childAge,
-          text,
-          fullName,
-          email,
-          phoneNumber,
-          startDate,
-          selectedLocation,
-        }),
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        console.log("Form submitted succesfully");
         setFormSubmitted(true);
-        setFormError(null);
-        setEmail("");
-        setFullName(fieldsToCheck.fullName);
-        setText("");
-        setChildAge("");
-        setPhoneNumber("");
-        setStartDate(null);
-        setSelectedLocation("");
+        setFormData({
+          childAge: "",
+          text: "",
+          fullName: "",
+          email: "",
+          phoneNumber: "",
+          startDate: getTodayDate(),
+          selectedLocation: "",
+        });
         onFormSubmit();
       } else {
         const errorData = await response.json();
         setFormError(`Error: ${errorData.message}`);
       }
     } catch (error) {
-      console.error("Unexpected error:", error);
-      setFormError("Unexpected error occurred.");
+      setFormError("Niespodziewany błąd.");
+    } finally {
+      setIsSending(false);
     }
   };
 
@@ -95,80 +98,60 @@ export default function Form({ onFormSubmit }) {
             najszybciej to mozliwe!
           </p>
           {formError && <p style={{ color: "red" }}>{formError}</p>}
+
           <form onSubmit={sendMail} className={classes.form}>
-            <div className={classes.item}>
-              <input
-                type="text"
-                id="fullName"
-                placeholder="Imię i nazwisko dziecka"
-                value={fullName}
-                onChange={(e) => {
-                  setFullName(e.target.value);
-                }}
-                name="fullName"
-                style={{
-                  border: errorFields.includes("fullName")
-                    ? "1px solid red"
-                    : "0",
-                }}
-              />
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Adres e-mail"
-                value={email}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                }}
-                style={{
-                  border: errorFields.includes("email") ? "1px solid red" : "0",
-                }}
-              />
+            <div className={classes.inputContainer}>
+              {[
+                {
+                  label: "Imię i nazwisko dziecka",
+                  type: "text",
+                  name: "fullName",
+                  value: formData.fullName,
+                },
+                {
+                  label: "Adres e-mail",
+                  type: "email",
+                  name: "email",
+                  value: formData.email,
+                },
+                {
+                  label: "Numer telefonu",
+                  type: "text",
+                  name: "phoneNumber",
+                  value: formData.phoneNumber,
+                },
+                {
+                  label: "Wiek dziecka",
+                  type: "text",
+                  name: "childAge",
+                  value: formData.childAge,
+                },
+              ].map((field, index) => (
+                <input
+                  key={index}
+                  type={field.type}
+                  name={field.name}
+                  placeholder={field.label}
+                  value={field.value}
+                  onChange={handleChange}
+                  style={{
+                    border: errorFields.includes(field.name)
+                      ? "1px solid red"
+                      : "0",
+                  }}
+                  className={classes.input}
+                />
+              ))}
             </div>
-            <div className={classes.item}>
-              <input
-                type="text"
-                id="phoneNumber"
-                name="phoneNumber"
-                placeholder="Numer telefonu"
-                value={phoneNumber}
-                onChange={(e) => {
-                  setPhoneNumber(e.target.value);
-                }}
-                style={{
-                  border: errorFields.includes("phoneNumber")
-                    ? "1px solid red"
-                    : "0",
-                }}
-              />
-              <input
-                type="text"
-                id="childAge"
-                name="childAge"
-                placeholder="Wiek dziecka"
-                value={childAge}
-                onChange={(e) => {
-                  setChildAge(e.target.value);
-                }}
-                style={{
-                  border: errorFields.includes("childAge")
-                    ? "1px solid red"
-                    : "0",
-                }}
-              />
-            </div>
+
             <label htmlFor="startDate">Od kiedy chcesz zapisać dziecko?</label>
             <input
               type="date"
               className={classes.startDate}
-              id="startDate"
               name="startDate"
               placeholder="Od kiedy chcesz zapisac dziecko?"
-              value={startDate}
-              onChange={(e) => {
-                setStartDate(e.target.value);
-              }}
+              value={formData.startDate}
+              onChange={handleChange}
               style={{
                 border: errorFields.includes("startDate")
                   ? "1px solid red"
@@ -177,11 +160,10 @@ export default function Form({ onFormSubmit }) {
             />
             <label htmlFor="selectedLocation">Wybierz placówkę:</label>
             <select
-              id="selectedLocation"
               name="selectedLocation"
-              value={selectedLocation}
+              value={formData.selectedLocation}
               className={classes.select}
-              onChange={(e) => setSelectedLocation(e.target.value)}
+              onChange={handleChange}
               style={{
                 border: errorFields.includes("selectedLocation")
                   ? "1px solid red"
@@ -202,22 +184,26 @@ export default function Form({ onFormSubmit }) {
                 Żłobek, Kraków ul. Śliczna 36
               </option>
             </select>
+
+            {/* text area */}
             <label htmlFor="text">Dodatkowe pytania:</label>
             <textarea
               id="text"
               name="text"
               placeholder="Napisz swoją wiadomość"
-              value={text}
-              onChange={(e) => {
-                setText(e.target.value);
-              }}
+              value={formData.text}
+              onChange={handleChange}
               style={{
                 border: errorFields.includes("text") ? "1px solid red" : "0",
               }}
             />
             <div className={classes.buttonContainer}>
-              <button type="submit" className={classes.button}>
-                Wyślij wiadomość!
+              <button
+                type="submit"
+                className={classes.button}
+                disabled={isSending}
+              >
+                {isSending ? "Wysyłanie..." : "Wyślij wiadomość!"}
               </button>
             </div>
           </form>

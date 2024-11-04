@@ -103,10 +103,10 @@
   color: rgb(0, 0, 0);
 }
 
-.item {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
+.inputContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
 }
 
 @media (max-width: 767px) {
@@ -133,9 +133,9 @@
 }
 
 @media (max-width: 529px) {
-  .item {
-    flex-direction: column;
-    gap: 0;
+  .inputContainer {
+    grid-template-columns: 1fr;
+    gap: 0rem;
   }
   .containerLeft input::placeholder {
     font-size: 0.9rem;
