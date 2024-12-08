@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useRef } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 
-
 export default function Form({ onFormSubmit }) {
   const [formData, setFormData] = useState({
     childAge: "",
@@ -59,17 +58,17 @@ export default function Form({ onFormSubmit }) {
       return;
     }
 
-    setIsSending(true);
     setFormError(null);
 
     // Pobranie tokena reCAPTCHA
     const recaptchaToken = recaptchaRef.current.getValue();
     if (!recaptchaToken) {
-      setFormError("Proszę zaznacz CAPTCHA przed wysłaniem.");
+      setFormError("Proszę zaznacz, że nie jesteś robotem przed wysłaniem.");
       return;
     }
 
     console.log("Wysyłanie danych:", { ...formData, recaptchaToken }); // Dodaj logowanie danych
+    setIsSending(true);
 
     try {
       const response = await fetch("/api/sendEmail", {
