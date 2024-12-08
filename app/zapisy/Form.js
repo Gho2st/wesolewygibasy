@@ -67,14 +67,14 @@ export default function Form({ onFormSubmit }) {
       return;
     }
 
-    console.log("Wysyłanie danych:", { ...formData, recaptchaToken }); // Dodaj logowanie danych
+    console.log("Wysyłanie danych:", { ...formData, recaptchaToken });
     setIsSending(true);
 
     try {
       const response = await fetch("/api/sendEmail", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify(formData, recaptchaToken),
+        body: JSON.stringify({ ...formData, recaptchaToken }), // Poprawne przekazywanie obu obiektów
       });
 
       if (response.ok) {

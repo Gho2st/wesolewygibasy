@@ -62,6 +62,8 @@ async function verifyRecaptcha(token) {
   );
 
   const data = await response.json();
+  console.log("Odpowiedź z reCAPTCHA:", data); // Logowanie odpowiedzi z Google reCAPTCHA
+
   return data.success;
 }
 
