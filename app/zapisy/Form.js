@@ -67,7 +67,7 @@ export default function Form({ onFormSubmit }) {
       return;
     }
 
-    console.log("Wysyłanie danych:", { ...formData, recaptchaToken });
+    // console.log("Wysyłanie danych:", { ...formData, recaptchaToken });
     setIsSending(true);
 
     try {
