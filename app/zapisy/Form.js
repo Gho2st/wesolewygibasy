@@ -2,6 +2,9 @@
 import classes from "./Form.module.css";
 import { useState } from "react";
 import Image from "next/image";
+import { useRef } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
+
 
 export default function Form({ onFormSubmit }) {
   const [formData, setFormData] = useState({
@@ -17,6 +20,7 @@ export default function Form({ onFormSubmit }) {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formError, setFormError] = useState(null);
   const [errorFields, setErrorFields] = useState([]);
+  const recaptchaRef = useRef(null); // Ref dla reCAPTCHA
 
   // Funkcja pobierająca dzisiejszą datę w formacie YYYY-MM-DD
   function getTodayDate() {
@@ -58,11 +62,20 @@ export default function Form({ onFormSubmit }) {
     setIsSending(true);
     setFormError(null);
 
+    // Pobranie tokena reCAPTCHA
+    const recaptchaToken = recaptchaRef.current.getValue();
+    if (!recaptchaToken) {
+      setFormError("Proszę zaznacz CAPTCHA przed wysłaniem.");
+      return;
+    }
+
+    console.log("Wysyłanie danych:", { ...formData, recaptchaToken }); // Dodaj logowanie danych
+
     try {
       const response = await fetch("/api/sendEmail", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(formData, recaptchaToken),
       });
 
       if (response.ok) {
@@ -77,6 +90,7 @@ export default function Form({ onFormSubmit }) {
           selectedLocation: "",
         });
         onFormSubmit();
+        recaptchaRef.current.reset(); // Zresetuj CAPTCHA po wysłaniu
       } else {
         const errorData = await response.json();
         setFormError(`Error: ${errorData.message}`);
@@ -196,6 +210,11 @@ export default function Form({ onFormSubmit }) {
               style={{
                 border: errorFields.includes("text") ? "1px solid red" : "0",
               }}
+            />
+            <ReCAPTCHA
+              className="mt-4"
+              ref={recaptchaRef}
+              sitekey="6LetqpUqAAAAABRwX_slcBybtlkC7S4X4QZZEYUo" // Wstaw swój Site Key
             />
             <div className={classes.buttonContainer}>
               <button

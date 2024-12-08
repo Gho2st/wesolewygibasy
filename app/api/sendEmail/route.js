@@ -46,6 +46,25 @@ function createEmailTemplate({
   `;
 }
 
+// Funkcja weryfikująca token reCAPTCHA
+async function verifyRecaptcha(token) {
+  const secret = process.env.RECAPTCHA_SECRET_KEY; // Secret Key reCAPTCHA
+  const response = await fetch(
+    `https://www.google.com/recaptcha/api/siteverify`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({
+        secret,
+        response: token,
+      }),
+    }
+  );
+
+  const data = await response.json();
+  return data.success;
+}
+
 export async function POST(request) {
   try {
     const {
@@ -56,6 +75,7 @@ export async function POST(request) {
       phoneNumber,
       startDate,
       selectedLocation,
+      recaptchaToken,
     } = await request.json();
 
     // Sprawdzenie, czy wszystkie pola są wypełnione
@@ -75,6 +95,17 @@ export async function POST(request) {
       );
     }
 
+    // Weryfikacja reCAPTCHA
+    const recaptchaValid = await verifyRecaptcha(recaptchaToken);
+    console.log("Weryfikacja reCAPTCHA:", recaptchaValid); // Sprawdzamy wynik weryfikacji
+    if (!recaptchaValid) {
+      console.error("Nieudana weryfikacja reCAPTCHA"); // Dodaj logowanie
+      return NextResponse.json(
+        { message: "Weryfikacja reCAPTCHA nie powiodła się." },
+        { status: 400 }
+      );
+    }
+
     // Konfiguracja transporteru SMTP
     const transporter = nodemailer.createTransport({
       service: process.env.SMTP_SERVICE || "gmail",
@@ -89,7 +120,7 @@ export async function POST(request) {
 
     const mailOptions = {
       from: process.env.NODEMAILER_EMAIL,
-      to: "wesolewygibasy@onet.pl",
+      to: "domiweb.biuro@gmail.com",
       subject: "Email ze strony Wesołe Wygibasy od klienta",
       html: createEmailTemplate(fields),
     };
