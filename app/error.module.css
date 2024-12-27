@@ -9,28 +9,18 @@
 
 .container a {
   display: inline-block;
-  padding: 0.9rem 1.3rem;
+  padding: 0.9rem 1rem;
   border-radius: 0.5rem;
   background: #18970d;
   color: rgb(255, 255, 255);
   font-weight: bold;
   border: 0px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-right: 1rem;
   transition: all 0.3s ease;
 }
 
-.container button {
-  padding: 0.9rem 1.3rem;
-  border-radius: 0.5rem;
-  background: #fa7070;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  border: 0px;
-  font-size: 0.9rem;
-  margin-right: 1rem;
-  transition: all 0.3s ease;
-}
+
 .container button:hover,
 .container a:hover {
   cursor: pointer;

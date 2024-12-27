@@ -15,14 +15,6 @@ export default function Error({ error, reset }) {
       <h2>Coś poszło nie tak!</h2>
       <div className={classes.buttons}>
         <Link href="/">Wróć na stronę główną</Link>
-        <button
-          onClick={
-            // Attempt to recover by trying to re-render the segment
-            () => reset()
-          }
-        >
-          Spróbuj ponownie!
-        </button>
       </div>
     </div>
   );
