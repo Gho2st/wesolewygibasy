@@ -58,10 +58,10 @@ export default function FoodItemTable() {
 
   return (
     <div className={classes.container}>
-      <h4>Menu Standardowe</h4>
-      <div className={classes.weekDays}>
+      <h3>Menu Standardowe</h3>
+      <ul className={classes.weekDays}>
         {Object.keys(menu).map((day) => (
-          <h5
+          <li
             key={day}
             onClick={() => handleDayChange(day)}
             className={`${classes.weekDay} ${
@@ -69,26 +69,25 @@ export default function FoodItemTable() {
             }`}
           >
             {day}
-          </h5>
+          </li>
         ))}
-      </div>
+      </ul>
       <div className={classes.description}>
-        <div className={classes.item}>
-          <h6>Śniadanie</h6>
-          <p>{menu[currentDay].breakfast}</p>
-        </div>
-        <div className={classes.item}>
-          <h6>Drugie Śniadanie</h6>
-          <p>{menu[currentDay].secondBreakfast}</p>
-        </div>
-        <div className={classes.item}>
-          <h6>Obiad</h6>
-          <p>{menu[currentDay].lunch}</p>
-        </div>
-        <div className={classes.item}>
-          <h6>Podwieczorek</h6>
-          <p>{menu[currentDay].snack}</p>
-        </div>
+        <ul>
+          <li>
+            <strong>Śniadanie:</strong> {menu[currentDay].breakfast}
+          </li>
+          <li>
+            <strong>Drugie Śniadanie:</strong>
+            {menu[currentDay].secondBreakfast}
+          </li>
+          <li>
+            <strong>Obiad:</strong> {menu[currentDay].lunch}
+          </li>
+          <li>
+            <strong>Podwieczorek:</strong> {menu[currentDay].snack}
+          </li>
+        </ul>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-.container h4 {
+.container h3 {
   margin-top: 3rem;
   margin-bottom: 1rem;
   font-size: 1.6rem;
@@ -9,13 +9,17 @@
   display: flex;
 }
 
-.weekDays h5 {
+.weekDays li {
   font-size: 1.25rem;
   margin-right: 1.5rem;
   color: #2c7865;
+  transition: 0.3s ease;
+  list-style: none;
 }
-.weekDays h5:hover{
-    cursor: pointer;
+.weekDays li:hover {
+  cursor: pointer;
+  color: #43b79a;
+  opacity: 0.8;
 }
 
 .activeDay {
@@ -26,23 +30,17 @@
   margin-top: 1.5rem;
 }
 
-.description h6 {
-  font-size: 1.2rem;
+.description ul li strong {
+  font-size: 1.1rem;
+  display: block;
 }
 
-.item {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1rem;
+.description ul li {
+  list-style: none;
 }
 
-.item p {
-  text-align: left !important;
-  margin: 0 !important;
-}
-
-@media (max-width:618px){
-  .weekDays{
+@media (max-width: 618px) {
+  .weekDays {
     overflow: scroll;
   }
 }

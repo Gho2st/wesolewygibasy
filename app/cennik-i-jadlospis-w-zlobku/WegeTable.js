@@ -42,8 +42,7 @@ export default function WegeTable() {
         "Kajzerka z makiem 30g z masłem roślinnym, pastą jajeczną z żółtym serem 20g ze szczypiorkiem i pomidorem (jaja, ser, majonez), herbatka z pigwą 200ml",
       lunch:
         "Zupa krem z pomidorów i marchewki z grzankami, natka 250ml(seler, masło, śmietana, pszenica) Kotleciki rybne z morszczuka w płatkach kukurydzianych 70g (jaja, płatki, wiórki kokosowe), ziemniaczki 100g, surówka z kiszonej kapusty i marchewki 70g, kompot 200ml vege- kotleciki z warzyw, pestek i kaszy gryczanej",
-      snack:
-        "bananowy budyń z ryżu na mleku 150ml (mleko, śmietanka)",
+      snack: "bananowy budyń z ryżu na mleku 150ml (mleko, śmietanka)",
     },
   };
 
@@ -53,10 +52,10 @@ export default function WegeTable() {
 
   return (
     <div className={classes.container}>
-      <h4>Menu Wege</h4>
-      <div className={classes.weekDays}>
+      <h3>Menu Wege</h3>
+      <ul className={classes.weekDays}>
         {Object.keys(menu).map((day) => (
-          <h5
+          <li
             key={day}
             onClick={() => handleDayChange(day)}
             className={`${classes.weekDay} ${
@@ -64,22 +63,21 @@ export default function WegeTable() {
             }`}
           >
             {day}
-          </h5>
+          </li>
         ))}
-      </div>
+      </ul>
       <div className={classes.description}>
-        <div className={classes.item}>
-          <h6>Śniadanie</h6>
-          <p>{menu[currentDay].breakfast}</p>
-        </div>
-        <div className={classes.item}>
-          <h6>Obiad</h6>
-          <p>{menu[currentDay].lunch}</p>
-        </div>
-        <div className={classes.item}>
-          <h6>Podwieczorek</h6>
-          <p>{menu[currentDay].snack}</p>
-        </div>
+        <ul>
+          <li>
+            <strong>Śniadanie:</strong> {menu[currentDay].breakfast}
+          </li>
+          <li>
+            <strong>Obiad:</strong> {menu[currentDay].lunch}
+          </li>
+          <li>
+            <strong>Podwieczorek:</strong> {menu[currentDay].snack}
+          </li>
+        </ul>
       </div>
     </div>
   );
