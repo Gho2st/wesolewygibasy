@@ -1,13 +1,17 @@
 import classes from "./page.module.css";
 import Image from "next/image";
-import Team, { TeamGlogera, TeamSliczna, TeamStanczyka } from "@/components/UI/Team";
+import Team, {
+  TeamGlogera,
+  TeamSliczna,
+  TeamStanczyka,
+} from "@/components/UI/Team";
 import TeamVetulaniego from "@/components/UI/Team";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { Metadata } from "next";
 import Header from "@/components/UI/Header";
 
 export const metadata = {
-  title: "O nas - Żłobek Wesołe Wygibasy w Krakowie",
+  title: "Wesołe Wygibasy - Żłobek w Krakowie | O nas",
   alternates: {
     canonical: "/o-nas",
   },
@@ -22,7 +26,7 @@ export default function oNas() {
   return (
     <>
       <div className={classes.container}>
-        <Header text="O Nas - Żłobek Wesołe Wygibasy w Krakowie" />
+        <Header text="Poznaj nasz Żłobek Wesołe Wygibasy w Krakowie" />
         <div className={classes.info}>
           <div className={classes.text}>
             <p>
