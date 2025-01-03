@@ -28,6 +28,13 @@ export default function Contact() {
           i ciekawością. Oferujemy wysokiej jakości opiekę i wsparcie w
           rozwijaniu umiejętności dzieci w wieku do 3 lat.
         </p>
+        <p>
+          <strong>Przyjmujemy zapisy przez cały rok!</strong>
+        </p>
+        <p>
+          Nie czekaj – zapisz swoje dziecko już dziś i daj mu szansę na rozwój w
+          najlepszym żłobku w Krakowie!
+        </p>
       </div>
       <div className={classes.contactContainer}>
         <div className={classes.text}>

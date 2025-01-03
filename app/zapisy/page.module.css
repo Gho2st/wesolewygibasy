@@ -100,6 +100,39 @@
   color: blue !important;
 }
 
+.infoContainer {
+  margin: auto;
+  width: 80%;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.infoContainer h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
+.listContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  list-style: none;
+}
+
+.listContainer li {
+  background: #ffe3e3;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.listContainer li strong {
+  font-size: 1.1rem;
+  display: block;
+}
+
 @media (max-width: 1263px) {
   .animals {
     width: 35%;
@@ -160,6 +193,18 @@
   .contactContainer {
     margin-top: 1.5rem;
     padding: 2rem;
+  }
+  .listContainer {
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+  .infoContainer {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+  }
+  .infoContainer h2 {
+    font-size: 1.8rem;
   }
 }
 
