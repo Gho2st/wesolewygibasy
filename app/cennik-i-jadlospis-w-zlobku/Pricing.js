@@ -14,7 +14,7 @@ export default function Pricing() {
 
   return (
     <>
-      <main>
+      <main className={classes.mainContainer}>
         <Header text="Cennik - Żłobek Wesołe Wygibasy w Krakowie" />
         <div className={classes.description}>
           <p>
