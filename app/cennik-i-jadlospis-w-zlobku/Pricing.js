@@ -14,7 +14,7 @@ export default function Pricing() {
 
   return (
     <>
-      <div className={classes.pricingContainer}>
+      <main>
         <Header text="Cennik - Żłobek Wesołe Wygibasy w Krakowie" />
         <div className={classes.description}>
           <p>
@@ -57,28 +57,30 @@ export default function Pricing() {
             z naszą placówką – chętnie udzielimy wszelkich informacji.
           </p>
         </div>
-        <h2
-          className={classes.pickMe}
-          onClick={() => {
-            setIsSecondVisible(!isSecondVisible);
-          }}
-        >
-          Żłobki ul. Śliczna & ul. Stańczyka - Czesne 0zł
-          <IoCaretDownOutline />
-        </h2>
-        {isSecondVisible && <Second />}
-        <h2
-          className={classes.pickMe}
-          onClick={() => {
-            setIsOthersVisible(!isOthersVisible);
-          }}
-        >
-          Żłobki ul. Vetulaniego & ul. Glogera <IoCaretDownOutline />
-        </h2>
-        {isOthersVisible && <Others />}
-      </div>
+        <div className={classes.pricingContainer}>
+          <h2
+            className={classes.pickMe}
+            onClick={() => {
+              setIsSecondVisible(!isSecondVisible);
+            }}
+          >
+            Żłobki ul. Śliczna & ul. Stańczyka - Czesne 0zł
+            <IoCaretDownOutline />
+          </h2>
+          {isSecondVisible && <Second />}
+          <h2
+            className={classes.pickMe}
+            onClick={() => {
+              setIsOthersVisible(!isOthersVisible);
+            }}
+          >
+            Żłobki ul. Vetulaniego & ul. Glogera <IoCaretDownOutline />
+          </h2>
+          {isOthersVisible && <Others />}
+        </div>
 
-      <FoodContainer />
+        <FoodContainer />
+      </main>
     </>
   );
 }

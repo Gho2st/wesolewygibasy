@@ -13,8 +13,9 @@
   color: rgb(78, 77, 77);
   width: 100%;
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   text-align: left;
+  padding: 0rem 9%;
 }
 
 .description a {
@@ -85,6 +86,6 @@
     font-size: 1.8rem;
   }
   .description {
-    margin-top: 0rem;
+    margin-top: 2rem;
   }
 }
