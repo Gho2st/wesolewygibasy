@@ -17,6 +17,20 @@
   text-align: left;
 }
 
+.description a {
+  color: #d64242;
+  text-decoration: underline;
+}
+
+.description p {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.description ul {
+  padding: 1rem;
+}
+
 .pricingContainer h2 {
   margin-top: 1rem;
   font-size: 1.4rem;
@@ -40,6 +54,10 @@
   opacity: 0.9;
   cursor: pointer;
   scale: 1.01;
+}
+
+.textContainer {
+  margin-top: 3rem;
 }
 
 @media (max-width: 728px) {

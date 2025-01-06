@@ -67,7 +67,7 @@ export default function Zapisy() {
           <p>
             Nie czekaj – zrób pierwszy krok w stronę zapewnienia swojemu dziecku
             najlepszego startu w życiu. Wypełnij formularz kontaktowy dostępny
-            poniżej lub zadzwoń do nas. Razem ustalimy dogodny termin wizyty.
+            powyżej lub zadzwoń do nas. Razem ustalimy dogodny termin wizyty.
             <br></br>
             Przekonaj się, dlaczego jesteśmy najlepszym żłobkiem w Krakowie!
             Czekamy na Ciebie i Twoje dziecko – pozwól nam pokazać, jak możemy

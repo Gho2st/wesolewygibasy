@@ -1,9 +1,9 @@
-.slicznaContainer {
+.secondContainer {
   overflow-x: auto;
   padding: 1rem 2%;
 }
 
-.slicznaContainer h3 {
+.secondContainer h3 {
   margin-top: 1.5rem;
   font-weight: 600;
   font-size: 0.9rem;
@@ -36,11 +36,11 @@
   color: white;
 }
 
-.text {
+.additional {
   margin-top: 1rem;
-  font-size: 0.9rem;
-  color: grey;
+  margin-bottom: 1rem;
 }
+
 .header {
   margin-top: 1rem;
   font-size: 1rem;
