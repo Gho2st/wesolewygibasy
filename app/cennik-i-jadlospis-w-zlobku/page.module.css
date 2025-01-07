@@ -13,7 +13,8 @@
 }
 
 .description a {
-  color: #d64242;
+  color: #fa7070;
+  font-weight: bold;
   text-decoration: underline;
 }
 
