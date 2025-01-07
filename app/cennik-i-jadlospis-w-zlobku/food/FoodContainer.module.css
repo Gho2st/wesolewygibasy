@@ -1,6 +1,7 @@
 .foodContainer {
-  padding: 2rem 9%;
+  margin-top: 6rem;
 }
+
 .foodContainer p {
   width: 100%;
   text-align: left;
@@ -41,6 +42,9 @@
   }
   .option {
     margin-top: 1.5rem;
+  }
+  .foodContainer {
+    margin-top: 4rem;
   }
 }
 
