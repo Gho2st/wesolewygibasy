@@ -9,6 +9,7 @@ import TeamVetulaniego from "@/components/UI/Team";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { Metadata } from "next";
 import Header from "@/components/UI/Header";
+import Career from "./career";
 
 export const metadata = {
   title: "Wesołe Wygibasy - Żłobek w Krakowie | O nas",
@@ -101,6 +102,7 @@ export default function oNas() {
           <TeamStanczyka place="Żłobek, Ulica Stańczyka/LU3 8, Kraków 31-126" />
           <TeamSliczna place="Żłobek, Ulica Śliczna 36a, Kraków 31-444" />
         </div>
+        <Career />
       </div>
     </>
   );
