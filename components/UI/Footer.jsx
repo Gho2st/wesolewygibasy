@@ -5,6 +5,7 @@ import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaMessage } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import Numbers from "./Numbers";
 import { FaArrowUp } from "react-icons/fa";
 
@@ -78,6 +79,12 @@ export default function Footer() {
               aria-label="Poczytaj więcej na naszym facebooku Wesołe Wygibasy"
             >
               <FaFacebook />
+            </Link>
+            <Link
+              href="https://www.instagram.com/wesolewygibasy"
+              aria-label="Poczytaj więcej na naszym instagramie Wesołe Wygibasy"
+            >
+              <FaInstagram />
             </Link>
           </div>
         </div>
