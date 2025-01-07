@@ -28,6 +28,7 @@
 
 .pricingContainer h2 {
   font-size: 1.4rem;
+  margin-top: 1rem;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 8px;
   color: #fa7070;
   padding: 1rem;
@@ -52,6 +53,7 @@
 
 .textContainer {
   padding: 2rem 9%;
+  padding-bottom: 0;
 }
 
 .pricingContainer {
