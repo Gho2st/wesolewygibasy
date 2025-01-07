@@ -93,14 +93,20 @@
   font-size: 1.3rem;
   margin-right: 1rem;
 }
-.facebook svg {
-  color: blue;
+.socialmedia svg {
   margin-top: 1rem;
   font-size: 2.5rem;
   transition: all ease 0.3s;
 }
 
-.facebook svg:hover {
+.facebook {
+  color: blue !important;
+}
+.instagram {
+  color: red !important;
+}
+
+.socialmedia svg:hover {
   scale: 1.1;
 }
 
