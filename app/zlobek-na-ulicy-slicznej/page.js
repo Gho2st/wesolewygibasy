@@ -138,10 +138,10 @@ export default function sliczna() {
 
               <div className={`${classes.card} ${classes.card5}`}>
                 <div>
-                  <h3>Żłobek zatwierdzony przez sanepid i straż pożarną</h3>
+                  <h3>Żłobek zatwierdzony przez Sanepid i Straż pożarną</h3>
                   <p>
-                    Nasz żłobek przeszedł wszystkie niezbędne odbiory sanepidu
-                    oraz straży pożarnej. Placówka jest przystosowana do opieki
+                    Nasz żłobek przeszedł wszystkie niezbędne odbiory Sanepidu
+                    oraz Straży pożarnej. Placówka jest przystosowana do opieki
                     na dziećmi, co gwarantuje maksymalne bezpieczeństwo w
                     codziennej opiece.
                   </p>

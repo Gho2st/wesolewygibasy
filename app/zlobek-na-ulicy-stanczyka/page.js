@@ -141,10 +141,10 @@ export default function stanczyka() {
               <div className={`${classes.card} ${classes.card5}`}>
                 <div>
                   <h3>
-                    Bezpieczeństwo zatwierdzone przez sanepid i straż pożarną
+                    Bezpieczeństwo zatwierdzone przez Sanepid i Straż pożarną
                   </h3>
                   <p>
-                    Żłobek został odebrany przez sanepid oraz straż pożarną i
+                    Żłobek został odebrany przez Sanepid oraz Straż pożarną i
                     przystosowany do opieki nad 29 dziećmi w wieku od 8 miesięcy
                     do 36 miesięcy.
                   </p>
