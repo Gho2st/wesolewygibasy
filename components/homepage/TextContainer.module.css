@@ -5,6 +5,7 @@
   align-items: center;
   background: #fffbf2;
   overflow-x: hidden;
+  padding: 2rem 0rem;
 }
 .textContainer {
   padding: 2rem 9%;
@@ -59,11 +60,11 @@
 }
 .card3 {
   background: #fff7e2;
-  color: #f8b03f;
+  color: #ef9400;
 }
 .card4 {
   background: #e4fffd;
-  color: #35d4ae;
+  color: #01bb90;
 }
 
 .left {
