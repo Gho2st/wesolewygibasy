@@ -44,14 +44,14 @@ export default function About() {
         >
           <div>
             <h2>
-              Dlaczego warto zapisać dziecko do żłobka{" "}
-              <span> Wesołe Wygibasy</span> w Krakowie?
+              Dlaczego warto zapisać dziecko do
+              <span> Wesołych Wygibasów?</span>
             </h2>
             <p className={classes.text}>
               Nasz priorytet to profesjonalna i pełna troski opieka nad dziećmi.
-              Wesołe Wygibasy to żłobek, gdzie Twoje dziecko znajdzie nie tylko
-              bezpieczeństwo, ale również wsparcie w rozwoju umiejętności
-              społecznych, emocjonalnych i fizycznych.
+              To żłobek, gdzie Twoje dziecko znajdzie nie tylko bezpieczeństwo,
+              ale również wsparcie w rozwoju umiejętności społecznych,
+              emocjonalnych i fizycznych.
             </p>
             <div className={classes.itemContainer}>
               <div className={classes.item}>

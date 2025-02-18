@@ -54,9 +54,7 @@ export default function Places(props) {
     >
       <div className={classes.container} ref={skillRef}>
         <div className={classes.description}>
-          <h2>
-            Lokalizacje Żłobka <span> Wesołe Wygibasy</span> w Krakowie
-          </h2>
+          <h2>Nasze placówki w Krakowie – znajdź najbliższą!</h2>
           <p>
             Wybierz jedną z naszych placówek żłobka Wesołe Wygibasy w Krakowie,
             aby dowiedzieć się więcej o ofercie, planie dnia i zobaczyć galerie

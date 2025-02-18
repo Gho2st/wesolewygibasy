@@ -29,33 +29,27 @@ export default function TextContainer() {
             className={classes.left}
           >
             <div>
-              <h2>
-                Nasze podejście do opieki nad dziećmi w{" "}
-                <span>Wesołych Wygibasach</span>
-              </h2>
+              <h2>Jak dbamy o dzieci w naszym żłobku?</h2>
 
               <div className={classes.cardContainer}>
                 <div className={`${classes.card} ${classes.card1}`}>
                   <FaHeart />
                   <h3>Miłość i troska</h3>
                   <p>
-                    Żłobek Wesołe Wygibasy w Krakowie to miejsce, gdzie każde
-                    dziecko otoczone jest miłością, szacunkiem i troską. Nasza
-                    misja to stworzenie bezpiecznego i inspirującego środowiska,
-                    które wspiera rozwój umiejętności, kreatywności i osobowości
-                    maluchów.
+                    Wesołe Wygibasy to przestrzeń, w której każde dziecko jest
+                    otoczone opieką, szacunkiem i wsparciem. Tworzymy
+                    inspirujące środowisko, które sprzyja rozwojowi
+                    umiejętności, kreatywności i osobowości maluchów.
                   </p>
                 </div>
                 <div className={`${classes.card} ${classes.card2}`}>
                   <FaLocationDot />
                   <h3>Dogodna lokalizacja w Krakowie</h3>
                   <p>
-                    Nasza lokalizacja na północy Krakowa zapewnia dogodny dojazd
-                    dla rodziców z dzielnic takich jak Prądnik Biały, Bronowice,
-                    Krowodrza oraz z pobliskich miejscowości, w tym Zielonek.
-                    Żłobek na ulicy Ślicznej mieści się w dzielnicy Olsza, a
-                    jego położenie sprzyja również mieszkańcom osiedla
-                    Oficerskiego, Grzegórzek oraz osiedla Avia.
+                    Nasze placówki są łatwo dostępne dla mieszkańców Prądnika
+                    Białego, Bronowic, Krowodrzy i Zielonek. Oddział na ul.
+                    Ślicznej w Olszy to doskonały wybór dla rodziców z osiedla
+                    Oficerskiego, Grzegórzek i Avia.
                   </p>
                 </div>
                 <div className={`${classes.card} ${classes.card3}`}>
@@ -65,7 +59,7 @@ export default function TextContainer() {
                   <p>
                     Oferujemy opiekę dla dzieci do 3. roku życia. Nasz zespół
                     wykwalifikowanych opiekunów zapewnia indywidualne wsparcie
-                    każdemu dziecku.
+                    każdemu dziecku oraz spokój dla rodziców.
                   </p>
                 </div>
                 <div className={`${classes.card} ${classes.card4}`}>

@@ -17,7 +17,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 32%;
+  width: 50%;
+}
+.imageContainer img {
+  border-radius: 6rem;
 }
 
 .textContainer {
@@ -86,20 +89,26 @@
 
 .cardContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.3rem;
 }
 
 .card {
-  padding: 2rem;
+  padding: 1.5rem;
   border: 2px solid #fa7070;
   border-radius: 2rem;
-  background: #fff9ee;
+  background: rgb(255, 255, 255);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .card h3 {
   margin-bottom: 2rem;
+}
+
+@media (min-width: 1400px) {
+  .cardContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media (max-width: 1300px) {

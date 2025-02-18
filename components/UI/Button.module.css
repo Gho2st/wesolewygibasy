@@ -8,6 +8,8 @@
   transition: all 0.2s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   margin-right: 0.6rem;
+  white-space: nowrap;
+  min-width: fit-content; /* Ustawia minimalną szerokość zgodnie z zawartością */
 }
 
 .buttonContainer:hover {

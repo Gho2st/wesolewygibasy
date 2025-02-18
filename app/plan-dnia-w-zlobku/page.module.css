@@ -81,43 +81,19 @@
 }
 
 .card {
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1.5rem;
+  border: 2px solid #fa7070;
+  border-radius: 2rem;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .card p {
   color: black;
-  font-weight: 500;
 }
 .card h3 {
   margin-bottom: 1.5rem;
   font-size: 1.4rem;
-}
-
-.card1 {
-  background: #daffc6;
-  color: #4fa608;
-}
-.card2 {
-  background: #ebe6fd;
-  color: #6d5ebc;
-}
-.card3 {
-  background: #fff3d4;
-  color: #c5851e;
-}
-.card4 {
-  background: #d6fcf9;
-  color: #24b190;
-}
-.card5 {
-  background: #dbe7ff;
-  color: #2c51a1;
-}
-.card6 {
-  background: #ffefef;
-  color: #c77373;
 }
 
 @media (max-width: 1500px) {

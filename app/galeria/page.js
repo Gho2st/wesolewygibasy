@@ -28,10 +28,10 @@ export default function Galeria() {
             <div className={classes.banerContainer}>
               <div className={classes.imageContainer}>
                 <Image
-                  src={"/others/galeria.png"}
+                  src={"/others/galeria2.png"}
                   width={100}
                   height={100}
-                  alt="Żłobek Wesołe Wygibasy - galeria zdjęć z codziennego życia dzieci w Krakowie"
+                  alt="Zdjęcie przedstawiające dzieci uśmiechające się do zdjęcia w Żłobku"
                   layout="responsive"
                 />
               </div>
@@ -53,7 +53,7 @@ export default function Galeria() {
                   <p className={classes.text}>
                     Zapraszamy do obejrzenia zdjęć, które ukazują codzienność
                     maluszków w naszej placówce. Odkryj, jak twórczo i radośnie
-                    spędzają czas w <span>Wesołych Wygibasach!</span>
+                    spędzają czas.
                   </p>
                   <div className={classes.buttonContainer}>
                     <Button text="Zapisy" href="/zapisy" />

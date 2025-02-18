@@ -102,13 +102,13 @@
 .planContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 2rem;
+  gap: 1.5rem;
   margin-top: 3rem;
 }
 
 .planCard {
-  background: rgb(251, 245, 236);
-  padding: 2rem;
+  background: white;
+  padding: 1.5rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 1rem;
   position: relative;
@@ -144,6 +144,11 @@
 .textContainer {
   padding: 4rem 9%;
   padding-top: 0;
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .textContainer h3 {
@@ -151,7 +156,7 @@
   margin-bottom: 0.5rem;
   font-size: 1.4rem;
 }
-.textContainer p{
+.textContainer p {
   margin-bottom: 0.5rem;
 }
 
@@ -187,6 +192,9 @@
 }
 
 @media (max-width: 900px) {
+  .textContainer {
+    grid-template-columns: 1fr;
+  }
   .planCard {
     padding: 1.5rem;
   }
