@@ -1,5 +1,4 @@
 "use client";
-import Dotation from "@/components/Info/dotation";
 import About from "@/components/homepage/About";
 import Baner from "@/components/homepage/Baner";
 import Places from "@/components/homepage/Places";
@@ -18,7 +17,6 @@ export default function Home() {
         <div className={classes.wrapper}>
           <Places />
         </div>
-        <Dotation />
       </main>
     </>
   );

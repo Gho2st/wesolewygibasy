@@ -3,6 +3,7 @@ import classes from "./page.module.css";
 import Button from "@/components/UI/Button";
 import { Metadata } from "next";
 import Image from "next/image";
+import Dotation from "@/components/Info/dotation";
 
 export const metadata = {
   title: "Informacje - Żłobek Wesołe Wygibasy w Krakowie",
@@ -117,29 +118,8 @@ export default function informacje() {
             </div>
           </div>
         </div>
-        {/* <div>
-            <h3>
-              Dlaczego rodzice wybierają Żłobek Wesołe Wygibasy w Krakowie?
-            </h3>
-            <p>
-              Nasz żłobek w Krakowie zapewnia nie tylko profesjonalną opiekę nad
-              dziećmi, ale również wszechstronny rozwój maluchów w bezpiecznym i
-              przyjaznym otoczeniu. Organizujemy liczne zajęcia edukacyjne i
-              artystyczne, które pomagają dzieciom rozwijać umiejętności
-              społeczne i kreatywne. Jesteśmy otwarci na współpracę z rodzicami,
-              a nasz wykwalifikowany personel dba o indywidualne potrzeby
-              każdego dziecka.
-            </p>
-
-            <p>
-              Zapraszamy do kontaktu z nami w celu uzyskania szczegółowych
-              informacji na temat naszej oferty, zapisów oraz warunków opieki
-              nad dziećmi. Nasz żłobek znajduje się w dogodnej lokalizacji w
-              Krakowie, co ułatwia codzienne przyprowadzanie i odbieranie
-              dzieci.
-            </p>
-          </div> */}
       </div>
+      <Dotation />
     </>
   );
 }
