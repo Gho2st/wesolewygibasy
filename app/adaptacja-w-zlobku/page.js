@@ -31,7 +31,7 @@ export default function adaptacja() {
         <section>
           <div className={classes.cloudContainer}>
             <div className={classes.head}>
-              <h3>Szczęśliwe dzieciństwo zaczyna się tutaj</h3>
+              <h2>Szczęśliwe dzieciństwo zaczyna się tutaj</h2>
               <p>
                 Naszym celem jest zapewnienie spokojnego i bezstresowego
                 przejścia do nowego środowiska, co pozwoli dziecku na naturalny
@@ -49,7 +49,7 @@ export default function adaptacja() {
                     height={200}
                   ></Image>
                   <div className={classes.cardText}>
-                    <h4>Zaangażowanie rodziców</h4>
+                    <h3>Zaangażowanie rodziców</h3>
                     <p>
                       Zaangażowanie Rodziców: Adaptacja zaczyna się od Państwa.
                       Jeśli decydujecie się Państwo zapisać dziecko do żłobka,
@@ -73,7 +73,7 @@ export default function adaptacja() {
                     height={200}
                   ></Image>
                   <div className={classes.cardText}>
-                    <h4>Personalizacja procesu</h4>
+                    <h3>Personalizacja procesu</h3>
                     <p>
                       Adaptacja jest sprawą bardzo indywidualną. Dzieci reagują
                       na różne sposoby — niektóre mogą nie potrzebować
@@ -97,13 +97,14 @@ export default function adaptacja() {
                     height={200}
                   ></Image>
                   <div className={classes.cardText}>
-                    <h4>Wsparcie rodziny</h4>
+                    <h3>Wsparcie rodziny</h3>
                     <p>
                       Jeśli to możliwe, warto, aby w adaptacji brało udział
                       dwóch rodziców lub inny członek rodziny. Pomaga to dziecku
                       w łatwiejszym przejściu do żłobka i szybciej przystosować
-                      się do nowego środowiska. <br></br> <br></br> Żłobek
-                      Wesołe Wygibasy w Krakowie to druga rodzina!
+                      się do nowego środowiska. <br></br> <br></br> Wesołe
+                      Wygibasy to kameralna przestrzeń dla najmłodszych by czuli
+                      się jak w domu.
                     </p>
                   </div>
                   <Link href="/zapisy">Zapisy</Link>
@@ -209,12 +210,10 @@ export default function adaptacja() {
             <article>
               <h3>Korzyści Z Procesu Adaptacji</h3>
               <p>
-                Adaptacja w żłobku to kluczowy moment w rozwoju dziecka, który
-                przynosi wiele korzyści. Maluchy uczą się samodzielności,
-                zdobywają nowe umiejętności społeczne i poznawcze, a także
-                rozwijają swoje zainteresowania. Udział w zajęciach grupowych
-                oraz indywidualnych pozwala na harmonijny rozwój w bezpiecznym i
-                wspierającym otoczeniu.
+                Maluchy uczą się samodzielności, zdobywają nowe umiejętności
+                społeczne i poznawcze, a także rozwijają swoje zainteresowania.
+                Udział w zajęciach grupowych oraz indywidualnych pozwala na
+                harmonijny rozwój w bezpiecznym i wspierającym otoczeniu.
               </p>
               <Link href="/zapisy">Zapisy do żłobka </Link>
             </article>

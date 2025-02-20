@@ -103,7 +103,7 @@ export default function PlanDnia() {
                 </p>
               </div>
               <div className={`${classes.card} ${classes.card3}`}>
-                <h3>Zajęcia Ruchowe: Aktywność Fizyczna i Zdrowy Styl Życia</h3>
+                <h3>Ruch to zdrowie! Jak dbamy o aktywność dzieci?</h3>
                 <p>
                   Aktywność fizyczna jest kluczowa dla prawidłowego rozwoju
                   dziecka. W naszym żłobku oferujemy zajęcia ruchowe, które

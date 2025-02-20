@@ -24,7 +24,6 @@ export default function Adaptacja() {
                 <h2>Adaptacja to kluczowy moment dla dziecka w Żłobku.</h2>
 
                 <p className={classes.text}>
-                  Adaptacja dziecka w żłobku to kluczowy moment w jego rozwoju.
                   Rozumiemy, jak ważne są komfort i poczucie bezpieczeństwa w
                   nowym otoczeniu, dlatego oferujemy
                   <span> 8 bezpłatnych spotkań</span> adaptacyjnych, które

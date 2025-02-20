@@ -103,6 +103,7 @@
 
 .card h3 {
   margin-bottom: 2rem;
+  font-size: 1.4rem;
 }
 
 @media (min-width: 1400px) {
@@ -163,5 +164,11 @@
   }
   .head h2 {
     font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .card h3 {
+    font-size: 1.3rem;
   }
 }

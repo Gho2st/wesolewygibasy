@@ -30,7 +30,7 @@
   text-align: center;
 }
 
-.head h3 {
+.head h2 {
   margin-top: 1.5rem;
   font-size: 1.8rem;
   color: black;
@@ -71,7 +71,7 @@
   font-size: 0.95rem;
 }
 
-.card h4 {
+.card h3 {
   margin-bottom: 1rem;
   font-size: 1.4rem;
   font-weight: 600;
