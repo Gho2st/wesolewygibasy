@@ -43,7 +43,7 @@ export default function Footer() {
           <div>
             <h3>Godziny otwarcia</h3>
             <ul>
-              <li>Pon - Pt: 6:30 - 17:30</li>
+              <li>Pon - Pt: 7:00 - 17:30</li>
               <li>Sob: nieczynne</li>
               <li>Ndz: nieczynne</li>
             </ul>

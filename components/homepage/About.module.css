@@ -14,6 +14,9 @@
 .imageContainer {
   width: 35%;
   transform: translateX(-0rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .textContainer {
@@ -23,6 +26,7 @@
 
 .textContainer h2 {
   font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .text {
@@ -69,6 +73,8 @@
 
 .ownerContainer {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .phoneContainer {
   margin-left: 1rem;
@@ -153,7 +159,13 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
+  .imageContainer {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
   .textContainer {
     margin-top: 0rem;
   }

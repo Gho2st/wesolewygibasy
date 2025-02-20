@@ -91,7 +91,9 @@ export default function Reviews() {
     <section className={classes.wrapper}>
       <div className={classes.container}>
         <div className={classes.textContainer}>
-          <h2>Rodzice nam ufają – ocena 4.9/5!</h2>
+          <h2>
+            Rodzice nam <span> ufają </span> – ocena 4.9/5!
+          </h2>
           <p className={classes.description}>
             Dzięki troskliwej opiece i wysokiemu standardowi edukacji zdobyliśmy
             uznanie wielu rodzin w Krakowie. Nasze pozytywne opinie są

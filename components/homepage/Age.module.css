@@ -1,0 +1,99 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+.container {
+  display: flex;
+  padding: 2rem 9%;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  gap: 3rem;
+}
+
+.imageContainer {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textContainer {
+  width: 60%;
+  margin-top: 2.5rem;
+}
+
+.textContainer h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.text {
+  margin-top: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.additional {
+  margin-top: 1rem;
+  color: grey;
+  font-weight: 600;
+}
+
+.buttonContainer {
+  margin-top: 2rem;
+  display: flex;
+}
+
+@media (max-width: 1500px) {
+  .imageContainer {
+    width: 38%;
+  }
+}
+
+@media (max-width: 1349px) {
+  .textContainer h2 {
+    width: 80%;
+  }
+  .imageContainer {
+    width: 40%;
+  }
+}
+@media (max-width: 1300px) {
+  .container {
+    flex-direction: column;
+  }
+  .textContainer {
+    width: 100%;
+  }
+  .imageContainer {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .imageContainer {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .textContainer {
+    margin-top: 0rem;
+  }
+  .container {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+  }
+  .textContainer h2 {
+    font-size: 1.6rem;
+    width: 100%;
+  }
+  .imageContainer {
+    width: 100%;
+  }
+}

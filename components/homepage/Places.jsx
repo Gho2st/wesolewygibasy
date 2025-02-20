@@ -16,7 +16,7 @@ export default function Places(props) {
       location: "Żłobek, Kraków",
       street: "ul. Śliczna 36/A",
       link: "zlobek-na-ulicy-slicznej",
-      add: "Program Aktywny Maluch",
+      add: "Program Aktywny Maluch \n Dotacja aktywny maluch \n Dotacja aktywnie w żłobku",
     },
     {
       image: "/others/stanczyka.jpg",
@@ -25,7 +25,7 @@ export default function Places(props) {
       location: "Żłobek, Kraków",
       street: "ul. Stańczyka 8/LU3",
       link: "zlobek-na-ulicy-stanczyka",
-      add: "Program Aktywny Maluch",
+      add: "Program Aktywny Maluch \n Dotacja aktywny maluch \n Dotacja aktywnie w żłobku",
     },
     {
       image: "/others/glogera.jpg",
@@ -34,7 +34,7 @@ export default function Places(props) {
       location: "Żłobek, Kraków",
       street: "ul. Glogera 53/LU2",
       link: "zlobek-na-ulicy-glogera",
-      add: "",
+      add: "Dotacja aktywny maluch \n Dotacja aktywnie w żłobku",
     },
     {
       image: "/others/vetulaniego.jpg",
@@ -43,7 +43,7 @@ export default function Places(props) {
       location: "Żłobek, Kraków",
       street: "ul. Vetulaniego 8",
       link: "zlobek-na-ulicy-vetulaniego",
-      add: "",
+      add: "Dotacja aktywny maluch \n Dotacja aktywnie w żłobku",
     },
   ];
 
@@ -54,7 +54,9 @@ export default function Places(props) {
     >
       <div className={classes.container} ref={skillRef}>
         <div className={classes.description}>
-          <h2>Nasze placówki w Krakowie – znajdź najbliższą!</h2>
+          <h2>
+            Nasze placówki w Krakowie – <span> znajdź </span> najbliższą!
+          </h2>
           <p>
             Wybierz jedną z naszych placówek żłobka Wesołe Wygibasy w Krakowie,
             aby dowiedzieć się więcej o ofercie, planie dnia i zobaczyć galerie

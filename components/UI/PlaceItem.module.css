@@ -5,6 +5,7 @@
   padding-bottom: 1.5rem;
   transition: ease-in 0.2s;
   background: white;
+  min-height: 100%;
 }
 
 .itemContainer:hover {
@@ -15,6 +16,7 @@
 .imageContainer {
   height: 300px;
   display: flex;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .imageContainer img {
@@ -33,7 +35,7 @@
 .text h3 {
   color: black;
   margin-bottom: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .buttonContainer {
@@ -49,6 +51,6 @@
 
 .dotationText {
   text-align: center;
-  font-weight: bold;
-  font-size: 1.1rem;
+  font-weight: 600;
+  font-size: 1rem;
 }

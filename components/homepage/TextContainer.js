@@ -29,7 +29,9 @@ export default function TextContainer() {
             className={classes.left}
           >
             <div>
-              <h2>Jak dbamy o dzieci w naszym żłobku?</h2>
+              <h2>
+                Jak <span> dbamy </span> o dzieci w naszym żłobku?
+              </h2>
 
               <div className={classes.cardContainer}>
                 <div className={`${classes.card} ${classes.card1}`}>

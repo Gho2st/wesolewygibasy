@@ -30,7 +30,13 @@ export default function PlaceItem(props) {
               className={classes.dotationText}
               style={{ color: props.add !== "" ? "#08c6c3" : "transparent" }}
             >
-              <p>{props.add || "Placeholder text"}</p>
+              {props.add ? (
+                props.add
+                  .split("\n")
+                  .map((line, index) => <p key={index}>{line}</p>)
+              ) : (
+                <p>Placeholder text</p>
+              )}
             </div>
           </div>
         </div>
