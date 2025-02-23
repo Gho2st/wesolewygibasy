@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import classes from "./Gallery.module.css";
 import NextImage from "next/image"; // Zmieniamy nazwę importu, aby uniknąć konfliktu

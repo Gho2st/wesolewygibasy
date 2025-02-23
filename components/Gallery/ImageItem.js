@@ -1,3 +1,4 @@
+'use client'
 import classes from "./ImageItem.module.css";
 import Image from "next/image";
 

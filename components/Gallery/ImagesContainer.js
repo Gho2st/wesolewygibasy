@@ -1,6 +1,5 @@
 "use client";
-
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import ImagesItem from "./ImageItem";
 import classes from "./ImagesContainer.module.css";
 import Slider from "react-slick";
@@ -11,7 +10,6 @@ import Modal from "react-modal";
 import Gallery from "./Gallery";
 import { IoMdClose } from "react-icons/io";
 
-// Function to normalize text
 function normalizeText(text) {
   return text.normalize("NFC");
 }
@@ -22,8 +20,6 @@ export default function ImagesContainer(props) {
   const [folders, setFolders] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
-  console.log(props.folder);
 
   useEffect(() => {
     async function fetchFolders() {
@@ -111,10 +107,11 @@ export default function ImagesContainer(props) {
         <p className={classes.galleryText}>
           Przekonajcie się sami, jak radośnie i twórczo spędzają czas Wasze
           maluszki w naszym żłobku <span>Wesołe Wygibasy</span> w Krakowie.
-          <br></br>
+          <br />
           Zapraszamy do obejrzenia tych pięknych chwil, które pokazują miłość,
-          radość i rozwój naszych dzieci. <br></br> Zdjęcia ukazują różnorodne
-          wydarzenia i chwile z życia maluszków w naszej placówce.
+          radość i rozwój naszych dzieci. <br />
+          Zdjęcia ukazują różnorodne wydarzenia i chwile z życia maluszków w
+          naszej placówce.
         </p>
       </div>
       {loading && <p>Wczytywanie galerii zdjęć...</p>}
@@ -133,14 +130,13 @@ export default function ImagesContainer(props) {
         </Slider>
       )}
 
-      {/* Modal to display the gallery */}
       <Modal
         isOpen={showModal}
         onRequestClose={closeModal}
         contentLabel="Gallery Modal"
         className={classes.modal}
         overlayClassName={classes.modalOverlay}
-        appElement={document.body} // Wskazujemy <body> jako appElement
+        ariaHideApp={false}
       >
         <div className={classes.modalContent}>
           <button onClick={closeModal} className={classes.closeButton}>
