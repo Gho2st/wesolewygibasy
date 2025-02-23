@@ -140,6 +140,7 @@ export default function ImagesContainer(props) {
         contentLabel="Gallery Modal"
         className={classes.modal}
         overlayClassName={classes.modalOverlay}
+        appElement={document.body} // Wskazujemy <body> jako appElement
       >
         <div className={classes.modalContent}>
           <button onClick={closeModal} className={classes.closeButton}>
