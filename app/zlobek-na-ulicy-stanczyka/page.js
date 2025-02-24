@@ -3,13 +3,13 @@ import ImagesContainer from "@/components/Gallery/ImagesContainer";
 import Image from "next/image";
 import Button from "@/components/UI/Button";
 import Link from "next/link";
-import DaySchedule from "@/components/Info/DaySchedule";
 import { Metadata } from "next";
 import SliderComponent from "@/components/UI/slider/slider";
 import Maluch from "@/components/UI/Maluch";
 import Map from "@/components/UI/Map";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import Button2 from "@/components/UI/Button2";
+import DayScheduleStanczyka from "@/components/Info/DayScheduleStanczyka";
 
 export const metadata = {
   title: "Żłobek Kraków - Wesołe Wygibasy na ul. Stańczyka, Bronowice",
@@ -168,7 +168,7 @@ export default function stanczyka() {
         </div>
         <SliderComponent images={images} />
         <div className={classes.wrapper}>
-          <DaySchedule header="Plan Dnia i zajęcia dodatkowe" time="17:30" />
+          <DayScheduleStanczyka header="Plan Dnia i zajęcia dodatkowe" />
         </div>
         <ImagesContainer folder="stanczyka" />
         <div className={classes.wrapper}>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Button from "@/components/UI/Button";
 import Button2 from "@/components/UI/Button2";
 import Link from "next/link";
-import DaySchedule from "@/components/Info/DaySchedule";
+import DaySchedule from "@/components/Info/DayScheduleSliczna";
 import { Metadata } from "next";
 import SliderComponent from "@/components/UI/slider/slider";
 import Maluch from "@/components/UI/Maluch";

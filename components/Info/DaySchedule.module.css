@@ -55,6 +55,10 @@
   margin-bottom: 1rem;
 }
 
+.extra ul li {
+  list-style-type: none;
+}
+
 .extra h5 {
   font-size: 1.1rem;
 }

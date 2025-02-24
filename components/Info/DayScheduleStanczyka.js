@@ -3,7 +3,7 @@ import Link from "next/link";
 import classes from "./DaySchedule.module.css";
 import { useState } from "react";
 
-export default function DaySchedule(props) {
+export default function DayScheduleStanczyka(props) {
   const [isDayScheduleOpen, setIsDayScheduleOpen] = useState(true);
   const [isExtraOpen, setIsExtraOpen] = useState(false);
 
@@ -13,8 +13,8 @@ export default function DaySchedule(props) {
         <div className={classes.head}>
           <h2>{props.header}</h2>
           <p>
-            Żłobek jest czynny jest czynny w godzinach{" "}
-            <span> 7:00 do {props.time} </span>
+            Żłobek jest czynny jest czynny w godzinach
+            <span> 6:30 do 17:30 </span>
             Bardzo proszę aby przyprowadzać dziecko do godziny
             <span> 08:30 </span>
           </p>
@@ -51,31 +51,30 @@ export default function DaySchedule(props) {
         {isDayScheduleOpen && (
           <div className={classes.daySchedule}>
             <ul>
-              <li>7:00 - Powitanie dzieci</li>
+              <li>
+                6:30 - 8:30 - Schodzenie się dzieci i wspólne zabawy na dywanie
+              </li>
               <li>8:30 - 9:00 - Śniadanie</li>
               <li>9:00 - 9:15 - Czas wolny, zabawy dowolne</li>
-              <li>9:15 - 9:45 - Zajęcia dydaktyczne i edukacyjne</li>
-              <li>9:45 - 10:00 - Przerwa na przekąskę</li>
+              <li>9:00 - 10:00 - Przywitanie i zajęcia dodatkowe</li>
+              <li>10:00 - 10:15 - Drugie śniadanie</li>
               <li>
-                10:00 - Zabawy na świeżym powietrzu (w zależności od pogody)
+                10:15 - 11:00 - Zajęcia edukacyjne, spacery, zajęcia z chustą,
+                zajęcia kulinarne, tańcowanie na dywanie, zajęcia plastyczne,
+                bajkoterapia, sensoryka itp. (w zależności od planu pracy na
+                dany miesiąc i pogody)
               </li>
               <li>11:00 - 11:30 - Obiad</li>
-              <li>11:30 - 13:30 - Drzemka</li>
+              <li>11:30 - 13:15 - Drzemka</li>
+              <li>13:15 - 13:30 - Podwieczorek</li>
               <li>
-                <em>
-                  W przypadku gdy dziecko nie zostaje na drzemkę - prosimy o
-                  odbiór do 11:30.
-                </em>
+                13:30 - 15:30 - Wspólne zabawy na dywanie - ogólno rozwojowe
               </li>
+              <li>15:30 - 15:45 - Drugi podwieczorek</li>
               <li>
-                13:30 - 14:00 - Zajęcia popołudniowe (zabawy kreatywne,
-                plastyczne)
+                15:45 - 17:30 - Zabawy wspierające motorykę małą i dużą,
+                rozchodzenie się do domów i zakończenie dnia
               </li>
-              <li>14:30 - 17:00 - Podwieczorek i czas wolny</li>
-              <li>
-                <em>Rozchodzenie się dzieci do domów.</em>
-              </li>
-              <li>17:30 - Zakończenie dnia</li>
             </ul>
           </div>
         )}
@@ -83,31 +82,31 @@ export default function DaySchedule(props) {
           <div className={classes.extra}>
             <p>
               Dziecko otrzymuje w naszym żłobku <span> moc atrakcji. </span>
-              Każdego dnia odbywają się inne <span> zajęcia dodatkowe.</span>
+              Każdego dnia od 9:00 do 10:00 odbywają się inne
+              <span> zajęcia dodatkowe.</span>
             </p>
-            <p>Zajęcia logopedyczne</p>
-            <p>Język Angielski</p>
-            <p>Rytmika - prowadzona przez znakomitego muzyka Pana Patryka</p>
-            <p>
-              Temat tygodnia - w tym dniu dzieci rozmawiają oraz tworzą pracę
-              plastyczną na temat wybrany przez opiekunów np. dzień kota, dzień
-              pizzy czy powitanie wiosny.
-            </p>
-            <p>
-              Dogoterapia prowadzona przez Panią Marzenę Hrykałło-Horowska
-              zoofizjoterapeuta i dogoterapeuta <br></br> <br></br> Zajęcia
-              umuzykalniające prowadzone według teorii Edwina Eliasa Gordona
-              prowadzonę przez Melobobas
-            </p>
-            <h4>Dodatkowo</h4>
-            <p>
-              Bajkoterapia, zajęcia kulinarne, zajęcia teatralne, sensoplastyka
-              oraz comiesięczne koncerty muzyki klasycznej
-            </p>
-            <h5>
-              Wszystkie zajęcia odbywają się w godzinach{" "}
-              <span> 09:00 – 10:00</span>
-            </h5>
+            <ul>
+              <li>
+                <strong>Poniedziałek:</strong> Dzień tematyczny – zajęcia
+                związane z danym tematem tygodnia.
+              </li>
+              <li>
+                <strong>Wtorek:</strong> Rytmika – zajęcia muzyczno-ruchowe
+                wspierające koordynację i poczucie rytmu.
+              </li>
+              <li>
+                <strong>Środa:</strong> Język angielski – nauka przez zabawę,
+                śpiew i ruch.
+              </li>
+              <li>
+                <strong>Czwartek:</strong> Logopedia
+              </li>
+              <li>
+                <strong>Piątek:</strong> Dogoterapia lub Gordonki – kontakt z
+                psem terapeutycznym lub zajęcia muzyczne inspirowane teorią
+                Gordona.
+              </li>
+            </ul>
           </div>
         )}
       </div>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import classes from "./DaySchedule.module.css";
 import { useState } from "react";
 
-export default function DayScheduleGlogera(props) {
+export default function DayScheduleSliczna(props) {
   const [isDayScheduleOpen, setIsDayScheduleOpen] = useState(true);
   const [isExtraOpen, setIsExtraOpen] = useState(false);
 
@@ -14,7 +14,7 @@ export default function DayScheduleGlogera(props) {
           <h2>{props.header}</h2>
           <p>
             Żłobek jest czynny jest czynny w godzinach
-            <span> 6:30 do 17:00 </span>
+            <span> 7:00 do 17:30 </span>
             Bardzo proszę aby przyprowadzać dziecko do godziny
             <span> 08:30 </span>
           </p>
@@ -51,21 +51,36 @@ export default function DayScheduleGlogera(props) {
         {isDayScheduleOpen && (
           <div className={classes.daySchedule}>
             <ul>
-              <li>6:30 - 8:15 - Schodzenie się dzieci do żlobka</li>
-              <li>8:15 - 8:30 - Powitanie z instrumentami</li>
-              <li>8:30 - 9:00 - Śniadanie</li>
-              <li>9:00 - 10:00 - Zajęcia Dodatkowe</li>
-              <li>10:15 - 11:00 - Zabawa swobodna / spacer</li>
-              <li>11:00 - 11:30 - Obiad</li>
-              <li>12:00 - 13:45 - Drzemka</li>
-              <li>14:00 - 14:15 - Podwieczorek</li>
               <li>
-                14:15 - 16:00 - Zabawy edukacyjne oraz wspierające motorykę małą
-                i dużą
+                7:00 - 8:30 - Schodzenie się dzieci. Przychodzą do żłobka,
+                witają się z opiekunami i kolegami. To czas na swobodną zabawę,
               </li>
-              <li>16:00 - 16:15 - Drugi podwieczorek</li>
-              <li>16:15 - 17:00 - Zabawy swobodne</li>
-              <li>17:00 - Zakończenie dnia</li>
+              <li>8:30 - 9:00 - Śniadanie</li>
+              <li>
+                9:00 - Przywitanie na dywanie. Po śniadaniu dzieci zbierają się
+                w kręgu na dywanie. Wspólnie śpiewają piosenki, używając
+                instrumentów, bawią się w pokazywanki i aktywizujące zabawy
+                ruchowe.
+              </li>
+              <li>9:00 - 11:00 - Zajęcia Dodatkowe</li>
+
+              <li>10:00 - 10:15 - Drugie Śniadanie</li>
+              <li>11:00 - Obiad</li>
+              <li>
+                11:45 - 13:30 - Drzemka Czas na odpoczynek i regenerację sił.
+              </li>
+              <li>13:30 - Podwieczorek</li>
+              <li>
+                14:00 - 15:30 - Zabawy swobodne i zorganizowane Dzieci bawią się
+                w kącikach tematycznych, uczestniczą w zabawach plastycznych,
+                konstrukcyjnych lub ruchowych.
+              </li>
+              <li>15:30 - Drugi podwieczorek</li>
+              <li>
+                16:00 - 17:30 - Zabawy i odbiór dzieci. Czas na ostatnie zabawy,
+                czytanie książeczek i stopniowe odbieranie dzieci przez
+                rodziców.
+              </li>
             </ul>
           </div>
         )}
@@ -73,25 +88,24 @@ export default function DayScheduleGlogera(props) {
           <div className={classes.extra}>
             <p>
               Dziecko otrzymuje w naszym żłobku <span> moc atrakcji. </span>
-              Każdego dnia od 9:00 do 10:00 odbywają się inne{" "}
-              <span> zajęcia dodatkowe.</span>
+              Każdego dnia od 9:00 do 11:00 odbywają się inne <span> zajęcia dodatkowe.</span>
             </p>
             <ul>
               <li>
-                <strong>Poniedziałek:</strong> Język angielski – nauka przez
-                zabawę, śpiew i ruch.
+                <strong>Poniedziałek:</strong> Dzień tematyczny – zajęcia
+                związane z danym tematem tygodnia.
               </li>
               <li>
                 <strong>Wtorek:</strong> Logorytmika – ćwiczenia łączące ruch,
                 rytm i mowę, wspierające rozwój językowy.
               </li>
               <li>
-                <strong>Środa:</strong> Rytmika – zajęcia muzyczno-ruchowe
-                wspierające koordynację i poczucie rytmu.
+                <strong>Środa:</strong> Język angielski – nauka przez zabawę,
+                śpiew i ruch.
               </li>
               <li>
-                <strong>Czwartek:</strong> Dzień tematyczny – zajęcia związane z
-                danym tematem tygodnia.
+                <strong>Czwartek:</strong> Rytmika – zajęcia muzyczno-ruchowe
+                wspierające koordynację i poczucie rytmu.
               </li>
               <li>
                 <strong>Piątek:</strong> Dogoterapia lub Gordonki – kontakt z
