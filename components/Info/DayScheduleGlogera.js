@@ -50,22 +50,28 @@ export default function DayScheduleGlogera(props) {
         </div>
         {isDayScheduleOpen && (
           <div className={classes.daySchedule}>
-            <h4> 6:30 - Powitanie dzieci </h4>
-            <h4> 8:30 - 9:00 - Śniadanie </h4>
-            <h4> 9:00 - 10:00 - Zajęcia dodatkowe </h4>
-            <h4>
-              10:00 - Zabawy na świeżym powietrzu (w zależności od pogody)
-            </h4>
-            <h4> 11:00 - 11:30 - Obiad </h4>
-            <h5>
-              W przypadku gdy dziecko nie zostaje na drzemkę - prosimy o odbiór
-              do 11:30.
-            </h5>
-            <h4>12:00 - 13:45 - drzemka</h4>
-            <h4> 14:00 - Podwieczorek </h4>
-            <h4> 16:00 - Drugi podwieczorek </h4>
-            <h5> Rozchodzenie się dzieci do domów. </h5>
-            <h4> 17:00 - Zakończenie dnia </h4>
+            <ul>
+              <li>6:30 - Powitanie dzieci</li>
+              <li>8:30 - 9:00 - Śniadanie</li>
+              <li>9:00 - 10:00 - Zajęcia dodatkowe</li>
+              <li>
+                10:00 - Zabawy na świeżym powietrzu (w zależności od pogody)
+              </li>
+              <li>11:00 - 11:30 - Obiad</li>
+              <li>
+                <em>
+                  W przypadku gdy dziecko nie zostaje na drzemkę - prosimy o
+                  odbiór do 11:30.
+                </em>
+              </li>
+              <li>12:00 - 13:45 - Drzemka</li>
+              <li>14:00 - Podwieczorek</li>
+              <li>16:00 - Drugi podwieczorek</li>
+              <li>
+                <em>Rozchodzenie się dzieci do domów.</em>
+              </li>
+              <li>17:00 - Zakończenie dnia</li>
+            </ul>
           </div>
         )}
         {isExtraOpen && (
