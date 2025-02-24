@@ -3,7 +3,7 @@ import Link from "next/link";
 import classes from "./DaySchedule.module.css";
 import { useState } from "react";
 
-export default function DaySchedule(props) {
+export default function DayScheduleGlogera(props) {
   const [isDayScheduleOpen, setIsDayScheduleOpen] = useState(true);
   const [isExtraOpen, setIsExtraOpen] = useState(false);
 
@@ -13,8 +13,8 @@ export default function DaySchedule(props) {
         <div className={classes.head}>
           <h2>{props.header}</h2>
           <p>
-            Żłobek jest czynny jest czynny w godzinach{" "}
-            <span> 7:00 do {props.time} </span>
+            Żłobek jest czynny jest czynny w godzinach
+            <span> 6:30 do 17:00 </span>
             Bardzo proszę aby przyprowadzać dziecko do godziny
             <span> 08:30 </span>
           </p>
@@ -50,27 +50,22 @@ export default function DaySchedule(props) {
         </div>
         {isDayScheduleOpen && (
           <div className={classes.daySchedule}>
-            <h4> 7:00 - Powitanie dzieci </h4>
+            <h4> 6:30 - Powitanie dzieci </h4>
             <h4> 8:30 - 9:00 - Śniadanie </h4>
-            <h4> 9:00 - 9:15 - Czas wolny, zabawy dowolne </h4>
-            <h4> 9:15 - 9:45 - Zajęcia dydaktyczne i edukacyjne </h4>
-            <h4> 9:45 - 10:00 - Przerwa na przekąskę </h4>
+            <h4> 9:00 - 10:00 - Zajęcia dodatkowe </h4>
             <h4>
               10:00 - Zabawy na świeżym powietrzu (w zależności od pogody)
             </h4>
             <h4> 11:00 - 11:30 - Obiad </h4>
-            <h4> 11:30 - 13:30 - Drzemka </h4>
             <h5>
               W przypadku gdy dziecko nie zostaje na drzemkę - prosimy o odbiór
               do 11:30.
             </h5>
-            <h4>
-              13:30 - 14:00 - Zajęcia popołudniowe (zabawy kreatywne,
-              plastyczne)
-            </h4>
-            <h4> 14:30 - 17:00 - Podwieczorek i czas wolny </h4>
+            <h4>12:00 - 13:45 - drzemka</h4>
+            <h4> 14:00 - Podwieczorek </h4>
+            <h4> 16:00 - Drugi podwieczorek </h4>
             <h5> Rozchodzenie się dzieci do domów. </h5>
-            <h4> 17:30 - Zakończenie dnia </h4>
+            <h4> 17:00 - Zakończenie dnia </h4>
           </div>
         )}
         {isExtraOpen && (

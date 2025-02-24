@@ -3,13 +3,13 @@ import ImagesContainer from "@/components/Gallery/ImagesContainer";
 import Image from "next/image";
 import Button from "@/components/UI/Button";
 import Link from "next/link";
-import DaySchedule from "@/components/Info/DaySchedule";
 import { Metadata } from "next";
 import SliderComponent from "@/components/UI/slider/slider";
 import Maluch from "@/components/UI/Maluch";
 import Map from "@/components/UI/Map";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import Button2 from "@/components/UI/Button2";
+import DayScheduleGlogera from "@/components/Info/DayScheduleGlogera";
 export const metadata = {
   title: "Żłobek na Ulicy Glogera w Krakowie - Wesołe Wygibasy",
   alternates: {
@@ -180,7 +180,7 @@ export default function glogera() {
         <div className={classes.wrapper}>
           <SliderComponent images={images} />
         </div>
-        <DaySchedule header="Plan Dnia i zajęcia dodatkowe" time="17:00" />
+        <DayScheduleGlogera header="Plan Dnia i zajęcia dodatkowe" />
         <div className={classes.wrapper}>
           <ImagesContainer folder="glogera" />
         </div>
