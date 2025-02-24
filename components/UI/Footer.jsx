@@ -43,7 +43,11 @@ export default function Footer() {
           <div>
             <h3>Godziny otwarcia</h3>
             <ul>
-              <li>Pon - Pt</li>
+              <li>Pon - Pt </li>
+              <li>Vetulaniego - 7:00 - 17:00 </li>
+              <li>Glogera - 6:30 - 17:00 </li>
+              <li>Stańczyka - 6:30 - 17:30 </li>
+              <li>Śliczna - 7:00 - 17:30 </li>
               <li>Sob: nieczynne</li>
               <li>Ndz: nieczynne</li>
             </ul>
