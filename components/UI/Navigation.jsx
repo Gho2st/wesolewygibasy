@@ -41,7 +41,11 @@ export default function Navigation(props) {
         </div>
 
         <div className={classes.navigation}>
-          <div className={classes.navigation__button} onClick={toggleMenu}>
+          <div
+            className={classes.navigation__button}
+            onClick={toggleMenu}
+            aria-label={menuOpen ? "Zamknij menu" : "Otwórz menu"}
+          >
             {menuOpen ? <RxCross1 /> : <RxHamburgerMenu />}
           </div>
           <div
