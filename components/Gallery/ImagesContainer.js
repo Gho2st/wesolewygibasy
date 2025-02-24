@@ -44,7 +44,7 @@ export default function ImagesContainer(props) {
   const carouselSettings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 250,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
