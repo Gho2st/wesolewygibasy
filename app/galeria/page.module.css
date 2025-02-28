@@ -112,6 +112,13 @@
   }
 }
 
+@media (max-width: 1400px) {
+  .imageContainer {
+    width: 33%;
+    margin: auto;
+  }
+}
+
 @media (max-width: 1300px) {
   .banerContainer {
     margin-top: 3rem;
@@ -125,10 +132,6 @@
     width: 100%;
     margin: auto;
     padding-bottom: 2rem;
-  }
-  .imageContainer {
-    width: 33%;
-    margin: auto;
   }
 }
 
