@@ -28,7 +28,7 @@ export default function Galeria() {
             <div className={classes.banerContainer}>
               <div className={classes.imageContainer}>
                 <Image
-                  src={"/others/galeria2.png"}
+                  src={"/monkeys/7.gif"}
                   width={100}
                   height={100}
                   alt="Zdjęcie przedstawiające dzieci uśmiechające się do zdjęcia w Żłobku"
