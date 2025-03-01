@@ -263,12 +263,6 @@ export function TeamGlogera(props) {
           quote="Praca z dziećmi jest moją pasją. Dużo satysfakcji przynosi mi obserwowanie jak każdy z tych małych ludzi na moich oczach rozwija się, poznaje nowe pojęcia, nawyki. Im więcej z siebie daję, tym więcej otrzymuję. W dzieciach zachwyca mnie ich szczerość i ciekawość świata."
         />
         <TeamMember
-          src="/team/glogera/wiktoria.jpeg"
-          name="Wiktoria Kik"
-          role="Opiekunka Dziecięca"
-          quote=""
-        />
-        <TeamMember
           src="/team/glogera/ania.jpeg"
           name="Anna Gamrat"
           role="Opiekunka Dziecięca"
