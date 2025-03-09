@@ -82,20 +82,11 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.modalContent h3 {
-  text-align: center;
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
-  font-size: 1.8rem;
-  text-transform: capitalize;
-  color: #fa7070;
-}
-
 .closeButton {
-  position: absolute;
+  position: sticky; /* Zamiast absolute używamy sticky */
   background: white;
   top: 0.8rem;
-  right: 0.4rem;
+  left: 100rem;
   color: rgb(0, 0, 0);
   border: 0;
   border-radius: 50%;
@@ -111,6 +102,15 @@
 .closeButton:hover {
   cursor: pointer;
   scale: 1.1;
+}
+
+.modalContent h3 {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  color: #fa7070;
 }
 
 @media (max-width: 1144px) {
