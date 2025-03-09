@@ -138,9 +138,9 @@ export default function vetulaniego() {
               </div>
               <div className={`${classes.card} ${classes.card5}`}>
                 <div>
-                  <h3>Opieka nad dziećmi w wieku od 1 do 3 lat</h3>
+                  <h3>Opieka nad dziećmi w wieku od 8 miesięcy do 3 lat</h3>
                   <p>
-                    Nasza placówka przyjmuje dzieci w wieku od 1 do 3 lat. Grupa
+                    Nasza placówka przyjmuje dzieci w wieku od 8 miesięcy do 3 lat. Grupa
                     liczy maksymalnie 20 dzieci, którymi opiekuje się 3 do 4
                     doświadczonych opiekunek. Dzięki temu każde dziecko
                     otrzymuje indywidualną uwagę i troskę, a nasi podopieczni są
