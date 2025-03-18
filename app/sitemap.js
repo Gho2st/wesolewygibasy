@@ -49,28 +49,40 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
-      url: "https://wesolewygibasy.pl/zlobek-na-ulicy-glogera",
+      url: "https://wesolewygibasy.pl/zlobki",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: "https://wesolewygibasy.pl/zlobek-na-ulicy-vetulaniego",
+      url: "https://wesolewygibasy.pl/zlobki/glogera",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: "https://wesolewygibasy.pl/zlobek-na-ulicy-slicznej",
+      url: "https://wesolewygibasy.pl/zlobki/vetulaniego",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: "https://wesolewygibasy.pl/zlobek-na-ulicy-stanczyka",
+      url: "https://wesolewygibasy.pl/zlobki/sliczna",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
+    },
+    {
+      url: "https://wesolewygibasy.pl/zlobki/stanczyka",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: "https://wesolewygibasy.pl/zlobki/lokietka",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
     },
   ];
 }

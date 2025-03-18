@@ -1,21 +1,24 @@
-"use client";
 import PlaceItem from "../UI/PlaceItem";
 import classes from "./Places.module.css";
-import { useRef } from "react";
-import { useInView } from "framer-motion";
 
 export default function Places(props) {
-  const skillRef = useRef();
-  const isSkillRefinView = useInView(skillRef, { once: true });
-
   const items = [
+    {
+      image: "/others/lokietka.png",
+      alt: "Zdjęcie przedstawiające wnętrze Żłobka na ulicy Łokietka",
+      title: "Żłobek na Łokietka",
+      location: "Żłobek, Kraków",
+      street: "ul. Łokietka 23",
+      link: "zlobki/lokietka",
+      add: "Dotacja aktywny maluch \n Dotacja aktywnie w żłobku",
+    },
     {
       image: "sliders/sliczna-slider/sl4.jpg",
       alt: "Własny plac zabaw Żłobka Wesołe Wygibasy na ulicy Ślicznej",
       title: "Żłobek na Ślicznej",
       location: "Żłobek, Kraków",
       street: "ul. Śliczna 36/A",
-      link: "zlobek-na-ulicy-slicznej",
+      link: "zlobki/sliczna",
       add: "Program Aktywny Maluch \n Dotacja aktywny maluch \n Dotacja aktywnie w żłobku",
     },
     {
@@ -24,7 +27,7 @@ export default function Places(props) {
       title: "Żłobek na Stańczyka",
       location: "Żłobek, Kraków",
       street: "ul. Stańczyka 8/LU3",
-      link: "zlobek-na-ulicy-stanczyka",
+      link: "zlobki/stanczyka",
       add: "Program Aktywny Maluch \n Dotacja aktywny maluch \n Dotacja aktywnie w żłobku",
     },
     {
@@ -33,7 +36,7 @@ export default function Places(props) {
       title: "Żłobek na Glogera",
       location: "Żłobek, Kraków",
       street: "ul. Glogera 53/LU2",
-      link: "zlobek-na-ulicy-glogera",
+      link: "zlobki/glogera",
       add: "Dotacja aktywny maluch \n Dotacja aktywnie w żłobku",
     },
     {
@@ -42,7 +45,7 @@ export default function Places(props) {
       title: "Klub Malucha",
       location: "Żłobek, Kraków",
       street: "ul. Vetulaniego 8",
-      link: "zlobek-na-ulicy-vetulaniego",
+      link: "zlobki/vetulaniego",
       add: "Dotacja aktywny maluch \n Dotacja aktywnie w żłobku",
     },
   ];
@@ -52,18 +55,15 @@ export default function Places(props) {
       id="placówki"
       style={{ background: props.background ? "white" : "#fffbf2" }}
     >
-      <div className={classes.container} ref={skillRef}>
+      <div className={classes.container}>
         <div className={classes.description}>
           <h2>
             Nasze placówki w Krakowie – <span> znajdź </span> najbliższą!
           </h2>
           <p>
-            Wybierz jedną z naszych placówek żłobka Wesołe Wygibasy w Krakowie,
-            aby dowiedzieć się więcej o ofercie, planie dnia i zobaczyć galerie
-            z codziennego życia dzieci. Dwie nasze placówki realizują Program
-            Aktywny Maluch, który wspiera wszechstronny rozwój najmłodszych i
-            pomaga maluchom rozwijać się fizycznie, emocjonalnie oraz
-            społecznie.
+            Mamy 5 placówek w różnych częściach Krakowa – każda z nich oferuje
+            tę samą wysoką jakość opieki, ale w unikalnej lokalizacji. Sprawdź
+            szczegóły i wybierz żłobek dla swojego dziecka!
           </p>
         </div>
         <div className={classes.grid}>

@@ -7,8 +7,8 @@
 }
 .baner {
   width: 100%;
-  background-image: url("/sliders/glogera-slider/g3.jpg");
-  background-size: cover;
+  background-image: url("/sliders/stanczyka-slider/st3.jpg");
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: right;
   min-height: 100vh;
@@ -65,87 +65,13 @@
   margin-bottom: 1rem;
   font-weight: 500;
 }
-
-.description {
-  text-align: center;
-  margin-top: 2rem;
-}
-
 .cardWrapper {
   min-height: 100vh;
 }
 
-.cardContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
-  padding-bottom: 4rem;
-
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.card h3 {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-}
-
-.card p {
-  color: black;
-  font-weight: 400;
-  margin-bottom: 1.5rem;
-}
-
-.card a {
-  display: inline;
-  color: black;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.card a:hover {
-  color: var(--color-primary);
-}
-
-.card1 {
-  background: #ffe6e1;
-  color: #ff583d;
-}
-.card2 {
-  background: #ebe6fd;
-  color: #6d5ebc;
-}
-.card3 {
-  background: #fff3d4;
-  color: #f8b03f;
-}
-.card4 {
-  background: #d6fcf9;
-  color: #35d4ae;
-}
-
-.card5 {
-  background: #d7f4ff;
-  color: rgb(99, 169, 189);
-}
-
-.card6 {
-  background: #f9e5ff;
-  color: #d16eef;
-}
-
-@media (max-width: 1200px) {
-  .cardContainer {
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 2rem;
-  }
+.description {
+  text-align: center;
+  margin-top: 2rem;
 }
 
 @media (max-width: 900px) {
@@ -164,11 +90,6 @@
   }
 }
 
-@media (max-width: 700px) {
-  .cardContainer {
-    grid-template-columns: 1fr;
-  }
-}
 @media (max-width: 600px) {
   .textContainer h1 {
     font-size: 1.6rem !important;
@@ -180,13 +101,23 @@
   .buttonContainer {
     margin-top: 1.5rem;
   }
-  .baner {
-    background-repeat: no-repeat;
-    background-position: bottom;
-  }
 
   .header {
     margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 444px) {
+  .baner {
+    background-size: 250%;
+    background-repeat: no-repeat;
+    background-position: 60% bottom;
+  }
+}
+
+@media (max-width: 376px) {
+  .baner {
+    background-size: 100%;
   }
 }
 

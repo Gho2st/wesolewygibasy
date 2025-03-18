@@ -15,21 +15,15 @@ export default function Baner() {
                 Najlepszy Żłobek w Krakowie - <span> Wesołe Wygibasy </span>
               </h1>
               <p>
-                Wesołe Wygibasy to placówka, która powstała z pasji,
-                troski i miłości do dzieci. Znajdujemy się w dogodnych
-                lokalizacjach, takich jak Prądnik Biały, Olsza, Krowodrza oraz
-                Bronowice – idealne dla rodziców z różnych dzielnic Krakowa oraz
-                okolicznych miejscowości.
+                Wesołe Wygibasy to placówka, która powstała z pasji, troski i
+                miłości do dzieci. Znajdujemy się w dogodnych lokalizacjach,
+                takich jak Prądnik Biały, Olsza, Krowodrza oraz Bronowice –
+                idealne dla rodziców z różnych dzielnic Krakowa oraz okolicznych
+                miejscowości.
               </p>
               <div className={classes.buttonContainer}>
-                <Button
-                  text="Czytaj więcej"
-                  href="#czytaj-wiecej"
-                />
-                <Button2
-                  text="Placówki"
-                  href="#placówki"
-                />
+                <Button text="Czytaj więcej" href="#czytaj-wiecej" />
+                <Button2 text="Placówki" href="/zlobki" />
               </div>
             </div>
           </div>

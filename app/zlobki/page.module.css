@@ -1,0 +1,75 @@
+.container {
+  padding: 2rem 9%;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 3rem;
+}
+
+.text {
+  width: 50%;
+  margin-top: 3rem;
+}
+.text span{
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.text h2 {
+  margin-bottom: 1rem;
+}
+
+.text p {
+  font-size: 1.1rem;
+}
+
+.buttonContainer {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.imageContainer {
+  width: 40%;
+}
+
+.intro {
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.intro h2 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.intro p {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 1000px) {
+  .textContainer {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  .text {
+    width: 100%;
+  }
+  .imageContainer {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .imageContainer {
+    width: 100%;
+    margin: auto;
+  }
+  .intro {
+    margin-top: 6rem;
+  }
+}

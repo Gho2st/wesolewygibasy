@@ -8,6 +8,7 @@
 
 .container {
   width: 100%;
+  min-height: 100vh;
 }
 
 .head h2 {
@@ -61,6 +62,10 @@
 
 .extra h5 {
   font-size: 1.1rem;
+}
+
+.additionalList li{
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 800px) {

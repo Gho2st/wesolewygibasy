@@ -38,6 +38,7 @@
   margin-top: 1rem;
   color: grey;
   font-weight: 600;
+  display: block;
 }
 
 .buttonContainer {

@@ -1,11 +1,11 @@
 .itemContainer {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 1rem;
   width: 100%;
   padding-bottom: 1.5rem;
   transition: ease-in 0.2s;
   background: white;
   min-height: 100%;
+  border-radius: 1rem;
 }
 
 .itemContainer:hover {
@@ -14,7 +14,7 @@
 }
 
 .imageContainer {
-  height: 300px;
+  height: 350px;
   display: flex;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -22,7 +22,6 @@
 .imageContainer img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   border-radius: 1rem 1rem 0 0;
 }
 
@@ -36,6 +35,10 @@
   color: black;
   margin-bottom: 1.5rem;
   font-size: 1.3rem;
+}
+
+.text p {
+  font-size: 1.1rem;
 }
 
 .buttonContainer {
@@ -53,4 +56,10 @@
   text-align: center;
   font-weight: 600;
   font-size: 1rem;
+}
+
+@media (max-width: 1400px) {
+  .imageContainer {
+    height: 320px;
+  }
 }

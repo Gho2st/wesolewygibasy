@@ -1,9 +1,8 @@
 "use client";
-import Link from "next/link";
 import classes from "./DaySchedule.module.css";
 import { useState } from "react";
 
-export default function DayScheduleSliczna(props) {
+export default function DayScheduleLokietka(props) {
   const [isDayScheduleOpen, setIsDayScheduleOpen] = useState(true);
   const [isExtraOpen, setIsExtraOpen] = useState(false);
 
@@ -105,7 +104,7 @@ export default function DayScheduleSliczna(props) {
               Każdego dnia od 9:00 do 11:00 odbywają się inne{" "}
               <span> zajęcia dodatkowe.</span>
             </p>
-            <ul>
+            <ul className={classes.additionalList}>
               <li>
                 <strong>Poniedziałek:</strong> Dzień tematyczny – zajęcia
                 związane z danym tematem tygodnia.

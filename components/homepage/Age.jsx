@@ -19,9 +19,9 @@ export default function Age() {
             muzyczne, ruchowe, a także pierwsze przyjaźnie i wspólne posiłki w
             przyjaznym otoczeniu. Zapewniamy przytulne miejsce do odpoczynku, a
             harmonijny plan dnia pomaga maluchom czuć się pewnie i spokojnie.
-            <p className={classes.additional}>
+            <span className={classes.additional}>
               *W placówce na Vetulaniego od 1 roku życia
-            </p>
+            </span>
           </p>
           <div className={classes.buttonContainer}>
             <Button text="Adaptacja" href="/adaptacja-w-zlobku" />

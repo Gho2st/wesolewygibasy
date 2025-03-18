@@ -106,7 +106,7 @@ export default function About() {
                 ></Image>
                 <div className={classes.phoneContainer}>
                   <Link href={"tel:+48697560022"} className={classes.phone}>
-                    <p>+48 697 560 022</p>
+                    <span>+48 697 560 022</span>
                   </Link>
 
                   <p className={classes.ownerDescription}>

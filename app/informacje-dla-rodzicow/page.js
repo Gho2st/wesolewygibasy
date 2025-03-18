@@ -1,7 +1,5 @@
 import Header from "@/components/UI/Header";
 import classes from "./page.module.css";
-import Button from "@/components/UI/Button";
-import { Metadata } from "next";
 import Image from "next/image";
 import Dotation from "@/components/Info/dotation";
 
@@ -103,7 +101,7 @@ export default function informacje() {
           <div className={`${classes.card} ${classes.card4}`}>
             <div className={classes.text}>
               <h3>Polityka Prywatności i Ochrona Danych Osobowych</h3>
-              <p>
+              <p className="">
                 Zgodnie z przepisami RODO, dokładamy wszelkich starań, aby
                 chronić dane osobowe Państwa dzieci. Dokument zawiera
                 szczegółowe informacje na temat przetwarzania danych osobowych w

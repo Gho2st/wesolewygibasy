@@ -81,12 +81,12 @@ export default function Navigation(props) {
               </li>
               <li className={classes.navigation__item}>
                 <Link
-                  href={"/#placówki"}
+                  href={"/zlobki"}
                   className={classes.navigation__link}
                   onClick={closeMenu}
                 >
                   <span>03</span>
-                  Placówki
+                  Żłobki
                 </Link>
               </li>
               <li className={classes.navigation__item}>

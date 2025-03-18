@@ -39,11 +39,13 @@
 
 .card svg {
   font-size: 2.3rem;
+  color: var(--color-primary);
 }
 
 .card h3 {
   margin-top: 1rem;
   font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .card p {
@@ -51,20 +53,16 @@
 }
 
 .card1 {
-  background: #ffede9;
-  color: #ff583d;
+  background: #f8e1e9;
 }
 .card2 {
-  background: #f3efff;
-  color: #6d5ebc;
+  background: #e8f0fe;
 }
 .card3 {
-  background: #fff7e2;
-  color: #ef9400;
+  background: #fff1d6;
 }
 .card4 {
-  background: #e4fffd;
-  color: #01bb90;
+  background: #e0f7e9;
 }
 
 .left {

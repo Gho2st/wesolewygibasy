@@ -1,7 +1,6 @@
-import { Montserrat, Baloo_2 } from "next/font/google";
+import { Baloo_2 } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
-import { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Navigation from "@/components/UI/Navigation";
 import Footer from "@/components/UI/Footer";

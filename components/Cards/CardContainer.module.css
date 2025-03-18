@@ -1,0 +1,56 @@
+/* src/components/CardContainer.module.css */
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding-bottom: 4rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.3s ease-in-out; /* Płynne przejście dla hover */
+}
+
+.card:hover {
+  scale: 1.025;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.card p {
+  color: rgb(58, 58, 58);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.card a {
+  display: inline;
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.card a:hover {
+  color: var(--color-primary);
+}
+
+@media (max-width: 1200px) {
+  .cardContainer {
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 700px) {
+  .cardContainer {
+    grid-template-columns: 1fr;
+  }
+}
