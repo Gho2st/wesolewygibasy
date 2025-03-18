@@ -27,7 +27,7 @@ const images = [
     alt: "Zdjęcie ze środka Żłobka na ulicy Glogera w Krakowie",
   },
   {
-    src: "sliders/glogera-slider/g3.jpg",
+    src: "/sliders/glogera-slider/g3.jpg",
     alt: "Zdjęcie ze środka Żłobka na ulicy Glogera w Krakowie",
   },
   {
