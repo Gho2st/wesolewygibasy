@@ -21,27 +21,27 @@ export const metadata = {
 
 const images = [
   {
-    src: "sliders/stanczyka-slider/st1.jpg",
+    src: "/sliders/stanczyka-slider/st1.jpg",
     alt: "Widok wnętrza żłobka Wesołe Wygibasy na Stańczyka w Krakowie",
   },
   {
-    src: "sliders/stanczyka-slider/st2.jpg",
+    src: "/sliders/stanczyka-slider/st2.jpg",
     alt: "Sala zabaw w żłobku na ul. Stańczyka w Krakowie, Wesołe Wygibasy",
   },
   {
-    src: "sliders/stanczyka-slider/st3.jpg",
+    src: "/sliders/stanczyka-slider/st3.jpg",
     alt: "Przytulne wnętrze żłobka w Bronowicach, Kraków",
   },
   {
-    src: "sliders/stanczyka-slider/st4.jpg",
+    src: "/sliders/stanczyka-slider/st4.jpg",
     alt: "Zdjęcie budynku Żłobka na Stańczyka",
   },
   {
-    src: "sliders/stanczyka-slider/st5.jpg",
+    src: "/sliders/stanczyka-slider/st5.jpg",
     alt: "Zdjęcie przedstawiające wejście do Żłobka",
   },
   {
-    src: "sliders/stanczyka-slider/st6.jpg",
+    src: "/sliders/stanczyka-slider/st6.jpg",
     alt: "Zdjęcie sali zabaw dla dzieci w Wesołych Wygibasach",
   },
 ];

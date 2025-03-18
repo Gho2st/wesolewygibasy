@@ -49,7 +49,7 @@ export default function PlanDnia() {
               </div>
               <div className={classes.imageContainer}>
                 <Image
-                  src={"/others/plan.png"}
+                  src={"/plan-dnia/plan-dnia.webp"}
                   width={100}
                   height={100}
                   layout={"responsive"}

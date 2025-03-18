@@ -31,7 +31,7 @@ export default function Navigation(props) {
         <div className={classes.logoContainer}>
           <Link href={"/"}>
             <Image
-              src={"/others/zlobek-wesole-wygibasy-krakow-logo.png"}
+              src={"/others/logo.png"}
               width={110}
               height={65}
               alt="Logo of Wesołe Wygibasy"

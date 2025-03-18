@@ -19,11 +19,11 @@ export const metadata = {
 
 const images = [
   {
-    src: "sliders/glogera-slider/g1.jpg",
+    src: "/sliders/glogera-slider/g1.jpg",
     alt: "Zdjęcie ze środka Żłobka na ulicy Glogera w Krakowie",
   },
   {
-    src: "sliders/glogera-slider/g2.jpg",
+    src: "/sliders/glogera-slider/g2.jpg",
     alt: "Zdjęcie ze środka Żłobka na ulicy Glogera w Krakowie",
   },
   {
@@ -31,15 +31,15 @@ const images = [
     alt: "Zdjęcie ze środka Żłobka na ulicy Glogera w Krakowie",
   },
   {
-    src: "sliders/glogera-slider/g4.jpg",
+    src: "/sliders/glogera-slider/g4.jpg",
     alt: "Zdjęcie ze środka Żłobka na ulicy Glogera w Krakowie",
   },
   {
-    src: "sliders/glogera-slider/g6.jpg",
+    src: "/sliders/glogera-slider/g6.jpg",
     alt: "Zdjęcie ze środka Żłobka na ulicy Glogera w Krakowie",
   },
   {
-    src: "sliders/glogera-slider/g7.jpg",
+    src: "/sliders/glogera-slider/g7.jpg",
     alt: "Zdjęcie trawnika przed Żłobkiem Wesołe Wygibasy na ulicy Glogera w Krakowie",
   },
 ];

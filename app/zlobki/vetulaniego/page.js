@@ -19,19 +19,19 @@ export const metadata = {
 };
 const images = [
   {
-    src: "sliders/klub-malucha-slider/k1.jpg",
+    src: "/sliders/klub-malucha-slider/k1.jpg",
     alt: "zdjecie ze srodka zlobka klubu malucha w krakowie",
   },
   {
-    src: "sliders/klub-malucha-slider/k2.jpg",
+    src: "/sliders/klub-malucha-slider/k2.jpg",
     alt: "zdjecie ze srodka zlobka klubu malucha w krakowie",
   },
   {
-    src: "sliders/klub-malucha-slider/k3.jpg",
+    src: "/sliders/klub-malucha-slider/k3.jpg",
     alt: "zdjecie ze srodka zlobka klubu malucha w krakowie",
   },
   {
-    src: "sliders/klub-malucha-slider/k4.jpg",
+    src: "/sliders/klub-malucha-slider/k4.jpg",
     alt: "zdjecie ze srodka zlobka klubu malucha w krakowie",
   },
 ];

@@ -2,7 +2,6 @@ import classes from "./adaptacja.module.css";
 import Image from "next/image";
 import Button from "@/components/UI/Button";
 import Button2 from "@/components/UI/Button2";
-import Link from "next/link";
 export default function Adaptacja() {
   return (
     <>
@@ -10,7 +9,7 @@ export default function Adaptacja() {
         <div className={classes.adaptacjaContainer}>
           <div className={classes.imageContainer}>
             <Image
-              src={"/others/adaptacja.png"}
+              src={"/adaptacja/adaptacja.webp"}
               width={200}
               height={100}
               alt="Krąg dzieci podczas Adaptacji w Żłobku Wesołe Wygibasy w Krakowie"

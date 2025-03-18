@@ -1,6 +1,7 @@
 # Website for Wesołe Wygibasy.
 
-![Project](/public/desktop.png)
+![Project](/public//github/desktop.png)
+![Project](/public//github/mobile.png)
 
 ## Overview
 
