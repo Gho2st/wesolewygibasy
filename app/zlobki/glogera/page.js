@@ -79,7 +79,7 @@ export default function glogera() {
             <div className={classes.textContainer}>
               <div>
                 <h1>
-                  Żłobek Kraków - <span> Wesołe Wygibasy </span> na Glogera
+                  Żłobek Kraków - <span> Wesołe Wygibasy </span> na ul. Glogera
                   53/LU2
                 </h1>
 

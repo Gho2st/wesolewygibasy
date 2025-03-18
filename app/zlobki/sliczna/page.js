@@ -76,7 +76,8 @@ export default function sliczna() {
           <div className={classes.textContainer}>
             <div>
               <h1>
-                Żłobek <span> Wesołe Wygibasy</span> na Ślicznej 36A w Krakowie
+                Żłobek <span> Wesołe Wygibasy</span> na ul. Ślicznej 36A w
+                Krakowie
               </h1>
 
               <div className={classes.buttonContainer}>

@@ -65,7 +65,8 @@ export default function lokietka() {
           <div className={classes.textContainer}>
             <div>
               <h1>
-                Żłobek <span> Wesołe Wygibasy</span> na Łokietka 23 w Krakowie
+                Żłobek <span> Wesołe Wygibasy</span> na ul. Łokietka 23 w
+                Krakowie
               </h1>
 
               <div className={classes.buttonContainer}>

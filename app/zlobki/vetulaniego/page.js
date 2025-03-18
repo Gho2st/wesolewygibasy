@@ -72,8 +72,8 @@ export default function vetulaniego() {
             <div className={classes.textContainer}>
               <div>
                 <h1>
-                  Żłobek Kraków - <span> Wesołe Wygibasy </span> na Vetulaniego
-                  8
+                  Żłobek Kraków - <span> Wesołe Wygibasy </span> na ul.
+                  Vetulaniego 8
                 </h1>
 
                 <div className={classes.buttonContainer}>
