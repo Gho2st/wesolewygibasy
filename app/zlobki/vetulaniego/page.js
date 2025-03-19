@@ -53,9 +53,9 @@ const cardData = [
     link: { href: "/o-nas", text: "O nas" },
   },
   {
-    title: "Opieka nad dziećmi w wieku od 8 miesięcy do 3 lat",
+    title: "Opieka nad dziećmi w wieku od 1 do 3 lat",
     description:
-      "Nasza placówka przyjmuje dzieci w wieku od 8 miesięcy do 3 lat. Grupa liczy maksymalnie 20 dzieci, którymi opiekuje się 3 do 4 doświadczonych opiekunek. Dzięki temu każde dziecko otrzymuje indywidualną uwagę i troskę, a nasi podopieczni są zadbani, najedzeni i szczęśliwi. Dbamy o to, by każde dziecko czuło się kochane i bezpieczne w naszej opiece.",
+      "Nasza placówka przyjmuje dzieci w wieku od 1 do 3 lat. Grupa liczy maksymalnie 20 dzieci, którymi opiekuje się 3 do 4 doświadczonych opiekunek. Dzięki temu każde dziecko otrzymuje indywidualną uwagę i troskę, a nasi podopieczni są zadbani, najedzeni i szczęśliwi. Dbamy o to, by każde dziecko czuło się kochane i bezpieczne w naszej opiece.",
     link: {
       href: "/adaptacja-w-zlobku",
       text: "Adaptacja w Żłobku",
