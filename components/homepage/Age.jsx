@@ -9,7 +9,7 @@ export default function Age() {
       <section className={classes.container}>
         <div className={classes.textContainer}>
           <h2>
-            Przyjmujemy <span> maluchy </span> od 8. miesiąca do 3. roku życia!
+            Przyjmujemy <span> maluchy </span> od 8 miesiąca do 3 roku życia!
           </h2>
           <p className={classes.text}>
             Szukasz miejsca, gdzie Twoje dziecko będzie czuło się bezpiecznie,
