@@ -69,7 +69,7 @@ export default function Dotation() {
             </p>
 
             <div className={classes.button}>
-              <a href="/krakow2.png" download>
+              <a href="krakow/krakow2.png" download>
                 Pobierz
               </a>
             </div>
