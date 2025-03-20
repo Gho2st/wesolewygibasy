@@ -1,146 +1,73 @@
 .container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  padding: 2rem 9%;
+  padding: 4rem 9%;
 }
 
-.slider {
-  width: 100%;
-  margin-top: 3rem;
+.errors {
+  text-align: center;
 }
-
-.slider svg {
-  color: black !important;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
 }
 
 .text {
   text-align: center;
-  margin-bottom: 2rem;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 3rem;
 }
-
 .text h2 {
-  font-size: 2.3rem;
+  font-size: 3rem;
+  margin-bottom: 3rem;
   font-weight: 500;
+}
+
+.galleryText {
   margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
-.rotate {
-  transform: rotate(180deg);
-  margin-right: 2rem;
-}
-.rotate svg {
-  color: black;
-  font-size: 2rem;
-  transform: translateY(30px);
-}
-
-.rightArrow {
-  margin-left: 2rem;
-}
-.rightArrow svg {
-  color: black;
-  font-size: 2rem;
-  transform: translateY(-30px);
-}
-
-.slider div:hover {
-  cursor: pointer;
-}
-
-/* MODAL   */
-
-.modal {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.modalOverlay {
-  background-color: rgba(0, 0, 0, 0.8);
+/* Styl dla galerii LightGallery */
+.lightGallery {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 3002; /* must be higher than nav 3001 */
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Ukrywamy belkę przewijania */
 }
 
-.modalContent {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-height: 80vh;
-  width: 90%;
-  overflow-y: auto;
-  padding: 1rem;
-  background: rgb(255, 255, 255);
-  border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.closeButton {
-  position: sticky; /* Zamiast absolute używamy sticky */
-  background: white;
-  top: 0.8rem;
-  left: 100rem;
-  color: rgb(0, 0, 0);
-  border: 0;
-  border-radius: 50%;
-  padding: 0.2rem;
-  box-shadow: 0rem 0.2rem 0.5rem rgb(183, 183, 183);
-}
-
-.closeButton svg {
-  font-size: 1.8rem;
-  color: red;
-}
-
-.closeButton:hover {
-  cursor: pointer;
-  scale: 1.1;
-}
-
-.modalContent h3 {
+.overlay {
   text-align: center;
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
-  font-size: 1.8rem;
-  text-transform: capitalize;
-  color: #fa7070;
+  margin-top: 1rem;
+  font-weight: bold;
 }
 
-@media (max-width: 1144px) {
-  .slider {
-    width: 90%;
-  }
+.galleryItem {
+  display: none; /* Ukrywamy elementy w DOM, LightGallery je pokaże w trybie pełnoekranowym */
 }
-@media (max-width: 680px) {
-  .text h2 {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
+
+.galleryItem img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 2fr));
+    gap: 0;
+    row-gap: 1rem;
+  }
+  .container {
+    padding: 4rem 0;
   }
   .text {
-    margin-bottom: 1rem;
+    padding: 0px 9%;
+    width: 100%;
   }
-  .rotate {
-    margin-right: 0.5rem;
-  }
-  .modalContent h3 {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-  }
-
-  .rightArrow {
-    margin-left: 0.5rem;
-  }
-}
-@media (max-width: 567px) {
-  .container {
-    margin-bottom: 2rem;
+  .text h2 {
+    font-size: 2.1rem;
   }
 }

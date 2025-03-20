@@ -1,5 +1,5 @@
 .dotation {
-  padding: 2rem 9%;
+  padding: 4rem 9%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,6 +52,7 @@
   }
   .dotation__text h2 {
     font-size: 1.6rem;
+    text-align: center;
   }
 }
 

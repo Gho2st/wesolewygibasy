@@ -1,18 +1,16 @@
-.wrapper {
-  background: #fffbf2;
-}
-
 .container {
   padding: 2rem 9%;
 }
 .baner {
   width: 100%;
-  background-image: url("/sliders/glogera-slider/g3.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right;
+  background-size: 130%;
   min-height: 100vh;
+  background: #c7eeff;
+  background-image: url("/others/baner.png");
   position: relative;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
 
 .textContainer {
@@ -25,7 +23,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  z-index: 2;
+  z-index: 0;
   font-size: 1.5rem; /* Zwiększenie rozmiaru czcionki */
 }
 
@@ -48,29 +46,6 @@
   font-weight: 400;
 }
 
-.header {
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 4rem;
-}
-
-.header h2 {
-  font-size: 2.3rem;
-  font-weight: 500;
-}
-
-.upText {
-  color: #08c6c3;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  font-weight: 500;
-}
-
-.description {
-  text-align: center;
-  margin-top: 2rem;
-}
-
 .cardWrapper {
   min-height: 100vh;
 }
@@ -85,12 +60,6 @@
   }
 }
 
-@media (max-width: 800px) {
-  .header h2 {
-    font-size: 1.8rem;
-  }
-}
-
 @media (max-width: 600px) {
   .textContainer h1 {
     font-size: 1.6rem !important;
@@ -102,13 +71,13 @@
   .buttonContainer {
     margin-top: 1.5rem;
   }
-  .baner {
-    background-repeat: no-repeat;
-    background-position: bottom;
-  }
+}
 
-  .header {
-    margin-bottom: 2.5rem;
+@media (max-width: 444px) {
+  .baner {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 10% bottom;
   }
 }
 

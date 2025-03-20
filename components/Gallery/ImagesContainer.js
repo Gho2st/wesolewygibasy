@@ -2,102 +2,84 @@
 import React, { useEffect, useState } from "react";
 import ImagesItem from "./ImageItem";
 import classes from "./ImagesContainer.module.css";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { IoIosArrowForward } from "react-icons/io";
-import Modal from "react-modal";
-import Gallery from "./Gallery";
-import { IoMdClose } from "react-icons/io";
+import LightGallery from "lightgallery/react";
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-thumbnail.css";
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgZoom from "lightgallery/plugins/zoom";
 
-function normalizeText(text) {
-  return text.normalize("NFC");
+function normalizujTekst(tekst) {
+  return tekst.normalize("NFC");
 }
 
 export default function ImagesContainer(props) {
-  const [showModal, setShowModal] = useState(false);
-  const [selectedFolder, setSelectedFolder] = useState("");
-  const [folders, setFolders] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [foldery, setFoldery] = useState([]);
+  const [zdjecia, setZdjecia] = useState([]);
+  const [ladowanieFolderow, setLadowanieFolderow] = useState(true); // Ładowanie folderów
+  const [ladowanieZdjec, setLadowanieZdjec] = useState(false); // Ładowanie zdjęć
+  const [blad, setBlad] = useState(null);
+  const [wybranyFolder, setWybranyFolder] = useState(null);
 
   useEffect(() => {
-    async function fetchFolders() {
+    async function pobierzFoldery() {
       try {
-        const response = await fetch(`/api/get_folders_aws/${props.folder}`);
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
+        if (!props.folder) {
+          throw new Error("Brak wartości props.folder");
         }
-        const data = await response.json();
-        setFolders(data);
-      } catch (error) {
-        console.error("Error fetching folders:", error);
-        setError(error);
+        const odpowiedz = await fetch(`/api/get_folders_aws/${props.folder}`);
+        if (!odpowiedz.ok) {
+          throw new Error(`Błąd odpowiedzi sieci: ${odpowiedz.status}`);
+        }
+        const dane = await odpowiedz.json();
+        console.log("Pobrane foldery:", dane);
+        setFoldery(dane);
+      } catch (blad) {
+        console.error("Błąd podczas pobierania folderów:", blad);
+        setBlad(blad);
       } finally {
-        setLoading(false);
+        setLadowanieFolderow(false);
       }
     }
 
-    fetchFolders();
+    pobierzFoldery();
   }, [props.folder]);
 
-  const carouselSettings = {
-    dots: false,
-    infinite: true,
-    speed: 250,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    cssEase: "linear",
-    initialSlide: 0,
-    nextArrow: (
-      <div>
-        <div className={classes.rightArrow}>
-          <IoIosArrowForward />
-        </div>
-      </div>
-    ),
-    prevArrow: (
-      <div>
-        <div className={classes.rotate}>
-          <IoIosArrowForward />
-        </div>
-      </div>
-    ),
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 680,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+  const pobierzZdjeciaZFolderu = async (nazwaFolderu) => {
+    setLadowanieZdjec(true); // Włączamy ładowanie tylko dla zdjęć
+    try {
+      const pelnaSciezka = `${props.folder}/${nazwaFolderu}`;
+      const odpowiedz = await fetch(`/api/get_images_aws/${pelnaSciezka}`);
+      if (!odpowiedz.ok) {
+        throw new Error(`Folder nie został znaleziony: ${odpowiedz.status}`);
+      }
+      const dane = await odpowiedz.json();
+      console.log("Pobrane zdjęcia dla folderu", nazwaFolderu, ":", dane);
+
+      if (!Array.isArray(dane) || !dane.every((item) => item.imageUrl)) {
+        throw new Error(
+          "Nieprawidłowy format danych z API. Oczekiwano tablicy obiektów z polem 'imageUrl'."
+        );
+      }
+
+      setZdjecia(dane);
+      setWybranyFolder(nazwaFolderu);
+    } catch (blad) {
+      console.error("Błąd podczas pobierania zdjęć:", blad);
+      setBlad(blad);
+    } finally {
+      setLadowanieZdjec(false);
+    }
   };
 
-  const handleImageClick = (folder) => {
-    setSelectedFolder(folder);
-    setShowModal(true);
+  const klikniecieFolderu = (e, nazwaFolderu) => {
+    e.preventDefault();
+    pobierzZdjeciaZFolderu(nazwaFolderu);
   };
 
-  const closeModal = () => {
-    setShowModal(false);
-    setSelectedFolder("");
+  const zamknijGalerie = () => {
+    setWybranyFolder(null);
+    setZdjecia([]); // Czyścimy zdjęcia, ale nie影響amy folderów
   };
 
   return (
@@ -107,47 +89,62 @@ export default function ImagesContainer(props) {
         <p className={classes.galleryText}>
           Przekonajcie się sami, jak radośnie i twórczo spędzają czas Wasze
           maluszki w naszym żłobku <span>Wesołe Wygibasy</span> w Krakowie.
-          <br />
           Zapraszamy do obejrzenia tych pięknych chwil, które pokazują miłość,
-          radość i rozwój naszych dzieci. <br />
-          Zdjęcia ukazują różnorodne wydarzenia i chwile z życia maluszków w
-          naszej placówce.
+          radość i rozwój naszych dzieci. Zdjęcia ukazują różnorodne wydarzenia
+          i chwile z życia maluszków w naszej placówce.
         </p>
       </div>
-      {loading && <p>Wczytywanie galerii zdjęć...</p>}
-      {error && <p>Wystąpił błąd przy wczytywaniu galerii.</p>}
-      {!loading && !error && (
-        <Slider {...carouselSettings} className={classes.slider}>
-          {folders.map((folder) => (
-            <ImagesItem
-              key={folder.folderName}
-              onClick={() => handleImageClick(folder.folderName)}
-              src={folder.imageUrl}
-              text={normalizeText(folder.folderName)}
-              alt={folder.folderName}
-            />
-          ))}
-        </Slider>
+
+      {/* Wyświetlanie ładowania folderów */}
+      <div className={classes.errors}>
+        {ladowanieFolderow && <p>Wczytywanie galerii zdjęć...</p>}
+        {blad && <p>Wystąpił błąd przy wczytywaniu galerii: {blad.message}</p>}
+        {!ladowanieFolderow && !blad && (
+          <div className={classes.gallery}>
+            {foldery.map((folder) => (
+              <ImagesItem
+                key={folder.folderName}
+                onClick={(e) => klikniecieFolderu(e, folder.folderName)}
+                src={folder.imageUrl}
+                text={normalizujTekst(folder.folderName)}
+                alt={folder.folderName}
+              />
+            ))}
+          </div>
+        )}
+      </div>
+      {/* Wskaźnik ładowania zdjęć */}
+      {ladowanieZdjec && (
+        <div className={classes.overlay}>
+          <p>Wczytywanie zdjęć...</p>
+        </div>
       )}
 
-      <Modal
-        isOpen={showModal}
-        onRequestClose={closeModal}
-        contentLabel="Gallery Modal"
-        className={classes.modal}
-        overlayClassName={classes.modalOverlay}
-        ariaHideApp={false}
-      >
-        <div className={classes.modalContent}>
-          <button onClick={closeModal} className={classes.closeButton}>
-            <IoMdClose />
-          </button>
-          <h3>{normalizeText(selectedFolder)}</h3>
-          {selectedFolder && (
-            <Gallery folder={`${props.folder}/${selectedFolder}`} />
-          )}
-        </div>
-      </Modal>
+      {/* Galeria zdjęć */}
+      {wybranyFolder && zdjecia.length > 0 && !ladowanieZdjec && (
+        <LightGallery
+          speed={500}
+          plugins={[lgThumbnail, lgZoom]}
+          onInit={(detail) => {
+            detail.instance.openGallery(0); // Otwieramy galerię automatycznie
+          }}
+          onAfterClose={zamknijGalerie} // Zamykamy galerię bez odświeżania folderów
+          thumbnail={true}
+          showThumbByDefault={false}
+          elementClassNames={classes.lightGallery}
+        >
+          {zdjecia.map((zdjecie, index) => (
+            <a
+              key={index}
+              data-src={zdjecie.imageUrl}
+              data-sub-html={`<h4>${normalizujTekst(wybranyFolder)}</h4>`}
+              className={classes.galleryItem}
+            >
+              <img src={zdjecie.imageUrl} alt={`Zdjęcie ${index + 1}`} />
+            </a>
+          ))}
+        </LightGallery>
+      )}
     </div>
   );
 }

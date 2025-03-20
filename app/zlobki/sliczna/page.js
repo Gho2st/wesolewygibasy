@@ -1,4 +1,4 @@
-import classes from "./page.module.css";
+import classes from "../nursery.module.css";
 import ImagesContainer from "@/components/Gallery/ImagesContainer";
 import Button from "@/components/UI/Button";
 import Button2 from "@/components/UI/Button2";
@@ -7,6 +7,7 @@ import SliderComponent from "@/components/UI/slider/slider";
 import CardContainer from "@/components/Cards/CardContainer";
 import Maluch from "@/components/UI/Maluch";
 import Map from "@/components/UI/Map";
+import NurseryHeader from "@/components/nursery/header";
 export const metadata = {
   title: "Żłobek na Ulicy Ślicznej w Krakowie - Wesołe Wygibasy",
   alternates: {
@@ -89,16 +90,12 @@ export default function sliczna() {
         </div>
         <div className={classes.container}>
           <div className={classes.cardWrapper}>
-            <div className={classes.header}>
-              <p className={classes.upText}>Co oferujemy?</p>
-              <h2>Odkryj nasz program</h2>
-              <p className={classes.description}>
-                Szukasz żłobka z własnym placem zabaw w Krakowie? Wesołe
+            <NurseryHeader
+              text="Szukasz żłobka z własnym placem zabaw w Krakowie? Wesołe
                 Wygibasy na ul. Ślicznej 36A oferują profesjonalną opiekę,
                 troskliwy zespół oraz własny plac zabaw do rozwoju Twojego
-                dziecka. Skontaktuj się z nami i zapisz malucha już dziś!
-              </p>
-            </div>
+                dziecka. Skontaktuj się z nami i zapisz malucha już dziś!"
+            />
             <CardContainer cards={cardData} />
           </div>
         </div>

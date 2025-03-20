@@ -12,40 +12,31 @@ export default function DayScheduleLokietka(props) {
         <div className={classes.head}>
           <h2>{props.header}</h2>
           <p>
-            Żłobek jest czynny jest czynny w godzinach
-            <span> 7:00 do 17:30 </span>
-            Bardzo proszę aby przyprowadzać dziecko do godziny
-            <span> 08:30 </span>
-          </p>
-          <p>
-            Jeśli dziecko nie zostaje na leżakowanie (wychodzi po obiedzie) to
-            proszę odebrać dziecko do godziny <span>11:30</span>
+            Żłobek jest czynny w godzinach <span>7:00 do 17:30</span>. Bardzo
+            proszę, aby przyprowadzać dziecko do godziny <span>08:30</span>.
+            Jeśli dziecko nie zostaje na leżakowanie (wychodzi po obiedzie), to
+            proszę odebrać dziecko do godziny <span>11:30</span>.
           </p>
         </div>
         <div className={classes.buttonContainer}>
-          <div
+          <button
             onClick={() => {
               setIsDayScheduleOpen(!isDayScheduleOpen);
               setIsExtraOpen(false);
             }}
-            className={classes.header}
+            className={classes.button}
           >
-            <div className={classes.header2}>
-              <h3>Codzienny plan zajęć dla dzieci</h3>
-            </div>
-          </div>
-
-          <div
+            Plan Zajęć
+          </button>
+          <button
             onClick={() => {
               setIsExtraOpen(!isExtraOpen);
               setIsDayScheduleOpen(false);
             }}
-            className={classes.header}
+            className={classes.button}
           >
-            <div className={classes.header2}>
-              <h3>Zajęcia Dodatkowe</h3>
-            </div>
-          </div>
+            Zajęcia Dodatkowe
+          </button>
         </div>
         {isDayScheduleOpen && (
           <div className={classes.daySchedule}>
@@ -53,7 +44,7 @@ export default function DayScheduleLokietka(props) {
               <li>
                 <span>7:00 - 8:30</span> - Schodzenie się dzieci. Przychodzą do
                 żłobka, witają się z opiekunami i kolegami. To czas na swobodną
-                zabawę,
+                zabawę.
               </li>
               <li>
                 <span>8:30 - 9:00</span> - Śniadanie
@@ -67,7 +58,6 @@ export default function DayScheduleLokietka(props) {
               <li>
                 <span>9:00 - 11:00</span> - Zajęcia Dodatkowe
               </li>
-
               <li>
                 <span>10:00 - 10:15</span> - Drugie Śniadanie
               </li>
@@ -75,14 +65,14 @@ export default function DayScheduleLokietka(props) {
                 <span>11:00</span> - Obiad
               </li>
               <li>
-                <span>11:45 - 13:30</span> - Drzemka Czas na odpoczynek i
+                <span>11:45 - 13:30</span> - Drzemka. Czas na odpoczynek i
                 regenerację sił.
               </li>
               <li>
                 <span>13:30</span> - Podwieczorek
               </li>
               <li>
-                <span>14:00 - 15:30</span> - Zabawy swobodne i zorganizowane
+                <span>14:00 - 15:30</span> - Zabawy swobodne i zorganizowane.
                 Dzieci bawią się w kącikach tematycznych, uczestniczą w zabawach
                 plastycznych, konstrukcyjnych lub ruchowych.
               </li>
@@ -100,9 +90,7 @@ export default function DayScheduleLokietka(props) {
         {isExtraOpen && (
           <div className={classes.extra}>
             <p>
-              Dziecko otrzymuje w naszym żłobku <span> moc atrakcji. </span>
-              Każdego dnia od 9:00 do 11:00 odbywają się inne{" "}
-              <span> zajęcia dodatkowe.</span>
+              Każdego dnia od 9:00 do 11:00 odbywają się inne zajęcia dodatkowe.
             </p>
             <ul className={classes.additionalList}>
               <li>

@@ -25,6 +25,7 @@
 
 .innerContainer:hover {
   transform: translateY(-4px);
+  cursor: pointer;
 }
 
 @media (max-width: 680px) {

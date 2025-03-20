@@ -13,7 +13,7 @@
   position: absolute;
   top: 15px;
   left: 20px;
-  z-index: 3002;
+  z-index: 1;
   margin: 0;
   cursor: pointer;
 }
@@ -21,7 +21,7 @@
 .navigation {
   position: fixed;
   width: 100%;
-  z-index: 3001;
+  z-index: 1;
   background-color: transparent;
   transition: background-color 0.3s ease-in;
 }
@@ -54,7 +54,7 @@
   top: 15px;
   right: 20px;
   border-radius: 50%;
-  z-index: 2000;
+  z-index: 2;
   box-shadow: 0rem 0.2rem 0.5rem rgb(183, 183, 183);
   text-align: center;
   cursor: pointer;
@@ -81,7 +81,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1500;
+  z-index: 1;
   transform: translateY(-100%);
   transition: opacity 0.4s cubic-bezier(1, -0.11, 0.83, 0.67), visibility 0.4s;
 }

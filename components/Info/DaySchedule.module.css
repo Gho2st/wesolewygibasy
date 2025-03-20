@@ -11,28 +11,44 @@
   min-height: 100vh;
 }
 
+.head {
+  text-align: center;
+}
+
 .head h2 {
-  margin-bottom: 1rem;
-  font-size: 2.3rem;
+  margin-bottom: 3rem;
+  font-size: 2.7rem;
   font-weight: 500;
+}
+
+.head p {
+  font-size: 1.1rem;
+  width: 80%;
+  margin: auto;
 }
 
 .buttonContainer {
   display: flex;
+  justify-content: center;
   gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
-.header2 {
-  margin-top: 1.5rem;
-  display: flex;
-  font-size: 0.95rem;
-  border: 2px solid var(--color-primary);
-  border-radius: 1rem;
-  padding: 0.5rem 1rem;
+.button {
+  background: var(--color-primary);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 0.8rem 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  transition: 0.2s ease-in;
 }
 
-.header:hover {
+.button:hover {
   cursor: pointer;
-  color: var(--color-primary);
+  scale: 1.05;
 }
 
 .daySchedule {
@@ -42,49 +58,54 @@
 .daySchedule li {
   margin-bottom: 1rem;
   list-style-type: none;
+  font-size: 1.05rem;
+  background: #f9f9f9; /* Lekkie tło dla wyróżnienia */
 }
-.daySchedule em {
-  font-weight: 600;
+
+.daySchedule span {
+  color: black;
 }
 
 .extra {
   margin-top: 2rem;
+  font-size: 1.05rem;
 }
 
 .extra p {
-  margin-top: 1rem;
   margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
 .extra ul li {
   list-style-type: none;
 }
 
-.extra h5 {
-  font-size: 1.1rem;
-}
-
-.additionalList li{
+.additionalList li {
   margin-bottom: 1rem;
+  background: #f9f9f9; /* Lekkie tło dla wyróżnienia */
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .buttonContainer {
-    flex-direction: column;
-    margin-top: 2rem;
     gap: 1rem;
   }
-  .header2 {
-    margin-top: 0rem;
+  .head p {
+    font-size: 1.1rem;
+    width: 100%;
+    margin: auto;
+  }
+  .extra p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
   }
 }
 
 @media (max-width: 600px) {
   .container {
     margin-top: 2rem;
-    padding-bottom: 4rem;
   }
   .container h2 {
-    font-size: 1.8rem !important;
+    font-size: 2.1rem;
   }
 }

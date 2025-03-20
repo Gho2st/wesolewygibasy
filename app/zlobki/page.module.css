@@ -13,17 +13,18 @@
   width: 50%;
   margin-top: 3rem;
 }
-.text span{
-    display: block;
-    margin-top: 0.5rem;
+.text span {
+  display: block;
+  margin-top: 1rem;
 }
 
 .text h2 {
   margin-bottom: 1rem;
+  font-size: 1.6rem;
 }
 
 .text p {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
 }
 
 .buttonContainer {
@@ -41,12 +42,15 @@
 }
 
 .intro h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
   font-weight: 600;
 }
 
 .intro p {
+  width: 80%;
+  font-size: 1.1rem;
+  margin: auto;
   margin-bottom: 3rem;
 }
 
@@ -61,6 +65,12 @@
   .imageContainer {
     width: 50%;
     margin: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .intro p {
+    width: 100%;
   }
 }
 

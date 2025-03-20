@@ -24,29 +24,24 @@ export default function DayScheduleSliczna(props) {
           </p>
         </div>
         <div className={classes.buttonContainer}>
-          <div
+          <button
             onClick={() => {
               setIsDayScheduleOpen(!isDayScheduleOpen);
               setIsExtraOpen(false);
             }}
-            className={classes.header}
+            className={classes.button}
           >
-            <div className={classes.header2}>
-              <h3>Codzienny plan zajęć dla dzieci</h3>
-            </div>
-          </div>
-
-          <div
+            Plan Zajęć
+          </button>
+          <button
             onClick={() => {
               setIsExtraOpen(!isExtraOpen);
               setIsDayScheduleOpen(false);
             }}
-            className={classes.header}
+            className={classes.button}
           >
-            <div className={classes.header2}>
-              <h3>Zajęcia Dodatkowe</h3>
-            </div>
-          </div>
+            Zajęcia Dodatkowe
+          </button>
         </div>
         {isDayScheduleOpen && (
           <div className={classes.daySchedule}>

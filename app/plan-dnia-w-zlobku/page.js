@@ -44,7 +44,7 @@ export default function PlanDnia() {
                 </p>
                 <div className={classes.buttonContainer}>
                   <Button text="Zapisy" href="/zapisy" />
-                  <Button2 text="Sprawdź plan" href="#placowki" />
+                  <Button2 text="Sprawdź plan" href="/zlobki" />
                 </div>
               </div>
               <div className={classes.imageContainer}>

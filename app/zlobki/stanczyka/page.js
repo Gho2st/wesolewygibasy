@@ -1,4 +1,4 @@
-import classes from "./page.module.css";
+import classes from "../nursery.module.css";
 import ImagesContainer from "@/components/Gallery/ImagesContainer";
 import Button from "@/components/UI/Button";
 import SliderComponent from "@/components/UI/slider/slider";
@@ -7,6 +7,7 @@ import Map from "@/components/UI/Map";
 import Button2 from "@/components/UI/Button2";
 import DayScheduleStanczyka from "@/components/Info/DayScheduleStanczyka";
 import CardContainer from "@/components/Cards/CardContainer";
+import NurseryHeader from "@/components/nursery/header";
 
 export const metadata = {
   title: "Żłobek Kraków - Wesołe Wygibasy na ul. Stańczyka, Bronowice",
@@ -96,17 +97,13 @@ export default function stanczyka() {
         </div>
         <div className={classes.container}>
           <div className={classes.cardWrapper}>
-            <div className={classes.header}>
-              <p className={classes.upText}>Co oferujemy?</p>
-              <h2>Odkryj nasz program</h2>
-              <p className={classes.description}>
-                Nasz żłobek w Krakowie, Wesołe Wygibasy, to miejsce pełne
+            <NurseryHeader
+              text="Nasz żłobek w Krakowie, Wesołe Wygibasy, to miejsce pełne
                 radości i troskliwej opieki. Znajdujemy się w nowoczesnej
                 placówce na ul. Stańczyka 8/LU3, w sercu Bronowic. Zapisz swoje
                 dziecko do żłobka, który oferuje kreatywne zajęcia, doskonałą
-                opiekę i bezpieczeństwo zatwierdzone przez sanepid.
-              </p>
-            </div>
+                opiekę i bezpieczeństwo zatwierdzone przez sanepid."
+            />
             <CardContainer cards={cardData} />
           </div>
         </div>

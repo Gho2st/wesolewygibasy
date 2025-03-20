@@ -1,4 +1,4 @@
-import classes from "./page.module.css";
+import classes from "../nursery.module.css";
 import ImagesContainer from "@/components/Gallery/ImagesContainer";
 import Button from "@/components/UI/Button";
 import CardContainer from "@/components/Cards/CardContainer";
@@ -6,6 +6,7 @@ import SliderComponent from "@/components/UI/slider/slider";
 import Map from "@/components/UI/Map";
 import Button2 from "@/components/UI/Button2";
 import DayScheduleGlogera from "@/components/Info/DayScheduleGlogera";
+import NurseryHeader from "@/components/nursery/header";
 export const metadata = {
   title: "Żłobek na Ulicy Glogera w Krakowie - Wesołe Wygibasy",
   alternates: {
@@ -93,16 +94,12 @@ export default function glogera() {
         </div>
         <div className={classes.container}>
           <div className={classes.cardWrapper}>
-            <div className={classes.header}>
-              <p className={classes.upText}>Co oferujemy?</p>
-              <h2>Odkryj nasz program</h2>
-              <p className={classes.description}>
-                Szukasz bezpiecznego, nowoczesnego żłobka w Krakowie? Wesołe
+            <NurseryHeader
+              text="Szukasz bezpiecznego, nowoczesnego żłobka w Krakowie? Wesołe
                 Wygibasy przy ul. Glogera 53/LU2 oferuje profesjonalną opiekę,
                 rozwój oraz bogaty program zajęć w przyjaznej atmosferze.
-                Sprawdź szczegóły i zapisz swoje dziecko już dziś!
-              </p>
-            </div>
+                Sprawdź szczegóły i zapisz swoje dziecko już dziś!"
+            />
             <CardContainer cards={cardData} />
           </div>
         </div>
