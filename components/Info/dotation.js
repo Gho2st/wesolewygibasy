@@ -30,7 +30,7 @@ export default function Dotation() {
               </div>
               <div>
                 <Image
-                  src={"/krakow1.jpg"}
+                  src={"krakow/krakow1.jpg"}
                   height={95}
                   width={200}
                   alt="Logo miasta Kraków"
@@ -69,7 +69,7 @@ export default function Dotation() {
             </p>
 
             <div className={classes.button}>
-              <a href="/krakow2.png" download>
+              <a href="krakow/krakow2.png" download>
                 Pobierz
               </a>
             </div>
