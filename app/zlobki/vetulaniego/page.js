@@ -68,10 +68,12 @@ export default function vetulaniego() {
   return (
     <>
       <main>
-        <div className={classes.outsideContainer}>
+        <section>
           <div
             className={classes.baner}
-            style={{ backgroundImage: `url("/sliders/klub-malucha-slider/kl5.jpg")` }}
+            style={{
+              backgroundImage: `url("/sliders/klub-malucha-slider/kl5.jpg")`,
+            }}
           >
             <div className={classes.textContainer}>
               <div>
@@ -87,27 +89,37 @@ export default function vetulaniego() {
               </div>
             </div>
           </div>
-        </div>
-        <div className={classes.container}>
-          <div className={classes.cardWrapper}>
-            <NurseryHeader
-              text="Jeśli szukasz bezpiecznego, kameralnego i inspirującego żłobka w
+        </section>
+        <section>
+          <div className={classes.container}>
+            <div className={classes.cardWrapper}>
+              <NurseryHeader
+                text="Jeśli szukasz bezpiecznego, kameralnego i inspirującego żłobka w
                 Krakowie, zapraszamy do Klubu Malucha Wesołe Wygibasy na ulicy
                 Vetulaniego 8. Nasza placówka oferuje profesjonalną opiekę nad
                 dziećmi w wieku od 1 do 3 lat, zapewniając im rozwój w ciepłej i
                 przyjaznej atmosferze, z dala od miejskiego zgiełku."
-            />
-            <CardContainer cards={cardData} />
+              />
+              <CardContainer cards={cardData} />
+            </div>
           </div>
-        </div>
-        <div className={classes.wrapper}>
-          <SliderComponent images={images} />
-        </div>
-        <DayScheduleVetulaniego header="Plan Dnia i zajęcia dodatkowe" />
-        <div className={classes.wrapper}>
-          <ImagesContainer folder="vetulaniego" />
-        </div>
-        <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.531008552978!2d19.922438176465064!3d50.09506707152642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a446e9d3211%3A0x2479f81b021d9154!2s%C5%BB%C5%82obek%20Klub%20Malucha%20-%20Weso%C5%82e%20Wygibasy!5e0!3m2!1spl!2spl!4v1711815573472!5m2!1spl!2spl" />
+        </section>
+        <section>
+          <div className={classes.wrapper}>
+            <SliderComponent images={images} />
+          </div>
+        </section>
+        <section>
+          <DayScheduleVetulaniego header="Plan Dnia i zajęcia dodatkowe" />
+        </section>
+        <section>
+          <div className={classes.wrapper}>
+            <ImagesContainer folder="vetulaniego" />
+          </div>
+        </section>
+        <section>
+          <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.531008552978!2d19.922438176465064!3d50.09506707152642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a446e9d3211%3A0x2479f81b021d9154!2s%C5%BB%C5%82obek%20Klub%20Malucha%20-%20Weso%C5%82e%20Wygibasy!5e0!3m2!1spl!2spl!4v1711815573472!5m2!1spl!2spl" />
+        </section>
       </main>
     </>
   );

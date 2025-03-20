@@ -73,48 +73,62 @@ export default function sliczna() {
   return (
     <>
       <main>
-        <div
-          className={classes.baner}
-          style={{
-            backgroundImage: `url("/sliders/sliczna-slider/sl1.jpg")`,
-          }}
-        >
-          <div className={classes.textContainer}>
-            <div>
-              <h1>
-                Żłobek <span> Wesołe Wygibasy</span> na ul. Ślicznej 36A w
-                Krakowie
-              </h1>
+        <section>
+          <div
+            className={classes.baner}
+            style={{
+              backgroundImage: `url("/sliders/sliczna-slider/sl1.jpg")`,
+            }}
+          >
+            <div className={classes.textContainer}>
+              <div>
+                <h1>
+                  Żłobek <span> Wesołe Wygibasy</span> na ul. Ślicznej 36A w
+                  Krakowie
+                </h1>
 
-              <div className={classes.buttonContainer}>
-                <Button text="O nas" href="/o-nas" />
-                <Button2 text="Zapisy" href="/zapisy" />
+                <div className={classes.buttonContainer}>
+                  <Button text="O nas" href="/o-nas" />
+                  <Button2 text="Zapisy" href="/zapisy" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className={classes.container}>
-          <div className={classes.cardWrapper}>
-            <NurseryHeader
-              text="Szukasz żłobka z własnym placem zabaw w Krakowie? Wesołe
+        </section>
+        <section>
+          <div className={classes.container}>
+            <div className={classes.cardWrapper}>
+              <NurseryHeader
+                text="Szukasz żłobka z własnym placem zabaw w Krakowie? Wesołe
                 Wygibasy na ul. Ślicznej 36A oferują profesjonalną opiekę,
                 troskliwy zespół oraz własny plac zabaw do rozwoju Twojego
                 dziecka. Skontaktuj się z nami i zapisz malucha już dziś!"
-            />
-            <CardContainer cards={cardData} />
+              />
+              <CardContainer cards={cardData} />
+            </div>
           </div>
-        </div>
-        <div className={classes.wrapper}>
-          <Maluch />
-        </div>
-        <SliderComponent images={images} />
-        <div className={classes.wrapper}>
-          <DaySchedule header="Plan Dnia i zajęcia dodatkowe" time="17:30" />
-        </div>
-        <ImagesContainer folder="sliczna" />
-        <div className={classes.wrapper}>
-          <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20483.285915179342!2d19.857841410839853!3d50.07859630000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b0b843d4ce5%3A0xfe8741522eb108da!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy%203%20Bronowice!5e0!3m2!1spl!2spl!4v1711475564872!5m2!1spl!2spl" />
-        </div>
+        </section>
+        <section>
+          <div className={classes.wrapper}>
+            <Maluch />
+          </div>
+        </section>
+        <section>
+          <SliderComponent images={images} />
+        </section>
+        <section>
+          <div className={classes.wrapper}>
+            <DaySchedule header="Plan Dnia i zajęcia dodatkowe" time="17:30" />
+          </div>
+        </section>
+        <section>
+          <ImagesContainer folder="sliczna" />
+        </section>
+        <section>
+          <div className={classes.wrapper}>
+            <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20483.285915179342!2d19.857841410839853!3d50.07859630000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b0b843d4ce5%3A0xfe8741522eb108da!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy%203%20Bronowice!5e0!3m2!1spl!2spl!4v1711475564872!5m2!1spl!2spl" />
+          </div>
+        </section>
       </main>
     </>
   );

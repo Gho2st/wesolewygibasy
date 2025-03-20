@@ -105,8 +105,10 @@ export default function Zlobki() {
           </div>
           <CardContainer cards={cardData} />
         </section>
+        <section>
+          <Places />
+        </section>
       </main>
-      <Places />
     </>
   );
 }

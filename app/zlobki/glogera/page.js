@@ -75,7 +75,7 @@ export default function glogera() {
   return (
     <>
       <main>
-        <div className={classes.outsideContainer}>
+        <section>
           <div
             className={classes.baner}
             style={{
@@ -96,7 +96,7 @@ export default function glogera() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <section>
           <div className={classes.container}>
             <div className={classes.cardWrapper}>

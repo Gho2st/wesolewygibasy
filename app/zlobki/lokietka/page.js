@@ -62,44 +62,56 @@ export default function lokietka() {
   return (
     <>
       <main>
-        <div className={classes.baner}>
-          <div className={classes.textContainer}>
-            <div>
-              <h1>
-                Żłobek <span> Wesołe Wygibasy</span> na ul. Łokietka 23 w
-                Krakowie
-              </h1>
+        <section>
+          <div className={classes.baner}>
+            <div className={classes.textContainer}>
+              <div>
+                <h1>
+                  Żłobek <span> Wesołe Wygibasy</span> na ul. Łokietka 23 w
+                  Krakowie
+                </h1>
 
-              <div className={classes.buttonContainer}>
-                <Button text="O nas" href="/o-nas" />
-                <Button2 text="Zapisy" href="/zapisy" />
+                <div className={classes.buttonContainer}>
+                  <Button text="O nas" href="/o-nas" />
+                  <Button2 text="Zapisy" href="/zapisy" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className={classes.container}>
-          <div className={classes.cardWrapper}>
-            <NurseryHeader
-              text="W żłobku Wesołe Wygibasy na Łokietka w Krakowie stawiamy na indywidualne
+        </section>
+        <section>
+          <div className={classes.container}>
+            <div className={classes.cardWrapper}>
+              <NurseryHeader
+                text="W żłobku Wesołe Wygibasy na Łokietka w Krakowie stawiamy na indywidualne
         podejście, rozwój przez zabawę i komfort dzieci. Poznaj nasze atuty i
         dołącz do nas! ameralna placówka dla najmłodszych w sercu Bronowic –
         zapewniamy profesjonalną opiekę, rozwój i radość Twojego dziecka!"
-            />
-            <CardContainer cards={cardData} />
+              />
+              <CardContainer cards={cardData} />
+            </div>
           </div>
-        </div>
-        <div className={classes.wrapper}>
-          <Maluch />
-        </div>
+        </section>
+        <section>
+          <div className={classes.wrapper}>
+            <Maluch />
+          </div>
+        </section>
         {/* <SliderComponent images={images} /> */}
-        <DayScheduleLokietka
-          header="Plan Dnia i zajęcia dodatkowe"
-          time="17:30"
-        />
-        <div className={classes.wrapper}>
-          <ImagesContainer folder="sliczna" />
-        </div>
-        <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.3950908862935!2d19.92613357625054!3d50.078889314047764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165bab3657246b%3A0x5be9f5ae07b4cb78!2zV8WCYWR5c8WCYXdhIMWBb2tpZXRrYSAyMywgMzAtMDEwIEtyYWvDs3c!5e0!3m2!1sen!2spl!4v1742315529506!5m2!1sen!2spl" />
+        <section>
+          <DayScheduleLokietka
+            header="Plan Dnia i zajęcia dodatkowe"
+            time="17:30"
+          />
+        </section>
+        <section>
+          <div className={classes.wrapper}>
+            <ImagesContainer folder="sliczna" />
+          </div>
+        </section>
+        <section>
+          <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.3950908862935!2d19.92613357625054!3d50.078889314047764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165bab3657246b%3A0x5be9f5ae07b4cb78!2zV8WCYWR5c8WCYXdhIMWBb2tpZXRrYSAyMywgMzAtMDEwIEtyYWvDs3c!5e0!3m2!1sen!2spl!4v1742315529506!5m2!1sen!2spl" />
+        </section>
       </main>
     </>
   );
