@@ -102,8 +102,8 @@ export default function Zlobki() {
               się jak w domu. Zapewniamy zatwierdzone przez Sanepid i Straż
               Pożarną warunki, dzięki czemu możesz nam zaufać w pełni.
             </p>
-            <CardContainer cards={cardData} />
           </div>
+          <CardContainer cards={cardData} />
         </section>
       </main>
       <Places />
