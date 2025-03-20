@@ -73,7 +73,12 @@ export default function sliczna() {
   return (
     <>
       <main>
-        <div className={classes.baner}>
+        <div
+          className={classes.baner}
+          style={{
+            backgroundImage: `url("/sliders/sliczna-slider/sl1.jpg")`,
+          }}
+        >
           <div className={classes.textContainer}>
             <div>
               <h1>

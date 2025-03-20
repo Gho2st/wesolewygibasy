@@ -79,7 +79,12 @@ export default function stanczyka() {
     <>
       <main>
         <div className={classes.outsideContainer}>
-          <div className={classes.baner}>
+          <div
+            className={classes.baner}
+            style={{
+              backgroundImage: `url("/zlobki/stanczyka.jpg")`,
+            }}
+          >
             <div className={classes.textContainer}>
               <div>
                 <h1>

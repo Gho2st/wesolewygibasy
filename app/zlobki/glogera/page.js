@@ -76,7 +76,12 @@ export default function glogera() {
     <>
       <main>
         <div className={classes.outsideContainer}>
-          <div className={classes.baner}>
+          <div
+            className={classes.baner}
+            style={{
+              backgroundImage: `url("/zlobki/glogera.jpg")`,
+            }}
+          >
             <div className={classes.textContainer}>
               <div>
                 <h1>
@@ -92,25 +97,35 @@ export default function glogera() {
             </div>
           </div>
         </div>
-        <div className={classes.container}>
-          <div className={classes.cardWrapper}>
-            <NurseryHeader
-              text="Szukasz bezpiecznego, nowoczesnego żłobka w Krakowie? Wesołe
+        <section>
+          <div className={classes.container}>
+            <div className={classes.cardWrapper}>
+              <NurseryHeader
+                text="Szukasz bezpiecznego, nowoczesnego żłobka w Krakowie? Wesołe
                 Wygibasy przy ul. Glogera 53/LU2 oferuje profesjonalną opiekę,
                 rozwój oraz bogaty program zajęć w przyjaznej atmosferze.
                 Sprawdź szczegóły i zapisz swoje dziecko już dziś!"
-            />
-            <CardContainer cards={cardData} />
+              />
+              <CardContainer cards={cardData} />
+            </div>
           </div>
-        </div>
-        <div className={classes.wrapper}>
-          <SliderComponent images={images} />
-        </div>
-        <DayScheduleGlogera header="Plan Dnia i zajęcia dodatkowe" />
-        <div className={classes.wrapper}>
-          <ImagesContainer folder="glogera" />
-        </div>
-        <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.0746082710157!2d19.92382417646559!3d50.103610471528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b8cf00937ed%3A0x39479b7e727e42d3!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy!5e0!3m2!1spl!2spl!4v1711815664167!5m2!1spl!2spl" />
+        </section>
+        <section>
+          <div className={classes.wrapper}>
+            <SliderComponent images={images} />
+          </div>
+        </section>
+        <section>
+          <DayScheduleGlogera header="Plan Dnia i zajęcia dodatkowe" />
+        </section>
+        <section>
+          <div className={classes.wrapper}>
+            <ImagesContainer folder="glogera" />
+          </div>
+        </section>
+        <section>
+          <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.0746082710157!2d19.92382417646559!3d50.103610471528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b8cf00937ed%3A0x39479b7e727e42d3!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy!5e0!3m2!1spl!2spl!4v1711815664167!5m2!1spl!2spl" />
+        </section>
       </main>
     </>
   );

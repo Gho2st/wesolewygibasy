@@ -69,7 +69,10 @@ export default function vetulaniego() {
     <>
       <main>
         <div className={classes.outsideContainer}>
-          <div className={classes.baner}>
+          <div
+            className={classes.baner}
+            style={{ backgroundImage: `url("/sliders/klub-malucha-slider/kl5.jpg")` }}
+          >
             <div className={classes.textContainer}>
               <div>
                 <h1>

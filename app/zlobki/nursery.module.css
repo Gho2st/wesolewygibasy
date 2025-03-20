@@ -3,7 +3,7 @@
 }
 .baner {
   width: 100%;
-  background-size: 130%;
+  background-size: 100%;
   min-height: 100vh;
   background: #c7eeff;
   background-image: url("/others/baner.png");
@@ -75,7 +75,6 @@
 
 @media (max-width: 444px) {
   .baner {
-    background-size: 100%;
     background-repeat: no-repeat;
     background-position: 10% bottom;
   }
