@@ -57,54 +57,56 @@ export default function Zlobki() {
 
   return (
     <>
-      <main className={classes.container}>
-        <section>
-          <Header text="Żłobki Wesołe Wygibasy w Krakowie" />
-          <div className={classes.textContainer}>
-            <div className={classes.text}>
-              <h2>Kameralna opieka w sercu Krakowa</h2>
-              <p>
-                Sieć kameralnych żłobków Wesołe Wygibasy w Krakowie to miejsca
-                stworzone z myślą o najmłodszych. Nasze placówki znajdziesz w
-                pięciu dogodnych lokalizacjach: ul. Stańczyka, ul. Śliczna, ul.
-                Vetulaniego, ul. Glogera oraz ul. Łokietka. Oferujemy
-                profesjonalną opiekę, rozwój przez kreatywną zabawę i
-                bezpieczne, przytulne warunki, w których Twoje dziecko będzie
-                czuło się jak w domu.
-                <span>
-                  Wesołe Wygibasy – uśmiech i rozwój w każdym zakątku Krakowa!
-                </span>
-              </p>
-              <div className={classes.buttonContainer}>
-                <Button text="O nas" href="/o-nas" />
-                <Button2 text="Zapisy" href="/zapisy" />
+      <main>
+        <div className={classes.container}>
+          <section>
+            <Header text="Żłobki Wesołe Wygibasy w Krakowie" />
+            <div className={classes.textContainer}>
+              <div className={classes.text}>
+                <h2>Kameralna opieka w sercu Krakowa</h2>
+                <p>
+                  Sieć kameralnych żłobków Wesołe Wygibasy w Krakowie to miejsca
+                  stworzone z myślą o najmłodszych. Nasze placówki znajdziesz w
+                  pięciu dogodnych lokalizacjach: ul. Stańczyka, ul. Śliczna,
+                  ul. Vetulaniego, ul. Glogera oraz ul. Łokietka. Oferujemy
+                  profesjonalną opiekę, rozwój przez kreatywną zabawę i
+                  bezpieczne, przytulne warunki, w których Twoje dziecko będzie
+                  czuło się jak w domu.
+                  <span>
+                    Wesołe Wygibasy – uśmiech i rozwój w każdym zakątku Krakowa!
+                  </span>
+                </p>
+                <div className={classes.buttonContainer}>
+                  <Button text="O nas" href="/o-nas" />
+                  <Button2 text="Zapisy" href="/zapisy" />
+                </div>
+              </div>
+              <div className={classes.imageContainer}>
+                <Image
+                  src="/others/zlobki.png"
+                  width={100}
+                  height={100}
+                  layout="responsive"
+                />
               </div>
             </div>
-            <div className={classes.imageContainer}>
-              <Image
-                src="/others/zlobki.png"
-                width={100}
-                height={100}
-                layout="responsive"
-              />
+          </section>
+          <section>
+            <div className={classes.intro}>
+              <h2>Wesołe Wygibasy – Twój żłobek w Krakowie</h2>
+              <p>
+                Wesołe Wygibasy to sieć niepublicznych żłobków w Krakowie,
+                stworzona z myślą o najmłodszych i ich rodzicach. Nasze placówki
+                znajdują się w różnych częściach miasta – abyś mógł wybrać
+                lokalizację najbliżej Ciebie. Stawiamy na kameralne grupy,
+                wykwalifikowaną kadrę i przyjazną atmosferę, w której dzieci
+                czują się jak w domu. Zapewniamy zatwierdzone przez Sanepid i
+                Straż Pożarną warunki, dzięki czemu możesz nam zaufać w pełni.
+              </p>
             </div>
-          </div>
-        </section>
-        <section>
-          <div className={classes.intro}>
-            <h2>Wesołe Wygibasy – Twój żłobek w Krakowie</h2>
-            <p>
-              Wesołe Wygibasy to sieć niepublicznych żłobków w Krakowie,
-              stworzona z myślą o najmłodszych i ich rodzicach. Nasze placówki
-              znajdują się w różnych częściach miasta – abyś mógł wybrać
-              lokalizację najbliżej Ciebie. Stawiamy na kameralne grupy,
-              wykwalifikowaną kadrę i przyjazną atmosferę, w której dzieci czują
-              się jak w domu. Zapewniamy zatwierdzone przez Sanepid i Straż
-              Pożarną warunki, dzięki czemu możesz nam zaufać w pełni.
-            </p>
-          </div>
-          <CardContainer cards={cardData} />
-        </section>
+            <CardContainer cards={cardData} />
+          </section>
+        </div>
         <section>
           <Places />
         </section>
