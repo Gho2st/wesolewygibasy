@@ -32,7 +32,6 @@ export default function ImagesContainer(props) {
           throw new Error(`Błąd odpowiedzi sieci: ${odpowiedz.status}`);
         }
         const dane = await odpowiedz.json();
-        console.log("Pobrane foldery:", dane);
         setFoldery(dane);
       } catch (blad) {
         console.error("Błąd podczas pobierania folderów:", blad);
