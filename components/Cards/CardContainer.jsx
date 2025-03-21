@@ -29,12 +29,12 @@ const CardContainer = ({ cards }) => {
 
   // Efekt pojawiania się dla każdej karty
   const cardVariants = {
-    hidden: { opacity: 0, y: 20 }, // Dodano y: 20 dla płynniejszego efektu
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: isMobile ? 0.3 : 0.8, // Skrócony czas dla mobilnych
+        duration: isMobile ? 0.6 : 1, // Dłuższy czas trwania
         ease: "easeOut",
       },
     },
@@ -52,7 +52,7 @@ const CardContainer = ({ cards }) => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.4,
+        duration: 1.6, // Dłuższy czas trwania
         ease: "easeOut",
       },
     },
@@ -69,7 +69,7 @@ const CardContainer = ({ cards }) => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.8 }} // Zwiększona wartość amount
-          whileHover="hover" // Hover tylko na desktopie
+          whileHover="hover"
         >
           <motion.h3 variants={fadeIn}>{card.title}</motion.h3>
           <motion.p variants={fadeIn}>{card.description}</motion.p>
