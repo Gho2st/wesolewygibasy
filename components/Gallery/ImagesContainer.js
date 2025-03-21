@@ -122,7 +122,7 @@ export default function ImagesContainer(props) {
       </div>
 
       {ladowanieZdjec && (
-        <div className={classes.overlay}>
+        <div className={classes.loadingModal}>
           <p>Wczytywanie zdjęć...</p>
         </div>
       )}
