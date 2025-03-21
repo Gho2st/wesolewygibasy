@@ -82,4 +82,7 @@
   .intro {
     margin-top: 6rem;
   }
+  .intro h2{
+    font-size: 1.8rem;
+  }
 }
