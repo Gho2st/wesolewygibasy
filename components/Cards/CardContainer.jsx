@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import classes from "./CardContainer.module.css";
-import { useState, useEffect } from "react";
 
 const CardContainer = ({ cards }) => {
   const colors = [
@@ -16,28 +15,17 @@ const CardContainer = ({ cards }) => {
     "#e8f7f0",
   ];
 
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-    return () => window.removeEventListener("resize", checkScreenSize);
-  }, []);
-
   // Efekt pojawiania się dla każdej karty
   const cardVariants = {
     hidden: { opacity: 0 }, // Bez animacji y
     visible: {
       opacity: 1,
       transition: {
-        duration: isMobile ? 0.3 : 0.8,
+        duration: 0.8, // Stały czas trwania animacji
         ease: "easeOut",
       },
     },
-    hover: !isMobile && {
+    hover: {
       scale: 1.05,
       boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.15)",
       transition: { duration: 0.3, ease: "easeInOut" },
@@ -66,7 +54,7 @@ const CardContainer = ({ cards }) => {
           variants={cardVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.8 }} // Zwiększona wartość amount
           whileHover="hover"
         >
           <motion.h3 variants={fadeIn}>{card.title}</motion.h3>
