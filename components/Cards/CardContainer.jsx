@@ -29,10 +29,9 @@ const CardContainer = ({ cards }) => {
 
   // Efekt pojawiania się dla każdej karty
   const cardVariants = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      y: 0,
       transition: {
         duration: isMobile ? 0.6 : 0.8,
         ease: "easeOut",
