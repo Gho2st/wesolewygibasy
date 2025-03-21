@@ -27,15 +27,15 @@ const cardData = [
     },
   },
   {
-    title: "Adaptacja od 19 maja",
+    title: "Adaptacja od 22 maja",
     description:
-      "Rozpoczynamy proces adaptacyjny już od 19 maja, aby Twoje dziecko mogło łagodnie i bez stresu rozpocząć przygodę z nami.",
+      "Rozpoczynamy proces adaptacyjny już od 22 maja, aby Twoje dziecko mogło łagodnie i bez stresu rozpocząć przygodę z nami.",
     link: { href: "/adaptacja-w-zlobku", text: "Adaptajca w Żłobku" },
   },
   {
     title: "Otwarcie w Czerwcu",
     description:
-      "Oficjalne otwarcie żłobka planujemy na czerwiec 2025 – już teraz zapraszamy do zapoznania się z naszą ofertą i zapisów!",
+      "Oficjalne otwarcie żłobka planujemy na 2 czerwca 2025 – już teraz zapraszamy do zapoznania się z naszą ofertą i zapisów!",
     link: {
       href: "/o-nas",
       text: "O Nas",
