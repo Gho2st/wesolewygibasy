@@ -25,13 +25,14 @@
 }
 
 .textContainer h2 {
-  font-size: 2rem;
+  font-size: 2.3rem;
   margin-bottom: 2rem;
 }
 .text {
   margin-top: 1.1rem;
   margin-bottom: 1rem;
   font-weight: 400;
+  font-size: 1.1rem;
 }
 
 .additional {

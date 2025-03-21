@@ -13,7 +13,7 @@
   justify-content: space-between;
 }
 .textContainer h2 {
-  font-size: 2rem;
+  font-size: 2.3rem;
   padding-top: 1rem;
   margin-bottom: 3rem;
 }
@@ -44,27 +44,38 @@
 
 .card h3 {
   margin-top: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   font-weight: 600;
 }
 
 .card p {
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 
 .card1 {
   background: #f8e1e9;
 }
+.card1 svg {
+  color: #fd5a93;
+}
 .card2 {
   background: #e8f0fe;
+}
+.card2 svg {
+  color: #5493fe;
 }
 .card3 {
   background: #fff1d6;
 }
+.card3 svg {
+  color: #ffaa00;
+}
 .card4 {
   background: #e0f7e9;
 }
-
+.card4 svg {
+  color: #5efc9b;
+}
 .left {
   width: 70%;
 }

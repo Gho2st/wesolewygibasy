@@ -18,8 +18,11 @@
 }
 
 .description {
+  margin: auto;
   margin-top: 1rem;
   font-weight: 400;
+  font-size: 1.1rem;
+  width: 80%;
 }
 .buttonContainer {
   display: flex;
@@ -125,6 +128,9 @@
 
 @media (max-width: 900px) {
   .slider {
+    width: 100%;
+  }
+  .description {
     width: 100%;
   }
 }

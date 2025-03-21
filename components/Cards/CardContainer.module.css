@@ -16,10 +16,6 @@
   transition: all 0.3s ease-in-out; /* Płynne przejście dla hover */
 }
 
-.card:hover {
-  scale: 1.025;
-}
-
 .card h3 {
   font-size: 1.25rem;
   margin-bottom: 1rem;

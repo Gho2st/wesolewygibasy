@@ -1,8 +1,8 @@
 "use client";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import classes from "./CardContainer.module.css";
-import { useEffect, useState, useRef } from "react";
+import { useState, useEffect } from "react";
 
 const CardContainer = ({ cards }) => {
   const colors = [
@@ -17,8 +17,6 @@ const CardContainer = ({ cards }) => {
   ];
 
   const [isMobile, setIsMobile] = useState(false);
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   useEffect(() => {
     const checkScreenSize = () => {
@@ -29,79 +27,62 @@ const CardContainer = ({ cards }) => {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: isMobile ? 0.15 : 0.3,
-      },
-    },
-  };
-
+  // Efekt pojawiania się dla każdej karty
   const cardVariants = {
-    hidden: {
-      opacity: 0,
-      y: 80,
-      scale: 0.95,
-    },
+    hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
       y: 0,
-      scale: 1,
       transition: {
-        duration: isMobile ? 0.7 : 1,
-        ease: [0.25, 1, 0.5, 1],
+        duration: isMobile ? 0.6 : 0.8,
+        ease: "easeOut",
       },
     },
-    hover: {
-      scale: 1.08,
-      boxShadow: "0px 12px 24px rgba(0, 0, 0, 0.2)",
-      transition: { duration: 0.4, ease: "easeInOut" },
+    hover: !isMobile && {
+      scale: 1.05,
+      boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.15)",
+      transition: { duration: 0.3, ease: "easeInOut" },
+    },
+  };
+
+  // Efekt dla elementów w karcie
+  const fadeIn = {
+    hidden: { opacity: 0, y: 10 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.4,
+        ease: "easeOut",
+      },
     },
   };
 
   return (
-    <motion.div
-      ref={ref}
-      className={classes.cardContainer}
-      variants={containerVariants}
-      initial="hidden"
-      animate={isInView ? "visible" : "hidden"}
-    >
+    <div className={classes.cardContainer}>
       {cards.map((card, index) => (
         <motion.div
           key={index}
           className={classes.card}
           style={{ backgroundColor: colors[index % colors.length] }}
           variants={cardVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }} // Karta pojawia się, gdy 50% jest widoczne
+          whileHover="hover" // Hover tylko na desktopie
         >
-          <motion.h3
-            initial={{ opacity: 0, x: -15 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: index * 0.15, duration: 0.6 }}
-          >
-            {card.title}
-          </motion.h3>
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.15 + 0.1, duration: 0.6 }}
-          >
-            {card.description}
-          </motion.p>
+          <motion.h3 variants={fadeIn}>{card.title}</motion.h3>
+          <motion.p variants={fadeIn}>{card.description}</motion.p>
           {card.link && (
-            <motion.div
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.15 + 0.2, duration: 0.6 }}
-            >
-              <Link href={card.link.href}>{card.link.text}</Link>
+            <motion.div variants={fadeIn}>
+              <Link href={card.link.href} className={classes.link}>
+                {card.link.text}
+              </Link>
             </motion.div>
           )}
         </motion.div>
       ))}
-    </motion.div>
+    </div>
   );
 };
 

@@ -31,8 +31,9 @@
 
 .text {
   margin-top: 1.1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-weight: 400;
+  font-size: 1.1rem;
 }
 
 .itemContainer {
@@ -62,7 +63,7 @@
 }
 
 .contactInfoContainer {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   display: flex;
   align-items: center;
 }
@@ -87,7 +88,12 @@
   font-size: 1.15rem;
   transition: all 0.3s ease;
 }
-.phone:hover {
+
+.phone span{
+  color: black;
+}
+
+.phone span:hover {
   color: #fa7070;
 }
 
