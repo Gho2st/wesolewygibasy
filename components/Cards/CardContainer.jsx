@@ -17,11 +17,12 @@ const CardContainer = ({ cards }) => {
 
   // Efekt pojawiania się dla każdej karty
   const cardVariants = {
-    hidden: { opacity: 0 }, // Bez animacji y
+    hidden: { scale: 0.95, opacity: 0 }, // Użyj scale zamiast opacity
     visible: {
+      scale: 1,
       opacity: 1,
       transition: {
-        duration: 0.8, // Stały czas trwania animacji
+        duration: 0.8,
         ease: "easeOut",
       },
     },
@@ -34,7 +35,7 @@ const CardContainer = ({ cards }) => {
 
   // Efekt dla elementów w karcie
   const fadeIn = {
-    hidden: { opacity: 0 }, // Bez animacji y
+    hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
@@ -54,7 +55,7 @@ const CardContainer = ({ cards }) => {
           variants={cardVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.8 }} // Zwiększona wartość amount
+          viewport={{ once: true, amount: 1 }} // Ustaw na 1, aby karta była w pełni widoczna
           whileHover="hover"
         >
           <motion.h3 variants={fadeIn}>{card.title}</motion.h3>
