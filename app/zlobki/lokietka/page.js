@@ -92,11 +92,6 @@ export default function lokietka() {
             </div>
           </div>
         </section>
-        <section>
-          <div className={classes.wrapper}>
-            <Maluch />
-          </div>
-        </section>
         {/* <SliderComponent images={images} /> */}
         <section>
           <DayScheduleLokietka
