@@ -17,7 +17,7 @@ const CardContainer = ({ cards }) => {
 
   // Efekt pojawiania się dla każdej karty
   const cardVariants = {
-    hidden: { scale: 0.95, opacity: 0 }, // Użyj scale zamiast opacity
+    hidden: { scale: 0.95, opacity: 0.15 }, // Użyj scale zamiast opacity
     visible: {
       scale: 1,
       opacity: 1,
