@@ -1,9 +1,7 @@
 import Header from "@/components/UI/Header";
 import classes from "./page.module.css";
 import Image from "next/image";
-import { Metadata } from "next";
-import Button from "@/components/UI/Button";
-import Button2 from "@/components/UI/Button2";
+import CardContainer from "@/components/Cards/CardContainer";
 import Link from "next/link";
 import Adaptacja from "./adaptacja";
 import { FaLongArrowAltRight } from "react-icons/fa";
@@ -18,6 +16,33 @@ export const metadata = {
   description:
     "Dowiedz się, jak przebiega adaptacja w żłobku Wesołe Wygibasy w Krakowie. Wspieramy dzieci i rodziców w procesie łagodnego wejścia do nowego środowiska.",
 };
+
+const cardData = [
+  {
+    title: "Zabawa jako narzędzie adaptacji",
+    description:
+      "Zabawa jest najważniejszym elementem dnia w żłobku. W ramach adaptacji wykorzystujemy gry i zabawy integracyjne, które pomagają dzieciom w nawiązywaniu kontaktów z rówieśnikami oraz poznawaniu opiekunów. Dzięki zabawie dzieci łatwiej przystosowują się do nowego środowiska, a także rozwijają swoje umiejętności społeczne i emocjonalne.",
+    link: {
+      href: "/galeria",
+      text: "Zobacz Galerię",
+    },
+  },
+  {
+    title: "Wsparcie Emocjonalne Dla Rodziców",
+    description:
+      "Adaptacja to nie tylko ważny proces dla dziecka, ale również dla rodziców. Rozumiemy, że pozostawienie malucha w nowym miejscu może budzić wiele emocji i wątpliwości. Dlatego nasi opiekunowie są zawsze gotowi do rozmowy, oferując wsparcie i odpowiedzi na wszystkie pytania. Wspólnie budujemy zaufanie, które przekłada się na spokój i bezpieczeństwo Państwa dziecka.",
+    link: { href: "/o-nas", text: "Poczytaj o Nas" },
+  },
+  {
+    title: "Korzyści Z Procesu Adaptacji",
+    description:
+      "Maluchy uczą się samodzielności, zdobywają nowe umiejętności społeczne i poznawcze, a także rozwijają swoje zainteresowania. Udział w zajęciach grupowych oraz indywidualnych pozwala na harmonijny rozwój w bezpiecznym i wspierającym otoczeniu.",
+    link: {
+      href: "/zapisy",
+      text: "Zapisy do żłobka",
+    },
+  },
+];
 export default function adaptacja() {
   return (
     <>
@@ -169,54 +194,7 @@ export default function adaptacja() {
         </section>
         <section>
           <div className={classes.textContainer}>
-            <article>
-              <h3>Zabawa jako narzędzie adaptacji</h3>
-              <p>
-                Zabawa jest najważniejszym elementem dnia w żłobku. W ramach
-                adaptacji wykorzystujemy gry i zabawy integracyjne, które
-                pomagają dzieciom w nawiązywaniu kontaktów z rówieśnikami oraz
-                poznawaniu opiekunów. Dzięki zabawie dzieci łatwiej
-                przystosowują się do nowego środowiska, a także rozwijają swoje
-                umiejętności społeczne i emocjonalne.
-              </p>
-              <Link href="/galeria">Zobacz galerię</Link>
-            </article>
-            <article>
-              <h3>Wsparcie Emocjonalne Dla Rodziców</h3>
-              <p>
-                Adaptacja to nie tylko ważny proces dla dziecka, ale również dla
-                rodziców. Rozumiemy, że pozostawienie malucha w nowym miejscu
-                może budzić wiele emocji i wątpliwości. Dlatego nasi opiekunowie
-                są zawsze gotowi do rozmowy, oferując wsparcie i odpowiedzi na
-                wszystkie pytania. Wspólnie budujemy zaufanie, które przekłada
-                się na spokój i bezpieczeństwo Państwa dziecka.
-              </p>
-              <Link href="/o-nas">Poczytaj o Nas</Link>
-            </article>
-            <article>
-              <h3>Tworzenie Przyjaznej i Wspierającej Atmosfery</h3>
-              <p>
-                Bezpieczne i przyjazne otoczenie to podstawa udanego procesu
-                adaptacji. Wesołe Wygibasy to miejsce, w którym dzieci mogą
-                poczuć się jak w domu. Dbamy o to, aby maluchy miały możliwość
-                eksplorowania przestrzeni żłobka, zabawek i zajęć w tempie,
-                które jest dla nich komfortowe. Naszym celem jest, aby każde
-                dziecko zyskało poczucie, że żłobek to drugi dom.
-              </p>
-              <Link href="/informacje-dla-rodzicow">
-                Informacje dla rodziców
-              </Link>
-            </article>
-            <article>
-              <h3>Korzyści Z Procesu Adaptacji</h3>
-              <p>
-                Maluchy uczą się samodzielności, zdobywają nowe umiejętności
-                społeczne i poznawcze, a także rozwijają swoje zainteresowania.
-                Udział w zajęciach grupowych oraz indywidualnych pozwala na
-                harmonijny rozwój w bezpiecznym i wspierającym otoczeniu.
-              </p>
-              <Link href="/zapisy">Zapisy do żłobka </Link>
-            </article>
+            <CardContainer cards={cardData} />
           </div>
         </section>
       </main>

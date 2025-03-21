@@ -30,10 +30,11 @@
   text-align: center;
 }
 
+.head h3,
 .head h2 {
-  margin-top: 1.5rem;
-  font-size: 1.8rem;
+  font-size: 2.3rem;
   color: black;
+  margin-top: 3rem;
 }
 
 .head p {
@@ -143,31 +144,7 @@
 
 .textContainer {
   padding: 4rem 9%;
-  padding-top: 0;
-  display: grid;
-  gap: 4rem;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.textContainer h3 {
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.4rem;
-}
-.textContainer p {
-  margin-bottom: 0.5rem;
-}
-
-.textContainer a {
-  color: #fa7070;
-  font-weight: 600;
-  text-decoration: underline;
-}
-
-.textContainer a:hover {
-  color: #ff2c2c;
+  margin-top: 4rem;
 }
 
 @media (max-width: 1400px) {
@@ -192,9 +169,6 @@
 }
 
 @media (max-width: 900px) {
-  .textContainer {
-    grid-template-columns: 1fr;
-  }
   .planCard {
     padding: 1.5rem;
   }
