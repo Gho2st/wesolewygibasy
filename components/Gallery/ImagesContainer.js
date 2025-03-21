@@ -16,8 +16,8 @@ function normalizujTekst(tekst) {
 export default function ImagesContainer(props) {
   const [foldery, setFoldery] = useState([]);
   const [zdjecia, setZdjecia] = useState([]);
-  const [ladowanieFolderow, setLadowanieFolderow] = useState(true); // Ładowanie folderów
-  const [ladowanieZdjec, setLadowanieZdjec] = useState(false); // Ładowanie zdjęć
+  const [ladowanieFolderow, setLadowanieFolderow] = useState(true);
+  const [ladowanieZdjec, setLadowanieZdjec] = useState(false);
   const [blad, setBlad] = useState(null);
   const [wybranyFolder, setWybranyFolder] = useState(null);
 
@@ -46,7 +46,7 @@ export default function ImagesContainer(props) {
   }, [props.folder]);
 
   const pobierzZdjeciaZFolderu = async (nazwaFolderu) => {
-    setLadowanieZdjec(true); // Włączamy ładowanie tylko dla zdjęć
+    setLadowanieZdjec(true);
     try {
       const pelnaSciezka = `${props.folder}/${nazwaFolderu}`;
       const odpowiedz = await fetch(`/api/get_images_aws/${pelnaSciezka}`);
@@ -79,7 +79,16 @@ export default function ImagesContainer(props) {
 
   const zamknijGalerie = () => {
     setWybranyFolder(null);
-    setZdjecia([]); // Czyścimy zdjęcia, ale nie影響amy folderów
+    setZdjecia([]);
+  };
+
+  // Ustawienia dla urządzeń mobilnych
+  const mobileSettings = {
+    controls: true, // Wyłączone strzałki nawigacyjne
+    showCloseIcon: true, // Włączona ikona zamykania "X"
+    download: false, // Wyłączony przycisk pobierania
+    counter: true, // Licznik zdjęć (opcjonalne, domyślnie true)
+    swipeToClose: true, // Zamykanie przez przesunięcie (domyślnie true)
   };
 
   return (
@@ -95,7 +104,6 @@ export default function ImagesContainer(props) {
         </p>
       </div>
 
-      {/* Wyświetlanie ładowania folderów */}
       <div className={classes.errors}>
         {ladowanieFolderow && <p>Wczytywanie galerii zdjęć...</p>}
         {blad && <p>Wystąpił błąd przy wczytywaniu galerii: {blad.message}</p>}
@@ -113,25 +121,25 @@ export default function ImagesContainer(props) {
           </div>
         )}
       </div>
-      {/* Wskaźnik ładowania zdjęć */}
+
       {ladowanieZdjec && (
         <div className={classes.overlay}>
           <p>Wczytywanie zdjęć...</p>
         </div>
       )}
 
-      {/* Galeria zdjęć */}
       {wybranyFolder && zdjecia.length > 0 && !ladowanieZdjec && (
         <LightGallery
           speed={500}
           plugins={[lgThumbnail, lgZoom]}
           onInit={(detail) => {
-            detail.instance.openGallery(0); // Otwieramy galerię automatycznie
+            detail.instance.openGallery(0);
           }}
-          onAfterClose={zamknijGalerie} // Zamykamy galerię bez odświeżania folderów
+          onAfterClose={zamknijGalerie}
           thumbnail={true}
           showThumbByDefault={false}
           elementClassNames={classes.lightGallery}
+          mobileSettings={mobileSettings} // Dodajemy ustawienia mobilne
         >
           {zdjecia.map((zdjecie, index) => (
             <a

@@ -33,6 +33,9 @@
     max-height: 300px;
     max-width: 400px;
   }
+  .innerContainer:hover {
+    transform: translateY(0px);
+  }
 }
 
 @media (max-width: 530px) {
