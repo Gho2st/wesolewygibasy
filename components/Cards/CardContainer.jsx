@@ -27,7 +27,6 @@ const CardContainer = ({ cards }) => {
       },
     },
     hover: {
-      scale: 1.05,
       boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.15)",
       transition: { duration: 0.3, ease: "easeInOut" },
     },
@@ -35,9 +34,10 @@ const CardContainer = ({ cards }) => {
 
   // Efekt dla elementów w karcie
   const fadeIn = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
+      y: 0,
       transition: {
         duration: 0.4,
         ease: "easeOut",

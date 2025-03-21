@@ -51,7 +51,6 @@
   margin: 1rem 1rem 1rem 0;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   align-items: center;
-  transition: all ease 0.2s;
 }
 
 .item:hover {
@@ -89,7 +88,7 @@
   transition: all 0.3s ease;
 }
 
-.phone span{
+.phone span {
   color: black;
 }
 

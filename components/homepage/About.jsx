@@ -19,9 +19,10 @@ const containerVariants = {
 
 // Prosty efekt pojawiania się od góry
 const fadeIn = {
-  hidden: { opacity: 0.15 },
+  hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
+    y: 0,
     transition: { duration: 0.5, ease: "easeOut" },
   },
 };
