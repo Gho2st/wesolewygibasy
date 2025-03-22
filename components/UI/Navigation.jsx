@@ -21,7 +21,7 @@ export default function Navigation(props) {
   };
 
   // Sprawdzamy, czy to strona główna
-  const isHomePage = pathname === "/" || pathname === "/zlobki/lokietka";
+  const isHomePage = pathname === "/";
   return (
     <header>
       <div

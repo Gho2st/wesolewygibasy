@@ -16,7 +16,7 @@
 .textContainer {
   padding: 3.5rem 2rem;
   border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.85); /* Subtelna przezroczystość */
+  background: rgba(255, 255, 255, 0.95); /* Subtelna przezroczystość */
   box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px; /* Cień dla lepszej widoczności */
   position: absolute;
   top: 40%;

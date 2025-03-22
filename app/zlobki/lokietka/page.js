@@ -63,7 +63,12 @@ export default function lokietka() {
     <>
       <main>
         <section>
-          <div className={classes.baner}>
+          <div
+            className={classes.baner}
+            style={{
+              backgroundImage: `url("/zlobki/lokietka.webp")`,
+            }}
+          >
             <div className={classes.textContainer}>
               <div>
                 <h1>

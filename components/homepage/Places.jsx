@@ -4,7 +4,7 @@ import classes from "./Places.module.css";
 export default function Places(props) {
   const items = [
     {
-      image: "/zlobki/lokietka.png",
+      image: "/nowy_zlobek.png",
       alt: "Zdjęcie przedstawiające wnętrze Żłobka na ulicy Łokietka",
       title: "Żłobek na Łokietka",
       location: "Żłobek, Kraków",
@@ -40,7 +40,7 @@ export default function Places(props) {
       add: "Dotacja aktywny maluch \n Dotacja aktywnie w żłobku",
     },
     {
-      image: "/zlobki/vetulaniego.jpg",
+      image: "/sliders/klub-malucha-slider/k2.jpg",
       alt: "Zdjęcie przedstawiające wnętrze Żłobka Klubu Malucha na ulicy Vetulaniego",
       title: "Klub Malucha",
       location: "Żłobek, Kraków",

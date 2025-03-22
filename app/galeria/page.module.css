@@ -52,30 +52,6 @@
   margin-top: 2rem;
 }
 
-/* cloud container */
-
-.cloudContainer {
-  min-height: 100vh;
-  background: #ffe3e1;
-  --mask: radial-gradient(76.2px at 50% 107.5px, #000 99%, #0000 101%)
-      calc(50% - 100px) 0/200px 51% repeat-x,
-    radial-gradient(76.2px at 50% -57.5px, #0000 99%, #000 101%) 50% 50px/200px
-      calc(51% - 50px) repeat-x,
-    radial-gradient(76.2px at 50% calc(100% - 107.5px), #000 99%, #0000 101%)
-      calc(50% - 100px) 100%/200px 51% repeat-x,
-    radial-gradient(76.2px at 50% calc(100% + 57.5px), #0000 99%, #000 101%) 50%
-      calc(100% - 50px) / 200px calc(51% - 50px) repeat-x;
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
-  padding: 6rem 9%;
-  padding-bottom: 8rem;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .head {
   padding-top: 3rem;
   text-align: center;

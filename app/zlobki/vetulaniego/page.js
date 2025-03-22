@@ -72,7 +72,7 @@ export default function vetulaniego() {
           <div
             className={classes.baner}
             style={{
-              backgroundImage: `url("/sliders/klub-malucha-slider/kl5.jpg")`,
+              backgroundImage: `url("/zlobki/vetulaniego.webp")`,
             }}
           >
             <div className={classes.textContainer}>
