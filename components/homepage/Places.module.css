@@ -27,6 +27,9 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+  width: 100%;
+  grid-auto-rows: 1fr; /* Zapewnia, że wszystkie elementy mają równą wysokość */
+  align-items: stretch; /* Rozciąga elementy na całą wysokość */
 }
 
 /* Media queries */
@@ -46,13 +49,14 @@
 
 @media (max-width: 950px) {
   .grid {
+    grid-template-columns: repeat(2, 1fr); /* Utrzymanie dwóch kolumn */
     grid-gap: 2rem;
   }
 }
 
 @media (max-width: 889px) {
   .grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr; /* Jeden element w kolumnie */
     margin: auto;
     display: flex;
     flex-direction: column;

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import classes from "./PlaceItem.module.css";
 import Image from "next/image";
 import Button from "../UI/Button";
@@ -6,7 +7,13 @@ import Link from "next/link";
 export default function PlaceItem(props) {
   return (
     <article>
-      <div className={classes.itemContainer}>
+      <motion.div
+        className={classes.itemContainer}
+        initial={{ opacity: 0, y: 50 }} // Początkowy stan: ukryty i przesunięty w dół
+        whileInView={{ opacity: 1, y: 0 }} // Końcowy stan: widoczny i na swoim miejscu
+        transition={{ duration: 0.6, ease: "easeOut" }} // Czas trwania animacji
+        viewport={{ once: true, amount: 0.2 }} // Animacja tylko, gdy element stanie się widoczny na ekranie
+      >
         <div className={classes.imageContainer}>
           <Image
             src={props.image}
@@ -14,11 +21,11 @@ export default function PlaceItem(props) {
             width={500}
             height={500}
             layout="responsive"
-          ></Image>
+          />
         </div>
         <div className={classes.downContainer}>
           <div className={classes.text}>
-            <h3 style={{ color: props.color }}>{props.title} </h3>
+            <h3 style={{ color: props.color }}>{props.title}</h3>
             <p>{props.location}</p>
             <p>{props.street}</p>
           </div>
@@ -40,7 +47,7 @@ export default function PlaceItem(props) {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </article>
   );
 }

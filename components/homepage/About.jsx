@@ -74,6 +74,9 @@ export default function About() {
                 key={index}
                 className={classes.item}
                 variants={fadeIn}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 1 }}
               >
                 <div className={classes.checkContainer}>
                   <FaCircleCheck

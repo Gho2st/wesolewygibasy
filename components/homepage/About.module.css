@@ -53,10 +53,6 @@
   align-items: center;
 }
 
-.item:hover {
-  scale: 1.03;
-}
-
 .item p {
   font-weight: 500;
 }
