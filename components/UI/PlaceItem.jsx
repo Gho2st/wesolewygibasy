@@ -1,8 +1,8 @@
+'use client'
 import { motion } from "framer-motion";
 import classes from "./PlaceItem.module.css";
 import Image from "next/image";
 import Button from "../UI/Button";
-import Link from "next/link";
 
 export default function PlaceItem(props) {
   return (
