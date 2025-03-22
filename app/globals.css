@@ -18,9 +18,12 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   line-height: 3rem;
+}
+
+h3 {
+  line-height: 2.3rem;
 }
 
 span {
