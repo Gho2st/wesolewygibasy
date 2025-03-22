@@ -12,7 +12,7 @@ export default function PlaceItem(props) {
         initial={{ opacity: 0, y: 50 }} // Początkowy stan: ukryty i przesunięty w dół
         whileInView={{ opacity: 1, y: 0 }} // Końcowy stan: widoczny i na swoim miejscu
         transition={{ duration: 0.6, ease: "easeOut" }} // Czas trwania animacji
-        viewport={{ once: true, amount: 0.2 }} // Animacja tylko, gdy element stanie się widoczny na ekranie
+        viewport={{ once: true, amount: 0.5 }} // Animacja tylko, gdy element stanie się widoczny na ekranie
       >
         <div className={classes.imageContainer}>
           <Image

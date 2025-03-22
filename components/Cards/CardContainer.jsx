@@ -55,7 +55,7 @@ const CardContainer = ({ cards }) => {
           variants={cardVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 1 }} // Ustaw na 1, aby karta była w pełni widoczna
+          viewport={{ once: true, amount: 0.5 }} // Ustaw na 1, aby karta była w pełni widoczna
           whileHover="hover"
         >
           <motion.h3 variants={fadeIn}>{card.title}</motion.h3>
