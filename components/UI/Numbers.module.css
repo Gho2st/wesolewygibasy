@@ -1,3 +1,14 @@
+.numbersContainer {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 2rem;
+  border-radius: 2rem;
+  background: white;
+}
+
+.itemContainer {
+  color: black;
+}
+
 .itemContainer h3 {
   font-size: 1.2rem;
   margin-top: 1.5rem;
@@ -5,112 +16,46 @@
 .itemContainer p {
   margin-top: 0.5rem;
 }
+
 .numbers {
   display: flex;
 }
 
-.numbers p {
+.numbers span {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ff4646;
+  background: var(--color-primary);
   width: 50px;
   height: 50px;
   border-radius: 100%;
   margin-right: 1rem;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   transition: all 0.3s;
 }
 
-.numbers p:hover {
+.numbers span:hover {
   scale: 1.1;
-}
-
-.numbers p:hover {
   cursor: pointer;
 }
+
 .number {
   font-weight: bold;
-  color: #ff4646;
   font-size: 1.3rem;
 }
 
-@media (max-width: 820px) {
-  .numbers p {
-    width: 35px;
-    height: 35px;
-    margin-top: 0.5rem;
-  }
-  .number {
-    font-weight: bold;
-    font-size: 1.1rem;
+@media (max-width: 900px) {
+  .numbersContainer {
+    padding: 1rem;
   }
   .itemContainer h3 {
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     margin-top: 1rem;
   }
-  .itemContainer p {
-    margin-top: 0.4rem;
-  }
-}
-
-@media (max-width: 660px) {
-  .numbers p {
+  .numbers span {
     width: 45px;
     height: 45px;
-    margin-top: 0.5rem;
-  }
-  .number {
-    font-weight: bold;
-    font-size: 1.5rem !important;
-  }
-  .itemContainer h3 {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-  }
-  .itemContainer p {
-    margin-top: 0.4rem;
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 540px) {
-  .numbers p {
-    width: 40px;
-    height: 40px;
-    margin-top: 0.5rem;
-  }
-  .number {
-    font-weight: bold;
-    font-size: 1.3rem !important;
-  }
-  .itemContainer h3 {
-    font-size: 1.3rem;
-    margin-top: 1rem;
-  }
-  .itemContainer p {
-    margin-top: 0.4rem;
-    font-size: 1.05rem;
-  }
-}
-
-@media (max-width: 450px) {
-  .numbers p {
-    width: 40px;
-    height: 40px;
-    margin-top: 0.5rem;
-  }
-  .number {
-    font-weight: bold;
-    font-size: 1.3rem !important;
-  }
-  .itemContainer h3 {
-    font-size: 1.1rem;
-    margin-top: 1rem;
-  }
-  .itemContainer p {
-    margin-top: 0.4rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }

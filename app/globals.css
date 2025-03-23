@@ -1,6 +1,7 @@
 :root {
   --color-primary: #fa7070;
   --color-secondary: #6c757d; /* Szary dla akcentów */
+  --color-blue: #4a71ff;
 }
 
 * {
@@ -29,6 +30,12 @@ h3 {
 span {
   color: #ff6666;
   font-weight: bold;
+}
+
+svg {
+  display: block;
+  width: 100%;
+  margin-bottom: -5px; /* Możesz dostosować wartość */
 }
 
 a {
