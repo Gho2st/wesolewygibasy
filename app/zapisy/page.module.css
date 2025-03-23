@@ -1,13 +1,15 @@
 .infoContainer {
   padding: 2rem 9%;
+}
+.textContainer {
   text-align: center;
 }
 
-.infoContainer h2 {
+.textContainer h2 {
   font-size: 2rem;
 }
 
-.infoContainer p {
+.textContainer p {
   margin-top: 2rem;
   margin-bottom: 4rem;
 }

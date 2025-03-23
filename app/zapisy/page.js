@@ -41,14 +41,16 @@ export default function Zapisy() {
       <main>
         <Contact />
         <section className={classes.infoContainer}>
-          <h2>Przyjdź i poznaj nasz żłobek w Krakowie!</h2>
-          <p>
-            Zanim zdecydujesz, że nasz żłobek to najlepsze miejsce dla Twojego
-            dziecka, zapraszamy na indywidualną wizytę. Chcemy, abyś
-            samodzielnie przekonał się, dlaczego tak wielu rodziców wybiera
-            właśnie nas. Umów się na spotkanie i zobacz, co sprawia, że nasza
-            placówka jest wyjątkowa.
-          </p>
+          <div className={classes.textContainer}>
+            <h2>Przyjdź i poznaj nasz żłobek w Krakowie!</h2>
+            <p>
+              Zanim zdecydujesz, że nasz żłobek to najlepsze miejsce dla Twojego
+              dziecka, zapraszamy na indywidualną wizytę. Chcemy, abyś
+              samodzielnie przekonał się, dlaczego tak wielu rodziców wybiera
+              właśnie nas. Umów się na spotkanie i zobacz, co sprawia, że nasza
+              placówka jest wyjątkowa.
+            </p>
+          </div>
           <CardContainer cards={cardData} />
         </section>
       </main>
