@@ -8,6 +8,11 @@
   color: green;
 }
 
+.stars{
+  display: flex;
+  margin-bottom: 1rem;
+}
+
 .textContainer {
   padding: 2rem 9%;
 }

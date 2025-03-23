@@ -16,9 +16,7 @@ export default function Home() {
         <TextContainer />
         <Age />
         <Reviews />
-        <div className={classes.wrapper}>
-          <Places />
-        </div>
+        <Places />
       </main>
     </>
   );

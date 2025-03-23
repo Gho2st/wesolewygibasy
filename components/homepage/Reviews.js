@@ -128,7 +128,7 @@ export default function Reviews() {
             </div>
             <div className={classes.reviewItem}>
               <div className={classes.review}>
-                <div>
+                <div className={classes.stars}>
                   <Stars />
                 </div>
                 <p>
@@ -144,7 +144,7 @@ export default function Reviews() {
             </div>
             <div className={classes.reviewItem}>
               <div className={classes.review}>
-                <div>
+                <div className={classes.stars}>
                   <Stars />
                 </div>
                 <p>
@@ -162,7 +162,7 @@ export default function Reviews() {
             </div>
             <div className={classes.reviewItem}>
               <div className={classes.review}>
-                <div>
+                <div className={classes.stars}>
                   <Stars />
                 </div>
                 <p>
@@ -178,7 +178,7 @@ export default function Reviews() {
             </div>
             <div className={classes.reviewItem}>
               <div className={classes.review}>
-                <div>
+                <div className={classes.stars}>
                   <Stars />
                 </div>
                 <p>
@@ -196,7 +196,7 @@ export default function Reviews() {
             </div>
             <div className={classes.reviewItem}>
               <div className={classes.review}>
-                <div>
+                <div className={classes.stars}>
                   <Stars />
                 </div>
                 <p>

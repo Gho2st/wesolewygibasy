@@ -51,10 +51,7 @@ export default function Places(props) {
   ];
 
   return (
-    <section
-      id="placówki"
-      style={{ background: props.background ? "white" : "#fffbf2" }}
-    >
+    <section id="placówki">
       <div className={classes.container}>
         <div className={classes.description}>
           <h2>
