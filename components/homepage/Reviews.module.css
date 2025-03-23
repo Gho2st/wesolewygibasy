@@ -8,7 +8,7 @@
   color: green;
 }
 
-.stars{
+.stars {
   display: flex;
   margin-bottom: 1rem;
 }
@@ -92,7 +92,7 @@
   color: rgb(9, 77, 87);
 }
 .review p {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
 }
 .line {
   width: 100%;
