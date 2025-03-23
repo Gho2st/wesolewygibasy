@@ -27,11 +27,11 @@
 }
 
 .navigation__background {
-  height: 2.1rem;
-  width: 2.1rem;
+  height: 2.3rem;
+  width: 2.3rem;
   border-radius: 50%;
   position: fixed;
-  top: 19px;
+  top: 15px;
   right: 20px;
   background: linear-gradient(
     90deg,
@@ -47,26 +47,27 @@
 }
 
 .navigation__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(255, 255, 255);
-  height: 2.5rem;
-  width: 2.5rem;
   position: fixed;
+  height: 2.3rem;
+  width: 2.3rem;
   top: 15px;
   right: 20px;
-  border-radius: 50%;
+  border-radius: 2rem;
   z-index: 2;
   box-shadow: 0rem 0.2rem 0.5rem rgb(183, 183, 183);
   text-align: center;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition: transform 0.3s ease-in-out;
 }
 
 .navigation__button svg {
-  font-size: 1.4rem;
   transition: transform 0.5s ease-in-out;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .navigation__button:hover {
@@ -144,17 +145,13 @@
   .navigation__background {
     height: 1.9rem;
     width: 1.9rem;
-    right: 11px;
+    right: 15px;
   }
 
   .navigation__button {
     height: 2.5rem;
     width: 2.5rem;
-    right: 10px;
-  }
-
-  .navigation__button svg {
-    font-size: 1.35rem;
+    right: 11px;
   }
 
   .navigation__link {
