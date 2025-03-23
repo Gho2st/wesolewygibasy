@@ -1,5 +1,5 @@
 "use client";
-import classes from "./page.module.css";
+import classes from "./Contact.module.css";
 import Image from "next/image";
 import Form from "./Form";
 import Header from "@/components/UI/Header";
@@ -37,39 +37,53 @@ export default function Contact() {
         </p>
       </div>
       <div className={classes.contactContainer}>
-        <div className={classes.text}>
+        <div className={classes.leftContainer}>
           <Form onFormSubmit={handleFormSubmit} />
         </div>
-        <div className={classes.animals}>
-          <div className={classes.animalsImgContainer}>
+        <div className={classes.rightContainer}>
+          <div className={classes.imageContainer}>
             <Image
               src={"/monkeys/1.gif"}
-              height={100}
-              width={100}
+              height={300}
+              width={300}
               layout="responsive"
               alt="Małpka wskazująca na formularz zapisów do Żłobka Wesołe Wygibasy"
             ></Image>
           </div>
-          <div className={classes.info}>
+          <div className={classes.infoContainer}>
             <div className={classes.item}>
               <Link href={"tel:+48697560022"}>
-                <FaPhone className={classes.phone} />
-                +48 697 560 022
+                <div className={classes.iconContainer}>
+                  <FaPhone className={classes.phone} />
+                </div>
+                <div className={classes.linkContainer}>+48 697 560 022</div>
               </Link>
             </div>
             <div className={classes.item}>
-              <MdEmail />
-              <p>wesolewygibasy@onet.pl</p>
+              <Link href="mailto:wesolewygibasy@onet.pl">
+                <div className={classes.iconContainer}>
+                  <MdEmail />
+                </div>
+                <div className={classes.linkContainer}>
+                  wesolewygibasy@onet.pl
+                </div>
+              </Link>
             </div>
-            <Link href="https://www.facebook.com/wesolewygibasy">
-              <div className={classes.itemFacebook}>
-                <FaFacebook className={classes.facebook} />
-                <p>Napisz na Facebooku!</p>
-              </div>
-            </Link>
             <div className={classes.item}>
-              <FaCar />
-              <p>Przyjedź & Zapytaj</p>
+              <Link href="https://www.facebook.com/wesolewygibasy">
+                <div className={classes.iconContainer}>
+                  <FaFacebook className={classes.facebook} />
+                </div>
+                <div className={classes.linkContainer}>
+                  Napisz na Facebooku!
+                </div>
+              </Link>
+            </div>
+            <div className={classes.item}>
+              <div className={classes.iconContainer}>
+                <FaCar />
+              </div>
+              <div className={classes.linkContainer}>Przyjedź & Zapytaj</div>
             </div>
           </div>
         </div>

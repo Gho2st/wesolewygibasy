@@ -1,6 +1,7 @@
 .star {
   color: gold;
-  font-size: 1.7rem;
+  height: 1.6rem;
+  width: 1.6rem;
   margin-bottom: 0.5rem;
   animation: pulse 1.5s infinite;
   transition: all 0.2s;

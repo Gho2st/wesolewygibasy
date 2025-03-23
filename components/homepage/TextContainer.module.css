@@ -35,9 +35,13 @@
   border-radius: 2rem;
   padding: 1.2rem 1.2rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  text-align: left; /* Wyrównanie tekstu do lewej */
+}
+.iconContainer {
+  display: inline-block;
 }
 
-.card svg {
+.iconContainer svg {
   font-size: 2.3rem;
   color: var(--color-primary);
 }

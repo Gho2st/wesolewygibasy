@@ -1,0 +1,139 @@
+.container {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  width: 80%;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.container p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.contactContainer {
+  padding: 3rem 7%;
+  display: flex;
+  margin: auto;
+  width: 90%;
+  margin-top: 4rem;
+  border-radius: 1rem;
+  justify-content: space-between;
+  gap: 6rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 4rem;
+}
+.rightContainer {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.imageContainer {
+  width: 80%;
+}
+.animals img {
+  transform: translateX(-1.7rem);
+  margin-bottom: 1rem;
+}
+
+.leftContainer {
+  width: 60%;
+}
+
+.contactContainer h2 {
+  font-size: 1.8rem;
+}
+
+.infoContainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.item a,
+.item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.infoContainer svg {
+  height: 1.6rem;
+  width: 1.6rem;
+  color: var(--color-primary);
+}
+
+.facebook {
+  color: blue !important;
+}
+
+@media (max-width: 1263px) {
+  .contactContainer h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contactContainer {
+    padding: 2rem 9%;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .leftContainer {
+    width: 100%;
+  }
+  .rightContainer {
+    width: 100%;
+    flex-direction: row-reverse;
+    gap: 3rem;
+  }
+  .imageContainer {
+    width: 50%;
+  }
+}
+
+@media (max-width: 700px) {
+  .container h1 {
+    margin-bottom: 0rem;
+  }
+
+  .container {
+    width: 100% !important;
+    padding: 2rem 9%;
+  }
+  .rightContainer {
+    width: 100%;
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .imageContainer {
+    width: 50%;
+  }
+  .contactContainer {
+    width: 92%;
+  }
+  .contactContainer {
+    margin-top: 1.5rem;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .contactContainer {
+    gap: 2.5rem;
+  }
+  .imageContainer {
+    width: 60%;
+  }
+}

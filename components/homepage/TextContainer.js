@@ -19,7 +19,9 @@ export default function TextContainer() {
 
             <div className={classes.cardContainer}>
               <div className={`${classes.card} ${classes.card1}`}>
-                <FaHeart />
+                <div className={classes.iconContainer}>
+                  <FaHeart />
+                </div>
                 <h3>Miłość i troska</h3>
                 <p>
                   Wesołe Wygibasy to przestrzeń, w której każde dziecko jest
@@ -29,7 +31,9 @@ export default function TextContainer() {
                 </p>
               </div>
               <div className={`${classes.card} ${classes.card2}`}>
-                <FaLocationDot />
+                <div className={classes.iconContainer}>
+                  <FaLocationDot />
+                </div>
                 <h3>Dogodna lokalizacja w Krakowie</h3>
                 <p>
                   Nasze placówki są łatwo dostępne dla mieszkańców Prądnika
@@ -39,7 +43,9 @@ export default function TextContainer() {
                 </p>
               </div>
               <div className={`${classes.card} ${classes.card3}`}>
-                <GiTeacher />
+                <div className={classes.iconContainer}>
+                  <GiTeacher />
+                </div>
                 <h3>Profesjonalna kadra opiekunów</h3>
                 <p>
                   Oferujemy opiekę dla dzieci do 3. roku życia. Nasz zespół
@@ -48,7 +54,9 @@ export default function TextContainer() {
                 </p>
               </div>
               <div className={`${classes.card} ${classes.card4}`}>
-                <FaBook />
+                <div className={classes.iconContainer}>
+                  <FaBook />
+                </div>
                 <h3>Holistyczne podejście</h3>
                 <p>
                   Program nauczania bazuje na holistycznym podejściu, które
