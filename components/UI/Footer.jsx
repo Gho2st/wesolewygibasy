@@ -50,7 +50,7 @@ export default function Footer() {
               <h3>Godziny otwarcia</h3>
               <ul>
                 <li>
-                  <span>Pon - Pt</span>{" "}
+                  <span>Pon - Pt:</span>
                 </li>
                 <li>Vetulaniego - 7:00 - 17:00 </li>
                 <li>Glogera - 6:30 - 17:00 </li>
