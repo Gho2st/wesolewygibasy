@@ -102,10 +102,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-.socialContainer a:hover {
-  scale: 1.1;
-}
-
 .socialContainer svg {
   font-size: 2.3rem;
 }
@@ -158,9 +154,7 @@
     flex-direction: column;
     gap: 2rem;
   }
-  .numbers {
-    display: inline-flex;
-  }
+
   .footerInfoContainer {
     flex-direction: column;
     gap: 3rem;
@@ -169,6 +163,9 @@
 }
 
 @media (max-width: 600px) {
+  .container {
+    padding-bottom: 2rem;
+  }
   .textContainer h2 {
     font-size: 1.8rem;
   }
