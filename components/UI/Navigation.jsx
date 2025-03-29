@@ -34,7 +34,7 @@ export default function Navigation(props) {
               src={"/others/logo.png"}
               width={110}
               height={65}
-              alt="Logo of Wesołe Wygibasy"
+              alt="Logo Wesołych Wygibasów"
               className={classes.logo}
             />
           </Link>
