@@ -10,7 +10,7 @@ import NurseryHeader from "@/components/nursery/header";
 export const metadata = {
   title: "Żłobek na Ulicy Łokietka w Krakowie - Wesołe Wygibasy",
   alternates: {
-    canonical: "/zlobek-na-ulicy-lokietka",
+    canonical: "/zlobki/lokietka",
   },
   description:
     "Żłobek Wesołe Wygibasy na ulicy Łokietka 23 w Krakowie – kameralna placówka z małą liczbą dzieci, blisko parku, dotowana i oferująca profesjonalną opiekę oraz adaptację od 19 maja. Sprawdź nasz program i zapisz dziecko już dziś!",
