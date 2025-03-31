@@ -53,7 +53,7 @@ export default function ImagesContainer(props) {
         throw new Error(`Folder nie został znaleziony: ${odpowiedz.status}`);
       }
       const dane = await odpowiedz.json();
-      console.log("Pobrane zdjęcia dla folderu", nazwaFolderu, ":", dane);
+      // console.log("Pobrane zdjęcia dla folderu", nazwaFolderu, ":", dane);
 
       if (!Array.isArray(dane) || !dane.every((item) => item.imageUrl)) {
         throw new Error(
