@@ -4,7 +4,6 @@ import Second from "./Second";
 import { useState } from "react";
 import Others from "./Others";
 import FoodContainer from "./food/FoodContainer";
-import { IoCaretDownOutline } from "react-icons/io5";
 import Header from "@/components/UI/Header";
 import Link from "next/link";
 
@@ -46,7 +45,7 @@ export default function Pricing() {
               <li>
                 koszt zakupu niezbędnych przedmiotów osobistych dla Dziecka na
                 czas pobytu w żłobku (mokre chusteczki, ręcznik papierowy,
-                nocnik itp.
+                nocnik itp.)
               </li>
               <li>
                 koszt zakupu prezentów okolicznościowych (Mikołajki, Dzień
@@ -69,7 +68,6 @@ export default function Pricing() {
             }}
           >
             Żłobki ul. Śliczna & ul. Stańczyka - Czesne 0zł
-            <IoCaretDownOutline />
           </h2>
           {isSecondVisible && <Second />}
           <h2
@@ -78,7 +76,7 @@ export default function Pricing() {
               setIsOthersVisible(!isOthersVisible);
             }}
           >
-            Żłobki ul. Vetulaniego & ul. Glogera <IoCaretDownOutline />
+            Żłobki ul. Vetulaniego & ul. Glogera
           </h2>
           {isOthersVisible && <Others />}
         </div>

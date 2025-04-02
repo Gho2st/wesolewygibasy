@@ -9,7 +9,7 @@
   width: 100%;
   margin-top: 3rem;
   margin-bottom: 1rem;
-  text-align: left;
+  text-align: center;
 }
 
 .description a {
@@ -25,6 +25,7 @@
 
 .description ul {
   padding: 1rem;
+  list-style-type: none;
 }
 
 .pricingContainer h2 {
