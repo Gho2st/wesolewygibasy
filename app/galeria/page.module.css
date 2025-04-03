@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 33%;
+  width: 28%;
 }
 .imageContainer img {
   border-radius: 6rem;
@@ -128,7 +128,7 @@
 
 @media (max-width: 700px) {
   .imageContainer {
-    width: 100%;
+    width: 65%;
   }
   .cardContainer {
     grid-template-columns: 1fr;
@@ -148,5 +148,8 @@
 @media (max-width: 600px) {
   .card h3 {
     font-size: 1.3rem;
+  }
+  .imageContainer {
+    width: 70%;
   }
 }

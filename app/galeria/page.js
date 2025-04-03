@@ -63,7 +63,7 @@ export default function Galeria() {
                   src={"/monkeys/7.gif"}
                   width={100}
                   height={100}
-                  alt="Zdjęcie przedstawiające dzieci uśmiechające się do zdjęcia w Żłobku"
+                  alt="Wyskakująca małpka z patykiem w łapce "
                   layout="responsive"
                 />
               </div>
