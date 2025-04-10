@@ -10,7 +10,7 @@ export default function Places(props) {
       location: "Żłobek, Kraków",
       street: "ul. Łokietka 23",
       link: "zlobki/lokietka",
-      add: "Dotacja aktywny maluch \n Dotacja aktywnie w żłobku",
+      add: "Dotacja aktywny maluch \n Dotacja aktywnie w żłobku \n Opieka jest darmowa!!!",
     },
     {
       image: "sliders/sliczna-slider/sl4.jpg",

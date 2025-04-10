@@ -11,11 +11,11 @@ export default function Second() {
             <th>Dotacja U.M</th>
             <th>Dotacja Maluch</th>
             <th>Aktywnie w Żłobku</th>
-            <th>Wpłata na konto</th>
+            <th className={classes.pay}>Wpłata na konto</th>
             <th>Ostateczne opłaty</th>
           </tr>
           <tr>
-            <td>Styczeń 2025 </td>
+            <td>Kwiecień 2025 </td>
             <td>2230 zł</td>
             <td>735 zł</td>
             <td>836 zł</td>
@@ -24,7 +24,7 @@ export default function Second() {
             <td>0 zł</td>
           </tr>
           <tr>
-            <td>Luty 2025</td>
+            <td>Maj 2025</td>
             <td>2230 zł</td>
             <td>700 zł</td>
             <td>836 zł</td>
@@ -33,7 +33,7 @@ export default function Second() {
             <td>0 zł</td>
           </tr>
           <tr>
-            <td>Marzec 2025</td>
+            <td>Czerwiec 2025</td>
             <td>2230 zł</td>
             <td>735 zł</td>
             <td>836 zł</td>

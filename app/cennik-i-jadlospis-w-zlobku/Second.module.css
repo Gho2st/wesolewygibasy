@@ -39,6 +39,8 @@
 .additional {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  color: blue;
+  font-weight: bolder;
 }
 
 .header {
@@ -49,6 +51,10 @@
   margin-bottom: 3rem;
   color: #08c6c3;
   font-weight: bold;
+}
+
+.pay {
+  background: blue !important;
 }
 
 @media (max-width: 410px) {

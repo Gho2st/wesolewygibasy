@@ -10,11 +10,11 @@ export default function Others() {
             <th>Czesne</th>
             <th>Dotacja U.M.</th>
             <th>Aktywnie w Żłobku</th>
-            <th>Wpłata na konto</th>
+            <th className={classes.pay}>Wpłata na konto</th>
             <th>Ostateczne opłaty</th>
           </tr>
           <tr>
-            <td>Styczeń 2025</td>
+            <td>Kwiecień 2025</td>
             <td>2400 zł</td>
             <td>735 zł</td>
             <td>1500 zł</td>
@@ -22,7 +22,15 @@ export default function Others() {
             <td>165 zł</td>
           </tr>
           <tr>
-            <td>Luty 2025</td>
+            <td>Maj 2025</td>
+            <td>2400 zł</td>
+            <td>735 zł</td>
+            <td>1500 zł</td>
+            <td>1665 zł</td>
+            <td>165 zł</td>
+          </tr>
+          <tr>
+            <td>Czerwiec 2025</td>
             <td>2400 zł</td>
             <td>700 zł</td>
             <td>1500 zł</td>
@@ -30,12 +38,20 @@ export default function Others() {
             <td>200 zł</td>
           </tr>
           <tr>
-            <td>Marzec 2025</td>
-            <td>2100 zł</td>
-            <td>735 zł</td>
+            <td>Lipiec 2025</td>
+            <td>2400 zł</td>
+            <td>805 zł</td>
             <td>1500 zł</td>
-            <td>1665 zł</td>
-            <td>165 zł</td>
+            <td>1595 zł</td>
+            <td>95 zł</td>
+          </tr>
+          <tr>
+            <td>Sierpień 2025</td>
+            <td>2400 zł</td>
+            <td>700 zł</td>
+            <td>1500 zł</td>
+            <td>1700 zł</td>
+            <td>200 zł</td>
           </tr>
         </tbody>
       </table>

@@ -18,8 +18,7 @@ export default function Pricing() {
           <Header text="Cennik - Żłobek Wesołe Wygibasy w Krakowie" />
           <div className={classes.description}>
             <p>
-              Zapraszamy do zapoznania się z naszym cennikiem dla żłobka Wesołe
-              Wygibasy w Krakowie. Znajdą Państwo tutaj szczegółowe informacje
+              Znajdą Państwo tutaj szczegółowe informacje
               na temat pełnej kwoty abonamentu, liczby dni roboczych,
               miesięcznej dotacji oraz jadłospisu. Nasz żłobek w Krakowie
               oferuje konkurencyjne ceny, które obejmują wszystko, czego
@@ -67,7 +66,7 @@ export default function Pricing() {
               setIsSecondVisible(!isSecondVisible);
             }}
           >
-            Żłobki ul. Śliczna & ul. Stańczyka - Czesne 0zł
+            Śliczna & Stańczyka - Czesne 0zł
           </h2>
           {isSecondVisible && <Second />}
           <h2
@@ -76,7 +75,7 @@ export default function Pricing() {
               setIsOthersVisible(!isOthersVisible);
             }}
           >
-            Żłobki ul. Vetulaniego & ul. Glogera
+            Vetulaniego & Glogera
           </h2>
           {isOthersVisible && <Others />}
         </div>

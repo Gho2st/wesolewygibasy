@@ -56,6 +56,8 @@ export default function Footer() {
                 <li>Glogera - 6:30 - 17:00 </li>
                 <li>Stańczyka - 6:30 - 17:30 </li>
                 <li>Śliczna - 7:00 - 17:30 </li>
+                <li>Łokietka - 6:30 - 17:30 </li>
+
                 <li>
                   <span>Sob:</span> nieczynne
                 </li>

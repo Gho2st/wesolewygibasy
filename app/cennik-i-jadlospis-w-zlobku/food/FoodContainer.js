@@ -34,13 +34,13 @@ export default function FoodContainer() {
         Jadłospis - Zdrowe Odżywianie w Żłobku Wesołe Wygibasy w Krakowie
       </h2>
       <p>
-        W żłobku Wesołe Wygibasy w Krakowie szczególną uwagę przykładamy do
+        W naszych placówkach szczególną uwagę przykładamy do
         zdrowego odżywiania dzieci. Oferujemy starannie zaprojektowany
         jadłospis, który uwzględnia potrzeby żywieniowe najmłodszych,
         zapewniając im odpowiednią ilość składników odżywczych na każdy dzień.
         Naszym celem jest budowanie dobrych nawyków żywieniowych już od
         najmłodszych lat. <br></br>
-        <br></br> Każdy posiłek w naszym żłobku w Krakowie jest przygotowywany z
+        <br></br> Każdy posiłek jest przygotowywany z
         myślą o zdrowiu i rozwoju dzieci, z uwzględnieniem różnorodności i
         smaku. Wierzymy, że właściwe odżywianie to klucz do zdrowego wzrostu i
         energii na cały dzień pełen zabawy i nauki.

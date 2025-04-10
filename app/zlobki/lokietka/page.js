@@ -2,11 +2,11 @@ import classes from "../nursery.module.css";
 import ImagesContainer from "@/components/Gallery/ImagesContainer";
 import Button from "@/components/UI/Button";
 import Button2 from "@/components/UI/Button2";
-import Maluch from "@/components/UI/Maluch";
 import Map from "@/components/UI/Map";
 import DayScheduleLokietka from "@/components/Info/DayScheduleLokietka";
 import CardContainer from "@/components/Cards/CardContainer";
 import NurseryHeader from "@/components/nursery/header";
+import ParkSlider from "@/components/UI/slider/parkSlider";
 export const metadata = {
   title: "Żłobek na Ulicy Łokietka w Krakowie - Wesołe Wygibasy",
   alternates: {
@@ -15,6 +15,29 @@ export const metadata = {
   description:
     "Żłobek Wesołe Wygibasy na ulicy Łokietka 23 w Krakowie – kameralna placówka z małą liczbą dzieci, blisko parku, dotowana i oferująca profesjonalną opiekę oraz adaptację od 19 maja. Sprawdź nasz program i zapisz dziecko już dziś!",
 };
+
+const images = [
+  {
+    src: "/sliders/park-lokietka/1.jpeg",
+    alt: "Park Łokietka w Krakowie 1",
+  },
+  {
+    src: "/sliders/park-lokietka/2.jpeg",
+    alt: "Park Łokietka w Krakowie 2",
+  },
+  {
+    src: "/sliders/park-lokietka/3.jpeg",
+    alt: "Park Łokietka w Krakowie 3",
+  },
+  {
+    src: "/sliders/park-lokietka/4.jpeg",
+    alt: "Park Łokietka w Krakowie 4",
+  },
+  {
+    src: "/sliders/park-lokietka/5.jpeg",
+    alt: "Park Łokietka w Krakowie 5",
+  },
+];
 
 const cardData = [
   {
@@ -42,19 +65,31 @@ const cardData = [
     },
   },
   {
-    title: "Placówka Dotowana",
+    title: "Opieka jest darmowa!",
     description:
-      "Jesteśmy placówką dotowaną, co oznacza przystępne ceny bez kompromisów w jakości opieki i programu edukacyjnego.",
+      "Jesteśmy placówką dotowaną, co oznacza przystępne ceny bez kompromisów w jakości opieki i programu edukacyjnego. Rodzice płacą tylko za wyżywienie i zajęcia dodatkowe.",
+    link: {
+      href: "/cennik-i-jadlospis-w-zlobku",
+      text: "Cennik i Jadłospis",
+    },
   },
   {
     title: "Zajęcia Rozwojowe",
     description:
-      "Oferujemy różnorodne zajęcia, takie jak rytmika, plastyka i zabawy sensoryczne, wspierające rozwój Twojego malucha.",
+      "Oferujemy różnorodne zajęcia, takie jak rytmika, dogoterapia, angielski, plastyka i zabawy sensoryczne, wspierające rozwój Twojego malucha.",
+    link: {
+      href: "/plan-dnia-w-zlobku",
+      text: "Cennik i Jadłospis",
+    },
   },
   {
     title: "Mała Ilość Dzieci",
     description:
-      "Dzięki kameralnym grupom zapewniamy indywidualną opiekę i rodzinną atmosferę, w której każde dziecko czuje się wyjątkowo.",
+      "W placówce pod opieką docelowo będzie 25 dzieci. Dzięki kameralnym grupom zapewniamy indywidualną opiekę i rodzinną atmosferę, w której każde dziecko czuje się wyjątkowo.",
+    link: {
+      href: "/informacje-dla-rodzicow",
+      text: "Informacje dla rodziców",
+    },
   },
 ];
 
@@ -97,7 +132,7 @@ export default function lokietka() {
             </div>
           </div>
         </section>
-        {/* <SliderComponent images={images} /> */}
+        <ParkSlider images={images} />
         <section>
           <DayScheduleLokietka
             header="Plan Dnia i zajęcia dodatkowe"
