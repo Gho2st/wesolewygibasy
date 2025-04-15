@@ -83,12 +83,6 @@ export default function TeamVetulaniego(props) {
           role="Opiekunka Dziecięca"
           quote="Lubię pracę z dziećmi ,daje mi dużo satysfakcji i moc energi. Te małe istotki mają w sobie tyle radości ,że a miło z nimi pracować ."
         />
-        <TeamMember
-          src="/team/vetulaniego/hajduga.jpeg"
-          name="Elżbieta Hajduga"
-          role="Opiekunka Dziecięca"
-          quote="Praca z dziećmi od zawsze była dla mnie inspiracją i ciekawościa... Dzieci daja mi  energię siłę do działania."
-        />
       </Slider>
     </div>
   );
