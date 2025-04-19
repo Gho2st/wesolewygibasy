@@ -120,8 +120,7 @@ export default function Footer() {
           <div className={classes.footerDownContainer}>
             <p className={classes.description}>
               <span className={classes.copy}>&copy;</span> {currentYear} Wesołe
-              Wygibasy | Projekt i realizacja:
-              <Link href={"https://www.domiweb.pl/"}> Domiweb </Link>
+              Wygibasy
             </p>
           </div>
         </div>
