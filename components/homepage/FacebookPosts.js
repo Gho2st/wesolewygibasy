@@ -48,7 +48,7 @@ export default function FacebookPosts() {
         <ul className={classes.postsList}>
           {/* error */}
           {posts.length === 0 ? (
-            <p>Brak dostępnych postów.</p>
+            <p className={classes.error}>Brak dostępnych postów.</p>
           ) : (
             posts.map((post) => {
               const imageUrl =
