@@ -1,11 +1,12 @@
 "use client";
 import { useState, useEffect } from "react";
+import { FaFacebookSquare } from "react-icons/fa"; // <- dodany import
 import classes from "./FacebookPosts.module.css";
 import Image from "next/image";
 
 export default function FacebookPosts() {
   const [posts, setPosts] = useState([]);
-  const [isLoading, setIsLoading] = useState(true); // Dodany stan ładowania
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     async function fetchPosts() {
@@ -16,7 +17,7 @@ export default function FacebookPosts() {
       } catch (error) {
         console.error("Błąd podczas pobierania postów:", error);
       } finally {
-        setIsLoading(false); // Ustaw zakończenie ładowania niezależnie od wyniku
+        setIsLoading(false);
       }
     }
 
@@ -25,12 +26,24 @@ export default function FacebookPosts() {
 
   return (
     <section className={classes.wrapper}>
-      <h2 className={classes.heading}>
-        Najnowsze <span className={classes.highlight}>posty</span> z Facebooka
-      </h2>
+      <div>
+        <h2 className={classes.heading}>
+          Najnowsze <span className={classes.highlight}>posty</span> z Facebooka
+        </h2>
+        <div className={classes.iconContainer}>
+          <a
+            href="https://www.facebook.com/wesolewygibasy" // <- Podmień na właściwy link
+            target="_blank"
+            rel="noopener noreferrer"
+            className={classes.fbIconLink}
+          >
+            <FaFacebookSquare size={36} color="#1877F2" />
+          </a>
+        </div>
+      </div>
 
       {isLoading ? (
-        <p>Wczytywanie postów...</p> // Możesz tu dać spinner, jeśli masz
+        <p>Wczytywanie postów...</p>
       ) : (
         <ul className={classes.postsList}>
           {posts.length === 0 ? (

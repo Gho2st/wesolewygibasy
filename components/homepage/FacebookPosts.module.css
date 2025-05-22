@@ -9,6 +9,20 @@
   padding: 4rem 9%;
 }
 
+.iconContainer {
+  display: inline;
+}
+
+.fbIconLink {
+  transition: transform 0.2s ease;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.fbIconLink:hover {
+  transform: scale(1.1);
+}
+
 .heading {
   font-size: 2.3rem;
   font-weight: 600;
@@ -109,6 +123,17 @@
 @media (max-width: 600px) {
   .heading {
     font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .fbIconLink {
+    margin-left: 0rem;
     margin-bottom: 3rem;
+  }
+
+  .iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
