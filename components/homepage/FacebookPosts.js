@@ -46,6 +46,7 @@ export default function FacebookPosts() {
         <p>Wczytywanie postów...</p>
       ) : (
         <ul className={classes.postsList}>
+          {/* error */}
           {posts.length === 0 ? (
             <p>Brak dostępnych postów.</p>
           ) : (
