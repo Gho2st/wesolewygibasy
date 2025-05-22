@@ -83,5 +83,6 @@
 @media (max-width: 600px) {
   .heading {
     font-size: 1.8rem;
+    margin-bottom: 3rem;
   }
 }
