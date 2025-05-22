@@ -25,7 +25,9 @@ export default function FacebookPosts() {
 
   return (
     <section className={classes.wrapper}>
-      <h2 className={classes.heading}>📰 Najnowsze posty z Facebooka</h2>
+      <h2 className={classes.heading}>
+        Najnowsze <span className={classes.highlight}>posty</span> z Facebooka
+      </h2>
 
       {isLoading ? (
         <p>Wczytywanie postów...</p> // Możesz tu dać spinner, jeśli masz
