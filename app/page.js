@@ -4,8 +4,8 @@ import Baner from "@/components/homepage/Baner";
 import Places from "@/components/homepage/Places";
 import Reviews from "@/components/homepage/Reviews";
 import TextContainer from "@/components/homepage/TextContainer";
-import classes from "./page.module.css";
 import Age from "@/components/homepage/Age";
+import FacebookPosts from "@/components/homepage/FacebookPosts";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
       <main>
         <Baner />
         <About />
+        <FacebookPosts />
         <TextContainer />
         <Age />
         <Reviews />

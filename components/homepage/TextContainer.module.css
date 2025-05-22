@@ -1,14 +1,6 @@
-.wrapper {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fffbf2;
-  overflow-x: hidden;
-  padding: 2rem 0rem;
-}
+
 .textContainer {
-  padding: 2rem 9%;
+  padding: 4rem 9%;
   display: flex;
   justify-content: space-between;
 }
