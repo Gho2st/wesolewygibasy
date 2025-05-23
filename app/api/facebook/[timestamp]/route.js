@@ -14,7 +14,11 @@ export async function GET() {
       return NextResponse.json({ error: data }, { status: response.status });
     }
 
-    return NextResponse.json(data);
+    return NextResponse.json(data, {
+      headers: {
+        "Cache-Control": "no-store", // ważne!
+      },
+    });
   } catch (error) {
     return NextResponse.json(
       { error: "Server error", details: error.message },
