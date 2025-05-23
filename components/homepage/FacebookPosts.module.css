@@ -102,6 +102,22 @@
   text-align: right;
 }
 
+.linkWrapper {
+  margin-top: 8px;
+}
+
+.postLink {
+  display: inline-block;
+  color: #1877f2;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.postLink:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 1200px) {
   .postsList {
     grid-template-columns: 1fr 1fr;
