@@ -10,8 +10,14 @@ export default function FacebookPosts() {
 
   useEffect(() => {
     async function fetchPosts() {
+      const timestamp = Date.parse(new Date().toString());
+
       try {
-        const res = await fetch("/api/facebook");
+        const res = await fetch(`/api/facebook/${timestamp}`, {
+          headers: {
+            "Cache-Control": "no-cache",
+          },
+        });
         const data = await res.json();
         setPosts(data.data || []);
       } catch (error) {
