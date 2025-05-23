@@ -1,11 +1,11 @@
-// app/api/facebook/route.js
 import { NextResponse } from "next/server";
 
 export async function GET() {
   const PAGE_ID = "804821782910864";
   const ACCESS_TOKEN = process.env.FB_ACCESS_TOKEN;
+  const timestamp = Date.now(); // Dodajemy timestamp do URL-a zeby uniknac tego ze nie wyswietla sie przez cache
 
-  const url = `https://graph.facebook.com/v22.0/${PAGE_ID}/feed?limit=3&fields=message,created_time,attachments{media}&access_token=${ACCESS_TOKEN}`;
+  const url = `https://graph.facebook.com/v22.0/${PAGE_ID}/feed?limit=3&fields=message,created_time,attachments{media}&access_token=${ACCESS_TOKEN}&nocache=${timestamp}`;
 
   try {
     const response = await fetch(url);
