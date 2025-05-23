@@ -8,6 +8,12 @@ export default function FacebookPosts() {
   const [posts, setPosts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
+  function truncateText(text, wordLimit) {
+    const words = text.split(" ");
+    if (words.length <= wordLimit) return text;
+    return words.slice(0, wordLimit).join(" ") + "...";
+  }
+
   useEffect(() => {
     async function fetchPosts() {
       const timestamp = Date.parse(new Date().toString());
@@ -65,7 +71,7 @@ export default function FacebookPosts() {
               return (
                 <li key={post.id} className={classes.postItem}>
                   <p className={classes.message}>
-                    {post.message || "Brak treści posta."}
+                    {truncateText(post.message || "Brak treści posta.", 35)}
                   </p>
 
                   <div>
@@ -91,7 +97,7 @@ export default function FacebookPosts() {
                         rel="noopener noreferrer"
                         className={classes.postLink}
                       >
-                        Zobacz na Facebooku
+                        Zobacz całość na Facebooku...
                       </a>
                     </div>
                   </div>
