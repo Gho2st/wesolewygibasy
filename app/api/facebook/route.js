@@ -11,12 +11,16 @@ export async function GET() {
     const response = await fetch(url);
     const data = await response.json();
 
+    console.log("FB API response status:", response.status);
+    console.log("FB API response data:", JSON.stringify(data, null, 2));
+
     if (!response.ok) {
       return NextResponse.json({ error: data }, { status: response.status });
     }
 
     return NextResponse.json(data);
   } catch (error) {
+    console.error("Fetch error:", error.message);
     return NextResponse.json(
       { error: "Server error", details: error.message },
       { status: 500 }
