@@ -153,3 +153,7 @@
     padding: 1rem !important;
   }
 }
+.info {
+  color: green;
+  font-weight: bold;
+}

@@ -172,6 +172,9 @@ export default function Form({ onFormSubmit }) {
               }}
             />
             <label htmlFor="selectedLocation">Wybierz placówkę:</label>
+            <p className={classes.info}>
+              Wolne miejsca w placówce na Łokietka!
+            </p>
             <select
               name="selectedLocation"
               value={formData.selectedLocation}

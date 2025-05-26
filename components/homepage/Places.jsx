@@ -6,7 +6,7 @@ export default function Places(props) {
     {
       image: "/nowy_zlobek.png",
       alt: "Zdjęcie przedstawiające wnętrze Żłobka na ulicy Łokietka",
-      title: "Żłobek na Łokietka",
+      title: "Żłobek na Łokietka - Wolne Miejsca",
       location: "Żłobek, Kraków",
       street: "ul. Łokietka 23",
       link: "zlobki/lokietka",
