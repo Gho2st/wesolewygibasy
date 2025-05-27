@@ -1,7 +1,7 @@
 import { Baloo_2 } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import Navigation from "@/components/UI/Navigation";
 import Footer from "@/components/UI/Footer";
 
@@ -46,7 +46,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pl">
-      <GoogleAnalytics gaId="G-TDB9CR6D" />
+      <GoogleTagManager gtmId="GTM-TDB9CR6D" />
       <body className={font.className}>
         <Navigation />
         {children}
