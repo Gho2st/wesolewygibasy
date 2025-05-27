@@ -46,13 +46,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pl">
+      <GoogleAnalytics gaId="G-TDB9CR6D" />
       <body className={font.className}>
         <Navigation />
         {children}
         <Footer />
         <Analytics />
       </body>
-      <GoogleAnalytics gaId="G-622G14LN5Q" />
     </html>
   );
 }
