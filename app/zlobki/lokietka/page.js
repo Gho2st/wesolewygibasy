@@ -18,24 +18,36 @@ export const metadata = {
 
 const images = [
   {
-    src: "/sliders/park-lokietka/1.jpeg",
+    src: "/sliders/lokietka-slider/1.webp",
     alt: "Park Łokietka w Krakowie 1",
   },
   {
-    src: "/sliders/park-lokietka/2.jpeg",
+    src: "/sliders/lokietka-slider/2.webp",
     alt: "Park Łokietka w Krakowie 2",
   },
   {
-    src: "/sliders/park-lokietka/3.jpeg",
+    src: "/sliders/lokietka-slider/3.webp",
     alt: "Park Łokietka w Krakowie 3",
   },
   {
-    src: "/sliders/park-lokietka/4.jpeg",
+    src: "/sliders/lokietka-slider/4.webp",
     alt: "Park Łokietka w Krakowie 4",
   },
   {
-    src: "/sliders/park-lokietka/5.jpeg",
+    src: "/sliders/lokietka-slider/5.webp",
     alt: "Park Łokietka w Krakowie 5",
+  },
+  {
+    src: "/sliders/lokietka-slider/6.webp",
+    alt: "Park Łokietka w Krakowie 6",
+  },
+  {
+    src: "/sliders/lokietka-slider/7.webp",
+    alt: "Park Łokietka w Krakowie 7",
+  },
+  {
+    src: "/sliders/lokietka-slider/8.webp",
+    alt: "Park Łokietka w Krakowie 8",
   },
 ];
 
@@ -101,7 +113,7 @@ export default function lokietka() {
           <div
             className={classes.baner}
             style={{
-              backgroundImage: `url("/zlobki/lokietka.webp")`,
+              backgroundImage: `url("/sliders/lokietka-slider/4.webp")`,
             }}
           >
             <div className={classes.textContainer}>

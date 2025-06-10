@@ -4,7 +4,7 @@ import classes from "./Places.module.css";
 export default function Places(props) {
   const items = [
     {
-      image: "/nowy_zlobek.png",
+      image: "/sliders/lokietka-slider/5.webp",
       alt: "Zdjęcie przedstawiające wnętrze Żłobka na ulicy Łokietka",
       title: "Żłobek na Łokietka - Wolne Miejsca",
       location: "Żłobek, Kraków",
