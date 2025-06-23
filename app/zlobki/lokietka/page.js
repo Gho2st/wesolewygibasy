@@ -68,7 +68,7 @@ const cardData = [
     link: { href: "/adaptacja-w-zlobku", text: "Adaptajca w Żłobku" },
   },
   {
-    title: "Otwarcie w Czerwcu",
+    title: "Otwarcie w Sierpniu",
     description:
       "Oficjalne otwarcie żłobka planujemy na sierpień 2025 – już teraz zapraszamy do zapoznania się z naszą ofertą i zapisów!",
     link: {
