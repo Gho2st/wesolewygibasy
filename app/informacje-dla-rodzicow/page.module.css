@@ -95,7 +95,7 @@
   background: #d86161;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
   .banerContainer {
     margin-top: 3rem;
     display: flex;
@@ -132,7 +132,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .banerContainer {
     margin-top: 2rem;
     display: flex;
