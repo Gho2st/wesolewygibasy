@@ -51,7 +51,7 @@ export default function Second() {
         {" "}
         <strong>
           * Kwota zwracana ok. 20 dnia następnego miesiąca (np. za lipiec zwrot
-          ok. 20 sierpnia
+          ok. 20 sierpnia)
         </strong>
       </p>
 
