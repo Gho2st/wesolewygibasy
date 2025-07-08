@@ -91,7 +91,7 @@ const cardData = [
       "Oferujemy różnorodne zajęcia, takie jak rytmika, dogoterapia, angielski, plastyka i zabawy sensoryczne, wspierające rozwój Twojego malucha.",
     link: {
       href: "/plan-dnia-w-zlobku",
-      text: "Cennik i Jadłospis",
+      text: "Plan Dnia w Żłobku",
     },
   },
   {
