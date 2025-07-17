@@ -36,12 +36,12 @@ export default function GallerySection() {
 
   return (
     <div className="mt-16 text-center">
-      <h2 className="text-3xl xl:text-4xl font-semibold mb-6 xl:mb-12">
+      <h2 className="text-3xl xl:text-4xl font-semibold mb-8 xl:mb-12">
         Galeria zdjęć z naszych placówek
       </h2>
 
       {/* Przycisk wybierający placówkę */}
-      <div className="flex flex-wrap justify-center gap-4 mb-10">
+      <div className="flex flex-wrap justify-center gap-4">
         {branches.map((branch) => {
           const isActive = activeFolder === branch.id;
           return (
@@ -49,7 +49,7 @@ export default function GallerySection() {
               key={branch.id}
               onClick={() => handleBranchClick(branch.id)}
               disabled={loadingBranch}
-              className={`relative cursor-pointer flex items-center gap-2 px-5 py-2 rounded-xl text-xl font-semibold transition 
+              className={`relative cursor-pointer flex items-center gap-2 px-5 py-2 rounded-xl text-lg sm:text-xl font-semibold transition 
                 ${
                   isActive
                     ? "bg-red-400 text-white"

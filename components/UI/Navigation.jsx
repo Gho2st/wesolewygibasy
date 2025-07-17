@@ -53,13 +53,13 @@ export default function Navigation() {
 
         {/* Nav Menu */}
         <nav
-          className={`fixed top-0 left-0 w-full h-screen bg-transparent flex items-center justify-center z-20 transition-all duration-500 ${
+          className={`fixed top-0 left-0 w-full h-screen bg-transparent z-20 transition-all duration-500 ${
             menuOpen
               ? "opacity-100 translate-y-0 visible"
               : "opacity-0 -translate-y-full invisible"
-          }`}
+          } overflow-y-auto`}
         >
-          <ul className="text-center list-none w-full">
+          <ul className="text-center list-none w-full flex flex-col items-center py-8">
             {[
               "Strona Główna",
               "Galeria",
@@ -83,7 +83,7 @@ export default function Navigation() {
                 "/zapisy",
               ];
               return (
-                <li key={i} className="m-4">
+                <li key={i} className="m-1 md:m-4">
                   <Link
                     href={routes[i]}
                     className="inline-block text-xl md:text-3xl font-medium uppercase px-6 py-3 bg-gradient-to-r from-transparent via-transparent to-white bg-[length:230%] hover:bg-[position:100%] hover:text-black transition-all duration-500"

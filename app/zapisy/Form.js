@@ -100,7 +100,7 @@ export default function Form({ onFormSubmit }) {
     <>
       {!formSubmitted ? (
         <div className="flex flex-col pt-4">
-          <h2 className="text-2xl font-bold mb-2">Zostaw Wiadomość</h2>
+          <h2 className="text-2xl xl:text-3xl font-bold mb-2">Zostaw Wiadomość</h2>
           <p className="mb-4 text-xl">
             Wypełnij formularz poniżej, a my wrócimy do Ciebie z odpowiedzią jak
             najszybciej to możliwe!
@@ -221,12 +221,13 @@ export default function Form({ onFormSubmit }) {
                 }`}
               />
             </div>
-
-            <ReCAPTCHA
-              className="mt-4"
-              ref={recaptchaRef}
-              sitekey="6LetqpUqAAAAABRwX_slcBybtlkC7S4X4QZZEYUo"
-            />
+            <div className="flex justify-center md:justify-start items-center">
+              <ReCAPTCHA
+                className="mt-4"
+                ref={recaptchaRef}
+                sitekey="6LetqpUqAAAAABRwX_slcBybtlkC7S4X4QZZEYUo"
+              />
+            </div>
 
             <div className="flex justify-center pt-4">
               <button

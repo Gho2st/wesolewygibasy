@@ -8,7 +8,7 @@ export default function ImageItem({ src, alt, text, onClick }) {
       className="transition ease-in duration-150 hover:-translate-y-1 cursor-pointer text-center"
     >
       {src ? (
-        <div className="p-2 max-w-[300px] max-h-[250px] mx-auto">
+        <div className="max-w-[300px] max-h-[250px] mx-auto">
           <Image
             src={src}
             width={100}

@@ -128,22 +128,21 @@ export default function ImagesContainer(props) {
   };
 
   return (
-    <div className="px-2 md:px-[9%] py-16">
-      <div className="text-center max-w-3xl mx-auto mb-12">
-        <p className="text-lg md:text-xl text-gray-700">
+    <div className="md:px-[9%] pb-10 pt-6">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <p class="text-lg md:text-xl text-gray-700">
           Przekonajcie się sami, jak radośnie i twórczo spędzają czas Wasze
           maluszki w naszym żłobku{" "}
-          <span className="font-semibold">Wesołe Wygibasy</span> w Krakowie...
+          <span class="font-semibold">Wesołe Wygibasy</span> w Krakowie...
         </p>
       </div>
-
       {/* Błędy i foldery */}
       <div className="text-center">
         {ladowanieFolderow && <p>Wczytywanie galerii zdjęć...</p>}
         {blad && <p className="text-red-500">Błąd: {blad.message}</p>}
 
         {!ladowanieFolderow && !blad && (
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-2 sm:gap-4">
             {foldery.map((folder) => {
               const aktywny = kliknietyFolder === folder.folderName;
 

@@ -36,9 +36,9 @@ export default function Contact() {
       </div>
 
       {/* Kontakt i formularz */}
-      <div className="w-[92%] md:w-[90%] mx-auto mt-16 mb-16 p-8 md:px-[7%] bg-white rounded-xl shadow-md flex flex-col lg:flex-row gap-12 justify-between">
+      <div className=" md:w-[90%] mx-auto mt-12 md:mt-16 mb-16  md:p-8 md:px-[2%] bg-white rounded-xl md:shadow-md flex flex-col lg:flex-row gap-12 justify-between">
         {/* Formularz */}
-        <div className="w-full lg:w-[60%]">
+        <div className="w-full px-4 lg:w-[60%]">
           <Form onFormSubmit={handleFormSubmit} />
         </div>
 
@@ -56,7 +56,7 @@ export default function Contact() {
           </div>
 
           {/* Dane kontaktowe */}
-          <div className="mt-6 grid gap-4 w-full">
+          <div className="mt-6 px-4 md:px-0 grid gap-4 w-full">
             {[
               {
                 href: "tel:+48697560022",

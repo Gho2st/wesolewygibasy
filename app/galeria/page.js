@@ -58,14 +58,14 @@ export default function Galeria() {
         {/* Baner */}
         <div className="flex flex-col lg:flex-row justify-evenly gap-12 my-12 xl:my-24 2xl:my-32">
           {/* Obrazek */}
-          <div className="w-full lg:w-1/3 flex justify-center items-center">
+          <div className="w-full lg:w-1/3  flex justify-center items-center">
             <Image
               src="/monkeys/7.gif"
               width={100}
               height={100}
               alt="Wyskakująca małpka z patykiem w łapce"
               layout="responsive"
-              className="rounded-[6rem] max-w-[300px]"
+              className="rounded-[6rem] max-w-[300px] xl:max-w-[350px]"
             />
           </div>
 
