@@ -13,6 +13,9 @@
   .bg-secondary {
     @apply bg-[#4a71ff];
   }
+  .text-customBlue {
+    @apply text-[#4a71ff];
+  }
 }
 
 html,
