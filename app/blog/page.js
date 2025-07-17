@@ -16,10 +16,10 @@ export const metadata = {
 export default function Blog() {
   return (
     <>
-      <main className="pt-8">
+      <main className="pt-8 px-[9%]">
         <Header text="Nasz Blog" />
 
-        <section className="px-6 md:px-12 xl:px-24 py-16 xl:py-20 bg-white">
+        <section className="py-8 xl:py-20 bg-white">
           <LineHeader text="Nasze Artykuły" />
 
           <p className="text-center max-w-3xl mx-auto mt-6 md:mt-10 text-lg xl:text-xl text-gray-600">

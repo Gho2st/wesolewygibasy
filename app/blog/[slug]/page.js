@@ -34,9 +34,9 @@ export default async function BlogPostPage({ params }) {
 
   return (
     <>
-      <main className="pt-8">
+      <main className="pt-8 px-[9%]">
         <Header text={data.title} />
-        <section className="px-6 md:px-20 xl:px-32 2xl:px-44 py-10 md:py-20">
+        <section className="py-8 md:py-20">
           <LineHeader text={data.subtitle} />
           <p
             className="text-lg xl:text-xl leading-relaxed mt-10 text-center"
