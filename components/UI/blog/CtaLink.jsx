@@ -4,7 +4,7 @@ import Button from "../Button";
 
 export default function CtaLink({ header, text, button, link }) {
   return (
-    <section className="mt-20 md:mt-28 px-4">
+    <section className="mt-16 md:mt-28">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -15,7 +15,7 @@ export default function CtaLink({ header, text, button, link }) {
         <h2 className="text-2xl md:text-4xl font-bold leading-snug">
           {header}
         </h2>
-        <p className="mt-6 md:mt-8 mb-10 md:text-lg xl:text-xl text-white/90">
+        <p className="mt-6 md:mt-8 mb-10 text-lg xl:text-xl text-white/90">
           {text}
         </p>
         <div className="flex justify-center">
