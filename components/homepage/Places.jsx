@@ -1,7 +1,7 @@
+"use client";
 import PlaceItem from "../UI/PlaceItem";
-import classes from "./Places.module.css";
 
-export default function Places(props) {
+export default function Places() {
   const items = [
     {
       image: "/sliders/lokietka-slider/5.webp",
@@ -51,19 +51,26 @@ export default function Places(props) {
   ];
 
   return (
-    <section id="placówki">
-      <div className={classes.container}>
-        <div className={classes.description}>
-          <h2>
-            Nasze placówki w Krakowie – <span> znajdź </span> najbliższą!
+    <section
+      id="placówki"
+      className="min-h-screen flex items-center justify-center overflow-x-hidden bg-white py-16 px-[9%]"
+    >
+      <div className="w-full max-w-[1400px] flex flex-col items-center">
+        {/* Opis */}
+        <div className="text-center mb-12">
+          <h2 className="text-2xl sm:text-3xl xl:text-5xl font-bold mb-4 xl:mb-8">
+            Nasze placówki w Krakowie –{" "}
+            <span className="text-primary">znajdź</span> najbliższą!
           </h2>
-          <p>
+          <p className="text-base sm:text-lg xl:text-xl font-normal text-gray-700 max-w-3xl mx-auto">
             Mamy 5 placówek w różnych częściach Krakowa – każda z nich oferuje
             tę samą wysoką jakość opieki, ale w unikalnej lokalizacji. Sprawdź
             szczegóły i wybierz żłobek dla swojego dziecka!
           </p>
         </div>
-        <div className={classes.grid}>
+
+        {/* Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 w-full place-items-stretch">
           {items.map((item, index) => (
             <PlaceItem
               key={index}
@@ -73,7 +80,6 @@ export default function Places(props) {
               location={item.location}
               street={item.street}
               add={item.add}
-              color={item.color}
               link={item.link}
             />
           ))}

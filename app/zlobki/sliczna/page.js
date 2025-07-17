@@ -1,4 +1,3 @@
-import classes from "../nursery.module.css";
 import ImagesContainer from "@/components/Gallery/ImagesContainer";
 import Button from "@/components/UI/Button";
 import Button2 from "@/components/UI/Button2";
@@ -8,6 +7,7 @@ import CardContainer from "@/components/Cards/CardContainer";
 import Maluch from "@/components/UI/Maluch";
 import Map from "@/components/UI/Map";
 import NurseryHeader from "@/components/nursery/header";
+
 export const metadata = {
   title: "Żłobek na Ulicy Ślicznej w Krakowie - Wesołe Wygibasy",
   alternates: {
@@ -69,67 +69,78 @@ const cardData = [
   },
 ];
 
-export default function sliczna() {
+export default function Sliczna() {
   return (
-    <>
-      <main>
-        <section>
-          <div
-            className={classes.baner}
-            style={{
-              backgroundImage: `url("/sliders/sliczna-slider/sl1.jpg")`,
-            }}
-          >
-            <div className={classes.textContainer}>
-              <div>
-                <h1>
-                  Żłobek <span> Wesołe Wygibasy</span> na ul. Ślicznej 36A w
-                  Krakowie
-                </h1>
+    <main>
+      {/* Baner */}
+      <section>
+        <div
+          className="w-full min-h-screen bg-cover bg-center flex items-center justify-center"
+          style={{
+            backgroundImage: `url("/sliders/sliczna-slider/sl1.jpg")`,
+          }}
+        >
+          <div className="bg-white/90 backdrop-blur-sm shadow-xl rounded-xl text-center px-6 py-12 sm:px-10 max-w-3xl">
+            <h1 className="text-2xl sm:text-3xl font-semibold text-black">
+              Żłobek <span className="text-blue-700">Wesołe Wygibasy</span> na
+              ul. Ślicznej 36A w Krakowie
+            </h1>
+            <div className="mt-6 flex justify-center gap-4 flex-wrap">
+              <Button text="O nas" href="/o-nas" />
+              <Button2 text="Zapisy" href="/zapisy" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <div className={classes.buttonContainer}>
-                  <Button text="O nas" href="/o-nas" />
-                  <Button2 text="Zapisy" href="/zapisy" />
-                </div>
-              </div>
-            </div>
+      {/* Opis i karty */}
+      <section className="pt-20 px-[9%]">
+        <div className=" mx-auto">
+          <NurseryHeader
+            text="Szukasz żłobka z własnym placem zabaw w Krakowie? Wesołe
+              Wygibasy na ul. Ślicznej 36A oferują profesjonalną opiekę,
+              troskliwy zespół oraz własny plac zabaw do rozwoju Twojego
+              dziecka. Skontaktuj się z nami i zapisz malucha już dziś!"
+          />
+          <div className="mt-12">
+            <CardContainer cards={cardData} />
           </div>
-        </section>
-        <section>
-          <div className={classes.container}>
-            <div className={classes.cardWrapper}>
-              <NurseryHeader
-                text="Szukasz żłobka z własnym placem zabaw w Krakowie? Wesołe
-                Wygibasy na ul. Ślicznej 36A oferują profesjonalną opiekę,
-                troskliwy zespół oraz własny plac zabaw do rozwoju Twojego
-                dziecka. Skontaktuj się z nami i zapisz malucha już dziś!"
-              />
-              <CardContainer cards={cardData} />
-            </div>
-          </div>
-        </section>
-        <section>
-          <div className={classes.wrapper}>
-            <Maluch />
-          </div>
-        </section>
-        <section>
-          <SliderComponent images={images} />
-        </section>
-        <section>
-          <div className={classes.wrapper}>
-            <DaySchedule header="Plan Dnia i zajęcia dodatkowe" time="17:30" />
-          </div>
-        </section>
-        <section>
+        </div>
+      </section>
+
+      {/* Maluch komponent */}
+      <section className="py-16">
+        <div className="mx-auto">
+          <Maluch />
+        </div>
+      </section>
+
+      {/* Slider */}
+      <section className="bg-white">
+        <SliderComponent images={images} />
+      </section>
+
+      {/* Plan dnia */}
+      <section className="bg-gray-50 py-16">
+        <div className=" mx-auto">
+          <DaySchedule header="Plan Dnia i zajęcia dodatkowe" time="17:30" />
+        </div>
+      </section>
+
+      {/* Galeria */}
+      <section className="py-16">
+        <div className="text-center">
+          <h2 className="text-4xl font-bold">Galeria zdjęć</h2>
           <ImagesContainer folder="sliczna" />
-        </section>
-        <section>
-          <div className={classes.wrapper}>
-            <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20483.285915179342!2d19.857841410839853!3d50.07859630000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b0b843d4ce5%3A0xfe8741522eb108da!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy%203%20Bronowice!5e0!3m2!1spl!2spl!4v1711475564872!5m2!1spl!2spl" />
-          </div>
-        </section>
-      </main>
-    </>
+        </div>
+      </section>
+
+      {/* Mapa */}
+      <section className="py-16">
+        <div className="mx-auto">
+          <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20483.285915179342!2d19.857841410839853!3d50.07859630000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b0b843d4ce5%3A0xfe8741522eb108da!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy%203%20Bronowice!5e0!3m2!1spl!2spl!4v1711475564872!5m2!1spl!2spl" />
+        </div>
+      </section>
+    </main>
   );
 }

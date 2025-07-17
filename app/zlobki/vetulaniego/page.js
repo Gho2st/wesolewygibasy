@@ -1,4 +1,3 @@
-import classes from "../nursery.module.css";
 import ImagesContainer from "@/components/Gallery/ImagesContainer";
 import Button from "@/components/UI/Button";
 import CardContainer from "@/components/Cards/CardContainer";
@@ -18,22 +17,23 @@ export const metadata = {
   description:
     "Szukasz żłobka w Krakowie? Żłobek Wesołe Wygibasy na ul. Vetulaniego oferuje troskliwą opiekę, rozwijające zajęcia oraz ogród z placem zabaw. Zapisz swoje dziecko już dziś!",
 };
+
 const images = [
   {
     src: "/sliders/klub-malucha-slider/k1.jpg",
-    alt: "zdjecie ze srodka zlobka klubu malucha w krakowie",
+    alt: "zdjęcie z wnętrza żłobka",
   },
   {
     src: "/sliders/klub-malucha-slider/k2.jpg",
-    alt: "zdjecie ze srodka zlobka klubu malucha w krakowie",
+    alt: "zdjęcie z wnętrza żłobka",
   },
   {
     src: "/sliders/klub-malucha-slider/k3.jpg",
-    alt: "zdjecie ze srodka zlobka klubu malucha w krakowie",
+    alt: "zdjęcie z wnętrza żłobka",
   },
   {
     src: "/sliders/klub-malucha-slider/k4.jpg",
-    alt: "zdjecie ze srodka zlobka klubu malucha w krakowie",
+    alt: "zdjęcie z wnętrza żłobka",
   },
 ];
 
@@ -41,86 +41,80 @@ const cardData = [
   {
     title: "Klub Malucha Wesołe Wygibasy",
     description:
-      "Klub Malucha Wesołe Wygibasy to kameralny żłobek, który mieści się w domu jednorodzinnym z pięknym ogrodem, oferującym dzieciom bezpieczne i przyjazne warunki do rozwoju. Zlokalizowany z dala od miejskiego zgiełku, nasz żłobek zapewnia maluchom spokojną atmosferę oraz dostęp do natury.",
-    link: {
-      href: "/informacje-dla-rodzicow",
-      text: "Informacje dla rodziców",
-    },
+      "Kameralny żłobek w domu jednorodzinnym z pięknym ogrodem, z dala od miejskiego zgiełku. Spokojna atmosfera, natura i indywidualna opieka.",
+    link: { href: "/informacje-dla-rodzicow", text: "Informacje dla rodziców" },
   },
   {
     title: "Ogród i spacery na świeżym powietrzu",
     description:
-      "Jednym z największych atutów naszego Klubu Malucha jest duży ogród z placem zabaw, który znajduje się na tyłach budynku, z dala od hałasu ulicznego. Ogród otoczony drzewami iglastymi stanowi idealne miejsce do zabawy na świeżym powietrzu. Dzieci regularnie wychodzą również na spacery na pobliskie łąki, co umożliwia im kontakt z naturą i daje możliwość odkrywania otaczającego świata.",
+      "Duży ogród z placem zabaw, otoczony drzewami. Dzieci codziennie wychodzą na spacery i kontakt z naturą.",
     link: { href: "/o-nas", text: "O nas" },
   },
   {
     title: "Opieka nad dziećmi w wieku od 1 do 3 lat",
     description:
-      "Nasza placówka przyjmuje dzieci w wieku od 1 do 3 lat. Grupa liczy maksymalnie 20 dzieci, którymi opiekuje się 3 do 4 doświadczonych opiekunek. Dzięki temu każde dziecko otrzymuje indywidualną uwagę i troskę, a nasi podopieczni są zadbani, najedzeni i szczęśliwi. Dbamy o to, by każde dziecko czuło się kochane i bezpieczne w naszej opiece.",
-    link: {
-      href: "/adaptacja-w-zlobku",
-      text: "Adaptacja w Żłobku",
-    },
+      "Grupa max. 20 dzieci, 3–4 opiekunki. Indywidualna troska, ciepło i bezpieczeństwo. Dzieci szczęśliwe, najedzone i zadbane.",
+    link: { href: "/adaptacja-w-zlobku", text: "Adaptacja w Żłobku" },
   },
 ];
 
-export default function vetulaniego() {
+export default function VetulaniegoPage() {
   return (
-    <>
-      <main>
-        <section>
-          <div
-            className={classes.baner}
-            style={{
-              backgroundImage: `url("/zlobki/vetulaniego.webp")`,
-            }}
-          >
-            <div className={classes.textContainer}>
-              <div>
-                <h1>
-                  Żłobek Kraków - <span> Wesołe Wygibasy </span> na ul.
-                  Vetulaniego 8
-                </h1>
+    <main>
+      {/* Baner */}
+      <section>
+        <div
+          className="w-full min-h-screen bg-cover bg-bottom relative flex items-center justify-center"
+          style={{ backgroundImage: `url("/zlobki/vetulaniego.webp")` }}
+        >
+          <div className="bg-white/95 backdrop-blur-sm shadow-xl rounded-xl text-center px-6 py-12 sm:px-10 max-w-3xl">
+            <h1 className="text-2xl sm:text-3xl font-semibold text-black">
+              Żłobek Kraków –{" "}
+              <span className="text-blue-700">Wesołe Wygibasy</span> na ul.
+              Vetulaniego 8
+            </h1>
+            <div className="mt-6 flex justify-center gap-4 flex-wrap">
+              <Button text="O nas" href="/o-nas" />
+              <Button2 text="Zapisy" href="/zapisy" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <div className={classes.buttonContainer}>
-                  <Button text="O nas" href="/o-nas" />
-                  <Button2 text="Zapisy" href="/zapisy" />
-                </div>
-              </div>
-            </div>
+      {/* Karty i opis */}
+      <section className="pt-20 px-[9%]">
+        <div className="mx-auto">
+          <NurseryHeader text="Jeśli szukasz bezpiecznego, kameralnego i inspirującego żłobka w Krakowie, zapraszamy do Klubu Malucha Wesołe Wygibasy na ulicy Vetulaniego 8. Nasza placówka oferuje profesjonalną opiekę nad dziećmi w wieku od 1 do 3 lat, zapewniając im rozwój w ciepłej i przyjaznej atmosferze, z dala od miejskiego zgiełku." />
+          <div className="mt-12">
+            <CardContainer cards={cardData} />
           </div>
-        </section>
-        <section>
-          <div className={classes.container}>
-            <div className={classes.cardWrapper}>
-              <NurseryHeader
-                text="Jeśli szukasz bezpiecznego, kameralnego i inspirującego żłobka w
-                Krakowie, zapraszamy do Klubu Malucha Wesołe Wygibasy na ulicy
-                Vetulaniego 8. Nasza placówka oferuje profesjonalną opiekę nad
-                dziećmi w wieku od 1 do 3 lat, zapewniając im rozwój w ciepłej i
-                przyjaznej atmosferze, z dala od miejskiego zgiełku."
-              />
-              <CardContainer cards={cardData} />
-            </div>
-          </div>
-        </section>
-        <section>
-          <div className={classes.wrapper}>
-            <SliderComponent images={images} />
-          </div>
-        </section>
-        <section>
-          <DayScheduleVetulaniego header="Plan Dnia i zajęcia dodatkowe" />
-        </section>
-        <section>
-          <div className={classes.wrapper}>
-            <ImagesContainer folder="vetulaniego" />
-          </div>
-        </section>
-        <section>
-          <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.531008552978!2d19.922438176465064!3d50.09506707152642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a446e9d3211%3A0x2479f81b021d9154!2s%C5%BB%C5%82obek%20Klub%20Malucha%20-%20Weso%C5%82e%20Wygibasy!5e0!3m2!1spl!2spl!4v1711815573472!5m2!1spl!2spl" />
-        </section>
-      </main>
-    </>
+        </div>
+      </section>
+
+      {/* Slider */}
+      <section className="bg-white">
+        <div className="">
+          <SliderComponent images={images} />
+        </div>
+      </section>
+
+      {/* Plan dnia */}
+      <section className=" bg-gray-50">
+        <DayScheduleVetulaniego header="Plan Dnia i zajęcia dodatkowe" />
+      </section>
+
+      {/* Galeria */}
+      <section className="py-16">
+        <div className="text-center">
+          <h2 className="text-4xl font-bold">Galeria zdjęć</h2>
+          <ImagesContainer folder="vetulaniego" />
+        </div>
+      </section>
+
+      {/* Mapa */}
+      <section className="py-16">
+        <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.531008552978!2d19.922438176465064!3d50.09506707152642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a446e9d3211%3A0x2479f81b021d9154!2s%C5%BB%C5%82obek%20Klub%20Malucha%20-%20Weso%C5%82e%20Wygibasy!5e0!3m2!1spl!2spl!4v1711815573472!5m2!1spl!2spl" />
+      </section>
+    </main>
   );
 }

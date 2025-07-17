@@ -1,10 +1,9 @@
-import classes from "./page.module.css";
-import Places from "@/components/homepage/Places";
 import Header from "@/components/UI/Header";
 import Image from "next/image";
 import Button from "@/components/UI/Button";
 import Button2 from "@/components/UI/Button2";
 import CardContainer from "@/components/Cards/CardContainer";
+import GallerySection from "./GallerySection";
 
 export const metadata = {
   title: "Galeria - Żłobek Wesołe Wygibasy w Krakowie",
@@ -52,69 +51,81 @@ const cardData = [
 
 export default function Galeria() {
   return (
-    <>
-      <main>
-        <section>
-          <div className={classes.container}>
-            <Header text="Galeria z życia codziennego i wydarzeń w Żłobku Wesołe Wygibasy Kraków" />
-            <div className={classes.banerContainer}>
-              <div className={classes.imageContainer}>
-                <Image
-                  src={"/monkeys/7.gif"}
-                  width={100}
-                  height={100}
-                  alt="Wyskakująca małpka z patykiem w łapce "
-                  layout="responsive"
-                />
-              </div>
-              <div className={classes.textContainer}>
-                <div>
-                  <p>Zobacz. Oceń. Zapisz.</p>
-                  <h2>Zobacz jak spędzamy czas!</h2>
-                  <p className={classes.text}>
-                    Nasza galeria zdjęć pozwala uchwycić najpiękniejsze momenty
-                    z życia dzieci w żłobku <span>Wesołe Wygibasy</span> w
-                    Krakowie. Dzięki niej, każdy rodzic może zobaczyć, jak
-                    wygląda nasza codzienna praca: od zabaw i nauki po wyjątkowe
-                    wydarzenia i uroczystości. Oferujemy szeroki wachlarz zajęć
-                    wspierających rozwój emocjonalny, społeczny i intelektualny
-                    dzieci. Regularnie organizujemy atrakcje, takie jak
-                    teatrzyki, bale przebierańców czy urodziny, które na długo
-                    pozostają w pamięci najmłodszych.
-                  </p>
-                  <p className={classes.text}>
-                    Zapraszamy do obejrzenia zdjęć, które ukazują codzienność
-                    maluszków w naszej placówce. Odkryj, jak twórczo i radośnie
-                    spędzają czas.
-                  </p>
-                  <div className={classes.buttonContainer}>
-                    <Button text="Zapisy" href="/zapisy" />
-                    <Button2 text="Galeria" href="#placówki" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className={classes.container}>
-          <div className={classes.head}>
-            <h2>Odkryj, co czyni nas wyjątkowym miejscem!</h2>
-            <p>
-              W żłobku Wesołe Wygibasy w Krakowie dbamy o wszechstronny rozwój
-              każdego dziecka, oferując bogaty program zajęć i wydarzeń. Nasza
-              galeria zdjęć przedstawia codzienne aktywności maluszków oraz
-              wyjątkowe momenty, takie jak urodziny, teatrzyki, przedstawienia i
-              bale przebierańców. Zobacz, jak wiele radości przynoszą te chwile
-              najmłodszym w naszym żłobku.
-            </p>
+    <main className="py-10">
+      <div className="px-[9%]">
+        <Header text="Galeria z życia codziennego i wydarzeń w Żłobku Wesołe Wygibasy Kraków" />
+
+        {/* Baner */}
+        <div className="flex flex-col lg:flex-row justify-evenly gap-12 my-12 xl:my-24 2xl:my-32">
+          {/* Obrazek */}
+          <div className="w-full lg:w-1/3 flex justify-center items-center">
+            <Image
+              src="/monkeys/7.gif"
+              width={100}
+              height={100}
+              alt="Wyskakująca małpka z patykiem w łapce"
+              layout="responsive"
+              className="rounded-[6rem] max-w-[300px]"
+            />
           </div>
 
-          <CardContainer cards={cardData} />
-        </section>
-        <div className={classes.places}>
-          <Places background="true" />
+          {/* Tekst */}
+          <div className="w-full lg:w-[50%] mx-auto flex flex-col justify-center">
+            <p className="text-[#08c6c3] font-bold text-xl xl:text-2xl">
+              Zobacz. Oceń. Zapisz.
+            </p>
+            <h2 className="text-3xl xl:text-4xl font-semibold my-4">
+              Zobacz jak spędzamy czas!
+            </h2>
+            <p className="text-lg xl:text-xl font-normal mb-4">
+              Nasza galeria zdjęć pozwala uchwycić najpiękniejsze momenty z
+              życia dzieci w żłobku
+              <span className="font-semibold text-primary">
+                {" "}
+                Wesołe Wygibasy
+              </span>{" "}
+              w Krakowie. Dzięki niej, każdy rodzic może zobaczyć, jak wygląda
+              nasza codzienna praca: od zabaw i nauki po wyjątkowe wydarzenia i
+              uroczystości. Oferujemy szeroki wachlarz zajęć wspierających
+              rozwój emocjonalny, społeczny i intelektualny dzieci. Regularnie
+              organizujemy atrakcje, takie jak teatrzyki, bale przebierańców czy
+              urodziny, które na długo pozostają w pamięci najmłodszych.
+            </p>
+            <p className="text-lg xl:text-xl font-normal mb-4">
+              Zapraszamy do obejrzenia zdjęć, które ukazują codzienność
+              maluszków w naszej placówce. Odkryj, jak twórczo i radośnie
+              spędzają czas.
+            </p>
+            <div className="flex mt-6 gap-4">
+              <Button text="Zapisy" href="/zapisy" />
+              <Button2 text="Galeria" href="#placówki" />
+            </div>
+          </div>
         </div>
-      </main>
-    </>
+
+        {/* Sekcja z nagłówkiem i opisem */}
+        <section className="pt-12 text-center mb-12" id="placówki">
+          <h2 className="text-3xl xl:text-4xl font-semibold mb-6">
+            Odkryj, co czyni nas wyjątkowym miejscem!
+          </h2>
+          <p className="text-lg xl:text-xl text-gray-700 max-w-3xl mx-auto">
+            W żłobku Wesołe Wygibasy w Krakowie dbamy o wszechstronny rozwój
+            każdego dziecka, oferując bogaty program zajęć i wydarzeń. Nasza
+            galeria zdjęć przedstawia codzienne aktywności maluszków oraz
+            wyjątkowe momenty, takie jak urodziny, teatrzyki, przedstawienia i
+            bale przebierańców. Zobacz, jak wiele radości przynoszą te chwile
+            najmłodszym w naszym żłobku.
+          </p>
+        </section>
+
+        {/* Karty */}
+        <CardContainer cards={cardData} />
+      </div>
+
+      {/* Galeria */}
+      <div className="mt-16">
+        <GallerySection />
+      </div>
+    </main>
   );
 }

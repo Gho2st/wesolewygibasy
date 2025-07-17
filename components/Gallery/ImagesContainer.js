@@ -2,13 +2,17 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import ImageItem from "./ImageItem";
-import classes from "./ImagesContainer.module.css";
 import PhotoSwipeLightbox from "photoswipe/lightbox";
 import "photoswipe/photoswipe.css";
 
 function normalizujTekst(tekst) {
   return tekst.normalize("NFC");
 }
+
+// Prosty spinner
+const Spinner = () => (
+  <div className="animate-spin rounded-full h-8 w-8 border-t-4 border-white border-solid" />
+);
 
 export default function ImagesContainer(props) {
   const galleryRef = useRef(null);
@@ -19,8 +23,8 @@ export default function ImagesContainer(props) {
   const [blad, setBlad] = useState(null);
   const [wybranyFolder, setWybranyFolder] = useState(null);
   const [dimensions, setDimensions] = useState({});
+  const [kliknietyFolder, setKliknietyFolder] = useState(null); // dla wizualizacji ładowania
 
-  // Pobierz foldery
   useEffect(() => {
     async function pobierzFoldery() {
       try {
@@ -40,9 +44,9 @@ export default function ImagesContainer(props) {
     pobierzFoldery();
   }, [props.folder]);
 
-  // Pobierz zdjęcia z folderu
   const pobierzZdjeciaZFolderu = async (nazwaFolderu) => {
     setLadowanieZdjec(true);
+    setKliknietyFolder(nazwaFolderu);
     try {
       const pelnaSciezka = `${props.folder}/${nazwaFolderu}`;
       const res = await fetch(`/api/get_images_aws/${pelnaSciezka}`);
@@ -81,26 +85,17 @@ export default function ImagesContainer(props) {
       setDimensions(dimensionMap);
       setZdjecia(dane);
       setWybranyFolder(nazwaFolderu);
-
-      console.log("Zdjęcia załadowane:", dane);
-      console.log("Wymiary:", dimensionMap);
     } catch (e) {
       console.error("Błąd podczas pobierania zdjęć:", e);
       setBlad(e);
     } finally {
       setLadowanieZdjec(false);
+      setKliknietyFolder(null);
     }
   };
 
-  // Inicjalizacja PhotoSwipe
   useEffect(() => {
-    if (!wybranyFolder || zdjecia.length === 0) {
-      console.log("Brak folderu lub brak zdjęć. Nie inicjalizuję PhotoSwipe.");
-      return;
-    }
-
-    console.log("Inicjalizuję PhotoSwipe dla folderu:", wybranyFolder);
-    console.log("Liczba zdjęć:", zdjecia.length);
+    if (!wybranyFolder || zdjecia.length === 0) return;
 
     const lightbox = new PhotoSwipeLightbox({
       gallery: "#pswp-gallery",
@@ -109,7 +104,6 @@ export default function ImagesContainer(props) {
     });
 
     lightbox.on("close", () => {
-      console.log("Zamknięto PhotoSwipe.");
       setWybranyFolder(null);
       setZdjecia([]);
     });
@@ -117,73 +111,78 @@ export default function ImagesContainer(props) {
     lightbox.init();
     galleryRef.current = lightbox;
 
-    // Auto-open first image
     setTimeout(() => {
       const firstLink = document.querySelector("#pswp-gallery a");
-      if (firstLink) {
-        console.log("Auto-kliknięcie pierwszego zdjęcia:", firstLink.href);
-        firstLink.click();
-      } else {
-        console.log("Nie znaleziono żadnych <a> w #pswp-gallery");
-      }
+      if (firstLink) firstLink.click();
     }, 200);
 
     return () => {
-      console.log("Niszczenie PhotoSwipe");
       lightbox.destroy();
     };
   }, [wybranyFolder, zdjecia]);
 
-  // Debuguj stan komponentu
-  useEffect(() => {
-    console.log("Aktualny stan komponentu:", {
-      wybranyFolder,
-      zdjecia,
-      dimensions,
-    });
-  }, [wybranyFolder, zdjecia, dimensions]);
-
   const klikniecieFolderu = (e, nazwaFolderu) => {
     e.preventDefault();
+    if (ladowanieZdjec) return; // Blokuj kolejne kliknięcia
     pobierzZdjeciaZFolderu(nazwaFolderu);
   };
 
   return (
-    <div className={classes.container}>
-      <div className={classes.text}>
-        <h2>Galeria z wydarzeń</h2>
-        <p className={classes.galleryText}>
+    <div className="px-2 md:px-[9%] py-16">
+      <div className="text-center max-w-3xl mx-auto mb-12">
+        <p className="text-lg md:text-xl text-gray-700">
           Przekonajcie się sami, jak radośnie i twórczo spędzają czas Wasze
-          maluszki w naszym żłobku <span>Wesołe Wygibasy</span> w Krakowie...
+          maluszki w naszym żłobku{" "}
+          <span className="font-semibold">Wesołe Wygibasy</span> w Krakowie...
         </p>
       </div>
 
-      <div className={classes.errors}>
+      {/* Błędy i foldery */}
+      <div className="text-center">
         {ladowanieFolderow && <p>Wczytywanie galerii zdjęć...</p>}
-        {blad && <p>Błąd: {blad.message}</p>}
+        {blad && <p className="text-red-500">Błąd: {blad.message}</p>}
+
         {!ladowanieFolderow && !blad && (
-          <div className={classes.gallery}>
-            {foldery.map((folder) => (
-              <ImageItem
-                key={folder.folderName}
-                onClick={(e) => klikniecieFolderu(e, folder.folderName)}
-                src={folder.imageUrl}
-                text={normalizujTekst(folder.folderName)}
-                alt={folder.folderName}
-              />
-            ))}
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
+            {foldery.map((folder) => {
+              const aktywny = kliknietyFolder === folder.folderName;
+
+              return (
+                <div
+                  key={folder.folderName}
+                  className={`relative transition-opacity duration-200 ${
+                    aktywny ? "opacity-50 pointer-events-none" : ""
+                  }`}
+                >
+                  <ImageItem
+                    onClick={(e) => klikniecieFolderu(e, folder.folderName)}
+                    src={folder.imageUrl}
+                    text={normalizujTekst(folder.folderName)}
+                    alt={folder.folderName}
+                  />
+                  {aktywny && (
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/50">
+                      <Spinner />
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </div>
         )}
       </div>
 
+      {/* Ładowanie zdjęć - overlay */}
       {ladowanieZdjec && (
-        <div className={classes.loadingModal}>
-          <p>Wczytywanie zdjęć...</p>
+        <div className="fixed inset-0 z-[9999] flex flex-col gap-4 items-center justify-center bg-blue-500/50 backdrop-blur-sm text-white text-2xl font-bold text-center">
+          <Spinner />
+          <p className="animate-pulse">Wczytywanie zdjęć...</p>
         </div>
       )}
 
+      {/* Lightbox */}
       {wybranyFolder && zdjecia.length > 0 && (
-        <div id="pswp-gallery" style={{ display: "none" }}>
+        <div id="pswp-gallery" className="hidden">
           {zdjecia.map((zdjecie, index) => {
             const dim = dimensions[zdjecie.imageUrl] || {
               width: 1200,
@@ -202,7 +201,7 @@ export default function ImagesContainer(props) {
                   alt={`Zdjęcie ${index + 1}`}
                   width={10}
                   height={10}
-                  style={{ display: "none" }}
+                  className="hidden"
                 />
               </a>
             );

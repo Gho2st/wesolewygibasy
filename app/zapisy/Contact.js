@@ -1,13 +1,10 @@
 "use client";
-import classes from "./Contact.module.css";
 import Image from "next/image";
 import Form from "./Form";
 import Header from "@/components/UI/Header";
-import { FaPhone } from "react-icons/fa6";
+import { FaPhone, FaFacebook, FaCar } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import { FaFacebook } from "react-icons/fa";
 import Link from "next/link";
-import { FaCar } from "react-icons/fa";
 import { useState } from "react";
 
 export default function Contact() {
@@ -19,72 +16,85 @@ export default function Contact() {
 
   return (
     <>
-      <div className={classes.container}>
+      {/* Nagłówek i wstęp */}
+      <div className="text-center text-black w-[90%] md:w-[80%] mx-auto pt-8">
         <Header text="Rodzinny Żłobek w Krakowie - Zapisz Swoje Dziecko Już Dziś!" />
-        <p>
+        <p className="mt-4 text-xl">
           Czy szukasz bezpiecznego i przyjaznego środowiska, w którym Twoje
           dziecko może rozwijać się każdego dnia? Krakowski żłobek Wesołe
           Wygibasy to idealne miejsce, gdzie maluchy odkrywają świat z radością
           i ciekawością. Oferujemy wysokiej jakości opiekę i wsparcie w
           rozwijaniu umiejętności dzieci w wieku do 3 lat.
         </p>
-        <p>
-          <strong>Przyjmujemy zapisy przez cały rok!</strong>
+        <p className="mt-4 text-xl font-semibold">
+          Przyjmujemy zapisy przez cały rok!
         </p>
-        <p>
+        <p className="mt-4 text-xl">
           Nie czekaj – zapisz swoje dziecko już dziś i daj mu szansę na rozwój w
           najlepszym żłobku w Krakowie!
         </p>
       </div>
-      <div className={classes.contactContainer}>
-        <div className={classes.leftContainer}>
+
+      {/* Kontakt i formularz */}
+      <div className="w-[92%] md:w-[90%] mx-auto mt-16 mb-16 p-8 md:px-[7%] bg-white rounded-xl shadow-md flex flex-col lg:flex-row gap-12 justify-between">
+        {/* Formularz */}
+        <div className="w-full lg:w-[60%]">
           <Form onFormSubmit={handleFormSubmit} />
         </div>
-        <div className={classes.rightContainer}>
-          <div className={classes.imageContainer}>
+
+        {/* Informacje kontaktowe */}
+        <div className="w-full lg:w-[30%] flex flex-col items-center">
+          {/* Obrazek */}
+          <div className="w-[60%] md:w-[50%] lg:w-[80%] mb-6">
             <Image
-              src={"/monkeys/1.gif"}
-              height={300}
+              src="/monkeys/1.gif"
               width={300}
+              height={300}
               layout="responsive"
               alt="Małpka wskazująca na formularz zapisów do Żłobka Wesołe Wygibasy"
-            ></Image>
+            />
           </div>
-          <div className={classes.infoContainer}>
-            <div className={classes.item}>
-              <Link href={"tel:+48697560022"}>
-                <div className={classes.iconContainer}>
-                  <FaPhone className={classes.phone} />
-                </div>
-                <div className={classes.linkContainer}>+48 697 560 022</div>
-              </Link>
-            </div>
-            <div className={classes.item}>
-              <Link href="mailto:wesolewygibasy@onet.pl">
-                <div className={classes.iconContainer}>
-                  <MdEmail />
-                </div>
-                <div className={classes.linkContainer}>
-                  wesolewygibasy@onet.pl
-                </div>
-              </Link>
-            </div>
-            <div className={classes.item}>
-              <Link href="https://www.facebook.com/wesolewygibasy">
-                <div className={classes.iconContainer}>
-                  <FaFacebook className={classes.facebook} />
-                </div>
-                <div className={classes.linkContainer}>
-                  Napisz na Facebooku!
-                </div>
-              </Link>
-            </div>
-            <div className={classes.item}>
-              <div className={classes.iconContainer}>
-                <FaCar />
-              </div>
-              <div className={classes.linkContainer}>Przyjedź & Zapytaj</div>
-            </div>
+
+          {/* Dane kontaktowe */}
+          <div className="mt-6 grid gap-4 w-full">
+            {[
+              {
+                href: "tel:+48697560022",
+                icon: <FaPhone className="w-6 h-6 text-primary" />,
+                text: "+48 697 560 022",
+              },
+              {
+                href: "mailto:wesolewygibasy@onet.pl",
+                icon: <MdEmail className="w-6 h-6 text-primary" />,
+                text: "wesolewygibasy@onet.pl",
+              },
+              {
+                href: "https://www.facebook.com/wesolewygibasy",
+                icon: <FaFacebook className="w-6 h-6 text-blue-600" />,
+                text: "Napisz na Facebooku!",
+                newTab: true,
+              },
+              {
+                href: null,
+                icon: <FaCar className="w-6 h-6 text-primary" />,
+                text: "Przyjedź & Zapytaj",
+              },
+            ].map(({ href, icon, text, newTab }, index) => {
+              const Wrapper = href ? Link : "div";
+              return (
+                <Wrapper
+                  key={index}
+                  href={href || ""}
+                  target={newTab ? "_blank" : undefined}
+                  className="flex items-center gap-4 bg-gray-50 rounded-lg px-4 py-3 shadow-sm hover:shadow-md transition-shadow duration-200 group"
+                >
+                  <div className="flex-shrink-0">{icon}</div>
+                  <div className="text-lg xl:text-2xl font-medium text-gray-800 group-hover:underline">
+                    {text}
+                  </div>
+                </Wrapper>
+              );
+            })}
           </div>
         </div>
       </div>

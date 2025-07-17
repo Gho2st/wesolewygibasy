@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import classes from "./FoodItemTable.module.css";
 
 export default function WegeTable() {
   const [currentDay, setCurrentDay] = useState("Poniedziałek");
@@ -7,77 +6,68 @@ export default function WegeTable() {
   const menu = {
     Poniedziałek: {
       breakfast:
-        "bułeczka pszenna 40g z masłem roślinnym,, różowy twarożek z czarną porzeczką (twaróg, śmietana) 25g, herbatka z cytryną",
-      lunch:
-        "Zupa jarzynowa z kluseczkami 250ml (seler, masło, śmietana, pszenica) Ragout warzywne z tofu-soja z kolorową papryką, cukinią, bakłażanem i pomidorami 120g (śmietanka), kasza pęczak (jęczmień) 100g, kompot 200ml",
-      snack:
-        "krem bananowy ze świeżym szpinakiem 100g (banany, szpinak, jogurt, mielone siemię lniane, wanilia, cynamon, kakao), wafle ryżowe",
+        "Bułeczka pszenna z masłem roślinnym, różowy twarożek z porzeczką, herbatka z cytryną",
+      lunch: "Zupa jarzynowa, warzywne ragout z tofu, kasza pęczak, kompot",
+      snack: "Krem bananowy ze szpinakiem, jogurt, wafle ryżowe",
     },
     Wtorek: {
-      breakfast:
-        "Zupa mleczna z płatkami kukurydzianymi 150ml/20g, chleb foremkowy z ziarnami 30g z masłem roślinnym, żółtym serem 20g i ogórkiem",
-      lunch:
-        "Zupa z cukinii z makaronem i natką 250ml (seler, pszenica) Gołąbki z soczewicy bez zawijania (soczewica, marchewka, młoda kapusta, ryż, jaja) 70g z duszonymi pomidorami z natką 80g, ziemniaczki 100g, kompot 200ml",
-      snack:
-        "ciasto czekoladowe z gruszką (mąka pszenna, mąka pełnoziarnista, jaja, czekolada gorzka-kakao)",
+      breakfast: "Zupa mleczna z płatkami, chleb z serem żółtym i ogórkiem",
+      lunch: "Zupa z cukinii, gołąbki z soczewicy, ziemniaki, kompot",
+      snack: "Ciasto czekoladowe z gruszką",
     },
     Środa: {
       breakfast:
-        "bułeczka z ziarnami 40g z masłem roślinnym, szynką sojową 20g, pomidor, rukola, herbatka z cytryną 200ml",
-      lunch:
-        "Barszcz biały z jajkiem i ziemniaczkami 250ml (seler, jaja, zakwas-żytni, śmietana) Naleśniki z serkiem waniliowym 2szt (mąka pszenna, mąka orkiszowa, mleko, jaja, twaróg, śmietana), mus ze śliwek i jabłka 30g, kompot 200ml",
-      snack:
-        "chleb foremkowy żytni 30g z masłem roślinnym, pasztecikiem z fasolki 20g z ogórkiem kiszonym, domowa lemoniada z pomarańczami 100ml",
+        "Bułeczka z masłem roślinnym, szynka sojowa, pomidor, rukola, herbatka",
+      lunch: "Barszcz biały, naleśniki z serkiem, mus owocowy, kompot",
+      snack: "Chleb żytni z pasztetem fasolowym, ogórek kiszony, lemoniada",
     },
     Czwartek: {
-      breakfast:
-        "Zupa mleczna z płatkami wielozbożowymi 150ml/20g, chleb mieszany 30g z masłem roślinnym, hummusem paprykowym 20g i świeżym ogórkiem",
-      lunch:
-        "Zupa ogórkowa z ziemniaczkami 250ml (seler, masło, śmietana) Wegańskie pulpeciki z kalafiora 2 szt. w sosie koperkowym 40ml (śmietanka), ryż paraboliczny 100g, marchewka baby z groszkiem na parze 60g, kompot 200ml",
-      snack:
-        "domowe ciastka owsiane z żurawiną (płatki owsiane, mąka owsiana, jaja), koktajl na maślance z brzoskwinią 100ml",
+      breakfast: "Zupa mleczna, chleb z hummusem i ogórkiem",
+      lunch: "Zupa ogórkowa, wegańskie pulpeciki, ryż, warzywa, kompot",
+      snack: "Ciastka owsiane z żurawiną, koktajl z maślanki i brzoskwini",
     },
     Piątek: {
       breakfast:
-        "Kajzerka z makiem 30g z masłem roślinnym, pastą jajeczną z żółtym serem 20g ze szczypiorkiem i pomidorem (jaja, ser, majonez), herbatka z pigwą 200ml",
+        "Kajzerka z masłem roślinnym, pasta jajeczna z serem, szczypiorek, pomidor, herbatka",
       lunch:
-        "Zupa krem z pomidorów i marchewki z grzankami, natka 250ml(seler, masło, śmietana, pszenica) Kotleciki rybne z morszczuka w płatkach kukurydzianych 70g (jaja, płatki, wiórki kokosowe), ziemniaczki 100g, surówka z kiszonej kapusty i marchewki 70g, kompot 200ml vege- kotleciki z warzyw, pestek i kaszy gryczanej",
-      snack: "bananowy budyń z ryżu na mleku 150ml (mleko, śmietanka)",
+        "Zupa krem z pomidorów, kotleciki z warzyw i kaszy, ziemniaki, surówka, kompot",
+      snack: "Bananowy budyń z ryżu na mleku",
     },
   };
 
-  const handleDayChange = (day) => {
-    setCurrentDay(day);
-  };
-
   return (
-    <div className={classes.container}>
-      <h3>Menu Wege</h3>
-      <ul className={classes.weekDays}>
+    <div className="mt-12">
+      <h3 className="text-2xl font-bold text-[#fa7070] mb-4">Menu Wege</h3>
+
+      <ul className="flex overflow-x-auto gap-6 text-lg text-[#2c7865] mb-6">
         {Object.keys(menu).map((day) => (
           <li
             key={day}
-            onClick={() => handleDayChange(day)}
-            className={`${classes.weekDay} ${
-              currentDay === day ? classes.activeDay : ""
+            onClick={() => setCurrentDay(day)}
+            className={`cursor-pointer whitespace-nowrap transition-colors font-medium ${
+              currentDay === day ? "text-[#fa7070]" : "hover:text-[#43b79a]"
             }`}
           >
             {day}
           </li>
         ))}
       </ul>
-      <div className={classes.description}>
-        <ul>
-          <li>
-            <strong>Śniadanie:</strong> {menu[currentDay].breakfast}
-          </li>
-          <li>
-            <strong>Obiad:</strong> {menu[currentDay].lunch}
-          </li>
-          <li>
-            <strong>Podwieczorek:</strong> {menu[currentDay].snack}
-          </li>
-        </ul>
+
+      <div className="space-y-4 text-gray-800 text-base leading-relaxed">
+        <p>
+          <strong className="block text-lg text-[#2c7865]">Śniadanie:</strong>
+          {menu[currentDay].breakfast}
+        </p>
+        <p>
+          <strong className="block text-lg text-[#2c7865]">Obiad:</strong>
+          {menu[currentDay].lunch}
+        </p>
+        <p>
+          <strong className="block text-lg text-[#2c7865]">
+            Podwieczorek:
+          </strong>
+          {menu[currentDay].snack}
+        </p>
       </div>
     </div>
   );

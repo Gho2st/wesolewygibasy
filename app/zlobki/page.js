@@ -1,5 +1,4 @@
 import Places from "@/components/homepage/Places";
-import classes from "./page.module.css";
 import Button from "@/components/UI/Button";
 import Button2 from "@/components/UI/Button2";
 import Header from "@/components/UI/Header";
@@ -56,61 +55,68 @@ export default function Zlobki() {
   ];
 
   return (
-    <>
-      <main>
-        <div className={classes.container}>
-          <section>
-            <Header text="Żłobki Wesołe Wygibasy w Krakowie" />
-            <div className={classes.textContainer}>
-              <div className={classes.text}>
-                <h2>Kameralna opieka w sercu Krakowa</h2>
-                <p>
-                  Sieć kameralnych żłobków Wesołe Wygibasy w Krakowie to miejsca
-                  stworzone z myślą o najmłodszych. Nasze placówki znajdziesz w
-                  pięciu dogodnych lokalizacjach: ul. Stańczyka, ul. Śliczna,
-                  ul. Vetulaniego, ul. Glogera oraz ul. Łokietka. Oferujemy
-                  profesjonalną opiekę, rozwój przez kreatywną zabawę i
-                  bezpieczne, przytulne warunki, w których Twoje dziecko będzie
-                  czuło się jak w domu.
-                  <span>
-                    Wesołe Wygibasy – uśmiech i rozwój w każdym zakątku Krakowa!
-                  </span>
-                </p>
-                <div className={classes.buttonContainer}>
-                  <Button text="O nas" href="/o-nas" />
-                  <Button2 text="Zapisy" href="/zapisy" />
-                </div>
-              </div>
-              <div className={classes.imageContainer}>
-                <Image
-                  src="/others/zlobki.png"
-                  width={100}
-                  height={100}
-                  layout="responsive"
-                />
-              </div>
-            </div>
-          </section>
-          <section>
-            <div className={classes.intro}>
-              <h2>Wesołe Wygibasy – Twój żłobek w Krakowie</h2>
-              <p>
-                Wesołe Wygibasy to sieć niepublicznych żłobków w Krakowie,
-                stworzona z myślą o najmłodszych i ich rodzicach. Nasze placówki
-                znajdują się w różnych częściach miasta – abyś mógł wybrać
-                lokalizację najbliżej Ciebie. Stawiamy na kameralne grupy,
-                wykwalifikowaną kadrę i przyjazną atmosferę, w której dzieci
-                czują się jak w domu. Zapewniamy zatwierdzone przez Sanepid i
-                Straż Pożarną warunki, dzięki czemu możesz nam zaufać w pełni.
-              </p>
-            </div>
-            <CardContainer cards={cardData} />
-          </section>
-        </div>
+    <main>
+      <div className="px-[9%] py-10">
         <section>
-          <Places />
+          <Header text="Żłobki Wesołe Wygibasy w Krakowie" />
+
+          <div className="flex flex-col-reverse lg:flex-row justify-center gap-12 mt-12">
+            <div className="w-full lg:w-1/2 mt-6">
+              <h2 className="text-2xl xl:text-3xl font-semibold mb-4">
+                Kameralna opieka w sercu Krakowa
+              </h2>
+              <p className="text-xl text-gray-700">
+                Sieć kameralnych żłobków Wesołe Wygibasy w Krakowie to miejsca
+                stworzone z myślą o najmłodszych. Nasze placówki znajdziesz w
+                pięciu dogodnych lokalizacjach: ul. Stańczyka, ul. Śliczna, ul.
+                Vetulaniego, ul. Glogera oraz ul. Łokietka. Oferujemy
+                profesjonalną opiekę, rozwój przez kreatywną zabawę i
+                bezpieczne, przytulne warunki, w których Twoje dziecko będzie
+                czuło się jak w domu.
+                <span className="block mt-4 font-semibold">
+                  Wesołe Wygibasy – uśmiech i rozwój w każdym zakątku Krakowa!
+                </span>
+              </p>
+
+              <div className="flex gap-4 mt-8">
+                <Button text="O nas" href="/o-nas" />
+                <Button2 text="Zapisy" href="/zapisy" />
+              </div>
+            </div>
+
+            <div className="w-full lg:w-2/5 mx-auto">
+              <Image
+                src="/others/zlobki.png"
+                width={100}
+                height={100}
+                layout="responsive"
+                alt="Zdjęcie przedstawiające nasze żłobki w Krakowie"
+              />
+            </div>
+          </div>
         </section>
-      </main>
-    </>
+
+        <section className="text-center mt-40 max-[600px]:mt-24">
+          <h2 className="text-3xl xl:text-4xl font-semibold mb-8">
+            Wesołe Wygibasy – Twój żłobek w Krakowie
+          </h2>
+          <p className="mx-auto text-xl text-gray-700 w-full md:w-[80%] mb-12">
+            Wesołe Wygibasy to sieć niepublicznych żłobków w Krakowie, stworzona
+            z myślą o najmłodszych i ich rodzicach. Nasze placówki znajdują się
+            w różnych częściach miasta – abyś mógł wybrać lokalizację najbliżej
+            Ciebie. Stawiamy na kameralne grupy, wykwalifikowaną kadrę i
+            przyjazną atmosferę, w której dzieci czują się jak w domu.
+            Zapewniamy zatwierdzone przez Sanepid i Straż Pożarną warunki,
+            dzięki czemu możesz nam zaufać w pełni.
+          </p>
+
+          <CardContainer cards={cardData} />
+        </section>
+      </div>
+
+      <section>
+        <Places />
+      </section>
+    </main>
   );
 }

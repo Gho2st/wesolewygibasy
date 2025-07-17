@@ -1,6 +1,5 @@
-'use client'
+"use client";
 import { motion } from "framer-motion";
-import classes from "./PlaceItem.module.css";
 import Image from "next/image";
 import Button from "../UI/Button";
 
@@ -8,34 +7,44 @@ export default function PlaceItem(props) {
   return (
     <article>
       <motion.div
-        className={classes.itemContainer}
-        initial={{ opacity: 0, y: 50 }} // Początkowy stan: ukryty i przesunięty w dół
-        whileInView={{ opacity: 1, y: 0 }} // Końcowy stan: widoczny i na swoim miejscu
-        transition={{ duration: 0.6, ease: "easeOut" }} // Czas trwania animacji
-        viewport={{ once: true, amount: 0.25 }} // Animacja tylko, gdy element stanie się widoczny na ekranie
+        className="w-full pb-6 bg-white min-h-full rounded-xl shadow-md"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.25 }}
       >
-        <div className={classes.imageContainer}>
+        <div className="h-[350px] shadow-md flex">
           <Image
             src={props.image}
             alt={props.alt}
             width={500}
             height={500}
-            layout="responsive"
+            className="w-full h-full object-cover rounded-t-xl"
           />
         </div>
-        <div className={classes.downContainer}>
-          <div className={classes.text}>
-            <h3 style={{ color: props.color }}>{props.title}</h3>
-            <p>{props.location}</p>
-            <p>{props.street}</p>
+
+        <div className="px-4">
+          <div className="text-center mt-6 mb-6 font-normal">
+            <h3
+              className="text-black font-extrabold mb-6 text-2xl"
+              style={{ color: props.color }}
+            >
+              {props.title}
+            </h3>
+            <p className="text-xl">{props.location}</p>
+            <p className="text-xl">{props.street}</p>
           </div>
-          <div className={classes.innerContainer}>
-            <div className={classes.buttonContainer}>
-              <Button text="Sprawdź" fontSize="1rem" href={"/" + props.link} />
+
+          <div>
+            <div className="flex justify-center items-center mb-6">
+              <Button text="Sprawdź" fontSize="1rem" href={`/${props.link}`} />
             </div>
+
             <div
-              className={classes.dotationText}
-              style={{ color: props.add !== "" ? "#08c6c3" : "transparent" }}
+              className="text-center font-semibold text-[1rem]"
+              style={{
+                color: props.add !== "" ? "#08c6c3" : "transparent",
+              }}
             >
               {props.add ? (
                 props.add

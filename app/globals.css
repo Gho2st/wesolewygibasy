@@ -1,35 +1,25 @@
-:root {
-  --color-primary: #fa7070;
-  --color-secondary: #6c757d; /* Szary dla akcentów */
-  --color-blue: #4a71ff;
+@import "tailwindcss";
+
+@layer utilities {
+  .text-primary {
+    @apply text-[#fa7070];
+  }
+  .bg-primary {
+    @apply bg-[#fa7070];
+  }
+  .text-secondary {
+    @apply text-[#08c6c3];
+  }
+  .bg-secondary {
+    @apply bg-[#4a71ff];
+  }
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
 html,
 body {
   max-width: 100vw;
   max-height: 100vh;
-  font-size: 18px;
   scroll-behavior: smooth;
-  line-height: 2rem;
-}
-
-h1,
-h2 {
-  line-height: 3rem;
-}
-
-h3 {
-  line-height: 2.3rem;
-}
-
-span {
-  color: #ff6666;
-  font-weight: bold;
 }
 
 svg {
@@ -39,12 +29,23 @@ svg {
 }
 
 a {
-  color: inherit;
   text-decoration: none;
 }
-@media (max-width: 1500px) {
-  html,
-  body {
-    font-size: 16px;
-  }
+
+.mask-cloud {
+  --mask: radial-gradient(76.2px at 50% 107.5px, #000 99%, #0000 101%)
+      calc(50% - 100px) 0/200px 51% repeat-x,
+    radial-gradient(76.2px at 50% -57.5px, #0000 99%, #000 101%) 50% 50px/200px
+      calc(51% - 50px) repeat-x,
+    radial-gradient(76.2px at 50% calc(100% - 107.5px), #000 99%, #0000 101%)
+      calc(50% - 100px) 100%/200px 51% repeat-x,
+    radial-gradient(76.2px at 50% calc(100% + 57.5px), #0000 99%, #000 101%) 50%
+      calc(100% - 50px) / 200px calc(51% - 50px) repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
 }

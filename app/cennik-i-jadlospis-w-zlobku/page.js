@@ -1,5 +1,3 @@
-import classes from "./page.module.css";
-import { Metadata } from "next";
 import Pricing from "./Pricing";
 
 export const metadata = {

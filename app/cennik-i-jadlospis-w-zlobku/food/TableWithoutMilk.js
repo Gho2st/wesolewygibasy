@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import classes from "./FoodItemTable.module.css";
 
 export default function TableWithoutMilk() {
   const [currentDay, setCurrentDay] = useState("Poniedziałek");
@@ -7,77 +6,74 @@ export default function TableWithoutMilk() {
   const menu = {
     Poniedziałek: {
       breakfast:
-        "bułeczka pszenna 40g z masłem roślinnym, szyneczką 20g i pomidorem, herbatka z cytryną",
+        "Bułeczka pszenna z masłem roślinnym, szynką i pomidorem, herbatka z cytryną",
       lunch:
-        "Zupa jarzynowa z kluseczkami 250ml (seler, pszenica) Ragout z kurczaka z kolorową papryką, cukinią, bakłażanem i pomidorami 120g, kasza pęczak (jęczmień) 100 g, kompot 200 ml",
-      snack:
-        "krem bananowy ze świeżym szpinakiem 100g (banany, szpinak, mleko owsiane, mielone siemię lniane, wanilia, cynamon, kakao), wafle ryżowe",
+        "Zupa jarzynowa z kluseczkami, ragout z kurczaka z warzywami, kasza pęczak, kompot",
+      snack: "Krem bananowy ze szpinakiem, mleko owsiane, wafle ryżowe",
     },
     Wtorek: {
       breakfast:
-        "zupa mleczna – mleko owsiane/sojowe z płatkami kukurydzianymi 150ml/20g, chleb foremkowy z ziarnami30g z masłem roślinn, szynką z piersią indyczą20g i ogórkiem",
-      lunch:
-        "Rosołek z makaronem i natką 250ml (kurczak, indyk, seler, pszenica) Niezwykłe gołąbki bez zawijania (mięso z łopatki, młoda kapusta, ryż, jaja) 70g z duszonymi pomidorami z natką 80g, ziemniaczki 100g, kompot200ml",
-      snack:
-        "ciasto czekoladowe z gruszką (mąka pszenna, mąka pełnoziarnista, jaja, czekolada gorzka-kakao)",
+        "Zupa mleczna (mleko owsiane/sojowe), chleb z masłem roślinnym, szynka indycza i ogórek",
+      lunch: "Rosołek z makaronem, gołąbki bez zawijania, ziemniaki, kompot",
+      snack: "Ciasto czekoladowe z gruszką",
     },
     Środa: {
       breakfast:
-        "bułeczka z ziarnami 40g z masłem roślinnym, szynką sojową 20g, pomidor, rukola, herbatka z cytryną 200ml",
-      lunch:
-        "Barszcz biały z jajkiem i ziemniaczkami 250ml (seler, jaja, zakwas-żytni, śmietana) Naleśniki z serkiem waniliowym 2szt (mąka pszenna, mąka orkiszowa, mleko, jaja, twaróg, śmietana), mus ze śliwek i jabłka 30g, kompot 200ml",
-      snack:
-        "chleb foremkowy żytni 30g z masłem roślinnym, pasztecikiem z fasolki 20g z ogórkiem kiszonym, domowa lemoniada z pomarańczami 100ml",
+        "Bułeczka z masłem roślinnym, szynka sojowa, pomidor, rukola, herbatka",
+      lunch: "Barszcz biały z ziemniakami, naleśniki z musem owocowym, kompot",
+      snack: "Chleb żytni z pasztetem z fasoli i ogórkiem kiszonym, lemoniada",
     },
     Czwartek: {
       breakfast:
-        "zupa mleczna – mleko owsiane/ sojowe z płatkami wielozbożowymi 150ml/20g, chleb mieszany30g z masłem roślinnym, kiełbasą szynkową20g i świeżym ogórkiem",
+        "Zupa mleczna (mleko owsiane/sojowe), chleb z masłem roślinnym i kiełbasą",
       lunch:
-        "Zupa ogórkowa z ziemniaczkami 250ml (seler, masło, śmietana) Wegańskie pulpeciki z kalafiora 2 szt. w sosie koperkowym 40ml (śmietanka), ryż paraboliczny 100g, marchewka baby z groszkiem na parze 60g, kompot 200ml",
-      snack:
-        "domowe ciastka owsiane z żurawiną (płatki owsiane, mąka owsiana, jaja), koktajl na mleku owsianym z brzoskwinią 100ml",
+        "Zupa ogórkowa, wegańskie pulpeciki, ryż, warzywa na parze, kompot",
+      snack: "Ciastka owsiane z żurawiną, koktajl owsiany z brzoskwinią",
     },
     Piątek: {
       breakfast:
-        "kajzerka z makiem30g z masłem roślinnym, pastą jajeczną 20g ze szczypiorkiem i pomidorem (jaja, majonez), herbatka z pigwą 200 ml",
+        "Kajzerka z masłem roślinnym, pasta jajeczna, pomidor, herbatka z pigwą",
       lunch:
-        "Zupa krem z pomidorów i marchewki z grzankami, natka 250ml (seler, pszenica) Kotleciki rybne z morszczuka w płatkach kukurydzianych 70g (jaja, płatki, wiórki kokosowe), ziemniaczki100g, surówka z kiszonej kapusty i marchewki70g, kompot 200ml",
-      snack: "bananowy budyń z ryżu na mleku 150ml(mleko- mleko owsiane)",
+        "Krem z pomidorów i marchewki z grzankami, kotleciki rybne, ziemniaki, surówka, kompot",
+      snack: "Bananowy budyń ryżowy na mleku owsianym",
     },
   };
 
-  const handleDayChange = (day) => {
-    setCurrentDay(day);
-  };
-
   return (
-    <div className={classes.container}>
-      <h3>Menu Bez Nabiału</h3>
-      <ul className={classes.weekDays}>
+    <div className="mt-12">
+      <h3 className="text-2xl font-bold text-[#fa7070] mb-4">
+        Menu Bez Nabiału
+      </h3>
+
+      <ul className="flex overflow-x-auto gap-6 text-lg text-[#2c7865] mb-6">
         {Object.keys(menu).map((day) => (
           <li
             key={day}
-            onClick={() => handleDayChange(day)}
-            className={`${classes.weekDay} ${
-              currentDay === day ? classes.activeDay : ""
+            onClick={() => setCurrentDay(day)}
+            className={`cursor-pointer whitespace-nowrap transition-colors font-medium ${
+              currentDay === day ? "text-[#fa7070]" : "hover:text-[#43b79a]"
             }`}
           >
             {day}
           </li>
         ))}
       </ul>
-      <div className={classes.description}>
-        <ul>
-          <li>
-            <strong>Śniadanie:</strong> {menu[currentDay].breakfast}
-          </li>
-          <li>
-            <strong>Obiad:</strong> {menu[currentDay].lunch}
-          </li>
-          <li>
-            <strong>Podwieczorek:</strong> {menu[currentDay].snack}
-          </li>
-        </ul>
+
+      <div className="space-y-4 text-gray-800 text-base leading-relaxed">
+        <p>
+          <strong className="block text-lg text-[#2c7865]">Śniadanie:</strong>
+          {menu[currentDay].breakfast}
+        </p>
+        <p>
+          <strong className="block text-lg text-[#2c7865]">Obiad:</strong>
+          {menu[currentDay].lunch}
+        </p>
+        <p>
+          <strong className="block text-lg text-[#2c7865]">
+            Podwieczorek:
+          </strong>
+          {menu[currentDay].snack}
+        </p>
       </div>
     </div>
   );

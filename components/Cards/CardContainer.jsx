@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import classes from "./CardContainer.module.css";
 
 const CardContainer = ({ cards }) => {
   const colors = [
@@ -15,9 +14,8 @@ const CardContainer = ({ cards }) => {
     "#e8f7f0",
   ];
 
-  // Efekt pojawiania się dla każdej karty
   const cardVariants = {
-    hidden: { scale: 0.95, opacity: 0.15 }, // Użyj scale zamiast opacity
+    hidden: { scale: 0.95, opacity: 0.15 },
     visible: {
       scale: 1,
       opacity: 1,
@@ -27,12 +25,12 @@ const CardContainer = ({ cards }) => {
       },
     },
     hover: {
+      scale: 1.02,
       boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.15)",
       transition: { duration: 0.3, ease: "easeInOut" },
     },
   };
 
-  // Efekt dla elementów w karcie
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: {
@@ -46,23 +44,36 @@ const CardContainer = ({ cards }) => {
   };
 
   return (
-    <div className={classes.cardContainer}>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pb-16">
       {cards.map((card, index) => (
         <motion.div
           key={index}
-          className={classes.card}
+          className="flex flex-col justify-between rounded-xl shadow-md p-6"
           style={{ backgroundColor: colors[index % colors.length] }}
           variants={cardVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }} // Ustaw na 1, aby karta była w pełni widoczna
           whileHover="hover"
+          viewport={{ once: true, amount: 0.5 }}
         >
-          <motion.h3 variants={fadeIn}>{card.title}</motion.h3>
-          <motion.p variants={fadeIn}>{card.description}</motion.p>
+          <motion.h3
+            className="text-xl xl:text-2xl font-semibold mb-4"
+            variants={fadeIn}
+          >
+            {card.title}
+          </motion.h3>
+          <motion.p
+            className="text-gray-700 text-lg font-light mb-8"
+            variants={fadeIn}
+          >
+            {card.description}
+          </motion.p>
           {card.link && (
             <motion.div variants={fadeIn}>
-              <Link href={card.link.href} className={classes.link}>
+              <Link
+                href={card.link.href}
+                className="text-black text-xl font-semibold shadow-lg bg-white/30 p-2 px-4 rounded-xl  hover:text-[#fa7070] transition-colors duration-200"
+              >
                 {card.link.text}
               </Link>
             </motion.div>

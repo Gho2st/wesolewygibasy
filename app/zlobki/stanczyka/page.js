@@ -1,4 +1,3 @@
-import classes from "../nursery.module.css";
 import ImagesContainer from "@/components/Gallery/ImagesContainer";
 import Button from "@/components/UI/Button";
 import SliderComponent from "@/components/UI/slider/slider";
@@ -74,68 +73,74 @@ const cardData = [
   },
 ];
 
-export default function stanczyka() {
+export default function Stanczyka() {
   return (
-    <>
-      <main>
-        <section>
-          <div
-            className={classes.baner}
-            style={{
-              backgroundImage: `url("/zlobki/stanczyka.jpg")`,
-            }}
-          >
-            <div className={classes.textContainer}>
-              <div>
-                <h1>
-                  Żłobek Kraków - <span> Wesołe Wygibasy </span> na ul.
-                  Stańczyka 8/LU3
-                </h1>
+    <main>
+      {/* Baner */}
+      <section>
+        <div
+          className="w-full min-h-screen bg-cover bg-center flex items-center justify-center relative"
+          style={{
+            backgroundImage: `url("/zlobki/stanczyka.jpg")`,
+          }}
+        >
+          <div className="bg-white/90 backdrop-blur-sm shadow-xl rounded-xl text-center px-6 py-12 sm:px-10 max-w-3xl">
+            <h1 className="text-2xl sm:text-3xl font-semibold text-black">
+              Żłobek Kraków -{" "}
+              <span className="text-blue-700">Wesołe Wygibasy</span> na ul.
+              Stańczyka 8/LU3
+            </h1>
+            <div className="mt-6 flex justify-center gap-4 flex-wrap">
+              <Button text="O nas" href="/o-nas" />
+              <Button2 background="#0037FF" text="Zapisy" href="/zapisy" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <div className={classes.buttonContainer}>
-                  <Button text="O nas" href="/o-nas" />
-                  <Button2 background="#0037FF" text="Zapisy" href="/zapisy" />
-                </div>
-              </div>
-            </div>
+      {/* Karty i opis */}
+      <section className="pt-20 px-[9%]">
+        <div className="mx-auto">
+          <NurseryHeader text="Nasz żłobek w Krakowie, Wesołe Wygibasy, to miejsce pełne radości i troskliwej opieki. Znajdujemy się w nowoczesnej placówce na ul. Stańczyka 8/LU3, w sercu Bronowic. Zapisz swoje dziecko do żłobka, który oferuje kreatywne zajęcia, doskonałą opiekę i bezpieczeństwo zatwierdzone przez sanepid." />
+          <div className="mt-12">
+            <CardContainer cards={cardData} />
           </div>
-        </section>
-        <section>
-          <div className={classes.container}>
-            <div className={classes.cardWrapper}>
-              <NurseryHeader
-                text="Nasz żłobek w Krakowie, Wesołe Wygibasy, to miejsce pełne
-                radości i troskliwej opieki. Znajdujemy się w nowoczesnej
-                placówce na ul. Stańczyka 8/LU3, w sercu Bronowic. Zapisz swoje
-                dziecko do żłobka, który oferuje kreatywne zajęcia, doskonałą
-                opiekę i bezpieczeństwo zatwierdzone przez sanepid."
-              />
-              <CardContainer cards={cardData} />
-            </div>
-          </div>
-        </section>
-        <section>
-          <div className={classes.wrapper}>
-            <Maluch />
-          </div>
-        </section>
-        <section>
-          <SliderComponent images={images} />
-        </section>
-        <section>
-          <div className={classes.wrapper}>
-            <DayScheduleStanczyka header="Plan Dnia i zajęcia dodatkowe" />
-          </div>
-        </section>
-        <section>
+        </div>
+      </section>
+
+      {/* Maluch komponent */}
+      <section className="py-16">
+        <div className=" mx-auto">
+          <Maluch />
+        </div>
+      </section>
+
+      {/* Slider */}
+      <section className="bg-white">
+        <SliderComponent images={images} />
+      </section>
+
+      {/* Plan dnia */}
+      <section className="bg-gray-50 py-16">
+        <div className="mx-auto">
+          <DayScheduleStanczyka header="Plan Dnia i zajęcia dodatkowe" />
+        </div>
+      </section>
+
+      {/* Galeria */}
+      <section className="py-16">
+        <div className="text-center">
+          <h2 className="text-4xl font-bold">Galeria zdjęć</h2>
           <ImagesContainer folder="stanczyka" />
-        </section>
-        <section>
-          <div className={classes.wrapper}>
-            <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20483.285915179342!2d19.857841410839853!3d50.07859630000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b0b843d4ce5%3A0xfe8741522eb108da!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy%203%20Bronowice!5e0!3m2!1spl!2spl!4v1711475564872!5m2!1spl!2spl" />
-          </div>
-        </section>
-      </main>
-    </>
+        </div>
+      </section>
+
+      {/* Mapa */}
+      <section className="py-16">
+        <div className=" mx-auto">
+          <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20483.285915179342!2d19.857841410839853!3d50.07859630000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b0b843d4ce5%3A0xfe8741522eb108da!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy%203%20Bronowice!5e0!3m2!1spl!2spl!4v1711475564872!5m2!1spl!2spl" />
+        </div>
+      </section>
+    </main>
   );
 }

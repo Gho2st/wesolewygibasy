@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import { FaFacebookSquare } from "react-icons/fa";
-import classes from "./FacebookPosts.module.css";
 import Image from "next/image";
 
 export default function FacebookPosts() {
@@ -10,19 +9,18 @@ export default function FacebookPosts() {
 
   function truncateText(text, wordLimit) {
     const words = text.split(" ");
-    if (words.length <= wordLimit) return text;
-    return words.slice(0, wordLimit).join(" ") + "...";
+    return words.length <= wordLimit
+      ? text
+      : words.slice(0, wordLimit).join(" ") + "...";
   }
 
   useEffect(() => {
     async function fetchPosts() {
-      const timestamp = Date.parse(new Date().toString());
+      const timestamp = Date.now();
 
       try {
         const res = await fetch(`/api/facebook/${timestamp}`, {
-          headers: {
-            "Cache-Control": "no-cache",
-          },
+          headers: { "Cache-Control": "no-cache" },
         });
         const data = await res.json();
         setPosts(data.data || []);
@@ -37,74 +35,76 @@ export default function FacebookPosts() {
   }, []);
 
   return (
-    <section className={classes.wrapper}>
-      <div>
-        <h2 className={classes.heading}>
-          Najnowsze <span className={classes.highlight}>posty</span> z Facebooka
+    <section className="min-h-screen bg-[#fffbf2] px-[9%] py-16 flex flex-col items-center overflow-x-hidden">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl  xl:text-4xl 2xl:text-5xl font-semibold text-gray-900 relative inline-block mb-2">
+          Najnowsze <span className="text-primary">posty</span> z Facebooka
         </h2>
-        <div className={classes.iconContainer}>
+        <div className="flex justify-center mt-4">
           <a
             href="https://www.facebook.com/wesolewygibasy"
             target="_blank"
             rel="noopener noreferrer"
-            className={classes.fbIconLink}
+            className="ml-4 transition-transform hover:scale-110"
           >
-            <FaFacebookSquare size={36} color="#1877F2" />
+            <FaFacebookSquare size={40} color="#1877F2" />
           </a>
         </div>
       </div>
 
       {isLoading ? (
-        <p>Wczytywanie postów...</p>
+        <p className="text-gray-700 text-lg">Wczytywanie postów...</p>
+      ) : posts.length === 0 ? (
+        <p className="text-red-500 text-lg">Brak dostępnych postów.</p>
       ) : (
-        <ul className={classes.postsList}>
-          {posts.length === 0 ? (
-            <p className={classes.error}>Brak dostępnych postów.</p>
-          ) : (
-            posts.map((post) => {
-              const imageUrl =
-                post.attachments?.data?.[0]?.media?.image?.src ?? null;
+        <ul className="grid gap-8 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 w-full">
+          {posts.map((post) => {
+            const imageUrl =
+              post.attachments?.data?.[0]?.media?.image?.src ?? null;
+            const [pageId, postId] = post.id.split("_");
+            const postUrl = `https://www.facebook.com/${pageId}/posts/${postId}`;
 
-              const [pageId, postId] = post.id.split("_");
-              const postUrl = `https://www.facebook.com/${pageId}/posts/${postId}`;
-
-              return (
-                <li key={post.id} className={classes.postItem}>
-                  <p className={classes.message}>
+            return (
+              <li
+                key={post.id}
+                className="bg-white rounded-2xl p-6 shadow-xl flex flex-col min-h-[500px]"
+              >
+                {/* GÓRNA CZĘŚĆ: Tekst posta */}
+                <div>
+                  <p className="text-gray-800 text-lg leading-relaxed mb-6 whitespace-pre-wrap">
                     {truncateText(post.message || "Brak treści posta.", 35)}
                   </p>
+                </div>
 
-                  <div>
-                    {imageUrl && (
-                      <div className={classes.imageWrapper}>
-                        <Image
-                          src={imageUrl}
-                          alt="Zdjęcie z posta"
-                          fill
-                          className={classes.image}
-                        />
-                      </div>
-                    )}
-
-                    <span className={classes.date}>
-                      {new Date(post.created_time).toLocaleString()}
-                    </span>
-
-                    <div className={classes.linkWrapper}>
-                      <a
-                        href={postUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={classes.postLink}
-                      >
-                        Zobacz całość na Facebooku...
-                      </a>
+                {/* DOLNA CZĘŚĆ: Zdjęcie, data, link */}
+                <div className="mt-auto flex flex-col">
+                  {imageUrl && (
+                    <div className="relative w-full aspect-square rounded-lg overflow-hidden mb-6">
+                      <Image
+                        src={imageUrl}
+                        alt="Zdjęcie z posta"
+                        fill
+                        className="object-cover object-center"
+                      />
                     </div>
+                  )}
+                  <span className="block text-lg text-right">
+                    {new Date(post.created_time).toLocaleString()}
+                  </span>
+                  <div className="mt-4">
+                    <a
+                      href={postUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 font-semibold hover:underline text-xl"
+                    >
+                      Zobacz całość na Facebooku...
+                    </a>
                   </div>
-                </li>
-              );
-            })
-          )}
+                </div>
+              </li>
+            );
+          })}
         </ul>
       )}
     </section>
