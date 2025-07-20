@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaPhone, FaMessage, FaFacebook, FaInstagram } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import Numbers from "./Numbers";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -136,6 +137,13 @@ export default function Footer() {
             <span>&copy;</span> {currentYear} Wesołe Wygibasy
           </p>
         </div>
+        {/* WhatsApp Icon */}
+        <Link
+          href="https://wa.me/+48697560022"
+          className="fixed bg-[#25D366] shadow-2xl rounded-full p-2 text-3xl xl:text-5xl text-white bottom-6 right-6 xl:bottom-16 xl:right-10 z-10"
+        >
+          <FaWhatsapp className="cursor-pointer" />
+        </Link>
       </footer>
     </>
   );
