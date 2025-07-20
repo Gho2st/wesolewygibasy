@@ -88,7 +88,7 @@ export default function Navigation() {
                 <li key={i} className="m-1 md:m-4">
                   <Link
                     href={routes[i]}
-                    className="inline-block text-xl md:text-3xl font-medium uppercase px-6 py-3 bg-gradient-to-r from-transparent via-transparent to-white bg-[length:230%] hover:bg-[position:100%] hover:text-black transition-all duration-500"
+                    className="inline-block text-xl md:text-2xl 2xl:text-3xl font-medium uppercase px-6 py-1.5 2xl:py-2 bg-gradient-to-r from-transparent via-transparent to-white bg-[length:230%] hover:bg-[position:100%] hover:text-black transition-all duration-500"
                     onClick={closeMenu}
                   >
                     <span className="mr-4 text-primary">
