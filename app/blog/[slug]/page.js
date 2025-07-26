@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
 // ⬇️ Strona bloga
 export default async function BlogPostPage({ params }) {
   const data = blogPosts.find((post) => post.slug === params.slug);
-
+  // gdy nie ma danych to not found
   if (!data) return notFound();
 
   return (
