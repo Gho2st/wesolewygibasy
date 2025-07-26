@@ -63,6 +63,8 @@ const commonSettings = {
   ],
 };
 
+// pracownicy
+
 function TeamSection({ place, members }) {
   return (
     <div className="mb-24">
