@@ -3,8 +3,12 @@ import Button from "@/components/UI/Button";
 export default function BlogCard({ header, text, link, button }) {
   return (
     <article className="flex flex-col justify-between p-8 px-4 xl:px-6 h-full bg-grey-50 shadow-2xl transform transition-all duration-300 hover:scale-103">
-      <h3 className="font-bold mb-10 text-2xl xl:text-3xl">{header}</h3>
-      <p className="mb-10 text-lg font-light">{text}</p>
+      <h3 className="font-bold mb-6 2xl:mb-10 text-2xl 2xl:text-3xl">
+        {header}
+      </h3>
+      <p className=" mb-6 2xl:mb-10 2xl:text-lg text-gray-700 font-light">
+        {text}
+      </p>
       <div className="flex">
         <Button
           text={button}
