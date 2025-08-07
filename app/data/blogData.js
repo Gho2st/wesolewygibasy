@@ -134,4 +134,27 @@ Wiemy, że powierzając nam swoje dziecko, rodzice oddają nam coś najcenniejsz
       text: "Dowiedz się, jak troszczymy się o zdrowie, komfort i ochronę najmłodszych.",
     },
   },
+  {
+    slug: "pierwsze-dni-w-zlobku",
+    title: "Pierwsze dni w żłobku",
+    subtitle:
+      "Jak pomagamy dzieciom i rodzicom odnaleźć się w nowej rzeczywistości?",
+    content: `Pierwszy dzień w żłobku to ogromna zmiana – dla dziecka, ale także dla jego rodziców. W naszej placówce rozumiemy, że adaptacja to nie tylko proces przyzwyczajania się do nowych warunków, ale także budowanie relacji, poczucia bezpieczeństwa i zaufania.
+
+Zaczynamy od wspólnego planowania – jeszcze przed rozpoczęciem uczęszczania do żłobka rodzice otrzymują od nas szczegółowe informacje o przebiegu pierwszych dni. Proponujemy harmonogram dostosowany do potrzeb dziecka oraz rodziny.
+
+W trakcie pierwszych dni stawiamy na obecność i obserwację. Dzieci mają możliwość stopniowego oswajania się z nowym otoczeniem, poznają opiekunów i inne dzieci w spokojnej atmosferze. Nasza kadra jest blisko – gotowa przytulić, pocieszyć, a przede wszystkim – być obecna i uważna.
+
+Rodzice również otrzymują wsparcie – rozmowy z opiekunami, relacje z przebiegu dnia, porady, jak wspierać dziecko w domu. Jesteśmy partnerami w tym procesie.
+
+Wiemy, że zrozumienie emocji dziecka i danie mu przestrzeni na ich przeżycie to fundament udanej adaptacji. Czas, cierpliwość i empatia to wartości, które nam przyświecają każdego dnia.
+
+Pierwsze dni mogą być trudne – ale z odpowiednim wsparciem stają się początkiem pięknej przygody. Razem przechodzimy przez ten etap, by dziecko mogło z radością odkrywać świat w bezpiecznym otoczeniu.`,
+    cta: {
+      link: "/adaptacja-w-zlobku",
+      button: "Dowiedz się więcej o adaptacji",
+      header: "Wspieramy od pierwszego dnia",
+      text: "Poznaj nasze podejście do pierwszych dni w żłobku i zobacz, jak wspieramy dzieci i ich rodziny.",
+    },
+  },
 ];

@@ -36,10 +36,10 @@ export default async function BlogPostPage({ params }) {
     <>
       <main className="pt-8 px-[9%]">
         <Header text={data.title} />
-        <section className="py-8 md:py-20">
+        <section className="py-8 2xl:py-20">
           <LineHeader text={data.subtitle} />
           <p
-            className="text-lg xl:text-xl leading-relaxed mt-10 text-center"
+            className="text-lg xl:text-xl leading-relaxed mt-10 xl:my-16 text-center"
             dangerouslySetInnerHTML={{ __html: data.content }}
           />
 
