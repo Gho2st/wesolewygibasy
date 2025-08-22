@@ -55,9 +55,9 @@ export default function Places() {
       id="placówki"
       className="min-h-screen flex items-center justify-center overflow-x-hidden bg-white py-16 px-[9%]"
     >
-      <div className="w-full max-w-[1400px] flex flex-col items-center">
+      <div className="w-full max-w-[1400px] 2xl:max-w-full flex flex-col items-center">
         {/* Opis */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 2xl:mb-20">
           <h2 className="text-2xl sm:text-3xl xl:text-5xl font-bold mb-4 xl:mb-8">
             Nasze placówki w Krakowie –{" "}
             <span className="text-primary">znajdź</span> najbliższą!

@@ -33,11 +33,11 @@ export default function TextContainer() {
   ];
 
   return (
-    <section className="py-16 px-[9%]">
+    <section className="py-16 2xl:py-24 px-[9%]">
       <div className="flex justify-between gap-12 flex-col lg:flex-row">
         {/* Left content */}
         <div className="w-full lg:w-[70%]">
-          <h2 className="text-2xl sm:text-3xl 2xl:text-4xl font-bold mb-12 mt-4">
+          <h2 className="text-2xl sm:text-3xl 2xl:text-5xl font-bold mb-12 mt-4">
             Jak <span className="text-primary">dbamy</span> o dzieci w naszym
             żłobku?
           </h2>
@@ -49,7 +49,9 @@ export default function TextContainer() {
                 className={`rounded-2xl p-6 text-left shadow-lg ${card.bg}`}
               >
                 <div className="inline-block">{card.icon}</div>
-                <h3 className="mt-4 text-lg xl:text-2xl font-semibold">{card.title}</h3>
+                <h3 className="mt-4 text-lg xl:text-2xl font-semibold">
+                  {card.title}
+                </h3>
                 <p className="mt-2 text-base lg:text-lg">{card.text}</p>
               </div>
             ))}
