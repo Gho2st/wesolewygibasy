@@ -63,7 +63,7 @@ export default function Reviews() {
   };
 
   return (
-    <section className="py-16 overflow-x-hidden bg-white">
+    <section className="py-16 2xl:py-24 overflow-x-hidden bg-white">
       <div className="px-[9%]">
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl xl:text-5xl font-bold">
