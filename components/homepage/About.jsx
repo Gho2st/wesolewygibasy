@@ -39,7 +39,7 @@ export default function About() {
         {/* Image */}
         <motion.div
           variants={fadeIn}
-          className="w-full lg:w-[35%] flex justify-center items-center"
+          className="w-full lg:w-[35%] 2xl:w-1/2 flex justify-center items-center"
         >
           <Image
             src="/monkeys/4.gif"

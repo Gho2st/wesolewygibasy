@@ -36,7 +36,7 @@ export default function Age() {
         </div>
 
         {/* Obrazek */}
-        <div className="w-full lg:w-[35%] flex justify-center items-center">
+        <div className="w-full lg:w-[35%] 2xl:w-1/2 flex justify-center items-center">
           <Image
             src="/monkeys/6.gif"
             alt="Skacząca maskotka małpka Żłobka Wesołe Wygibasy w Krakowie"
