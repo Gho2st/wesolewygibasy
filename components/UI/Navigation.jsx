@@ -46,7 +46,7 @@ export default function Navigation() {
         {/* Background expanding circle */}
         <div
           className={`fixed top-[15px] right-5 w-[2.3rem] h-[2.3rem] rounded-full bg-gradient-to-r from-white to-pink-300 transition-transform duration-[800ms] ease-[cubic-bezier(0.86,0,0.07,1)] ${
-            menuOpen ? "scale-[150]" : "scale-100"
+            menuOpen ? "scale-[180]" : "scale-100"
           }`}
           style={{ zIndex: 10 }}
         ></div>

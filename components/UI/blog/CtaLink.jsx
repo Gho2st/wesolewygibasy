@@ -10,7 +10,7 @@ export default function CtaLink({ header, text, button, link }) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="max-w-4xl mx-auto bg-gradient-to-br from-[#15e1bc] to-[#0bb5a4] text-white rounded-3xl shadow-2xl p-8 md:p-14 text-center"
+        className="max-w-3xl mx-auto bg-gradient-to-br from-[#15e1bc] to-[#0bb5a4] text-white rounded-3xl shadow-2xl p-8 md:p-12 text-center"
       >
         <h2 className="text-2xl md:text-4xl font-bold leading-snug">
           {header}

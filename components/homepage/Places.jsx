@@ -10,7 +10,7 @@ export default function Places() {
       location: "Żłobek, Kraków",
       street: "ul. Łokietka 23",
       link: "zlobki/lokietka",
-      add: "Dotacja aktywny maluch \n Dotacja aktywnie w żłobku \n Opieka jest darmowa!!!",
+      add: "Dotacja urzędu miasta \n Dotacja aktywnie w żłobku \n Opieka jest darmowa!!!",
     },
     {
       image: "sliders/sliczna-slider/sl4.jpg",
@@ -19,7 +19,7 @@ export default function Places() {
       location: "Żłobek, Kraków",
       street: "ul. Śliczna 36/A",
       link: "zlobki/sliczna",
-      add: "Program Aktywny Maluch \n Dotacja aktywny maluch \n Dotacja aktywnie w żłobku",
+      add: "Program Aktywny Maluch \n Dotacja aktywnie w żłobku",
     },
     {
       image: "/zlobki/stanczyka.jpg",
@@ -28,7 +28,7 @@ export default function Places() {
       location: "Żłobek, Kraków",
       street: "ul. Stańczyka 8/LU3",
       link: "zlobki/stanczyka",
-      add: "Program Aktywny Maluch \n Dotacja aktywny maluch \n Dotacja aktywnie w żłobku",
+      add: "Program Aktywny Maluch  \n Dotacja aktywnie w żłobku",
     },
     {
       image: "/zlobki/glogera.jpg",
@@ -37,7 +37,7 @@ export default function Places() {
       location: "Żłobek, Kraków",
       street: "ul. Glogera 53/LU2",
       link: "zlobki/glogera",
-      add: "Dotacja aktywny maluch \n Dotacja aktywnie w żłobku",
+      add: "Dotacja urzędu miasta \n Dotacja aktywnie w żłobku",
     },
     {
       image: "/sliders/klub-malucha-slider/k2.jpg",
@@ -46,7 +46,7 @@ export default function Places() {
       location: "Żłobek, Kraków",
       street: "ul. Vetulaniego 8",
       link: "zlobki/vetulaniego",
-      add: "Dotacja aktywny maluch \n Dotacja aktywnie w żłobku",
+      add: "Dotacja urzędu miasta \n Dotacja aktywnie w żłobku",
     },
   ];
 

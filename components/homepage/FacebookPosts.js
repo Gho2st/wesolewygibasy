@@ -57,7 +57,7 @@ export default function FacebookPosts() {
       ) : posts.length === 0 ? (
         <p className="text-red-500 text-lg">Brak dostępnych postów.</p>
       ) : (
-        <ul className="grid gap-8 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 w-full">
+        <ul className="grid gap-8 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 w-full 2xl:w-3/4">
           {posts.map((post) => {
             const imageUrl =
               post.attachments?.data?.[0]?.media?.image?.src ?? null;

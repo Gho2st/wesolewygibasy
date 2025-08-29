@@ -35,15 +35,15 @@ const cardData = [
     link: { href: "/informacje-dla-rodzicow", text: "Informacje dla rodziców" },
   },
   {
-    title: "Adaptacja od sierpnia",
+    title: "Adaptacja od września",
     description:
-      "Rozpoczynamy proces adaptacyjny już od sierpnia, aby Twoje dziecko mogło łagodnie i bez stresu rozpocząć przygodę z nami.",
+      "Rozpoczynamy proces adaptacyjny już od września, aby Twoje dziecko mogło łagodnie i bez stresu rozpocząć przygodę z nami.",
     link: { href: "/adaptacja-w-zlobku", text: "Adaptajca w Żłobku" },
   },
   {
-    title: "Otwarcie w Sierpniu",
+    title: "Otwarcie w Październiku",
     description:
-      "Oficjalne otwarcie żłobka planujemy na sierpień 2025 – już teraz zapraszamy do zapoznania się z naszą ofertą i zapisów!",
+      "Oficjalne otwarcie żłobka planujemy na październik 2025 – już teraz zapraszamy do zapoznania się z naszą ofertą i zapisów!",
     link: { href: "/o-nas", text: "O Nas" },
   },
   {

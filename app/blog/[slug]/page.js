@@ -3,6 +3,7 @@ import Header from "@/components/UI/Header";
 import LineHeader from "@/components/UI/blog/LineHeader";
 import CtaLink from "@/components/UI/blog/CtaLink";
 import { notFound } from "next/navigation";
+import RecentPosts from "@/components/UI/blog/RecentPosts";
 
 // ⬇️ Generowanie ścieżek
 export async function generateStaticParams() {
@@ -19,7 +20,7 @@ export async function generateMetadata({ params }) {
 
   return {
     title: `${post.title} – Żłobek Wesołe Wygibasy w Krakowie`,
-    description: post.content.slice(0, 150) + "...",
+    description: post.contentPart1.slice(0, 150) + "...",
     alternates: {
       canonical: `/blog/${post.slug}`,
     },
@@ -34,21 +35,32 @@ export default async function BlogPostPage({ params }) {
 
   return (
     <>
-      <main className="pt-8 px-[9%]">
+      <main className="pt-8 px-[9%] 2xl:px-[13%]">
         <Header text={data.title} />
         <section className="py-8 2xl:py-20">
-          <LineHeader text={data.subtitle} />
-          <p
-            className="text-lg xl:text-xl leading-relaxed mt-10 xl:my-16 text-center"
-            dangerouslySetInnerHTML={{ __html: data.content }}
-          />
-
+          <div>
+            <LineHeader text={data.subtitle} layout="left" />
+            <p
+              className="text-lg text-left xl:text-xl leading-relaxed mt-10 xl:my-16 "
+              dangerouslySetInnerHTML={{ __html: data.contentPart1 }}
+            />
+          </div>
+          <div>
+            <LineHeader text={data.subtitle2} layout="right" />
+            <p
+              className="text-lg text-left xl:text-xl leading-relaxed mt-10 xl:my-16 "
+              dangerouslySetInnerHTML={{ __html: data.contentPart2 }}
+            />
+          </div>
           <CtaLink
             link={data.cta.link}
             button={data.cta.button}
             header={data.cta.header}
             text={data.cta.text}
           />
+          <div className="mt-16">
+            <RecentPosts blogPosts={blogPosts} layout="row" />
+          </div>
         </section>
       </main>
     </>
