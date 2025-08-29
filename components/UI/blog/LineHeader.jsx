@@ -14,7 +14,7 @@ export default function LineHeader({ text, layout = "center" }) {
 
   if (layout === "right") {
     return (
-      <div className="flex items-center gap-6 md:gap-10">
+      <div className="flex items-center gap-6 md:gap-10 mt-8">
         <div className={`${baseLineStyles} w-full`}></div>
         <h2 className={`${baseTextStyles}`}>{text}</h2>
       </div>
