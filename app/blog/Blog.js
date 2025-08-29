@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react"; // Add useRef and useEffect
 import { blogPosts } from "../data/blogData";
 import Header from "@/components/UI/Header";
 import BlogCard from "@/components/UI/blog/BlogCard";
@@ -11,6 +11,7 @@ export default function Blog() {
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 9; // Liczba artykułów na stronę
+  const articlesRef = useRef(null); // Add ref for articles section
 
   // Filtrowanie postów
   const filteredPosts = blogPosts.filter((post) =>
@@ -24,6 +25,13 @@ export default function Blog() {
 
   // Obliczanie liczby stron
   const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
+
+  // Scroll to articles section when page changes
+  useEffect(() => {
+    if (articlesRef.current) {
+      articlesRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [currentPage]); // Trigger on page change
 
   // Funkcje do zmiany strony
   const handleNextPage = () => {
@@ -51,7 +59,7 @@ export default function Blog() {
           dzieci. Dowiedz się więcej o adaptacji, rozwoju mowy, zajęciach
           edukacyjnych i innych tematach związanych ze żłobkiem.
         </p>
-        <div className="relative max-w-2xl mx-auto mt Doe-8">
+        <div className="relative max-w-2xl mx-auto mt-8">
           <div className="relative">
             <input
               type="text"
@@ -72,7 +80,9 @@ export default function Blog() {
         {/* ARTYKULY */}
         <div className="flex flex-col lg:flex-row gap-16 py-16">
           <div className="w-4/4 lg:w-2/3 2xl:w-3/4">
-            <LineHeader text="Nasze Artykuły" />
+            <div ref={articlesRef}>
+              <LineHeader text="Nasze Artykuły" />
+            </div>
             <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-8 2xl:gap-10 my-10 2xl:mt-16">
               {currentPosts.length > 0 ? (
                 currentPosts.map((post) => (

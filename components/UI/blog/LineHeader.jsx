@@ -1,6 +1,6 @@
 export default function LineHeader({ text, layout = "center" }) {
   const baseTextStyles =
-    "uppercase text-customBlue text-2xl sm:text-3xl md:text-4xl font-bold";
+    "uppercase text-customBlue text-2xl md:text-3xl 2xl:text-4xl font-bold";
   const baseLineStyles = "h-1 bg-primary";
 
   if (layout === "left") {
