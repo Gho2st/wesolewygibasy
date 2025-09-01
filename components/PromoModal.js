@@ -84,6 +84,7 @@ export default function PromoModal() {
               {/* Przycisk przekierowania */}
               <Button
                 text="Poznaj szczegóły!"
+                onClick={closeModal}
                 href="/zlobki/lokietka"
                 className="bg-yellow-400 text-purple-800 hover:bg-yellow-500 font-bold py-4 px-10 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl text-lg tracking-wide"
               />
