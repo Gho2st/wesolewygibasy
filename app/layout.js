@@ -3,6 +3,7 @@ import "./globals.css";
 import { GoogleTagManager } from "@next/third-parties/google";
 import Navigation from "@/components/UI/Navigation";
 import Footer from "@/components/UI/Footer";
+import PromoModal from "@/components/PromoModal";
 
 const font = Baloo_2({
   subsets: ["latin"],
@@ -50,6 +51,7 @@ export default function RootLayout({ children }) {
         <Navigation />
         {children}
         <Footer />
+        <PromoModal />
       </body>
     </html>
   );

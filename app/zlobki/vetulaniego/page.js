@@ -68,7 +68,7 @@ export default function VetulaniegoPage() {
           style={{ backgroundImage: `url("/zlobki/vetulaniego.webp")` }}
         >
           <div className="bg-white/95 backdrop-blur-sm shadow-xl rounded-xl text-center px-6 py-12 sm:px-10 max-w-3xl">
-            <h1 className="text-2xl sm:text-3xl font-semibold text-black">
+            <h1 className="text-2xl sm:text-3xl 2xl:text-4xl font-semibold text-black">
               Żłobek Kraków –{" "}
               <span className="text-blue-700">Wesołe Wygibasy</span> na ul.
               Vetulaniego 8

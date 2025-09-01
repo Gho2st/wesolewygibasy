@@ -6,7 +6,7 @@ export default function Places() {
     {
       image: "/sliders/lokietka-slider/5.webp",
       alt: "Zdjęcie przedstawiające wnętrze Żłobka na ulicy Łokietka",
-      title: "Żłobek na Łokietka - Wolne Miejsca",
+      title: "Ciekawe promocje na start w Żłobku na Łokietka!",
       location: "Żłobek, Kraków",
       street: "ul. Łokietka 23",
       link: "zlobki/lokietka",
