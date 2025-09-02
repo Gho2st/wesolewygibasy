@@ -124,44 +124,14 @@ export default function oNas() {
         </div>
       </div>
 
-      {/* Sekcja dla współpracującego psychologa */}
-      <div className="mt-20 text-center">
-        <h3 className="text-2xl md:text-4xl xl:text-5xl font-semibold mb-4 text-[#fa7070]">
-          Nasi Współpracownicy
-        </h3>
-        <div className="flex justify-center text-4xl text-[#fa7070] mb-8">
-          <FaPeopleGroup />
-        </div>
-        <div className="bg-white p-8 rounded-xl shadow-md max-w-2xl mx-auto text-left space-y-4 text-neutral-700">
-          <h4 className="text-xl font-bold text-[#08c6c3]">
-            Wsparcie - Wspólna Troska o Emocje Dziecka
-          </h4>
-          <p>Drodzy Państwo,</p>
-          <p>
-            nazywam się Julia Krakowska i jestem studentką ostatniego roku
-            Psychologii. W tym miejscu chciałabym Państwa zaprosić do współpracy
-            oraz wsparcia w rozwoju emocjonalnym i społecznym dziecka.
-          </p>
-          <p>
-            W swojej codziennej pracy stawiam na budowanie relacji opartej na
-            zrozumieniu i poczuciu bezpieczeństwa. Moja misja skupia się na
-            wsparciu, towarzyszeniu w trudnościach i odkrywaniu siebie bez
-            oceniania.
-          </p>
-          <p>
-            Na co dzień zajmuję się prowadzeniem zajęć z młodzieżą,
-            przygotowywaniem warsztatów oraz pracy indywidualnej, która opiera
-            się na wsparciu, towarzyszeniu w kryzysie oraz poznawaniu emocji.
-          </p>
-          <p>Dodatkowo jestem Trenerką TUS.</p>
-          <p>
-            Praca z dziećmi i młodzieżą jest przede wszystkim moją pasją -
-            jestem otwarta aby towarzyszyć Państwu w drodze do bezpiecznego
-            rozwoju i wspierania zarówno Państwa jak i dzieci.
-          </p>
-          <p>Zapraszam serdecznie do kontaktu!</p>
-          <p>e-mail: julia.krakowska.psychoedu@gmail.com</p>
-        </div>
+      <div className="w-1/1 md:w-1/2 2xl:w-1/4 mx-auto">
+        <Image
+          src={"/plakat.png"}
+          width={500}
+          height={500}
+          layout="responsive"
+          alt="plakat Julia Kochanowska"
+        />
       </div>
 
       {/* Kariera */}
