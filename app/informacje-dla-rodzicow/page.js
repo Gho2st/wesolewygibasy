@@ -65,7 +65,7 @@ export default function informacje() {
             </div>
             <div className="flex justify-center">
               <a
-                href="/STATUT-ZLOBEK.odt"
+                href="/statut.odt"
                 download
                 className="bg-[#fa7070] hover:bg-[#d86161] text-white font-bold py-2 px-4 rounded-md text-center w-1/2 transition-transform hover:scale-110"
               >
@@ -112,10 +112,10 @@ export default function informacje() {
             </div>
             <div className="flex justify-center">
               <a
-                href="/Standardy ochrony małoletnich przed krzywdzeniem w przedszkolu.pdf"
+                href="/standardy.docx"
                 className="bg-[#fa7070] hover:bg-[#d86161] text-white font-bold py-2 px-4 rounded-md text-center w-1/2 transition-transform hover:scale-110"
               >
-                Otwórz
+                Pobierz
               </a>
             </div>
           </div>
