@@ -4,6 +4,7 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import Navigation from "@/components/UI/Navigation";
 import Footer from "@/components/UI/Footer";
 import PromoModal from "@/components/PromoModal";
+import CookieConsent from "@/components/CookieConsent";
 
 const font = Baloo_2({
   subsets: ["latin"],
@@ -46,9 +47,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pl">
-      <GoogleTagManager gtmId="GTM-TDB9CR6D" />
+      {/* <GoogleTagManager gtmId="GTM-TDB9CR6D" /> */}
       <body className={font.className}>
         <Navigation />
+        <CookieConsent />
         {children}
         <Footer />
         <PromoModal />
