@@ -15,6 +15,7 @@ const staticPaths = [
   "/zlobki/sliczna",
   "/zlobki/stanczyka",
   "/zlobki/lokietka",
+  "/polityka-cookies",
 ];
 
 const blogPaths = blogPosts.map((post) => `/blog/${post.slug}`);
