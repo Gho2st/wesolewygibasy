@@ -204,7 +204,7 @@ const CookieConsent = () => {
             onClick={() => setShowSettings(!showSettings)}
             className="relative bg-gray-700 text-white px-4 md:px-6 py-1.5 md:py-2 rounded-full hover:bg-gray-600 transition-all duration-200 text-xs md:text-sm font-semibold shadow-md hover:shadow-lg transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-gray-500"
           >
-            Akceptuj wszystko
+            Dostosuj
             <span className="absolute inset-0 rounded-full opacity-0 hover:opacity-20 bg-gray-300 transition-opacity duration-200" />
           </button>
         </div>
