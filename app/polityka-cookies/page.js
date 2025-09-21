@@ -1,6 +1,15 @@
 import Header from "@/components/UI/Header";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Nasza Polityka Cookies - Żłobek Wesołe Wygibasy w Krakowie",
+  description:
+    "Dowiedz się, jak używamy plików cookies na wesolewygibasy.pl, aby zapewnić Ci najlepsze doświadczenie, personalizować treści i analizować ruch na stronie. Sprawdź, jak możesz zarządzać ustawieniami cookies!",
+  alternates: {
+    canonical: "/polityka-cookies",
+  },
+};
+
 export default function PolitykaCookies() {
   return (
     <>
