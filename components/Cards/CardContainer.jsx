@@ -72,7 +72,7 @@ const CardContainer = ({ cards }) => {
             <motion.div variants={fadeIn}>
               <Link
                 href={card.link.href}
-                className="text-black text-xl font-semibold shadow-lg bg-white/30 p-2 px-4 rounded-xl  hover:text-[#fa7070] transition-colors duration-200"
+                className="text-black text-xl font-semibold  hover:text-[#fa7070] transition-colors duration-200"
               >
                 {card.link.text}
               </Link>
