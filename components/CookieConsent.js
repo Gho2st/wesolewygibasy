@@ -10,7 +10,7 @@ const CookieConsent = () => {
     analytics_Storage: "denied",
   });
 
-  // Sprawdzenie istniejącej zgody i inicjalizacja GTM
+  // Sprawdzenie istniejącej zgody i inicjalizacja GTM oraz gtag.js
   useEffect(() => {
     console.log("CookieConsent: Checking localStorage for consent");
     const storedConsent = localStorage.getItem("consent");
@@ -26,22 +26,23 @@ const CookieConsent = () => {
     }
   }, []);
 
-  // Funkcja obsługująca zgodę dla GTM
+  // Funkcja obsługująca zgodę dla GTM i gtag.js
   const handleGTMConsent = (consentState) => {
     if (typeof window !== "undefined") {
+      // Obsługa GTM
       if (consentState.analytics_Storage === "granted") {
         console.log("CookieConsent: Loading GTM script");
         // Usuń istniejący skrypt GTM, jeśli istnieje
-        const existingScript = document.getElementById("gtm-script");
-        if (existingScript) {
-          existingScript.remove();
+        const existingGTMScript = document.getElementById("gtm-script");
+        if (existingGTMScript) {
+          existingGTMScript.remove();
         }
         // Dodaj skrypt GTM
-        const script = document.createElement("script");
-        script.id = "gtm-script";
-        script.async = true;
-        script.src = `https://www.googletagmanager.com/gtm.js?id=GTM-TDB9CR6D`;
-        document.head.appendChild(script);
+        const gtmScript = document.createElement("script");
+        gtmScript.id = "gtm-script";
+        gtmScript.async = true;
+        gtmScript.src = `https://www.googletagmanager.com/gtm.js?id=GTM-TDB9CR6D`;
+        document.head.appendChild(gtmScript);
 
         // Inicjalizacja GTM
         window.dataLayer = window.dataLayer || [];
@@ -54,20 +55,53 @@ const CookieConsent = () => {
         console.log(
           "CookieConsent: Analytics consent denied, removing GTM script"
         );
-        // Usuń skrypt GTM, jeśli istnieje
-        const existingScript = document.getElementById("gtm-script");
-        if (existingScript) {
-          existingScript.remove();
+        const existingGTMScript = document.getElementById("gtm-script");
+        if (existingGTMScript) {
+          existingGTMScript.remove();
         }
-        // Wyczyść dataLayer, jeśli istnieje
         if (window.dataLayer) {
           window.dataLayer = [];
         }
       }
+
+      // Obsługa gtag.js (Google Ads)
+      if (consentState.ad_Storage === "granted") {
+        console.log("CookieConsent: Loading gtag.js script for Google Ads");
+        // Usuń istniejący skrypt gtag.js, jeśli istnieje
+        const existingGtagScript = document.getElementById("gtag-script");
+        if (existingGtagScript) {
+          existingGtagScript.remove();
+        }
+        // Dodaj skrypt gtag.js
+        const gtagScript = document.createElement("script");
+        gtagScript.id = "gtag-script";
+        gtagScript.async = true;
+        gtagScript.src = `https://www.googletagmanager.com/gtag/js?id=AW-876056002`;
+        document.head.appendChild(gtagScript);
+
+        // Inicjalizacja gtag.js
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          window.dataLayer.push(arguments);
+        }
+        window.gtag = window.gtag || gtag;
+        window.gtag("js", new Date());
+        window.gtag("config", "AW-876056002");
+        console.log("CookieConsent: gtag.js initialized for AW-876056002");
+      } else {
+        console.log(
+          "CookieConsent: Ad consent denied, removing gtag.js script"
+        );
+        const existingGtagScript = document.getElementById("gtag-script");
+        if (existingGtagScript) {
+          existingGtagScript.remove();
+        }
+        // Nie czyścimy dataLayer, jeśli jest używane przez GTM
+      }
     }
   };
 
-  // Zapis zgody i aktualizacja GTM
+  // Zapis zgody i aktualizacja GTM oraz gtag.js
   const saveConsent = (newConsent) => {
     console.log("CookieConsent: Saving consent:", newConsent);
     setConsent(newConsent);
