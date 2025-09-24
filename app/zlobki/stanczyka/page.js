@@ -86,9 +86,7 @@ export default function Stanczyka() {
         >
           <div className="bg-white/90 backdrop-blur-sm shadow-xl rounded-xl text-center px-6 py-12 sm:px-10 max-w-3xl">
             <h1 className="text-2xl sm:text-3xl 2xl:text-4xl font-semibold text-black">
-              Żłobek Kraków -{" "}
-              <span className="text-blue-700">Wesołe Wygibasy</span> na ul.
-              Stańczyka 8/LU3
+              Żłobek Kraków Bronowice - Wesołe Wygibasy na Stańczyka
             </h1>
             <div className="mt-6 flex justify-center gap-4 flex-wrap">
               <Button text="O nas" href="/o-nas" />

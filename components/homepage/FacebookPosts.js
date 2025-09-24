@@ -38,7 +38,7 @@ export default function FacebookPosts() {
     <section className="min-h-screen bg-[#fffbf2] px-[9%] py-16 flex flex-col items-center overflow-x-hidden">
       <div className="text-center mb-12">
         <h2 className="text-3xl  xl:text-4xl 2xl:text-5xl font-semibold text-gray-900 relative inline-block mb-2">
-          Najnowsze <span className="text-primary">posty</span> z Facebooka
+          Aktualności z Żłobków w Krakowie
         </h2>
         <div className="flex justify-center mt-4">
           <a
@@ -50,6 +50,10 @@ export default function FacebookPosts() {
             <FaFacebookSquare size={40} color="#1877F2" />
           </a>
         </div>
+        <p className="mt-10 text-lg">
+          Sprawdź, co słychać w naszych żłobkach w Krakowie! Publikujemy zdjęcia
+          z zajęć i informacje o promocjach.
+        </p>
       </div>
 
       {isLoading ? (

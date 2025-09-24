@@ -13,24 +13,15 @@ const font = Baloo_2({
 
 export const metadata = {
   metadataBase: new URL("https://wesolewygibasy.pl"),
-  keywords: [
-    "żłobek Kraków",
-    "dotowany żłobek Kraków",
-    "żłobek w Krakowie",
-    "żłobek z dofinansowaniem Kraków",
-    "opieka dla dzieci Kraków",
-    "prywatny żłobek Kraków",
-    "najlepszy żłobek w Krakowie",
-  ],
   robots: {
     index: true,
     follow: true,
   },
   title: {
-    default: "Żłobek Kraków - Wesołe Wygibasy | Dotowana Placówka",
+    default: "Żłobki Kraków | Prywatny Żłobek Wesołe Wygibasy – 5 Placówek",
   },
   description:
-    "Szukasz dofinansowanego żłobka w Krakowie z czesnym 0 zł? Żłobek Wesołe Wygibasy oferuje zajęcia dodatkowe i pyszne zdrowe jedzenie dla Twojego dziecka!",
+    "Żłobki Kraków z dotacją – Wesołe Wygibasy! Opieka od 8 mies., 5 placówek w Bronowicach, Olszy. Ocena 4.9/5. Zapisz dziecko!",
   alternates: {
     canonical: "/",
   },
@@ -47,7 +38,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pl">
-      {/* <GoogleTagManager gtmId="GTM-TDB9CR6D" /> */}
       <body className={font.className}>
         <Navigation />
         <CookieConsent />

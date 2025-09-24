@@ -60,17 +60,17 @@ export default function About() {
             variants={fadeIn}
             className="text-3xl sm:text-3xl md:text-4xl xl:text-4xl 2xl:text-4xl md:leading-snug font-bold mb-6"
           >
-            Dlaczego warto zapisać dziecko do{" "}
-            <span className="text-primary">Wesołych Wygibasów?</span>
+            Żłobki Kraków – 5 Placówek w Prądniku Białym, Bronowicach, Krowodrzy
+            i Olszy
           </motion.h2>
 
           <motion.p
             variants={fadeIn}
             className="text-base sm:text-lg md:text-xl xl:text-2xl font-normal mb-6 xl:my-10"
           >
-            Nasz priorytet to profesjonalna i pełna troski opieka nad dziećmi.
-            To żłobek, gdzie Twoje dziecko znajdzie nie tylko bezpieczeństwo,
-            ale również wsparcie w rozwoju.
+            Znajdź żłobek w Krakowie blisko Ciebie – nasze placówki w Prądniku
+            Białym, Bronowicach, Krowodrzy, Olszy i Zielonkach zapewniają
+            profesjonalną opiekę i rozwój dla Twojego dziecka.
           </motion.p>
 
           {/* List Items */}
@@ -98,7 +98,9 @@ export default function About() {
                     }}
                   />
                 </div>
-                <p className="font-medium text-base sm:text-lg md:text-xl">{item}</p>
+                <p className="font-medium text-base sm:text-lg md:text-xl">
+                  {item}
+                </p>
               </motion.div>
             ))}
           </motion.div>

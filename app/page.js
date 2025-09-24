@@ -6,6 +6,7 @@ import Reviews from "@/components/homepage/Reviews";
 import TextContainer from "@/components/homepage/TextContainer";
 import Age from "@/components/homepage/Age";
 import FacebookPosts from "@/components/homepage/FacebookPosts";
+import Rekrutacja from "@/components/homepage/Rekru";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <main>
         <Baner />
         <About />
+        <Rekrutacja />
         <FacebookPosts />
         <TextContainer />
         <Age />

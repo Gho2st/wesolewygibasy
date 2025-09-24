@@ -64,11 +64,12 @@ export default function Baner() {
               transition={{ delay: 0.2 }}
               className="mt-6 text-lg font-normal sm:text-xl 2xl:text-2xl w-[85%] max-[620px]:w-full"
             >
-              Wesołe Wygibasy to placówka, która powstała z pasji, troski i
-              miłości do dzieci. Znajdujemy się w dogodnych lokalizacjach,
-              takich jak Prądnik Biały, Olsza, Krowodrza oraz Bronowice –
-              idealne dla rodziców z różnych dzielnic Krakowa oraz okolicznych
-              miejscowości.
+              Wesołe Wygibasy to najlepsze żłobki w Krakowie, stworzone z pasji
+              i miłości do dzieci. Oferujemy troskliwą opiekę w 5 placówkach:
+              Prądnik Biały (ul. Łokietka), Bronowice (ul. Stańczyka), Krowodrza
+              (ul. Glogera), Olsza (ul. Śliczna) oraz Klub Malucha na
+              Vetulaniego. Nasze żłobki w Krakowie wspierają rozwój dzieci od 8.
+              miesiąca życia z dotacjami miejskimi.
             </motion.p>
             <motion.div
               className="mt-8 flex"

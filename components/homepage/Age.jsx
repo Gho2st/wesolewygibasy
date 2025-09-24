@@ -15,15 +15,15 @@ export default function Age() {
           </h2>
 
           <p className="text-base sm:text-lg md:text-xl font-normal text-black mb-4 leading-relaxed">
-            Szukasz miejsca, gdzie Twoje dziecko będzie czuło się bezpiecznie,
-            szczęśliwie i komfortowo? W naszym żłobku dbamy o ciepłą atmosferę,
-            troskliwą opiekę i rozwój dostosowany do wieku dziecka.
+            Szukasz żłobka w Krakowie, gdzie Twoje dziecko będzie czuło się
+            bezpiecznie i szczęśliwie? W Wesołych Wygibasach dbamy o ciepłą
+            atmosferę, troskliwą opiekę i rozwój dostosowany do wieku dziecka.
             <br />
             <br />
             Każdy dzień to nowe odkrycia: zabawy sensoryczne, muzyczne, ruchowe,
-            a także pierwsze przyjaźnie i wspólne posiłki w przyjaznym
-            otoczeniu. Zapewniamy przytulne miejsce do odpoczynku, a harmonijny
-            plan dnia pomaga maluchom czuć się pewnie i spokojnie.
+            pierwsze przyjaźnie i wspólne posiłki w przyjaznym otoczeniu.
+            Zapewniamy przytulne miejsce do odpoczynku, a harmonijny plan dnia
+            pomaga maluchom czuć się pewnie i spokojnie.
             <span className="block text-gray-600 font-semibold mt-4">
               *W placówce na Vetulaniego od 1 roku życia
             </span>

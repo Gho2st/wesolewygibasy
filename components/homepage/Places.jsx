@@ -59,13 +59,11 @@ export default function Places() {
         {/* Opis */}
         <div className="text-center mb-12 2xl:mb-20">
           <h2 className="text-2xl sm:text-3xl xl:text-5xl font-bold mb-4 xl:mb-8">
-            Nasze placówki w Krakowie –{" "}
-            <span className="text-primary">znajdź</span> najbliższą!
+            Nasze Żłobki w Krakowie – Znajdź Najbliższy!
           </h2>
           <p className="text-base sm:text-lg xl:text-xl font-normal text-gray-700 max-w-3xl mx-auto">
-            Mamy 5 placówek w różnych częściach Krakowa – każda z nich oferuje
-            tę samą wysoką jakość opieki, ale w unikalnej lokalizacji. Sprawdź
-            szczegóły i wybierz żłobek dla swojego dziecka!
+            Mamy 5 placówek w Krakowie, każda z wysoką jakością opieki w
+            unikalnej lokalizacji. Wybierz żłobek dla swojego dziecka!
           </p>
         </div>
 

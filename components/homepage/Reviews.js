@@ -67,8 +67,7 @@ export default function Reviews() {
       <div className="px-[9%]">
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl xl:text-5xl font-bold">
-            Rodzice nam <span className="text-primary">ufają</span> - ocena
-            4.9/5!
+            Najlepsze Żłobki w Krakowie – Ocena Rodziców 4.9/5
           </h2>
           <p className="mt-4 text-lg xl:text-xl font-normal max-w-3xl mx-auto text-gray-700">
             Dzięki troskliwej opiece i wysokiemu standardowi edukacji zdobyliśmy

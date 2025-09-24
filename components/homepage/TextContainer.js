@@ -14,7 +14,7 @@ export default function TextContainer() {
     },
     {
       title: "Dogodna lokalizacja w Krakowie",
-      text: `Nasze placówki są łatwo dostępne dla mieszkańców Prądnika Białego, Bronowic, Krowodrzy i Zielonek. Oddział na ul. Ślicznej w Olszy to doskonały wybór dla rodziców z osiedla Oficerskiego, Grzegórzek i Avia.`,
+      text: `Nasze żłobki w Krakowie są łatwo dostępne dla mieszkańców Prądnika Białego, Bronowic, Krowodrzy, Olszy i Zielonek. Oddział na ul. Ślicznej to idealny wybór dla rodziców z osiedla Oficerskiego, Grzegórzek i Avia.`,
       bg: "bg-[#e8f0fe]",
       icon: <FaLocationDot className="text-[#5493fe] w-9 h-9" />,
     },
