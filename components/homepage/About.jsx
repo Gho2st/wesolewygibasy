@@ -68,9 +68,9 @@ export default function About() {
             variants={fadeIn}
             className="text-base sm:text-lg md:text-xl xl:text-2xl font-normal mb-6 xl:my-10"
           >
-            Znajdź żłobek w Krakowie blisko Ciebie – nasze placówki w Prądniku
-            Białym, Bronowicach, Krowodrzy, Olszy i Zielonkach zapewniają
-            profesjonalną opiekę i rozwój dla Twojego dziecka.
+            Znajdź idealny żłobek w Krakowie dla Twojego dziecka! Nasze placówki
+            oferują profesjonalną opiekę, wspierającą rozwój maluchów w
+            przyjaznym i bezpiecznym środowisku.
           </motion.p>
 
           {/* List Items */}

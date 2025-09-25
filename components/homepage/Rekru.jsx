@@ -17,9 +17,7 @@ export default function Rekrutacja() {
         <p className="text-lg md:text-xl text-gray-700 mb-12 text-center leading-relaxed max-w-3xl mx-auto">
           Trwa <strong>rekrutacja do żłobków w Krakowie</strong>! Zapisz swoje
           dziecko do Wesołych Wygibasów i zapewnij mu profesjonalną opiekę w
-          jednej z naszych placówek: Prądnik Biały (ul. Łokietka), Bronowice
-          (ul. Stańczyka), Krowodrza (ul. Glogera), Olsza (ul. Śliczna) lub Klub
-          Malucha na Vetulaniego. Oferujemy <strong>darmową opiekę</strong>{" "}
+          jednej z naszych placówek. Oferujemy <strong>darmową opiekę</strong>{" "}
           dzięki dotacjom miejskim, zajęcia dodatkowe wspierające rozwój i
           zdrowe, zbilansowane posiłki dla najmłodszych.
         </p>

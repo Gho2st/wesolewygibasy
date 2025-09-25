@@ -53,7 +53,7 @@ export default function Places() {
   return (
     <section
       id="placówki"
-      className="min-h-screen flex items-center justify-center overflow-x-hidden bg-white py-16 px-[9%]"
+      className="min-h-screen flex items-center justify-center overflow-x-hidden bg-white py-16 px-[9%] 2xl:px-[16%]"
     >
       <div className="w-full max-w-[1400px] 2xl:max-w-full flex flex-col items-center">
         {/* Opis */}

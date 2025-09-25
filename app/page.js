@@ -15,11 +15,11 @@ export default function Home() {
         <Baner />
         <About />
         <Rekrutacja />
+        <Places />
         <FacebookPosts />
         <TextContainer />
         <Age />
         <Reviews />
-        <Places />
       </main>
     </>
   );
