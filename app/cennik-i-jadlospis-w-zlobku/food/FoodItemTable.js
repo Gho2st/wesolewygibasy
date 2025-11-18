@@ -6,42 +6,48 @@ export default function FoodItemTable() {
   const menu = {
     Poniedziałek: {
       breakfast:
-        "Bułeczka pszenna 40g z masłem, różowy twarożek z czarną porzeczką (twaróg, śmietana) 25g, herbatka z cytryną kcal 260",
-      secondBreakfast: "Ananas",
+        "Chleb z ziarnami 30g z masłem, żółtym serem 20g, pomidor malinowy, jogurcik naturalny z owocami 100g, herbatka z owoców leśnych 200ml kcal 240",
+      secondBreakfast: "Mandarynka kcal 30",
       lunch:
-        "Zupa jarzynowa z kluseczkami 200ml (seler, masło, śmietana, pszenica) kcal 130 Ragout z kurczaka z warzywami 100g, kasza pęczak 100g, kompot 200ml kcal 360",
-      snack: "Krem bananowy ze szpinakiem 100g, wafle ryżowe kcal 210",
+        "Zupa ogórkowa z ryżem 200ml (seler, masło, śmietana) kcal 115 Klopsiki z łopatki i kaszy gryczanej 2szt(z łopatki wieprz., jaja, zioła, czosnek, kasza), makaron świderki tricolore100g(pszenica, szpinak w proszku, pomidor w proszku), sos warzywny 70g (cukinia, pomidory, papryka, pieczarki, marchew), kompot 200ml kcal 300",
+      snack:
+        "Mus z kaszki manny na mleku z jabłkami i brzoskwinią 120g (kaszka manna, mleko), wafle ryżowe pełne ziarno kcal 190",
     },
     Wtorek: {
       breakfast:
-        "Zupa mleczna z płatkami kukurydzianymi, chleb z masłem i szynką, ogórek kcal 270",
-      secondBreakfast: "Śliwki",
+        "Płatki jaglane na mleku z morelami suszonymi150ml (mleko), chleb mieszany30g (pszenica, żyto) z masłem, pastą z jaj i serka śmietankowego20g (twaróg, śmietana), ogórek, herbatka kcal 240",
+      secondBreakfast: "Jabłko kcal 30",
       lunch:
-        "Rosołek z makaronem, gołąbki bez zawijania, ziemniaki, kompot kcal 370",
-      snack: "Ciasto czekoladowe z gruszką kcal 220",
+        "Rosołek z makaronem i natką 200ml (kurczak, indyk,seler, pszenica) kcal 115 Bitki schabowe 60g w sosie własnym, ziemniaczki z koperkiem100g, duszona kapusta z marchewką (kapusta kiszona , włoska) 60g, kompot200ml kcal 310",
+      snack:
+        "Risotto na mleku z bananami 120g (mleko, wanilia, ryż arborio, banany) kcal 180",
     },
     Środa: {
       breakfast:
-        "Bułka z masłem i szynką, pomidor, rukola, herbatka z cytryną kcal 260",
-      secondBreakfast: "Pół banana, wafle kukurydziane",
+        "bułka owsiana 40g (płatki owsiane, pszenica) z masłem, żółtym serem10g, szynką z gotowanego indyka20g, roszponką i ogórkiem kiszonym, herbatka rooibos 200ml kcal 250",
+      secondBreakfast: "banan kcal 30",
       lunch:
-        "Barszcz biały z jajkiem i ziemniakami, naleśniki z serkiem, mus owocowy, kompot kcal 340",
-      snack: "Chleb z kiełbasą i ogórkiem kiszonym, lemoniada kcal 230",
+        "Żurek z jajkiem i ziemniaczkami 200ml (seler, zakwas żytni, śmietana) kcal 120 Racuszki z dyni, twarogu i jabłek 2szt (mąka pszenna, mąka orkiszowa, twaróg, jaja, cynamon), mus z pieczonego jabłka 30g, kompot 200ml kcal 300",
+      snack:
+        "chleb żytni 30g (gluten) z masłem, domowym hummusem z cieciorki, pomidorów suszonych i ajvaru20g, pomidor malinowy, sok z przetartych owoców i warzyw 100ml kcal 200",
     },
     Czwartek: {
       breakfast:
-        "Zupa mleczna z płatkami, chleb z masłem i kiełbasą, ogórek kcal 270",
-      secondBreakfast: "Gruszka",
-      lunch: "Zupa ogórkowa, klopsiki z ryżem i warzywami, kompot kcal 390",
-      snack: "Ciastka owsiane z koktajlem z brzoskwini kcal 250",
+        "Zupa mleczna z płatkami kukurydzianymi pełne ziarno150ml/20g, chleb graham 30g(pszenica, żyto) z masłem, szynką z kurcząt20g i ogórkiem kcal 240",
+      secondBreakfast: "Gruszka kcal 30",
+      lunch:
+        "Zupa jarzynowa z ziemniaczkami i koperkiem 200ml (seler, masło, śmietana) kcal 115 Pieczeń z indyka w sosie własnym z marchewką i kolendrą60g/50ml, kasza bulgur (pszenica)100g, pieczone buraczki duszone60g (śmietana), kompot 200ml kcal 300",
+      snack:
+        "jogurt grecki z frużeliną wiśniową 120g/15g, pieczywo chrupkie żytnie kcal 190",
     },
     Piątek: {
       breakfast:
-        "Kajzerka z pastą jajeczną, pomidor, herbatka z pigwą kcal 260",
-      secondBreakfast: "Jabłko",
+        "kajzerka30g (pszenica) z masłem, serkiem śmietankowym Wieluń 20g, pomidor malinowy, jajecznica na parze 40g (jaja), herbatka z cytryną200ml kcal 240",
+      secondBreakfast: "Jabłko kcal 30",
       lunch:
-        "Krem z pomidorów z grzankami, kotleciki rybne z ziemniakami, surówka, kompot kcal 350",
-      snack: "Budyń ryżowy z bananem kcal 200",
+        "Zupa krem z białych warzyw z grzankami pełnoziarnistymi 200ml(seler, masło, śmietana, pszenica, żyto) kcal 120 Paluszki z filetów rybnych60g(dorsz, mintaj, bułka tarta) ziemniaczki100g, marchewka baby z zielonym groszkiem na parze60g, kompot200ml kcal 300",
+      snack:
+        "domowe ciastka owsiane z żurawiną i rodzynkami (płatki owsiane, jaja), maślanka naturalna 100ml kcal 200",
     },
   };
 
