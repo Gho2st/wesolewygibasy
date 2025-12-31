@@ -4,7 +4,7 @@ import Button2 from "@/components/UI/Button2";
 
 export default function Adaptacja() {
   return (
-    <div className="px-[9%]">
+    <div className="">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-10 mt-16 pb-24">
         {/* Obrazek */}
         <div className="md:col-span-2 flex justify-center">
@@ -21,7 +21,7 @@ export default function Adaptacja() {
 
         {/* Tekst */}
         <div className="md:col-span-3 flex items-center">
-          <div className="w-[80%] md:w-full pb-8">
+          <div className="md:w-full pb-8">
             <article>
               <p className="text-[#08c6c3] font-bold text-lg xl:text-2xl">
                 Poznaj. Odkryj. Proces.
