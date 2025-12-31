@@ -75,11 +75,8 @@ export default function PromoModal() {
                 Bajkowa Promocja dla Maluszków!
               </h2>
               <p className="text-lg text-gray-700 mb-6 font-semibold leading-relaxed">
-                Zapisz dziecko we wrześniu lub październiku i skorzystaj z
-                wyjątkowej oferty: <br />
-                <span className="font-bold text-purple-800">
-                  Czesne 0 zł, Wpisowe 0 zł, Wyżywienie 0 zł przez 2 miesiące!
-                </span>
+                Zapisz dziecko i skorzystaj z wyjątkowej oferty: <br />
+                <span className="font-bold text-purple-800">Czesne 0 zł</span>
               </p>
               {/* Przycisk przekierowania */}
               <Button

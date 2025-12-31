@@ -6,7 +6,6 @@ import DayScheduleLokietka from "@/components/Info/DayScheduleLokietka";
 import CardContainer from "@/components/Cards/CardContainer";
 import NurseryHeader from "@/components/nursery/header";
 import ParkSlider from "@/components/UI/slider/parkSlider";
-import Promo from "./promo";
 
 export const metadata = {
   title: "Żłobek na Ulicy Łokietka w Krakowie - Wesołe Wygibasy",
@@ -87,8 +86,6 @@ export default function Lokietka() {
           </div>
         </div>
       </section>
-
-      <Promo />
 
       {/* Karty + Header */}
       <section className="pt-20 px-[9%]">
