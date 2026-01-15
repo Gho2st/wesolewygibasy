@@ -9,14 +9,14 @@ import CardContainer from "@/components/Cards/CardContainer";
 import NurseryHeader from "@/components/nursery/header";
 
 export const metadata = {
-  title: "Żłobek Kraków - Wesołe Wygibasy na ul. Stańczyka, Bronowice",
+  title: "Żłobek Kraków Bronowice | Wesołe Wygibasy ul. Stańczyka",
   alternates: {
     canonical: "/zlobki/stanczyka",
   },
   keywords:
     "Żłobek na Bronowicach, nowoczesny, dotowany, Żłobek na Stańczyka, bronowice, zielonki, nowy Żłobek, dotacja, aktywny maluch",
   description:
-    "Zobacz żłobek Wesołe Wygibasy na ul. Stańczyka w Krakowie. Przyjazne otoczenie, profesjonalna opieka i kreatywne zajęcia dla dzieci.",
+    "Szukasz żłobka na Bronowicach? Wesołe Wygibasy przy ul. Stańczyka to troskliwa opieka i domowa atmosfera. Trwają zapisy! Sprawdź cennik i umów wizytę.",
 };
 
 const images = [
