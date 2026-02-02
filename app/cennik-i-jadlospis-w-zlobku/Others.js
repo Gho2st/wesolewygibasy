@@ -7,7 +7,7 @@ export default function Others() {
             <th className="px-4 py-2">Miesiąc</th>
             <th className="px-4 py-2">Czesne</th>
             <th className="px-4 py-2">Dotacja U.M.</th>
-            <th className="px-4 py-2">Aktywnie w Żłobku</th>
+            <th className="px-4 py-2">Dotacja Aktywnie w Żłobku</th>
             <th className="px-4 py-2 bg-blue-600">Wpłata na konto</th>
             <th className="px-4 py-2">Ostateczne opłaty</th>
           </tr>
@@ -15,36 +15,46 @@ export default function Others() {
         <tbody>
           {[
             [
-              "Wrzesień 2025",
+              "Styczeń 2026",
               "2400 zł",
-              "770 zł",
+              "580 zł",
               "1500 zł",
-              "1630 zł",
-              "130 zł",
+              "1820 zł",
+              "320 zł",
+            ],
+            ["Luty 2026", "2400 zł", "580 zł", "1500 zł", "1820 zł", "320 zł"],
+            [
+              "Marzec 2026",
+              "2400 zł",
+              "638 zł",
+              "1500 zł",
+              "1762 zł",
+              "262 zł",
             ],
             [
-              "Październik 2025",
+              "Kwiecień 2026",
               "2400 zł",
-              "805 zł",
+              "609 zł",
               "1500 zł",
-              "1595 zł",
-              "95 zł",
+              "1791 zł",
+              "291 zł",
+            ],
+            ["Maj 2026", "2400 zł", "580 zł", "1500 zł", "1820 zł", "320 zł"],
+            [
+              "Czerwiec 2026",
+              "2400 zł",
+              "609 zł",
+              "1500 zł",
+              "1791 zł",
+              "291 zł",
             ],
             [
-              "Listopad 2025",
+              "Lipiec 2026",
               "2400 zł",
-              "665 zł",
+              "667 zł",
               "1500 zł",
-              "1735 zł",
-              "235 zł",
-            ],
-            [
-              "Grudzień 2025",
-              "2400 zł",
-              "700 zł",
-              "1500 zł",
-              "1700 zł",
-              "200 zł",
+              "1733 zł",
+              "233 zł",
             ],
           ].map((row, index) => (
             <tr
@@ -62,22 +72,14 @@ export default function Others() {
           ))}
         </tbody>
       </table>
-
-      <h3 className="mt-8 text-center text-lg font-semibold underline">
-        Placówka realizuje również świadczenia ZUS z programu 400+
-      </h3>
+      <p className="mt-6 mb-4 text-blue-600 font-bold text-center text-base">
+        Zajęcia dodatkowe płatne 150 zł / miesiąc
+      </p>
 
       <div className="mt-6 text-base text-black max-w-3xl mx-auto text-center">
         <p className="font-semibold">
           Kwota zwracana ok. 20 dnia następnego miesiąca (np. za lipiec zwrot
           ok. 20 sierpnia)
-        </p>
-
-        <p className="mt-4">
-          Od kwoty z rubryki „wpłata na konto” rodzicom posiadającym w placówce
-          „pierwsze dziecko” przysługuje świadczenie ZUS w wysokości 400 zł,
-          zwracane na konto z miesięcznym opóźnieniem (np. za wrzesień zwrot ok.
-          20 października).
         </p>
       </div>
     </div>

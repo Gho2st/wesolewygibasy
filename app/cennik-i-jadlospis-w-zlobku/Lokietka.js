@@ -7,7 +7,7 @@ export default function Lokietka() {
             <th className="p-2 border">Miesiąc</th>
             <th className="p-2 border">Czesne</th>
             <th className="p-2 border">Dotacja U.M</th>
-            <th className="p-2 border">Dotacja Aktywnie w Żłobku*</th>
+            <th className="p-2 border">Dotacja Aktywnie w Żłobku</th>
             <th className="p-2 border bg-blue-600">Wpłata na konto</th>
             <th className="p-2 border">Ostateczne opłaty</th>
           </tr>
@@ -15,28 +15,60 @@ export default function Lokietka() {
         <tbody>
           {[
             {
-              month: "Październik 2025",
+              month: "Styczeń 2026",
               tuition: "2200 zł",
-              um: "805 zł",
-              active: "1395 zł",
-              pay: "1395 zł",
-              final: "0 zł",
+              um: "580 zł",
+              active: "1500 zł",
+              pay: "1620 zł",
+              final: "120 zł",
             },
             {
-              month: "Listopad 2025",
+              month: "Luty 2026",
               tuition: "2200 zł",
-              um: "665 zł",
+              um: "580 zł",
               active: "1500 zł",
-              pay: "1535 zł",
-              final: "35 zł",
+              pay: "1620 zł",
+              final: "120 zł",
             },
             {
-              month: "Grudzień 2025",
+              month: "Marzec 2026",
               tuition: "2200 zł",
-              um: "700 zł",
+              um: "638 zł",
               active: "1500 zł",
-              pay: "1500 zł",
-              final: "0 zł",
+              pay: "1562 zł",
+              final: "62 zł",
+            },
+            {
+              month: "Kwiecień 2026",
+              tuition: "2200 zł",
+              um: "609 zł",
+              active: "1500 zł",
+              pay: "1591 zł",
+              final: "91 zł",
+            },
+            {
+              month: "Maj 2026",
+              tuition: "2200 zł",
+              um: "580 zł",
+              active: "1500 zł",
+              pay: "1620 zł",
+              final: "120 zł",
+            },
+            {
+              month: "Czerwiec 2026",
+              tuition: "2200 zł",
+              um: "609 zł",
+              active: "1500 zł",
+              pay: "1591 zł",
+              final: "91 zł",
+            },
+            {
+              month: "Lipiec 2026",
+              tuition: "2200 zł",
+              um: "667 zł",
+              active: "1500 zł",
+              pay: "1533 zł",
+              final: "33 zł",
             },
           ].map((row, index) => (
             <tr
@@ -66,8 +98,8 @@ export default function Lokietka() {
       </p>
 
       <h3 className="text-center text-teal-500 text-base font-bold underline mt-6 mb-12">
-        Czesne w całości pokrywane z projektu Aktywny Maluch oraz dotacji urzędu
-        miasta Kraków
+        Czesne pokrywane z projektu Aktywny Maluch oraz dotacji urzędu miasta
+        Kraków
       </h3>
     </div>
   );

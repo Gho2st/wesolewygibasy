@@ -8,7 +8,7 @@ export default function Second() {
             <th className="p-2 border">Czesne</th>
             <th className="p-2 border">Dotacja U.M</th>
             <th className="p-2 border">Dotacja Maluch</th>
-            <th className="p-2 border">Aktywnie w Żłobku</th>
+            <th className="p-2 border">Dotacja Aktywnie w Żłobku</th>
             <th className="p-2 border bg-blue-600">Wpłata na konto</th>
             <th className="p-2 border">Ostateczne opłaty</th>
           </tr>
@@ -16,57 +16,57 @@ export default function Second() {
         <tbody>
           {[
             {
-              month: "Lipiec 2025",
-              tuition: "2250 zł",
-              um: "805 zł",
+              month: "Styczeń 2026",
+              tuition: "2300 zł",
+              um: "580 zł",
               maluch: "836 zł",
-              active: "609 zł",
-              pay: "609 zł",
+              active: "884 zł",
+              pay: "884 zł",
               final: "0 zł",
             },
             {
-              month: "Sierpień 2025",
-              tuition: "2250 zł",
-              um: "700 zł",
+              month: "Luty 2026",
+              tuition: "2300 zł",
+              um: "580 zł",
               maluch: "836 zł",
-              active: "714 zł",
-              pay: "714 zł",
+              active: "884 zł",
+              pay: "884 zł",
               final: "0 zł",
             },
             {
-              month: "Wrzesień 2025",
-              tuition: "2250 zł",
-              um: "770 zł",
+              month: "Marzec 2026",
+              tuition: "2300 zł",
+              um: "638 zł",
               maluch: "836 zł",
-              active: "644 zł",
-              pay: "644 zł",
+              active: "826 zł",
+              pay: "826 zł",
               final: "0 zł",
             },
             {
-              month: "Październik 2025",
-              tuition: "2250 zł",
-              um: "805 zł",
+              month: "Kwiecień 2026",
+              tuition: "2300 zł",
+              um: "609 zł",
               maluch: "836 zł",
-              active: "609 zł",
-              pay: "609 zł",
+              active: "855 zł",
+              pay: "855 zł",
               final: "0 zł",
             },
             {
-              month: "Listopad 2025",
-              tuition: "2250 zł",
-              um: "665 zł",
+              month: "Maj 2026",
+              tuition: "2300 zł",
+              um: "580 zł",
               maluch: "836 zł",
-              active: "749 zł",
-              pay: "749 zł",
+              active: "884 zł",
+              pay: "884 zł",
               final: "0 zł",
             },
             {
-              month: "Grudzień 2025",
-              tuition: "2250 zł",
-              um: "700 zł",
+              month: "Czerwiec 2026",
+              tuition: "2300 zł",
+              um: "609 zł",
               maluch: "836 zł",
-              active: "714 zł",
-              pay: "714 zł",
+              active: "855 zł",
+              pay: "855 zł",
               final: "0 zł",
             },
           ].map((row, index) => (
@@ -103,7 +103,7 @@ export default function Second() {
 
       <h3 className="text-center text-teal-500 text-base font-bold underline mt-6 mb-12">
         Czesne w całości pokrywane z projektu maluch + 2022–2029 oraz dotacji
-        urzędu miasta Kraków
+        urzędu miasta Kraków i Aktywny Maluch
       </h3>
     </div>
   );

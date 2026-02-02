@@ -37,7 +37,7 @@ export default function Pricing() {
         </Link>
         <p className="text-justify">
           W dniu zawarcia umowy Rodzic/Opiekun Prawny zobowiązany jest do
-          wniesienia opłaty wpisowej (administracyjnej) w wysokości 600,00 zł
+          wniesienia opłaty wpisowej (administracyjnej) w wysokości 800,00 zł
           (słownie: sześćset złotych). Opłata ta obejmuje:
         </p>
         <ul className="list-disc space-y-3 pl-6">
