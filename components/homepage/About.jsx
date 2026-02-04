@@ -3,7 +3,7 @@ import Link from "next/link";
 import Button from "../UI/Button";
 import Button2 from "../UI/Button2";
 import Image from "next/image";
-import { FaCircleCheck } from "react-icons/fa6";
+import { Heart, Stars, Baby, ShieldCheck, Sun } from "lucide-react";
 import { motion } from "framer-motion";
 
 const containerVariants = {
@@ -25,6 +25,34 @@ const fadeIn = {
   },
 };
 
+const features = [
+  {
+    title: "Rodzinna atmosfera",
+    desc: "Bezpieczne i inspirujące środowisko.",
+    icon: Heart,
+    color: "#0096da",
+  },
+
+  {
+    title: "Czas na zabawę",
+    desc: "Rytmika, muzyka i odkrywanie świata.",
+    icon: Sun,
+    color: "#ffca28",
+  },
+  {
+    title: "Łagodna adaptacja",
+    desc: "Spokojne wejście w nowy etap życia.",
+    icon: Baby,
+    color: "#04C9C8",
+  },
+  {
+    title: "Bezpieczeństwo",
+    desc: "Oficjalny rejestr i najwyższe standardy.",
+    icon: ShieldCheck,
+    color: "#7C9BE6",
+  },
+];
+
 export default function About() {
   return (
     <motion.section
@@ -33,17 +61,16 @@ export default function About() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
-      className="min-h-screen flex justify-center items-center overflow-x-hidden px-[9%] py-16"
+      className="flex justify-center  items-center overflow-x-hidden px-[6%] py-4 xl:py-24"
     >
-      <div className="flex flex-col lg:flex-row justify-between gap-12 w-full max-w-[1400px]">
-        {/* Image */}
+      <div className="flex flex-col-reverse lg:flex-row justify-between gap-12 2xl:gap-24 w-full max-w-8xl">
         <motion.div
           variants={fadeIn}
-          className="w-full lg:w-[35%] 2xl:w-1/2 flex justify-center items-center"
+          className="w-full lg:w-[35%] 2xl:w-1/1 flex justify-center items-center"
         >
           <Image
-            src="/monkeys/4.gif"
-            alt="Skacząca maskotka małpka"
+            src="/grafiki/about.svg"
+            alt="Uśmiechające się dzieci podczas zabawy"
             width={100}
             height={100}
             className="w-full h-auto"
@@ -54,53 +81,49 @@ export default function About() {
         {/* Text */}
         <motion.div
           variants={fadeIn}
-          className="w-full lg:w-[60%] mt-10 lg:mt-12"
+          className="w-full lg:w-[60%] 2xl:w-1/1 mt-10 lg:mt-12"
         >
           <motion.h2
             variants={fadeIn}
-            className="text-3xl sm:text-3xl md:text-4xl xl:text-4xl 2xl:text-4xl md:leading-snug font-bold mb-6"
+            className="text-3xl text-center md:text-left  sm:text-3xl md:text-4xl xl:text-4xl 2xl:text-5xl md:leading-snug font-bold mb-6"
           >
-            Żłobki Kraków – 5 Placówek w Prądniku Białym, Bronowicach, Krowodrzy
-            i Olszy
+            Więcej niż żłobek – miejsce pełne uśmiechu i zabawy
           </motion.h2>
 
           <motion.p
             variants={fadeIn}
-            className="text-base sm:text-lg md:text-xl xl:text-2xl font-normal mb-6 xl:my-10"
+            className="text-base text-center md:text-left sm:text-lg md:text-xl xl:text-2xl font-normal text-gray-600 mb-6 xl:my-10"
           >
-            Znajdź idealny żłobek w Krakowie dla Twojego dziecka! Nasze placówki
-            oferują profesjonalną opiekę, wspierającą rozwój maluchów w
-            przyjaznym i bezpiecznym środowisku.
+            W naszych placówkach tworzymy przestrzeń, w której każde dziecko
+            czuje się ważne i kochane. Stawiamy na holistyczny rozwój – od zabaw
+            sensorycznych po pierwsze relacje rówieśnicze.
           </motion.p>
 
           {/* List Items */}
           <motion.div
             variants={containerVariants}
-            className="flex flex-wrap gap-4"
+            className="grid grid-cols-1 md:grid-cols-2 gap-4"
           >
-            {[
-              "Wykwalifikowana Kadra",
-              "Czas na zabawę",
-              "Bezpieczeństwo",
-              "Rodzinna atmosfera",
-            ].map((item, index) => (
+            {features.map((item, index) => (
               <motion.div
                 key={index}
                 variants={fadeIn}
-                className="flex items-center w-[45%] p-4 rounded-md shadow-md bg-white max-sm:w-full"
+                className="flex items-start p-4 rounded-xl border border-gray-100 shadow-sm bg-white hover:shadow-md transition-shadow"
               >
-                <div className="flex justify-center items-center mr-3 text-2xl">
-                  <FaCircleCheck
-                    style={{
-                      color: ["#FDCB56", "#7C9BE6", "#04C9C8", "#FC7E05"][
-                        index
-                      ],
-                    }}
-                  />
+                <div
+                  className="flex shrink-0 justify-center items-center w-12 h-12 rounded-lg mr-4"
+                  style={{ backgroundColor: `${item.color}15` }} // Delikatne tło w kolorze ikonki
+                >
+                  <item.icon size={24} style={{ color: item.color }} />
                 </div>
-                <p className="font-medium text-base sm:text-lg md:text-xl">
-                  {item}
-                </p>
+                <div>
+                  <h3 className="font-bold text-gray-800 text-lg leading-tight">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-500 text-sm mt-1 leading-snug">
+                    {item.desc}
+                  </p>
+                </div>
               </motion.div>
             ))}
           </motion.div>
@@ -117,7 +140,7 @@ export default function About() {
 
             <div className="flex items-center">
               <Image
-                src="/others/aga3.png"
+                src="/grafiki/aga.png"
                 width={75}
                 height={75}
                 alt="Agnieszka Ciołkowska"
@@ -130,8 +153,8 @@ export default function About() {
                 >
                   +48 697 560 022
                 </Link>
-                <p className="text-[#08c6c3] font-bold text-base sm:text-lg md:text-xl">
-                  Właścicielka Wesołych Wygibasów
+                <p className="text-primary font-bold text-base sm:text-lg md:text-xl">
+                  Właściciel, Pedagog, Mama 3 dzieci
                 </p>
               </div>
             </div>

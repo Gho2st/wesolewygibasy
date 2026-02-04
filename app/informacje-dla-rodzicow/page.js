@@ -16,7 +16,7 @@ export const metadata = {
 export default function informacje() {
   return (
     <>
-      <div className="px-4 md:px-[9%] py-8">
+      <div className="px-[9%] py-8">
         <div className="mb-16">
           <Header text="Informacje dla Rodziców i Opiekunów" />
 
@@ -38,7 +38,7 @@ export default function informacje() {
             </div>
             <div className="w-2/3 sm:w-1/2 lg:w-1/4">
               <Image
-                src="/others/info.png"
+                src="/grafiki/info.png"
                 width={100}
                 height={100}
                 layout="responsive"

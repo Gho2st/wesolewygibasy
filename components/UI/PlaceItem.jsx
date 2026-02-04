@@ -2,56 +2,78 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Button from "../UI/Button";
+import { HiOutlineMapPin } from "react-icons/hi2";
 
 export default function PlaceItem(props) {
   return (
-    <article>
+    <article className="h-full">
       <motion.div
-        className="w-full pb-6 bg-white min-h-full rounded-xl shadow-md"
-        initial={{ opacity: 0, y: 50 }}
+        className="flex flex-col w-full h-full bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition-shadow duration-300"
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        viewport={{ once: true, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
-        <div className="h-[350px] shadow-md flex">
+        {/* Zdjęcie z nakładką gradientową na dole */}
+        <div className="relative h-[280px] sm:h-[320px] w-full overflow-hidden">
           <Image
             src={props.image}
             alt={props.alt}
-            width={500}
-            height={500}
-            className="w-full h-full object-cover rounded-t-xl"
+            fill
+            className="object-cover transition-transform duration-500 hover:scale-105"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
         </div>
 
-        <div className="px-4">
-          <div className="text-center mt-6 mb-6 font-normal">
-            <h3
-              className="text-black font-extrabold mb-6 text-2xl"
-              style={{ color: props.color }}
-            >
+        {/* Treść karty */}
+        <div className="flex flex-col flex-grow p-6 xl:p-8">
+          <div className="text-center mb-6">
+            <h3 className="text-slate-900 font-black text-2xl xl:text-3xl mb-3 leading-tight min-h-[3.5rem] flex items-center justify-center">
               {props.title}
             </h3>
-            <p className="text-xl">{props.location}</p>
-            <p className="text-xl">{props.street}</p>
+
+            {/* Lokalizacja z ikonką pinezki */}
+            <div className="flex flex-col items-center text-slate-500 gap-1">
+              <div className="flex items-center gap-1 text-[#4a71ff] font-bold uppercase text-xs xl:text-lg tracking-widest mb-1">
+                <HiOutlineMapPin size={16} />
+                <span>Kraków</span>
+              </div>
+              {/* <p className="text-lg font-medium text-slate-700">
+                {props.location}
+              </p> */}
+              <p className="text-base font-light italic">{props.street}</p>
+            </div>
           </div>
 
-          <div>
-            <div className="flex justify-center items-center mb-6">
-              <Button text="Sprawdź" fontSize="1rem" href={`/${props.link}`} />
+          {/* Sekcja dolna - Zawsze na samym dole karty */}
+          <div className="mt-auto">
+            <div className="flex justify-center mb-6">
+              <Button
+                text="Zobacz placówkę"
+                href={`/${props.link}`}
+                className="w-full sm:w-auto" // Przycisk może być szerszy na mobile
+              />
             </div>
 
+            {/* Informacje o dotacjach / Bonusy */}
             <div
-              className="text-center font-semibold text-[1rem]"
+              className="text-center font-bold text-sm lg:text-base leading-relaxed p-4 rounded-2xl bg-slate-50 border border-dashed border-slate-200"
               style={{
-                color: props.add !== "" ? "#08c6c3" : "transparent",
+                color: props.add ? "#08c6c3" : "transparent",
               }}
             >
               {props.add ? (
-                props.add
-                  .split("\n")
-                  .map((line, index) => <p key={index}>{line}</p>)
+                props.add.split("\n").map((line, index) => (
+                  <p
+                    key={index}
+                    className="flex items-center justify-center gap-2"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#08c6c3]" />
+                    {line.trim()}
+                  </p>
+                ))
               ) : (
-                <p>Placeholder text</p>
+                <p>&nbsp;</p>
               )}
             </div>
           </div>

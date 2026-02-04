@@ -6,11 +6,11 @@ export default function Places() {
     {
       image: "/sliders/lokietka-slider/5.webp",
       alt: "Zdjęcie przedstawiające wnętrze Żłobka na ulicy Łokietka",
-      title: "Ciekawe promocje na start w Żłobku na Łokietka!",
+      title: "Żłobek na Łokietka!",
       location: "Żłobek, Kraków",
       street: "ul. Łokietka 23",
       link: "zlobki/lokietka",
-      add: "Dotacja urzędu miasta \n Dotacja aktywnie w żłobku \n Opieka jest darmowa!!!",
+      add: "Dotacja urzędu miasta \n Dotacja aktywnie w żłobku",
     },
     {
       image: "sliders/sliczna-slider/sl4.jpg",
@@ -55,15 +55,15 @@ export default function Places() {
       id="placówki"
       className="min-h-screen flex items-center justify-center overflow-x-hidden bg-white py-16 px-[9%] 2xl:px-[16%]"
     >
-      <div className="w-full max-w-[1400px] 2xl:max-w-full flex flex-col items-center">
+      <div className="w-full max-w-7xl  flex flex-col items-center">
         {/* Opis */}
         <div className="text-center mb-12 2xl:mb-20">
-          <h2 className="text-2xl sm:text-3xl xl:text-5xl font-bold mb-4 xl:mb-8">
-            Nasze Żłobki w Krakowie – Znajdź Najbliższy!
+          <h2 className="text-3xl sm:text-4xl xl:text-5xl font-bold mb-4 xl:mb-8">
+            Nasze Placówki
           </h2>
           <p className="text-base sm:text-lg xl:text-xl font-normal text-gray-700 max-w-3xl mx-auto">
-            Mamy 5 placówek w Krakowie, każda z wysoką jakością opieki w
-            unikalnej lokalizacji. Wybierz żłobek dla swojego dziecka!
+            Prowadzimy 5 nowoczesnych punktów w dogodnych lokalizacjach Krakowa.
+            Sprawdź szczegóły i wybierz ten, który najbardziej Ci odpowiada.
           </p>
         </div>
 

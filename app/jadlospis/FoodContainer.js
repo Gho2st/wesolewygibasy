@@ -1,4 +1,5 @@
 "use client";
+import Header from "@/components/UI/Header";
 import FoodItemTable from "./FoodItemTable";
 import TableWithoutMilk from "./TableWithoutMilk";
 import WegeTable from "./WegeTable";
@@ -9,10 +10,10 @@ export default function FoodContainer() {
 
   return (
     <div className="py-12">
-      <h2 className="text-center text-3xl font-bold text-[#fa7070] mb-6">
-        Jadłospis - Zdrowe Odżywianie w Żłobku Wesołe Wygibasy w Krakowie
-      </h2>
-
+      <Header
+        text="Jadłospis - Zdrowe Odżywianie
+"
+      />
       <p className="text-center text-gray-700 text-lg leading-relaxed">
         W naszych placówkach szczególną uwagę przykładamy do zdrowego odżywiania
         dzieci. Oferujemy starannie zaprojektowany jadłospis, który uwzględnia

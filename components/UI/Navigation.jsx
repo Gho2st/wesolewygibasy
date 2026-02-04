@@ -1,106 +1,140 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 
+const navLinks = [
+  { label: "O nas", href: "/o-nas" },
+  { label: "Żłobki", href: "/zlobki" },
+  { label: "Cennik", href: "/cennik" },
+  { label: "Jadłospis", href: "/jadlospis" },
+  { label: "Plan dnia", href: "/plan-dnia" },
+  { label: "Adaptacja", href: "/adaptacja" },
+  { label: "Informacje", href: "/informacje-dla-rodzicow" },
+  { label: "Galeria", href: "/galeria" },
+  { label: "Blog", href: "/blog" },
+];
+
 export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const pathname = usePathname();
 
-  const isHomePage = pathname === "/";
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [menuOpen]);
 
-  const toggleMenu = () => setMenuOpen(!menuOpen);
-  const closeMenu = () => setMenuOpen(false);
+  // Logika chowania/pokazywania navbaru
+  useEffect(() => {
+    const controlNavbar = () => {
+      const currentScrollY = window.scrollY;
+
+      // Pokazuj zawsze, gdy jesteśmy na samej górze (opcjonalne, ale płynne)
+      if (currentScrollY < 10) {
+        setIsVisible(true);
+      }
+      // Jeśli scrollujemy w dół i przekroczyliśmy pewien próg (np. 100px) - schowaj
+      else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setIsVisible(false);
+      }
+      // Jeśli scrollujemy w górę - pokaż
+      else if (currentScrollY < lastScrollY) {
+        setIsVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", controlNavbar);
+    return () => window.removeEventListener("scroll", controlNavbar);
+  }, [lastScrollY]);
+
+  // Zamykanie menu przy zmianie szerokości ekranu
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1024) setMenuOpen(false);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
-    <header className="w-full z-50">
-      <div
-        className={`h-[88px] w-full overflow-x-hidden ${
-          isHomePage ? "bg-[#c7eeff]" : "bg-white"
-        }`}
-      >
-        {/* Logo */}
-        <div className="absolute top-[15px] left-5 z-10 cursor-pointer">
-          <Link href="/">
-            <Image src="/others/logo.png" width={100} height={100} alt="Logo" />
-          </Link>
-        </div>
+    <header
+      className={`fixed top-0 left-0 w-full z-[100] bg-[#0096da] shadow-sm transition-transform duration-300 ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
+      <div className="mx-auto px-6 md:px-12 h-20 md:h-24 flex items-center justify-between">
+        <Link
+          href="/"
+          className="relative z-[110] flex flex-col items-center group cursor-pointer"
+        >
+          <Image
+            src={"/grafiki/logo.svg"}
+            width={120}
+            height={120}
+            alt="logo"
+          />
+        </Link>
 
-        {/* Hamburger Button */}
-        <div className="fixed top-[15px] right-5 z-30">
-          <div
-            className="w-[2.4rem] h-[2.4rem] flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer transition-transform hover:scale-110"
-            onClick={toggleMenu}
-            aria-label={menuOpen ? "Zamknij menu" : "Otwórz menu"}
+        {/* Desktop Navigation */}
+        <nav className="hidden lg:flex items-center gap-8">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`text-sm md:text-base xl:text-lg font-medium transition-colors hover:text-[#ff5757] ${
+                pathname === link.href
+                  ? "text-primary border-b-2 border-[#ff5757]"
+                  : "text-white"
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <Link
+            href="/zapisy"
+            className="bg-white text-[#0096da] px-6 py-2.5 rounded-full font-bold hover:bg-[#ff5757] hover:text-white transition-all shadow-md"
           >
-            {menuOpen ? (
-              <X className="w-6 h-6" />
-            ) : (
-              <Menu className="w-7 h-7" />
-            )}
+            Zapisz dziecko
+          </Link>
+        </nav>
+
+        {/* Mobile Hamburger */}
+        <button
+          className="lg:hidden relative z-[110] p-2 text-white"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Menu"
+        >
+          {menuOpen ? <X size={32} /> : <Menu size={32} />}
+        </button>
+
+        {/* Mobile Menu Overlay */}
+        <div
+          className={`fixed inset-0 w-screen h-screen bg-[#ff5757] transition-transform duration-500 ease-in-out lg:hidden z-[105] ${
+            menuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          <div className="flex flex-col items-center justify-center h-full w-full gap-8 text-center">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setMenuOpen(false)}
+                className="text-2xl font-semibold text-white hover:opacity-80 transition-opacity"
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
         </div>
-
-        {/* Background expanding circle */}
-        <div
-          className={`fixed top-[15px] right-5 w-[2.3rem] h-[2.3rem] rounded-full bg-gradient-to-r from-white to-pink-300 transition-transform duration-[800ms] ease-[cubic-bezier(0.86,0,0.07,1)] ${
-            menuOpen ? "scale-[180]" : "scale-100"
-          }`}
-          style={{ zIndex: 10 }}
-        ></div>
-
-        {/* Nav Menu */}
-        <nav
-          className={`fixed top-0 left-0 w-full h-[100dvh]  bg-transparent z-20 transition-all duration-500 ${
-            menuOpen
-              ? "opacity-100 translate-y-0 visible"
-              : "opacity-0 -translate-y-full invisible"
-          } overflow-y-auto`}
-        >
-          <ul className="h-full text-center list-none w-full flex flex-col justify-center items-center py-8">
-            {[
-              "Strona Główna",
-              "Galeria",
-              "Żłobki",
-              "Cennik & Jadłospis",
-              "Blog",
-              "Plan dnia",
-              "Adaptacja",
-              "O nas",
-              "Informacje",
-              "Zapisy",
-            ].map((label, i) => {
-              const routes = [
-                "/",
-                "/galeria",
-                "/zlobki",
-                "/cennik-i-jadlospis-w-zlobku",
-                "/blog",
-                "/plan-dnia-w-zlobku",
-                "/adaptacja-w-zlobku",
-                "/o-nas",
-                "/informacje-dla-rodzicow",
-                "/zapisy",
-              ];
-              return (
-                <li key={i} className="m-1 md:m-2 2xl:m-2.5">
-                  <Link
-                    href={routes[i]}
-                    className="inline-block text-xl md:text-2xl 2xl:text-3xl font-medium uppercase px-6 py-1.5 2xl:py-2 bg-gradient-to-r from-transparent via-transparent to-white bg-[length:230%] hover:bg-[position:100%] hover:text-black transition-all duration-500"
-                    onClick={closeMenu}
-                  >
-                    <span className="mr-4 text-primary">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    {label}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
       </div>
     </header>
   );

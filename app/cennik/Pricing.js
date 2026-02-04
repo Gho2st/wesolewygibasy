@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Second from "./Second";
 import Others from "./Others";
-import FoodContainer from "./food/FoodContainer";
 import Header from "@/components/UI/Header";
 import Link from "next/link";
 import Lokietka from "./Lokietka";
@@ -86,10 +85,6 @@ export default function Pricing() {
           <span className="text-sm">{isOthersVisible ? "▲" : "▼"}</span>
         </h2>
         {isOthersVisible && <Others />}
-      </div>
-
-      <div className="mt-20  mx-auto">
-        <FoodContainer />
       </div>
     </main>
   );

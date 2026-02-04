@@ -4,7 +4,7 @@ import nodemailer from "nodemailer";
 // Funkcja walidacji pól formularza
 function validateFields(fields) {
   return Object.entries(fields).every(
-    ([key, value]) => value && value.trim() !== ""
+    ([key, value]) => value && value.trim() !== "",
   );
 }
 
@@ -58,7 +58,7 @@ async function verifyRecaptcha(token) {
         secret,
         response: token,
       }),
-    }
+    },
   );
 
   const data = await response.json();
@@ -93,7 +93,7 @@ export async function POST(request) {
     if (!validateFields(fields)) {
       return NextResponse.json(
         { message: "Uzupełnij wymagane pola" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -104,7 +104,7 @@ export async function POST(request) {
       console.error("Nieudana weryfikacja reCAPTCHA"); // Dodaj logowanie
       return NextResponse.json(
         { message: "Weryfikacja reCAPTCHA nie powiodła się." },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -122,7 +122,8 @@ export async function POST(request) {
 
     const mailOptions = {
       from: process.env.NODEMAILER_EMAIL,
-      to: "wesolewygibasy@onet.pl",
+      to: "dominikjojczyk@gmail.com",
+      // to: "wesolewygibasy@onet.pl",
       subject: "Email ze strony Wesołe Wygibasy od klienta",
       html: createEmailTemplate(fields),
     };
@@ -132,13 +133,13 @@ export async function POST(request) {
 
     return NextResponse.json(
       { message: "Wiadomość wysłana prawidłowo" },
-      { status: 200 }
+      { status: 200 },
     );
   } catch (error) {
     console.error("Error przy wysyłaniu wiadomości:", error);
     return NextResponse.json(
       { message: "Nieudana próba wysłania wiadomości", error: error.message },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

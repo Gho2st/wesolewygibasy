@@ -76,7 +76,6 @@ export default function PromoModal() {
               </h2>
               <p className="text-lg text-gray-700 mb-6 font-semibold leading-relaxed">
                 Zapisz dziecko i skorzystaj z wyjątkowej oferty: <br />
-                <span className="font-bold text-purple-800">Czesne 0 zł</span>
               </p>
               {/* Przycisk przekierowania */}
               <Button

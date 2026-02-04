@@ -91,7 +91,7 @@ export default function oNas() {
         {/* Zdjęcie + podpis */}
         <div className="w-full lg:w-[40%] 2xl:w-[30%] text-center mb-8 lg:mb-0">
           <Image
-            src="/others/aga3.png"
+            src="/grafiki/aga.png"
             width={100}
             height={100}
             layout="responsive"

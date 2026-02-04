@@ -86,7 +86,7 @@ export default function Zlobki() {
 
             <div className="w-full lg:w-2/5 mx-auto">
               <Image
-                src="/others/zlobki.png"
+                src="/grafiki/zlobki.png"
                 width={100}
                 height={100}
                 layout="responsive"

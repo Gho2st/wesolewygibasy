@@ -6,6 +6,7 @@ import { FaPhone, FaFacebook, FaCar } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import Link from "next/link";
 import { useState } from "react";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Contact() {
   const [isSent, setIsSent] = useState(false);
@@ -15,89 +16,98 @@ export default function Contact() {
   };
 
   return (
-    <>
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
       {/* Nagłówek i wstęp */}
-      <div className="text-center text-black w-[90%] md:w-[80%] mx-auto pt-8">
+      <div className=" mx-auto text-center mb-12 lg:mb-20">
         <Header text="Rodzinny Żłobek w Krakowie - Zapisz Swoje Dziecko Już Dziś!" />
-        <p className="mt-4 text-xl">
-          Czy szukasz bezpiecznego i przyjaznego środowiska, w którym Twoje
-          dziecko może rozwijać się każdego dnia? Krakowski żłobek Wesołe
-          Wygibasy to idealne miejsce, gdzie maluchy odkrywają świat z radością
-          i ciekawością. Oferujemy wysokiej jakości opiekę i wsparcie w
-          rozwijaniu umiejętności dzieci w wieku do 3 lat.
-        </p>
-        <p className="mt-4 text-xl font-semibold">
-          Przyjmujemy zapisy przez cały rok!
-        </p>
-        <p className="mt-4 text-xl">
-          Nie czekaj – zapisz swoje dziecko już dziś i daj mu szansę na rozwój w
-          najlepszym żłobku w Krakowie!
-        </p>
+        <div className="mt-6 space-y-4 text-slate-700">
+          <p className="text-lg lg:text-xl leading-relaxed">
+            Czy szukasz bezpiecznego i przyjaznego środowiska, w którym Twoje
+            dziecko może rozwijać się każdego dnia? Krakowski żłobek{" "}
+            <span className="font-semibold text-primary">Wesołe Wygibasy</span>{" "}
+            to idealne miejsce, gdzie maluchy odkrywają świat z radością i
+            ciekawością.
+          </p>
+          <p className="text-xl lg:text-2xl font-bold text-slate-900">
+            Przyjmujemy zapisy przez cały rok!
+          </p>
+          <p className="text-lg lg:text-xl">
+            Nie czekaj – daj swojemu dziecku szansę na rozwój w najlepszym
+            żłobku w Krakowie!
+          </p>
+        </div>
       </div>
 
       {/* Kontakt i formularz */}
-      <div className=" md:w-[90%] mx-auto mt-12 md:mt-16 mb-16  md:p-8 md:px-[2%] bg-white rounded-xl md:shadow-md flex flex-col lg:flex-row gap-12 justify-between">
-        {/* Formularz */}
-        <div className="w-full px-4 lg:w-[60%]">
+      <div className="bg-white rounded-3xl shadow-xl shadow-slate-200/60 overflow-hidden flex flex-col-reverse lg:flex-row border border-slate-100">
+        <div className="w-full lg:w-3/5 p-6 sm:p-10 lg:p-16 order-2 lg:order-1">
           <Form onFormSubmit={handleFormSubmit} />
         </div>
 
-        {/* Informacje kontaktowe */}
-        <div className="w-full lg:w-[30%] flex flex-col items-center">
-          {/* Obrazek */}
-          <div className="w-[60%] md:w-[50%] lg:w-[80%] mb-6">
+        {/* Informacje kontaktowe - Panel boczny */}
+        <div className="w-full lg:w-2/5 bg-slate-50 p-6 sm:p-10 lg:p-16 flex flex-col items-center order-1 lg:order-2">
+          <div className="w-40 sm:w-48 lg:w-full max-w-[280px] mb-8 lg:mb-12">
             <Image
               src="/monkeys/1.gif"
               width={300}
               height={300}
-              layout="responsive"
-              alt="Małpka wskazująca na formularz zapisów do Żłobka Wesołe Wygibasy"
+              className="w-full h-auto drop-shadow-lg"
+              alt="Małpka zapraszająca do kontaktu"
             />
           </div>
 
-          {/* Dane kontaktowe */}
-          <div className="mt-6 px-4 md:px-0 grid gap-4 w-full">
+          {/* Dane kontaktowe - Lista */}
+          <div className="grid gap-3 sm:gap-4 w-full">
             {[
               {
                 href: "tel:+48697560022",
-                icon: <FaPhone className="w-6 h-6 text-primary" />,
+                icon: <FaPhone className="w-5 h-5 text-white" />,
+                bg: "bg-blue-500",
                 text: "+48 697 560 022",
               },
               {
                 href: "mailto:wesolewygibasy@onet.pl",
-                icon: <MdEmail className="w-6 h-6 text-primary" />,
+                icon: <MdEmail className="w-5 h-5 text-white" />,
+                bg: "bg-emerald-500",
                 text: "wesolewygibasy@onet.pl",
               },
               {
                 href: "https://www.facebook.com/wesolewygibasy",
-                icon: <FaFacebook className="w-6 h-6 text-blue-600" />,
-                text: "Napisz na Facebooku!",
+                icon: <FaFacebook className="w-5 h-5 text-white" />,
+                bg: "bg-[#1877F2]",
+                text: "Napisz na Facebooku",
                 newTab: true,
               },
               {
-                href: null,
-                icon: <FaCar className="w-6 h-6 text-primary" />,
-                text: "Przyjedź & Zapytaj",
+                href: "https://www.instagram.com/wesolewygibasy/",
+                icon: <FaInstagram className="w-5 h-5 text-white" />,
+                bg: "bg-[#E1306C]",
+                text: "Napisz na Instagramie",
+                newTab: true,
               },
-            ].map(({ href, icon, text, newTab }, index) => {
+            ].map(({ href, icon, text, newTab, bg }, index) => {
               const Wrapper = href ? Link : "div";
               return (
                 <Wrapper
                   key={index}
                   href={href || ""}
                   target={newTab ? "_blank" : undefined}
-                  className="flex items-center gap-4 bg-gray-50 rounded-lg px-4 py-3 shadow-sm hover:shadow-md transition-shadow duration-200 group"
+                  className="flex items-center gap-4 bg-white border border-slate-200 rounded-2xl p-4 transition-all duration-300 hover:border-primary/50 hover:shadow-md group"
                 >
-                  <div className="flex-shrink-0">{icon}</div>
-                  <div className="text-lg xl:text-2xl font-medium text-gray-800 group-hover:underline">
-                    {text}
+                  <div
+                    className={`${bg} p-3 rounded-xl shrink-0 group-hover:scale-110 transition-transform`}
+                  >
+                    {icon}
                   </div>
+                  <span className="text-base sm:text-lg font-semibold text-slate-800 break-all lg:break-normal">
+                    {text}
+                  </span>
                 </Wrapper>
               );
             })}
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }

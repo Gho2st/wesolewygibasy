@@ -1,12 +1,9 @@
-"use client";
 import About from "@/components/homepage/About";
 import Baner from "@/components/homepage/Baner";
 import Places from "@/components/homepage/Places";
 import Reviews from "@/components/homepage/Reviews";
-import TextContainer from "@/components/homepage/TextContainer";
-import Age from "@/components/homepage/Age";
 import FacebookPosts from "@/components/homepage/FacebookPosts";
-import Rekrutacja from "@/components/homepage/Rekru";
+import Rekrutacja from "@/components/homepage/Rekrutacja";
 
 export default function Home() {
   return (
@@ -17,8 +14,6 @@ export default function Home() {
         <Rekrutacja />
         <Places />
         <FacebookPosts />
-        <TextContainer />
-        <Age />
         <Reviews />
       </main>
     </>

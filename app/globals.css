@@ -2,19 +2,19 @@
 
 @layer utilities {
   .text-primary {
-    @apply text-[#fa7070];
+    @apply text-[#ff5757];
   }
   .bg-primary {
-    @apply bg-[#fa7070];
+    @apply bg-[#ff5757];
   }
   .text-secondary {
     @apply text-[#08c6c3];
   }
   .bg-secondary {
-    @apply bg-[#4a71ff];
+    @apply bg-[#0096da];
   }
   .text-customBlue {
-    @apply text-[#4a71ff];
+    @apply text-[#0096da];
   }
 }
 

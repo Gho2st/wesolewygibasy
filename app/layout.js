@@ -41,9 +41,9 @@ export default function RootLayout({ children }) {
       <body className={font.className}>
         <Navigation />
         <CookieConsent />
-        {children}
+        <div className="pt-20 md:pt-24">{children}</div>
         <Footer />
-        <PromoModal />
+        {/* <PromoModal /> */}
       </body>
     </html>
   );

@@ -1,96 +1,73 @@
 "use client";
+import Image from "next/image";
 import Button from "../UI/Button";
 import Button2 from "../UI/Button2";
 import { motion } from "framer-motion";
 
 export default function Baner() {
   const textVariants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut",
-      },
-    },
-  };
-
-  const buttonVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        duration: 0.5,
-        delay: 0.4,
-        ease: "easeOut",
-      },
-    },
-    hover: {
-      scale: 1.05,
-      transition: {
-        duration: 0.3,
-      },
+      transition: { duration: 0.8, ease: "easeOut" },
     },
   };
 
   return (
-    <section>
-      <div
-        className="h-screen px-[9%] 2xl:px-[5%] py-12 2xl:py-20 bg-[#c7eeff] bg-[url('/others/baner2.webp')] md:bg-cover bg-no-repeat bg-bottom relative overflow-x-hidden"
-        style={{
-          backgroundSize: "100%",
-        }}
-      >
-        <div className="text-black w-[60%] flex justify-center max-[1350px]:w-[85%] max-[820px]:w-[95%] max-[712px]:w-full">
-          <div>
-            <motion.h1
-              variants={textVariants}
-              initial="hidden"
-              animate="visible"
-              className="text-3xl sm:text-4xl 2xl:text-5xl 2xl:leading-snug inline text-black font-bold"
-            >
-              Najlepszy Żłobek w Krakowie -{" "}
-              <span className="font-semibold text-primary">
-                {" "}
-                Wesołe Wygibasy{" "}
-              </span>
-            </motion.h1>
-            <motion.p
-              variants={textVariants}
-              initial="hidden"
-              animate="visible"
-              transition={{ delay: 0.2 }}
-              className="mt-6 text-lg font-normal sm:text-xl 2xl:text-2xl w-[85%] max-[620px]:w-full"
-            >
-              Wesołe Wygibasy to najlepsze żłobki w Krakowie, stworzone z pasji
-              i miłości do dzieci. Oferujemy troskliwą opiekę w 5 placówkach:
-              Prądnik Biały (ul. Łokietka), Bronowice (ul. Stańczyka), Krowodrza
-              (ul. Glogera), Olsza (ul. Śliczna) oraz Klub Malucha na
-              Vetulaniego. Nasze żłobki w Krakowie wspierają rozwój dzieci od 8.
-              miesiąca życia z dotacjami miejskimi.
-            </motion.p>
-            <motion.div
-              className="mt-8 flex"
-              variants={buttonVariants}
-              initial="hidden"
-              animate="visible"
-            >
-              <motion.div variants={buttonVariants} whileHover="hover">
-                <Button text="Czytaj więcej" href="#czytaj-wiecej" />
-              </motion.div>
-              <motion.div
-                variants={buttonVariants}
-                whileHover="hover"
-                transition={{ delay: 0.6 }}
-                className="ml-4"
-              >
-                <Button2 text="Placówki" href="/zlobki" />
-              </motion.div>
-            </motion.div>
-          </div>
-        </div>
+    <section className="relative overflow-hidden bg-secondary md:min-h-screen flex flex-col">
+      <div className="hidden md:block absolute inset-0 z-0">
+        <Image
+          src="/grafiki/baner.svg"
+          alt="Tło baneru"
+          fill
+          className="object-cover object-bottom"
+          priority
+        />
+      </div>
+
+      <div className="relative z-10 w-full lg:w-[60%] px-[6%] py-10 xl:py-16 2xl:py-20 2xl:px-[10%] text-center md:text-left">
+        <motion.h1
+          variants={textVariants}
+          initial="hidden"
+          animate="visible"
+          className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl 2xl:text-7xl "
+        >
+          Najlepszy Żłobek w Krakowie <br className="hidden md:block" />
+          <span className="text-primary">—</span> Wesołe Wygibasy
+        </motion.h1>
+
+        <motion.p
+          variants={textVariants}
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 0.2 }}
+          className="mt-6 text-base text-white font-light sm:text-xl 2xl:text-2xl max-w-2xl leading-relaxed"
+        >
+          Wesołe Wygibasy to sieć przytulnych żłobków w Krakowie, stworzona z
+          pasji i miłości. Zapewniamy troskliwą opiekę już od 8. miesiąca życia.
+        </motion.p>
+
+        <motion.div
+          className="mt-8 flex flex-wrap justify-center md:justify-start gap-3 md:gap-4"
+          initial="hidden"
+          animate="visible"
+          variants={textVariants}
+        >
+          <Button text="Poznaj nas bliżej" href="#czytaj-wiecej" />
+          <Button2 text="Placówki" href="/zlobki" />
+        </motion.div>
+      </div>
+
+      <div className="block md:hidden w-full mt-auto">
+        <Image
+          src="/grafiki/baner-mobile.svg"
+          alt="Tło baneru mobilne"
+          width={100}
+          height={100}
+          layout="responsive"
+          priority
+        />
       </div>
     </section>
   );

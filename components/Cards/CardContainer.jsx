@@ -1,82 +1,83 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { HiArrowLongRight } from "react-icons/hi2";
 
 const CardContainer = ({ cards }) => {
-  const colors = [
-    "#f8e1e9",
-    "#e8f0fe",
-    "#fff1d6",
-    "#e0f7e9",
-    "#e6e6ff",
-    "#f5e8e4",
-    "#fce8e8",
-    "#e8f7f0",
+  const accentColors = [
+    "#4a71ff",
+    "#FDCB56",
+    "#04C9C8",
+    "#7C9BE6",
+    "#FC7E05",
+    "#fa7070",
   ];
 
   const cardVariants = {
-    hidden: { scale: 0.95, opacity: 0.15 },
-    visible: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut",
-      },
-    },
-    hover: {
-      scale: 1.02,
-      boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.15)",
-      transition: { duration: 0.3, ease: "easeInOut" },
-    },
-  };
-
-  const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        duration: 0.4,
-        ease: "easeOut",
-      },
+      transition: { duration: 0.5, ease: "easeOut" },
     },
+    // Subtelniejszy hover dla desktopu, wyłączony efekt y na mobile
+    hover: {
+      y: -8,
+      boxShadow: "0px 15px 35px rgba(0, 0, 0, 0.08)",
+      transition: { duration: 0.3 },
+    },
+    tap: { scale: 0.98 }, // Feedback dla użytkowników mobilnych
   };
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pb-16">
+    // Zmniejszony gap na mobile (gap-4 -> gap-8 na lg)
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8 pb-12">
       {cards.map((card, index) => (
         <motion.div
           key={index}
-          className="flex flex-col justify-between rounded-xl shadow-md p-6"
-          style={{ backgroundColor: colors[index % colors.length] }}
           variants={cardVariants}
           initial="hidden"
           whileInView="visible"
           whileHover="hover"
-          viewport={{ once: true, amount: 0.5 }}
+          whileTap="tap"
+          viewport={{ once: true, amount: 0.1 }}
+          className="group relative flex flex-col justify-between rounded-2xl lg:rounded-3xl bg-white border border-slate-100 p-6 lg:p-10 overflow-hidden shadow-sm hover:border-slate-200 transition-colors"
         >
-          <motion.h3
-            className="text-xl xl:text-2xl font-semibold mb-4"
-            variants={fadeIn}
-          >
-            {card.title}
-          </motion.h3>
-          <motion.p
-            className="text-gray-700 text-lg font-light mb-8"
-            variants={fadeIn}
-          >
-            {card.description}
-          </motion.p>
+          {/* Dekoracyjny pasek - cieńszy na mobile */}
+          <div
+            className="absolute top-0 left-0 w-full h-1.5 lg:h-2"
+            style={{
+              backgroundColor: accentColors[index % accentColors.length],
+            }}
+          />
+
+          <div className="flex flex-col">
+            {/* Responsywna wielkość czcionki */}
+            <h3 className="text-xl  2xl:text-2xl font-bold text-slate-900 mb-3 lg:mb-4 leading-tight">
+              {card.title}
+            </h3>
+            <p className="text-slate-600 text-base lg:text-lg font-normal leading-relaxed mb-6 lg:mb-8">
+              {card.description}
+            </p>
+          </div>
+
           {card.link && (
-            <motion.div variants={fadeIn}>
+            <div className="mt-auto">
               <Link
                 href={card.link.href}
-                className="text-black text-xl font-semibold  hover:text-[#fa7070] transition-colors duration-200"
+                className="inline-flex items-center gap-2 text-[#4a71ff] text-lg lg:text-xl font-bold hover:text-[#fa7070] transition-colors duration-300"
               >
-                {card.link.text}
+                <span>{card.link.text}</span>
+                <motion.span
+                  className="flex shrink-0 items-center justify-center"
+                  initial={false}
+                  animate={{ x: 0 }}
+                  whileHover={{ x: 5 }} // Strzałka ucieka tylko na hover
+                >
+                  <HiArrowLongRight className="w-6 h-6 lg:w-8 lg:h-8" />
+                </motion.span>
               </Link>
-            </motion.div>
+            </div>
           )}
         </motion.div>
       ))}

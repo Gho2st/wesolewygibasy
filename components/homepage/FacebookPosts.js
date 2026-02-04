@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { FaFacebookSquare } from "react-icons/fa";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function FacebookPosts() {
@@ -17,7 +18,6 @@ export default function FacebookPosts() {
   useEffect(() => {
     async function fetchPosts() {
       const timestamp = Date.now();
-
       try {
         const res = await fetch(`/api/facebook/${timestamp}`, {
           headers: { "Cache-Control": "no-cache" },
@@ -30,86 +30,118 @@ export default function FacebookPosts() {
         setIsLoading(false);
       }
     }
-
     fetchPosts();
   }, []);
 
   return (
-    <section className="min-h-screen bg-[#fffbf2] px-[9%] py-16 flex flex-col items-center overflow-x-hidden">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl  xl:text-4xl 2xl:text-5xl font-semibold text-gray-900 relative inline-block mb-2">
-          Aktualności z Żłobków w Krakowie
+    <section className=" px-[6%] py-20 flex flex-col items-center overflow-x-hidden">
+      {/* Nagłówek sekcji */}
+      <div className="text-center max-w-3xl mb-16">
+        <span className="inline-block px-4 py-1 mb-4 text-sm font-bold tracking-widest text-[#0096da] uppercase bg-blue-50 rounded-full border border-blue-100">
+          Social Media
+        </span>
+        <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-6">
+          Co słychać w Wesołych Wygibasach?
         </h2>
-        <div className="flex justify-center mt-4">
+        <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+          Sprawdź najnowsze zdjęcia z zajęć i informacje prosto z naszego
+          Facebooka.
+        </p>
+
+        <div className="flex justify-center mt-6">
           <a
             href="https://www.facebook.com/wesolewygibasy"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-4 transition-transform hover:scale-110"
+            className="flex justify-center items-center gap-3 bg-white px-6 py-3 rounded-2xl shadow-sm hover:shadow-md transition-all hover:scale-[1.02] border border-gray-100"
           >
-            <FaFacebookSquare size={40} color="#1877F2" />
+            <div className="mb-3">
+              <FaFacebookSquare size={30} color="#1877F2" />
+            </div>
+            <span className="font-bold text-gray-700">Odwiedź nasz profil</span>
           </a>
         </div>
-        <p className="mt-10 text-lg">
-          Sprawdź, co słychać w naszych żłobkach w Krakowie! Publikujemy zdjęcia
-          z zajęć i informacje o promocjach.
-        </p>
       </div>
 
       {isLoading ? (
-        <p className="text-gray-700 text-lg">Wczytywanie postów...</p>
+        <div className="flex flex-col items-center gap-4">
+          <div className="w-12 h-12 border-4 border-[#0096da] border-t-transparent rounded-full animate-spin"></div>
+          <p className="text-gray-500 font-medium">
+            Wczytywanie aktualności...
+          </p>
+        </div>
       ) : posts.length === 0 ? (
-        <p className="text-red-500 text-lg">Brak dostępnych postów.</p>
+        <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-100 text-center">
+          <p className="text-gray-400 text-lg italic">
+            Chwilowo brak nowych postów.
+          </p>
+        </div>
       ) : (
-        <ul className="grid gap-8 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 w-full 2xl:w-3/4">
-          {posts.map((post) => {
+        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full max-w-7xl">
+          {posts.map((post, index) => {
             const imageUrl =
               post.attachments?.data?.[0]?.media?.image?.src ?? null;
             const [pageId, postId] = post.id.split("_");
             const postUrl = `https://www.facebook.com/${pageId}/posts/${postId}`;
 
             return (
-              <li
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
                 key={post.id}
-                className="bg-white rounded-2xl p-6 shadow-xl flex flex-col min-h-[500px]"
+                className={`
+                  ${index > 0 ? "hidden md:flex" : "flex"} 
+                  bg-white rounded-[2.5rem] p-5 shadow-xl shadow-blue-900/5 
+                  border border-gray-50 flex-col hover:shadow-2xl transition-all group
+                `}
               >
-                {/* GÓRNA CZĘŚĆ: Tekst posta */}
-                <div>
-                  <p className="text-gray-800 text-lg leading-relaxed mb-6 whitespace-pre-wrap">
-                    {truncateText(post.message || "Brak treści posta.", 35)}
+                {/* Zdjęcie */}
+                {imageUrl && (
+                  <div className="relative w-full aspect-[4/3] rounded-[1.8rem] overflow-hidden mb-5">
+                    <Image
+                      src={imageUrl}
+                      alt="Zdjęcie z życia żłobka"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+                )}
+
+                {/* Treść */}
+                <div className="px-2 flex-grow">
+                  <div className="flex justify-between items-center mb-3">
+                    <span className="text-xs font-bold text-[#0096da] uppercase tracking-wider">
+                      Aktualności
+                    </span>
+                    <span className="text-xs text-gray-400">
+                      {new Date(post.created_time).toLocaleDateString("pl-PL")}
+                    </span>
+                  </div>
+                  <p className="text-gray-700 text-base leading-relaxed mb-6">
+                    {truncateText(post.message || "Brak treści posta.", 25)}
                   </p>
                 </div>
 
-                {/* DOLNA CZĘŚĆ: Zdjęcie, data, link */}
-                <div className="mt-auto flex flex-col">
-                  {imageUrl && (
-                    <div className="relative w-full aspect-square rounded-lg overflow-hidden mb-6">
-                      <Image
-                        src={imageUrl}
-                        alt="Zdjęcie z posta"
-                        fill
-                        className="object-cover object-center"
-                      />
-                    </div>
-                  )}
-                  <span className="block text-lg text-right">
-                    {new Date(post.created_time).toLocaleString()}
-                  </span>
-                  <div className="mt-4">
-                    <a
-                      href={postUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 font-semibold hover:underline text-xl"
-                    >
-                      Zobacz całość na Facebooku...
-                    </a>
-                  </div>
+                {/* Link */}
+                <div className="px-2 pt-4 border-t border-gray-50 mt-auto">
+                  <a
+                    href={postUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between text-[#0096da] font-bold hover:text-[#ff5757] transition-colors"
+                  >
+                    <span>Zobacz na Facebooku</span>
+                    <span className="text-xl group-hover:translate-x-1 transition-transform">
+                      →
+                    </span>
+                  </a>
                 </div>
-              </li>
+              </motion.div>
             );
           })}
-        </ul>
+        </div>
       )}
     </section>
   );

@@ -100,12 +100,16 @@ export default function Form({ onFormSubmit }) {
     <>
       {!formSubmitted ? (
         <div className="flex flex-col pt-4">
-          <h2 className="text-2xl xl:text-3xl font-bold mb-2">Zostaw Wiadomość</h2>
-          <p className="mb-4 text-xl">
+          <h2 className="text-2xl text-center xl:text-3xl font-bold mb-2">
+            Zostaw Wiadomość
+          </h2>
+          <p className="mb-4 text-xl text-center">
             Wypełnij formularz poniżej, a my wrócimy do Ciebie z odpowiedzią jak
             najszybciej to możliwe!
           </p>
-          {formError && <p className="text-red-600 mb-4">{formError}</p>}
+          {formError && (
+            <p className="text-red-600 mb-4 text-center">{formError}</p>
+          )}
 
           <form onSubmit={sendMail} className="space-y-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -172,9 +176,6 @@ export default function Form({ onFormSubmit }) {
               <label htmlFor="selectedLocation" className="block text-black">
                 Wybierz placówkę:
               </label>
-              <p className="text-green-600 font-semibold mb-2">
-                Wolne miejsca w placówce na Łokietka!
-              </p>
               <select
                 name="selectedLocation"
                 value={formData.selectedLocation}
@@ -252,7 +253,7 @@ export default function Form({ onFormSubmit }) {
           </p>
           <div className="w-[70%] mx-auto mt-8">
             <Image
-              src="/others/dziekuje.png"
+              src="/grafiki/dziekuje.png"
               width={200}
               height={200}
               layout="responsive"
