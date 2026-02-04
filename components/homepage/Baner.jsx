@@ -67,6 +67,7 @@ export default function Baner() {
           height={100}
           layout="responsive"
           priority
+          className="mb-[-1px]"
         />
       </div>
     </section>
