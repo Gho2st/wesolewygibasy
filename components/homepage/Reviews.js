@@ -34,38 +34,38 @@ export default function Reviews() {
     autoplay: true,
     autoplaySpeed: 6000,
     pauseOnHover: true,
+    arrows: false, // Mobile-first: lepiej polegać na swipe i kropkach
     responsive: [
       {
         breakpoint: 1280,
-        settings: { slidesToShow: 2, slidesToScroll: 1 },
+        settings: { slidesToShow: 2 },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-          arrows: false,
+          centerMode: false,
+          adaptiveHeight: true,
         },
       },
     ],
   };
 
   return (
-    <section className="py-20 overflow-hidden bg-slate-50">
-      <div className="px-[6%] max-w-7xl mx-auto">
+    <section className="py-12 lg:py-24 overflow-hidden bg-slate-50">
+      <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         {/* Header Sekcji */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 lg:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 lg:mb-6">
               Najlepsze Żłobki w Krakowie{" "}
-              <span className="text-[#4a71ff]">—</span> Ocena 4.9/5
+              <span className="text-primary">—</span> Ocena 4.9/5
             </h2>
-            <p className="mt-4 text-lg lg:text-xl font-light text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base lg:text-xl font-normal text-slate-600 max-w-2xl mx-auto leading-relaxed">
               Dołączyło do nas już setki zadowolonych rodzin. Naszą najlepszą
               wizytówką jest uśmiech dzieci i spokój ich rodziców.
             </p>
@@ -73,43 +73,44 @@ export default function Reviews() {
 
           {/* Licznik Animowany */}
           <div
-            className="mt-8 flex flex-col items-center justify-center"
+            className="mt-6 lg:mt-8 flex flex-col items-center justify-center"
             ref={counterRef}
           >
-            <div className="text-[#4a71ff] text-5xl font-black flex items-center">
+            <div className="text-primary text-4xl lg:text-6xl font-black flex items-center">
               <motion.span>{rounded}</motion.span>
               <span>+</span>
             </div>
-            <p className="text-slate-500 font-bold uppercase text-xs tracking-widest mt-2">
+            <p className="text-slate-400 font-bold uppercase text-[10px] lg:text-xs tracking-[0.2em] mt-2">
               Pozytywnych opinii w Google
             </p>
           </div>
         </div>
 
         {/* Slider Opinii */}
-        <div className="mt-12 relative">
+        <div className="mt-8 lg:mt-12 relative">
           <Slider {...settings} className="reviews-slider">
             {reviews.map((review, index) => (
-              <div key={index} className="px-3 pb-12">
-                <div className="bg-white rounded-[2rem] border border-slate-100 shadow-sm p-8 lg:p-10 flex flex-col justify-between h-[400px] lg:h-[450px] transition-all duration-300 hover:shadow-md">
+              <div key={index} className="px-2 lg:px-3 pb-10">
+                <div className="bg-white rounded-[2rem] border border-slate-100 shadow-sm p-6 lg:p-10 flex flex-col justify-between h-[380px] sm:h-[400px] lg:h-[450px] transition-all duration-300 hover:shadow-md">
                   <div>
-                    <div className="flex justify-start mb-6">
+                    <div className="flex justify-start mb-4 lg:mb-6">
                       <Stars />
                     </div>
-                    <p className="text-slate-600 text-base lg:text-lg italic leading-relaxed">
-                      "{review.text}"
+                    {/* Naprawiony błąd ESLint: użycie &quot; zamiast " */}
+                    <p className="text-slate-600 text-sm sm:text-base lg:text-lg italic leading-relaxed">
+                      &quot;{review.text}&quot;
                     </p>
                   </div>
 
-                  <div className="mt-8 pt-6 border-t border-slate-50 flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-[#4a71ff] font-bold">
+                  <div className="mt-6 pt-6 border-t border-slate-50 flex items-center gap-4">
+                    <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-blue-50 flex items-center justify-center text-primary font-bold shrink-0">
                       {review.author[0]}
                     </div>
                     <div>
-                      <p className="font-bold text-slate-900 text-lg leading-none mb-1">
+                      <p className="font-bold text-slate-900 text-base lg:text-lg leading-tight mb-0.5">
                         {review.author}
                       </p>
-                      <p className="text-[#08c6c3] text-sm font-semibold uppercase tracking-tighter">
+                      <p className="text-[#08c6c3] text-[10px] lg:text-xs font-bold uppercase tracking-wider">
                         Rodzic
                       </p>
                     </div>
@@ -120,8 +121,8 @@ export default function Reviews() {
           </Slider>
         </div>
 
-        {/* CTA pod sliderem */}
-        <div className="mt-12 flex justify-center">
+        {/* CTA */}
+        <div className="mt-10 lg:mt-12 flex justify-center">
           <Button
             href="https://g.page/r/CVSRHQIb-HkkEBM/review"
             text="Zostaw swoją opinię"
@@ -130,14 +131,25 @@ export default function Reviews() {
         </div>
       </div>
 
-      {/* Styl dla kropek slidera (dodaj do swojego global.css lub tutaj) */}
       <style jsx global>{`
+        .reviews-slider .slick-dots {
+          bottom: -20px;
+        }
         .reviews-slider .slick-dots li button:before {
-          font-size: 12px;
+          font-size: 10px;
           color: #4a71ff;
+          opacity: 0.3;
         }
         .reviews-slider .slick-dots li.slick-active button:before {
+          opacity: 1;
           color: #4a71ff;
+        }
+        /* Poprawa płynności na mobile */
+        .slick-track {
+          display: flex !important;
+        }
+        .slick-slide {
+          height: inherit !important;
         }
       `}</style>
     </section>
