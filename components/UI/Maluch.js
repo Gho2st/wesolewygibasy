@@ -40,7 +40,7 @@ export default function Maluch() {
 
         <div className="w-[80%] md:w-[60%] lg:w-[40%] shadow-md rounded-3xl mt-8 lg:mt-0">
           <Image
-            src="/others/maluch+.webp"
+            src="/grafiki/maluch+.webp"
             width={100}
             height={100}
             layout="responsive"
