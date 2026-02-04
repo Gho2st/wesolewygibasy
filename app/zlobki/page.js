@@ -35,7 +35,7 @@ export default function Zlobki() {
       title: "Bezpieczne i komfortowe warunki dla maluchów",
       description:
         "Nasze placówki są zaprojektowane z myślą o najmłodszych – oferują przestronne sale, wygodne miejsca do zabawy i odpoczynku oraz łagodny proces adaptacyjny.",
-      link: { href: "/adaptacja-w-zlobku", text: "Adaptacja w Żłobku" },
+      link: { href: "/adaptacja", text: "Adaptacja w Żłobku" },
     },
     {
       title: "Nowoczesne wyposażenie: klimatyzacja i rekuperacja",
