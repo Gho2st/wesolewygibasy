@@ -63,7 +63,7 @@ const cardData = [
     description:
       "Wesołe Wygibasy przy ul. Ślicznej 36A to nasza czwarta placówka żłobkowa w Krakowie. Oferujemy miejsca dla maluchów w nowoczesnych i bezpiecznych warunkach, z troską o najwyższe standardy opieki oraz edukacji.",
     link: {
-      href: "/adaptacja-w-zlobku",
+      href: "/adaptacja",
       text: "Adaptacja w Żłobku",
     },
   },

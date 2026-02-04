@@ -62,7 +62,7 @@ const cardData = [
     title: "Historia i lokalizacja",
     description:
       "Nasza placówka została wpisana do rejestru żłobków i klubów malucha 1 czerwca 2021 roku. Lokalizacja przy ul. Glogera w Krakowie była wcześniej znana okolicznym rodzinom jako sala zabaw Kamyczki Patyczki, która cieszyła się dużą popularnością do marca 2021 roku. Dzięki temu, mieszkańcy okolicy już od dawna mają zaufanie do tego miejsca, które teraz przekształciło się w nowoczesny i dobrze wyposażony żłobek.",
-    link: { href: "/adaptacja-w-zlobku", text: "Adaptacja w Żłobku" },
+    link: { href: "/adaptacja", text: "Adaptacja w Żłobku" },
   },
 ];
 

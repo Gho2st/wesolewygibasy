@@ -67,7 +67,7 @@ const cardData = [
     description:
       "Nasz żłobek znajduje się w pobliżu malowniczej Młynówki Królewskiej, co pozwala dzieciom na częste spacery i kontakt z naturą.",
     link: {
-      href: "/adaptacja-w-zlobku",
+      href: "/adaptacja",
       text: "Adaptacja w Żłobku",
     },
   },

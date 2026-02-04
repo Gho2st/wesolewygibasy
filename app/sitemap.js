@@ -3,9 +3,10 @@ import { blogPosts } from "./data/blogData";
 const staticPaths = [
   "/",
   "/zapisy",
-  "/cennik-i-jadlospis-w-zlobku",
-  "/adaptacja-w-zlobku",
-  "/plan-dnia-w-zlobku",
+  "/jadlospis",
+  "/cennik",
+  "/adaptacja",
+  "/plan-dnia",
   "/informacje-dla-rodzicow",
   "/o-nas",
   "/galeria",
@@ -33,9 +34,9 @@ export default function sitemap() {
       path === "/"
         ? 1
         : path.startsWith("/zlobki/lokietka")
-        ? 0.9
-        : path === "/zapisy"
-        ? 0.9
-        : 0.8,
+          ? 0.9
+          : path === "/zapisy"
+            ? 0.9
+            : 0.8,
   }));
 }

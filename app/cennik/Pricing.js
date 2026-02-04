@@ -29,7 +29,7 @@ export default function Pricing() {
           w naszym żłobku był pełen radości, nauki i zdrowego rozwoju.
         </p>
         <Link
-          href="/plan-dnia-w-zlobku"
+          href="/plan-dnia"
           className="text-[#fa7070] font-semibold hover:text-[#e55e5e] transition-colors duration-200 underline"
         >
           Zobacz jak wygląda plan dnia w naszym żłobku

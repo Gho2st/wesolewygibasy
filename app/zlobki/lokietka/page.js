@@ -38,7 +38,7 @@ const cardData = [
     title: "Adaptacja",
     description:
       "Rozpoczynamy proces adaptacyjny, aby Twoje dziecko mogło łagodnie i bez stresu rozpocząć przygodę z nami.",
-    link: { href: "/adaptacja-w-zlobku", text: "Adaptacja w Żłobku" },
+    link: { href: "/adaptacja", text: "Adaptacja w Żłobku" },
   },
   {
     title: "Otwarty w październiku 2025",
@@ -50,13 +50,13 @@ const cardData = [
     title: "Opieka jest darmowa!",
     description:
       "Jesteśmy placówką dotowaną, co oznacza przystępne ceny bez kompromisów w jakości opieki i programu edukacyjnego. Rodzice płacą tylko za wyżywienie.",
-    link: { href: "/cennik-i-jadlospis-w-zlobku", text: "Cennik i Jadłospis" },
+    link: { href: "/cennik", text: "Cennik" },
   },
   {
     title: "Zajęcia Rozwojowe",
     description:
       "Oferujemy różnorodne zajęcia, takie jak rytmika, dogoterapia, angielski, plastyka i zabawy sensoryczne, wspierające rozwój Twojego malucha.",
-    link: { href: "/plan-dnia-w-zlobku", text: "Plan Dnia w Żłobku" },
+    link: { href: "/plan-dnia", text: "Plan Dnia w Żłobku" },
   },
   {
     title: "Mała Ilość Dzieci",

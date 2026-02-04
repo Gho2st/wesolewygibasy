@@ -54,7 +54,7 @@ const cardData = [
     title: "Opieka nad dziećmi w wieku od 1 do 3 lat",
     description:
       "Grupa max. 20 dzieci, 3–4 opiekunki. Indywidualna troska, ciepło i bezpieczeństwo. Dzieci szczęśliwe, najedzone i zadbane.",
-    link: { href: "/adaptacja-w-zlobku", text: "Adaptacja w Żłobku" },
+    link: { href: "/adaptacja", text: "Adaptacja w Żłobku" },
   },
 ];
 
