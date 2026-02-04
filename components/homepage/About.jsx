@@ -133,7 +133,7 @@ export default function About() {
             variants={fadeIn}
             className="flex flex-col sm:flex-row items-start sm:items-center mt-8 gap-6"
           >
-            <div className="flex space-x-4">
+            <div className="flex space-x-1 xl:space-x-2">
               <Button text="O nas" href="/o-nas" />
               <Button2 text="Zapisy" href="/zapisy" />
             </div>

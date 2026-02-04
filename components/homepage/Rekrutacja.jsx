@@ -85,10 +85,8 @@ export default function Rekrutacja() {
                 },
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <div className="mt-1 bg-[#0096da] rounded-full p-1 text-white">
-                    <CheckCircle2 size={14} />
-                  </div>
                   <span className="text-gray-600 text-lg">
+                    <div className="inline-block mr-2 bg-[#0096da] rounded-full p-1"></div>
                     <strong className="text-gray-800">{item.title}</strong>{" "}
                     {item.desc}
                   </span>
