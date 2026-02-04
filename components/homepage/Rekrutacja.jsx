@@ -69,11 +69,11 @@ export default function Rekrutacja() {
               {[
                 {
                   title: "Darmowe czesne",
-                  desc: "w wybranych placówkach dzięki dofinansowaniu miejskiemu.",
+                  desc: "w wybranych placówkach dzięki dofinansowaniach",
                 },
                 {
                   title: "Zajęcia dodatkowe",
-                  desc: "sensoryka, rytmika i masa uśmiechu każdego dnia.",
+                  desc: "sensoryka, rytmika, dogoterapia i masa uśmiechu każdego dnia.",
                 },
                 {
                   title: "Zaufanie rodziców",
