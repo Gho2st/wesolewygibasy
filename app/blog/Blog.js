@@ -15,7 +15,7 @@ export default function Blog() {
 
   // Filtrowanie postów
   const filteredPosts = blogPosts.filter((post) =>
-    post.title.toLowerCase().includes(searchTerm.toLowerCase())
+    post.title.toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
   // Obliczanie indeksów dla bieżącej strony
@@ -26,13 +26,18 @@ export default function Blog() {
   // Obliczanie liczby stron
   const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
 
-  // Scroll to articles section when page changes
   useEffect(() => {
+    // Jeśli to pierwsze wejście na stronę, nie przewijaj
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+
+    // Przewijaj tylko przy zmianie strony (np. kliknięcie paginacji)
     if (articlesRef.current) {
       articlesRef.current.scrollIntoView({ behavior: "smooth" });
     }
-  }, [currentPage]); // Trigger on page change
-
+  }, [currentPage]);
   // Funkcje do zmiany strony
   const handleNextPage = () => {
     if (currentPage < totalPages) {
