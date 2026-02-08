@@ -27,17 +27,25 @@ export default function Blog() {
   const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
 
   useEffect(() => {
-    // Jeśli to pierwsze wejście na stronę, nie przewijaj
-    if (isFirstRender.current) {
-      isFirstRender.current = false;
-      return;
-    }
-
-    // Przewijaj tylko przy zmianie strony (np. kliknięcie paginacji)
     if (articlesRef.current) {
-      articlesRef.current.scrollIntoView({ behavior: "smooth" });
+      // 1. Obliczamy pozycję elementu względem góry dokumentu
+      const elementPosition =
+        articlesRef.current.getBoundingClientRect().top + window.scrollY;
+
+      // 2. Ustalamy margines (np. 150px), żeby nie kleiło się do samej góry (miejsce na Header menu)
+      const offset = 150;
+      const targetPosition = elementPosition - offset;
+
+      // 3. Przewijamy TYLKO wtedy, gdy użytkownik jest niżej niż początek listy
+      // Dzięki temu strona nie skacze, jeśli jesteś na górze
+      if (window.scrollY > targetPosition) {
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth",
+        });
+      }
     }
-  }, [currentPage]);
+  }, [currentPage]); // Uruchamia się przy zmianie strony
   // Funkcje do zmiany strony
   const handleNextPage = () => {
     if (currentPage < totalPages) {
@@ -94,6 +102,7 @@ export default function Blog() {
                   <BlogCard
                     key={post.slug}
                     header={post.title}
+                    date={post.date}
                     text={
                       post.contentPart1.split(" ").slice(0, 35).join(" ") +
                       "..."
