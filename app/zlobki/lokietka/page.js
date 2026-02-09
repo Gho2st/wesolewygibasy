@@ -47,7 +47,7 @@ const cardData = [
     link: { href: "/o-nas", text: "O Nas" },
   },
   {
-    title: "Opieka jest darmowa!",
+    title: "Niskie Czesne!",
     description:
       "Jesteśmy placówką dotowaną, co oznacza przystępne ceny bez kompromisów w jakości opieki i programu edukacyjnego. Rodzice płacą tylko za wyżywienie.",
     link: { href: "/cennik", text: "Cennik" },
