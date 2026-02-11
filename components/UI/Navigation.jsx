@@ -118,22 +118,48 @@ export default function Navigation() {
 
         {/* Mobile Menu Overlay */}
         <div
-          className={`fixed inset-0 w-screen h-screen bg-[#ff5757] transition-transform duration-500 ease-in-out lg:hidden z-[105] ${
+          className={`fixed inset-0 w-screen h-screen bg-[#dd6464] transition-transform duration-500 ease-in-out lg:hidden z-[105] flex flex-col items-center justify-center ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <div className="flex flex-col items-center justify-center h-full w-full gap-8 text-center">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                className="text-2xl font-semibold text-white hover:opacity-80 transition-opacity"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
+          <nav className="flex flex-col items-center gap-4 w-full px-10">
+            {navLinks.map((link, index) => {
+              const isActive = pathname === link.href;
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  style={{
+                    transitionDelay: menuOpen ? `${index * 50 + 150}ms` : "0ms",
+                    opacity: menuOpen ? 1 : 0,
+                    transform: menuOpen ? "translateY(0)" : "translateY(20px)",
+                  }}
+                  className={`relative group text-2xl xl:text-3xl font-bold transition-all duration-500 ${
+                    isActive ? "text-white" : "text-white/80"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+
+            {/* Dodatkowy wyróżniony przycisk w menu mobilnym */}
+            <Link
+              href="/zapisy"
+              onClick={() => setMenuOpen(false)}
+              style={{
+                transitionDelay: menuOpen
+                  ? `${navLinks.length * 50 + 150}ms`
+                  : "0ms",
+                opacity: menuOpen ? 1 : 0,
+                transform: menuOpen ? "translateY(0)" : "translateY(20px)",
+              }}
+              className="mt-2 bg-white text-[#dd6464] px-6 py-3 rounded-full text-xl font-black shadow-xl hover:scale-105 transition-transform active:scale-95"
+            >
+              Zapisz dziecko
+            </Link>
+          </nav>
         </div>
       </div>
     </header>
