@@ -1,18 +1,11 @@
-export default function Map({ src }) {
+export default function Map({ src, description }) {
   return (
     <section>
-      <div className="flex flex-col items-center justify-center min-h-screen text-center px-[9%] py-16">
-        <h2 className="text-[3rem] font-medium mb-8 max-[800px]:text-[2.1rem]">
+      <div className="px-[6%]  max-w-7xl mx-auto text-center py-10">
+        <h2 className="text-4xl 2xl:text-5xl font-semibold mb-8">
           Mapa dojazdu
         </h2>
-        <p className="text-xl w-[80%] max-[800px]:w-full">
-          Nasz żłobek <span className="font-semibold">Wesołe Wygibasy</span>{" "}
-          znajduje się w dogodnej lokalizacji w Krakowie, co sprawia, że dojazd
-          do nas jest szybki i wygodny zarówno dla mieszkańców centrum, jak i
-          okolicznych dzielnic. Dzięki bliskości głównych arterii
-          komunikacyjnych oraz dostępności miejsc parkingowych w pobliżu, możesz
-          z łatwością przywieźć swoje dziecko każdego dnia.
-        </p>
+        <p className="text-lg 2xl:text-xl ">{description}</p>
 
         <div className="mt-14 w-full h-[550px] rounded-xl flex justify-center">
           <iframe

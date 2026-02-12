@@ -12,16 +12,13 @@ const CookieConsent = () => {
 
   // Sprawdzenie istniejącej zgody i inicjalizacja GTM oraz gtag.js
   useEffect(() => {
-    console.log("CookieConsent: Checking localStorage for consent");
     const storedConsent = localStorage.getItem("consent");
     if (storedConsent) {
-      console.log("CookieConsent: Found stored consent:", storedConsent);
       const parsedConsent = JSON.parse(storedConsent);
       setConsent(parsedConsent);
       handleGTMConsent(parsedConsent);
       setShowBanner(false);
     } else {
-      console.log("CookieConsent: No stored consent, showing banner");
       setShowBanner(true);
     }
   }, []);
@@ -31,7 +28,6 @@ const CookieConsent = () => {
     if (typeof window !== "undefined") {
       // Obsługa GTM
       if (consentState.analytics_Storage === "granted") {
-        console.log("CookieConsent: Loading GTM script");
         // Usuń istniejący skrypt GTM, jeśli istnieje
         const existingGTMScript = document.getElementById("gtm-script");
         if (existingGTMScript) {
@@ -50,11 +46,7 @@ const CookieConsent = () => {
           "gtm.start": new Date().getTime(),
           event: "gtm.js",
         });
-        console.log("CookieConsent: GTM initialized");
       } else {
-        console.log(
-          "CookieConsent: Analytics consent denied, removing GTM script"
-        );
         const existingGTMScript = document.getElementById("gtm-script");
         if (existingGTMScript) {
           existingGTMScript.remove();
@@ -66,8 +58,6 @@ const CookieConsent = () => {
 
       // Obsługa gtag.js (Google Ads)
       if (consentState.ad_Storage === "granted") {
-        console.log("CookieConsent: Loading gtag.js script for Google Ads");
-        // Usuń istniejący skrypt gtag.js, jeśli istnieje
         const existingGtagScript = document.getElementById("gtag-script");
         if (existingGtagScript) {
           existingGtagScript.remove();
@@ -87,11 +77,7 @@ const CookieConsent = () => {
         window.gtag = window.gtag || gtag;
         window.gtag("js", new Date());
         window.gtag("config", "AW-876056002");
-        console.log("CookieConsent: gtag.js initialized for AW-876056002");
       } else {
-        console.log(
-          "CookieConsent: Ad consent denied, removing gtag.js script"
-        );
         const existingGtagScript = document.getElementById("gtag-script");
         if (existingGtagScript) {
           existingGtagScript.remove();
@@ -103,7 +89,6 @@ const CookieConsent = () => {
 
   // Zapis zgody i aktualizacja GTM oraz gtag.js
   const saveConsent = (newConsent) => {
-    console.log("CookieConsent: Saving consent:", newConsent);
     setConsent(newConsent);
     localStorage.setItem("consent", JSON.stringify(newConsent));
     handleGTMConsent(newConsent);
@@ -143,11 +128,9 @@ const CookieConsent = () => {
   };
 
   if (!showBanner) {
-    console.log("CookieConsent: Banner hidden due to showBanner being false");
     return null;
   }
 
-  console.log("CookieConsent: Rendering banner");
   return (
     <div className="fixed bottom-0 left-0 right-0 md:bottom-4 md:mx-4 bg-gray-900 text-white p-4 md:p-6 rounded-t-lg md:rounded-lg shadow-xl z-50 transition-all duration-300 ease-in-out">
       <div className="max-w-7xl mx-auto text-center">

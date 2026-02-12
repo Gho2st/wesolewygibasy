@@ -1,20 +1,17 @@
 import ImagesContainer from "@/components/Gallery/ImagesContainer";
-import Button from "@/components/UI/Button";
-import Button2 from "@/components/UI/Button2";
 import DaySchedule from "@/components/Info/DayScheduleSliczna";
 import SliderComponent from "@/components/UI/slider/slider";
 import CardContainer from "@/components/Cards/CardContainer";
 import Maluch from "@/components/UI/Maluch";
 import Map from "@/components/UI/Map";
-import NurseryHeader from "@/components/nursery/header";
+import NurseryHeader from "@/components/zlobki/header";
+import ZlobkiBaner from "@/components/zlobki/Baner";
 
 export const metadata = {
   title: "Żłobek na Ulicy Ślicznej w Krakowie - Wesołe Wygibasy",
   alternates: {
     canonical: "/zlobki/sliczna",
   },
-  keywords:
-    "żłobek Kraków Śliczna, żłobek z placem zabaw Kraków, dofinansowanie Maluch Plus, żłobek Wesołe Wygibasy, profesjonalna opieka dzieci Kraków",
   description:
     "Żłobek Wesołe Wygibasy w Krakowie – profesjonalna opieka, własny plac zabaw, dofinansowanie Maluch Plus. Zapisz swoje dziecko już dziś!",
 };
@@ -72,25 +69,12 @@ const cardData = [
 export default function Sliczna() {
   return (
     <main>
-      {/* Baner */}
-      <section>
-        <div
-          className="w-full min-h-screen bg-cover bg-center flex items-center justify-center"
-          style={{
-            backgroundImage: `url("/sliders/sliczna-slider/sl1.jpg")`,
-          }}
-        >
-          <div className="bg-white/90 backdrop-blur-sm shadow-xl rounded-xl text-center px-6 py-12 sm:px-10 max-w-3xl">
-            <h1 className="text-2xl sm:text-3xl 2xl:text-4xl font-semibold text-black">
-              Żłobek Kraków Olsza – Wesołe Wygibasy na Ślicznej
-            </h1>
-            <div className="mt-6 flex justify-center gap-4 flex-wrap">
-              <Button text="O nas" href="/o-nas" />
-              <Button2 text="Zapisy" href="/zapisy" />
-            </div>
-          </div>
-        </div>
-      </section>
+      <ZlobkiBaner
+        title="Śliczna"
+        subtitle="Olsza"
+        bgImage="/sliders/sliczna-slider/sl1.jpg"
+        description="Codzienna zabawa na świeżym powietrzu – własny plac zabaw i ogród do dyspozycji dzieci"
+      />
 
       {/* Opis i karty */}
       <section className="pt-20 px-[9%]">
@@ -136,9 +120,7 @@ export default function Sliczna() {
 
       {/* Mapa */}
       <section className="py-16">
-        <div className="mx-auto">
-          <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20483.285915179342!2d19.857841410839853!3d50.07859630000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b0b843d4ce5%3A0xfe8741522eb108da!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy%203%20Bronowice!5e0!3m2!1spl!2spl!4v1711475564872!5m2!1spl!2spl" />
-        </div>
+        <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20483.285915179342!2d19.857841410839853!3d50.07859630000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b0b843d4ce5%3A0xfe8741522eb108da!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy%203%20Bronowice!5e0!3m2!1spl!2spl!4v1711475564872!5m2!1spl!2spl" />
       </section>
     </main>
   );

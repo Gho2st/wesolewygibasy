@@ -1,11 +1,10 @@
 import ImagesContainer from "@/components/Gallery/ImagesContainer";
-import Button from "@/components/UI/Button";
-import Button2 from "@/components/UI/Button2";
 import Map from "@/components/UI/Map";
 import DayScheduleLokietka from "@/components/Info/DayScheduleLokietka";
 import CardContainer from "@/components/Cards/CardContainer";
-import NurseryHeader from "@/components/nursery/header";
-import ParkSlider from "@/components/UI/slider/parkSlider";
+import NurseryHeader from "@/components/zlobki/header";
+import ZlobkiBaner from "@/components/zlobki/Baner";
+import SliderComponent from "@/components/UI/slider/slider";
 
 export const metadata = {
   title: "Żłobek na Ulicy Łokietka w Krakowie - Wesołe Wygibasy",
@@ -31,7 +30,7 @@ const cardData = [
   {
     title: "Bliskość Parku Łokietka",
     description:
-      "Nasza lokalizacja w Bronowicach gwarantuje codzienne spacery i kontakt z naturą w pobliskim Parku Łokietka – idealne miejsce na zabawę i odpoczynek.",
+      "Nasza lokalizacja gwarantuje codzienne spacery i kontakt z naturą w pobliskim Parku Łokietka – idealne miejsce na zabawę i odpoczynek.",
     link: { href: "/informacje-dla-rodzicow", text: "Informacje dla rodziców" },
   },
   {
@@ -69,26 +68,15 @@ const cardData = [
 export default function Lokietka() {
   return (
     <main>
-      {/* Baner */}
-      <section>
-        <div
-          className="w-full min-h-screen bg-cover bg-center flex items-center justify-center"
-          style={{ backgroundImage: `url("/sliders/lokietka-slider/4.webp")` }}
-        >
-          <div className="bg-white/90 backdrop-blur-sm shadow-xl rounded-xl text-center px-6 py-12 sm:px-10 max-w-3xl">
-            <h1 className="text-2xl sm:text-3xl 2xl:text-4xl font-semibold text-black">
-              Żłobek Kraków Prądnik Biały - Wesołe Wygibasy na Łokietka
-            </h1>
-            <div className="mt-6 flex justify-center gap-4 flex-wrap">
-              <Button text="O nas" href="/o-nas" />
-              <Button2 text="Zapisy" href="/zapisy" />
-            </div>
-          </div>
-        </div>
-      </section>
+      <ZlobkiBaner
+        title="ul. Łokietka"
+        subtitle="Prądnik Biały, Krowodrza"
+        bgImage="/sliders/lokietka-slider/4.webp"
+        description="Codzienne spacery i zabawa wśród zieleni. Znajdziesz nas tuż przy Parku Łokietka."
+      />
 
       {/* Karty + Header */}
-      <section className="pt-20 px-[9%]">
+      <section className="xl:pt-16 px-[9%]">
         <div className=" mx-auto">
           <NurseryHeader
             text="W żłobku Wesołe Wygibasy na Łokietka w Krakowie stawiamy na indywidualne
@@ -102,10 +90,7 @@ export default function Lokietka() {
         </div>
       </section>
 
-      {/* Slider */}
-      <section>
-        <ParkSlider images={images} />
-      </section>
+      <SliderComponent images={images} />
 
       {/* Plan Dnia */}
       <section className="bg-gray-50 py-16">
@@ -126,10 +111,11 @@ export default function Lokietka() {
       </section>
 
       {/* Mapa */}
-      <section className="py-16">
-        <div className="mx-auto">
-          <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.3950908862935!2d19.92613357625054!3d50.078889314047764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165bab3657246b%3A0x5be9f5ae07b4cb78!2zV8WCYWR5c8WCYXdhIMWBb2tpZXRrYSAyMywgMzAtMDEwIEtyYWvDs3c!5e0!3m2!1sen!2spl!4v1742315529506!5m2!1sen!2spl" />
-        </div>
+      <section className="">
+        <Map
+          description={"Żłobek na ulicy Łokietka znajduję się przy..."}
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.3950908862935!2d19.92613357625054!3d50.078889314047764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165bab3657246b%3A0x5be9f5ae07b4cb78!2zV8WCYWR5c8WCYXdhIMWBb2tpZXRrYSAyMywgMzAtMDEwIEtyYWvDs3c!5e0!3m2!1sen!2spl!4v1742315529506!5m2!1sen!2spl"
+        />
       </section>
     </main>
   );

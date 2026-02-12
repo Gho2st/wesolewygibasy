@@ -144,7 +144,6 @@ export default function Navigation() {
               );
             })}
 
-            {/* Dodatkowy wyróżniony przycisk w menu mobilnym */}
             <Link
               href="/zapisy"
               onClick={() => setMenuOpen(false)}

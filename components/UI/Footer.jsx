@@ -24,12 +24,12 @@ export default function Footer() {
         {/* Góra */}
         <div className="flex flex-col lg:flex-row justify-between gap-12">
           <div>
-            <h2 className="text-3xl leading-relaxed xl:text-4xl xl:leading-relaxed font-semibold">
+            <span className="text-3xl leading-relaxed xl:text-4xl xl:leading-relaxed font-semibold">
               <span className="bg-white text-primary px-4 py-[0.1px] rounded-full">
                 Wesołe Wygibasy
               </span>{" "}
               są wpisane do rejestru krakowskich złobków i klubów dziecięcych
-            </h2>
+            </span>
             <p className="text-xl lg:text-2xl mt-4">
               Oznacza to, że jesteśmy miejscem bezpiecznym oraz przyjaznym
               dzieciom i rodzicom!
@@ -137,7 +137,6 @@ export default function Footer() {
             <span>&copy;</span> {currentYear} Wesołe Wygibasy
           </p>
         </div>
-        {/* WhatsApp Icon */}
         <Link
           href="https://wa.me/+48697560022"
           className="fixed bg-[#25D366] shadow-2xl rounded-full p-2 text-3xl xl:text-5xl text-white bottom-6 right-6 xl:bottom-16 xl:right-10 z-10"

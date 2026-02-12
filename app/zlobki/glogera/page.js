@@ -3,17 +3,15 @@ import Button from "@/components/UI/Button";
 import CardContainer from "@/components/Cards/CardContainer";
 import SliderComponent from "@/components/UI/slider/slider";
 import Map from "@/components/UI/Map";
-import Button2 from "@/components/UI/Button2";
 import DayScheduleGlogera from "@/components/Info/DayScheduleGlogera";
-import NurseryHeader from "@/components/nursery/header";
+import NurseryHeader from "@/components/zlobki/header";
+import ZlobkiBaner from "@/components/zlobki/Baner";
 
 export const metadata = {
   title: "Żłobek na Ulicy Glogera w Krakowie - Wesołe Wygibasy",
   alternates: {
     canonical: "/zlobki/glogera",
   },
-  keywords:
-    "Żłobek na ulicy glogera, glogera, wesołe wygibasy, kraków, miejsca",
   description:
     "Zapraszamy do żłobka Wesołe Wygibasy na ul. Glogera 53/LU2 w Krakowie. Nowoczesne pomieszczenia, pełna troski opieka i bogata oferta zajęć dla maluchów.",
 };
@@ -69,23 +67,12 @@ const cardData = [
 export default function Glogera() {
   return (
     <main>
-      {/* Baner */}
-      <section>
-        <div
-          className="w-full min-h-screen bg-cover bg-center flex items-center justify-center"
-          style={{ backgroundImage: `url("/zlobki/glogera.jpg")` }}
-        >
-          <div className="bg-white/90 backdrop-blur-sm shadow-xl rounded-xl text-center px-6 py-12 sm:px-10 max-w-3xl">
-            <h1 className="text-2xl sm:text-3xl 2xl:text-4xl font-semibold text-black">
-              Żłobek Kraków Krowodrza - Wesołe Wygibasy na Glogera
-            </h1>
-            <div className="mt-6 flex justify-center gap-4 flex-wrap">
-              <Button text="O nas" href="/o-nas" />
-              <Button2 text="Zapisy" background="#0037FF" href="/zapisy" />
-            </div>
-          </div>
-        </div>
-      </section>
+      <ZlobkiBaner
+        bgImage="/zlobki/glogera.jpg"
+        title="Glogera"
+        subtitle="Krowodrza"
+        description="Zielony ogródek – idealne miejsce na codzienne przygody na świeżym powietrzu!"
+      />
 
       {/* Opis + karty */}
       <section className="pt-20 px-[9%]">
@@ -126,9 +113,7 @@ export default function Glogera() {
 
       {/* Mapa */}
       <section className="py-16">
-        <div className=" mx-auto">
-          <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.0746082710157!2d19.92382417646559!3d50.103610471528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b8cf00937ed%3A0x39479b7e727e42d3!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy!5e0!3m2!1spl!2spl!4v1711815664167!5m2!1spl!2spl" />
-        </div>
+        <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.0746082710157!2d19.92382417646559!3d50.103610471528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b8cf00937ed%3A0x39479b7e727e42d3!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy!5e0!3m2!1spl!2spl!4v1711815664167!5m2!1spl!2spl" />
       </section>
     </main>
   );

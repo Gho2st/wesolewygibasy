@@ -20,18 +20,16 @@ const CardContainer = ({ cards }) => {
       y: 0,
       transition: { duration: 0.5, ease: "easeOut" },
     },
-    // Subtelniejszy hover dla desktopu, wyłączony efekt y na mobile
     hover: {
       y: -8,
       boxShadow: "0px 15px 35px rgba(0, 0, 0, 0.08)",
       transition: { duration: 0.3 },
     },
-    tap: { scale: 0.98 }, // Feedback dla użytkowników mobilnych
+    tap: { scale: 0.98 },
   };
 
   return (
-    // Zmniejszony gap na mobile (gap-4 -> gap-8 na lg)
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8 pb-12">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8  max-w-7xl mx-auto">
       {cards.map((card, index) => (
         <motion.div
           key={index}
@@ -43,7 +41,6 @@ const CardContainer = ({ cards }) => {
           viewport={{ once: true, amount: 0.1 }}
           className="group relative flex flex-col justify-between rounded-2xl lg:rounded-3xl bg-white border border-slate-100 p-6 lg:p-10 overflow-hidden shadow-sm hover:border-slate-200 transition-colors"
         >
-          {/* Dekoracyjny pasek - cieńszy na mobile */}
           <div
             className="absolute top-0 left-0 w-full h-1.5 lg:h-2"
             style={{
@@ -52,7 +49,6 @@ const CardContainer = ({ cards }) => {
           />
 
           <div className="flex flex-col">
-            {/* Responsywna wielkość czcionki */}
             <h3 className="text-xl  2xl:text-2xl font-bold text-slate-900 mb-3 lg:mb-4 leading-tight">
               {card.title}
             </h3>
@@ -72,7 +68,7 @@ const CardContainer = ({ cards }) => {
                   className="flex shrink-0 items-center justify-center"
                   initial={false}
                   animate={{ x: 0 }}
-                  whileHover={{ x: 5 }} // Strzałka ucieka tylko na hover
+                  whileHover={{ x: 5 }}
                 >
                   <HiArrowLongRight className="w-6 h-6 lg:w-8 lg:h-8" />
                 </motion.span>

@@ -1,18 +1,15 @@
 import Places from "@/components/homepage/Places";
-import { Metadata } from "next";
 import Header from "@/components/UI/Header";
 import Button from "@/components/UI/Button";
 import Button2 from "@/components/UI/Button2";
-import Link from "next/link";
 import Image from "next/image";
+import CardContainer from "@/components/Cards/CardContainer";
 
 export const metadata = {
   title: "Plan Dnia - Żłobek Wesołe Wygibasy Kraków | Zajęcia i Edukacja",
   alternates: {
     canonical: "/plan-dnia-w-zlobku",
   },
-  keywords:
-    "plan dnia w żłobku, Wesołe Wygibasy Kraków, harmonogram dnia, zajęcia dla dzieci, edukacja przedszkolna, rozrywka dla maluchów, zajęcia edukacyjne, artystyczne, ruchowe",
   description:
     "Plan dnia w żłobku Wesołe Wygibasy Kraków oferuje zajęcia edukacyjne, artystyczne i ruchowe. Sprawdź nasz harmonogram, który wspiera rozwój dzieci poprzez zabawę i naukę w bezpiecznym środowisku.",
 };
@@ -59,7 +56,7 @@ export default function PlanDnia() {
 
       {/* Sekcja z kartami */}
       <section className="bg-[#ffe3e1] px-[9%] py-24 mask-cloud">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 max-w-7xl mx-auto">
           <h2 className="text-2xl xl:text-4xl mt-10 font-bold mb-8 xl:mb-10">
             Zajęcia i Aktywności w Żłobku Wesołe Wygibasy - Kraków
           </h2>
@@ -76,19 +73,7 @@ export default function PlanDnia() {
             stymulującym środowisku.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 mb-12">
-          {cardData.map(({ title, text }, index) => (
-            <div
-              key={index}
-              className="bg-white border-2 border-[#fa7070] rounded-3xl shadow-md p-6"
-            >
-              <h3 className="text-xl xl:text-2xl font-bold mb-4">
-                {title}
-              </h3>
-              <p className="text-black text-lg font-light">{text}</p>
-            </div>
-          ))}
-        </div>
+        <CardContainer cards={cardData} />
       </section>
 
       <Places background="true" />
@@ -99,26 +84,32 @@ export default function PlanDnia() {
 const cardData = [
   {
     title: "Zajęcia Edukacyjne w Żłobku Wesołe Wygibasy",
-    text: "W czasie zajęć edukacyjnych stawiamy na rozwój poznawczy i kształcenie umiejętności niezbędnych w dalszej edukacji. Nasze programy są dostosowane do wieku i możliwości dzieci, co pozwala na indywidualne podejście do każdego malucha. Edukacja przedszkolna w naszym żłobku to nie tylko zabawa, ale także nauka nowych pojęć, rozwijanie umiejętności logicznego myślenia oraz przygotowanie do przyszłej edukacji w przedszkolu.",
+    description:
+      "W czasie zajęć edukacyjnych stawiamy na rozwój poznawczy i kształcenie umiejętności niezbędnych w dalszej edukacji. Nasze programy są dostosowane do wieku i możliwości dzieci, co pozwala na indywidualne podejście do każdego malucha. Edukacja przedszkolna w naszym żłobku to nie tylko zabawa, ale także nauka nowych pojęć, rozwijanie umiejętności logicznego myślenia oraz przygotowanie do przyszłej edukacji w przedszkolu.",
   },
   {
     title: "Zajęcia Artystyczne: Rozwój Kreatywności i Ekspresji",
-    text: "Zajęcia artystyczne, takie jak malowanie, rysowanie czy prace manualne, są nieodłącznym elementem dnia w żłobku. Rozwijają one kreatywność, wyobraźnię oraz zdolności manualne dzieci. Dzięki temu maluchy mogą wyrażać swoje emocje i pomysły poprzez sztukę, co jest niezwykle ważne dla ich rozwoju emocjonalnego i społecznego.",
+    description:
+      "Zajęcia artystyczne, takie jak malowanie, rysowanie czy prace manualne, są nieodłącznym elementem dnia w żłobku. Rozwijają one kreatywność, wyobraźnię oraz zdolności manualne dzieci. Dzięki temu maluchy mogą wyrażać swoje emocje i pomysły poprzez sztukę, co jest niezwykle ważne dla ich rozwoju emocjonalnego i społecznego.",
   },
   {
     title: "Ruch to zdrowie! Jak dbamy o aktywność dzieci?",
-    text: "Aktywność fizyczna jest kluczowa dla prawidłowego rozwoju dziecka. W naszym żłobku oferujemy zajęcia ruchowe, które pomagają dzieciom rozwijać koordynację ruchową, zwinność i zdrowe nawyki. Dzieci uczestniczą w zabawach ruchowych, tańcu oraz grach zespołowych, co wspiera ich rozwój fizyczny i pozwala im wyładować nadmiar energii w sposób konstruktywny.",
+    description:
+      "Aktywność fizyczna jest kluczowa dla prawidłowego rozwoju dziecka. W naszym żłobku oferujemy zajęcia ruchowe, które pomagają dzieciom rozwijać koordynację ruchową, zwinność i zdrowe nawyki. Dzieci uczestniczą w zabawach ruchowych, tańcu oraz grach zespołowych, co wspiera ich rozwój fizyczny i pozwala im wyładować nadmiar energii w sposób konstruktywny.",
   },
   {
     title: "Zajęcia Muzyczne i Taneczne",
-    text: "W ramach zajęć dodatkowych organizujemy również zajęcia muzyczne i taneczne. Dzięki temu dzieci rozwijają wrażliwość muzyczną, uczą się rytmu i koordynacji. Muzyka stymuluje rozwój intelektualny oraz emocjonalny, wpływając korzystnie na samopoczucie maluchów. Dodatkowo, taniec pozwala dzieciom na spontaniczną ekspresję oraz poprawę zdolności motorycznych.",
+    description:
+      "W ramach zajęć dodatkowych organizujemy również zajęcia muzyczne i taneczne. Dzięki temu dzieci rozwijają wrażliwość muzyczną, uczą się rytmu i koordynacji. Muzyka stymuluje rozwój intelektualny oraz emocjonalny, wpływając korzystnie na samopoczucie maluchów. Dodatkowo, taniec pozwala dzieciom na spontaniczną ekspresję oraz poprawę zdolności motorycznych.",
   },
   {
     title: "Dodatkowe Aktywności w Żłobku: Odkrywanie Pasji",
-    text: "Oprócz standardowych zajęć, oferujemy również dodatkowe aktywności, które wspierają odkrywanie indywidualnych pasji i zainteresowań dzieci. W ramach tych zajęć proponujemy naukę języków obcych, warsztaty kulinarne oraz zajęcia sportowe. To doskonała okazja, aby dzieci mogły rozwijać swoje talenty w przyjaznym i wspierającym środowisku, co z pewnością zaowocuje w ich dalszym rozwoju.",
+    description:
+      "Oprócz standardowych zajęć, oferujemy również dodatkowe aktywności, które wspierają odkrywanie indywidualnych pasji i zainteresowań dzieci. W ramach tych zajęć proponujemy naukę języków obcych, warsztaty kulinarne oraz zajęcia sportowe. To doskonała okazja, aby dzieci mogły rozwijać swoje talenty w przyjaznym i wspierającym środowisku, co z pewnością zaowocuje w ich dalszym rozwoju.",
   },
   {
     title: "Posiłki i odpoczynek w naszym żłobku",
-    text: "Posiłki w naszym żłobku są starannie planowane i przygotowywane, aby dostarczać dzieciom wszystkich niezbędnych składników odżywczych, wspomagających ich prawidłowy rozwój. Każdy posiłek jest zbilansowany i dostosowany do potrzeb najmłodszych, z uwzględnieniem indywidualnych wymagań dietetycznych, alergii i preferencji.",
+    description:
+      "Posiłki w naszym żłobku są starannie planowane i przygotowywane, aby dostarczać dzieciom wszystkich niezbędnych składników odżywczych, wspomagających ich prawidłowy rozwój. Każdy posiłek jest zbilansowany i dostosowany do potrzeb najmłodszych, z uwzględnieniem indywidualnych wymagań dietetycznych, alergii i preferencji.",
   },
 ];

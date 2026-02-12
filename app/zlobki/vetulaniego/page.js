@@ -1,19 +1,16 @@
 import ImagesContainer from "@/components/Gallery/ImagesContainer";
-import Button from "@/components/UI/Button";
 import CardContainer from "@/components/Cards/CardContainer";
 import SliderComponent from "@/components/UI/slider/slider";
 import Map from "@/components/UI/Map";
-import Button2 from "@/components/UI/Button2";
 import DayScheduleVetulaniego from "@/components/Info/DayScheduleVetulaniego";
-import NurseryHeader from "@/components/nursery/header";
+import NurseryHeader from "@/components/zlobki/header";
+import ZlobkiBaner from "@/components/zlobki/Baner";
 
 export const metadata = {
   title: "Żłobek na ulicy Vetulaniego w Krakowie - Wesołe Wygibasy",
   alternates: {
     canonical: "/zlobki/vetulaniego",
   },
-  keywords:
-    "Żłobek na Vetulaniego, klub malucha,  bronowice, zielonki, dotacja, aktywny maluch, kameralny, własny ogród",
   description:
     "Szukasz żłobka w Krakowie? Żłobek Wesołe Wygibasy na ul. Vetulaniego oferuje troskliwą opiekę, rozwijające zajęcia oraz ogród z placem zabaw. Zapisz swoje dziecko już dziś!",
 };
@@ -61,23 +58,13 @@ const cardData = [
 export default function VetulaniegoPage() {
   return (
     <main>
+      <ZlobkiBaner
+        bgImage="/zlobki/vetulaniego.webp"
+        title="Klub Malucha Vetulaniego"
+        subtitle="Bronowice, Krowodrza"
+        description="Przytulny, kameralny żłobek z własnym ogródkiem i placem zabaw – dzieciaki szaleją bezpiecznie wśród drzew, bez wychodzenia na ulicę"
+      />
       {/* Baner */}
-      <section>
-        <div
-          className="w-full min-h-screen bg-cover bg-bottom relative flex items-center justify-center"
-          style={{ backgroundImage: `url("/zlobki/vetulaniego.webp")` }}
-        >
-          <div className="bg-white/95 backdrop-blur-sm shadow-xl rounded-xl text-center px-6 py-12 sm:px-10 max-w-3xl">
-            <h1 className="text-2xl sm:text-3xl 2xl:text-4xl font-semibold text-black">
-              Klub Malucha Kraków – Wesołe Wygibasy na Vetulaniego
-            </h1>
-            <div className="mt-6 flex justify-center gap-4 flex-wrap">
-              <Button text="O nas" href="/o-nas" />
-              <Button2 text="Zapisy" href="/zapisy" />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Karty i opis */}
       <section className="pt-20 px-[9%]">
