@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Header from "@/components/UI/Header";
-import PricingInfo from "./pricingInfo";
+import PricingInfo from "./PricingInfo"
 
 const PRICING_DATA = [
   {
