@@ -24,13 +24,13 @@ export default function Footer() {
         {/* Góra */}
         <div className="flex flex-col lg:flex-row justify-between gap-12">
           <div>
-            <span className="text-3xl leading-relaxed xl:text-4xl xl:leading-relaxed font-semibold">
+            <span className="text-xl md:text-2xl leading-relaxed xl:text-4xl xl:leading-relaxed font-semibold">
               <span className="bg-white text-primary px-4 py-[0.1px] rounded-full">
                 Wesołe Wygibasy
               </span>{" "}
               są wpisane do rejestru krakowskich złobków i klubów dziecięcych
             </span>
-            <p className="text-xl lg:text-2xl mt-4">
+            <p className=" md:text-xl lg:text-2xl mt-4 font-light">
               Oznacza to, że jesteśmy miejscem bezpiecznym oraz przyjaznym
               dzieciom i rodzicom!
             </p>
