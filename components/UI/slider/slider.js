@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 
-export default function SliderComponent({ images, title, description }) {
+export default function SliderComponent({ images, description }) {
   const carouselSettings = {
     infinite: true,
     speed: 700,
@@ -43,9 +43,6 @@ export default function SliderComponent({ images, title, description }) {
 
   return (
     <div className="px-[7%] pb-16">
-      <h2 className="text-3xl sm:text-4xl font-medium mb-12 pt-16 text-center">
-        {title}
-      </h2>
       <p className="text-xl text-center max-w-4xl mb-12 px-2">{description}</p>
       <div className="w-full mt-16">
         <Slider {...carouselSettings}>

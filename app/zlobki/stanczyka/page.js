@@ -8,38 +8,70 @@ import NurseryHeader from "@/components/zlobki/header";
 import ZlobkiBaner from "@/components/zlobki/Baner";
 
 export const metadata = {
-  title: "Żłobek Kraków Bronowice | Wesołe Wygibasy ul. Stańczyka",
+  title: "Żłobek Kraków Bronowice ul. Stańczyka | Wesołe Wygibasy",
   alternates: {
     canonical: "/zlobki/stanczyka",
   },
   description:
-    "Szukasz żłobka na Bronowicach? Wesołe Wygibasy przy ul. Stańczyka to troskliwa opieka i domowa atmosfera. Trwają zapisy! Sprawdź cennik i umów wizytę.",
+    "Prywatny żłobek na Bronowicach (ul. Stańczyka 8). Troskliwa opieka, domowa atmosfera i dofinansowanie Aktywnie w Żłobku. Sprawdź naszą ofertę i zapisz dziecko!",
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Preschool",
+  name: "Żłobek Wesołe Wygibasy - ul. Stańczyka (Bronowice)",
+  image: "https://wesolewygibasy.pl/zlobki/stanczyka.jpg",
+  description:
+    "Prywatny żłobek na krakowskich Bronowicach. Troskliwa opieka, nowoczesne wnętrza i codzienne spacery przy Młynówce Królewskiej.",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "ul. Stańczyka 8/LU3",
+    addressLocality: "Kraków",
+    addressRegion: "Małopolskie",
+    postalCode: "30-0126",
+    addressCountry: "PL",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "50.0760",
+    longitude: "19.8970",
+  },
+  url: "https://wesolewygibasy.pl/zlobki/stanczyka",
+  telephone: "+48697560022",
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "06:30",
+      closes: "17:30",
+    },
+  ],
 };
 
 const images = [
   {
     src: "/sliders/stanczyka-slider/st1.jpg",
-    alt: "Widok wnętrza żłobka Wesołe Wygibasy na Stańczyka w Krakowie",
+    alt: "Sala zabaw w żłobku na Bronowicach z dużym dywanem w słonie, szafkami-domkami i dekoracyjnym oświetleniem w kształcie balonów",
   },
   {
     src: "/sliders/stanczyka-slider/st2.jpg",
-    alt: "Sala zabaw w żłobku na ul. Stańczyka w Krakowie, Wesołe Wygibasy",
+    alt: "Nowoczesne wnętrze żłobka przy ul. Stańczyka z widokiem na osiedle przez duże przeszklenia i kącikiem do karmienia.",
   },
   {
     src: "/sliders/stanczyka-slider/st3.jpg",
-    alt: "Przytulne wnętrze żłobka w Bronowicach, Kraków",
+    alt: "Główna sala zajęć w żłobku Wesołe Wygibasy na ul. Stańczyka z niskimi stolikami i krzesłami dostosowanymi do maluchów.",
   },
   {
     src: "/sliders/stanczyka-slider/st4.jpg",
-    alt: "Zdjęcie budynku Żłobka na Stańczyka",
+    alt: "Witryna zewnętrzna żłobka przy ul. Stańczyka 8 w Krakowie z kolorowymi grafikami zwierząt.",
   },
   {
     src: "/sliders/stanczyka-slider/st5.jpg",
-    alt: "Zdjęcie przedstawiające wejście do Żłobka",
+    alt: "Wejście do placówki Wesołe Wygibasy na Bronowicach z wyraźnym oznaczeniem lokalu LU 3.",
   },
   {
     src: "/sliders/stanczyka-slider/st6.jpg",
-    alt: "Zdjęcie sali zabaw dla dzieci w Wesołych Wygibasach",
+    alt: "Szeroka perspektywa sali wielofunkcyjnej w żłobku przy ul. Stańczyka, łącząca strefę zabawy i nauki.",
   },
 ];
 
@@ -76,9 +108,9 @@ export default function Stanczyka() {
       {/* Baner */}
       <ZlobkiBaner
         bgImage="/zlobki/stanczyka.jpg"
-        title="Stańczyka"
-        subtitle="Bronowice"
-        description="Tuż przy Młynówce Królewskiej – codzienne spacery i zabawa na super placach zabaw"
+        title="Żłobek Kraków Bronowice – ul. Stańczyka"
+        subtitle="ul. Stańczyka 8/LU3, Kraków – Bronowice"
+        description="Tuż przy Młynówce Królewskiej – codzienne spacery i zabawa na najlepszych placach zabaw w sercu Bronowic."
       />
 
       {/* Karty i opis */}
@@ -120,7 +152,12 @@ export default function Stanczyka() {
 
       {/* Mapa */}
       <section className="py-16">
-        <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20483.285915179342!2d19.857841410839853!3d50.07859630000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b0b843d4ce5%3A0xfe8741522eb108da!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy%203%20Bronowice!5e0!3m2!1spl!2spl!4v1711475564872!5m2!1spl!2spl" />
+        <Map
+          description={
+            "Nasz żłobek na Bronowicach znajduje się przy ul. Stańczyka 8, w nowoczesnym kompleksie mieszkalnym, zaledwie kilka kroków od terenów spacerowych Młynówki Królewskiej."
+          }
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20483.285915179342!2d19.857841410839853!3d50.07859630000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b0b843d4ce5%3A0xfe8741522eb108da!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy%203%20Bronowice!5e0!3m2!1spl!2spl!4v1711475564872!5m2!1spl!2spl"
+        />
       </section>
     </main>
   );

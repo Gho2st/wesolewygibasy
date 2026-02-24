@@ -15,6 +15,38 @@ export const metadata = {
     "Prywatny żłobek na Krowodrzy (ul. Łokietka 23, Kraków). Kameralna grupa, dotacje z UMK i programu Aktywnie w Żłobku. Codzienne spacery w Parku Łokietka. Zapisz malucha!",
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Preschool",
+  name: "Żłobek Wesołe Wygibasy - ul. Łokietka (Krowodrza)",
+  image: "https://wesolewygibasy.pl/zlobki/lokietka.webp",
+  description:
+    "Prywatny żłobek na krakowskiej Krowodrzy. Kameralna grupa, profesjonalna opieka i codzienne spacery w Parku Łokietka.",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "ul. Władysława Łokietka 23",
+    addressLocality: "Kraków",
+    addressRegion: "Małopolskie",
+    postalCode: "30-010",
+    addressCountry: "PL",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "50.0768",
+    longitude: "19.9305",
+  },
+  url: "https://wesolewygibasy.pl/zlobki/lokietka",
+  telephone: "+48697560022",
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "06:30",
+      closes: "17:30",
+    },
+  ],
+};
+
 const images = [
   {
     src: "/sliders/lokietka-slider/1.webp",
@@ -92,10 +124,14 @@ const cardData = [
 export default function Lokietka() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <ZlobkiBaner
         title="Żłobek Kraków Krowodrza – ul. Łokietka"
         subtitle="ul. Łokietka 23, Kraków – Krowodrza"
-        bgImage="/sliders/lokietka-slider/4.webp"
+        bgImage="/zlobki/lokietka.webp"
         description="Codzienne spacery i zabawa wśród zieleni. Znajdziesz nas tuż przy Parku Łokietka."
       />
 

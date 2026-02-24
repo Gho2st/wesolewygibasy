@@ -8,34 +8,66 @@ import NurseryHeader from "@/components/zlobki/header";
 import ZlobkiBaner from "@/components/zlobki/Baner";
 
 export const metadata = {
-  title: "Żłobek na Ulicy Ślicznej w Krakowie - Wesołe Wygibasy",
+  title: "Żłobek Kraków Prądnik Czerwony ul. Śliczna | Wesołe Wygibasy",
   alternates: {
     canonical: "/zlobki/sliczna",
   },
   description:
-    "Żłobek Wesołe Wygibasy w Krakowie – profesjonalna opieka, własny plac zabaw, dofinansowanie Maluch Plus. Zapisz swoje dziecko już dziś!",
+    "Prywatny żłobek na Prądniku Czerwonym (ul. Śliczna 36A). Duży własny plac zabaw, dotacje UMK i program Aktywnie w Żłobku. Blisko Grzegórzek i Tauron Areny. Sprawdź!",
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Preschool",
+  name: "Żłobek Wesołe Wygibasy - ul. Śliczna (Prądnik Czerwony)",
+  image: "https://wesolewygibasy.pl/zlobki/sliczna.jpg",
+  description:
+    "Nowoczesny żłobek na Prądniku Czerwonym z ogromnym, bezpiecznym placem zabaw. Profesjonalna opieka, zajęcia sensoryczne i domowa atmosfera.",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "ul. Śliczna 36A",
+    addressLocality: "Kraków",
+    addressRegion: "Małopolskie",
+    postalCode: "31-444",
+    addressCountry: "PL",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "50.0715",
+    longitude: "19.9810",
+  },
+  url: "https://wesolewygibasy.pl/zlobki/sliczna",
+  telephone: "+48697560022",
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "07:00",
+      closes: "17:30",
+    },
+  ],
 };
 
 const images = [
   {
     src: "/sliders/sliczna-slider/sl1.jpg",
-    alt: "Wnętrze Żłobka Wesołe Wygibasy na ulicy Ślicznej w Krakowie, placówka dla dzieci",
+    alt: "Kącik zabaw w żłobku na Prądniku Czerwonym z dużym dywanem w motyw pandy i panelami sensorycznymi na ścianach.",
   },
   {
     src: "/sliders/sliczna-slider/sl2.jpg",
-    alt: "Sala zabaw Żłobka Wesołe Wygibasy na Ślicznej w Krakowie",
+    alt: "Sala zajęć z fototapetą przedstawiającą podwodny świat i łodzią podwodną – żłobek ul. Śliczna.",
   },
   {
     src: "/sliders/sliczna-slider/sl3.jpg",
-    alt: "Nowoczesne wnętrze Żłobka na ulicy Ślicznej w Krakowie",
+    alt: "Nowoczesne wyposażenie żłobka na ul. Ślicznej, w tym regał na książki w kształcie drzewa i pufy sensoryczne.",
   },
   {
     src: "/sliders/sliczna-slider/sl5.jpg",
-    alt: "Zielony plac zabaw Żłobka Wesołe Wygibasy w Krakowie na Ślicznej",
+    alt: "Plac zabaw placówki na Prądniku Czerwonym z drewnianą kuchnią błotną i urządzeniami do wspinaczki.",
   },
   {
     src: "/sliders/sliczna-slider/sl6.jpg",
-    alt: "Pokój dziecięcy w Żłobku Wesołe Wygibasy na Ślicznej w Krakowie",
+    alt: "Jadalnia i sala do nauki w żłobku na ul. Ślicznej z drewnianymi stolikami i zabezpieczeniami w kształcie płotków.",
   },
 ];
 
@@ -69,11 +101,15 @@ const cardData = [
 export default function Sliczna() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <ZlobkiBaner
-        title="Śliczna"
-        subtitle="Olsza"
-        bgImage="/sliders/sliczna-slider/sl1.jpg"
-        description="Codzienna zabawa na świeżym powietrzu – własny plac zabaw i ogród do dyspozycji dzieci"
+        title="Żłobek Kraków Prądnik Czerwony – ul. Śliczna"
+        subtitle="ul. Śliczna 36A, Kraków – Prądnik Czerwony"
+        bgImage="/zlobki/sliczna.jpg"
+        description="Największy własny plac zabaw w okolicy! Bezpieczna przestrzeń do zabawy na świeżym powietrzu w sercu Prądnika Czerwonego."
       />
 
       {/* Opis i karty */}
@@ -120,7 +156,12 @@ export default function Sliczna() {
 
       {/* Mapa */}
       <section className="py-16">
-        <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20483.285915179342!2d19.857841410839853!3d50.07859630000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b0b843d4ce5%3A0xfe8741522eb108da!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy%203%20Bronowice!5e0!3m2!1spl!2spl!4v1711475564872!5m2!1spl!2spl" />
+        <Map
+          description={
+            "Nasz żłobek na Prądniku Czerwonym znajduje się przy ul. Ślicznej 36A, z doskonałym dojazdem od strony ul. Mogilskiej oraz al. Jana Pawła II, tuż na granicy z dzielnicą Grzegórzki."
+          }
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20483.285915179342!2d19.857841410839853!3d50.07859630000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b0b843d4ce5%3A0xfe8741522eb108da!2sNiepubliczny%20%C5%BB%C5%82obek%20Weso%C5%82e%20Wygibasy%203%20Bronowice!5e0!3m2!1spl!2spl!4v1711475564872!5m2!1spl!2spl"
+        />
       </section>
     </main>
   );

@@ -36,7 +36,7 @@ const jsonLd = {
     latitude: "50.1034",
     longitude: "19.9389",
   },
-  url: "https://twoja-domena.pl/zlobki/glogera",
+  url: "https://wesolewygibasy.pl/zlobki/glogera",
   telephone: "+48697560022",
   openingHoursSpecification: [
     {
