@@ -48,9 +48,7 @@ export default function Footer() {
             <h3 className="text-3xl font-semibold mb-6">Godziny otwarcia</h3>
             <ul className="text-lg">
               <li>
-                <span className="font-bold text-primary text-xl">
-                  Pon - Pt:
-                </span>
+                <span className="font-bold  text-xl">Pon - Pt:</span>
               </li>
               <li>Vetulaniego - 7:00 - 17:00</li>
               <li>Glogera - 6:30 - 17:00</li>
@@ -58,12 +56,10 @@ export default function Footer() {
               <li>Śliczna - 7:00 - 17:30</li>
               <li>Łokietka - 6:30 - 17:30</li>
               <li className="mt-2">
-                <span className="font-bold text-primary text-xl">Sob:</span>{" "}
-                nieczynne
+                <span className="font-bold  text-xl">Sob:</span> nieczynne
               </li>
               <li>
-                <span className="font-bold text-primary text-xl">Ndz:</span>{" "}
-                nieczynne
+                <span className="font-bold  text-xl">Ndz:</span> nieczynne
               </li>
             </ul>
           </div>

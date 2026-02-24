@@ -32,17 +32,19 @@ export default function PlaceItem(props) {
               {props.title}
             </h3>
 
-            {/* Lokalizacja z ikonką pinezki */}
-            <div className="flex flex-col items-center text-slate-500 gap-1">
+            {/* Lokalizacja - używamy znacznika <address> dla robotów Google */}
+            <address className="not-italic flex flex-col items-center text-slate-500 gap-1">
               <div className="flex items-center gap-1 text-[#4a71ff] font-bold uppercase text-xs xl:text-lg tracking-widest mb-1">
-                <HiOutlineMapPin size={16} />
-                <span>Kraków</span>
+                <div className="">
+                  <HiOutlineMapPin size={16} aria-hidden="true" />
+                </div>
+                <span>{props.location}</span>
               </div>
-              {/* <p className="text-lg font-medium text-slate-700">
-                {props.location}
-              </p> */}
-              <p className="text-base font-light italic">{props.street}</p>
-            </div>
+              <p className="text-base font-medium text-slate-700">
+                {props.street}
+              </p>
+              <p className="text-sm font-light italic"></p>
+            </address>
           </div>
 
           {/* Sekcja dolna - Zawsze na samym dole karty */}

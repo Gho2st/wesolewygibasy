@@ -52,9 +52,9 @@ export default function Numbers() {
 
       {/* Treść - stała wysokość */}
       <div className="text-center text-black min-h-[130px] flex flex-col justify-center items-center">
-        <h3 className="text-lg font-semibold mb-1">
+        <span className="text-lg font-semibold mb-1">
           {numbers.find((n) => n.id === active)?.title}
-        </h3>
+        </span>
         <p className="">Nasz numer to:</p>
         <p className="font-bold text-2xl mt-1">
           {numbers.find((n) => n.id === active)?.number}

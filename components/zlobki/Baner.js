@@ -12,10 +12,9 @@ export default function ZlobkiBaner({ title, bgImage, description, subtitle }) {
 
       <div className="relative z-10 max-w-4xl w-full">
         <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-[2rem] p-8 md:p-16 shadow-2xl text-center transform transition-all duration-500 hover:translate-y-[-5px]">
-          {/* Subtitle  */}
-          <span className="inline-block px-4 py-1.5 mb-8 text-sm xl:text-base font-semibold tracking-wider uppercase bg-primary text-white rounded-full shadow-lg shadow-primary/30">
+          <address className="not-italic inline-block px-4 py-1.5 mb-8 text-sm xl:text-base font-semibold tracking-wider uppercase bg-primary text-white rounded-full shadow-lg shadow-primary/30">
             {subtitle}
-          </span>
+          </address>
 
           {/* Title  */}
           <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight">
