@@ -1,4 +1,4 @@
-// import ImagesContainer from "@/components/Gallery/ImagesContainer";
+import ImagesContainer from "@/components/Gallery/ImagesContainer";
 import Map from "@/components/UI/Map";
 import DayScheduleLokietka from "@/components/Info/DayScheduleLokietka";
 import CardContainer from "@/components/Cards/CardContainer";
@@ -162,12 +162,12 @@ export default function Lokietka() {
       </section>
 
       {/* Galeria */}
-      {/* <section className="py-16">
+      <section className="py-16">
         <div className="text-center">
           <h2 className="text-4xl font-bold">Galeria zdjęć</h2>
-          <ImagesContainer folder="sliczna" />
+          <ImagesContainer folder="lokietka" />
         </div>
-      </section> */}
+      </section>
 
       {/* Mapa */}
       <section className="">

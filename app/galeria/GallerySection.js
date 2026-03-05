@@ -1,14 +1,14 @@
 "use client";
 import { useState, useEffect } from "react";
 import ImagesContainer from "@/components/Gallery/ImagesContainer";
-import { Loader2 } from "lucide-react"; // lub własny spinner
+import { Loader2 } from "lucide-react";
 
 const branches = [
   { id: "vetulaniego", name: "Vetulaniego", available: true },
   { id: "glogera", name: "Glogera", available: true },
   { id: "stanczyka", name: "Stańczyka", available: true },
   { id: "sliczna", name: "Śliczna", available: true },
-  { id: "lokietka", name: "Łokietka", available: false },
+  { id: "lokietka", name: "Łokietka", available: true },
 ];
 
 export default function GallerySection() {
@@ -25,7 +25,6 @@ export default function GallerySection() {
   const handleBranchClick = (id) => {
     if (loadingBranch || id === activeFolder) return;
     setLoadingBranch(true);
-    // Dodaj krótki delay żeby było widoczne ładowanie nawet przy szybkim API
     setTimeout(() => {
       setActiveFolder(id);
       setLoadingBranch(false);
