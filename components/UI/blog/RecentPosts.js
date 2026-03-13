@@ -28,11 +28,11 @@ export default function RecentPosts({ blogPosts, layout = "column" }) {
               <div className="absolute top-4 right-4 w-3 h-3 bg-primary rounded-full" />
               <span className="text-sm text-gray-500 font-medium block mb-3">
                 {format(
-                  parse(post.date, "dd-MM-yyyy", new Date()),
+                  parse(post.date, "yyyy-MM-dd", new Date()),
                   "d MMMM yyyy",
                   {
                     locale: pl,
-                  }
+                  },
                 )}
               </span>
               <h4 className="text-xl font-semibold mb-3">{post.title}</h4>

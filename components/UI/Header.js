@@ -1,7 +1,6 @@
 export default function Header({ text }) {
   return (
-    <header className="relative pt-20 pb-12  md:pb-20 overflow-hidden">
-      {/* Opcjonalne delikatne tło, żeby nawiązać do błękitu navbara */}
+    <header className="relative  pt-12 2xl:pt-20 pb-12  2xl:pb-20 overflow-hidden">
       <div className="absolute inset-0 bg-slate-50 -z-10" />
 
       <div className="max-w-[1440px] mx-auto px-6 md:px-12">
