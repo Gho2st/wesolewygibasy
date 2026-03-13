@@ -9,7 +9,6 @@ export default function Header({ text }) {
             {text}
           </h1>
 
-          {/* Dekoracyjna linia pod tekstem zamiast nudnego border-b */}
           <div className="w-24 h-1.5 bg-[#4a71ff] rounded-full mt-2 opacity-80" />
         </div>
       </div>
