@@ -14,20 +14,26 @@ export default function Numbers() {
     {
       id: "glogera",
       label: "2",
-      title: "Niepubliczny Żłobek ul. Glogera",
+      title: "Żłobek ul. Glogera",
       number: "7330.2.16.2017",
     },
     {
       id: "stanczyka",
       label: "3",
-      title: "Niepubliczny Żłobek ul. Stańczyka",
+      title: "Żłobek ul. Stańczyka",
       number: "7330.2.7.2023",
     },
     {
       id: "sliczna",
       label: "4",
-      title: "Niepubliczny Żłobek ul. Śliczna",
+      title: "Żłobek ul. Śliczna",
       number: "7330.1.15.2024",
+    },
+    {
+      id: "lokietka",
+      label: "5",
+      title: "Żłobek ul. Łokietka",
+      number: "7330.1.18.2025",
     },
   ];
 
@@ -50,7 +56,6 @@ export default function Numbers() {
         ))}
       </div>
 
-      {/* Treść - stała wysokość */}
       <div className="text-center text-black min-h-[130px] flex flex-col justify-center items-center">
         <span className="text-lg font-semibold mb-1">
           {numbers.find((n) => n.id === active)?.title}
