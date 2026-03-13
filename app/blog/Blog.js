@@ -111,7 +111,7 @@ export default function Blog() {
               ) : (
                 <div className="col-span-full py-20 text-center">
                   <p className="text-gray-600 text-lg">
-                    Nie znaleziono artykułów pasujących do "{searchTerm}".
+                    Nie znaleziono artykułów pasujących do {searchTerm}.
                   </p>
                 </div>
               )}
