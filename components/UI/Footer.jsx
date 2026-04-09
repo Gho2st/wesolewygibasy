@@ -135,6 +135,7 @@ export default function Footer() {
         </div>
         <Link
           href="https://wa.me/+48697560022"
+          rel="nofollow"
           className="fixed bg-[#25D366] shadow-2xl rounded-full p-2 text-3xl xl:text-5xl text-white bottom-6 right-6 xl:bottom-16 xl:right-10 z-10"
         >
           <FaWhatsapp className="cursor-pointer" />
