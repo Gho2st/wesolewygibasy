@@ -5,53 +5,61 @@ import CtaLink from "@/components/UI/blog/CtaLink";
 import { notFound } from "next/navigation";
 import RecentPosts from "@/components/UI/blog/RecentPosts";
 
-// ⬇️ Generowanie ścieżek
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({
     slug: post.slug,
   }));
 }
 
-// ⬇️ Dynamiczne metadata dla SEO
 export async function generateMetadata({ params }) {
   const post = blogPosts.find((p) => p.slug === params.slug);
 
   if (!post) return {};
 
+  // Użyj dedykowanego pola metaDescription, fallback na contentPart1
+  const description =
+    post.metaDescription ||
+    post.contentPart1?.replace(/<[^>]*>/g, "").slice(0, 155) + "...";
+
   return {
     title: `${post.title} – Żłobek Wesołe Wygibasy w Krakowie`,
-    description: post.contentPart1.slice(0, 150) + "...",
+    description,
     alternates: {
       canonical: `/blog/${post.slug}`,
     },
   };
 }
 
-// ⬇️ Strona bloga
 export default async function BlogPostPage({ params }) {
   const data = blogPosts.find((post) => post.slug === params.slug);
-  // gdy nie ma danych to not found
   if (!data) return notFound();
+
+  // Zbierz wszystkie pary subtitle + content dynamicznie
+  const sections = [];
+  let i = 1;
+  while (data[`contentPart${i}`]) {
+    sections.push({
+      subtitle: data[i === 1 ? "subtitle" : `subtitle${i}`],
+      content: data[`contentPart${i}`],
+      layout: i % 2 === 0 ? "right" : "left",
+    });
+    i++;
+  }
 
   return (
     <>
       <main className="pt-8 px-[9%] 2xl:px-[13%]">
         <Header text={data.title} />
         <section className="py-8 2xl:py-20">
-          <div>
-            <LineHeader text={data.subtitle} layout="left" />
-            <p
-              className="text-lg text-left xl:text-xl leading-relaxed mt-10 xl:my-16 "
-              dangerouslySetInnerHTML={{ __html: data.contentPart1 }}
-            />
-          </div>
-          <div>
-            <LineHeader text={data.subtitle2} layout="right" />
-            <p
-              className="text-lg text-left xl:text-xl leading-relaxed mt-10 xl:my-16 "
-              dangerouslySetInnerHTML={{ __html: data.contentPart2 }}
-            />
-          </div>
+          {sections.map((section, index) => (
+            <div key={index}>
+              <LineHeader text={section.subtitle} layout={section.layout} />
+              <p
+                className="text-lg text-left xl:text-xl leading-relaxed mt-10 xl:my-16"
+                dangerouslySetInnerHTML={{ __html: section.content }}
+              />
+            </div>
+          ))}
           <CtaLink
             link={data.cta.link}
             button={data.cta.button}
