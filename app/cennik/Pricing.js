@@ -1,13 +1,13 @@
 "use client";
 import { useState } from "react";
 import Header from "@/components/UI/Header";
-import PricingInfo from "./PricingInfo"
+import PricingInfo from "./PricingInfo";
 
 const PRICING_DATA = [
   {
     id: "lokietka",
     title: "Łokietka",
-    themeColor: "bg-teal-700",
+    icon: "🌟",
     extraInfo:
       "Czesne pokrywane z projektu Aktywny Maluch oraz dotacji urzędu miasta Kraków",
     headers: [
@@ -30,8 +30,9 @@ const PRICING_DATA = [
   },
   {
     id: "sliczna",
-    title: "Śliczna & Stańczyka - Czesne 0zł",
-    themeColor: "bg-teal-700",
+    title: "Śliczna & Stańczyka",
+    badge: "Czesne 0 zł",
+    icon: "🎈",
     additionalFee: "Zajęcia dodatkowe płatne 300 zł / miesiąc",
     extraInfo:
       "Czesne w całości pokrywane z projektu maluch + 2022–2029 oraz dotacji urzędu miasta Kraków i Aktywny Maluch",
@@ -88,7 +89,7 @@ const PRICING_DATA = [
   {
     id: "vetulaniego",
     title: "Vetulaniego & Glogera",
-    themeColor: "bg-teal-700",
+    icon: "🎨",
     additionalFee: "Zajęcia dodatkowe płatne 150 zł / miesiąc",
     headers: [
       "Miesiąc",
@@ -113,73 +114,153 @@ const PRICING_DATA = [
 const LocationCard = ({ location, isActive, onClick }) => {
   return (
     <button
+      type="button"
       onClick={onClick}
       className={`
-        flex-1 min-w-[240px] p-5 rounded-xl shadow-md transition-all duration-200
-        text-white font-semibold text-lg md:text-xl cursor-pointer
+        group relative flex-1 min-w-[240px] p-6 rounded-2xl 
+        transition-all duration-300 cursor-pointer overflow-hidden
         ${
           isActive
-            ? "bg-[#fa7070] scale-105 shadow-xl ring-2 ring-[#fa7070]/40"
-            : "bg-[#fa7070]/80 hover:bg-[#fa7070] hover:shadow-lg"
+            ? "bg-gradient-to-br from-[#fa7070] to-[#ea5252] shadow-2xl shadow-[#fa7070]/30 ring-4 ring-[#fa7070]/30"
+            : "bg-white border-2 border-gray-100 hover:border-[#fa7070]/30 hover:shadow-xl"
         }
       `}
     >
-      {location.title}
+      {/* Dekoracyjny element w tle */}
+      <div
+        className={`absolute -top-8 -right-8 w-24 h-24 rounded-full transition-all duration-500 ${
+          isActive
+            ? "bg-white/15 scale-110"
+            : "bg-[#fa7070]/5 group-hover:scale-110"
+        }`}
+      />
+
+      <div className="relative flex flex-col items-center gap-2">
+        <span className="text-3xl mb-1">{location.icon}</span>
+        <span
+          className={`font-bold text-lg md:text-xl ${
+            isActive ? "text-white" : "text-gray-800"
+          }`}
+        >
+          {location.title}
+        </span>
+        {location.badge && (
+          <span
+            className={`mt-1 px-3 py-1 rounded-full text-xs font-semibold ${
+              isActive
+                ? "bg-white text-[#ea5252]"
+                : "bg-[#fa7070]/10 text-[#ea5252]"
+            }`}
+          >
+            {location.badge}
+          </span>
+        )}
+      </div>
     </button>
   );
 };
 
 const PricingTable = ({ data }) => {
   return (
-    <div className="mt-8 overflow-x-auto rounded-xl border border-gray-200 shadow-sm bg-white">
-      <table className="w-full text-sm md:text-base">
-        <thead>
-          <tr className={`${data.themeColor} text-white`}>
-            {data.headers.map((head, i) => (
-              <th
-                key={i}
-                className={`p-3 md:p-4 border-r last:border-r-0 font-medium ${
-                  head.includes("Wpłata") ? "bg-blue-700/90" : ""
-                }`}
-              >
-                {head}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {data.rows.map((row, rowIndex) => (
-            <tr
-              key={rowIndex}
-              className={`
-                border-b last:border-b-0 hover:bg-gray-50 transition-colors
-                ${rowIndex % 2 === 0 ? "bg-gray-50/70" : "bg-white"}
-              `}
-            >
-              {row.map((cell, cellIndex) => (
-                <td
-                  key={cellIndex}
-                  className="p-3 md:p-4 border-r last:border-r-0 text-center"
+    <div className="mt-8 rounded-2xl overflow-hidden bg-white shadow-xl shadow-gray-200/50 border border-gray-100">
+      {/* Nagłówek tabeli z gradientem */}
+      <div className="bg-gradient-to-r from-teal-600 to-teal-700 px-6 py-5">
+        <div className="flex items-center gap-3">
+          <span className="text-2xl">{data.icon}</span>
+          <div>
+            <h3 className="text-white font-bold text-xl md:text-2xl">
+              {data.title}
+            </h3>
+            <p className="text-teal-100 text-sm mt-0.5">
+              Szczegółowy cennik miesięczny
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="overflow-x-auto">
+        <table className="w-full text-sm md:text-base">
+          <thead>
+            <tr className="bg-gradient-to-r from-teal-50 to-teal-100/50 border-b-2 border-teal-200">
+              {data.headers.map((head, i) => (
+                <th
+                  key={i}
+                  className={`p-4 text-teal-900 font-semibold text-left first:rounded-tl-none ${
+                    head.includes("Wpłata")
+                      ? "bg-blue-100/60 text-blue-900"
+                      : ""
+                  } ${
+                    head.includes("Ostateczne")
+                      ? "bg-[#fa7070]/10 text-[#ea5252]"
+                      : ""
+                  }`}
                 >
-                  {cell}
-                </td>
+                  {head}
+                </th>
               ))}
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {data.rows.map((row, rowIndex) => (
+              <tr
+                key={rowIndex}
+                className="border-b border-gray-100 last:border-b-0 hover:bg-teal-50/30 transition-colors duration-150"
+              >
+                {row.map((cell, cellIndex) => {
+                  const isMonth = cellIndex === 0;
+                  const isPayment = data.headers[cellIndex]?.includes("Wpłata");
+                  const isFinal =
+                    data.headers[cellIndex]?.includes("Ostateczne");
 
-      <div className="p-5 md:p-6 space-y-4 text-sm md:text-base">
+                  return (
+                    <td
+                      key={cellIndex}
+                      className={`p-4 ${
+                        isMonth
+                          ? "font-semibold text-gray-800"
+                          : "text-gray-600"
+                      } ${
+                        isPayment
+                          ? "bg-blue-50/40 font-medium text-blue-900"
+                          : ""
+                      } ${
+                        isFinal ? "bg-[#fa7070]/5 font-bold text-[#ea5252]" : ""
+                      }`}
+                    >
+                      {cell}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      {/* Stopka tabeli */}
+      <div className="p-6 md:p-7 space-y-4 bg-gradient-to-br from-gray-50 to-white border-t border-gray-100">
         {data.additionalFee && (
-          <p className="text-blue-700 font-semibold">{data.additionalFee}</p>
+          <div className="flex items-start gap-3 p-4 bg-blue-50 rounded-xl border border-blue-100">
+            <span className="text-2xl flex-shrink-0">💡</span>
+            <p className="text-blue-900 font-semibold">{data.additionalFee}</p>
+          </div>
         )}
 
-        <p className="text-gray-600 font-medium">
-          * Zwrot dotacji ok. 20 dnia następnego miesiąca
-        </p>
+        <div className="flex items-start gap-3 text-gray-600">
+          <span className="text-lg flex-shrink-0">🔄</span>
+          <p className="text-sm md:text-base">
+            Zwrot dotacji następuje około{" "}
+            <span className="font-semibold">20 dnia następnego miesiąca</span>
+          </p>
+        </div>
 
         {data.extraInfo && (
-          <p className="text-teal-700 font-medium italic">{data.extraInfo}</p>
+          <div className="flex items-start gap-3 p-4 bg-teal-50 rounded-xl border border-teal-100">
+            <span className="text-2xl flex-shrink-0">✨</span>
+            <p className="text-teal-800 font-medium leading-relaxed">
+              {data.extraInfo}
+            </p>
+          </div>
         )}
       </div>
     </div>
@@ -188,30 +269,48 @@ const PricingTable = ({ data }) => {
 
 export default function Pricing() {
   const [activeLocation, setActiveLocation] = useState("lokietka");
-
   const activeData = PRICING_DATA.find((loc) => loc.id === activeLocation);
 
   return (
-    <main className="px-4 sm:px-6 lg:px-[10%] 2xl:px-[16%] py-12 min-h-screen">
-      <Header text="Cennik - Żłobek Wesołe Wygibasy w Krakowie" />
+    <main className="relative min-h-screen bg-gradient-to-b from-orange-50/30 via-white to-teal-50/20 overflow-hidden">
+      {/* Dekoracyjne kółka w tle */}
+      <div className="absolute top-20 -left-20 w-80 h-80 bg-[#fa7070]/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-96 -right-20 w-96 h-96 bg-teal-400/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-20 left-1/3 w-72 h-72 bg-yellow-300/5 rounded-full blur-3xl pointer-events-none" />
 
-      <PricingInfo />
+      <div className="relative px-4 sm:px-6 lg:px-[10%] 2xl:px-[16%] py-12">
+        <Header text="Cennik - Żłobek Wesołe Wygibasy w Krakowie" />
 
-      <div className="mt-12 md:mt-16">
-        {/* Trzy karty obok siebie */}
-        <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center mb-10 md:mb-14">
-          {PRICING_DATA.map((location) => (
-            <LocationCard
-              key={location.id}
-              location={location}
-              isActive={activeLocation === location.id}
-              onClick={() => setActiveLocation(location.id)}
-            />
-          ))}
+        <PricingInfo />
+
+        <div className="mt-12 md:mt-16">
+          {/* Sekcja wyboru lokalizacji */}
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+              Wybierz lokalizację
+            </h2>
+            <p className="text-gray-500">
+              Kliknij placówkę, aby zobaczyć szczegółowy cennik
+            </p>
+          </div>
+
+          {/* Karty lokalizacji */}
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center mb-10 md:mb-12">
+            {PRICING_DATA.map((location) => (
+              <LocationCard
+                key={location.id}
+                location={location}
+                isActive={activeLocation === location.id}
+                onClick={() => setActiveLocation(location.id)}
+              />
+            ))}
+          </div>
+
+          {/* Aktywna tabela - min-height żeby uniknąć skoków przy zmianie tabeli */}
+          <div className="min-h-[780px]">
+            {activeData && <PricingTable data={activeData} />}
+          </div>
         </div>
-
-        {/* Wybrana tabela */}
-        {activeData && <PricingTable data={activeData} />}
       </div>
     </main>
   );
