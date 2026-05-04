@@ -4,6 +4,7 @@ import Navigation from "@/components/UI/Navigation";
 import Footer from "@/components/UI/Footer";
 import CookieConsent from "@/components/CookieConsent";
 import { GoogleTagManager } from "@next/third-parties/google";
+import Script from "next/script";
 
 const font = Baloo_2({
   subsets: ["latin"],
