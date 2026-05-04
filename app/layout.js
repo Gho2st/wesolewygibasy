@@ -1,10 +1,9 @@
 import { Baloo_2 } from "next/font/google";
 import "./globals.css";
-import { GoogleTagManager } from "@next/third-parties/google";
 import Navigation from "@/components/UI/Navigation";
 import Footer from "@/components/UI/Footer";
-import PromoModal from "@/components/PromoModal";
 import CookieConsent from "@/components/CookieConsent";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const font = Baloo_2({
   subsets: ["latin"],
@@ -44,6 +43,7 @@ export default function RootLayout({ children }) {
         <div className="pt-20 md:pt-24">{children}</div>
         <Footer />
         {/* <PromoModal /> */}
+        <GoogleTagManager gtmId="GTM-PNRKMMD6" />
       </body>
     </html>
   );

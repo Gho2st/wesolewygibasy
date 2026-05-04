@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.637.0",
-    "@next/third-parties": "^14.0.5-canary.59",
+    "@next/third-parties": "^14.2.35",
     "@tailwindcss/typography": "^0.5.16",
     "@vercel/analytics": "^1.2.2",
     "date-fns": "^4.1.0",
