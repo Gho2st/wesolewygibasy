@@ -84,6 +84,7 @@ export default function Form({ onFormSubmit }) {
           selectedLocation: "",
         });
         onFormSubmit();
+        window.dataLayer.push({ event: "form_submit" });
         recaptchaRef.current.reset();
       } else {
         const errorData = await response.json();
