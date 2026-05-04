@@ -37,13 +37,28 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pl">
+      <head>
+        <Script id="consent-default" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('consent', 'default', {
+              'ad_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied',
+              'analytics_storage': 'denied',
+              'wait_for_update': 500
+            });
+          `}
+        </Script>
+      </head>
       <body className={font.className}>
         <Navigation />
-        <CookieConsent />
         <div className="pt-20 md:pt-24">{children}</div>
         <Footer />
         {/* <PromoModal /> */}
-        <GoogleTagManager gtmId="GTM-PNRKMMD6" />
+        <CookieConsent />
+        <GoogleTagManager gtmId="GTM-PNRKMMD6" />{" "}
       </body>
     </html>
   );
