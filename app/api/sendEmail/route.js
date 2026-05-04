@@ -122,8 +122,9 @@ export async function POST(request) {
 
     const mailOptions = {
       from: process.env.NODEMAILER_EMAIL,
-     
-      to: "wesolewygibasy@onet.pl",
+
+      // to: "wesolewygibasy@onet.pl",
+      to: "dominikjojczyk@gmail.com",
       subject: "Email ze strony Wesołe Wygibasy od klienta",
       html: createEmailTemplate(fields),
     };
