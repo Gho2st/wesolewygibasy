@@ -11,7 +11,7 @@ const CookieConsent = () => {
   });
 
   useEffect(() => {
-    const storedConsent = localStorage.getItem("consent");
+    const storedConsent = localStorage.getItem("consent_v2");
     if (storedConsent) {
       const parsed = JSON.parse(storedConsent);
       setConsent(parsed);
@@ -41,7 +41,7 @@ const CookieConsent = () => {
 
   const saveConsent = (newConsent) => {
     setConsent(newConsent);
-    localStorage.setItem("consent", JSON.stringify(newConsent));
+    localStorage.setItem("consent_v2", JSON.stringify(newConsent));
     updateGtagConsent(newConsent);
     setShowBanner(false);
     setShowSettings(false);
