@@ -5,6 +5,7 @@ import Map from "@/components/UI/Map";
 import DayScheduleVetulaniego from "@/components/Info/DayScheduleVetulaniego";
 import NurseryHeader from "@/components/zlobki/header";
 import ZlobkiBaner from "@/components/zlobki/Baner";
+import PromoVideo from "@/components/PromoVideo";
 
 export const metadata = {
   title: "Żłobek Kraków Prądnik Biały ul. Vetulaniego | Wesołe Wygibasy",
@@ -101,6 +102,11 @@ export default function VetulaniegoPage() {
       <section className="pt-20 px-[9%]">
         <div className="mx-auto">
           <NurseryHeader text="Jeśli szukasz bezpiecznego, kameralnego i inspirującego żłobka w Krakowie, zapraszamy do Klubu Malucha Wesołe Wygibasy na ulicy Vetulaniego 8. Nasza placówka oferuje profesjonalną opiekę nad dziećmi w wieku od 1 do 3 lat, zapewniając im rozwój w ciepłej i przyjaznej atmosferze, z dala od miejskiego zgiełku." />
+          <PromoVideo
+            src="/filmiki/vetulaniego.mp4"
+            poster="/filmiki/vetulaniego-image.png"
+            title="Dzień z Klubu Malucha"
+          />
           <div className="mt-12">
             <CardContainer cards={cardData} />
           </div>

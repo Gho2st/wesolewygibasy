@@ -5,6 +5,7 @@ import CardContainer from "@/components/Cards/CardContainer";
 import NurseryHeader from "@/components/zlobki/header";
 import ZlobkiBaner from "@/components/zlobki/Baner";
 import SliderComponent from "@/components/UI/slider/slider";
+import PromoVideo from "@/components/PromoVideo";
 
 export const metadata = {
   title: "Żłobek Kraków Krowodrza ul. Łokietka | Wesołe Wygibasy",
@@ -142,6 +143,11 @@ export default function Lokietka() {
             text="Żłobek Wesołe Wygibasy przy ul. Łokietka to kameralna placówka w dzielnicy Krowodrza. 
   Zapewniamy profesjonalną opiekę blisko centrum Krakowa i Nowego Kleparza. 
   Naszym atutem jest domowa atmosfera i bezpośrednie sąsiedztwo Parku Łokietka."
+          />
+          <PromoVideo
+            src="/filmiki/lokietka-video.mp4"
+            poster="/filmiki/lokietka-image.png"
+            title="Dzień z żłobka na ulicy Łokietka"
           />
           <div className="mt-12">
             <CardContainer cards={cardData} />

@@ -56,7 +56,7 @@ export default function Zlobki() {
 
   return (
     <main>
-      <div className="px-[9%] py-10">
+      <div className="px-[9%] pt-10">
         <section>
           <Header text="Żłobki Wesołe Wygibasy w Krakowie" />
 
@@ -95,27 +95,24 @@ export default function Zlobki() {
             </div>
           </div>
         </section>
-
-        <section className="text-center mt-40 max-[600px]:mt-24">
-          <h2 className="text-3xl xl:text-4xl font-semibold mb-8">
-            Wesołe Wygibasy – Twój żłobek w Krakowie
-          </h2>
-          <p className="mx-auto text-xl text-gray-700 w-full md:w-[80%] mb-12">
-            Wesołe Wygibasy to sieć niepublicznych żłobków w Krakowie, stworzona
-            z myślą o najmłodszych i ich rodzicach. Nasze placówki znajdują się
-            w różnych częściach miasta – abyś mógł wybrać lokalizację najbliżej
-            Ciebie. Stawiamy na kameralne grupy, wykwalifikowaną kadrę i
-            przyjazną atmosferę, w której dzieci czują się jak w domu.
-            Zapewniamy zatwierdzone przez Sanepid i Straż Pożarną warunki,
-            dzięki czemu możesz nam zaufać w pełni.
-          </p>
-
-          <CardContainer cards={cardData} />
-        </section>
       </div>
-
-      <section>
+      <section className="text-center my-10">
         <Places />
+      </section>
+      <section className="px-[9%] py-10">
+        <h2 className="text-3xl xl:text-4xl font-semibold mb-8 text-center">
+          Wesołe Wygibasy – Twój żłobek w Krakowie
+        </h2>
+        <p className="mx-auto text-xl text-gray-700 w-full md:w-[80%] mb-12 text-center">
+          Wesołe Wygibasy to sieć niepublicznych żłobków w Krakowie, stworzona z
+          myślą o najmłodszych i ich rodzicach. Nasze placówki znajdują się w
+          różnych częściach miasta – abyś mógł wybrać lokalizację najbliżej
+          Ciebie. Stawiamy na kameralne grupy, wykwalifikowaną kadrę i przyjazną
+          atmosferę, w której dzieci czują się jak w domu. Zapewniamy
+          zatwierdzone przez Sanepid i Straż Pożarną warunki, dzięki czemu
+          możesz nam zaufać w pełni.
+        </p>
+        <CardContainer cards={cardData} />
       </section>
     </main>
   );
