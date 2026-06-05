@@ -35,9 +35,6 @@ export default function PlaceItem(props) {
             {/* Lokalizacja - używamy znacznika <address> dla robotów Google */}
             <address className="not-italic flex flex-col items-center text-slate-500 gap-1">
               <div className="flex items-center gap-1 text-[#4a71ff] font-bold uppercase text-xs xl:text-lg tracking-widest mb-1">
-                <div className="">
-                  <HiOutlineMapPin size={16} aria-hidden="true" />
-                </div>
                 <span>{props.location}</span>
               </div>
               <p className="text-base font-medium text-slate-700">
