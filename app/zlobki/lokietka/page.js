@@ -145,7 +145,7 @@ export default function Lokietka() {
   Naszym atutem jest domowa atmosfera i bezpośrednie sąsiedztwo Parku Łokietka."
           />
           <PromoVideo
-            src="/filmiki/lokietka-video.mp4"
+            src="/filmiki/lokietka.mp4"
             poster="/filmiki/lokietka-image.png"
             title="Dzień z żłobka na ulicy Łokietka"
           />
