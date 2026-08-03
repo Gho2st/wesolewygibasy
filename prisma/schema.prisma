@@ -1,0 +1,29 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Post {
+  id          Int       @id @default(autoincrement())
+  title       String
+  slug        String    @unique
+  excerpt     String?
+  content     String // HTML z edytora
+  coverImage  String? // URL zdjęcia (S3 lub lokalny)
+  status      String    @default("draft") // "draft" | "published"
+  publishedAt DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  // CTA na końcu wpisu
+  ctaTitle          String?
+  ctaDescription    String?
+  ctaPrimaryLabel   String?
+  ctaPrimaryUrl     String?
+  ctaSecondaryLabel String?
+  ctaSecondaryUrl   String?
+}
