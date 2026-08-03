@@ -156,16 +156,7 @@ export default async function BlogPostPage({ params }) {
 
         {/* Treść */}
         <div
-          className="prose prose-gray prose-lg max-w-none
-            prose-headings:font-medium prose-headings:text-gray-900
-            prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
-            prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
-            prose-p:text-gray-600 prose-p:leading-relaxed
-            prose-a:text-red-700 prose-a:no-underline hover:prose-a:underline
-            prose-strong:text-gray-800 prose-strong:font-medium
-            prose-ul:text-gray-600 prose-ol:text-gray-600
-            prose-blockquote:border-l-red-200 prose-blockquote:text-gray-500 prose-blockquote:italic
-            prose-img:rounded-xl"
+          className="blog-content"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 

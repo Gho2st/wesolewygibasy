@@ -325,33 +325,15 @@ export default function RichEditor({ value, onChange }) {
       <EditorContent
         editor={editor}
         className="
-          px-5 py-4 min-h-[320px] text-sm text-gray-800 leading-relaxed
-          [&_.ProseMirror]:outline-none [&_.ProseMirror]:min-h-[300px]
+    px-5 py-4 min-h-[320px] text-sm blog-content
+    [&_.ProseMirror]:outline-none [&_.ProseMirror]:min-h-[300px]
 
-          [&_.ProseMirror_h2]:text-xl [&_.ProseMirror_h2]:font-semibold [&_.ProseMirror_h2]:mt-6 [&_.ProseMirror_h2]:mb-3
-          [&_.ProseMirror_h3]:text-lg [&_.ProseMirror_h3]:font-semibold [&_.ProseMirror_h3]:mt-5 [&_.ProseMirror_h3]:mb-2
-
-          [&_.ProseMirror_p]:my-4 [&_.ProseMirror_p]:leading-relaxed
-
-          [&_.ProseMirror_ul]:list-disc [&_.ProseMirror_ul]:pl-6 [&_.ProseMirror_ul]:my-4 [&_.ProseMirror_ul]:space-y-1
-          [&_.ProseMirror_ol]:list-decimal [&_.ProseMirror_ol]:pl-6 [&_.ProseMirror_ol]:my-4 [&_.ProseMirror_ol]:space-y-1
-          [&_.ProseMirror_li]:pl-1
-          [&_.ProseMirror_li::marker]:text-gray-400 [&_.ProseMirror_li::marker]:font-medium
-          [&_.ProseMirror_ul_ul]:list-[circle] [&_.ProseMirror_ul_ul]:my-1
-          [&_.ProseMirror_ol_ol]:list-[lower-alpha] [&_.ProseMirror_ol_ol]:my-1
-
-          [&_.ProseMirror_blockquote]:border-l-2 [&_.ProseMirror_blockquote]:border-red-200 [&_.ProseMirror_blockquote]:pl-4 [&_.ProseMirror_blockquote]:italic [&_.ProseMirror_blockquote]:text-gray-500 [&_.ProseMirror_blockquote]:my-5
-          [&_.ProseMirror_code]:bg-gray-100 [&_.ProseMirror_code]:px-1.5 [&_.ProseMirror_code]:py-0.5 [&_.ProseMirror_code]:rounded [&_.ProseMirror_code]:text-xs [&_.ProseMirror_code]:font-mono
-          [&_.ProseMirror_hr]:border-gray-200 [&_.ProseMirror_hr]:my-6
-          [&_.ProseMirror_img]:rounded-xl [&_.ProseMirror_img]:max-w-full [&_.ProseMirror_img]:my-5
-          [&_.ProseMirror_a]:text-red-700 [&_.ProseMirror_a]:underline
-
-          [&_.ProseMirror_p.is-editor-empty:first-child::before]:content-[attr(data-placeholder)]
-          [&_.ProseMirror_p.is-editor-empty:first-child::before]:text-gray-300
-          [&_.ProseMirror_p.is-editor-empty:first-child::before]:pointer-events-none
-          [&_.ProseMirror_p.is-editor-empty:first-child::before]:float-left
-          [&_.ProseMirror_p.is-editor-empty:first-child::before]:h-0
-        "
+    [&_.ProseMirror_p.is-editor-empty:first-child::before]:content-[attr(data-placeholder)]
+    [&_.ProseMirror_p.is-editor-empty:first-child::before]:text-gray-300
+    [&_.ProseMirror_p.is-editor-empty:first-child::before]:pointer-events-none
+    [&_.ProseMirror_p.is-editor-empty:first-child::before]:float-left
+    [&_.ProseMirror_p.is-editor-empty:first-child::before]:h-0
+  "
       />
 
       <div className="px-5 py-2 border-t border-gray-100 bg-gray-50 flex justify-end">
