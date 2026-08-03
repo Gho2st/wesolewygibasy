@@ -5,8 +5,7 @@ import { notFound } from "next/navigation";
 import prisma from "@/app/lib/prisma";
 
 export const revalidate = 86400;
-export const dynamicParams = false;
-
+export const dynamicParams = true;
 export async function generateStaticParams() {
   const posts = await prisma.post.findMany({
     where: { status: "published" },

@@ -15,7 +15,8 @@ async function guard(params) {
       error: NextResponse.json({ error: "Brak dostępu" }, { status: 401 }),
     };
   }
-  const id = Number(params.id);
+  const { id: rawId } = await params;
+  const id = Number(rawId);
   if (!Number.isInteger(id)) {
     return {
       error: NextResponse.json({ error: "Nieprawidłowe id" }, { status: 400 }),
