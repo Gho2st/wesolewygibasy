@@ -2,10 +2,10 @@ import ImagesContainer from "@/components/Gallery/ImagesContainer";
 import DaySchedule from "@/components/Info/DayScheduleSliczna";
 import SliderComponent from "@/components/UI/slider/slider";
 import CardContainer from "@/components/Cards/CardContainer";
-import Maluch from "@/components/UI/Maluch";
 import Map from "@/components/UI/Map";
 import NurseryHeader from "@/components/zlobki/header";
 import ZlobkiBaner from "@/components/zlobki/Baner";
+import LocationDotation from "@/components/Info/LocationDotation";
 
 export const metadata = {
   title: "Żłobek Kraków Prądnik Czerwony ul. Śliczna | Wesołe Wygibasy",
@@ -129,8 +129,8 @@ export default function Sliczna() {
 
       {/* Maluch komponent */}
       <section className="py-16">
-        <div className="mx-auto">
-          <Maluch />
+        <div className=" mx-auto">
+          <LocationDotation locationId="sliczna" />
         </div>
       </section>
 

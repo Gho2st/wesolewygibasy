@@ -1,12 +1,12 @@
 import ImagesContainer from "@/components/Gallery/ImagesContainer";
 import SliderComponent from "@/components/UI/slider/slider";
-import Maluch from "@/components/UI/Maluch";
 import Map from "@/components/UI/Map";
 import DayScheduleStanczyka from "@/components/Info/DayScheduleStanczyka";
 import CardContainer from "@/components/Cards/CardContainer";
 import NurseryHeader from "@/components/zlobki/header";
 import ZlobkiBaner from "@/components/zlobki/Baner";
 import PromoVideo from "@/components/PromoVideo";
+import LocationDotation from "@/components/Info/LocationDotation";
 
 export const metadata = {
   title: "Żłobek Kraków Bronowice ul. Stańczyka | Wesołe Wygibasy",
@@ -132,7 +132,7 @@ export default function Stanczyka() {
       {/* Maluch komponent */}
       <section className="py-16">
         <div className=" mx-auto">
-          <Maluch />
+          <LocationDotation locationId="stanczyka" />
         </div>
       </section>
 

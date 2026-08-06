@@ -1,11 +1,11 @@
 import ImagesContainer from "@/components/Gallery/ImagesContainer";
-import Button from "@/components/UI/Button";
 import CardContainer from "@/components/Cards/CardContainer";
 import SliderComponent from "@/components/UI/slider/slider";
 import Map from "@/components/UI/Map";
 import DayScheduleGlogera from "@/components/Info/DayScheduleGlogera";
 import NurseryHeader from "@/components/zlobki/header";
 import ZlobkiBaner from "@/components/zlobki/Baner";
+import LocationDotation from "@/components/Info/LocationDotation";
 
 export const metadata = {
   title: "Żłobek Kraków Prądnik Biały ul. Glogera | Wesołe Wygibasy",
@@ -122,6 +122,13 @@ export default function Glogera() {
           <div className="mt-12">
             <CardContainer cards={cardData} />
           </div>
+        </div>
+      </section>
+
+      {/* Maluch komponent */}
+      <section className="py-16">
+        <div className=" mx-auto">
+          <LocationDotation locationId="glogera" />
         </div>
       </section>
 

@@ -6,6 +6,7 @@ import DayScheduleVetulaniego from "@/components/Info/DayScheduleVetulaniego";
 import NurseryHeader from "@/components/zlobki/header";
 import ZlobkiBaner from "@/components/zlobki/Baner";
 import PromoVideo from "@/components/PromoVideo";
+import LocationDotation from "@/components/Info/LocationDotation";
 
 export const metadata = {
   title: "Żłobek Kraków Prądnik Biały ul. Vetulaniego | Wesołe Wygibasy",
@@ -110,6 +111,13 @@ export default function VetulaniegoPage() {
           <div className="mt-12">
             <CardContainer cards={cardData} />
           </div>
+        </div>
+      </section>
+
+      {/* Maluch komponent */}
+      <section className="py-16">
+        <div className=" mx-auto">
+          <LocationDotation locationId="vetulaniego" />
         </div>
       </section>
 

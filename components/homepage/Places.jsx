@@ -28,7 +28,7 @@ export default function Places() {
       location: "Kraków, Bronowice",
       street: "ul. Stańczyka 8/LU3",
       link: "zlobki/stanczyka",
-      add: "Program Aktywny Maluch  \n Dotacja aktywnie w żłobku",
+      add: "Dotacja urzędu miasta  \n Dotacja aktywnie w żłobku",
     },
     {
       image: "/zlobki/glogera.jpg",
