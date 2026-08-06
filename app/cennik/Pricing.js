@@ -301,7 +301,7 @@ const PricingTable = ({ data }) => {
         <div className="flex items-start gap-3 text-gray-600">
           <span className="text-lg flex-shrink-0">🔄</span>
           <p className="text-sm md:text-base">
-            Kwota programu "Aktywnie w żłobku" zwracana jest około 20. dnia
+            Kwota programu *Aktywnie w żłobku* zwracana jest około 20. dnia
             następnego miesiąca (np. za lipiec zwrot ok. 20 sierpnia).
           </p>
         </div>
