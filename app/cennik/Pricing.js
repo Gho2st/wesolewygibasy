@@ -8,8 +8,9 @@ const PRICING_DATA = [
     id: "lokietka",
     title: "Łokietka",
     icon: "🌟",
+    additionalFee: "Zajęcia dodatkowe płatne 200 zł / miesiąc",
     extraInfo:
-      "Czesne pokrywane z projektu Aktywny Maluch oraz dotacji urzędu miasta Kraków",
+      "Czesne pokrywane z dotacji Aktywnie w żłobku oraz dotacji urzędu miasta Kraków",
     headers: [
       "Miesiąc",
       "Czesne",
@@ -19,23 +20,21 @@ const PRICING_DATA = [
       "Ostateczne opłaty",
     ],
     rows: [
-      ["Styczeń 2026", "2200 zł", "580 zł", "1500 zł", "1620 zł", "120 zł"],
-      ["Luty 2026", "2200 zł", "580 zł", "1500 zł", "1620 zł", "120 zł"],
-      ["Marzec 2026", "2200 zł", "638 zł", "1500 zł", "1562 zł", "62 zł"],
-      ["Kwiecień 2026", "2200 zł", "609 zł", "1500 zł", "1591 zł", "91 zł"],
-      ["Maj 2026", "2200 zł", "580 zł", "1500 zł", "1620 zł", "120 zł"],
-      ["Czerwiec 2026", "2200 zł", "609 zł", "1500 zł", "1591 zł", "91 zł"],
-      ["Lipiec 2026", "2200 zł", "667 zł", "1500 zł", "1533 zł", "33 zł"],
+      ["Sierpień 2026", "2400 zł", "609 zł", "1500 zł", "1791 zł", "291 zł"],
+      ["Wrzesień 2026", "2400 zł", "418 zł", "1500 zł", "1982 zł", "482 zł"],
+      ["Październik 2026", "2400 zł", "418 zł", "1500 zł", "1982 zł", "482 zł"],
+      ["Listopad 2026", "2400 zł", "380 zł", "1500 zł", "2020 zł", "520 zł"],
+      ["Grudzień 2026", "2400 zł", "399 zł", "1500 zł", "2001 zł", "501 zł"],
     ],
   },
   {
     id: "sliczna",
-    title: "Śliczna & Stańczyka",
+    title: "Śliczna",
     badge: "Czesne 0 zł",
     icon: "🎈",
     additionalFee: "Zajęcia dodatkowe płatne 300 zł / miesiąc",
     extraInfo:
-      "Czesne w całości pokrywane z projektu maluch + 2022–2029 oraz dotacji urzędu miasta Kraków i Aktywny Maluch",
+      "Czesne w całości pokrywane z projektu maluch + 2022–2029 oraz dotacji urzędu miasta Kraków i Aktywnie w żłobku.",
     headers: [
       "Miesiąc",
       "Czesne",
@@ -47,50 +46,82 @@ const PRICING_DATA = [
     ],
     rows: [
       [
-        "Styczeń 2026",
+        "Sierpień 2026",
         "2300 zł",
-        "580 zł",
+        "399 zł",
         "836 zł",
-        "884 zł",
-        "884 zł",
-        "0 zł",
-      ],
-      ["Luty 2026", "2300 zł", "580 zł", "836 zł", "884 zł", "884 zł", "0 zł"],
-      [
-        "Marzec 2026",
-        "2300 zł",
-        "638 zł",
-        "836 zł",
-        "826 zł",
-        "826 zł",
+        "1065 zł",
+        "1065 zł",
         "0 zł",
       ],
       [
-        "Kwiecień 2026",
+        "Wrzesień 2026",
         "2300 zł",
-        "609 zł",
+        "418 zł",
         "836 zł",
-        "855 zł",
-        "855 zł",
+        "1046 zł",
+        "1046 zł",
         "0 zł",
       ],
-      ["Maj 2026", "2300 zł", "580 zł", "836 zł", "884 zł", "884 zł", "0 zł"],
       [
-        "Czerwiec 2026",
+        "Październik 2026",
         "2300 zł",
-        "609 zł",
+        "418 zł",
         "836 zł",
-        "855 zł",
-        "855 zł",
+        "1046 zł",
+        "1046 zł",
+        "0 zł",
+      ],
+      [
+        "Listopad 2026",
+        "2300 zł",
+        "380 zł",
+        "836 zł",
+        "1084 zł",
+        "1084 zł",
+        "0 zł",
+      ],
+      [
+        "Grudzień 2026",
+        "2300 zł",
+        "399 zł",
+        "836 zł",
+        "1065 zł",
+        "1065 zł",
         "0 zł",
       ],
     ],
   },
   {
+    id: "stanczyka",
+    title: "Stańczyka",
+    icon: "☘️",
+    additionalFee: "Zajęcia dodatkowe płatne 200 zł / miesiąc",
+    extraInfo:
+      "Czesne pokrywane z dotacji Aktywnie w żłobku oraz dotacji urzędu miasta Kraków",
+    headers: [
+      "Miesiąc",
+      "Czesne",
+      "Dotacja U.M",
+      "Dotacja Aktywnie w Żłobku",
+      "Wpłata na konto",
+      "Ostateczne opłaty",
+    ],
+    rows: [
+      ["Sierpień 2026", "2400 zł", "609 zł", "1500 zł", "1791 zł", "291 zł"],
+      ["Wrzesień 2026", "2400 zł", "418 zł", "1500 zł", "1982 zł", "482 zł"],
+      ["Październik 2026", "2400 zł", "418 zł", "1500 zł", "1982 zł", "482 zł"],
+      ["Listopad 2026", "2400 zł", "380 zł", "1500 zł", "2020 zł", "520 zł"],
+      ["Grudzień 2026", "2400 zł", "399 zł", "1500 zł", "2001 zł", "501 zł"],
+    ],
+  },
+  {
     id: "vetulaniego",
-    title: "Vetulaniego & Glogera",
+    title: "Vetulaniego",
     icon: "🎨",
-    additionalFee: "Zajęcia dodatkowe płatne 150 zł / miesiąc",
+    additionalFee: "Zajęcia dodatkowe płatne 200 zł / miesiąc",
+    extraInfo:
+      "Czesne pokrywane z dotacji Aktywnie w żłobku oraz dotacji urzędu miasta Kraków",
     headers: [
       "Miesiąc",
       "Czesne",
@@ -100,13 +131,34 @@ const PRICING_DATA = [
       "Ostateczne opłaty",
     ],
     rows: [
-      ["Styczeń 2026", "2400 zł", "580 zł", "1500 zł", "1820 zł", "320 zł"],
-      ["Luty 2026", "2400 zł", "580 zł", "1500 zł", "1820 zł", "320 zł"],
-      ["Marzec 2026", "2400 zł", "638 zł", "1500 zł", "1762 zł", "262 zł"],
-      ["Kwiecień 2026", "2400 zł", "609 zł", "1500 zł", "1791 zł", "291 zł"],
-      ["Maj 2026", "2400 zł", "580 zł", "1500 zł", "1820 zł", "320 zł"],
-      ["Czerwiec 2026", "2400 zł", "609 zł", "1500 zł", "1791 zł", "291 zł"],
-      ["Lipiec 2026", "2400 zł", "667 zł", "1500 zł", "1733 zł", "233 zł"],
+      ["Sierpień 2026", "2400 zł", "609 zł", "1500 zł", "1791 zł", "291 zł"],
+      ["Wrzesień 2026", "2400 zł", "418 zł", "1500 zł", "1982 zł", "482 zł"],
+      ["Październik 2026", "2400 zł", "418 zł", "1500 zł", "1982 zł", "482 zł"],
+      ["Listopad 2026", "2400 zł", "380 zł", "1500 zł", "2020 zł", "520 zł"],
+      ["Grudzień 2026", "2400 zł", "399 zł", "1500 zł", "2001 zł", "501 zł"],
+    ],
+  },
+  {
+    id: "glogera",
+    title: "Glogera",
+    icon: "🏠",
+    additionalFee: "Zajęcia dodatkowe płatne 200 zł / miesiąc",
+    extraInfo:
+      "Czesne pokrywane z dotacji Aktywnie w żłobku oraz dotacji urzędu miasta Kraków",
+    headers: [
+      "Miesiąc",
+      "Czesne",
+      "Dotacja U.M.",
+      "Dotacja Aktywnie w Żłobku",
+      "Wpłata na konto",
+      "Ostateczne opłaty",
+    ],
+    rows: [
+      ["Sierpień 2026", "2400 zł", "609 zł", "1500 zł", "1791 zł", "291 zł"],
+      ["Wrzesień 2026", "2400 zł", "418 zł", "1500 zł", "1982 zł", "482 zł"],
+      ["Październik 2026", "2400 zł", "418 zł", "1500 zł", "1982 zł", "482 zł"],
+      ["Listopad 2026", "2400 zł", "380 zł", "1500 zł", "2020 zł", "520 zł"],
+      ["Grudzień 2026", "2400 zł", "399 zł", "1500 zł", "2001 zł", "501 zł"],
     ],
   },
 ];
@@ -249,8 +301,8 @@ const PricingTable = ({ data }) => {
         <div className="flex items-start gap-3 text-gray-600">
           <span className="text-lg flex-shrink-0">🔄</span>
           <p className="text-sm md:text-base">
-            Zwrot dotacji następuje około{" "}
-            <span className="font-semibold">20 dnia następnego miesiąca</span>
+            Kwota programu "Aktywnie w żłobku" zwracana jest około 20. dnia
+            następnego miesiąca (np. za lipiec zwrot ok. 20 sierpnia).
           </p>
         </div>
 
