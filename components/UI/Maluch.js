@@ -33,7 +33,7 @@ export default function Maluch() {
             pewność, że znajduje się pod opieką profesjonalistów.
           </p>
           <div className="flex mt-4 space-x-4 justify-center lg:justify-start">
-            <Button text="Cennik" href="/cennik-i-jadlospis-w-zlobku" />
+            <Button text="Cennik" href="/cennik" />
             <Button2 text="Zapisy" href="/zapisy" />
           </div>
         </div>

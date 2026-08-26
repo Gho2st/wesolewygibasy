@@ -2,6 +2,7 @@ import { Baloo_2 } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/UI/Navigation";
 import Footer from "@/components/UI/Footer";
+import StickyMobileCTA from "@/components/UI/StickyMobileCTA";
 import CookieConsent from "@/components/CookieConsent";
 import { GoogleTagManager } from "@next/third-parties/google";
 import Script from "next/script";
@@ -57,6 +58,7 @@ export default function RootLayout({ children }) {
         <Navigation />
         <div className="pt-20 md:pt-24">{children}</div>
         <Footer />
+        <StickyMobileCTA />
         {/* <PromoModal /> */}
         <CookieConsent />
         <GoogleTagManager gtmId="GTM-PNRKMMD6" />{" "}

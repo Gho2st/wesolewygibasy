@@ -21,7 +21,7 @@ export default function Reviews() {
 
   useEffect(() => {
     if (isInView) {
-      animate(count, 91, { duration: 2.5, ease: "easeOut" });
+      animate(count, 129, { duration: 2.5, ease: "easeOut" });
     }
   }, [isInView, count]);
 
@@ -83,6 +83,14 @@ export default function Reviews() {
             <p className="text-slate-400 font-bold uppercase text-[10px] lg:text-xs tracking-[0.2em] mt-2">
               Pozytywnych opinii w Google
             </p>
+            <a
+              href="https://www.google.com/search?q=Weso%C5%82e%20Wygibasy%20opinie%20Krak%C3%B3w"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 text-primary font-semibold text-sm hover:underline underline-offset-2"
+            >
+              Zobacz wszystkie opinie →
+            </a>
           </div>
         </div>
 

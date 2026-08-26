@@ -33,7 +33,6 @@ export default function Form({ onFormSubmit }) {
     if (!data.phoneNumber.trim() || !/^\d{9,15}$/.test(data.phoneNumber))
       errors.push("phoneNumber");
     if (!data.childAge.trim()) errors.push("childAge");
-    if (!data.text.trim()) errors.push("text");
     if (!data.startDate.trim()) errors.push("startDate");
     if (!data.selectedLocation.trim()) errors.push("selectedLocation");
 

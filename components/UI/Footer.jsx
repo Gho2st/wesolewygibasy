@@ -20,7 +20,7 @@ export default function Footer() {
       </svg>
 
       {/* Footer */}
-      <footer className="bg-secondary text-white px-[9%] pt-0 pb-16 text-[1.1rem]">
+      <footer className="bg-secondary text-white px-[9%] pt-0 pb-32 lg:pb-16 text-[1.1rem]">
         {/* Góra */}
         <div className="flex flex-col lg:flex-row justify-between gap-12">
           <div>
@@ -136,7 +136,7 @@ export default function Footer() {
         <a
           href="https://wa.me/+48697560022"
           rel="nofollow"
-          className="fixed bg-[#25D366] shadow-2xl rounded-full p-2 text-3xl xl:text-5xl text-white bottom-6 right-6 xl:bottom-16 xl:right-10 z-10"
+          className="fixed bg-[#25D366] shadow-2xl rounded-full p-2 text-3xl xl:text-5xl text-white bottom-24 right-4 xl:bottom-16 xl:right-10 z-30"
         >
           <FaWhatsapp className="cursor-pointer" />
         </a>

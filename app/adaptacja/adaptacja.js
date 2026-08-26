@@ -41,8 +41,8 @@ export default function Adaptacja() {
               </p>
 
               <div className="flex gap-4 mt-6 flex-wrap">
-                <Button text="Plan dnia" href="/plan-dnia-w-zlobku" />
-                <Button2 text="Cennik" href="/cennik-i-jadlospis-w-zlobku" />
+                <Button text="Plan dnia" href="/plan-dnia" />
+                <Button2 text="Cennik" href="/cennik" />
               </div>
             </article>
           </div>

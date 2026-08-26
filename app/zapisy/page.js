@@ -25,12 +25,13 @@ const cardData = [
     title: "Zobaczyć, jak wygląda codzienny dzień w żłobku",
     description:
       "Zajrzyj za kulisy życia naszej placówki. Spotkaj innych rodziców, zobacz, jak dzieci bawią się i uczą pod opieką naszej kadry, i poczuj atmosferę miejsca, które troszczy się o każdy szczegół.",
-    link: { href: "/plan-dnia-w-zlobku", text: "Plan Dnia" },
+    link: { href: "/plan-dnia", text: "Plan Dnia" },
   },
   {
     title: "Dowiedzieć się więcej o naszym programie edukacyjnym",
     description:
       "Podczas spotkania przedstawimy szczegóły naszego programu dostosowanego do wieku i potrzeb rozwojowych dzieci. Pokażemy, jak łączymy naukę z zabawą, wspierając kreatywność, samodzielność oraz zdolności społeczne Twojego malucha.",
+    link: { href: "/o-nas", text: "O nas" },
   },
 ];
 

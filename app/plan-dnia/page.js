@@ -8,7 +8,7 @@ import CardContainer from "@/components/Cards/CardContainer";
 export const metadata = {
   title: "Plan Dnia - Żłobek Wesołe Wygibasy Kraków | Zajęcia i Edukacja",
   alternates: {
-    canonical: "/plan-dnia-w-zlobku",
+    canonical: "/plan-dnia",
   },
   description:
     "Plan dnia w żłobku Wesołe Wygibasy Kraków oferuje zajęcia edukacyjne, artystyczne i ruchowe. Sprawdź nasz harmonogram, który wspiera rozwój dzieci poprzez zabawę i naukę w bezpiecznym środowisku.",

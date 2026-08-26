@@ -4,6 +4,7 @@ import Places from "@/components/homepage/Places";
 import Reviews from "@/components/homepage/Reviews";
 import FacebookPosts from "@/components/homepage/FacebookPosts";
 import Rekrutacja from "@/components/homepage/Rekrutacja";
+import FAQ from "@/components/homepage/FAQ";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Rekrutacja />
         <Places />
         <FacebookPosts />
+        <FAQ />
         <Reviews />
       </main>
     </>
