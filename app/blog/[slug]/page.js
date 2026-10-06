@@ -162,15 +162,15 @@ export default async function BlogPostPage({ params }) {
 
         {/* ==================== CTA ==================== */}
         {post.ctaTitle && (
-          <div className="my-16 bg-gradient-to-br from-red-900 to-red-800 rounded-2xl p-8 lg:p-10 text-white">
-            <p className="text-xs uppercase tracking-widest text-red-200 mb-3">
+          <div className="my-16 bg-gradient-to-br from-[#2c7865] to-[#1f5a4b] rounded-2xl p-8 lg:p-10 text-white">
+            <p className="text-xs uppercase tracking-widest text-[#a8e6d3] mb-3">
               Wesołe Wygibasy
             </p>
             <h3 className="text-2xl lg:text-3xl font-light mb-3 leading-tight">
               {post.ctaTitle}
             </h3>
             {post.ctaDescription && (
-              <p className="text-red-100 mb-6 leading-relaxed max-w-xl">
+              <p className="text-white/85 mb-6 leading-relaxed max-w-xl">
                 {post.ctaDescription}
               </p>
             )}
@@ -182,7 +182,7 @@ export default async function BlogPostPage({ params }) {
                       ? post.ctaPrimaryUrl
                       : post.ctaPrimaryUrl
                   }
-                  className="inline-flex items-center gap-2 bg-white text-red-900 px-6 py-3 rounded-lg text-sm font-medium hover:bg-red-50 transition-colors"
+                  className="inline-flex items-center gap-2 bg-white text-[#2c7865] px-6 py-3 rounded-lg text-sm font-medium hover:bg-[#eaf7f2] transition-colors"
                 >
                   {post.ctaPrimaryLabel} <span>→</span>
                 </Link>
@@ -194,7 +194,7 @@ export default async function BlogPostPage({ params }) {
                       ? post.ctaSecondaryUrl
                       : post.ctaSecondaryUrl
                   }
-                  className="inline-flex items-center gap-2 border border-red-700 text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-red-700/30 transition-colors"
+                  className="inline-flex items-center gap-2 border border-white/40 text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-white/10 transition-colors"
                 >
                   {post.ctaSecondaryLabel}
                 </Link>
