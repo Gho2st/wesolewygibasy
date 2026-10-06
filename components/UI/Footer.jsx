@@ -11,7 +11,11 @@ export default function Footer() {
   return (
     <>
       {/* SVG fala */}
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        className="block w-full -mb-[5px]"
+      >
         <path
           fill="#0096da"
           fillOpacity="1"

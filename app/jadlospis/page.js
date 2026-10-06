@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Sprawdź nasze zdrowe i zbilansowane menu dla maluchów. W Żłobku Wesołe Wygibasy dbamy o zdrowe nawyki żywieniowe i dostosowujemy posiłki do diet i alergii.",
   alternates: {
-    canonical: "/cennik",
+    canonical: "/jadlospis",
   },
 };
 

@@ -95,7 +95,7 @@ export default function Contact() {
                   className="flex items-center gap-4 bg-white border border-slate-200 rounded-2xl p-4 transition-all duration-300 hover:border-primary/50 hover:shadow-md group"
                 >
                   <div
-                    className={`${bg} p-3 rounded-xl shrink-0 group-hover:scale-110 transition-transform`}
+                    className={`${bg} flex items-center justify-center p-3 rounded-xl shrink-0 group-hover:scale-110 transition-transform`}
                   >
                     {icon}
                   </div>
