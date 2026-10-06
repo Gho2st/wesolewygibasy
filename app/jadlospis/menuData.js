@@ -2,8 +2,6 @@
 // "kcal 250" na końcu tekstu wyświetla się automatycznie jako znaczek z kaloriami,
 // a treść w nawiasach (składniki, alergeny) jest wyróżniona.
 
-export const week = "05.10 – 09.10";
-
 export const menuStandard = {
   Poniedziałek: {
     breakfast:

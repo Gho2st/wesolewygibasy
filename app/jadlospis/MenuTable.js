@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import {
-  CalendarDays,
   Coffee,
   Apple,
   Soup,
@@ -10,6 +9,13 @@ import {
 } from "lucide-react";
 
 const weekdays = ["Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek"];
+const shortNames = {
+  Poniedziałek: "Pn",
+  Wtorek: "Wt",
+  Środa: "Śr",
+  Czwartek: "Cz",
+  Piątek: "Pt",
+};
 
 // "… herbatka 200ml kcal 250" -> { text: "… herbatka 200ml", kcal: "250" }
 function splitKcal(value) {
@@ -103,7 +109,7 @@ function LunchCard({ soup, lunch }) {
   );
 }
 
-export default function MenuTable({ title, menu, week }) {
+export default function MenuTable({ title, menu }) {
   const days = Object.keys(menu);
   const [currentDay, setCurrentDay] = useState(days[0]);
 
@@ -117,28 +123,22 @@ export default function MenuTable({ title, menu, week }) {
 
   return (
     <section className="mt-12">
-      <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <h3 className="text-2xl font-bold text-[#fa7070]">{title}</h3>
-        {week && (
-          <span className="inline-flex w-fit items-center gap-2 rounded-full bg-[#2c7865]/10 px-4 py-1.5 text-sm font-medium text-[#2c7865]">
-            <CalendarDays className="mb-0 h-4 w-4 shrink-0" />
-            Tydzień {week}
-          </span>
-        )}
-      </div>
+      <h3 className="mb-6 text-2xl font-bold text-[#fa7070]">{title}</h3>
 
-      <div className="-mx-1 mb-8 flex gap-2 overflow-x-auto px-1 pb-2">
+      <div className="mb-8 grid grid-cols-5 gap-1 rounded-2xl bg-gray-100 p-1.5">
         {days.map((name) => (
           <button
             key={name}
             onClick={() => setCurrentDay(name)}
-            className={`shrink-0 cursor-pointer rounded-full px-5 py-2 font-medium transition ${
+            aria-label={name}
+            className={`cursor-pointer rounded-xl px-1 py-2.5 font-semibold transition ${
               currentDay === name
                 ? "bg-[#fa7070] text-white shadow-sm"
-                : "bg-white text-[#2c7865] ring-1 ring-gray-200 hover:ring-[#43b79a]"
+                : "text-[#2c7865] hover:bg-white/70"
             }`}
           >
-            {name}
+            <span className="sm:hidden">{shortNames[name] ?? name}</span>
+            <span className="hidden sm:inline">{name}</span>
           </button>
         ))}
       </div>

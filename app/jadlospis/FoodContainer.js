@@ -1,7 +1,7 @@
 "use client";
 import Header from "@/components/UI/Header";
 import MenuTable from "./MenuTable";
-import { week, menuStandard, menuWege, menuBezNabialu } from "./menuData";
+import { menuStandard, menuWege, menuBezNabialu } from "./menuData";
 import { useState } from "react";
 import { Earth, Leaf, MilkOff, UtensilsCrossed } from "lucide-react";
 
@@ -37,7 +37,7 @@ export default function FoodContainer() {
     <div className="py-12">
       <Header text="Jadłospis - Zdrowe Odżywianie" />
 
-      <div className="mx-auto max-w-3xl space-y-4 text-center text-lg leading-relaxed text-gray-700">
+      <div className="mx-auto max-w-3xl space-y-4 text-center text-lg leading-relaxed text-gray-700 mt-10">
         <p>
           W naszych placówkach szczególną uwagę przykładamy do zdrowego
           odżywiania dzieci. Oferujemy starannie zaprojektowany jadłospis, który
@@ -83,12 +83,7 @@ export default function FoodContainer() {
         </div>
       </div>
 
-      <MenuTable
-        key={active.id}
-        title={active.title}
-        menu={active.menu}
-        week={week}
-      />
+      <MenuTable key={active.id} title={active.title} menu={active.menu} />
     </div>
   );
 }
