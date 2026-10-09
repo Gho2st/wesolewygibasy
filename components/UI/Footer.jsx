@@ -56,9 +56,9 @@ export default function Footer() {
               </li>
               <li>Vetulaniego - 7:00 - 17:00</li>
               <li>Glogera - 6:30 - 17:00</li>
-              <li>Stańczyka - 6:30 - 17:30</li>
+              <li>Stańczyka - 7:00 - 17:00</li>
               <li>Śliczna - 7:00 - 17:30</li>
-              <li>Łokietka - 6:30 - 17:30</li>
+              <li>Łokietka - 7:00 - 17:00</li>
               <li className="mt-2">
                 <span className="font-bold  text-xl">Sob:</span> nieczynne
               </li>

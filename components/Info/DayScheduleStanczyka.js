@@ -7,7 +7,7 @@ export default function DayScheduleStanczyka({ header }) {
   const [activeTab, setActiveTab] = useState("day");
 
   const scheduleItems = [
-    "6:30 - 8:30 - Schodzenie się dzieci i wspólne zabawy na dywanie",
+    "7:00 - 8:30 - Schodzenie się dzieci i wspólne zabawy na dywanie",
     "8:30 - 9:00 - Śniadanie",
     "9:00 - 9:15 - Czas wolny, zabawy dowolne",
     "9:00 - 10:00 - Przywitanie i zajęcia dodatkowe",
@@ -18,7 +18,7 @@ export default function DayScheduleStanczyka({ header }) {
     "13:15 - 13:30 - Podwieczorek",
     "13:30 - 15:30 - Wspólne zabawy na dywanie - ogólnorozwojowe",
     "15:30 - 15:45 - Drugi podwieczorek",
-    "15:45 - 17:30 - Zabawy wspierające motorykę małą i dużą, rozchodzenie się dzieci, zakończenie dnia",
+    "15:45 - 17:00 - Zabawy wspierające motorykę małą i dużą, rozchodzenie się dzieci, zakończenie dnia",
   ];
 
   const extraItems = [
@@ -50,7 +50,7 @@ export default function DayScheduleStanczyka({ header }) {
           <h2 className="text-3xl sm:text-4xl font-medium mb-12">{header}</h2>
           <p className="text-xl max-w-3xl mx-auto mb-4">
             Żłobek jest czynny w godzinach{" "}
-            <span className="font-semibold">6:30 do 17:30</span>. Bardzo proszę,
+            <span className="font-semibold">7:00 do 17:00</span>. Bardzo proszę,
             aby przyprowadzać dziecko do godziny{" "}
             <span className="font-semibold">08:30</span>.
           </p>

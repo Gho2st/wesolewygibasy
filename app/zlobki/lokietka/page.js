@@ -43,8 +43,8 @@ const jsonLd = {
     {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "06:30",
-      closes: "17:30",
+      opens: "07:00",
+      closes: "17:00",
     },
   ],
 };
@@ -170,7 +170,7 @@ export default function Lokietka() {
         <div className="mx-auto">
           <DayScheduleLokietka
             header="Plan Dnia i zajęcia dodatkowe"
-            time="17:30"
+            time="17:00"
           />
         </div>
       </section>
