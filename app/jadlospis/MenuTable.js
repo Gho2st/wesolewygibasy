@@ -123,7 +123,12 @@ export default function MenuTable({ title, menu }) {
 
   return (
     <section className="mt-12">
-      <h3 className="mb-6 text-2xl font-bold text-[#fa7070]">{title}</h3>
+      <div className="mb-6">
+        <h3 className="text-2xl font-bold text-[#fa7070]">{title}</h3>
+        <p className="mt-1 text-sm text-gray-500">
+          Przykładowe menu
+        </p>
+      </div>
 
       <div className="mb-8 grid grid-cols-5 gap-1 rounded-2xl bg-gray-100 p-1.5">
         {days.map((name) => (

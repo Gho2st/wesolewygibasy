@@ -1,36 +1,48 @@
 import React from "react";
+import Link from "next/link";
+import { MapPin } from "lucide-react";
 
 export default function ZlobkiBaner({ title, bgImage, description, subtitle }) {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden px-4">
+    <section className="relative flex min-h-[80vh] items-end overflow-hidden md:items-center">
+      {/* Zdjęcie placówki */}
       <div
-        className="absolute inset-0 z-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url("${bgImage}")` }}
-      >
-        <div className="absolute inset-0 bg-black/30 backdrop-blur-[1px]" />
-      </div>
+      />
+      {/* Przyciemnienie – mocniejsze pod tekstem, żeby był czytelny na jasnych zdjęciach */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/60 to-black/30 md:bg-gradient-to-r md:from-black/75 md:via-black/40 md:to-transparent" />
 
-      <div className="relative z-10 max-w-4xl w-full">
-        <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-[2rem] p-8 md:p-16 shadow-2xl text-center transform transition-all duration-500 hover:translate-y-[-5px]">
-          <address className="not-italic inline-block px-4 py-1.5 mb-8 text-sm xl:text-base font-semibold tracking-wider uppercase bg-primary text-white rounded-full shadow-lg shadow-primary/30">
+      <div className="relative z-10 w-full px-6 pb-14 pt-32 md:px-[9%] md:py-24">
+        <div className="max-w-2xl">
+          <address className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/15 px-4 py-1.5 text-sm font-semibold not-italic text-white backdrop-blur-md">
+            <MapPin className="h-4 w-4 shrink-0 text-primary" />
             {subtitle}
           </address>
 
-          {/* Title  */}
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight">
+          <h1 className="mb-5 text-4xl font-extrabold leading-tight tracking-tight text-white drop-shadow-md md:text-5xl xl:text-6xl">
             {title}
           </h1>
 
-          {/* Description*/}
-          <p className="text-lg md:text-xl 2xl:text-2xl text-white font-light leading-relaxed max-w-2xl mx-auto">
+          <div className="mb-6 h-1.5 w-16 rounded-full bg-primary" />
+
+          <p className="mb-8 text-lg leading-relaxed text-white/90 md:text-xl">
             {description}
           </p>
 
-          {/* Opcjonalny dekoracyjny element */}
-          <div className="mt-10 flex justify-center gap-4">
-            <div className="h-1.5 w-12 bg-primary rounded-full" />
-            <div className="h-1.5 w-6 bg-white/50 rounded-full" />
-            <div className="h-1.5 w-3 bg-white/20 rounded-full" />
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <Link
+              href="/zapisy"
+              className="rounded-xl bg-primary px-7 py-3.5 text-center font-bold text-white shadow-lg shadow-black/20 transition hover:-translate-y-0.5 hover:bg-[#ea5252]"
+            >
+              Zapytaj o wolne miejsce
+            </Link>
+            <Link
+              href="/cennik"
+              className="rounded-xl border-2 border-white/60 px-7 py-3.5 text-center font-bold text-white transition hover:-translate-y-0.5 hover:border-white hover:bg-white/10"
+            >
+              Zobacz cennik
+            </Link>
           </div>
         </div>
       </div>

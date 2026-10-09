@@ -41,9 +41,9 @@ export default function Dotation() {
           </div>
 
           <p className="text-lg xl:text-xl text-justify leading-relaxed">
-            W 2024 r. Gmina Miejska Kraków udziela dotacji na dzieci objęte
+            W 2026 r. Gmina Miejska Kraków udziela dotacji na dzieci objęte
             opieką. Kwota udzielanej przez Gminę Miejską Kraków dotacji wynosi
-            3,50 zł za godzinę opieki nad dzieckiem. <br />
+            1,90 zł za godzinę opieki nad dzieckiem. <br />
             <br />
             Zgodnie z podpisaną z Gminą Miejską Kraków umową w tym zakresie, w
             okresie otrzymywania dotacji, pomniejszamy wysokość miesięcznych
@@ -52,7 +52,7 @@ export default function Dotation() {
             Miesięczna kwota o jaką obniżane są opłaty za opiekę wyliczana jest
             wg wzoru: liczba godzin zapewniania opieki dziecku w danym miesiącu
             (liczona na podstawie zawartej z rodzicem umowy o zapewnianie
-            opieki, jednakże nie więcej niż 10 godzin dziennie) x 3,50 zł.
+            opieki, jednakże nie więcej niż 10 godzin dziennie) x 1,90 zł.
             <br />
             <br />
             W przypadku objęcia opieką dziecka z orzeczeniem o
@@ -74,16 +74,6 @@ export default function Dotation() {
             <br />
             e-mail: sz.umk@um.krakow.pl
           </p>
-
-          <div className="mt-6 flex justify-start">
-            <a
-              href="/krakow/krakow2.png"
-              download
-              className="inline-block bg-[#ff5353] text-white font-bold py-2 px-5 rounded-md transition-transform hover:-translate-y-1.5 hover:bg-[#e04b4b]"
-            >
-              Pobierz
-            </a>
-          </div>
         </motion.div>
       </div>
     </section>

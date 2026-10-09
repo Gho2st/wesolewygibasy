@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useRef } from "react";
 import { useInView, motion } from "framer-motion";
 import { getPricingSummary, formatPln } from "@/app/data/pricing";
@@ -225,13 +226,12 @@ export default function LocationDotation({
             terenie Krakowa. Dla dziecka z orzeczeniem o niepełnosprawności
             miasto dopłaca dodatkowe 6,00 zł za każdą godzinę opieki.
           </p>
-          <a
-            href="/krakow/krakow2.png"
-            download
+          <Link
+            href="/informacje-dla-rodzicow"
             className="flex-shrink-0 text-center text-sm font-bold text-teal-700 underline underline-offset-4 hover:text-teal-900 transition-colors"
           >
-            Pobierz szczegóły dotacji
-          </a>
+            Więcej informacji dla rodziców →
+          </Link>
         </motion.div>
       </div>
     </section>

@@ -1,6 +1,13 @@
 import Header from "@/components/UI/Header";
 import Image from "next/image";
 import Dotation from "@/components/Info/dotation";
+import {
+  BookOpen,
+  Download,
+  Lock,
+  ScrollText,
+  ShieldCheck,
+} from "lucide-react";
 
 export const metadata = {
   title: "Informacje - Żłobek Wesołe Wygibasy w Krakowie",
@@ -12,6 +19,49 @@ export const metadata = {
   keywords:
     "informacje, rodo, ochrona małoletnich, zasady w Żłobku, polityka prywatności",
 };
+
+const documents = [
+  {
+    title: "Statut Żłobka Wesołe Wygibasy",
+    description:
+      "Statut żłobka określa zasady funkcjonowania naszej placówki, w tym prawa i obowiązki rodziców oraz personelu. Statut zawiera również informacje o zasadach rekrutacji, opłatach oraz organizacji dnia w naszym żłobku.",
+    href: "/statut.odt",
+    fileType: "ODT",
+    icon: ScrollText,
+    color: "#ff583d",
+    bg: "#ffe6e1",
+  },
+  {
+    title: "Regulamin Żłobka",
+    description:
+      "Regulamin żłobka Wesołe Wygibasy zawiera szczegółowe informacje na temat codziennego funkcjonowania naszej placówki, w tym godzin otwarcia, zasad przyprowadzania i odbierania dzieci, a także norm dotyczących bezpieczeństwa i higieny.",
+    href: "/regulamin.odt",
+    fileType: "ODT",
+    icon: BookOpen,
+    color: "#6d5ebc",
+    bg: "#ebe6fd",
+  },
+  {
+    title: "Standardy Ochrony Małoletnich",
+    description:
+      "Ochrona małoletnich jest dla nas kluczowym priorytetem. W naszym żłobku obowiązują ściśle określone standardy ochrony dzieci przed krzywdzeniem. Dokument ten zawiera zasady postępowania w przypadku zagrożeń oraz procedury bezpieczeństwa.",
+    href: "/standardy.docx",
+    fileType: "DOCX",
+    icon: ShieldCheck,
+    color: "#d98a0b",
+    bg: "#fff3d4",
+  },
+  {
+    title: "Polityka Prywatności i Ochrona Danych Osobowych",
+    description:
+      "Zgodnie z przepisami RODO, dokładamy wszelkich starań, aby chronić dane osobowe Państwa dzieci. Dokument zawiera szczegółowe informacje na temat przetwarzania danych osobowych w naszej placówce, w tym celów, na jakie są one zbierane, oraz praw przysługujących rodzicom i opiekunom.",
+    href: "/RODO-klauzula-informacyjna-copy.jpg",
+    fileType: "JPG",
+    icon: Lock,
+    color: "#1f9e80",
+    bg: "#d6fcf9",
+  },
+];
 
 export default function informacje() {
   return (
@@ -48,102 +98,40 @@ export default function informacje() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 xl:gap-6 mt-24 pb-24">
-          {/* Karta 1 */}
-          <div className="bg-[#ffe6e1] text-[#ff583d] rounded-3xl shadow-lg p-6 flex flex-col justify-between">
-            <div className="pb-6">
-              <h3 className="text-2xl font-semibold mb-4">
-                Statut Żłobka Wesołe Wygibasy
-              </h3>
-              <p className="text-lg text-black">
-                Statut żłobka określa zasady funkcjonowania naszej placówki, w
-                tym prawa i obowiązki rodziców oraz personelu. Statut zawiera
-                również informacje o zasadach rekrutacji, opłatach oraz
-                organizacji dnia w naszym żłobku. Prosimy o pobranie i
-                zapoznanie się z dokumentem:
-              </p>
-            </div>
-            <div className="flex justify-center">
-              <a
-                href="/statut.odt"
-                download
-                className="bg-[#fa7070] hover:bg-[#d86161] text-white font-bold py-2 px-4 rounded-md text-center w-1/2 transition-transform hover:scale-110"
+        <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-6 mt-24 pb-24">
+          {documents.map(
+            ({ title, description, href, fileType, icon: Icon, color, bg }) => (
+              <div
+                key={title}
+                className="group flex flex-col rounded-3xl border border-gray-100 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
-                Pobierz
-              </a>
-            </div>
-          </div>
-
-          {/* Karta 2 */}
-          <div className="bg-[#ebe6fd] text-[#6d5ebc] rounded-3xl shadow-lg p-6 flex flex-col justify-between">
-            <div className="pb-6">
-              <h3 className="text-2xl font-semibold mb-4">Regulamin Żłobka</h3>
-              <p className="text-lg text-black">
-                Regulamin żłobka Wesołe Wygibasy zawiera szczegółowe informacje
-                na temat codziennego funkcjonowania naszej placówki, w tym
-                godzin otwarcia, zasad przyprowadzania i odbierania dzieci, a
-                także norm dotyczących bezpieczeństwa i higieny. Zachęcamy do
-                zapoznania się z regulaminem:
-              </p>
-            </div>
-            <div className="flex justify-center">
-              <a
-                href="regulamin.odt"
-                download
-                className="bg-[#fa7070] hover:bg-[#d86161] text-white font-bold py-2 px-4 rounded-md text-center w-1/2 transition-transform hover:scale-110"
-              >
-                Pobierz
-              </a>
-            </div>
-          </div>
-
-          {/* Karta 3 */}
-          <div className="bg-[#fff3d4] text-[#f8b03f] rounded-3xl shadow-lg p-6 flex flex-col justify-between">
-            <div className="pb-6">
-              <h3 className="text-2xl font-semibold mb-4">
-                Standardy Ochrony Małoletnich
-              </h3>
-              <p className="text-lg text-black">
-                Ochrona małoletnich jest dla nas kluczowym priorytetem. W naszym
-                żłobku obowiązują ściśle określone standardy ochrony dzieci
-                przed krzywdzeniem. Dokument ten zawiera zasady postępowania w
-                przypadku zagrożeń oraz procedury bezpieczeństwa.
-              </p>
-            </div>
-            <div className="flex justify-center">
-              <a
-                href="/standardy.docx"
-                className="bg-[#fa7070] hover:bg-[#d86161] text-white font-bold py-2 px-4 rounded-md text-center w-1/2 transition-transform hover:scale-110"
-              >
-                Pobierz
-              </a>
-            </div>
-          </div>
-
-          {/* Karta 4 */}
-          <div className="bg-[#d6fcf9] text-[#35d4ae] rounded-3xl shadow-lg p-6 flex flex-col justify-between">
-            <div className="pb-6">
-              <h3 className="text-2xl font-semibold mb-4">
-                Polityka Prywatności i Ochrona Danych Osobowych
-              </h3>
-              <p className="text-lg text-black">
-                Zgodnie z przepisami RODO, dokładamy wszelkich starań, aby
-                chronić dane osobowe Państwa dzieci. Dokument zawiera
-                szczegółowe informacje na temat przetwarzania danych osobowych w
-                naszej placówce, w tym celów, na jakie są one zbierane, oraz
-                praw przysługujących rodzicom i opiekunom.
-              </p>
-            </div>
-            <div className="flex justify-center">
-              <a
-                href="/RODO-klauzula-informacyjna-copy.jpg"
-                download
-                className="bg-[#fa7070] hover:bg-[#d86161] text-white font-bold py-2 px-4 rounded-md text-center w-1/2 transition-transform hover:scale-110"
-              >
-                Pobierz
-              </a>
-            </div>
-          </div>
+                <span
+                  className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl"
+                  style={{ backgroundColor: bg, color }}
+                >
+                  <Icon className="h-7 w-7" />
+                </span>
+                <h3 className="mb-3 text-xl font-bold leading-snug text-gray-900">
+                  {title}
+                </h3>
+                <p className="mb-6 flex-1 text-base leading-relaxed text-gray-600">
+                  {description}
+                </p>
+                <a
+                  href={href}
+                  download
+                  className="flex items-center justify-center gap-2 rounded-xl px-4 py-3 font-semibold transition-colors hover:brightness-95"
+                  style={{ backgroundColor: bg, color }}
+                >
+                  <Download className="h-5 w-5" />
+                  Pobierz
+                  <span className="text-xs font-medium opacity-70">
+                    ({fileType})
+                  </span>
+                </a>
+              </div>
+            ),
+          )}
         </div>
       </div>
 

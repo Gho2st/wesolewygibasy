@@ -239,7 +239,7 @@ export function getPricingSummary(locationId) {
       key: "miasto",
       icon: "🏛️",
       title: "Dotacja Urzędu Miasta Krakowa",
-      amount: "3,50 zł / godz.",
+      amount: "1,90 zł / godz.",
       desc: "Za każdą godzinę opieki nad dzieckiem zamieszkałym w Krakowie. Obniża czesne od razu na fakturze — nie musisz o nic wnioskować.",
       note: `W tym cenniku: ${formatPln(
         Math.min(...cityColumn),
